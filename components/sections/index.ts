@@ -1,0 +1,5 @@
+export { HeroSection } from "./HeroSection"
+export { TrustBadges } from "./TrustBadges"
+export { InsuranceTypes } from "./InsuranceTypes"
+export { Testimonials } from "./Testimonials"
+export { CTABanner } from "./CTABanner"
