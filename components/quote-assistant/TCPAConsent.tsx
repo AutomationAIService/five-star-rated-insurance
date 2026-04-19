@@ -8,7 +8,7 @@ import Link from "next/link"
 interface TCPAConsentProps {
   checked: boolean
   onChange: (checked: boolean) => void
-  onSubmit: () => void
+  onBook: () => void
   error: string | null
   isSubmitting: boolean
 }
@@ -16,7 +16,7 @@ interface TCPAConsentProps {
 export function TCPAConsent({
   checked,
   onChange,
-  onSubmit,
+  onBook,
   error,
   isSubmitting,
 }: TCPAConsentProps) {
@@ -35,16 +35,23 @@ export function TCPAConsent({
           id="tcpa-description"
           className="text-xs text-muted-foreground leading-relaxed cursor-pointer"
         >
-          By checking this box, I consent to receive calls, texts, and emails from Five Star Rated 
-          Insurance and its partners at the number and email provided. I understand that my consent 
-          is not required to purchase. Message and data rates may apply.{" "}
-          <Link href="/tcpa-consent" className="text-navy underline hover:no-underline">
-            View full TCPA disclosure
-          </Link>
-          {" "}|{" "}
+          By submitting, I agree to be contacted by Protegrity Insurance Brokerage and its
+          licensed agents at the number provided, including via automated calls and texts. I
+          consent to my information being shared with Protegrity Insurance Brokerage for
+          insurance quote purposes. Consent is not required to purchase. Msg & data rates may
+          apply. I agree to the{" "}
           <Link href="/privacy-policy" className="text-navy underline hover:no-underline">
             Privacy Policy
           </Link>
+          ,{" "}
+          <Link href="/terms-of-service" className="text-navy underline hover:no-underline">
+            Terms of Service
+          </Link>
+          , and{" "}
+          <Link href="/tcpa-consent" className="text-navy underline hover:no-underline">
+            TCPA Consent Disclosure
+          </Link>
+          .
         </label>
       </div>
 
@@ -55,7 +62,8 @@ export function TCPAConsent({
       )}
 
       <Button
-        onClick={onSubmit}
+        type="button"
+        onClick={onBook}
         disabled={isSubmitting || !checked}
         className="w-full bg-navy hover:bg-navy/90 text-primary-foreground"
       >
@@ -65,7 +73,7 @@ export function TCPAConsent({
             Submitting...
           </>
         ) : (
-          "Get My Free Quote"
+          "Book Your Free Consultation"
         )}
       </Button>
     </div>

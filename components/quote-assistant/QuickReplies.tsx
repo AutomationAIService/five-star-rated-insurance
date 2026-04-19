@@ -1,9 +1,15 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { Car, Home, Heart, Truck, Briefcase } from "lucide-react"
+import { Car, Home, Heart, Truck, Briefcase, Motorbike } from "lucide-react"
 
-type InsuranceType = "Auto" | "Home" | "Life" | "Commercial Auto" | "Business"
+type InsuranceType =
+  | "Auto"
+  | "Home"
+  | "Life"
+  | "Commercial Auto"
+  | "Business"
+  | "Specialty"
 
 interface QuickRepliesProps {
   options: InsuranceType[]
@@ -16,11 +22,12 @@ const ICONS: Record<InsuranceType, React.ReactNode> = {
   Life: <Heart className="w-4 h-4" />,
   "Commercial Auto": <Truck className="w-4 h-4" />,
   Business: <Briefcase className="w-4 h-4" />,
+  Specialty: <Motorbike className="w-4 h-4" />,
 }
 
 export function QuickReplies({ options, onSelect }: QuickRepliesProps) {
   return (
-    <div 
+    <div
       className="flex flex-wrap gap-2"
       role="group"
       aria-label="Insurance type options"

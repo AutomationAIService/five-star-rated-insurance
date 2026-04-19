@@ -6,10 +6,15 @@ import { QuickReplies } from "./QuickReplies"
 import { ChatInput } from "./ChatInput"
 import { ProgressBar } from "./ProgressBar"
 import { TCPAConsent } from "./TCPAConsent"
-import { Star } from "lucide-react"
 import Image from "next/image"
 
-type InsuranceType = "Auto" | "Home" | "Life" | "Commercial Auto" | "Business"
+type InsuranceType =
+  | "Auto"
+  | "Home"
+  | "Life"
+  | "Commercial Auto"
+  | "Business"
+  | "Specialty"
 
 interface Message {
   id: string
@@ -18,10 +23,10 @@ interface Message {
   timestamp: Date
 }
 
-type ConversationStep = 
+type ConversationStep =
   | "insurance_type"
-  | "zip_code"
   | "name"
+  | "zip_code"
   | "email"
   | "phone"
   | "tcpa_consent"
@@ -38,28 +43,47 @@ interface LeadData {
 
 const STEP_ORDER: ConversationStep[] = [
   "insurance_type",
-  "zip_code",
   "name",
+  "zip_code",
   "email",
   "phone",
   "tcpa_consent",
-  "complete"
+  "complete",
 ]
 
 const AVA_MESSAGES: Record<ConversationStep, string | ((data: LeadData) => string)> = {
-  insurance_type: "Hi, I'm Ava, your Quote Assistant. What type of coverage do you need today?",
-  zip_code: (data) => `${data.insuranceType} coverage - great choice! What's your ZIP code?`,
-  name: "Almost done! What's your name?",
-  email: "And your email address?",
-  phone: "Last step - your phone number for your personalized quote.",
-  tcpa_consent: "Please review and accept the terms to receive your quote.",
-  complete: (data) => `Thanks, ${data.name}! A licensed agent will contact you shortly with your personalized ${data.insuranceType?.toLowerCase()} insurance quotes.`
+  insurance_type:
+    "Hi! I'm Ava, your quote assistant. What type of insurance are you looking for?",
+  name: "Great! What's your name?",
+  zip_code: "What's your zip code?",
+  email: "What's the best email to reach you?",
+  phone: "And your phone number?",
+  tcpa_consent: "Please review and confirm below to book your free consultation.",
+  complete: (data) =>
+    `Thanks, ${data.name}! Your calendar should open in a new tab to book your free consultation.`,
 }
 
-const INSURANCE_OPTIONS: InsuranceType[] = ["Auto", "Home", "Life", "Commercial Auto", "Business"]
+const INSURANCE_OPTIONS: InsuranceType[] = [
+  "Auto",
+  "Home",
+  "Life",
+  "Commercial Auto",
+  "Business",
+  "Specialty",
+]
 
-// Mock API function - will be replaced with actual n8n webhook
-async function submitLeadToWebhook(leadData: LeadData): Promise<{ success: boolean }> {
+function buildCalendlyUrl(data: LeadData): string {
+  const base = "https://calendly.com/quotes-fivestarratedinsurance/30min"
+  const params = new URLSearchParams()
+  params.set("name", data.name)
+  params.set("email", data.email)
+  params.set("a1", data.phone)
+  params.set("a2", data.insuranceType ?? "")
+  params.set("a3", data.zipCode)
+  return `${base}?${params.toString()}`
+}
+
+async function submitLeadForCompliance(leadData: LeadData, consentTimestamp: string) {
   const response = await fetch("/api/webhook/n8n", {
     method: "POST",
     headers: {
@@ -67,13 +91,14 @@ async function submitLeadToWebhook(leadData: LeadData): Promise<{ success: boole
     },
     body: JSON.stringify({
       ...leadData,
-      timestamp: new Date().toISOString(),
+      tcpaConsent: true,
+      consentTimestamp,
+      timestamp: consentTimestamp,
     }),
   })
   return response.json()
 }
 
-// Validation helpers
 const validateZipCode = (zip: string): boolean => /^\d{5}$/.test(zip)
 const validateEmail = (email: string): boolean => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
 const validatePhone = (phone: string): boolean => /^\d{10}$/.test(phone.replace(/\D/g, ""))
@@ -103,10 +128,17 @@ export function QuoteAssistant() {
     scrollToBottom()
   }, [messages, scrollToBottom])
 
-  // Initialize with first Ava message
   useEffect(() => {
-    const initialMessage = AVA_MESSAGES.insurance_type
-    const content = typeof initialMessage === "function" ? initialMessage(leadData) : initialMessage
+    const empty: LeadData = {
+      insuranceType: null,
+      zipCode: "",
+      name: "",
+      email: "",
+      phone: "",
+      tcpaConsent: false,
+    }
+    const m = AVA_MESSAGES.insurance_type
+    const content = typeof m === "function" ? m(empty) : m
     setMessages([
       {
         id: "initial",
@@ -129,27 +161,34 @@ export function QuoteAssistant() {
     ])
   }, [])
 
-  const moveToNextStep = useCallback((newLeadData: LeadData) => {
-    const currentIndex = STEP_ORDER.indexOf(currentStep)
-    const nextStep = STEP_ORDER[currentIndex + 1]
-    
-    if (nextStep) {
-      setCurrentStep(nextStep)
-      const nextMessage = AVA_MESSAGES[nextStep]
-      const content = typeof nextMessage === "function" ? nextMessage(newLeadData) : nextMessage
-      
-      setTimeout(() => {
-        addMessage("ava", content)
-      }, 500)
-    }
-  }, [currentStep, addMessage])
+  const moveToNextStep = useCallback(
+    (newLeadData: LeadData) => {
+      const currentIndex = STEP_ORDER.indexOf(currentStep)
+      const nextStep = STEP_ORDER[currentIndex + 1]
 
-  const handleInsuranceSelect = useCallback((type: InsuranceType) => {
-    const newData = { ...leadData, insuranceType: type }
-    setLeadData(newData)
-    addMessage("user", type)
-    moveToNextStep(newData)
-  }, [leadData, addMessage, moveToNextStep])
+      if (nextStep) {
+        setCurrentStep(nextStep)
+        const nextMessage = AVA_MESSAGES[nextStep]
+        const content =
+          typeof nextMessage === "function" ? nextMessage(newLeadData) : nextMessage
+
+        setTimeout(() => {
+          addMessage("ava", content)
+        }, 500)
+      }
+    },
+    [currentStep, addMessage],
+  )
+
+  const handleInsuranceSelect = useCallback(
+    (type: InsuranceType) => {
+      const newData = { ...leadData, insuranceType: type }
+      setLeadData(newData)
+      addMessage("user", type)
+      moveToNextStep(newData)
+    },
+    [leadData, addMessage, moveToNextStep],
+  )
 
   const handleTextSubmit = useCallback(() => {
     const value = inputValue.trim()
@@ -193,7 +232,10 @@ export function QuoteAssistant() {
 
     const field = fieldMap[currentStep]
     if (field) {
-      const newData = { ...leadData, [field]: currentStep === "phone" ? value.replace(/\D/g, "") : value }
+      const newData = {
+        ...leadData,
+        [field]: currentStep === "phone" ? value.replace(/\D/g, "") : value,
+      }
       setLeadData(newData)
       addMessage("user", value)
       setInputValue("")
@@ -201,7 +243,7 @@ export function QuoteAssistant() {
     }
   }, [inputValue, currentStep, leadData, addMessage, moveToNextStep])
 
-  const handleTCPASubmit = useCallback(async () => {
+  const handleBookConsultation = useCallback(async () => {
     if (!leadData.tcpaConsent) {
       setValidationError("Please accept the terms to continue")
       return
@@ -210,16 +252,31 @@ export function QuoteAssistant() {
     setIsSubmitting(true)
     setValidationError(null)
 
+    const consentTimestamp = new Date().toISOString()
+
     try {
-      await submitLeadToWebhook(leadData)
-      addMessage("user", "I agree to the terms")
-      moveToNextStep(leadData)
+      const result = await submitLeadForCompliance(leadData, consentTimestamp)
+      if (!result?.success) {
+        throw new Error("Submit failed")
+      }
+
+      const calendlyUrl = buildCalendlyUrl(leadData)
+      window.open(calendlyUrl, "_blank", "noopener,noreferrer")
+
+      addMessage("user", "Confirmed — book my consultation")
+      setCurrentStep("complete")
+      const doneMsg = AVA_MESSAGES.complete
+      const content =
+        typeof doneMsg === "function" ? doneMsg({ ...leadData, tcpaConsent: true }) : doneMsg
+      setTimeout(() => {
+        addMessage("ava", content)
+      }, 500)
     } catch {
       setValidationError("Something went wrong. Please try again.")
     } finally {
       setIsSubmitting(false)
     }
-  }, [leadData, addMessage, moveToNextStep])
+  }, [leadData, addMessage])
 
   const progress = (STEP_ORDER.indexOf(currentStep) / (STEP_ORDER.length - 1)) * 100
 
@@ -242,8 +299,7 @@ export function QuoteAssistant() {
         <div className="flex-1">
           <h3 className="font-heading font-semibold text-base">Ava - Quote Assistant</h3>
           <div className="flex items-center gap-1 text-xs text-primary-foreground/80">
-            <Star className="w-3 h-3 fill-gold text-gold" />
-            <span>{"{{AVG_RATING}}"} rated service</span>
+            <span>Watchdog With Integrity</span>
           </div>
         </div>
       </div>
@@ -266,10 +322,7 @@ export function QuoteAssistant() {
       {/* Input Area */}
       <div className="p-4 border-t border-border bg-surface">
         {showQuickReplies && (
-          <QuickReplies
-            options={INSURANCE_OPTIONS}
-            onSelect={handleInsuranceSelect}
-          />
+          <QuickReplies options={INSURANCE_OPTIONS} onSelect={handleInsuranceSelect} />
         )}
 
         {showTextInput && (
@@ -287,7 +340,7 @@ export function QuoteAssistant() {
           <TCPAConsent
             checked={leadData.tcpaConsent}
             onChange={(checked) => setLeadData({ ...leadData, tcpaConsent: checked })}
-            onSubmit={handleTCPASubmit}
+            onBook={handleBookConsultation}
             error={validationError}
             isSubmitting={isSubmitting}
           />
@@ -302,7 +355,7 @@ export function QuoteAssistant() {
               height={20}
               className="w-5 h-5 object-contain"
             />
-            <span>Quote request submitted successfully</span>
+            <span>Consultation booking started</span>
           </div>
         )}
       </div>
