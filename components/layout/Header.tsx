@@ -11,8 +11,10 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
+  navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
 import { insuranceProducts } from "@/src/data/insuranceProducts"
+import { cn } from "@/lib/utils"
 
 export function Header() {
   return (
@@ -30,9 +32,9 @@ export function Header() {
             />
           </Link>
 
-          <div className="flex items-center justify-end gap-2 sm:gap-4 min-w-0">
-            <NavigationMenu>
-              <NavigationMenuList>
+          <div className="flex min-w-0 flex-wrap items-center justify-end gap-x-1 gap-y-2 sm:gap-x-2 md:gap-x-4">
+            <NavigationMenu className="shrink-0">
+              <NavigationMenuList className="flex-wrap">
                 <NavigationMenuItem>
                   <NavigationMenuTrigger className="text-navy bg-transparent hover:bg-navy/5 focus:bg-navy/5 data-[state=open]:bg-navy/10">
                     Products
@@ -54,6 +56,45 @@ export function Header() {
                     </ul>
                   </NavigationMenuContent>
                 </NavigationMenuItem>
+                <NavigationMenuItem>
+                  <NavigationMenuLink asChild>
+                    <Link
+                      href="/about"
+                      className={cn(
+                        navigationMenuTriggerStyle(),
+                        "text-navy bg-transparent text-xs hover:bg-navy/5 focus:bg-navy/5 sm:text-sm",
+                      )}
+                    >
+                      About Us
+                    </Link>
+                  </NavigationMenuLink>
+                </NavigationMenuItem>
+                <NavigationMenuItem>
+                  <NavigationMenuLink asChild>
+                    <Link
+                      href="/contact"
+                      className={cn(
+                        navigationMenuTriggerStyle(),
+                        "text-navy bg-transparent text-xs hover:bg-navy/5 focus:bg-navy/5 sm:text-sm",
+                      )}
+                    >
+                      Contact
+                    </Link>
+                  </NavigationMenuLink>
+                </NavigationMenuItem>
+                <NavigationMenuItem>
+                  <NavigationMenuLink asChild>
+                    <Link
+                      href="/blog"
+                      className={cn(
+                        navigationMenuTriggerStyle(),
+                        "text-navy bg-transparent text-xs hover:bg-navy/5 focus:bg-navy/5 sm:text-sm",
+                      )}
+                    >
+                      Blog
+                    </Link>
+                  </NavigationMenuLink>
+                </NavigationMenuItem>
               </NavigationMenuList>
             </NavigationMenu>
 
@@ -63,7 +104,7 @@ export function Header() {
             >
               <a href="tel:{{PHONE_NUMBER}}" className="flex items-center gap-2">
                 <Phone className="w-4 h-4 shrink-0" />
-                <span>{"{{PHONE_NUMBER}}"}</span>
+                <span>CALL NOW</span>
               </a>
             </Button>
           </div>

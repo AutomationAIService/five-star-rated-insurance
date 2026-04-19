@@ -3,17 +3,19 @@ import Image from "next/image"
 import { Phone, Mail, MapPin } from "lucide-react"
 
 const INSURANCE_LINKS = [
-  { href: "#", label: "Auto Insurance" },
-  { href: "#", label: "Home Insurance" },
-  { href: "#", label: "Life Insurance" },
-  { href: "#", label: "Commercial Auto" },
-  { href: "#", label: "Business Insurance" },
+  { href: "/insurance/auto", label: "Auto Insurance" },
+  { href: "/insurance/home", label: "Home Insurance" },
+  { href: "/insurance/life", label: "Life Insurance" },
+  { href: "/insurance/commercial-auto", label: "Commercial Auto" },
+  { href: "/insurance/business", label: "Business Insurance" },
+  { href: "/insurance/specialty", label: "Specialty Insurance" },
+  { href: "/insurance/other", label: "Other Insurance" },
 ]
 
 const COMPANY_LINKS = [
-  { href: "#", label: "About Us" },
-  { href: "#", label: "Contact" },
-  { href: "#", label: "Blog" },
+  { href: "/about", label: "About Us" },
+  { href: "/contact", label: "Contact" },
+  { href: "/blog", label: "Blog" },
 ]
 
 const LEGAL_LINKS = [
