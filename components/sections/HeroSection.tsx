@@ -3,9 +3,9 @@ import { QuoteAssistant } from "@/components/quote-assistant"
 import { CheckCircle } from "lucide-react"
 
 const HERO_BENEFITS = [
-  "Compare quotes from top-rated carriers",
-  "Save up to 40% on your premium",
-  "Licensed agents available 24/7",
+  "Quotes from 30+ top-rated companies",
+  "Fast, friendly service via phone, text, or email",
+  "Proactive alerts before your rates increase",
 ]
 
 export function HeroSection() {
@@ -24,13 +24,13 @@ export function HeroSection() {
       <div className="container mx-auto px-4 py-12 md:py-16 lg:py-20 relative">
         {/* Hero Logo - Main Focal Point */}
         <div className="flex justify-center mb-8 md:mb-10">
-          <div className="bg-[#F8FAFC] rounded-2xl shadow-lg p-6 md:p-8 lg:p-10 w-[90%] max-w-[620px]">
+          <div className="bg-[#F8FAFC] rounded-lg shadow-md p-2 md:p-2.5 lg:p-3 w-fit max-w-full">
             <Image
               src="/images/logo-hero.png"
               alt="Five Star Rated Insurance"
               width={500}
               height={385}
-              className="w-[260px] md:w-[380px] lg:w-[500px] h-auto object-contain mx-auto"
+              className="block w-[220px] md:w-[300px] lg:w-[400px] h-auto object-contain"
               priority
             />
           </div>
@@ -38,12 +38,11 @@ export function HeroSection() {
 
         {/* Headline and Subheadline - Below Logo */}
         <div className="text-center mb-10 md:mb-12">
-          <h1 className="font-heading font-bold text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-tight mb-4 text-balance">
-            {"{{HERO_HEADLINE_PLACEHOLDER}}"}
+          <h1 className="font-heading font-bold text-2xl md:text-3xl lg:text-4xl text-balance">
+            The Insurance Watchdog: We Kill Rate Hikes Before You Overpay
           </h1>
-
           <p className="text-lg md:text-xl text-primary-foreground/80 mb-6 max-w-2xl mx-auto leading-relaxed">
-            {"{{HERO_SUBHEADLINE_PLACEHOLDER}}"}
+            Stop letting greedy carriers quietly reach into your wallet. We shop multiple reputable companies to find you the best price.
           </p>
 
           <ul className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 mb-6">
@@ -55,8 +54,8 @@ export function HeroSection() {
             ))}
           </ul>
 
-          <p className="text-sm text-primary-foreground/60">
-            {"{{HERO_TRUST_TEXT_PLACEHOLDER}}"}
+          <p className="font-sans font-bold text-base md:text-lg text-primary-foreground text-center max-w-2xl mx-auto leading-snug">
+            Superior Service. Honest Quotes. Proven Results.
           </p>
         </div>
 

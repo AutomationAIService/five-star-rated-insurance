@@ -1,75 +1,67 @@
-import { Shield, Star, Clock, Users } from "lucide-react"
+import { cn } from "@/lib/utils"
 
-const TRUST_STATS = [
-  {
-    icon: Star,
-    value: "{{AVG_RATING}}",
-    label: "Customer Rating",
-    sublabel: "{{REVIEW_COUNT_PLACEHOLDER}} reviews",
-  },
-  {
-    icon: Users,
-    value: "{{CUSTOMERS_SERVED_PLACEHOLDER}}",
-    label: "Customers Served",
-    sublabel: "and counting",
-  },
-  {
-    icon: Clock,
-    value: "{{YEARS_IN_BUSINESS_PLACEHOLDER}}",
-    label: "Years in Business",
-    sublabel: "of trusted service",
-  },
-  {
-    icon: Shield,
-    value: "{{CARRIERS_COUNT_PLACEHOLDER}}",
-    label: "Insurance Carriers",
-    sublabel: "top-rated partners",
-  },
+const TRUST_STATS: { value: string; label: string }[] = [
+  { value: "5.0", label: "Rating" },
+  { value: "250+", label: "Reviews" },
+  { value: "1,000+", label: "Customers" },
+  { value: "10+", label: "Years" },
+  { value: "30+", label: "Carriers" },
 ]
 
-const CARRIER_PLACEHOLDERS = [
-  "Carrier Logo 1",
-  "Carrier Logo 2",
-  "Carrier Logo 3",
-  "Carrier Logo 4",
-  "Carrier Logo 5",
-  "Carrier Logo 6",
+const CARRIERS: { name: string; hoverTextClass: string }[] = [
+  { name: "Progressive", hoverTextClass: "group-hover:text-[#0066CC]" },
+  { name: "Geico", hoverTextClass: "group-hover:text-[#0066B2]" },
+  { name: "Safeco", hoverTextClass: "group-hover:text-[#C41230]" },
+  { name: "Farmers", hoverTextClass: "group-hover:text-[#0072BC]" },
+  { name: "National General", hoverTextClass: "group-hover:text-[#003087]" },
 ]
 
 export function TrustBadges() {
   return (
     <section className="py-12 md:py-16 bg-surface border-y border-border">
       <div className="container mx-auto px-4">
-        {/* Stats Row */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 mb-12">
+        <div
+          className="mx-auto mb-12 grid max-w-5xl grid-cols-2 gap-x-6 gap-y-10 md:grid-cols-5 md:gap-8"
+          aria-label="Trust metrics"
+        >
           {TRUST_STATS.map((stat, index) => (
-            <div key={index} className="text-center">
-              <div className="inline-flex items-center justify-center w-12 h-12 bg-navy/5 rounded-full mb-3">
-                <stat.icon className="w-6 h-6 text-navy" />
-              </div>
-              <div className="font-heading font-bold text-2xl md:text-3xl text-navy mb-1">
+            <div
+              key={stat.label}
+              className={cn(
+                "text-center",
+                index === TRUST_STATS.length - 1 && "col-span-2 md:col-span-1"
+              )}
+            >
+              <div className="font-heading font-bold text-3xl leading-none text-navy sm:text-4xl md:text-5xl">
                 {stat.value}
               </div>
-              <div className="text-sm font-medium text-foreground">{stat.label}</div>
-              <div className="text-xs text-muted-foreground">{stat.sublabel}</div>
+              <div className="mt-2 text-sm font-medium text-foreground">{stat.label}</div>
             </div>
           ))}
         </div>
 
-        {/* Carrier Logos */}
-        <div className="text-center">
-          <p className="text-sm text-muted-foreground mb-6">Trusted by leading insurance carriers</p>
-          <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
-            {CARRIER_PLACEHOLDERS.map((placeholder, index) => (
-              <div
-                key={index}
-                className="flex items-center justify-center w-24 h-12 bg-muted rounded text-xs text-muted-foreground"
-                aria-label={placeholder}
+        <div
+          className="flex flex-wrap items-center justify-center gap-x-6 gap-y-6 sm:gap-x-10 md:gap-x-12"
+          aria-label="Insurance carriers"
+        >
+          {CARRIERS.map((carrier) => (
+            <div
+              key={carrier.name}
+              className={cn(
+                "group flex min-h-[2.75rem] cursor-default items-center justify-center px-3 py-2 transition-[filter,color] duration-200 ease-out",
+                "grayscale opacity-60 hover:grayscale-0 hover:opacity-100"
+              )}
+            >
+              <span
+                className={cn(
+                  "text-center font-heading text-base font-semibold tracking-tight text-muted-foreground transition-colors duration-200 sm:text-lg",
+                  carrier.hoverTextClass
+                )}
               >
-                {placeholder}
-              </div>
-            ))}
-          </div>
+                {carrier.name}
+              </span>
+            </div>
+          ))}
         </div>
       </div>
     </section>
