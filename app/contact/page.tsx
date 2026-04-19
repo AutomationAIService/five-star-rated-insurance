@@ -64,16 +64,16 @@ export default function ContactPage() {
                     <span>
                       Email:{" "}
                       <a
-                        href="mailto:quotes@fivestarratedinsurance.com"
+                        href="mailto:support@fivestarratedinsurance.com"
                         className="font-medium text-navy underline-offset-4 hover:underline"
                       >
-                        quotes@fivestarratedinsurance.com
+                        support@fivestarratedinsurance.com
                       </a>
                     </span>
                   </li>
                   <li className="flex gap-3">
                     <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-navy" aria-hidden />
-                    <span>Address: {"{{ADDRESS_PLACEHOLDER}}"}</span>
+                    <span>Address: 2680 S Val Vista Dr Bldg 15 Ste 185, Gilbert, AZ 85295</span>
                   </li>
                 </ul>
               </CardContent>

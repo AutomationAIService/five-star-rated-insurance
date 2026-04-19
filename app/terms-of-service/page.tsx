@@ -165,10 +165,10 @@ export default function TermsOfServicePage() {
             <p style={{ margin: 0 }}>
               For questions about these Terms of Service, contact us at:{" "}
               <a
-                href="mailto:quotes@fivestarratedinsurance.com"
+                href="mailto:support@fivestarratedinsurance.com"
                 style={{ color: "#000000" }}
               >
-                quotes@fivestarratedinsurance.com
+                support@fivestarratedinsurance.com
               </a>
             </p>
           </section>

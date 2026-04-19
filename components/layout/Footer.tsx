@@ -52,13 +52,13 @@ export function Footer() {
                 <Phone className="w-4 h-4" />
                 <span>{"{{PHONE_NUMBER}}"}</span>
               </a>
-              <a href="mailto:quotes@fivestarratedinsurance.com" className="flex items-center gap-2 hover:text-primary-foreground transition-colors">
+              <a href="mailto:support@fivestarratedinsurance.com" className="flex items-center gap-2 hover:text-primary-foreground transition-colors">
                 <Mail className="w-4 h-4" />
-                <span>quotes@fivestarratedinsurance.com</span>
+                <span>support@fivestarratedinsurance.com</span>
               </a>
               <div className="flex items-center gap-2">
                 <MapPin className="w-4 h-4" />
-                <span>{"{{ADDRESS_PLACEHOLDER}}"}</span>
+                <span>2680 S Val Vista Dr Bldg 15 Ste 185, Gilbert, AZ 85295</span>
               </div>
             </div>
           </div>
