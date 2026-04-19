@@ -1,7 +1,10 @@
-import { Phone, ArrowRight } from "lucide-react"
+import { Phone } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import Image from "next/image"
+
+const ctaButtonClassName =
+  "bg-gold hover:bg-gold/90 text-navy font-bold uppercase tracking-wide text-base h-12 px-8 rounded-md shadow-lg shadow-black/20 border-0"
 
 export function CTABanner() {
   return (
@@ -9,45 +12,39 @@ export function CTABanner() {
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
           <div className="text-center lg:text-left">
-            <div className="flex items-center gap-2 justify-center lg:justify-start mb-4">
+            <div className="flex items-center gap-3 justify-center lg:justify-start mb-4">
               <Image
                 src="/images/shield-icon.png"
                 alt=""
-                width={28}
-                height={28}
-                className="w-[24px] md:w-[28px] h-auto object-contain"
+                width={48}
+                height={48}
+                className="h-auto w-[36px] md:w-[44px] lg:w-[48px] object-contain"
               />
-              <span className="text-gold font-medium">{"{{CTA_BADGE_TEXT_PLACEHOLDER}}"}</span>
+              <span className="text-gold font-semibold tracking-wide uppercase text-sm md:text-base">
+                BACKED BY 465+ FIVE STAR GOOGLE REVIEWS
+              </span>
             </div>
-            <h2 className="font-heading font-bold text-2xl md:text-3xl lg:text-4xl mb-4 text-balance">
-              {"{{CTA_HEADLINE_PLACEHOLDER}}"}
+            <h2 className="font-heading font-bold text-2xl md:text-3xl lg:text-4xl mb-4 text-balance text-primary-foreground">
+              Compare Top Rates Before You Renew And Overpay.
             </h2>
-            <p className="text-lg text-primary-foreground/80 max-w-xl">
-              {"{{CTA_SUBHEADLINE_PLACEHOLDER}}"}
+            <p className="text-lg md:text-xl text-primary-foreground/85 max-w-xl leading-relaxed">
+              Start your request online and connect directly with the licensed brokers at Protegrity
+              Insurance Brokerage. Review your best options for auto, home, and life coverage with zero
+              pressure.
             </p>
           </div>
 
-          <div className="flex flex-col sm:flex-row items-center gap-4">
-            <Button
-              asChild
-              size="lg"
-              className="bg-gold hover:bg-gold/90 text-navy font-semibold"
-            >
-              <Link href="#quote">
-                Get Your Free Quote
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </Link>
+          <div className="flex w-full flex-col items-center justify-center gap-3 sm:flex-row sm:items-center lg:w-auto lg:shrink-0">
+            <Button asChild size="lg" className={ctaButtonClassName}>
+              <Link href="#quote">GET QUOTE</Link>
             </Button>
-            <span className="text-primary-foreground/60">or</span>
-            <Button
-              asChild
-              variant="outline"
-              size="lg"
-              className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10"
-            >
+            <span className="hidden sm:inline text-primary-foreground/50 text-sm font-medium self-center">
+              or
+            </span>
+            <Button asChild size="lg" className={ctaButtonClassName}>
               <a href="tel:{{PHONE_NUMBER}}">
-                <Phone className="mr-2 w-5 h-5" />
-                {"{{PHONE_NUMBER}}"}
+                <Phone className="mr-2 size-5 shrink-0 text-navy" aria-hidden />
+                CALL NOW
               </a>
             </Button>
           </div>
