@@ -45,7 +45,7 @@ export function TrustBadges() {
             id="trust-section-heading"
             className="font-heading text-3xl font-bold leading-tight tracking-tight text-foreground md:text-4xl lg:text-[2.5rem]"
           >
-            Trust the 5 Star Experts at Protegrity
+            {"It's The Service That Counts"}
           </h2>
           <p className="mt-3 text-base text-muted-foreground md:text-lg">
             Five Star Rated Insurance connects your quote request with Protegrity Insurance

@@ -5,6 +5,7 @@ export type InsuranceProductId =
   | "commercial-auto"
   | "business"
   | "specialty"
+  | "other"
 
 /** Lucide React icon component name (PascalCase), e.g. resolve via a small registry in UI code. */
 export type InsuranceProductIconName =
@@ -13,7 +14,8 @@ export type InsuranceProductIconName =
   | "Heart"
   | "Truck"
   | "Briefcase"
-  | "Motorbike"
+  | "Bike"
+  | "Umbrella"
 
 export type CoverageItem = {
   name: string
@@ -300,7 +302,7 @@ export const insuranceProducts: InsuranceProduct[] = [
   {
     id: "specialty",
     title: "Specialty Insurance",
-    icon: "Motorbike",
+    icon: "Bike",
     heroDescription:
       "Cover motorcycles, watercraft, and recreational vehicles with policies designed for how and where you ride. We help you choose agreed value, accessory coverage, and seasonal options that fit your lifestyle.",
     coverageItems: [
@@ -348,6 +350,58 @@ export const insuranceProducts: InsuranceProduct[] = [
       },
     ],
     pageRoute: "/insurance/specialty",
+  },
+  {
+    id: "other",
+    title: "Other Insurance",
+    icon: "Umbrella",
+    heroDescription:
+      "Additional coverage options for comprehensive protection. We help you structure umbrella liability, flood and earthquake endorsements, and scheduled valuables to close gaps left by standard policies.",
+    coverageItems: [
+      {
+        name: "Umbrella insurance",
+        description:
+          "Extra liability limits above your auto and home policies, protecting assets and future earnings after a serious claim.",
+      },
+      {
+        name: "Flood and earthquake coverage",
+        description:
+          "Standalone or endorsed coverage for perils typically excluded from standard homeowners policies, tailored to your location and risk.",
+      },
+      {
+        name: "Valuable items protection",
+        description:
+          "Scheduled jewelry, art, collectibles, and high-value personal property with agreed values and appropriate deductibles.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Why do I need umbrella insurance?",
+        answer:
+          "If you are sued for a large liability judgment, your underlying auto or home limits may not be enough. Umbrella coverage adds an extra layer of protection at a relatively low cost per million of coverage.",
+      },
+      {
+        question: "Does homeowners insurance cover flood or earthquake?",
+        answer:
+          "Usually not. Flood typically requires a separate flood policy; earthquake is often a separate endorsement or policy. We review maps, deductibles, and rebuilding costs for your area.",
+      },
+      {
+        question: "How are valuable items scheduled?",
+        answer:
+          "You provide appraisals or documentation; carriers list items with agreed or stated values. This avoids low sub-limits that apply to unscheduled jewelry or collectibles.",
+      },
+      {
+        question: "Can umbrella coverage apply to rental properties?",
+        answer:
+          "Often yes, when underlying landlord or personal policies are listed correctly. We coordinate limits and named insureds so the umbrella responds as intended.",
+      },
+      {
+        question: "How do I get a quote for multiple lines?",
+        answer:
+          "We review your current policies, assets, and exposure, then bundle or layer coverage with carriers that fit your profile.",
+      },
+    ],
+    pageRoute: "/insurance/other",
   },
 ]
 

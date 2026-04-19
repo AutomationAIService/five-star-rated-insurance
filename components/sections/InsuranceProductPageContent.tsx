@@ -72,17 +72,20 @@ export function InsuranceProductPageContent({
             ))}
           </div>
 
-          <div className="mt-10 flex justify-center">
+          <div className="mt-10 flex flex-col items-center">
             <Button
               asChild
               size="lg"
-              className="bg-gold font-semibold text-navy hover:bg-gold/90"
+              className="w-full max-w-md bg-blue-900 font-semibold text-white hover:bg-blue-800 sm:w-auto sm:min-w-[280px]"
             >
-              <Link href="#quote">
+              <Link href="#quote" className="flex items-center justify-center">
                 Get Quote
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
+            <p className="mt-3 text-center text-sm text-gray-500">
+              Quoted by Protegrity Insurance Brokerage
+            </p>
           </div>
         </div>
       </section>
