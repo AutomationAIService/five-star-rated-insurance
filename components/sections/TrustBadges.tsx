@@ -1,47 +1,35 @@
 import Image from "next/image"
-import {
-  BadgeCheck,
-  Hourglass,
-  MessageCircle,
-  Network,
-  Star,
-  Users,
-  type LucideIcon,
-} from "lucide-react"
+import { Check, Star } from "lucide-react"
 import { cn } from "@/lib/utils"
 
-const TRUST_STATS: {
-  value: string
-  label: string
-  icon: LucideIcon
-  verified?: boolean
-}[] = [
-  { value: "5.0", label: "Rating", icon: Star, verified: true },
-  { value: "250+", label: "Reviews", icon: MessageCircle, verified: true },
-  { value: "1,000+", label: "Customers", icon: Users },
-  { value: "10+", label: "Years", icon: Hourglass },
-  { value: "30+", label: "Carriers", icon: Network },
+const GOLD_STAR = "#FFD700"
+
+const SCAN_ITEMS: string[] = [
+  "Access to 30+ insurance carriers",
+  "Licensed to serve in 40 states",
+  "Protection with integrity",
 ]
 
 const CARRIER_LOGOS: { src: string; alt: string; width: number; height: number }[] = [
   { src: "/images/carriers/progressive.svg", alt: "Progressive", width: 200, height: 32 },
-  { src: "/images/carriers/geico.svg", alt: "Geico", width: 120, height: 32 },
+  { src: "/images/carriers/geico.svg", alt: "GEICO", width: 120, height: 32 },
   { src: "/images/carriers/safeco.svg", alt: "Safeco", width: 150, height: 32 },
   { src: "/images/carriers/farmers.svg", alt: "Farmers", width: 170, height: 32 },
-  { src: "/images/carriers/national-general.svg", alt: "National General", width: 280, height: 36 },
 ]
 
-function StatParticles() {
+function GoldStarsRow({ className }: { className?: string }) {
   return (
     <div
-      className="pointer-events-none absolute -bottom-2 left-1/2 z-0 flex -translate-x-1/2 gap-1.5"
+      className={cn("flex items-center justify-center gap-0.5", className)}
       aria-hidden
     >
-      {[0, 1, 2, 3, 4].map((i) => (
-        <span
+      {Array.from({ length: 5 }).map((_, i) => (
+        <Star
           key={i}
-          className="size-1 rounded-full bg-sky-400/50 shadow-[0_0_10px_rgba(56,189,248,0.75)] blur-[0.5px]"
-          style={{ animationDelay: `${i * 120}ms` }}
+          className="size-7 shrink-0 md:size-8"
+          fill={GOLD_STAR}
+          stroke={GOLD_STAR}
+          strokeWidth={1}
         />
       ))}
     </div>
@@ -50,135 +38,110 @@ function StatParticles() {
 
 export function TrustBadges() {
   return (
-    <section className="py-12 md:py-16">
+    <section className="bg-background py-16 md:py-24" aria-labelledby="trust-section-heading">
       <div className="container mx-auto px-4">
-        <div
-          className={cn(
-            "relative overflow-hidden rounded-2xl border bg-white",
-            "border-sky-300/70 shadow-[0_22px_56px_-14px_rgba(10,42,94,0.22),0_0_0_1px_rgba(125,211,252,0.55),0_0_28px_rgba(125,211,252,0.28)]"
-          )}
-        >
-          {/* Geometric network texture */}
-          <div
-            className="pointer-events-none absolute inset-0 opacity-80"
-            style={{
-              backgroundImage: `
-                linear-gradient(135deg, rgba(10, 42, 94, 0.04) 0%, transparent 50%),
-                linear-gradient(rgba(56, 189, 248, 0.07) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(56, 189, 248, 0.07) 1px, transparent 1px),
-                radial-gradient(circle at 1px 1px, rgba(10, 42, 94, 0.06) 1px, transparent 0)
-              `,
-              backgroundSize: "100% 100%, 28px 28px, 28px 28px, 22px 22px",
-            }}
-            aria-hidden
-          />
-          <div
-            className="pointer-events-none absolute inset-0 opacity-[0.12]"
-            aria-hidden
+        <div className="mx-auto max-w-3xl text-center">
+          <h2
+            id="trust-section-heading"
+            className="font-heading text-3xl font-bold leading-tight tracking-tight text-foreground md:text-4xl lg:text-[2.5rem]"
           >
-            <svg className="h-full w-full" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-              <defs>
-                <pattern id="trust-mesh" width="48" height="48" patternUnits="userSpaceOnUse">
-                  <path
-                    d="M0 24h48M24 0v48M0 0l48 48M48 0L0 48"
-                    className="stroke-sky-400/90"
-                    strokeWidth="0.35"
-                  />
-                </pattern>
-              </defs>
-              <rect width="100%" height="100%" fill="url(#trust-mesh)" />
-            </svg>
-          </div>
+            Trust the 5 Star Experts at Protegrity
+          </h2>
+          <p className="mt-3 text-base text-muted-foreground md:text-lg">
+            Five Star Rated Insurance connects your quote request with Protegrity Insurance
+            Brokerage.
+          </p>
+        </div>
 
-          <div className="relative z-10 px-5 py-10 md:px-10 md:py-12">
+        <div className="mx-auto mt-10 flex max-w-5xl flex-col gap-10 lg:mt-12 lg:flex-row lg:items-start lg:justify-center lg:gap-12 lg:gap-14">
+          {/* Google style rating card */}
+          <div className="mx-auto w-full max-w-md shrink-0 lg:mx-0">
             <div
-              className="mx-auto mb-10 grid max-w-6xl grid-cols-2 gap-x-5 gap-y-10 sm:gap-x-8 md:mb-12 md:grid-cols-5 md:gap-6"
-              aria-label="Trust metrics"
+              className={cn(
+                "rounded-2xl border border-slate-200/90 bg-white p-6 shadow-md md:p-8",
+                "ring-1 ring-black/[0.04]",
+                "transition-shadow duration-200 hover:shadow-lg"
+              )}
             >
-              {TRUST_STATS.map((stat, index) => (
-                <div
-                  key={stat.label}
-                  className={cn(
-                    "flex flex-col items-center text-center",
-                    index === TRUST_STATS.length - 1 && "col-span-2 md:col-span-1"
-                  )}
+              <div className="flex flex-col items-center text-center">
+                <p
+                  className="font-heading text-6xl font-bold leading-none tracking-tight text-[#202124] md:text-7xl"
+                  aria-label="Rating 5.0 out of 5"
                 >
-                  <div
-                    className="mb-3 flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-b from-navy/8 to-navy/15 text-navy shadow-[inset_0_1px_0_rgba(255,255,255,0.6),0_4px_12px_rgba(10,42,94,0.12)] md:h-12 md:w-12"
-                    aria-hidden
-                  >
-                    <stat.icon className="size-6 md:size-7" strokeWidth={1.75} />
-                  </div>
-
-                  <div className="group/stat relative inline-flex min-h-[3.25rem] flex-col items-center justify-end">
-                    <div
-                      className={cn(
-                        "relative z-[1] rounded-2xl px-3 py-1.5 transition-[box-shadow] duration-300",
-                        "hover:[animation:trust-stat-ring_2.2s_ease-in-out_infinite]"
-                      )}
-                    >
-                      <StatParticles />
-                      <span
-                        className={cn(
-                          "relative z-[2] block font-heading text-4xl font-bold leading-none tracking-tight sm:text-5xl md:text-5xl lg:text-6xl",
-                          "bg-gradient-to-b from-[#5b8fd4] via-[#0A2A5E] to-[#0c2f6e] bg-clip-text text-transparent",
-                          "[-webkit-background-clip:text]",
-                          "drop-shadow-[0_2px_4px_rgba(10,42,94,0.25)]",
-                          "[filter:drop-shadow(0_1px_0_rgba(255,255,255,0.35))]"
-                        )}
-                      >
-                        {stat.value}
-                      </span>
-                    </div>
-                  </div>
-
-                  <div className="mt-4 flex max-w-[9rem] flex-col items-center gap-1.5 sm:max-w-none">
-                    <div className="flex flex-wrap items-center justify-center gap-x-1.5 gap-y-0.5">
-                      <span className="font-heading text-sm font-bold tracking-tight text-[#062454] md:text-base">
-                        {stat.label}
-                      </span>
-                      {stat.verified && (
-                        <span className="inline-flex items-center gap-0.5 rounded-full border border-sky-300/50 bg-sky-50/90 px-1.5 py-0.5 text-[9px] font-bold uppercase leading-none tracking-wide text-sky-700 shadow-[0_0_12px_rgba(56,189,248,0.35)]">
-                          <BadgeCheck
-                            className="size-3 shrink-0 text-sky-500"
-                            strokeWidth={2.5}
-                            aria-hidden
-                          />
-                          VERIFIED
-                        </span>
-                      )}
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            <div className="mx-auto max-w-5xl">
-              <div
-                className="rounded-xl border border-slate-200/90 bg-slate-50/50 px-4 py-7 shadow-inner md:px-8 md:py-8"
-                aria-label="Partner carriers"
-              >
-                <div className="flex flex-wrap items-center justify-center gap-x-7 gap-y-7 md:gap-x-10 lg:gap-x-12">
-                  {CARRIER_LOGOS.map((logo) => (
-                    <div
-                      key={logo.alt}
-                      className="group/logo flex shrink-0 items-center justify-center rounded-lg px-2 py-1 transition-all duration-200 ease-out hover:scale-105 hover:shadow-[0_0_0_1px_rgba(125,211,252,0.6),0_0_22px_rgba(56,189,248,0.35)]"
-                    >
-                      <Image
-                        src={logo.src}
-                        alt={logo.alt}
-                        width={logo.width}
-                        height={logo.height}
-                        className="h-7 w-auto max-w-[min(100%,11rem)] object-contain object-center md:h-9 lg:h-10"
-                        unoptimized
-                      />
-                    </div>
-                  ))}
-                </div>
+                  5.0
+                </p>
+                <GoldStarsRow className="mt-3" />
+                <p className="mt-4 max-w-[20rem] text-sm leading-snug text-[#5f6368] md:text-base">
+                  Based on 465+ authentic Google reviews
+                </p>
               </div>
             </div>
           </div>
+
+          {/* Scannable list */}
+          <div className="mx-auto w-full max-w-lg flex-1 lg:pt-1">
+            <ul className="space-y-4 text-left" role="list">
+              {SCAN_ITEMS.map((line) => (
+                <li key={line} className="flex gap-3">
+                  <span
+                    className="mt-0.5 flex size-6 shrink-0 items-center justify-center rounded-full bg-navy/10 text-navy"
+                    aria-hidden
+                  >
+                    <Check className="size-4 stroke-[2.5]" />
+                  </span>
+                  <span className="text-lg font-semibold leading-snug text-foreground md:text-xl">
+                    {line}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
+
+        <p className="mx-auto mt-10 max-w-3xl text-center text-xl font-semibold leading-relaxed text-foreground md:mt-12 md:text-2xl">
+          Compare auto home life and business insurance through one trusted partner.
+        </p>
+
+        <p className="mx-auto mt-10 max-w-3xl text-center text-xs text-muted-foreground sm:text-sm">
+          Carrier availability, quote options, and coverage eligibility vary by state, coverage
+          type, carrier, and individual circumstances.
+        </p>
+
+        <div className="mx-auto mt-12 max-w-5xl border-t border-border pt-12 lg:mt-14 lg:pt-14">
+          <h3 className="text-center font-heading text-xl font-bold text-foreground md:text-2xl">
+            Insurance Carriers Protegrity Works With
+          </h3>
+          <p className="mx-auto mt-3 max-w-2xl text-center text-muted-foreground">
+            Compare quote options from recognized insurance carriers through Protegrity Insurance
+            Brokerage.
+          </p>
+
+          <div
+            className="mt-8 rounded-xl border border-border bg-muted/30 px-4 py-8 md:px-8"
+            aria-label="Representative insurance carriers"
+          >
+            <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-8 md:gap-x-12">
+              {CARRIER_LOGOS.map((logo) => (
+                <div key={logo.alt} className="flex shrink-0 items-center justify-center">
+                  <Image
+                    src={logo.src}
+                    alt={logo.alt}
+                    width={logo.width}
+                    height={logo.height}
+                    className="h-7 w-auto max-w-[min(100%,11rem)] object-contain object-center md:h-9"
+                    unoptimized
+                  />
+                </div>
+              ))}
+              <span className="text-sm font-medium text-muted-foreground">And more</span>
+            </div>
+          </div>
+        </div>
+
+        <p className="mx-auto mt-10 max-w-4xl border-t border-border pt-8 text-center text-xs text-muted-foreground">
+          Carrier logos are shown for informational purposes only. Availability, pricing, and
+          coverage options vary by location, carrier, coverage type, and eligibility.
+        </p>
       </div>
     </section>
   )

@@ -2,19 +2,11 @@
 
 import { useState, useCallback, useRef, useEffect } from "react"
 import { MessageBubble } from "./MessageBubble"
-import { QuickReplies } from "./QuickReplies"
+import { QuickReplies, type InsuranceType } from "./QuickReplies"
 import { ChatInput } from "./ChatInput"
 import { ProgressBar } from "./ProgressBar"
 import { TCPAConsent } from "./TCPAConsent"
 import Image from "next/image"
-
-type InsuranceType =
-  | "Auto"
-  | "Home"
-  | "Life"
-  | "Commercial Auto"
-  | "Business"
-  | "Specialty"
 
 interface Message {
   id: string
@@ -63,13 +55,15 @@ const AVA_MESSAGES: Record<ConversationStep, string | ((data: LeadData) => strin
     `Thanks, ${data.name}! Your calendar should open in a new tab to book your free consultation.`,
 }
 
+/** Order matches QuickReplies layout. Commercial: commercial auto and other commercial lines. Specialty: Mexico travel, SR-22, DUI-related, niche risks. Other: catch-all. */
 const INSURANCE_OPTIONS: InsuranceType[] = [
   "Auto",
   "Home",
   "Life",
-  "Commercial Auto",
   "Business",
+  "Commercial",
   "Specialty",
+  "Other",
 ]
 
 function buildCalendlyUrl(data: LeadData): string {
@@ -286,7 +280,7 @@ export function QuoteAssistant() {
   const isComplete = currentStep === "complete"
 
   return (
-    <div className="flex flex-col w-full max-w-md bg-surface rounded-xl shadow-lg border border-border overflow-hidden">
+    <div className="flex flex-col w-full max-w-xl bg-surface rounded-xl shadow-lg border border-border overflow-hidden">
       {/* Header */}
       <div className="flex items-center gap-3 px-4 py-3 bg-navy text-primary-foreground">
         <Image
@@ -322,7 +316,7 @@ export function QuoteAssistant() {
       </div>
 
       {/* Input Area */}
-      <div className="p-4 border-t border-border bg-surface">
+      <div className="border-t border-border bg-surface p-4">
         {showQuickReplies && (
           <QuickReplies options={INSURANCE_OPTIONS} onSelect={handleInsuranceSelect} />
         )}

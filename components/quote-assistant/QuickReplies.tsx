@@ -1,49 +1,104 @@
 "use client"
 
+import type { ComponentType } from "react"
 import { Button } from "@/components/ui/button"
-import { Car, Home, Heart, Truck, Briefcase, Motorbike } from "lucide-react"
+import {
+  Briefcase,
+  Car,
+  Heart,
+  House,
+  MoreHorizontal,
+  Motorbike,
+  Truck,
+} from "lucide-react"
+import { cn } from "@/lib/utils"
 
-type InsuranceType =
+export type InsuranceType =
   | "Auto"
   | "Home"
   | "Life"
-  | "Commercial Auto"
   | "Business"
+  | "Commercial"
   | "Specialty"
+  | "Other"
+
+const ICON_MAP: Record<InsuranceType, ComponentType<{ className?: string }>> = {
+  Auto: Car,
+  Home: House,
+  Life: Heart,
+  Business: Briefcase,
+  Commercial: Truck,
+  Specialty: Motorbike,
+  Other: MoreHorizontal,
+}
 
 interface QuickRepliesProps {
   options: InsuranceType[]
   onSelect: (option: InsuranceType) => void
 }
 
-const ICONS: Record<InsuranceType, React.ReactNode> = {
-  Auto: <Car className="w-4 h-4" />,
-  Home: <Home className="w-4 h-4" />,
-  Life: <Heart className="w-4 h-4" />,
-  "Commercial Auto": <Truck className="w-4 h-4" />,
-  Business: <Briefcase className="w-4 h-4" />,
-  Specialty: <Motorbike className="w-4 h-4" />,
+function OptionButton({
+  option,
+  onSelect,
+  className,
+}: {
+  option: InsuranceType
+  onSelect: (option: InsuranceType) => void
+  className?: string
+}) {
+  const Icon = ICON_MAP[option]
+  return (
+    <Button
+      type="button"
+      variant="outline"
+      onClick={() => onSelect(option)}
+      className={cn(
+        "group h-auto min-h-[4.5rem] w-full flex-col gap-2.5 rounded-xl border-2 border-navy/20 bg-white px-4 py-4 text-navy shadow-sm",
+        "transition-all duration-200 ease-out",
+        "hover:-translate-y-0.5 hover:border-gold hover:bg-gradient-to-b hover:from-white hover:to-navy/[0.04] hover:shadow-md",
+        "focus-visible:border-gold focus-visible:ring-2 focus-visible:ring-gold/60 focus-visible:ring-offset-2",
+        "active:translate-y-0 active:scale-[0.99]",
+        className
+      )}
+    >
+      <Icon
+        className="size-5 shrink-0 text-navy transition-colors group-hover:text-gold"
+        strokeWidth={2}
+        aria-hidden
+      />
+      <span className="text-center font-heading text-sm font-semibold leading-tight tracking-tight">
+        {option}
+      </span>
+    </Button>
+  )
 }
 
 export function QuickReplies({ options, onSelect }: QuickRepliesProps) {
+  const firstRow = options.slice(0, 4)
+  const secondRow = options.slice(4)
+
   return (
-    <div
-      className="flex flex-wrap gap-2"
-      role="group"
-      aria-label="Insurance type options"
-    >
-      {options.map((option) => (
-        <Button
-          key={option}
-          variant="outline"
-          size="sm"
-          onClick={() => onSelect(option)}
-          className="flex items-center gap-2 rounded-full border-navy text-navy hover:bg-navy hover:text-primary-foreground transition-colors"
-        >
-          {ICONS[option]}
-          <span>{option}</span>
-        </Button>
-      ))}
+    <div className="space-y-3" role="group" aria-label="Insurance type options">
+      <div className="grid grid-cols-2 gap-3 sm:gap-3.5 lg:grid-cols-4 lg:gap-4">
+        {firstRow.map((option) => (
+          <OptionButton key={option} option={option} onSelect={onSelect} />
+        ))}
+      </div>
+
+      <div className="grid grid-cols-2 gap-3 sm:gap-3.5 lg:grid-cols-3 lg:gap-4">
+        {secondRow.map((option, index) => (
+          <OptionButton
+            key={option}
+            option={option}
+            onSelect={onSelect}
+            className={cn(
+              secondRow.length === 3 &&
+                index === 2 &&
+                "col-span-2 w-[calc(50%-0.375rem)] justify-self-center sm:w-[calc(50%-0.375rem)] lg:col-span-1 lg:w-full lg:justify-self-stretch"
+            )}
+          />
+        ))}
+      </div>
     </div>
   )
 }

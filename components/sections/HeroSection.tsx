@@ -32,20 +32,19 @@ export function HeroSection() {
         <div className="mx-auto mb-8 max-w-3xl text-center md:mb-10">
           <p className="mb-4 text-balance text-[11px] font-semibold leading-snug text-gold sm:text-xs md:text-sm">
             <span className="uppercase tracking-[0.06em]">
-              Authorized marketing partner of Protegrity 5.0⭐⭐⭐⭐⭐ (460+){" "}
+              Authorized marketing partner of Protegrity Insurance Brokerage
             </span>
-            <span className="font-semibold tracking-tight">Insurance Broker</span>
           </p>
           <h1 className="mb-4 text-balance font-heading text-2xl font-bold leading-tight text-primary-foreground md:text-3xl lg:text-4xl">
-            Connect With Competitive Insurance Rates Faster In Phoenix.
+            Compare Insurance Quotes in Phoenix, AZ
           </h1>
           <p className="mx-auto max-w-2xl text-base font-medium leading-relaxed text-primary-foreground/90 md:text-lg">
-            Stop wasting time on slow outdated forms on generic websites. Chat with Ava below to skip the line and book your appointment with the five star experts at Protegrity in seconds.
+            Chat with Ava to start your quote and book with Protegrity.
           </p>
         </div>
 
         {/* CTA handoff: label sits directly above chat for instant next step */}
-        <div className="mx-auto w-full max-w-md">
+        <div className="mx-auto w-full max-w-xl">
           <p
             id="hero-chat-cta"
             className="mb-3 text-center font-heading text-base font-semibold tracking-tight text-primary-foreground md:text-lg"
@@ -53,7 +52,7 @@ export function HeroSection() {
             Select Your Insurance Type Below
           </p>
           <div className="flex justify-center" aria-labelledby="hero-chat-cta">
-            <div className="w-full max-w-md">
+            <div className="w-full max-w-xl">
               <QuoteAssistant />
             </div>
           </div>
