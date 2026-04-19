@@ -28,31 +28,29 @@ export function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="bg-navy text-primary-foreground">
+    <footer className="overflow-x-hidden bg-[#FFFFFF] text-navy">
       <div className="container mx-auto px-4 py-12 md:py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-4 lg:gap-12">
           {/* Brand Column */}
           <div className="space-y-4">
             <Link href="/" className="inline-block">
-              <div className="bg-[#F8FAFC] rounded-xl p-3 md:p-4 inline-block">
-                <Image
-                  src="/images/logo-footer.png"
-                  alt="Five Star Rated Insurance"
-                  width={180}
-                  height={140}
-                  className="w-[150px] md:w-[180px] h-auto object-contain"
-                />
-              </div>
+              <Image
+                src="/images/5%20Star%20Logo%20-%20Header_Footer.png"
+                alt="Five Star Rated Insurance"
+                width={156}
+                height={94}
+                className="h-auto w-[156px] object-contain"
+              />
             </Link>
-            <p className="text-sm text-primary-foreground/70 leading-relaxed">
+            <p className="text-sm leading-relaxed text-navy">
               {"{{COMPANY_TAGLINE_PLACEHOLDER}}"}
             </p>
-            <div className="space-y-2 text-sm text-primary-foreground/70">
-              <a href="tel:{{PHONE_NUMBER}}" className="flex items-center gap-2 hover:text-primary-foreground transition-colors">
+            <div className="space-y-2 text-sm text-navy">
+              <a href="tel:{{PHONE_NUMBER}}" className="flex items-center gap-2 text-navy transition-colors hover:text-navy/80">
                 <Phone className="w-4 h-4" />
                 <span>{"{{PHONE_NUMBER}}"}</span>
               </a>
-              <a href="mailto:support@fivestarratedinsurance.com" className="flex items-center gap-2 hover:text-primary-foreground transition-colors">
+              <a href="mailto:support@fivestarratedinsurance.com" className="flex items-center gap-2 text-navy transition-colors hover:text-navy/80">
                 <Mail className="w-4 h-4" />
                 <span>support@fivestarratedinsurance.com</span>
               </a>
@@ -63,63 +61,80 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Insurance Links */}
-          <div>
-            <h4 className="font-heading font-semibold text-base mb-4">Insurance Products</h4>
-            <ul className="space-y-2">
-              {INSURANCE_LINKS.map((link) => (
-                <li key={link.label}>
-                  <Link
-                    href={link.href}
-                    className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+          {/* Insurance / Company / Legal — full-bleed navy; content stays in container */}
+          <div className="min-w-0 lg:col-span-3">
+            <div className="w-screen bg-navy py-6 text-white ml-[calc(50%-50vw)]">
+              <div className="container mx-auto px-4">
+                <div className="grid grid-cols-1 gap-8 md:grid-cols-3 md:gap-8 lg:gap-12">
+                  {/* Insurance Links */}
+                  <div>
+                    <h4 className="mb-4 font-heading text-base font-semibold text-white">
+                      Insurance Products
+                    </h4>
+                    <ul className="space-y-2">
+                      {INSURANCE_LINKS.map((link) => (
+                        <li key={link.label}>
+                          <Link
+                            href={link.href}
+                            className="text-sm text-white transition-colors hover:text-white/80"
+                          >
+                            {link.label}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
 
-          {/* Company Links */}
-          <div>
-            <h4 className="font-heading font-semibold text-base mb-4">Company</h4>
-            <ul className="space-y-2">
-              {COMPANY_LINKS.map((link) => (
-                <li key={link.label}>
-                  <Link
-                    href={link.href}
-                    className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+                  {/* Company Links */}
+                  <div>
+                    <h4 className="mb-4 font-heading text-base font-semibold text-white">
+                      Company
+                    </h4>
+                    <ul className="space-y-2">
+                      {COMPANY_LINKS.map((link) => (
+                        <li key={link.label}>
+                          <Link
+                            href={link.href}
+                            className="text-sm text-white transition-colors hover:text-white/80"
+                          >
+                            {link.label}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
 
-          {/* Legal Links */}
-          <div>
-            <h4 className="font-heading font-semibold text-base mb-4">Legal</h4>
-            <ul className="space-y-2">
-              {LEGAL_LINKS.map((link) => (
-                <li key={link.label}>
-                  <Link
-                    href={link.href}
-                    className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+                  {/* Legal Links */}
+                  <div>
+                    <h4 className="mb-4 font-heading text-base font-semibold text-white">
+                      Legal
+                    </h4>
+                    <ul className="space-y-2">
+                      {LEGAL_LINKS.map((link) => (
+                        <li key={link.label}>
+                          <Link
+                            href={link.href}
+                            className="text-sm text-white transition-colors hover:text-white/80"
+                          >
+                            {link.label}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-12 pt-8 border-t border-primary-foreground/10">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-primary-foreground/60">
+        <div className="mt-12 border-t border-navy/10 pt-8">
+          <div className="flex flex-col items-center justify-between gap-4 text-sm text-navy md:flex-row">
             <p>&copy; {currentYear} Five Star Rated Insurance. All rights reserved.</p>
-            <p>{"{{LICENSING_DISCLAIMER_PLACEHOLDER}}"}</p>
+            <p>
+              Five Star Rated Insurance is an authorized marketing partner of Protegrity Insurance Brokerage. Insurance products are offered through Protegrity Insurance Brokerage. Not available in all states. Coverage and availability vary by state, carrier, and individual circumstances.
+            </p>
           </div>
         </div>
       </div>

@@ -15,26 +15,7 @@ export function HeroSection() {
       </div>
 
       <div className="container relative mx-auto px-4 py-12 md:py-16 lg:py-20">
-        {/* Hero Logo */}
-        <div className="mb-8 flex justify-center md:mb-10">
-          <div className="w-fit max-w-full rounded-lg bg-[#F8FAFC] p-2 shadow-md md:p-2.5 lg:p-3">
-            <Image
-              src="/images/logo-hero.png"
-              alt="Five Star Rated Insurance"
-              width={500}
-              height={385}
-              className="block h-auto w-[220px] object-contain md:w-[300px] lg:w-[400px]"
-              priority
-            />
-          </div>
-        </div>
-
         <div className="mx-auto mb-8 max-w-3xl text-center md:mb-10">
-          <p className="mb-4 text-balance text-[11px] font-semibold leading-snug text-gold sm:text-xs md:text-sm">
-            <span className="uppercase tracking-[0.06em]">
-              Authorized marketing partner of Protegrity Insurance Brokerage
-            </span>
-          </p>
           <h1 className="mb-4 text-balance font-heading text-2xl font-bold leading-tight text-primary-foreground md:text-3xl lg:text-4xl">
             Compare Insurance Quotes in Phoenix, AZ
           </h1>
@@ -43,7 +24,22 @@ export function HeroSection() {
           </p>
         </div>
 
-        {/* CTA handoff: label sits directly above chat for instant next step */}
+        <div className="mx-auto mb-8 flex w-fit max-w-full flex-col items-center gap-4 rounded-xl bg-[#FFFFFF] px-6 py-5 md:mb-10 md:gap-5 md:px-8 md:py-6">
+          <Image
+            src="/images/5%20Star%20Logo%20-%20Hero.png"
+            alt="Five Star Rated Insurance"
+            width={234}
+            height={140}
+            className="h-auto w-[234px] object-contain"
+            priority
+          />
+          <p className="max-w-[min(100%,22rem)] text-center text-balance text-[11px] font-semibold leading-snug text-navy sm:text-xs md:max-w-none md:text-sm">
+            <span className="uppercase tracking-[0.06em]">
+              AUTHORIZED MARKETING PARTNER OF PROTEGRITY INSURANCE BROKERAGE
+            </span>
+          </p>
+        </div>
+
         <div className="mx-auto w-full max-w-xl">
           <p
             id="hero-chat-cta"

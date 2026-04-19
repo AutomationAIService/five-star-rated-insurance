@@ -21,13 +21,13 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full bg-white text-navy border-b border-border shadow-sm">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between gap-3 h-18 md:h-22">
-          <Link href="/" className="flex items-center shrink-0 min-w-0">
+          <Link href="/" className="flex shrink-0 min-w-0 items-center">
             <Image
-              src="/images/logo-header.png"
+              src="/images/5%20Star%20Logo%20-%20Header_Footer.png"
               alt="Five Star Rated Insurance"
-              width={145}
-              height={87}
-              className="w-[110px] md:w-[145px] h-auto object-contain"
+              width={156}
+              height={94}
+              className="h-auto w-[156px] object-contain"
               priority
             />
           </Link>
