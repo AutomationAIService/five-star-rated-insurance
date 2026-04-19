@@ -1,12 +1,5 @@
 import Image from "next/image"
 import { QuoteAssistant } from "@/components/quote-assistant"
-import { CheckCircle } from "lucide-react"
-
-const HERO_BENEFITS = [
-  "Quotes from 30+ top-rated companies",
-  "Fast, friendly service via phone, text, or email",
-  "Proactive alerts before your rates increase",
-]
 
 export function HeroSection() {
   return (
@@ -21,48 +14,48 @@ export function HeroSection() {
         }} />
       </div>
 
-      <div className="container mx-auto px-4 py-12 md:py-16 lg:py-20 relative">
-        {/* Hero Logo - Main Focal Point */}
-        <div className="flex justify-center mb-8 md:mb-10">
-          <div className="bg-[#F8FAFC] rounded-lg shadow-md p-2 md:p-2.5 lg:p-3 w-fit max-w-full">
+      <div className="container relative mx-auto px-4 py-12 md:py-16 lg:py-20">
+        {/* Hero Logo */}
+        <div className="mb-8 flex justify-center md:mb-10">
+          <div className="w-fit max-w-full rounded-lg bg-[#F8FAFC] p-2 shadow-md md:p-2.5 lg:p-3">
             <Image
               src="/images/logo-hero.png"
               alt="Five Star Rated Insurance"
               width={500}
               height={385}
-              className="block w-[220px] md:w-[300px] lg:w-[400px] h-auto object-contain"
+              className="block h-auto w-[220px] object-contain md:w-[300px] lg:w-[400px]"
               priority
             />
           </div>
         </div>
 
-        {/* Headline and Subheadline - Below Logo */}
-        <div className="text-center mb-10 md:mb-12">
-          <h1 className="font-heading font-bold text-2xl md:text-3xl lg:text-4xl text-balance">
-            The Insurance Watchdog: We Kill Rate Hikes Before You Overpay
-          </h1>
-          <p className="text-lg md:text-xl text-primary-foreground/80 mb-6 max-w-2xl mx-auto leading-relaxed">
-            Stop letting greedy carriers quietly reach into your wallet. We shop multiple reputable companies to find you the best price.
+        <div className="mx-auto mb-8 max-w-3xl text-center md:mb-10">
+          <p className="mb-4 text-balance text-[11px] font-semibold leading-snug text-gold sm:text-xs md:text-sm">
+            <span className="uppercase tracking-[0.06em]">
+              Authorized marketing partner of Protegrity 5.0⭐⭐⭐⭐⭐ (460+){" "}
+            </span>
+            <span className="font-semibold tracking-tight">Insurance Broker</span>
           </p>
-
-          <ul className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 mb-6">
-            {HERO_BENEFITS.map((benefit, index) => (
-              <li key={index} className="flex items-center gap-2">
-                <CheckCircle className="w-5 h-5 text-gold flex-shrink-0" />
-                <span className="text-primary-foreground/90 text-sm md:text-base">{benefit}</span>
-              </li>
-            ))}
-          </ul>
-
-          <p className="font-sans font-bold text-base md:text-lg text-primary-foreground text-center max-w-2xl mx-auto leading-snug">
-            Superior Service. Honest Quotes. Proven Results.
+          <h1 className="mb-4 text-balance font-heading text-2xl font-bold leading-tight text-primary-foreground md:text-3xl lg:text-4xl">
+            Connect With Competitive Insurance Rates Faster In Phoenix.
+          </h1>
+          <p className="mx-auto max-w-2xl text-base font-medium leading-relaxed text-primary-foreground/90 md:text-lg">
+            Stop wasting time on slow outdated forms on generic websites. Chat with Ava below to skip the line and book your appointment with the five star experts at Protegrity in seconds.
           </p>
         </div>
 
-        {/* Quote Assistant - Below Hero Content */}
-        <div className="flex justify-center">
-          <div className="w-full max-w-md">
-            <QuoteAssistant />
+        {/* CTA handoff: label sits directly above chat for instant next step */}
+        <div className="mx-auto w-full max-w-md">
+          <p
+            id="hero-chat-cta"
+            className="mb-3 text-center font-heading text-base font-semibold tracking-tight text-primary-foreground md:text-lg"
+          >
+            Select Your Insurance Type Below
+          </p>
+          <div className="flex justify-center" aria-labelledby="hero-chat-cta">
+            <div className="w-full max-w-md">
+              <QuoteAssistant />
+            </div>
           </div>
         </div>
       </div>

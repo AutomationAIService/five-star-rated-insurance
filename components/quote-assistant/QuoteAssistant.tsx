@@ -291,16 +291,18 @@ export function QuoteAssistant() {
       <div className="flex items-center gap-3 px-4 py-3 bg-navy text-primary-foreground">
         <Image
           src="/images/shield-icon.png"
-          alt="Ava - Quote Assistant"
+          alt="Ava, Quote Assistant"
           width={44}
           height={44}
           className="w-[44px] h-[44px] object-contain flex-shrink-0"
         />
-        <div className="flex-1">
-          <h3 className="font-heading font-semibold text-base">Ava - Quote Assistant</h3>
-          <div className="flex items-center gap-1 text-xs text-primary-foreground/80">
-            <span>Watchdog With Integrity</span>
-          </div>
+        <div className="flex-1 min-w-0">
+          <h3 className="font-heading text-base font-semibold leading-tight">
+            Ava, Quote Assistant
+          </h3>
+          <p className="mt-0.5 text-xs leading-snug text-primary-foreground/85">
+            Protection With Integrity
+          </p>
         </div>
       </div>
 
