@@ -43,25 +43,39 @@ export function Footer() {
               />
             </Link>
             <p className="text-sm leading-relaxed text-navy">
-              {"{{COMPANY_TAGLINE_PLACEHOLDER}}"}
+              Connecting You to Protection With Integrity.
             </p>
-            <div className="space-y-2 text-sm text-navy">
-              <a href="tel:{{PHONE_NUMBER}}" className="flex items-center gap-2 text-navy transition-colors hover:text-navy/80">
-                <Phone className="w-4 h-4" />
-                <span>{"{{PHONE_NUMBER}}"}</span>
+            <div className="space-y-3 text-sm leading-relaxed text-navy">
+              <a href="tel:{{PHONE_NUMBER}}" className="flex items-start gap-2 text-navy transition-colors hover:text-navy/80">
+                <Phone className="mt-0.5 h-4 w-4 shrink-0" />
+                <span>
+                  <span className="font-medium">Phone: </span>
+                  {"{{PHONE_NUMBER}}"}
+                </span>
               </a>
-              <a href="mailto:support@fivestarratedinsurance.com" className="flex items-center gap-2 text-navy transition-colors hover:text-navy/80">
-                <Mail className="w-4 h-4" />
-                <span>support@fivestarratedinsurance.com</span>
+              <a href="mailto:support@fivestarratedinsurance.com" className="flex items-start gap-2 text-navy transition-colors hover:text-navy/80">
+                <Mail className="mt-0.5 h-4 w-4 shrink-0" />
+                <span>
+                  <span className="font-medium">Email: </span>
+                  support@fivestarratedinsurance.com
+                </span>
               </a>
-              <div className="flex items-center gap-2">
-                <MapPin className="w-4 h-4" />
-                <span>2680 S Val Vista Dr Bldg 15 Ste 185, Gilbert, AZ 85295</span>
+              <div className="flex items-start gap-2">
+                <MapPin className="mt-0.5 h-4 w-4 shrink-0" />
+                <span>
+                  Partner Office: 2680 S Val Vista Dr Bldg 15 Ste 185, Gilbert, AZ 85295
+                </span>
               </div>
             </div>
+            <p className="mt-6 border-t border-navy/10 pt-6 text-sm leading-relaxed text-navy">
+              Five Star Rated Insurance is an authorized marketing partner of Protegrity Insurance
+              Brokerage. Insurance products are offered through Protegrity Insurance Brokerage. Not
+              available in all states. Coverage and availability vary by state, carrier, and individual
+              circumstances.
+            </p>
           </div>
 
-          {/* Insurance / Company / Legal — full-bleed navy; content stays in container */}
+          {/* Insurance, Company, Legal: full bleed navy; content stays in container */}
           <div className="min-w-0 lg:col-span-3">
             <div className="w-screen bg-navy py-6 text-white ml-[calc(50%-50vw)]">
               <div className="container mx-auto px-4">
@@ -130,12 +144,9 @@ export function Footer() {
 
         {/* Bottom Bar */}
         <div className="mt-12 border-t border-navy/10 pt-8">
-          <div className="flex flex-col items-center justify-between gap-4 text-sm text-navy md:flex-row">
-            <p>&copy; {currentYear} Five Star Rated Insurance. All rights reserved.</p>
-            <p>
-              Five Star Rated Insurance is an authorized marketing partner of Protegrity Insurance Brokerage. Insurance products are offered through Protegrity Insurance Brokerage. Not available in all states. Coverage and availability vary by state, carrier, and individual circumstances.
-            </p>
-          </div>
+          <p className="text-center text-sm text-navy">
+            &copy; {currentYear} Five Star Rated Insurance. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>
