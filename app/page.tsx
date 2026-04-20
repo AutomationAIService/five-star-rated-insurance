@@ -1,4 +1,4 @@
-import { Header, Footer } from "@/components/layout"
+import { Header, Footer, ScrollToTopOnMount } from "@/components/layout"
 import { 
   HeroSection, 
   TrustBadges, 
@@ -10,6 +10,7 @@ import {
 export default function HomePage() {
   return (
     <div className="flex flex-col min-h-screen">
+      <ScrollToTopOnMount />
       <Header />
       <main className="flex-1">
         <HeroSection />
