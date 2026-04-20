@@ -49,7 +49,7 @@ export default function AboutPage() {
               type="button"
               tabIndex={-1}
               size="lg"
-              className="w-full max-w-md cursor-default bg-brand-navy font-semibold text-white hover:bg-brand-navy/90 pointer-events-none sm:w-auto sm:min-w-[280px]"
+              className="w-full max-w-md cursor-default bg-yellow-400 font-bold text-blue-900 hover:bg-yellow-500 pointer-events-none sm:w-auto sm:min-w-[280px]"
             >
               <span className="flex items-center justify-center">
                 Get Quote

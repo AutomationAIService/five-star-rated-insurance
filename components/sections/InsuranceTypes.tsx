@@ -10,6 +10,7 @@ import {
   ArrowRight,
   type LucideIcon,
 } from "lucide-react"
+import { BrandNavyStarOverlay } from "@/components/brand/BrandNavyStarOverlay"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
@@ -89,9 +90,6 @@ const INSURANCE_TYPES: InsuranceTypeCard[] = [
   },
 ]
 
-const titleClassName =
-  "mb-4 text-balance font-heading text-2xl font-bold text-foreground md:text-3xl lg:text-4xl"
-
 type InsuranceTypesProps = {
   /** Use `h1` on the dedicated `/insurance` listing page; default `h2` on the homepage. */
   headingLevel?: "h1" | "h2"
@@ -101,25 +99,29 @@ export function InsuranceTypes({ headingLevel = "h2" }: InsuranceTypesProps) {
   const HeadingTag = headingLevel
 
   return (
-    <section id="insurance-types" className="bg-background py-16 md:py-24">
-      <div className="container mx-auto px-4">
-        <div className="mb-12 text-center">
-          <HeadingTag className={titleClassName}>
+    <section id="insurance-types">
+      <div className="bg-white px-4 py-8 md:px-6 md:py-12">
+        <div className="mx-auto max-w-4xl text-center text-blue-900">
+          <HeadingTag className="mb-4 text-balance font-heading text-3xl font-bold md:text-4xl">
             Insurance Coverage for What You Drive, Own, and Protect
           </HeadingTag>
-          <p className="text-xl font-medium text-foreground md:text-2xl">
+          <p className="mb-2 text-xl font-semibold">
             Powered by Protegrity Insurance Brokerage
           </p>
-          <p className="mt-2 text-base text-muted-foreground md:text-lg">
+          <p className="mb-6 text-base text-blue-900/80 md:text-lg">
             Licensed insurance broker with 465+ five-star reviews
           </p>
-          <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground">
+          <p className="mx-auto max-w-2xl text-lg text-blue-900/90">
             Compare coverage options for everyday insurance needs, business protection, and specialty
             vehicles in one simple quote request.
           </p>
         </div>
+      </div>
 
-        <div className="grid grid-cols-1 items-stretch gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <div className="relative overflow-hidden bg-gradient-to-br from-brand-navy via-brand-navy to-brand-navy/95 px-4 py-12 md:px-6 md:py-16">
+        <BrandNavyStarOverlay />
+
+        <div className="relative mx-auto grid max-w-4xl grid-cols-1 items-stretch gap-6 md:grid-cols-2 lg:grid-cols-3">
           {INSURANCE_TYPES.map((insurance) => {
             const hasDescription = Boolean(insurance.description?.trim())
             return (
@@ -183,8 +185,8 @@ export function InsuranceTypes({ headingLevel = "h2" }: InsuranceTypesProps) {
                       className={cn(
                         "w-full cursor-default font-semibold shadow-none pointer-events-none",
                         "border-0 border-transparent",
-                        "bg-brand-navy text-white",
-                        "hover:bg-blue-800 hover:text-white",
+                        "bg-yellow-400 text-blue-900",
+                        "hover:bg-yellow-500 hover:text-blue-900",
                         "transition-[background-color,color] duration-200 ease-out",
                         "focus-visible:border-0 focus-visible:ring-2 focus-visible:ring-blue-900 focus-visible:ring-offset-2 focus-visible:ring-offset-background",
                         "[&_svg]:text-current"

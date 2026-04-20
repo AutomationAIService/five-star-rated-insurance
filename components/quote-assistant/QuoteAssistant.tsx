@@ -302,10 +302,10 @@ export function QuoteAssistant() {
         />
         <div className="relative z-[1] min-w-0 flex-1">
           <h3 className="font-heading text-base font-semibold leading-tight">
-            Ava, Quote Assistant
+            Ava - Quote Assistant
           </h3>
           <p className="mt-0.5 text-xs leading-snug text-primary-foreground/85">
-            Protection With Integrity
+            Connecting You To Protection With Integrity
           </p>
         </div>
       </div>
