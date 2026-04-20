@@ -12,7 +12,7 @@ const INSURANCE_LINKS = [
   { label: "Other Insurance" },
 ]
 
-const COMPANY_LINKS = [{ label: "About Us" }, { label: "Contact" }, { label: "Blog" }]
+const COMPANY_LINKS = [{ label: "About Us" }, { label: "Blog" }, { label: "Contact" }]
 
 const LEGAL_LINKS = [
   { label: "Privacy Policy" },
@@ -25,9 +25,9 @@ export function Footer() {
 
   return (
     <footer className="overflow-x-hidden bg-[#FFFFFF] text-navy">
-      <div className="container mx-auto px-4 py-12 md:py-16">
-        <div className="grid grid-cols-1 gap-8 lg:grid-cols-4 lg:gap-12">
-          {/* Brand Column */}
+      <div className="mx-auto max-w-7xl px-4 py-8 md:px-6 md:py-12">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-8 lg:grid-cols-4 lg:gap-12">
+          {/* Column 1 — Company Info */}
           <div className="space-y-4">
             <span className="inline-block">
               <Image
@@ -46,7 +46,7 @@ export function Footer() {
                 <Phone className="mt-0.5 h-4 w-4 shrink-0" />
                 <span>
                   <span className="font-medium">Phone: </span>
-                  {"{{PHONE_NUMBER}}"}
+                  (480)xxx-xxxx
                 </span>
               </span>
               <span className="flex items-start gap-2 text-navy">
@@ -59,73 +59,57 @@ export function Footer() {
               <div className="flex items-start gap-2">
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0" />
                 <span>
-                  Partner Office: 2680 S Val Vista Dr Bldg 15 Ste 185, Gilbert, AZ 85295
+                  Protegrity Office: 2680 S Val Vista Dr Bldg 15 Ste 185, Gilbert, AZ 85295
                 </span>
               </div>
             </div>
-            <p className="mt-6 border-t border-navy/10 pt-6 text-sm leading-relaxed text-navy">
+          </div>
+
+          {/* Column 2 — Insurance Products */}
+          <div className="bg-navy p-6 text-white">
+            <h4 className="mb-4 font-heading text-base font-semibold text-white">
+              Insurance Products
+            </h4>
+            <ul className="space-y-2">
+              {INSURANCE_LINKS.map((link) => (
+                <li key={link.label}>
+                  <span className="text-sm text-white">{link.label}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Column 3 — Company */}
+          <div className="bg-navy p-6 text-white">
+            <h4 className="mb-4 font-heading text-base font-semibold text-white">Company</h4>
+            <ul className="space-y-2">
+              {COMPANY_LINKS.map((link) => (
+                <li key={link.label}>
+                  <span className="text-sm text-white">{link.label}</span>
+                </li>
+              ))}
+              {LEGAL_LINKS.map((link) => (
+                <li key={link.label}>
+                  <span className="text-sm text-white">{link.label}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Column 4 — Partnership */}
+          <div className="bg-navy p-6 text-white">
+            <h4 className="mb-4 font-heading text-base font-semibold text-white">Partnership</h4>
+            <p className="text-sm leading-relaxed text-white">
               Five Star Rated Insurance is an authorized marketing partner of Protegrity Insurance
               Brokerage. Insurance products are offered through Protegrity Insurance Brokerage. Not
               available in all states. Coverage and availability vary by state, carrier, and individual
               circumstances.
             </p>
           </div>
-
-          {/* Insurance, Company, Legal: full bleed navy; content stays in container */}
-          <div className="min-w-0 lg:col-span-3">
-            <div className="w-screen bg-navy py-6 text-white ml-[calc(50%-50vw)]">
-              <div className="container mx-auto px-4">
-                <div className="grid grid-cols-1 gap-8 md:grid-cols-3 md:gap-8 lg:gap-12">
-                  {/* Insurance Links */}
-                  <div>
-                    <h4 className="mb-4 font-heading text-base font-semibold text-white">
-                      Insurance Products
-                    </h4>
-                    <ul className="space-y-2">
-                      {INSURANCE_LINKS.map((link) => (
-                        <li key={link.label}>
-                          <span className="text-sm text-white">{link.label}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  {/* Company Links */}
-                  <div>
-                    <h4 className="mb-4 font-heading text-base font-semibold text-white">
-                      Company
-                    </h4>
-                    <ul className="space-y-2">
-                      {COMPANY_LINKS.map((link) => (
-                        <li key={link.label}>
-                          <span className="text-sm text-white">{link.label}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  {/* Legal Links */}
-                  <div>
-                    <h4 className="mb-4 font-heading text-base font-semibold text-white">
-                      Legal
-                    </h4>
-                    <ul className="space-y-2">
-                      {LEGAL_LINKS.map((link) => (
-                        <li key={link.label}>
-                          <span className="text-sm text-white">{link.label}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
 
-        {/* Bottom Bar */}
-        <div className="mt-12 border-t border-navy/10 pt-8">
-          <p className="text-center text-sm text-navy">
+        <div className="mt-8 border-t border-navy/10 pt-6 text-center text-sm text-navy md:mt-12 md:text-left">
+          <p>
             &copy; {currentYear} Five Star Rated Insurance. All rights reserved.
           </p>
         </div>

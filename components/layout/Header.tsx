@@ -1,18 +1,17 @@
 "use client"
 
 import Image from "next/image"
-import { Menu, Phone } from "lucide-react"
-import { useState } from "react"
+import Link from "next/link"
+import { ChevronDown, Menu, Phone } from "lucide-react"
+import { useCallback, useRef, useState } from "react"
 import { Button } from "@/components/ui/button"
 import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-  navigationMenuTriggerStyle,
-} from "@/components/ui/navigation-menu"
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
+import { navigationMenuTriggerStyle } from "@/components/ui/navigation-menu"
 import {
   Sheet,
   SheetContent,
@@ -23,8 +22,81 @@ import {
 import { insuranceProducts } from "@/src/data/insuranceProducts"
 import { cn } from "@/lib/utils"
 
+/** Seven product routes for desktop nav (excludes Mexico Travel, which stays on mobile menu only). */
+const DESKTOP_PRODUCT_LINKS = insuranceProducts.filter((p) => p.id !== "mexico-travel")
+
+const HOVER_CLOSE_MS = 220
+
 const callButtonClass =
   "shrink-0 bg-gold px-4 py-2 text-sm font-semibold text-navy hover:bg-gold/90 h-auto min-h-0 rounded-md"
+
+function ProductsDropdown() {
+  const [open, setOpen] = useState(false)
+  const closeTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
+
+  const clearCloseTimer = useCallback(() => {
+    if (closeTimerRef.current) {
+      clearTimeout(closeTimerRef.current)
+      closeTimerRef.current = null
+    }
+  }, [])
+
+  const scheduleClose = useCallback(() => {
+    clearCloseTimer()
+    closeTimerRef.current = setTimeout(() => setOpen(false), HOVER_CLOSE_MS)
+  }, [clearCloseTimer])
+
+  const handleTriggerPointerEnter = useCallback(() => {
+    clearCloseTimer()
+    setOpen(true)
+  }, [clearCloseTimer])
+
+  const handleContentPointerEnter = useCallback(() => {
+    clearCloseTimer()
+  }, [clearCloseTimer])
+
+  return (
+    <DropdownMenu open={open} onOpenChange={setOpen} modal={false}>
+      <DropdownMenuTrigger
+        onPointerEnter={handleTriggerPointerEnter}
+        onPointerLeave={scheduleClose}
+        className={cn(
+          navigationMenuTriggerStyle(),
+          "group h-9 gap-0 text-navy bg-transparent text-xs hover:bg-navy/5 focus:bg-navy/5 data-[state=open]:bg-navy/10 sm:text-sm",
+        )}
+      >
+        Products
+        <ChevronDown
+          className="relative top-[1px] ml-1 size-3 shrink-0 transition duration-300 group-data-[state=open]:rotate-180"
+          aria-hidden
+        />
+      </DropdownMenuTrigger>
+      <DropdownMenuContent
+        align="start"
+        side="bottom"
+        sideOffset={8}
+        collisionPadding={16}
+        onPointerEnter={handleContentPointerEnter}
+        onPointerLeave={scheduleClose}
+        className={cn(
+          "z-[100] w-[min(100vw-2rem,20rem)] p-1.5 shadow-md",
+          "data-[state=open]:animate-in data-[state=closed]:animate-out",
+        )}
+      >
+        {DESKTOP_PRODUCT_LINKS.map((product) => (
+          <DropdownMenuItem key={product.id} asChild>
+            <Link
+              href={product.pageRoute}
+              className="cursor-pointer rounded-md px-3 py-2.5 text-sm font-medium text-navy no-underline outline-none hover:bg-accent hover:text-accent-foreground focus-visible:ring-0"
+            >
+              {product.title}
+            </Link>
+          </DropdownMenuItem>
+        ))}
+      </DropdownMenuContent>
+    </DropdownMenu>
+  )
+}
 
 export function Header() {
   const [mobileNavOpen, setMobileNavOpen] = useState(false)
@@ -47,64 +119,33 @@ export function Header() {
         {/* Desktop: nav + CTA (lg+) */}
         <div className="hidden min-w-0 flex-1 items-center justify-end lg:flex">
           <div className="flex min-w-0 items-center">
-            <NavigationMenu className="ml-4 max-w-none shrink-0 flex-none xl:ml-10 2xl:ml-16">
-              <NavigationMenuList className="flex-nowrap !flex-none gap-5">
-                <NavigationMenuItem>
-                  <NavigationMenuTrigger className="text-navy bg-transparent hover:bg-navy/5 focus:bg-navy/5 data-[state=open]:bg-navy/10">
-                    Products
-                  </NavigationMenuTrigger>
-                  <NavigationMenuContent>
-                    <ul className="grid w-[min(100vw-2rem,20rem)] gap-0.5 p-2">
-                      {insuranceProducts.map((product) => (
-                        <li key={product.id}>
-                          <NavigationMenuLink asChild>
-                            <span className="block cursor-default select-none rounded-md px-3 py-2.5 text-sm font-medium leading-none text-navy no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
-                              {product.title}
-                            </span>
-                          </NavigationMenuLink>
-                        </li>
-                      ))}
-                    </ul>
-                  </NavigationMenuContent>
-                </NavigationMenuItem>
-                <NavigationMenuItem>
-                  <NavigationMenuLink asChild>
-                    <span
-                      className={cn(
-                        navigationMenuTriggerStyle(),
-                        "cursor-default text-navy bg-transparent text-xs hover:bg-navy/5 focus:bg-navy/5 sm:text-sm",
-                      )}
-                    >
-                      About Us
-                    </span>
-                  </NavigationMenuLink>
-                </NavigationMenuItem>
-                <NavigationMenuItem>
-                  <NavigationMenuLink asChild>
-                    <span
-                      className={cn(
-                        navigationMenuTriggerStyle(),
-                        "cursor-default text-navy bg-transparent text-xs hover:bg-navy/5 focus:bg-navy/5 sm:text-sm",
-                      )}
-                    >
-                      Blog
-                    </span>
-                  </NavigationMenuLink>
-                </NavigationMenuItem>
-                <NavigationMenuItem>
-                  <NavigationMenuLink asChild>
-                    <span
-                      className={cn(
-                        navigationMenuTriggerStyle(),
-                        "cursor-default text-navy bg-transparent text-xs hover:bg-navy/5 focus:bg-navy/5 sm:text-sm",
-                      )}
-                    >
-                      Contact
-                    </span>
-                  </NavigationMenuLink>
-                </NavigationMenuItem>
-              </NavigationMenuList>
-            </NavigationMenu>
+            <div className="ml-4 flex shrink-0 flex-nowrap items-center gap-5 xl:ml-10 2xl:ml-16">
+              <ProductsDropdown />
+              <span
+                className={cn(
+                  navigationMenuTriggerStyle(),
+                  "inline-flex cursor-default text-navy bg-transparent text-xs hover:bg-navy/5 focus:bg-navy/5 sm:text-sm",
+                )}
+              >
+                About Us
+              </span>
+              <span
+                className={cn(
+                  navigationMenuTriggerStyle(),
+                  "inline-flex cursor-default text-navy bg-transparent text-xs hover:bg-navy/5 focus:bg-navy/5 sm:text-sm",
+                )}
+              >
+                Blog
+              </span>
+              <span
+                className={cn(
+                  navigationMenuTriggerStyle(),
+                  "inline-flex cursor-default text-navy bg-transparent text-xs hover:bg-navy/5 focus:bg-navy/5 sm:text-sm",
+                )}
+              >
+                Contact
+              </span>
+            </div>
 
             <Button
               type="button"

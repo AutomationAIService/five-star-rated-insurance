@@ -118,42 +118,63 @@ export function TrustBadges() {
           Carrier availability, quote options, and coverage eligibility vary by state, coverage
           type, carrier, and individual circumstances.
         </p>
+      </div>
 
-        <div className="mx-auto mt-12 max-w-5xl border-t border-border pt-12 lg:mt-14 lg:pt-14">
-          <h3 className="text-center font-heading text-xl font-bold text-foreground md:text-2xl">
-            Insurance Carriers Protegrity Works With
-          </h3>
-          <p className="mx-auto mt-3 max-w-2xl text-center text-muted-foreground">
-            Compare quote options from recognized insurance carriers through Protegrity Insurance
-            Brokerage.
-          </p>
+      {/* Insurance carriers — full-width navy / white / navy bands */}
+      <div className="mt-12 w-full lg:mt-14">
+        {/* Band 1 — headline + subheadline */}
+        <div className="w-full bg-blue-900 text-white">
+          <div className="mx-auto max-w-7xl px-4 py-8 text-center md:px-6 md:py-12">
+            <h3 className="font-heading text-2xl font-bold text-white md:text-3xl">
+              Insurance Carriers Protegrity Works With
+            </h3>
+            <p className="mx-auto mt-4 max-w-2xl text-pretty text-gray-200">
+              Compare quote options from recognized insurance carriers through Protegrity Insurance
+              Brokerage.
+            </p>
+          </div>
+        </div>
 
-          <div
-            className="mt-8 rounded-xl border border-border bg-muted/30 px-4 py-8 md:px-8"
-            aria-label="Representative insurance carriers"
-          >
-            <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-8 md:gap-x-12">
-              {CARRIER_LOGOS.map((logo) => (
-                <div key={logo.alt} className="flex shrink-0 items-center justify-center">
-                  <Image
-                    src={logo.src}
-                    alt={logo.alt}
-                    width={logo.width}
-                    height={logo.height}
-                    className="h-7 w-auto max-w-[min(100%,11rem)] object-contain object-center md:h-9"
-                    unoptimized
-                  />
+        {/* Band 2 — carrier logos (mobile: column; desktop: unchanged row) */}
+        <div className="w-full bg-white">
+          <div className="mx-auto max-w-5xl px-4 py-10 md:px-6 md:py-12">
+            <div
+              className="rounded-xl border border-border bg-muted/30 px-4 py-8 md:px-8 md:py-8"
+              aria-label="Representative insurance carriers"
+            >
+              <div className="flex w-full justify-center">
+                <div className="inline-flex flex-col items-start gap-5 pl-28 md:flex md:w-full md:pl-0 md:flex-row md:flex-nowrap md:items-center md:justify-center md:gap-x-12 md:gap-y-0">
+                  {CARRIER_LOGOS.map((logo) => (
+                    <div
+                      key={logo.alt}
+                      className="flex shrink-0 items-start justify-start md:items-center"
+                    >
+                      <Image
+                        src={logo.src}
+                        alt={logo.alt}
+                        width={logo.width}
+                        height={logo.height}
+                        className="h-10 w-auto max-w-[min(100%,11rem)] object-contain object-left md:h-9 md:object-center"
+                        unoptimized
+                      />
+                    </div>
+                  ))}
+                  <span className="text-base font-medium text-muted-foreground md:self-auto md:text-sm">
+                    And more
+                  </span>
                 </div>
-              ))}
-              <span className="text-sm font-medium text-muted-foreground">And more</span>
+              </div>
             </div>
           </div>
         </div>
 
-        <p className="mx-auto mt-10 max-w-4xl border-t border-border pt-8 text-center text-xs text-muted-foreground">
-          Carrier logos are shown for informational purposes only. Availability, pricing, and
-          coverage options vary by location, carrier, coverage type, and eligibility.
-        </p>
+        {/* Band 3 — disclaimer */}
+        <div className="w-full bg-blue-900 text-white/80">
+          <div className="mx-auto max-w-4xl px-4 py-6 text-center text-sm md:px-6 md:py-8">
+            Carrier logos are shown for informational purposes only. Availability, pricing, and
+            coverage options vary by location, carrier, coverage type, and eligibility.
+          </div>
+        </div>
       </div>
     </section>
   )

@@ -43,9 +43,6 @@ export function CTABanner() {
             >
               GET QUOTE
             </Button>
-            <span className="hidden sm:inline text-primary-foreground/50 text-sm font-medium self-center">
-              or
-            </span>
             <Button
               type="button"
               tabIndex={-1}
