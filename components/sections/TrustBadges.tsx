@@ -17,16 +17,19 @@ const CARRIER_LOGOS: { src: string; alt: string; width: number; height: number }
   { src: "/images/carriers/farmers.svg", alt: "Farmers", width: 170, height: 32 },
 ]
 
-function GoldStarsRow({ className }: { className?: string }) {
+function GoldStarsRow({
+  className,
+  starClassName,
+}: {
+  className?: string
+  starClassName?: string
+}) {
   return (
-    <div
-      className={cn("flex items-center justify-center gap-0.5", className)}
-      aria-hidden
-    >
+    <div className={cn("flex items-center gap-0.5", className)} aria-hidden>
       {Array.from({ length: 5 }).map((_, i) => (
         <Star
           key={i}
-          className="size-7 shrink-0 md:size-8"
+          className={cn("shrink-0", starClassName ?? "size-7 md:size-8")}
           fill={GOLD_STAR}
           stroke={GOLD_STAR}
           strokeWidth={1}
@@ -48,8 +51,7 @@ export function TrustBadges() {
             {"It's The Service That Counts"}
           </h2>
           <p className="mt-3 text-base text-muted-foreground md:text-lg">
-            Five Star Rated Insurance connects your quote request with Protegrity Insurance
-            Brokerage.
+            Five Star Rated Insurance connects your quote request with our partnered brokerage.
           </p>
         </div>
 
@@ -64,13 +66,23 @@ export function TrustBadges() {
               )}
             >
               <div className="flex flex-col items-center text-center">
-                <p
-                  className="font-heading text-6xl font-bold leading-none tracking-tight text-[#202124] md:text-7xl"
+                <Image
+                  src="/images/Protegrity Logo 240.png"
+                  alt="Protegrity Insurance"
+                  width={240}
+                  height={155}
+                  className="mx-auto h-auto w-[240px] max-w-full object-contain"
+                />
+                <div
+                  className="mt-3 flex items-center justify-center gap-2 md:gap-3"
                   aria-label="Rating 5.0 out of 5"
                 >
-                  5.0
-                </p>
-                <GoldStarsRow className="mt-3" />
+                  <span className="font-heading text-xl font-bold leading-none text-navy">
+                    5.0
+                  </span>
+                  <GoldStarsRow starClassName="size-5 md:size-6" />
+                </div>
+                <p className="mt-1 text-sm text-gray-600">Insurance Broker</p>
                 <p className="mt-4 max-w-[20rem] text-sm leading-snug text-[#5f6368] md:text-base">
                   Based on 465+ authentic Google reviews
                 </p>
