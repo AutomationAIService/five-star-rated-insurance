@@ -2,14 +2,25 @@
 
 import { useState } from "react"
 import Image from "next/image"
+import Link from "next/link"
 import { BrandNavyStarOverlay } from "@/components/brand/BrandNavyStarOverlay"
 import { Phone, Mail, MapPin, X } from "lucide-react"
 
-const INSURANCE_PRODUCTS = [
+type SubcategoryEntry = string | { label: string; href: string }
+
+const INSURANCE_PRODUCTS: {
+  id: string
+  title: string
+  subcategories: SubcategoryEntry[]
+}[] = [
   {
     id: "auto",
     title: "Auto Insurance",
-    subcategories: ["Regular Coverage", "Classic Coverage", "State Filings & SR-22"],
+    subcategories: [
+      { label: "Regular Coverage", href: "/insurance/auto/regular-coverage" },
+      "Classic Coverage",
+      "State Filings & SR-22",
+    ],
   },
   {
     id: "home",
@@ -73,6 +84,20 @@ const LEGAL_LINKS = [
 
 type InsuranceProduct = (typeof INSURANCE_PRODUCTS)[number]
 
+function SubcategoryLine({ entry }: { entry: SubcategoryEntry }) {
+  if (typeof entry === "string") {
+    return <>{entry}</>
+  }
+  return (
+    <Link
+      href={entry.href}
+      className="text-inherit underline-offset-2 hover:underline focus-visible:rounded-sm focus-visible:outline focus-visible:ring-2 focus-visible:ring-white/60"
+    >
+      {entry.label}
+    </Link>
+  )
+}
+
 function InsuranceFlyoutPanelContent({
   product,
   onClose,
@@ -96,9 +121,14 @@ function InsuranceFlyoutPanelContent({
         </button>
       </div>
       <ul className="relative mt-4 space-y-2 text-[16px] leading-8 text-white">
-        {product.subcategories.map((sub) => (
-          <li key={sub}>{sub}</li>
-        ))}
+        {product.subcategories.map((sub) => {
+          const key = typeof sub === "string" ? sub : sub.label
+          return (
+            <li key={key}>
+              <SubcategoryLine entry={sub} />
+            </li>
+          )
+        })}
       </ul>
     </div>
   )
