@@ -14,13 +14,13 @@ export function CTABanner() {
       <div className="container relative mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
           <div className="text-center lg:text-left">
-            <div className="flex items-center gap-3 justify-center lg:justify-start mb-4">
+            <div className="mx-auto mb-4 flex w-fit -translate-x-[12px] items-center justify-center gap-3">
               <Image
                 src="/images/shield-icon.png"
                 alt=""
                 width={48}
                 height={48}
-                className="h-auto w-[36px] md:w-[44px] lg:w-[48px] object-contain"
+                className="-ml-1 h-auto w-[36px] object-contain md:w-[44px] lg:w-[48px]"
               />
               <span className="text-gold font-semibold tracking-wide uppercase text-sm md:text-base">
                 BACKED BY 465+ FIVE STAR GOOGLE REVIEWS
@@ -30,9 +30,8 @@ export function CTABanner() {
               Compare Top Rates Before You Renew And Overpay.
             </h2>
             <p className="text-lg md:text-xl text-primary-foreground/85 max-w-xl leading-relaxed">
-              Start your request online and connect directly with the licensed brokers at Protegrity
-              Insurance Brokerage. Review your best options for auto, home, and life coverage with zero
-              pressure.
+              Connect with the licensed brokers at Protegrity to review your auto, home, and life
+              options with zero pressure.
             </p>
           </div>
 

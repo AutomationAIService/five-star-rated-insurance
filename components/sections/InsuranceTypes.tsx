@@ -103,17 +103,16 @@ export function InsuranceTypes({ headingLevel = "h2" }: InsuranceTypesProps) {
       <div className="bg-white px-4 py-8 md:px-6 md:py-12">
         <div className="mx-auto max-w-4xl text-center text-blue-900">
           <HeadingTag className="mb-4 text-balance font-heading text-3xl font-bold md:text-4xl">
-            Insurance Coverage for What You Drive, Own, and Protect
+            Premium Coverage For What You Drive, Own, And Protect
           </HeadingTag>
-          <p className="mb-2 text-xl font-semibold">
+          <p className="mb-2 text-xl font-medium">
             Powered by Protegrity Insurance Brokerage
           </p>
-          <p className="mb-6 text-base text-blue-900/80 md:text-lg">
-            Licensed insurance broker with 465+ five-star reviews
+          <p className="mb-6 text-base font-medium text-blue-900/80 md:text-lg">
+            Licensed experts backed by 465+ five star reviews
           </p>
           <p className="mx-auto max-w-2xl text-lg text-blue-900/90">
-            Compare coverage options for everyday insurance needs, business protection, and specialty
-            vehicles in one simple quote request.
+            Compare top rates for your auto, home, and business in one fast simple quote request.
           </p>
         </div>
       </div>

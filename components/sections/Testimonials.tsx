@@ -31,7 +31,7 @@ export function Testimonials() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="font-heading font-bold text-2xl md:text-3xl lg:text-4xl text-foreground mb-4 text-balance">
-            Rated 5.0 Stars by 465+ Google Reviews
+            Rated 5.0 Stars From 465+ Google Reviews
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Real feedback from Protegrity Insurance Brokerage clients
