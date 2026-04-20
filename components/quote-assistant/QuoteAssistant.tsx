@@ -315,8 +315,8 @@ export function QuoteAssistant() {
         <div ref={messagesEndRef} />
       </div>
 
-      {/* Input Area */}
-      <div className="border-t border-border bg-surface p-4">
+      {/* Input Area — non-interactive (no navigation, submissions, or chat actions) */}
+      <div className="pointer-events-none border-t border-border bg-surface p-4">
         {showQuickReplies && (
           <QuickReplies options={INSURANCE_OPTIONS} onSelect={handleInsuranceSelect} />
         )}

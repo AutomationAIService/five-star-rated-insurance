@@ -1,7 +1,7 @@
 import { Phone } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import Link from "next/link"
 import Image from "next/image"
+import { cn } from "@/lib/utils"
 
 const ctaButtonClassName =
   "bg-gold hover:bg-gold/90 text-navy font-bold uppercase tracking-wide text-base h-12 px-8 rounded-md shadow-lg shadow-black/20 border-0"
@@ -35,17 +35,27 @@ export function CTABanner() {
           </div>
 
           <div className="flex w-full flex-col items-center justify-center gap-3 sm:flex-row sm:items-center lg:w-auto lg:shrink-0">
-            <Button asChild size="lg" className={ctaButtonClassName}>
-              <Link href="#quote">GET QUOTE</Link>
+            <Button
+              type="button"
+              tabIndex={-1}
+              size="lg"
+              className={cn(ctaButtonClassName, "cursor-default pointer-events-none")}
+            >
+              GET QUOTE
             </Button>
             <span className="hidden sm:inline text-primary-foreground/50 text-sm font-medium self-center">
               or
             </span>
-            <Button asChild size="lg" className={ctaButtonClassName}>
-              <a href="tel:{{PHONE_NUMBER}}">
+            <Button
+              type="button"
+              tabIndex={-1}
+              size="lg"
+              className={cn(ctaButtonClassName, "cursor-default pointer-events-none")}
+            >
+              <span className="inline-flex items-center">
                 <Phone className="mr-2 size-5 shrink-0 text-navy" aria-hidden />
                 CALL NOW
-              </a>
+              </span>
             </Button>
           </div>
         </div>

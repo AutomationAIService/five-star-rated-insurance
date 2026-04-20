@@ -5,7 +5,7 @@ import type { Metadata } from "next"
 export const metadata: Metadata = {
   title: "Insurance Products | Five Star Rated Insurance",
   description:
-    "Compare auto, home, life, business, commercial, specialty, and other insurance options. Powered by Protegrity Insurance Brokerage.",
+    "Compare auto, home, life, business, commercial, specialty, Mexico travel, and other insurance options. Powered by Protegrity Insurance Brokerage.",
 }
 
 export default function InsuranceProductsPage() {

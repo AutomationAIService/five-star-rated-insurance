@@ -170,13 +170,7 @@ export default function PrivacyPolicyPage() {
               </h2>
               <p className="text-muted-foreground leading-relaxed">
                 For questions about this Privacy Policy or your information, contact us at{" "}
-                <a
-                  href="mailto:support@fivestarratedinsurance.com"
-                  className="text-foreground underline hover:no-underline"
-                >
-                  support@fivestarratedinsurance.com
-                </a>
-                .
+                <span className="text-foreground underline">support@fivestarratedinsurance.com</span>.
               </p>
             </section>
 

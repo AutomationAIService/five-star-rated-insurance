@@ -1,7 +1,6 @@
 import { Footer, Header } from "@/components/layout"
 import { Card, CardContent, CardFooter } from "@/components/ui/card"
 import Image from "next/image"
-import Link from "next/link"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
@@ -85,12 +84,9 @@ export default function BlogPage() {
                     </p>
                   </CardContent>
                   <CardFooter className="pt-0">
-                    <Link
-                      href={`/blog#${post.slug}`}
-                      className="text-sm font-semibold text-navy underline-offset-4 hover:underline"
-                    >
+                    <span className="text-sm font-semibold text-navy underline-offset-4">
                       Read More
-                    </Link>
+                    </span>
                   </CardFooter>
                 </Card>
               ))}

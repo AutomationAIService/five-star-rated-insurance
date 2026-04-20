@@ -51,24 +51,18 @@ export default function ContactPage() {
                     <Phone className="mt-0.5 h-5 w-5 shrink-0 text-navy" aria-hidden />
                     <span>
                       Phone:{" "}
-                      <a
-                        href="tel:{{PHONE_NUMBER}}"
-                        className="font-medium text-navy underline-offset-4 hover:underline"
-                      >
+                      <span className="font-medium text-navy underline-offset-4">
                         {"{{PHONE_NUMBER}}"}
-                      </a>
+                      </span>
                     </span>
                   </li>
                   <li className="flex gap-3">
                     <Mail className="mt-0.5 h-5 w-5 shrink-0 text-navy" aria-hidden />
                     <span>
                       Email:{" "}
-                      <a
-                        href="mailto:support@fivestarratedinsurance.com"
-                        className="font-medium text-navy underline-offset-4 hover:underline"
-                      >
+                      <span className="font-medium text-navy underline-offset-4">
                         support@fivestarratedinsurance.com
-                      </a>
+                      </span>
                     </span>
                   </li>
                   <li className="flex gap-3">

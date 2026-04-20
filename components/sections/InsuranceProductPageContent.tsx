@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import type { InsuranceProduct } from "@/src/data/insuranceProducts"
 import { ArrowRight } from "lucide-react"
-import Link from "next/link"
 
 type InsuranceProductPageContentProps = {
   product: InsuranceProduct
@@ -74,14 +73,15 @@ export function InsuranceProductPageContent({
 
           <div className="mt-10 flex flex-col items-center">
             <Button
-              asChild
+              type="button"
+              tabIndex={-1}
               size="lg"
-              className="w-full max-w-md bg-blue-900 font-semibold text-white hover:bg-blue-800 sm:w-auto sm:min-w-[280px]"
+              className="w-full max-w-md cursor-default bg-blue-900 font-semibold text-white hover:bg-blue-800 pointer-events-none sm:w-auto sm:min-w-[280px]"
             >
-              <Link href="#quote" className="flex items-center justify-center">
+              <span className="flex items-center justify-center">
                 Get Quote
                 <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
+              </span>
             </Button>
             <p className="mt-3 text-center text-sm text-gray-500">
               Quoted by Protegrity Insurance Brokerage

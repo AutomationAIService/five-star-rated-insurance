@@ -164,12 +164,7 @@ export default function TermsOfServicePage() {
             <h2 style={{ fontSize: "1.15rem", marginBottom: 12 }}>10. Contact</h2>
             <p style={{ margin: 0 }}>
               For questions about these Terms of Service, contact us at:{" "}
-              <a
-                href="mailto:support@fivestarratedinsurance.com"
-                style={{ color: "#000000" }}
-              >
-                support@fivestarratedinsurance.com
-              </a>
+              <span style={{ color: "#000000" }}>support@fivestarratedinsurance.com</span>
             </p>
           </section>
         </div>

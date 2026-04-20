@@ -5,6 +5,7 @@ export type InsuranceProductId =
   | "commercial-auto"
   | "business"
   | "specialty"
+  | "mexico-travel"
   | "other"
 
 /** Lucide React icon component name (PascalCase), e.g. resolve via a small registry in UI code. */
@@ -15,6 +16,7 @@ export type InsuranceProductIconName =
   | "Truck"
   | "Briefcase"
   | "Bike"
+  | "Palmtree"
   | "Umbrella"
 
 export type CoverageItem = {
@@ -350,6 +352,58 @@ export const insuranceProducts: InsuranceProduct[] = [
       },
     ],
     pageRoute: "/insurance/specialty",
+  },
+  {
+    id: "mexico-travel",
+    title: "Mexico Travel Insurance",
+    icon: "Palmtree",
+    heroDescription:
+      "Travel with confidence across the border. Compare Mexico travel insurance options for rental car protection, trip cancellation and interruption, and emergency medical and dental care—tailored to your itinerary and quoted by licensed brokers.",
+    coverageItems: [
+      {
+        name: "Rental car coverage in Mexico",
+        description:
+          "Liability and physical damage options for vehicles driven in Mexico, aligned with entry requirements and rental agreements so you are not left exposed after an accident or theft.",
+      },
+      {
+        name: "Trip cancellation and interruption",
+        description:
+          "Protection when covered events force you to cancel before departure or cut your trip short, with benefits subject to the policy terms you select.",
+      },
+      {
+        name: "Emergency medical and dental",
+        description:
+          "Access to emergency treatment while traveling in Mexico, including situations where your domestic health plan offers limited or no coverage outside the U.S.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Do I need separate insurance to drive a rental car in Mexico?",
+        answer:
+          "Mexican law generally requires liability from a Mexico-authorized insurer; your U.S. auto policy may not satisfy that requirement. Travel and rental plans can bundle the right liability and physical damage protection for how you will drive.",
+      },
+      {
+        question: "Does my U.S. health insurance cover me in Mexico?",
+        answer:
+          "Many plans offer limited emergency coverage abroad or require you to pay upfront and seek reimbursement. Travel medical coverage can fill gaps for emergencies and urgent care while you are in Mexico.",
+      },
+      {
+        question: "What is the difference between trip cancellation and interruption?",
+        answer:
+          "Cancellation covers prepaid, non-refundable costs if you cannot travel for a covered reason. Interruption applies if a covered event occurs during your trip and you must return early or incur extra expenses.",
+      },
+      {
+        question: "When should I buy Mexico travel insurance?",
+        answer:
+          "Purchasing soon after you make major prepaid bookings can maximize cancellation benefits, subject to policy rules. For medical and rental coverage, effective dates should align with your entire time in Mexico.",
+      },
+      {
+        question: "How do I get a quote through Five Star Rated Insurance?",
+        answer:
+          "Start a quote request online and connect with the licensed brokers at Protegrity Insurance Brokerage. They will review your trip details and match you with options suited to your travel and coverage needs.",
+      },
+    ],
+    pageRoute: "/insurance/mexico-travel",
   },
   {
     id: "other",

@@ -2,7 +2,6 @@ import { Footer, Header } from "@/components/layout"
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 import type { Metadata } from "next"
-import Link from "next/link"
 
 export const metadata: Metadata = {
   title: "About Us | Five Star Rated Insurance",
@@ -54,14 +53,15 @@ export default function AboutPage() {
         <section className="border-t border-border bg-background py-12 md:py-16">
           <div className="container mx-auto flex justify-center px-4">
             <Button
-              asChild
+              type="button"
+              tabIndex={-1}
               size="lg"
-              className="w-full max-w-md bg-blue-900 font-semibold text-white hover:bg-blue-800 sm:w-auto sm:min-w-[280px]"
+              className="w-full max-w-md cursor-default bg-blue-900 font-semibold text-white hover:bg-blue-800 pointer-events-none sm:w-auto sm:min-w-[280px]"
             >
-              <Link href="/#quote" className="flex items-center justify-center">
+              <span className="flex items-center justify-center">
                 Get Quote
                 <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
+              </span>
             </Button>
           </div>
         </section>

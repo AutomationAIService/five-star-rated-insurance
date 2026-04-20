@@ -3,7 +3,6 @@
 import { Checkbox } from "@/components/ui/checkbox"
 import { Button } from "@/components/ui/button"
 import { Spinner } from "@/components/ui/spinner"
-import Link from "next/link"
 
 interface TCPAConsentProps {
   checked: boolean
@@ -40,18 +39,9 @@ export function TCPAConsent({
           consent to my information being shared with Protegrity Insurance Brokerage for
           insurance quote purposes. Consent is not required to purchase. Msg & data rates may
           apply. I agree to the{" "}
-          <Link href="/privacy-policy" className="text-navy underline hover:no-underline">
-            Privacy Policy
-          </Link>
-          ,{" "}
-          <Link href="/terms-of-service" className="text-navy underline hover:no-underline">
-            Terms of Service
-          </Link>
-          , and{" "}
-          <Link href="/tcpa-consent" className="text-navy underline hover:no-underline">
-            TCPA Consent Disclosure
-          </Link>
-          .
+          <span className="text-navy underline">Privacy Policy</span>,{" "}
+          <span className="text-navy underline">Terms of Service</span>, and{" "}
+          <span className="text-navy underline">TCPA Consent Disclosure</span>.
         </label>
       </div>
 

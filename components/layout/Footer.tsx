@@ -1,27 +1,23 @@
-import Link from "next/link"
 import Image from "next/image"
 import { Phone, Mail, MapPin } from "lucide-react"
 
 const INSURANCE_LINKS = [
-  { href: "/insurance/auto", label: "Auto Insurance" },
-  { href: "/insurance/home", label: "Home Insurance" },
-  { href: "/insurance/life", label: "Life Insurance" },
-  { href: "/insurance/commercial-auto", label: "Commercial Auto" },
-  { href: "/insurance/business", label: "Business Insurance" },
-  { href: "/insurance/specialty", label: "Specialty Insurance" },
-  { href: "/insurance/other", label: "Other Insurance" },
+  { label: "Auto Insurance" },
+  { label: "Home Insurance" },
+  { label: "Life Insurance" },
+  { label: "Commercial Auto" },
+  { label: "Business Insurance" },
+  { label: "Specialty Insurance" },
+  { label: "Mexico Travel Insurance" },
+  { label: "Other Insurance" },
 ]
 
-const COMPANY_LINKS = [
-  { href: "/about", label: "About Us" },
-  { href: "/contact", label: "Contact" },
-  { href: "/blog", label: "Blog" },
-]
+const COMPANY_LINKS = [{ label: "About Us" }, { label: "Contact" }, { label: "Blog" }]
 
 const LEGAL_LINKS = [
-  { href: "/privacy-policy", label: "Privacy Policy" },
-  { href: "/terms-of-service", label: "Terms of Service" },
-  { href: "/tcpa-consent", label: "TCPA Disclosure" },
+  { label: "Privacy Policy" },
+  { label: "Terms of Service" },
+  { label: "TCPA Disclosure" },
 ]
 
 export function Footer() {
@@ -33,7 +29,7 @@ export function Footer() {
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-4 lg:gap-12">
           {/* Brand Column */}
           <div className="space-y-4">
-            <Link href="/" className="inline-block">
+            <span className="inline-block">
               <Image
                 src="/images/5%20Star%20Logo%20-%20Header_Footer.png"
                 alt="Five Star Rated Insurance"
@@ -41,25 +37,25 @@ export function Footer() {
                 height={94}
                 className="h-auto w-[156px] object-contain"
               />
-            </Link>
+            </span>
             <p className="text-sm leading-relaxed text-navy">
               Connecting You to Protection With Integrity.
             </p>
             <div className="space-y-3 text-sm leading-relaxed text-navy">
-              <a href="tel:{{PHONE_NUMBER}}" className="flex items-start gap-2 text-navy transition-colors hover:text-navy/80">
+              <span className="flex items-start gap-2 text-navy">
                 <Phone className="mt-0.5 h-4 w-4 shrink-0" />
                 <span>
                   <span className="font-medium">Phone: </span>
                   {"{{PHONE_NUMBER}}"}
                 </span>
-              </a>
-              <a href="mailto:support@fivestarratedinsurance.com" className="flex items-start gap-2 text-navy transition-colors hover:text-navy/80">
+              </span>
+              <span className="flex items-start gap-2 text-navy">
                 <Mail className="mt-0.5 h-4 w-4 shrink-0" />
                 <span>
                   <span className="font-medium">Email: </span>
                   support@fivestarratedinsurance.com
                 </span>
-              </a>
+              </span>
               <div className="flex items-start gap-2">
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0" />
                 <span>
@@ -88,12 +84,7 @@ export function Footer() {
                     <ul className="space-y-2">
                       {INSURANCE_LINKS.map((link) => (
                         <li key={link.label}>
-                          <Link
-                            href={link.href}
-                            className="text-sm text-white transition-colors hover:text-white/80"
-                          >
-                            {link.label}
-                          </Link>
+                          <span className="text-sm text-white">{link.label}</span>
                         </li>
                       ))}
                     </ul>
@@ -107,12 +98,7 @@ export function Footer() {
                     <ul className="space-y-2">
                       {COMPANY_LINKS.map((link) => (
                         <li key={link.label}>
-                          <Link
-                            href={link.href}
-                            className="text-sm text-white transition-colors hover:text-white/80"
-                          >
-                            {link.label}
-                          </Link>
+                          <span className="text-sm text-white">{link.label}</span>
                         </li>
                       ))}
                     </ul>
@@ -126,12 +112,7 @@ export function Footer() {
                     <ul className="space-y-2">
                       {LEGAL_LINKS.map((link) => (
                         <li key={link.label}>
-                          <Link
-                            href={link.href}
-                            className="text-sm text-white transition-colors hover:text-white/80"
-                          >
-                            {link.label}
-                          </Link>
+                          <span className="text-sm text-white">{link.label}</span>
                         </li>
                       ))}
                     </ul>

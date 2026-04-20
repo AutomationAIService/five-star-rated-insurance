@@ -1,6 +1,5 @@
 "use client"
 
-import Link from "next/link"
 import Image from "next/image"
 import { Menu, Phone } from "lucide-react"
 import { useState } from "react"
@@ -33,10 +32,7 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full overflow-visible bg-white text-navy border-b border-border shadow-sm">
       <div className="mx-auto flex min-h-[92px] w-full min-w-0 max-w-7xl items-center justify-between gap-2 px-3 py-2 sm:min-h-[96px] sm:px-5 sm:py-2 lg:h-[85px] lg:min-h-[85px] lg:gap-3 lg:px-6 lg:py-0 lg:pr-8">
-        <Link
-          href="/"
-          className="flex min-w-0 max-w-[calc(100%-7.75rem)] shrink items-center sm:max-w-[calc(100%-8.25rem)] lg:max-w-none lg:shrink-0"
-        >
+        <span className="flex min-w-0 max-w-[calc(100%-7.75rem)] shrink items-center sm:max-w-[calc(100%-8.25rem)] lg:max-w-none lg:shrink-0">
           <Image
             src="/images/5%20Star%20Logo%20-%20Header_Footer.png"
             alt="Five Star Rated Insurance"
@@ -46,7 +42,7 @@ export function Header() {
             priority
             sizes="(max-width: 1023px) min(220px, 55vw), 195px"
           />
-        </Link>
+        </span>
 
         {/* Desktop: nav + CTA (lg+) */}
         <div className="hidden min-w-0 flex-1 items-center justify-end lg:flex">
@@ -62,12 +58,9 @@ export function Header() {
                       {insuranceProducts.map((product) => (
                         <li key={product.id}>
                           <NavigationMenuLink asChild>
-                            <Link
-                              href={product.pageRoute}
-                              className="block select-none rounded-md px-3 py-2.5 text-sm font-medium leading-none text-navy no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                            >
+                            <span className="block cursor-default select-none rounded-md px-3 py-2.5 text-sm font-medium leading-none text-navy no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
                               {product.title}
-                            </Link>
+                            </span>
                           </NavigationMenuLink>
                         </li>
                       ))}
@@ -76,51 +69,55 @@ export function Header() {
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                   <NavigationMenuLink asChild>
-                    <Link
-                      href="/about"
+                    <span
                       className={cn(
                         navigationMenuTriggerStyle(),
-                        "text-navy bg-transparent text-xs hover:bg-navy/5 focus:bg-navy/5 sm:text-sm",
+                        "cursor-default text-navy bg-transparent text-xs hover:bg-navy/5 focus:bg-navy/5 sm:text-sm",
                       )}
                     >
                       About Us
-                    </Link>
+                    </span>
                   </NavigationMenuLink>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                   <NavigationMenuLink asChild>
-                    <Link
-                      href="/blog"
+                    <span
                       className={cn(
                         navigationMenuTriggerStyle(),
-                        "text-navy bg-transparent text-xs hover:bg-navy/5 focus:bg-navy/5 sm:text-sm",
+                        "cursor-default text-navy bg-transparent text-xs hover:bg-navy/5 focus:bg-navy/5 sm:text-sm",
                       )}
                     >
                       Blog
-                    </Link>
+                    </span>
                   </NavigationMenuLink>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                   <NavigationMenuLink asChild>
-                    <Link
-                      href="/contact"
+                    <span
                       className={cn(
                         navigationMenuTriggerStyle(),
-                        "text-navy bg-transparent text-xs hover:bg-navy/5 focus:bg-navy/5 sm:text-sm",
+                        "cursor-default text-navy bg-transparent text-xs hover:bg-navy/5 focus:bg-navy/5 sm:text-sm",
                       )}
                     >
                       Contact
-                    </Link>
+                    </span>
                   </NavigationMenuLink>
                 </NavigationMenuItem>
               </NavigationMenuList>
             </NavigationMenu>
 
-            <Button asChild className={cn(callButtonClass, "ml-4 lg:ml-6 xl:ml-8")}>
-              <a href="tel:{{PHONE_NUMBER}}" className="flex items-center gap-2 whitespace-nowrap">
+            <Button
+              type="button"
+              tabIndex={-1}
+              className={cn(
+                callButtonClass,
+                "ml-4 cursor-default lg:ml-6 xl:ml-8 pointer-events-none",
+              )}
+            >
+              <span className="flex items-center gap-2 whitespace-nowrap">
                 <Phone className="h-4 w-4 shrink-0" />
                 <span>CALL NOW</span>
-              </a>
+              </span>
             </Button>
           </div>
         </div>
@@ -128,16 +125,14 @@ export function Header() {
         {/* Tablet & mobile: logo left; call + menu grouped on the right (48px targets) */}
         <div className="flex min-w-0 flex-1 justify-end items-center gap-2 sm:gap-3 lg:hidden">
           <Button
-            asChild
-            className="h-12 w-12 min-h-[48px] min-w-[48px] max-h-[48px] max-w-[48px] shrink-0 flex-none rounded-md border-0 bg-gold p-0 text-navy hover:bg-gold/90"
+            type="button"
+            tabIndex={-1}
+            className="h-12 w-12 min-h-[48px] min-w-[48px] max-h-[48px] max-w-[48px] shrink-0 flex-none cursor-default rounded-md border-0 bg-gold p-0 text-navy hover:bg-gold/90 pointer-events-none"
             aria-label="Call now"
           >
-            <a
-              href="tel:{{PHONE_NUMBER}}"
-              className="flex items-center justify-center text-navy"
-            >
+            <span className="flex items-center justify-center text-navy">
               <Phone className="size-6 shrink-0" aria-hidden />
-            </a>
+            </span>
           </Button>
 
           <Sheet open={mobileNavOpen} onOpenChange={setMobileNavOpen}>
@@ -163,39 +158,17 @@ export function Header() {
                   <ul className="flex flex-col gap-1">
                     {insuranceProducts.map((product) => (
                       <li key={product.id}>
-                        <Link
-                          href={product.pageRoute}
-                          className="block rounded-md py-2 text-sm font-medium text-navy hover:bg-accent hover:text-accent-foreground"
-                          onClick={() => setMobileNavOpen(false)}
-                        >
+                        <span className="block rounded-md py-2 text-sm font-medium text-navy">
                           {product.title}
-                        </Link>
+                        </span>
                       </li>
                     ))}
                   </ul>
                 </div>
                 <div className="flex flex-col gap-1 border-t border-border pt-4">
-                  <Link
-                    href="/about"
-                    className="rounded-md py-2 text-sm font-medium text-navy hover:bg-accent hover:text-accent-foreground"
-                    onClick={() => setMobileNavOpen(false)}
-                  >
-                    About Us
-                  </Link>
-                  <Link
-                    href="/blog"
-                    className="rounded-md py-2 text-sm font-medium text-navy hover:bg-accent hover:text-accent-foreground"
-                    onClick={() => setMobileNavOpen(false)}
-                  >
-                    Blog
-                  </Link>
-                  <Link
-                    href="/contact"
-                    className="rounded-md py-2 text-sm font-medium text-navy hover:bg-accent hover:text-accent-foreground"
-                    onClick={() => setMobileNavOpen(false)}
-                  >
-                    Contact
-                  </Link>
+                  <span className="rounded-md py-2 text-sm font-medium text-navy">About Us</span>
+                  <span className="rounded-md py-2 text-sm font-medium text-navy">Blog</span>
+                  <span className="rounded-md py-2 text-sm font-medium text-navy">Contact</span>
                 </div>
               </nav>
             </SheetContent>

@@ -4,6 +4,7 @@ import {
   Car,
   Heart,
   Home,
+  Palmtree,
   Truck,
   Umbrella,
   ArrowRight,
@@ -11,7 +12,6 @@ import {
 } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import Link from "next/link"
 import { cn } from "@/lib/utils"
 
 const quoteAttribution = (
@@ -27,7 +27,6 @@ type InsuranceTypeCard = {
   features: string[]
   /** Keeps each bullet on one row on small screens (short labels only). */
   featuresSingleLineOnMobile?: boolean
-  href: string
 }
 
 const INSURANCE_TYPES: InsuranceTypeCard[] = [
@@ -35,32 +34,27 @@ const INSURANCE_TYPES: InsuranceTypeCard[] = [
     icon: Car,
     title: "Auto Insurance",
     features: ["Regular coverage", "Classic coverage", "State filings & SR-22"],
-    href: "/insurance/auto",
   },
   {
     icon: Home,
     title: "Home Insurance",
     features: ["Primary home", "Seasonal home", "Rental home"],
     featuresSingleLineOnMobile: true,
-    href: "/insurance/home",
   },
   {
     icon: Heart,
     title: "Life Insurance",
     features: ["Term life options", "Whole life plans", "Family protection"],
-    href: "/insurance/life",
   },
   {
     icon: Truck,
     title: "Commercial Auto",
     features: ["Fleet coverage", "Cargo protection", "Business liability"],
-    href: "/insurance/commercial-auto",
   },
   {
     icon: Briefcase,
     title: "Business Insurance",
-    features: ["General liability", "Property coverage", "Workers comp"],
-    href: "/insurance/business",
+    features: ["General liability", "Property coverage", "Workers compensation"],
   },
   {
     icon: Bike,
@@ -72,7 +66,16 @@ const INSURANCE_TYPES: InsuranceTypeCard[] = [
       "Boat and jet ski protection",
       "RV, motorhome, and trailer options",
     ],
-    href: "/insurance/specialty",
+  },
+  {
+    icon: Palmtree,
+    title: "Mexico Travel Insurance",
+    description: "Coverage for travelers heading to Mexico.",
+    features: [
+      "Rental car coverage in Mexico",
+      "Trip cancellation and interruption",
+      "Emergency medical and dental",
+    ],
   },
   {
     icon: Umbrella,
@@ -83,7 +86,6 @@ const INSURANCE_TYPES: InsuranceTypeCard[] = [
       "Flood and earthquake coverage",
       "Valuable items protection",
     ],
-    href: "/insurance/other",
   },
 ]
 
@@ -175,10 +177,11 @@ export function InsuranceTypes({ headingLevel = "h2" }: InsuranceTypesProps) {
                   </ul>
                   <div className="mt-auto w-full shrink-0">
                     <Button
-                      asChild
+                      type="button"
+                      tabIndex={-1}
                       variant="default"
                       className={cn(
-                        "w-full font-semibold shadow-none",
+                        "w-full cursor-default font-semibold shadow-none pointer-events-none",
                         "border-0 border-transparent",
                         "bg-blue-900 text-white",
                         "hover:bg-blue-800 hover:text-white",
@@ -187,13 +190,10 @@ export function InsuranceTypes({ headingLevel = "h2" }: InsuranceTypesProps) {
                         "[&_svg]:text-current"
                       )}
                     >
-                      <Link
-                        href={insurance.href}
-                        className="flex w-full items-center justify-center gap-2"
-                      >
+                      <span className="flex w-full items-center justify-center gap-2">
                         Get Quote
                         <ArrowRight className="size-4 shrink-0" aria-hidden />
-                      </Link>
+                      </span>
                     </Button>
                     {quoteAttribution}
                   </div>

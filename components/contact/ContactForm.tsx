@@ -4,19 +4,12 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
-import { useState } from "react"
-import type { FormEvent } from "react"
-
 export function ContactForm() {
-  const [submitted, setSubmitted] = useState(false)
-
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
-    e.preventDefault()
-    setSubmitted(true)
-  }
-
   return (
-    <form onSubmit={handleSubmit} className="space-y-5">
+    <form
+      onSubmit={(e) => e.preventDefault()}
+      className="pointer-events-none space-y-5"
+    >
       <div className="space-y-2">
         <Label htmlFor="contact-name">Name</Label>
         <Input id="contact-name" name="name" type="text" autoComplete="name" required />
@@ -46,16 +39,12 @@ export function ContactForm() {
         <Textarea id="contact-message" name="message" rows={5} required />
       </div>
       <Button
-        type="submit"
-        className="w-full bg-blue-900 font-semibold text-white hover:bg-blue-800 sm:w-auto sm:min-w-[160px]"
+        type="button"
+        tabIndex={-1}
+        className="w-full cursor-default bg-blue-900 font-semibold text-white hover:bg-blue-800 sm:w-auto sm:min-w-[160px]"
       >
         Submit
       </Button>
-      {submitted ? (
-        <p className="text-sm text-muted-foreground" role="status">
-          Thank you — your message has been received. We will get back to you soon.
-        </p>
-      ) : null}
     </form>
   )
 }
