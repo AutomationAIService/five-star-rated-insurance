@@ -243,15 +243,20 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full overflow-visible bg-white text-navy border-b border-border shadow-sm">
       <div className="mx-auto flex min-h-[92px] w-full min-w-0 max-w-7xl items-center justify-between gap-2 px-3 py-2 sm:min-h-[96px] sm:px-5 sm:py-2 lg:h-[85px] lg:min-h-[85px] lg:gap-3 lg:px-6 lg:py-0 lg:pr-8">
         <span className="flex min-w-0 max-w-[calc(100%-7.75rem)] shrink items-center sm:max-w-[calc(100%-8.25rem)] lg:max-w-none lg:shrink-0">
-          <Image
-            src="/images/5%20Star%20Logo%20-%20Header_Footer.png"
-            alt="Five Star Rated Insurance"
-            width={195}
-            height={118}
-            className="h-auto w-auto max-w-full object-contain max-h-[76px] sm:max-h-[82px] md:max-h-[85px] md:max-w-[195px] lg:max-h-[85px] lg:max-w-[195px]"
-            priority
-            sizes="(max-width: 1023px) min(220px, 55vw), 195px"
-          />
+          <Link
+            href="/"
+            className="inline-flex max-w-full shrink-0 outline-offset-2 focus-visible:rounded-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-navy"
+          >
+            <Image
+              src="/images/5%20Star%20Logo%20-%20Header_Footer.png"
+              alt="Five Star Rated Insurance"
+              width={195}
+              height={118}
+              className="h-auto w-auto max-w-full object-contain max-h-[76px] sm:max-h-[82px] md:max-h-[85px] md:max-w-[195px] lg:max-h-[85px] lg:max-w-[195px]"
+              priority
+              sizes="(max-width: 1023px) min(220px, 55vw), 195px"
+            />
+          </Link>
         </span>
 
         {/* Desktop: nav + CTA (lg+) */}
@@ -351,33 +356,32 @@ export function Header() {
                       const isExpanded = expandedMobileCategoryId === category.id
                       return (
                       <li key={product.id}>
-                        <div className="flex items-center gap-2">
-                          <Link
-                            href={product.pageRoute}
-                            className="flex-1 rounded-md py-2 text-sm font-medium text-navy hover:bg-navy/5"
-                            onClick={() => setMobileNavOpen(false)}
-                          >
-                            {product.title}
-                          </Link>
-                          <button
-                            type="button"
-                            className="rounded-md p-1.5 text-navy hover:bg-navy/5"
-                            aria-expanded={isExpanded}
-                            aria-label={`Toggle ${product.title} subcategories`}
-                            onClick={() =>
-                              setExpandedMobileCategoryId((current) =>
-                                current === category.id ? null : category.id,
-                              )
-                            }
-                          >
-                            <ChevronDown
-                              className={cn("size-4 transition-transform", isExpanded && "rotate-180")}
-                              aria-hidden
-                            />
-                          </button>
-                        </div>
+                        <button
+                          type="button"
+                          className="flex w-full items-center gap-2 rounded-md py-2 text-left text-sm font-medium text-navy hover:bg-navy/5"
+                          aria-expanded={isExpanded}
+                          aria-controls={`mobile-nav-sub-${category.id}`}
+                          aria-label={`${isExpanded ? "Collapse" : "Expand"} ${product.title} subcategories`}
+                          onClick={() =>
+                            setExpandedMobileCategoryId((current) =>
+                              current === category.id ? null : category.id,
+                            )
+                          }
+                        >
+                          <span className="min-w-0 flex-1">{product.title}</span>
+                          <ChevronDown
+                            className={cn(
+                              "size-4 shrink-0 transition-transform",
+                              isExpanded && "rotate-180",
+                            )}
+                            aria-hidden
+                          />
+                        </button>
                         {isExpanded ? (
-                          <ul className="ml-3 mt-1 flex flex-col border-l border-border pl-3">
+                          <ul
+                            id={`mobile-nav-sub-${category.id}`}
+                            className="ml-3 mt-1 flex flex-col border-l border-border pl-3"
+                          >
                             {category.subcategories.map((subcategory) => (
                               <li key={subcategory.href}>
                                 <Link
