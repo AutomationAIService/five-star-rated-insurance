@@ -47,14 +47,14 @@ const INSURANCE_TYPES: InsuranceTypeCard[] = [
     features: ["Term life options", "Whole life plans", "Family protection"],
   },
   {
-    icon: Truck,
-    title: "Commercial Auto",
-    features: ["Fleet coverage", "Cargo protection", "Business liability"],
-  },
-  {
     icon: Briefcase,
     title: "Business Insurance",
     features: ["General liability", "Property coverage", "Workers compensation"],
+  },
+  {
+    icon: Truck,
+    title: "Commercial Auto",
+    features: ["Fleet coverage", "Cargo protection", "Business liability"],
   },
   {
     icon: Bike,

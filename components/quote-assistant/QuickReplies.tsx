@@ -9,6 +9,7 @@ import {
   House,
   MoreHorizontal,
   Motorbike,
+  Palmtree,
   Truck,
 } from "lucide-react"
 import { cn } from "@/lib/utils"
@@ -20,6 +21,7 @@ export type InsuranceType =
   | "Business"
   | "Commercial"
   | "Specialty"
+  | "Travel"
   | "Other"
 
 const ICON_MAP: Record<InsuranceType, ComponentType<{ className?: string }>> = {
@@ -29,6 +31,7 @@ const ICON_MAP: Record<InsuranceType, ComponentType<{ className?: string }>> = {
   Business: Briefcase,
   Commercial: Truck,
   Specialty: Motorbike,
+  Travel: Palmtree,
   Other: MoreHorizontal,
 }
 
@@ -74,29 +77,11 @@ function OptionButton({
 }
 
 export function QuickReplies({ options, onSelect }: QuickRepliesProps) {
-  const firstRow = options.slice(0, 4)
-  const secondRow = options.slice(4)
-
   return (
     <div className="space-y-3" role="group" aria-label="Insurance type options">
       <div className="grid grid-cols-2 gap-3 sm:gap-3.5 lg:grid-cols-4 lg:gap-4">
-        {firstRow.map((option) => (
+        {options.map((option) => (
           <OptionButton key={option} option={option} onSelect={onSelect} />
-        ))}
-      </div>
-
-      <div className="grid grid-cols-2 gap-3 sm:gap-3.5 lg:grid-cols-3 lg:gap-4">
-        {secondRow.map((option, index) => (
-          <OptionButton
-            key={option}
-            option={option}
-            onSelect={onSelect}
-            className={cn(
-              secondRow.length === 3 &&
-                index === 2 &&
-                "col-span-2 w-[calc(50%-0.375rem)] justify-self-center sm:w-[calc(50%-0.375rem)] lg:col-span-1 lg:w-full lg:justify-self-stretch"
-            )}
-          />
         ))}
       </div>
     </div>

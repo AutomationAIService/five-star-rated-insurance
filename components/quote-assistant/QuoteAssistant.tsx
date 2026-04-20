@@ -1,5 +1,6 @@
 "use client"
 
+import { useRouter } from "next/navigation"
 import { useState, useCallback, useRef, useEffect } from "react"
 import { MessageBubble } from "./MessageBubble"
 import { QuickReplies, type InsuranceType } from "./QuickReplies"
@@ -55,7 +56,7 @@ const AVA_MESSAGES: Record<ConversationStep, string | ((data: LeadData) => strin
     `Thanks, ${data.name}! Your calendar should open in a new tab to book your free consultation.`,
 }
 
-/** Order matches QuickReplies layout. Commercial: commercial auto and other commercial lines. Specialty: Mexico travel, SR-22, DUI-related, niche risks. Other: catch-all. */
+/** Order matches QuickReplies grid (2×4 mobile, 4×2 lg). Travel routes to Mexico Travel product page. */
 const INSURANCE_OPTIONS: InsuranceType[] = [
   "Auto",
   "Home",
@@ -63,6 +64,7 @@ const INSURANCE_OPTIONS: InsuranceType[] = [
   "Business",
   "Commercial",
   "Specialty",
+  "Travel",
   "Other",
 ]
 
@@ -99,6 +101,7 @@ const validatePhone = (phone: string): boolean => /^\d{10}$/.test(phone.replace(
 const validateName = (name: string): boolean => name.trim().length >= 2
 
 export function QuoteAssistant() {
+  const router = useRouter()
   const [messages, setMessages] = useState<Message[]>([])
   const [currentStep, setCurrentStep] = useState<ConversationStep>("insurance_type")
   const [leadData, setLeadData] = useState<LeadData>({
@@ -176,12 +179,17 @@ export function QuoteAssistant() {
 
   const handleInsuranceSelect = useCallback(
     (type: InsuranceType) => {
+      if (type === "Travel") {
+        addMessage("user", "Travel")
+        router.push("/insurance/mexico-travel")
+        return
+      }
       const newData = { ...leadData, insuranceType: type }
       setLeadData(newData)
       addMessage("user", type)
       moveToNextStep(newData)
     },
-    [leadData, addMessage, moveToNextStep],
+    [leadData, addMessage, moveToNextStep, router],
   )
 
   const handleTextSubmit = useCallback(() => {
