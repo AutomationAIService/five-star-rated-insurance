@@ -89,7 +89,7 @@ export default function RegularAutoCoveragePhoenixPage() {
           {/* A. Hero */}
           <section className="relative flex min-h-[380px] items-end md:min-h-[440px]">
             <img
-              src="https://images.unsplash.com/photo-1464219789935-c2a9d8b035d6?auto=format&fit=crop&w=2000&q=80"
+              src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=2000&q=80"
               alt="Car on open Arizona highway at sunset, regular auto insurance coverage Phoenix AZ and car insurance for Phoenix drivers"
               width={2000}
               height={1333}
