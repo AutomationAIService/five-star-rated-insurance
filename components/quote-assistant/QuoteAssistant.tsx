@@ -47,7 +47,7 @@ const STEP_ORDER: ConversationStep[] = [
 
 const AVA_MESSAGES: Record<ConversationStep, string | ((data: LeadData) => string)> = {
   insurance_type:
-    "Hi! I'm Ava, your quote assistant. What type of insurance are you looking for?",
+    "Hi! I'm Ava. What type of insurance are you looking for?",
   name: "Great! What's your name?",
   zip_code: "What's your zip code?",
   email: "What's the best email to reach you?",
