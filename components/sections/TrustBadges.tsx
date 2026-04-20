@@ -1,4 +1,5 @@
 import Image from "next/image"
+import { BrandNavyStarOverlay } from "@/components/brand/BrandNavyStarOverlay"
 import { Check, Star } from "lucide-react"
 import { cn } from "@/lib/utils"
 
@@ -123,8 +124,9 @@ export function TrustBadges() {
       {/* Insurance carriers — full-width navy / white / navy bands */}
       <div className="mt-12 w-full lg:mt-14">
         {/* Band 1 — headline + subheadline */}
-        <div className="w-full bg-blue-900 text-white">
-          <div className="mx-auto max-w-7xl px-4 py-8 text-center md:px-6 md:py-12">
+        <div className="relative w-full overflow-hidden bg-brand-navy text-white">
+          <BrandNavyStarOverlay />
+          <div className="relative mx-auto max-w-7xl px-4 py-8 text-center md:px-6 md:py-12">
             <h3 className="font-heading text-2xl font-bold text-white md:text-3xl">
               Insurance Carriers Protegrity Works With
             </h3>
@@ -169,8 +171,9 @@ export function TrustBadges() {
         </div>
 
         {/* Band 3 — disclaimer */}
-        <div className="w-full bg-blue-900 text-white/80">
-          <div className="mx-auto max-w-4xl px-4 py-6 text-center text-sm md:px-6 md:py-8">
+        <div className="relative w-full overflow-hidden bg-brand-navy text-white/80">
+          <BrandNavyStarOverlay />
+          <div className="relative mx-auto max-w-4xl px-4 py-6 text-center text-sm md:px-6 md:py-8">
             Carrier logos are shown for informational purposes only. Availability, pricing, and
             coverage options vary by location, carrier, coverage type, and eligibility.
           </div>

@@ -1,4 +1,5 @@
 import { Phone } from "lucide-react"
+import { BrandNavyStarOverlay } from "@/components/brand/BrandNavyStarOverlay"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
 import { cn } from "@/lib/utils"
@@ -8,8 +9,9 @@ const ctaButtonClassName =
 
 export function CTABanner() {
   return (
-    <section className="py-16 md:py-20 bg-navy text-primary-foreground">
-      <div className="container mx-auto px-4">
+    <section className="relative overflow-hidden bg-brand-navy py-16 text-primary-foreground md:py-20">
+      <BrandNavyStarOverlay />
+      <div className="container relative mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
           <div className="text-center lg:text-left">
             <div className="flex items-center gap-3 justify-center lg:justify-start mb-4">

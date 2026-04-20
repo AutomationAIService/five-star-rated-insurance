@@ -2,6 +2,7 @@
 
 import { useRouter } from "next/navigation"
 import { useState, useCallback, useRef, useEffect } from "react"
+import { BrandNavyStarOverlay } from "@/components/brand/BrandNavyStarOverlay"
 import { MessageBubble } from "./MessageBubble"
 import { QuickReplies, type InsuranceType } from "./QuickReplies"
 import { ChatInput } from "./ChatInput"
@@ -290,15 +291,16 @@ export function QuoteAssistant() {
   return (
     <div className="flex flex-col w-full max-w-xl bg-surface rounded-xl shadow-lg border border-border overflow-hidden">
       {/* Header */}
-      <div className="flex items-center gap-3 px-4 py-3 bg-navy text-primary-foreground">
+      <div className="relative flex items-center gap-3 overflow-hidden bg-brand-navy px-4 py-3 text-primary-foreground">
+        <BrandNavyStarOverlay />
         <Image
           src="/images/shield-icon.png"
           alt="Ava, Quote Assistant"
           width={44}
           height={44}
-          className="w-[44px] h-[44px] object-contain flex-shrink-0"
+          className="relative z-[1] h-[44px] w-[44px] flex-shrink-0 object-contain"
         />
-        <div className="flex-1 min-w-0">
+        <div className="relative z-[1] min-w-0 flex-1">
           <h3 className="font-heading text-base font-semibold leading-tight">
             Ava, Quote Assistant
           </h3>

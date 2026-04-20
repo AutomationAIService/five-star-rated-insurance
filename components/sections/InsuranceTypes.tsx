@@ -183,7 +183,7 @@ export function InsuranceTypes({ headingLevel = "h2" }: InsuranceTypesProps) {
                       className={cn(
                         "w-full cursor-default font-semibold shadow-none pointer-events-none",
                         "border-0 border-transparent",
-                        "bg-blue-900 text-white",
+                        "bg-brand-navy text-white",
                         "hover:bg-blue-800 hover:text-white",
                         "transition-[background-color,color] duration-200 ease-out",
                         "focus-visible:border-0 focus-visible:ring-2 focus-visible:ring-blue-900 focus-visible:ring-offset-2 focus-visible:ring-offset-background",

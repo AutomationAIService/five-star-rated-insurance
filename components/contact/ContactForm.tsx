@@ -41,7 +41,7 @@ export function ContactForm() {
       <Button
         type="button"
         tabIndex={-1}
-        className="w-full cursor-default bg-blue-900 font-semibold text-white hover:bg-blue-800 sm:w-auto sm:min-w-[160px]"
+        className="w-full cursor-default bg-brand-navy font-semibold text-white hover:bg-brand-navy/90 sm:w-auto sm:min-w-[160px]"
       >
         Submit
       </Button>

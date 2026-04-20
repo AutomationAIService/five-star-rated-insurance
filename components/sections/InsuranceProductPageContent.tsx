@@ -1,3 +1,4 @@
+import { BrandNavyStarOverlay } from "@/components/brand/BrandNavyStarOverlay"
 import { QuoteAssistant } from "@/components/quote-assistant"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
@@ -15,16 +16,9 @@ export function InsuranceProductPageContent({
     <>
       <section
         id="quote"
-        className="relative overflow-hidden bg-gradient-to-br from-navy via-navy to-navy/95 text-primary-foreground"
+        className="relative overflow-hidden bg-gradient-to-br from-brand-navy via-brand-navy to-brand-navy/95 text-primary-foreground"
       >
-        <div className="absolute inset-0 opacity-5">
-          <div
-            className="absolute inset-0"
-            style={{
-              backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-            }}
-          />
-        </div>
+        <BrandNavyStarOverlay />
         <div className="container relative mx-auto px-4 py-12 md:py-16 lg:py-20">
           <div className="mx-auto mb-10 max-w-3xl text-center md:mb-12">
             <h1 className="mb-4 text-balance font-heading text-2xl font-bold md:text-3xl lg:text-4xl">
@@ -76,7 +70,7 @@ export function InsuranceProductPageContent({
               type="button"
               tabIndex={-1}
               size="lg"
-              className="w-full max-w-md cursor-default bg-blue-900 font-semibold text-white hover:bg-blue-800 pointer-events-none sm:w-auto sm:min-w-[280px]"
+              className="w-full max-w-md cursor-default bg-brand-navy font-semibold text-white hover:bg-brand-navy/90 pointer-events-none sm:w-auto sm:min-w-[280px]"
             >
               <span className="flex items-center justify-center">
                 Get Quote

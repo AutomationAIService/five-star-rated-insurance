@@ -1,4 +1,5 @@
 import Image from "next/image"
+import { BrandNavyStarOverlay } from "@/components/brand/BrandNavyStarOverlay"
 import { Phone, Mail, MapPin } from "lucide-react"
 
 const INSURANCE_LINKS = [
@@ -68,11 +69,12 @@ export function Footer() {
           </div>
 
           {/* Column 2 — Insurance Products */}
-          <div className="bg-navy p-6 text-white">
-            <h4 className="mb-4 font-heading text-base font-semibold text-white">
+          <div className="relative overflow-hidden bg-brand-navy p-6 text-white">
+            <BrandNavyStarOverlay />
+            <h4 className="relative mb-4 font-heading text-base font-semibold text-white">
               Insurance Products
             </h4>
-            <ul className="space-y-2">
+            <ul className="relative space-y-2">
               {INSURANCE_LINKS.map((link) => (
                 <li key={link.label}>
                   <span className="text-sm text-white">{link.label}</span>
@@ -82,9 +84,10 @@ export function Footer() {
           </div>
 
           {/* Column 3 — Company */}
-          <div className="bg-navy p-6 text-white">
-            <h4 className="mb-4 font-heading text-base font-semibold text-white">Company</h4>
-            <ul className="space-y-2">
+          <div className="relative overflow-hidden bg-brand-navy p-6 text-white">
+            <BrandNavyStarOverlay />
+            <h4 className="relative mb-4 font-heading text-base font-semibold text-white">Company</h4>
+            <ul className="relative space-y-2">
               {COMPANY_LINKS.map((link) => (
                 <li key={link.label}>
                   <span className="text-sm text-white">{link.label}</span>
@@ -99,9 +102,10 @@ export function Footer() {
           </div>
 
           {/* Column 4 — Partnership */}
-          <div className="bg-navy p-6 text-white">
-            <h4 className="mb-4 font-heading text-base font-semibold text-white">Partnership</h4>
-            <p className="text-sm leading-relaxed text-white">
+          <div className="relative overflow-hidden bg-brand-navy p-6 text-white">
+            <BrandNavyStarOverlay />
+            <h4 className="relative mb-4 font-heading text-base font-semibold text-white">Partnership</h4>
+            <p className="relative text-sm leading-relaxed text-white">
               Five Star Rated Insurance is an authorized marketing partner of Protegrity Insurance
               Brokerage. Insurance products are offered through Protegrity Insurance Brokerage. Not
               available in all states. Coverage and availability vary by state, carrier, and individual

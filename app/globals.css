@@ -5,7 +5,9 @@
 
 :root {
   /* Five Star Rated Insurance Brand Colors */
+  /** Hero & all primary navy panels — use `bg-brand-navy` / `text-brand-navy` in Tailwind */
   --navy: #0A2A5E;
+  --brand-navy: var(--navy);
   --gold: #F5B800;
   --surface: #FFFFFF;
   --text-primary: #1A1A2E;
@@ -45,6 +47,8 @@
   
   /* Brand Colors */
   --color-navy: var(--navy);
+  /** Alias for section backgrounds — same hex as hero / `--navy` (#0A2A5E) */
+  --color-brand-navy: var(--navy);
   --color-gold: var(--gold);
   --color-surface: var(--surface);
   --color-success: var(--success);
