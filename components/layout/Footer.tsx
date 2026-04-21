@@ -243,24 +243,22 @@ export function Footer() {
                   const isOpen = expandedId === product.id
                   return (
                     <li key={product.id}>
-                      <div className="text-[16px] leading-8 text-white">
-                        <span>{product.title}</span>{" "}
-                        <button
-                          type="button"
-                          className="inline border-0 bg-transparent p-0 font-inherit text-[16px] leading-8 text-white"
-                          aria-expanded={isOpen}
-                          aria-label={
-                            isOpen
-                              ? `Close ${product.title} subcategories panel`
-                              : `Open ${product.title} subcategories panel`
-                          }
-                          onClick={() =>
-                            setExpandedId((prev) => (prev === product.id ? null : product.id))
-                          }
-                        >
-                          ▼
-                        </button>
-                      </div>
+                      <button
+                        type="button"
+                        className="flex w-full items-center gap-2 border-0 bg-transparent p-0 text-left font-inherit text-[16px] leading-8 text-white focus-visible:rounded-sm focus-visible:outline focus-visible:ring-2 focus-visible:ring-white/60"
+                        aria-expanded={isOpen}
+                        aria-label={
+                          isOpen
+                            ? `Close ${product.title} subcategories panel`
+                            : `Open ${product.title} subcategories panel`
+                        }
+                        onClick={() =>
+                          setExpandedId((prev) => (prev === product.id ? null : product.id))
+                        }
+                      >
+                        <span>{product.title}</span>
+                        <span aria-hidden>▼</span>
+                      </button>
                     </li>
                   )
                 })}
