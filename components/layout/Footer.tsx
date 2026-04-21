@@ -18,58 +18,101 @@ const INSURANCE_PRODUCTS: {
     title: "Auto Insurance",
     subcategories: [
       { label: "Regular Coverage", href: "/insurance/auto/regular-coverage" },
-      "Classic Coverage",
-      "State Filings & SR-22",
+      { label: "Classic Coverage", href: "/insurance/auto/classic-coverage" },
+      { label: "State Filings & SR-22", href: "/insurance/auto/state-filings-sr-22" },
     ],
   },
   {
     id: "home",
     title: "Home Insurance",
-    subcategories: ["Primary Home", "Seasonal Home", "Rental Home"],
+    subcategories: [
+      { label: "Primary Home", href: "/insurance/home/primary-home" },
+      { label: "Seasonal Home", href: "/insurance/home/seasonal-home" },
+      { label: "Rental Home", href: "/insurance/home/rental-home" },
+    ],
   },
   {
     id: "life",
     title: "Life Insurance",
-    subcategories: ["Term Life Options", "Whole Life Plans", "Family Protection"],
+    subcategories: [
+      { label: "Term Life Options", href: "/insurance/life/term-life-options" },
+      { label: "Whole Life Plans", href: "/insurance/life/whole-life-plans" },
+      { label: "Family Protection", href: "/insurance/life/family-protection" },
+    ],
   },
   {
     id: "commercial-auto",
     title: "Commercial Auto",
-    subcategories: ["Fleet Coverage", "Cargo Protection", "Business Liability"],
+    subcategories: [
+      { label: "Fleet Coverage", href: "/insurance/commercial-auto/fleet-coverage" },
+      { label: "Cargo Protection", href: "/insurance/commercial-auto/cargo-protection" },
+      { label: "Business Liability", href: "/insurance/commercial-auto/business-liability" },
+    ],
   },
   {
     id: "business",
     title: "Business Insurance",
-    subcategories: ["General Liability", "Property Coverage", "Workers Compensation"],
+    subcategories: [
+      { label: "General Liability", href: "/insurance/business/general-liability" },
+      { label: "Property Coverage", href: "/insurance/business/property-coverage" },
+      { label: "Workers Compensation", href: "/insurance/business/workers-compensation" },
+    ],
   },
   {
     id: "specialty",
     title: "Specialty Insurance",
     subcategories: [
-      "Motorcycle and ATV Coverage",
-      "Boat, Jet Ski and Watercraft Protection",
-      "RV, Motorhome, and Trailer Options",
+      {
+        label: "Motorcycle and ATV Coverage",
+        href: "/insurance/specialty/motorcycle-and-atv-coverage",
+      },
+      {
+        label: "Boat, Jet Ski and Watercraft Protection",
+        href: "/insurance/specialty/boat-and-watercraft-coverage",
+      },
+      {
+        label: "RV, Motorhome, and Trailer Options",
+        href: "/insurance/specialty/rv-motorhome-and-trailer-options",
+      },
     ],
   },
   {
     id: "mexico-travel",
     title: "Mexico Travel Insurance",
     subcategories: [
-      "Emergency Medical & Dental",
-      "Trip Cancellation & Interruption",
-      "Medical Evacuation & Repatriation",
-      "Lost/Stolen Baggage",
-      "Rental Car Coverage in Mexico",
-      "Cancel For Any Reason (CFAR)",
+      {
+        label: "Emergency Medical & Dental",
+        href: "/insurance/mexico-travel/emergency-medical-and-dental",
+      },
+      {
+        label: "Trip Cancellation & Interruption",
+        href: "/insurance/mexico-travel/trip-cancellation-and-interruption",
+      },
+      {
+        label: "Medical Evacuation & Repatriation",
+        href: "/insurance/mexico-travel/medical-evacuation-and-repatriation",
+      },
+      { label: "Lost/Stolen Baggage", href: "/insurance/mexico-travel/lost-stolen-baggage" },
+      {
+        label: "Rental Car Coverage in Mexico",
+        href: "/insurance/mexico-travel/rental-car-coverage-in-mexico",
+      },
+      {
+        label: "Cancel For Any Reason (CFAR)",
+        href: "/insurance/mexico-travel/cancel-for-any-reason-cfar",
+      },
     ],
   },
   {
     id: "other",
     title: "Other Insurance",
     subcategories: [
-      "Umbrella Insurance",
-      "Flood and Earthquake Coverage",
-      "Valuable Items Protection",
+      { label: "Umbrella Insurance", href: "/insurance/other/umbrella-insurance" },
+      {
+        label: "Flood and Earthquake Coverage",
+        href: "/insurance/other/flood-and-earthquake-coverage",
+      },
+      { label: "Valuable Items Protection", href: "/insurance/other/valuable-items-protection" },
     ],
   },
 ]
