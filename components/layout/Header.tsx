@@ -18,9 +18,9 @@ import { navigationMenuTriggerStyle } from "@/components/ui/navigation-menu"
 import {
   Sheet,
   SheetContent,
+  SheetDescription,
   SheetHeader,
   SheetTitle,
-  SheetTrigger,
 } from "@/components/ui/sheet"
 import {
   insuranceProductById,
@@ -88,7 +88,7 @@ const PRODUCT_CATEGORY_NAV: ProductCategoryNav[] = [
       },
       {
         title: "Boat, Jet Ski and Watercraft Protection",
-        href: "/insurance/specialty/boat-jet-ski-and-watercraft-protection",
+        href: "/insurance/specialty/boat-and-watercraft-coverage",
       },
       {
         title: "RV, Motorhome, and Trailer Options",
@@ -322,6 +322,18 @@ export function Header() {
             </span>
           </Button>
 
+          <Button
+            type="button"
+            variant="outline"
+            className="h-12 min-h-[48px] w-12 min-w-[48px] shrink-0 rounded-md border-navy p-0 text-navy hover:bg-navy/5"
+            aria-label="Open navigation menu"
+            aria-expanded={mobileNavOpen}
+            aria-controls="mobile-nav-drawer"
+            onClick={() => setMobileNavOpen(true)}
+          >
+            <Menu className="size-7 shrink-0" aria-hidden />
+          </Button>
+
           <Sheet
             open={mobileNavOpen}
             onOpenChange={(open) => {
@@ -331,19 +343,16 @@ export function Header() {
               }
             }}
           >
-            <SheetTrigger asChild>
-              <Button
-                type="button"
-                variant="outline"
-                className="h-12 min-h-[48px] w-12 min-w-[48px] shrink-0 rounded-md border-navy p-0 text-navy hover:bg-navy/5"
-                aria-label="Open navigation menu"
-              >
-                <Menu className="size-7 shrink-0" aria-hidden />
-              </Button>
-            </SheetTrigger>
-            <SheetContent side="right" className="flex w-full flex-col overflow-y-auto sm:max-w-sm">
+            <SheetContent
+              id="mobile-nav-drawer"
+              side="right"
+              className="flex w-full flex-col overflow-y-auto sm:max-w-sm"
+            >
               <SheetHeader className="text-left">
                 <SheetTitle className="font-heading text-navy">Menu</SheetTitle>
+                <SheetDescription className="sr-only">
+                  Site navigation and insurance product categories
+                </SheetDescription>
               </SheetHeader>
               <nav className="flex flex-col gap-6 px-2 pb-8">
                 <div>
