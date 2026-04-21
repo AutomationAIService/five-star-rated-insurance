@@ -16,13 +16,13 @@ export const metadata: Metadata = {
   description:
     "Motorcycle insurance Phoenix AZ plus ATV and UTV coverage for Arizona riders across Scottsdale, Mesa, Tempe, Chandler, Glendale, Gilbert, and Peoria.",
   alternates: {
-    canonical: "/insurance/specialty/motorcycle-atv",
+    canonical: "/insurance/specialty/motorcycle-and-atv-coverage",
   },
   openGraph: {
     title: "Motorcycle and ATV Insurance in Phoenix, AZ | Five Star Rated",
     description:
       "Arizona motorcycle and ATV coverage for street riders, off-road enthusiasts, and collectors across Phoenix, Scottsdale, Mesa, Tempe, Chandler, Glendale, Gilbert, and Peoria.",
-    url: `${SITE_URL}/insurance/specialty/motorcycle-atv`,
+    url: `${SITE_URL}/insurance/specialty/motorcycle-and-atv-coverage`,
     siteName: "Five Star Rated Insurance",
     locale: "en_US",
     type: "website",
@@ -67,7 +67,7 @@ const serviceSchema = {
     "@type": "State",
     name: "Arizona",
   },
-  url: `${SITE_URL}/insurance/specialty/motorcycle-atv`,
+  url: `${SITE_URL}/insurance/specialty/motorcycle-and-atv-coverage`,
   description:
     "Educational resource on Arizona motorcycle, ATV, and UTV insurance covering liability, collision, comprehensive, custom parts, and rider gear across Maricopa County.",
 }
