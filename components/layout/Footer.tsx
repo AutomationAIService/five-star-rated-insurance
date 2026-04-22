@@ -241,12 +241,14 @@ export function Footer() {
               <ul className="relative shrink-0 space-y-2 lg:min-w-[12rem]">
                 {INSURANCE_PRODUCTS.map((product) => {
                   const isOpen = expandedId === product.id
+                  const panelId = `footer-subcat-${product.id}`
                   return (
                     <li key={product.id}>
                       <button
                         type="button"
-                        className="flex w-full items-center gap-2 border-0 bg-transparent p-0 text-left font-inherit text-[16px] leading-8 text-white focus-visible:rounded-sm focus-visible:outline focus-visible:ring-2 focus-visible:ring-white/60"
+                        className="flex w-full touch-manipulation items-center justify-between gap-2 border-0 bg-transparent p-0 text-left font-inherit text-[16px] leading-8 text-white focus-visible:rounded-sm focus-visible:outline focus-visible:ring-2 focus-visible:ring-white/60"
                         aria-expanded={isOpen}
+                        aria-controls={panelId}
                         aria-label={
                           isOpen
                             ? `Close ${product.title} subcategories panel`
@@ -257,8 +259,35 @@ export function Footer() {
                         }
                       >
                         <span>{product.title}</span>
-                        <span aria-hidden>▼</span>
+                        <span
+                          aria-hidden
+                          className={`inline-block shrink-0 transform transition-transform duration-200 ease-out lg:transform-none lg:transition-none ${
+                            isOpen ? "rotate-180 lg:rotate-0" : ""
+                          }`}
+                        >
+                          ▼
+                        </span>
                       </button>
+                      <div
+                        id={panelId}
+                        className={`grid overflow-hidden transition-[grid-template-rows] duration-300 ease-out lg:hidden ${
+                          isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
+                        }`}
+                        aria-hidden={!isOpen}
+                      >
+                        <div className="min-h-0 overflow-hidden">
+                          <ul className="mt-2 space-y-1 border-l border-white/20 pb-1 pl-4 text-[15px] leading-7 text-white">
+                            {product.subcategories.map((sub) => {
+                              const key = typeof sub === "string" ? sub : sub.label
+                              return (
+                                <li key={key}>
+                                  <SubcategoryLine entry={sub} />
+                                </li>
+                              )
+                            })}
+                          </ul>
+                        </div>
+                      </div>
                     </li>
                   )
                 })}
@@ -315,23 +344,6 @@ export function Footer() {
         </div>
       </div>
 
-      {activeProduct ? (
-        <div
-          className="fixed inset-0 z-[100] flex flex-col justify-end bg-black/50 lg:hidden"
-          role="presentation"
-        >
-          <button
-            type="button"
-            className="absolute inset-0 cursor-default border-0 bg-transparent p-0"
-            aria-label="Close subcategories panel"
-            onClick={closePanel}
-          />
-          <div className="relative z-[1] max-h-[90vh] overflow-y-auto rounded-t-2xl bg-brand-navy p-6 text-white shadow-[0_-8px_32px_rgba(0,0,0,0.35)]">
-            <BrandNavyStarOverlay />
-            <InsuranceFlyoutPanelContent product={activeProduct} onClose={closePanel} className="relative" />
-          </div>
-        </div>
-      ) : null}
     </footer>
   )
 }
