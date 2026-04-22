@@ -10,10 +10,22 @@ import {
   ArrowRight,
   type LucideIcon,
 } from "lucide-react"
+import Link from "next/link"
 import { BrandNavyStarOverlay } from "@/components/brand/BrandNavyStarOverlay"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
+
+const INSURANCE_TITLE_HREFS: Record<string, string> = {
+  "Auto Insurance": "/insurance/auto",
+  "Home Insurance": "/insurance/home",
+  "Life Insurance": "/insurance/life",
+  "Business Insurance": "/insurance/business",
+  "Commercial Auto": "/insurance/commercial-auto",
+  "Specialty Insurance": "/insurance/specialty",
+  "Mexico Travel Insurance": "/insurance/mexico-travel",
+  "Other Insurance": "/insurance/other",
+}
 
 const quoteAttribution = (
   <p className="mt-3 text-center text-sm text-gray-500">
@@ -142,7 +154,16 @@ export function InsuranceTypes({ headingLevel = "h2" }: InsuranceTypesProps) {
                       <insurance.icon className="h-6 w-6" />
                     </div>
                     <CardTitle className="text-left font-heading text-xl text-foreground">
-                      {insurance.title}
+                      {INSURANCE_TITLE_HREFS[insurance.title] ? (
+                        <Link
+                          href={INSURANCE_TITLE_HREFS[insurance.title]}
+                          className="inline-block cursor-pointer text-foreground underline-offset-4 transition-colors duration-200 hover:text-navy hover:underline focus-visible:rounded-sm focus-visible:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-navy focus-visible:ring-offset-2"
+                        >
+                          {insurance.title}
+                        </Link>
+                      ) : (
+                        insurance.title
+                      )}
                     </CardTitle>
                   </div>
                   {hasDescription && (
