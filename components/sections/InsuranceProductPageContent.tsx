@@ -2,16 +2,84 @@ import { BrandNavyStarOverlay } from "@/components/brand/BrandNavyStarOverlay"
 import { QuoteAssistant } from "@/components/quote-assistant"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import type { InsuranceProduct } from "@/src/data/insuranceProducts"
+import type {
+  InsuranceProduct,
+  InsuranceProductId,
+} from "@/src/data/insuranceProducts"
 import { ArrowRight } from "lucide-react"
+import Link from "next/link"
 
 type InsuranceProductPageContentProps = {
   product: InsuranceProduct
 }
 
+/**
+ * Maps each main-category overview page's coverage-item `name` (as defined in
+ * `src/data/insuranceProducts.ts`) to its dedicated subcategory page URL.
+ * Used below to turn every card title into a `next/link` Link on the 8 main
+ * category overview pages. Keys must match `CoverageItem.name` exactly.
+ */
+const COVERAGE_ITEM_HREFS: Record<
+  InsuranceProductId,
+  Record<string, string>
+> = {
+  auto: {
+    "Regular coverage": "/insurance/auto/regular-coverage",
+    "Classic coverage": "/insurance/auto/classic-coverage",
+    "State filings & SR-22": "/insurance/auto/state-filings-sr-22",
+  },
+  home: {
+    "Primary home": "/insurance/home/primary-home",
+    "Seasonal home": "/insurance/home/seasonal-home",
+    "Rental home": "/insurance/home/rental-home",
+  },
+  life: {
+    "Term life options": "/insurance/life/term-life-options",
+    "Whole life plans": "/insurance/life/whole-life-plans",
+    "Family protection": "/insurance/life/family-protection",
+  },
+  "commercial-auto": {
+    "Fleet coverage": "/insurance/commercial-auto/fleet-coverage",
+    "Cargo protection": "/insurance/commercial-auto/cargo-protection",
+    "Business liability": "/insurance/commercial-auto/business-liability",
+  },
+  business: {
+    "General liability": "/insurance/business/general-liability",
+    "Property coverage": "/insurance/business/property-coverage",
+    "Workers comp": "/insurance/business/workers-compensation",
+  },
+  specialty: {
+    "Motorcycle & ATV": "/insurance/specialty/motorcycle-and-atv-coverage",
+    "Boats & jet skis": "/insurance/specialty/boat-and-watercraft-coverage",
+    "RVs & motorhomes":
+      "/insurance/specialty/rv-motorhome-and-trailer-options",
+  },
+  "mexico-travel": {
+    "Rental car coverage in Mexico":
+      "/insurance/mexico-travel/rental-car-coverage-in-mexico",
+    "Trip cancellation and interruption":
+      "/insurance/mexico-travel/trip-cancellation-and-interruption",
+    "Emergency medical and dental":
+      "/insurance/mexico-travel/emergency-medical-and-dental",
+    "Medical evacuation and repatriation":
+      "/insurance/mexico-travel/medical-evacuation-and-repatriation",
+    "Lost/stolen baggage": "/insurance/mexico-travel/lost-stolen-baggage",
+    "Cancel for any reason (CFAR)":
+      "/insurance/mexico-travel/cancel-for-any-reason-cfar",
+  },
+  other: {
+    "Umbrella insurance": "/insurance/other/umbrella-insurance",
+    "Flood and earthquake coverage":
+      "/insurance/other/flood-and-earthquake-coverage",
+    "Valuable items protection": "/insurance/other/valuable-items-protection",
+  },
+}
+
 export function InsuranceProductPageContent({
   product,
 }: InsuranceProductPageContentProps) {
+  const titleHrefs = COVERAGE_ITEM_HREFS[product.id] ?? {}
+
   return (
     <>
       <section
@@ -49,20 +117,33 @@ export function InsuranceProductPageContent({
           </div>
 
           <div className="mx-auto mt-10 grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-3">
-            {product.coverageItems.map((coverage) => (
-              <Card key={coverage.name} className="border-border bg-surface">
-                <CardHeader className="pb-3">
-                  <CardTitle className="font-heading text-xl text-foreground">
-                    {coverage.name}
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-base leading-relaxed text-muted-foreground">
-                    {coverage.description}
-                  </p>
-                </CardContent>
-              </Card>
-            ))}
+            {product.coverageItems.map((coverage) => {
+              const href = titleHrefs[coverage.name]
+
+              return (
+                <Card key={coverage.name} className="border-border bg-surface">
+                  <CardHeader className="pb-3">
+                    <CardTitle className="font-heading text-xl text-foreground">
+                      {href ? (
+                        <Link
+                          href={href}
+                          className="inline-block cursor-pointer text-foreground underline-offset-4 transition-colors duration-200 hover:text-navy hover:underline focus-visible:rounded-sm focus-visible:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-navy focus-visible:ring-offset-2"
+                        >
+                          {coverage.name}
+                        </Link>
+                      ) : (
+                        coverage.name
+                      )}
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-base leading-relaxed text-muted-foreground">
+                      {coverage.description}
+                    </p>
+                  </CardContent>
+                </Card>
+              )
+            })}
           </div>
 
           <div className="mt-10 flex flex-col items-center">
