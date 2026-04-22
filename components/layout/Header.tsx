@@ -3,18 +3,8 @@
 import Image from "next/image"
 import Link from "next/link"
 import { ChevronDown, Menu, Phone } from "lucide-react"
-import { useCallback, useRef, useState } from "react"
+import { useState } from "react"
 import { Button } from "@/components/ui/button"
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuSub,
-  DropdownMenuSubContent,
-  DropdownMenuSubTrigger,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
-import { navigationMenuTriggerStyle } from "@/components/ui/navigation-menu"
 import {
   Sheet,
   SheetContent,
@@ -138,111 +128,16 @@ const PRODUCT_CATEGORY_NAV: ProductCategoryNav[] = [
   },
 ]
 
-const HOVER_CLOSE_MS = 220
-
-const callButtonClass =
-  "shrink-0 bg-gold px-4 py-2 text-sm font-semibold text-navy hover:bg-gold/90 h-auto min-h-0 rounded-md"
-
-function ProductsDropdown() {
-  const [open, setOpen] = useState(false)
-  const closeTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
-
-  const clearCloseTimer = useCallback(() => {
-    if (closeTimerRef.current) {
-      clearTimeout(closeTimerRef.current)
-      closeTimerRef.current = null
-    }
-  }, [])
-
-  const scheduleClose = useCallback(() => {
-    clearCloseTimer()
-    closeTimerRef.current = setTimeout(() => setOpen(false), HOVER_CLOSE_MS)
-  }, [clearCloseTimer])
-
-  const handleTriggerPointerEnter = useCallback(() => {
-    clearCloseTimer()
-    setOpen(true)
-  }, [clearCloseTimer])
-
-  const handleContentPointerEnter = useCallback(() => {
-    clearCloseTimer()
-  }, [clearCloseTimer])
-
-  return (
-    <DropdownMenu open={open} onOpenChange={setOpen} modal={false}>
-      <DropdownMenuTrigger
-        onPointerEnter={handleTriggerPointerEnter}
-        onPointerLeave={scheduleClose}
-        className={cn(
-          navigationMenuTriggerStyle(),
-          "group h-9 gap-0 text-navy bg-transparent text-xs hover:bg-navy/5 focus:bg-navy/5 data-[state=open]:bg-navy/10 sm:text-sm",
-        )}
-      >
-        Insurance Products
-        <ChevronDown
-          className="relative top-[1px] ml-1 size-3 shrink-0 transition duration-300 group-data-[state=open]:rotate-180"
-          aria-hidden
-        />
-      </DropdownMenuTrigger>
-      <DropdownMenuContent
-        align="start"
-        side="bottom"
-        sideOffset={8}
-        collisionPadding={16}
-        onPointerEnter={handleContentPointerEnter}
-        onPointerLeave={scheduleClose}
-        className={cn(
-          "z-[100] w-[min(100vw-2rem,20rem)] p-1.5 shadow-md",
-          "data-[state=open]:animate-in data-[state=closed]:animate-out",
-        )}
-      >
-        {PRODUCT_CATEGORY_NAV.map((category) => {
-          const product = insuranceProductById[category.id]
-          return (
-            <DropdownMenuSub key={category.id}>
-              <DropdownMenuSubTrigger className="px-0 py-0 focus:bg-accent data-[state=open]:bg-accent">
-                <Link
-                  href={product.pageRoute}
-                  className="flex-1 rounded-sm px-3 py-2.5 text-sm font-medium text-navy no-underline outline-none"
-                  onClick={(event) => event.stopPropagation()}
-                >
-                  {product.title}
-                </Link>
-              </DropdownMenuSubTrigger>
-              <DropdownMenuSubContent
-                className="w-[min(100vw-2rem,20rem)] p-1.5 shadow-md"
-                onPointerEnter={handleContentPointerEnter}
-                onPointerLeave={scheduleClose}
-              >
-                {category.subcategories.map((subcategory) => (
-                  <DropdownMenuItem key={subcategory.href} asChild>
-                    <Link
-                      href={subcategory.href}
-                      className="cursor-pointer rounded-md px-3 py-2.5 text-sm font-medium text-navy no-underline outline-none hover:bg-accent hover:text-accent-foreground focus-visible:ring-0"
-                    >
-                      {subcategory.title}
-                    </Link>
-                  </DropdownMenuItem>
-                ))}
-              </DropdownMenuSubContent>
-            </DropdownMenuSub>
-          )
-        })}
-      </DropdownMenuContent>
-    </DropdownMenu>
-  )
-}
-
 export function Header() {
-  const [mobileNavOpen, setMobileNavOpen] = useState(false)
-  const [expandedMobileCategoryId, setExpandedMobileCategoryId] = useState<InsuranceProductId | null>(
+  const [navOpen, setNavOpen] = useState(false)
+  const [expandedCategoryId, setExpandedCategoryId] = useState<InsuranceProductId | null>(
     null,
   )
 
   return (
     <header className="sticky top-0 z-50 w-full overflow-visible bg-white text-navy border-b border-border shadow-sm">
       <div className="mx-auto flex min-h-[92px] w-full min-w-0 max-w-7xl items-center justify-between gap-2 px-3 py-2 sm:min-h-[96px] sm:px-5 sm:py-2 lg:h-[85px] lg:min-h-[85px] lg:gap-3 lg:px-6 lg:py-0 lg:pr-8">
-        <span className="flex min-w-0 max-w-[calc(100%-7.75rem)] shrink items-center sm:max-w-[calc(100%-8.25rem)] lg:max-w-none lg:shrink-0">
+        <span className="flex min-w-0 shrink items-center">
           <Link
             href="/"
             className="inline-flex max-w-full shrink-0 outline-offset-2 focus-visible:rounded-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-navy"
@@ -259,66 +154,21 @@ export function Header() {
           </Link>
         </span>
 
-        {/* Desktop: nav + CTA (lg+) */}
-        <div className="hidden min-w-0 flex-1 items-center justify-end lg:flex">
-          <div className="flex min-w-0 items-center">
-            <div className="ml-4 flex shrink-0 flex-nowrap items-center gap-5 xl:ml-10 2xl:ml-16">
-              <ProductsDropdown />
-              <Link
-                href="/about"
-                className={cn(
-                  navigationMenuTriggerStyle(),
-                  "inline-flex text-navy bg-transparent text-xs hover:bg-navy/5 focus:bg-navy/5 sm:text-sm",
-                )}
-              >
-                About Us
-              </Link>
-              <Link
-                href="/blog"
-                className={cn(
-                  navigationMenuTriggerStyle(),
-                  "inline-flex text-navy bg-transparent text-xs hover:bg-navy/5 focus:bg-navy/5 sm:text-sm",
-                )}
-              >
-                Blog
-              </Link>
-              <Link
-                href="/contact"
-                className={cn(
-                  navigationMenuTriggerStyle(),
-                  "inline-flex text-navy bg-transparent text-xs hover:bg-navy/5 focus:bg-navy/5 sm:text-sm",
-                )}
-              >
-                Contact
-              </Link>
-            </div>
-
-            <Button
-              type="button"
-              tabIndex={-1}
-              className={cn(
-                callButtonClass,
-                "ml-4 cursor-default lg:ml-6 xl:ml-8 pointer-events-none",
-              )}
-            >
-              <span className="flex items-center gap-2 whitespace-nowrap">
-                <Phone className="h-4 w-4 shrink-0" />
-                <span>CALL NOW</span>
-              </span>
-            </Button>
-          </div>
-        </div>
-
-        {/* Tablet & mobile: logo left; call + menu grouped on the right (48px targets) */}
-        <div className="flex min-w-0 flex-1 justify-end items-center gap-2 sm:gap-3 lg:hidden">
+        {/* Right cluster: CALL NOW + hamburger — shown at every breakpoint */}
+        <div className="flex shrink-0 items-center gap-2 sm:gap-3">
           <Button
             type="button"
             tabIndex={-1}
-            className="h-12 w-12 min-h-[48px] min-w-[48px] max-h-[48px] max-w-[48px] shrink-0 flex-none cursor-default rounded-md border-0 bg-gold p-0 text-navy hover:bg-gold/90 pointer-events-none"
             aria-label="Call now"
+            className={cn(
+              "shrink-0 flex-none cursor-default rounded-md border-0 bg-gold text-navy hover:bg-gold/90 pointer-events-none",
+              "h-12 w-12 min-h-[48px] min-w-[48px] max-h-[48px] max-w-[48px] p-0",
+              "lg:h-auto lg:w-auto lg:min-h-0 lg:min-w-0 lg:max-h-none lg:max-w-none lg:px-4 lg:py-2 lg:text-sm lg:font-semibold",
+            )}
           >
-            <span className="flex items-center justify-center text-navy">
-              <Phone className="size-6 shrink-0" aria-hidden />
+            <span className="flex items-center justify-center gap-2 text-navy">
+              <Phone className="size-6 shrink-0 lg:size-4" aria-hidden />
+              <span className="hidden whitespace-nowrap lg:inline">CALL NOW</span>
             </span>
           </Button>
 
@@ -327,26 +177,26 @@ export function Header() {
             variant="outline"
             className="h-12 min-h-[48px] w-12 min-w-[48px] shrink-0 rounded-md border-navy p-0 text-navy hover:bg-navy/5"
             aria-label="Open navigation menu"
-            aria-expanded={mobileNavOpen}
-            aria-controls="mobile-nav-drawer"
-            onClick={() => setMobileNavOpen(true)}
+            aria-expanded={navOpen}
+            aria-controls="site-nav-drawer"
+            onClick={() => setNavOpen(true)}
           >
             <Menu className="size-7 shrink-0" aria-hidden />
           </Button>
 
           <Sheet
-            open={mobileNavOpen}
+            open={navOpen}
             onOpenChange={(open) => {
-              setMobileNavOpen(open)
+              setNavOpen(open)
               if (!open) {
-                setExpandedMobileCategoryId(null)
+                setExpandedCategoryId(null)
               }
             }}
           >
             <SheetContent
-              id="mobile-nav-drawer"
+              id="site-nav-drawer"
               side="right"
-              className="flex w-full flex-col overflow-y-auto sm:max-w-sm"
+              className="flex w-full flex-col overflow-y-auto sm:max-w-sm lg:max-w-md"
             >
               <SheetHeader className="text-left">
                 <SheetTitle className="font-heading text-navy">Menu</SheetTitle>
@@ -362,49 +212,49 @@ export function Header() {
                   <ul className="flex flex-col gap-1">
                     {PRODUCT_CATEGORY_NAV.map((category) => {
                       const product = insuranceProductById[category.id]
-                      const isExpanded = expandedMobileCategoryId === category.id
+                      const isExpanded = expandedCategoryId === category.id
                       return (
-                      <li key={product.id}>
-                        <button
-                          type="button"
-                          className="flex w-full items-center gap-2 rounded-md py-2 text-left text-sm font-medium text-navy hover:bg-navy/5"
-                          aria-expanded={isExpanded}
-                          aria-controls={`mobile-nav-sub-${category.id}`}
-                          aria-label={`${isExpanded ? "Collapse" : "Expand"} ${product.title} subcategories`}
-                          onClick={() =>
-                            setExpandedMobileCategoryId((current) =>
-                              current === category.id ? null : category.id,
-                            )
-                          }
-                        >
-                          <span className="min-w-0 flex-1">{product.title}</span>
-                          <ChevronDown
-                            className={cn(
-                              "size-4 shrink-0 transition-transform",
-                              isExpanded && "rotate-180",
-                            )}
-                            aria-hidden
-                          />
-                        </button>
-                        {isExpanded ? (
-                          <ul
-                            id={`mobile-nav-sub-${category.id}`}
-                            className="ml-3 mt-1 flex flex-col border-l border-border pl-3"
+                        <li key={product.id}>
+                          <button
+                            type="button"
+                            className="flex w-full items-center gap-2 rounded-md py-2 text-left text-sm font-medium text-navy hover:bg-navy/5"
+                            aria-expanded={isExpanded}
+                            aria-controls={`site-nav-sub-${category.id}`}
+                            aria-label={`${isExpanded ? "Collapse" : "Expand"} ${product.title} subcategories`}
+                            onClick={() =>
+                              setExpandedCategoryId((current) =>
+                                current === category.id ? null : category.id,
+                              )
+                            }
                           >
-                            {category.subcategories.map((subcategory) => (
-                              <li key={subcategory.href}>
-                                <Link
-                                  href={subcategory.href}
-                                  className="block rounded-md py-1.5 text-sm text-navy/90 hover:bg-navy/5 hover:text-navy"
-                                  onClick={() => setMobileNavOpen(false)}
-                                >
-                                  {subcategory.title}
-                                </Link>
-                              </li>
-                            ))}
-                          </ul>
-                        ) : null}
-                      </li>
+                            <span className="min-w-0 flex-1">{product.title}</span>
+                            <ChevronDown
+                              className={cn(
+                                "size-4 shrink-0 transition-transform",
+                                isExpanded && "rotate-180",
+                              )}
+                              aria-hidden
+                            />
+                          </button>
+                          {isExpanded ? (
+                            <ul
+                              id={`site-nav-sub-${category.id}`}
+                              className="ml-3 mt-1 flex flex-col border-l border-border pl-3"
+                            >
+                              {category.subcategories.map((subcategory) => (
+                                <li key={subcategory.href}>
+                                  <Link
+                                    href={subcategory.href}
+                                    className="block rounded-md py-1.5 text-sm text-navy/90 hover:bg-navy/5 hover:text-navy"
+                                    onClick={() => setNavOpen(false)}
+                                  >
+                                    {subcategory.title}
+                                  </Link>
+                                </li>
+                              ))}
+                            </ul>
+                          ) : null}
+                        </li>
                       )
                     })}
                   </ul>
@@ -413,21 +263,21 @@ export function Header() {
                   <Link
                     href="/about"
                     className="rounded-md py-2 text-sm font-medium text-navy hover:bg-navy/5"
-                    onClick={() => setMobileNavOpen(false)}
+                    onClick={() => setNavOpen(false)}
                   >
                     About Us
                   </Link>
                   <Link
                     href="/blog"
                     className="rounded-md py-2 text-sm font-medium text-navy hover:bg-navy/5"
-                    onClick={() => setMobileNavOpen(false)}
+                    onClick={() => setNavOpen(false)}
                   >
                     Blog
                   </Link>
                   <Link
                     href="/contact"
                     className="rounded-md py-2 text-sm font-medium text-navy hover:bg-navy/5"
-                    onClick={() => setMobileNavOpen(false)}
+                    onClick={() => setNavOpen(false)}
                   >
                     Contact
                   </Link>
