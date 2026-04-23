@@ -117,12 +117,22 @@ export function QuoteAssistant() {
   const [validationError, setValidationError] = useState<string | null>(null)
   const [isSubmitting, setIsSubmitting] = useState(false)
   const messagesEndRef = useRef<HTMLDivElement>(null)
+  const hasMountedRef = useRef(false)
 
   const scrollToBottom = useCallback(() => {
-    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" })
+    // `block: "nearest"` keeps the scroll contained to the chat's own
+    // scrollable container and prevents the browser from scrolling the
+    // entire page to bring the chatbot into view.
+    messagesEndRef.current?.scrollIntoView({ behavior: "smooth", block: "nearest" })
   }, [])
 
   useEffect(() => {
+    // Skip the very first render so the chatbot mounts silently and
+    // does not hijack the page scroll on navigation.
+    if (!hasMountedRef.current) {
+      hasMountedRef.current = true
+      return
+    }
     scrollToBottom()
   }, [messages, scrollToBottom])
 

@@ -7,6 +7,7 @@ import {
   CookieConsentProvider,
   CookiePreferencesModal,
 } from '@/components/consent'
+import { ScrollToTop } from '@/components/scroll-to-top'
 import './globals.css'
 
 const poppins = Poppins({ 
@@ -42,6 +43,7 @@ export default function RootLayout({
     <html lang="en" className={`${poppins.variable} ${inter.variable} bg-background`}>
       <body className="font-sans antialiased">
         <CookieConsentProvider>
+          <ScrollToTop />
           <ConsentGatedScripts />
           {children}
           <CookieConsentBanner />
