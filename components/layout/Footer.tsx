@@ -117,12 +117,16 @@ const INSURANCE_PRODUCTS: {
   },
 ]
 
-const COMPANY_LINKS = [{ label: "About Us" }, { label: "Blog" }, { label: "Contact" }]
+const COMPANY_LINKS = [
+  { label: "About Us", href: "/about" },
+  { label: "Blog", href: "/blog" },
+  { label: "Contact", href: "/contact" },
+]
 
 const LEGAL_LINKS = [
-  { label: "Privacy Policy" },
-  { label: "Terms of Service" },
-  { label: "TCPA Disclosure" },
+  { label: "Privacy Policy", href: "/privacy-policy" },
+  { label: "Terms of Service", href: "/terms-of-service" },
+  { label: "TCPA Disclosure", href: "/tcpa-consent" },
 ]
 
 type InsuranceProduct = (typeof INSURANCE_PRODUCTS)[number]
@@ -313,12 +317,22 @@ export function Footer() {
             <ul className="relative space-y-2">
               {COMPANY_LINKS.map((link) => (
                 <li key={link.label}>
-                  <span className="text-[16px] leading-8 text-white">{link.label}</span>
+                  <Link
+                    href={link.href}
+                    className="text-[16px] leading-8 text-white underline-offset-2 hover:underline focus-visible:rounded-sm focus-visible:outline focus-visible:ring-2 focus-visible:ring-white/60"
+                  >
+                    {link.label}
+                  </Link>
                 </li>
               ))}
               {LEGAL_LINKS.map((link) => (
                 <li key={link.label}>
-                  <span className="text-[16px] leading-8 text-white">{link.label}</span>
+                  <Link
+                    href={link.href}
+                    className="text-[16px] leading-8 text-white underline-offset-2 hover:underline focus-visible:rounded-sm focus-visible:outline focus-visible:ring-2 focus-visible:ring-white/60"
+                  >
+                    {link.label}
+                  </Link>
                 </li>
               ))}
             </ul>

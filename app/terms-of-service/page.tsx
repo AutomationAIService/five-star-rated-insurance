@@ -1,4 +1,4 @@
-import { Header } from "@/components/layout"
+import { Footer, Header } from "@/components/layout"
 
 export default function TermsOfServicePage() {
   return (
@@ -169,6 +169,7 @@ export default function TermsOfServicePage() {
           </section>
         </div>
       </main>
+      <Footer />
     </div>
   )
 }

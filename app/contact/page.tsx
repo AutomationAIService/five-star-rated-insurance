@@ -1,6 +1,6 @@
 import { BrandNavyStarOverlay } from "@/components/brand/BrandNavyStarOverlay"
-import { ContactForm } from "@/components/contact/ContactForm"
 import { Footer, Header } from "@/components/layout"
+import { QuoteAssistant } from "@/components/quote-assistant"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Mail, MapPin, Phone } from "lucide-react"
 import type { Metadata } from "next"
@@ -8,7 +8,7 @@ import type { Metadata } from "next"
 export const metadata: Metadata = {
   title: "Contact | Five Star Rated Insurance",
   description:
-    "Get in touch with Five Star Rated Insurance. Phone, email, and message — we are here to help.",
+    "Skip the forms. Chat with Ava to get connected fast to Protegrity Insurance Brokerage's licensed Arizona team for quoting, coverage, and service.",
 }
 
 export default function ContactPage() {
@@ -21,10 +21,17 @@ export default function ContactPage() {
           <div className="container relative mx-auto px-4 py-12 md:py-16 lg:py-20">
             <div className="mx-auto max-w-3xl text-center">
               <h1 className="mb-4 text-balance font-heading text-2xl font-bold md:text-3xl lg:text-4xl">
-                Get In Touch
+                Get Connected to Protegrity's Licensed Team
               </h1>
-              <p className="text-lg leading-relaxed text-primary-foreground/80 md:text-xl">
-                Have questions? Our team is here to help.
+              <p className="mb-6 text-balance text-lg font-semibold text-gold md:text-xl">
+                Skip the forms. Start a conversation with Ava and we will route you to a licensed
+                Protegrity agent fast.
+              </p>
+              <p className="text-base leading-relaxed text-primary-foreground/85 md:text-lg">
+                Ava, our interactive chat assistant, replaces outdated contact forms that sit in an
+                inbox for days. Phoenix-area customers can share basic details in a natural
+                conversation, and those details are routed directly to Protegrity Insurance
+                Brokerage's licensed Arizona team for quoting, coverage, and ongoing service.
               </p>
             </div>
           </div>
@@ -32,13 +39,38 @@ export default function ContactPage() {
 
         <section className="bg-background py-16 md:py-24">
           <div className="container mx-auto max-w-2xl px-4">
-            <Card className="mb-10 border-border bg-surface">
+            <div
+              className="relative overflow-hidden rounded-xl bg-brand-navy p-6 text-primary-foreground md:p-10"
+              aria-labelledby="contact-chat-cta"
+            >
+              <BrandNavyStarOverlay />
+              <div className="relative mx-auto w-full max-w-xl">
+                <p
+                  id="contact-chat-cta"
+                  className="mb-3 text-center font-heading text-base font-semibold tracking-tight text-primary-foreground md:text-lg"
+                >
+                  Select Your Insurance Type Below
+                </p>
+                <div className="flex justify-center">
+                  <div className="w-full max-w-xl">
+                    <QuoteAssistant />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <Card className="mt-10 border-border bg-surface">
               <CardHeader>
                 <CardTitle className="font-heading text-xl text-foreground md:text-2xl">
-                  Contact details
+                  Other Ways to Reach Us
                 </CardTitle>
               </CardHeader>
               <CardContent>
+                <p className="mb-4 text-sm leading-relaxed text-muted-foreground">
+                  Prefer to connect by phone or email instead of chat? Use the details below. All
+                  quoting, policy binding, and ongoing service is handled by Protegrity Insurance
+                  Brokerage's licensed Arizona team.
+                </p>
                 <ul className="space-y-4 text-base text-foreground">
                   <li className="flex gap-3">
                     <Phone className="mt-0.5 h-5 w-5 shrink-0 text-navy" aria-hidden />
@@ -60,21 +92,12 @@ export default function ContactPage() {
                   </li>
                   <li className="flex gap-3">
                     <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-navy" aria-hidden />
-                    <span>Address: 2680 S Val Vista Dr Bldg 15 Ste 185, Gilbert, AZ 85295</span>
+                    <span>
+                      Protegrity Office: 2680 S Val Vista Dr Bldg 15 Ste 185, Gilbert, AZ 85295
+                    </span>
                   </li>
                 </ul>
-              </CardContent>
-            </Card>
-
-            <Card className="border-border bg-surface">
-              <CardHeader>
-                <CardTitle className="font-heading text-xl text-foreground md:text-2xl">
-                  Send a message
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-6">
-                <ContactForm />
-                <p className="text-center text-sm text-muted-foreground">
+                <p className="mt-6 text-center text-sm text-muted-foreground">
                   Quoted by Protegrity Insurance Brokerage
                 </p>
               </CardContent>
