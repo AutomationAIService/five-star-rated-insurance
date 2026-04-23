@@ -127,6 +127,10 @@ const LEGAL_LINKS = [
   { label: "Privacy Policy", href: "/privacy-policy" },
   { label: "Terms of Service", href: "/terms-of-service" },
   { label: "TCPA Disclosure", href: "/tcpa-consent-disclosure" },
+  {
+    label: "Do Not Sell or Share My Personal Information",
+    href: "/do-not-sell-or-share",
+  },
 ]
 
 type InsuranceProduct = (typeof INSURANCE_PRODUCTS)[number]
