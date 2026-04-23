@@ -176,15 +176,6 @@ export default function TcpaConsentDisclosurePage() {
                 >
                   Terms of Service
                 </Link>
-                <span aria-hidden className="text-muted-foreground">
-                  /
-                </span>
-                <Link
-                  href="/tcpa-consent"
-                  className="font-medium text-navy underline underline-offset-4 hover:text-navy/80"
-                >
-                  Short TCPA Consent Notice
-                </Link>
                 <span className="ml-auto print:hidden">
                   <PrintButton />
                 </span>
