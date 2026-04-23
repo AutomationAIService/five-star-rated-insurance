@@ -1,6 +1,12 @@
 import type { Metadata, Viewport } from 'next'
 import { Poppins, Inter } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
+import {
+  ConsentGatedScripts,
+  CookieConsentBanner,
+  CookieConsentProvider,
+  CookiePreferencesModal,
+} from '@/components/consent'
 import './globals.css'
 
 const poppins = Poppins({ 
@@ -35,7 +41,12 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${poppins.variable} ${inter.variable} bg-background`}>
       <body className="font-sans antialiased">
-        {children}
+        <CookieConsentProvider>
+          <ConsentGatedScripts />
+          {children}
+          <CookieConsentBanner />
+          <CookiePreferencesModal />
+        </CookieConsentProvider>
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
     </html>

@@ -4,6 +4,7 @@ import { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { BrandNavyStarOverlay } from "@/components/brand/BrandNavyStarOverlay"
+import { CookiePreferencesButton } from "@/components/consent"
 import { Phone, Mail, MapPin, X } from "lucide-react"
 
 type SubcategoryEntry = string | { label: string; href: string }
@@ -127,6 +128,7 @@ const LEGAL_LINKS = [
   { label: "Privacy Policy", href: "/privacy-policy" },
   { label: "Terms of Service", href: "/terms-of-service" },
   { label: "TCPA Disclosure", href: "/tcpa-consent-disclosure" },
+  { label: "Cookie Policy", href: "/cookie-policy" },
   {
     label: "Do Not Sell or Share My Personal Information",
     href: "/do-not-sell-or-share",
@@ -339,6 +341,9 @@ export function Footer() {
                   </Link>
                 </li>
               ))}
+              <li>
+                <CookiePreferencesButton />
+              </li>
             </ul>
           </div>
 
