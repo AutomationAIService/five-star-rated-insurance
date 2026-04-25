@@ -413,8 +413,8 @@ const phoenixHomePost: BlogPost = {
       type: "midCta",
       intro:
         "Phoenix-area home with an older roof, prior claim, or wildfire exposure?",
-      phoneLabel: "(602) 555-0190",
-      phoneHref: "tel:+16025550190",
+      phoneLabel: "(480) XXX-XXXX",
+      phoneHref: "tel:+14805550000",
       tail: "to speak with a licensed Arizona broker.",
     },
 
@@ -533,8 +533,8 @@ const phoenixHomePost: BlogPost = {
     intro:
       "Five Star Rated Insurance simplifies the process by connecting you with licensed Arizona agents through Protegrity Insurance. Instead of getting one quote, compare multiple carriers at once to find the best combination of price and coverage for your Phoenix-area home.",
     body: "",
-    phoneLabel: "(602) 555-0190",
-    phoneHref: "tel:+16025550190",
+    phoneLabel: "(480) XXX-XXXX",
+    phoneHref: "tel:+14805550000",
     quoteHref: "/#quote",
     trustLine:
       "5-star rated · 30+ top-rated carriers · Licensed Arizona agents · Monsoon and hail claim specialists",
