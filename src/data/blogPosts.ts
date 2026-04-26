@@ -2221,6 +2221,342 @@ const carInsuranceDiscountsPhoenixPost: BlogPost = {
   },
 }
 
+const classicCarInsurancePhoenixPost: BlogPost = {
+  slug: "classic-car-insurance-phoenix-az",
+  title: "Classic Car Insurance in Phoenix, AZ: Agreed Value Coverage for Collectors and Enthusiasts (2026)",
+  excerpt:
+    "Classic car insurance in Phoenix protects collector and antique vehicles with agreed value coverage, specialized repair options, and usage-based pricing. Compare carriers and costs.",
+  metaTitle:
+    "Classic Car Insurance in Phoenix, AZ: Agreed Value Coverage for Collectors and Enthusiasts (2026)",
+  metaDescription:
+    "Classic car insurance in Phoenix protects collector and antique vehicles with agreed value coverage, specialized repair options, and usage-based pricing. Compare carriers and costs.",
+  category: "Auto Insurance",
+  readTime: "8 min read",
+  displayDate: "April 2026",
+  publishedISO: "2026-04-26",
+  modifiedISO: "2026-04-26",
+  breadcrumbLabel: "Classic Car Insurance Phoenix",
+  author: ryanLorschAuthor,
+  heroImage: {
+    src: "https://images.unsplash.com/photo-1776765550574-b6090b5c1e48",
+    alt: "Classic vintage collector car representing specialized insurance coverage in Phoenix",
+    width: 1920,
+    height: 1080,
+    photographer: "Salman Sidheek",
+    photographerUrl: "https://unsplash.com/@salman_sidheek",
+  },
+  image: {
+    src: "https://images.unsplash.com/photo-1776765550574-b6090b5c1e48",
+    alt: "Classic vintage collector car representing specialized insurance coverage in Phoenix",
+    width: 1920,
+    height: 1080,
+    photographer: "Salman Sidheek",
+    photographerUrl: "https://unsplash.com/@salman_sidheek",
+  },
+  keyTakeaways: {
+    items: [
+      "Classic car insurance in Phoenix costs an average of $300–$800 per year — significantly less than standard auto insurance — because coverage is based on limited pleasure use rather than daily commuting.",
+      "Agreed value coverage locks in your classic car's documented value up front, ensuring you receive the full insured amount in a total loss without depreciation.",
+      "Phoenix classic car insurance requires secure storage (garage or enclosed space), limited annual mileage (typically 1,000–5,000 miles), and a primary daily-use vehicle.",
+      "Scottsdale hosts Barrett-Jackson, Russo and Steele, and dozens of cruise-ins and car shows annually — Phoenix has one of the country's most active classic car communities.",
+      "Major classic car insurers in Phoenix include Hagerty, Grundy, American Collectors Insurance, and classic divisions at State Farm and Nationwide.",
+    ],
+  },
+  content: [
+    { type: "h2", text: "The Short Answer: Classic Car Insurance in Phoenix" },
+    {
+      type: "p",
+      text:
+        "Classic car insurance in Phoenix protects collector, antique, and exotic vehicles with agreed value coverage, specialized repair options, and usage-based pricing. Unlike standard auto policies priced around actual cash value and daily commuting, classic car insurance Phoenix AZ programs expect limited annual mileage, secure storage, and a vehicle maintained for hobby or exhibition use rather than ordinary transportation. Phoenix collectors pay an average of $300–$800 per year for agreed value coverage — significantly less than standard auto insurance — because carriers classify these vehicles as low-risk pleasure use. This guide covers how classic car insurance works, what it costs, and which carriers serve the Phoenix market.",
+    },
+
+    { type: "h2", text: "What Qualifies as a Classic Car in Phoenix?" },
+    {
+      type: "p",
+      text:
+        "Classic car insurance Phoenix programs typically expect limited annual mileage, secure storage, and a vehicle that is maintained for hobby or exhibition use rather than ordinary transportation. Carriers classify vehicles as collector, antique, or exotic depending on age, condition, and usage:",
+    },
+    {
+      type: "p",
+      text:
+        "Classic/Collector: Vehicles 20–25+ years old maintained in original or restored condition. Examples: 1965 Ford Mustang, 1957 Chevrolet Bel Air, 1970 Plymouth Barracuda.",
+    },
+    {
+      type: "p",
+      text:
+        "Antique: Vehicles 45+ years old preserved in period-correct condition. Examples: 1932 Ford Coupe, 1948 Cadillac Series 62, pre-war automobiles.",
+    },
+    {
+      type: "p",
+      text:
+        "Exotic/Limited Production: High-performance or limited-run vehicles regardless of age. Examples: Ferrari, Lamborghini, Porsche 911, McLaren, classic Corvettes.",
+    },
+    {
+      type: "p",
+      text:
+        "Modified/Custom: Resto-mod, street rod, or heavily customized vehicles. Examples: Pro-touring builds, engine swaps, modernized suspension on classic frames.",
+    },
+    {
+      type: "p",
+      text:
+        "Phoenix-area vehicles participating in Scottsdale auctions, cruise-ins in Mesa, Tempe, Chandler, Glendale, Gilbert, and Peoria, or shows throughout the Valley qualify for classic car insurance Phoenix programs if they meet carrier usage and storage requirements.",
+    },
+
+    { type: "h2", text: "Agreed Value vs. Actual Cash Value: Why It Matters" },
+    {
+      type: "p",
+      text:
+        "Standard auto policies settle total loss claims at actual cash value (ACV) — the depreciated market value at the time of loss. A 2012 Honda Civic that cost $18,000 new might settle at $7,000 ACV today. Classic cars appreciate or hold stable value. A 1967 Chevrolet Camaro purchased for $35,000 and meticulously restored may be worth $60,000 today. Under an ACV policy, the insurer disputes your valuation. Under agreed value coverage, you and the carrier establish the insured value up front — often after documentation and photos — and that amount is paid in a covered total loss without depreciation or dispute.",
+    },
+    {
+      type: "p",
+      text:
+        "Agreed value coverage Phoenix programs lock in your documented parts, labor, and rarity. This protects the investment you have in paint, mechanicals, and documented parts for a vehicle that may not trade often enough to produce clean comparable sales data.",
+    },
+
+    { type: "h2", text: "Classic Car Insurance Rates in Phoenix by Vehicle Type" },
+    {
+      type: "table",
+      caption: "Classic Car Insurance Rates in Phoenix by Vehicle Type",
+      columns: [
+        "Vehicle Type",
+        "Example",
+        "Agreed Value",
+        "Annual Premium (Phoenix avg.)",
+        "Key Coverage Requirements",
+      ],
+      rows: [
+        [
+          "Muscle Car (restored)",
+          "1970 Plymouth Road Runner",
+          "$45,000",
+          "$450–$650/yr",
+          "Enclosed storage, <5,000 mi/yr",
+        ],
+        [
+          "Classic Truck (original)",
+          "1956 Chevrolet 3100",
+          "$35,000",
+          "$380–$520/yr",
+          "Garage storage, pleasure use only",
+        ],
+        [
+          "Sports Car (exotic)",
+          "1985 Porsche 911 Carrera",
+          "$75,000",
+          "$680–$950/yr",
+          "Enclosed storage, track event coverage",
+        ],
+        [
+          "Antique Pre-War",
+          "1937 Ford Deluxe",
+          "$28,000",
+          "$320–$480/yr",
+          "Show/parade use, enclosed storage",
+        ],
+        [
+          "Resto-Mod Custom",
+          "1969 Camaro Pro-Touring",
+          "$85,000",
+          "$750–$1,100/yr",
+          "Documented build receipts, limited use",
+        ],
+        [
+          "Corvette (C2/C3)",
+          "1967 Corvette Stingray",
+          "$65,000",
+          "$580–$820/yr",
+          "Enclosed storage, car club participation",
+        ],
+      ],
+    },
+    {
+      type: "p",
+      text:
+        "Phoenix premiums reflect Arizona's low theft and rust exposure. Classic vehicles stored in climate-controlled Scottsdale, Paradise Valley, or north Phoenix garages pay lower premiums than comparable vehicles in high-humidity coastal markets.",
+    },
+
+    { type: "h2", text: "Phoenix Classic Car Scene and Insurance Considerations" },
+    {
+      type: "p",
+      text:
+        "Scottsdale hosts Barrett-Jackson Collector Car Auction every January, drawing 300,000+ attendees and $150+ million in sales annually. Russo and Steele, Bonhams, and RM Sotheby's also hold Phoenix-area auctions. Phoenix classic car owners participate in:",
+    },
+    {
+      type: "p",
+      text: "- Scottsdale Pavilions Saturday night cruise-in (year-round)",
+    },
+    {
+      type: "p",
+      text: "- Sanderson Lincoln Pavilions classic car night (Mesa)",
+    },
+    {
+      type: "p",
+      text: "- Goodguys Southwest Nationals at WestWorld",
+    },
+    {
+      type: "p",
+      text: "- Concours in the Hills (Fountain Hills, January)",
+    },
+    {
+      type: "p",
+      text: "- Local car club events throughout Maricopa County",
+    },
+    {
+      type: "p",
+      text:
+        "Classic car insurance Phoenix policies from Hagerty, Grundy, and American Collectors Insurance include coverage for car shows, parades, and club events. Some carriers offer track event endorsements for Phoenix Raceway, Radford Racing School, or Bondurant driving experiences.",
+    },
+
+    { type: "h2", text: "Storage and Usage Requirements for Phoenix Classic Cars" },
+    {
+      type: "p",
+      text:
+        "Secure Storage: Enclosed garage or storage facility. Not permitted: carport, driveway, street parking. Phoenix's extreme heat (111 days above 100°F annually) accelerates paint and interior damage for exposed vehicles. Carriers verify storage during underwriting.",
+    },
+    {
+      type: "p",
+      text:
+        "Limited Annual Mileage: Most carriers allow 1,000–5,000 miles per year. Pleasure use, car shows, and parades are covered. Daily commuting, commercial use, and racing (without endorsement) are excluded.",
+    },
+    {
+      type: "p",
+      text:
+        "Primary Vehicle Requirement: The policyholder must own a separate daily-use vehicle insured under a standard auto policy. Classic car insurance Phoenix programs are not standalone coverage for your only vehicle.",
+    },
+    {
+      type: "p",
+      text:
+        "Maintenance and Condition: The vehicle must be maintained in collectible condition — original, restored, or documented custom build. Carriers may require photos, appraisals, or documentation at policy inception.",
+    },
+
+    { type: "h2", text: "Which Carriers Offer Classic Car Insurance in Phoenix?" },
+    {
+      type: "p",
+      text:
+        "Hagerty: The largest classic car insurer in the U.S. Offers agreed value, roadside assistance for vintage vehicles, and coverage for car shows and club events. Average Phoenix premium: $400–$750/year. Available through Protegrity Insurance.",
+    },
+    {
+      type: "p",
+      text:
+        "Grundy: Offers unlimited mileage agreed value policies with no deductible for total loss. Strict underwriting on storage and usage. Average Phoenix premium: $350–$680/year.",
+    },
+    {
+      type: "p",
+      text:
+        "American Collectors Insurance: Covers classics, exotics, and modified vehicles. Offers stated value and agreed value options. Average Phoenix premium: $380–$820/year.",
+    },
+    {
+      type: "p",
+      text:
+        "State Farm (Classic Auto program): Available through select agents for vehicles 10+ years old. Less specialized than Hagerty or Grundy but easier to bundle with existing State Farm policies. Average Phoenix premium: $420–$780/year.",
+    },
+    {
+      type: "p",
+      text:
+        "Nationwide (Collector Car program): Offers agreed value coverage for classics, muscle cars, and exotics. Includes spare parts coverage and restoration coverage. Average Phoenix premium: $390–$760/year.",
+    },
+
+    { type: "h2", text: "What Classic Car Insurance Covers (and Excludes) in Phoenix" },
+    { type: "h3", text: "Covered:" },
+    { type: "p", text: "- Agreed value total loss payout (no depreciation)" },
+    { type: "p", text: "- Collision and comprehensive (theft, fire, hail, vandalism)" },
+    { type: "p", text: "- Coverage while at car shows, parades, club events" },
+    { type: "p", text: "- Spare parts and tools coverage (often up to $5,000–$10,000)" },
+    { type: "p", text: "- Towing and roadside assistance for vintage vehicles" },
+    {
+      type: "p",
+      text:
+        "- Optional: Restoration coverage, inflation guard, track event endorsements",
+    },
+    { type: "h3", text: "Excluded:" },
+    { type: "p", text: "- Daily commuting or business use" },
+    { type: "p", text: "- Racing or timed competition (without endorsement)" },
+    { type: "p", text: "- Rideshare or delivery services" },
+    { type: "p", text: "- Mileage exceeding annual limit (1,000–5,000 miles)" },
+    { type: "p", text: "- Vehicles stored outdoors or in carports" },
+    { type: "p", text: "- Mechanical breakdown (engine, transmission wear)" },
+    {
+      type: "p",
+      text:
+        "Phoenix's monsoon season (June–September) generates hail risk. Comprehensive coverage for classic cars stored in enclosed garages protects against hail during transport to/from car shows.",
+    },
+
+    { type: "h2", text: "Frequently Asked Questions: Classic Car Insurance in Phoenix" },
+    {
+      type: "faq",
+      items: [
+        {
+          question: "Q: How much does classic car insurance cost in Phoenix?",
+          answer:
+            "Classic car insurance in Phoenix costs an average of $300–$800 per year depending on agreed value, vehicle type, and annual mileage limit. A $45,000 agreed value 1970 Plymouth Road Runner with 3,000-mile annual limit costs approximately $450–$650/year from Hagerty or Grundy. This is 60–75% less than insuring a comparable daily-driver vehicle because classic car policies assume limited pleasure use, secure storage, and lower accident risk.",
+        },
+        {
+          question: "Q: Can I drive my classic car daily in Phoenix?",
+          answer:
+            "No. Classic car insurance Phoenix policies exclude daily commuting. Most carriers allow 1,000–5,000 miles per year for pleasure driving, car shows, parades, and club events. If you drive a classic vehicle as your primary transportation, you need standard auto insurance with actual cash value coverage, which costs significantly more and does not provide agreed value protection.",
+        },
+        {
+          question: "Q: Does classic car insurance cover Phoenix car shows and Barrett-Jackson?",
+          answer:
+            "Yes. Hagerty, Grundy, and American Collectors Insurance all cover your vehicle while participating in car shows, auctions (as a display vehicle, not while crossing the block), parades, and club events. Coverage extends to transport to and from the event. If you are selling a vehicle at Barrett-Jackson or Russo and Steele, confirm coverage with your carrier during the auction period.",
+        },
+        {
+          question: "Q: What is agreed value and how is it determined in Phoenix?",
+          answer:
+            "Agreed value is the insured amount you and the carrier establish at policy inception based on documented condition, receipts, photos, and comparable sales. For a restored 1967 Chevrolet Camaro, you submit restoration receipts, appraisal, and current photos. The carrier reviews and agrees to insure the vehicle for $60,000. In a covered total loss, you receive $60,000 — no depreciation, no dispute. Standard policies pay actual cash value, which an adjuster determines after the loss.",
+        },
+        {
+          question: "Q: Do I need an appraisal for classic car insurance in Phoenix?",
+          answer:
+            "It depends on the carrier and agreed value. Hagerty and Grundy often require a professional appraisal for vehicles insured above $50,000–$75,000. For lower-value classics ($20,000–$50,000), photos, receipts, and self-documentation may suffice. High-value exotics (Ferrari, Lamborghini, rare Porsches) always require a certified appraisal. Protegrity Insurance can recommend Phoenix-area appraisers familiar with Hagerty and Grundy requirements.",
+        },
+        {
+          question: "Q: Can I insure a modified or resto-mod car in Phoenix?",
+          answer:
+            "Yes. Hagerty, American Collectors Insurance, and Grundy all offer coverage for modified, custom, and resto-mod builds. You must document the build with receipts, photos, and detailed descriptions of engine swaps, suspension upgrades, custom bodywork, and paint. Agreed value coverage accounts for documented parts and labor. A 1969 Camaro with a modern LS3 engine, Wilwood brakes, and custom interior insured for $85,000 requires full build documentation.",
+        },
+      ],
+    },
+  ],
+  finalCta: {
+    headline: "Get Your Free Phoenix Classic Car Insurance Quote Today",
+    intro:
+      "Call Protegrity Insurance: (480) XXX-XXXX (click-to-call) | Get your free quote at protegrityinsurance.com",
+    body: "",
+    phoneLabel: "(480) XXX-XXXX",
+    phoneHref: "tel:480xxxxxxx",
+    quoteHref: "https://protegrityinsurance.com",
+    trustLine:
+      "5-star rated · 30+ top-rated carriers · Licensed Arizona agents · Classic car insurance specialists",
+  },
+  relatedLinks: [
+    {
+      label: "Auto Insurance",
+      href: "/auto-insurance",
+      description:
+        "Compare carriers and coverage options for your Phoenix-area vehicle.",
+    },
+    {
+      label: "Classic Car Insurance",
+      href: "/auto-insurance",
+      description:
+        "Agreed value coverage for collector and antique vehicles in Phoenix.",
+    },
+    {
+      label: "Back to Blog",
+      href: "/blog",
+      description:
+        "More guides and insurance resources from our licensed Arizona team.",
+    },
+  ],
+  references: [],
+  footer: {
+    lastUpdated: "Last updated: April 2026",
+    copyright: "© 2026 Protegrity Insurance. All rights reserved. | protegrityinsurance.com",
+  },
+}
+
 const phoenixAutoCostPost: BlogPost = {
   slug: "average-cost-car-insurance-phoenix-az",
   title: "Average Cost of Car Insurance in Phoenix, AZ (2026 Data)",
@@ -2928,6 +3264,7 @@ export const blogPosts: BlogPost[] = [
   teenDriversCarInsurancePhoenixPost,
   uninsuredMotoristCoveragePhoenixPost,
   carInsuranceDiscountsPhoenixPost,
+  classicCarInsurancePhoenixPost,
   phoenixAutoCostPost,
   arizonaMinimumCarInsurancePost,
   cheapCarInsurancePhoenixPost,
