@@ -115,6 +115,8 @@ export type BlogPost = {
   metaTitle?: string
   /** SEO meta description. */
   metaDescription: string
+  /** Optional SEO keywords for posts with a defined focus keyword. */
+  keywords?: string[]
   /** Canonical category tag (e.g. "Home Insurance"). */
   category: string
   /** Estimated read time, e.g. "8 min read". */
@@ -4159,6 +4161,245 @@ const cheapCarInsurancePhoenixPost: BlogPost = {
   },
 }
 
+const affordableLifeInsuranceQuotesPhoenixPost: BlogPost = {
+  slug: "affordable-life-insurance-quotes-phoenix-az",
+  title: "Affordable Life Insurance Quotes in Phoenix, AZ – Compare Rates Today (2026)",
+  excerpt:
+    "Find affordable life insurance in Phoenix, AZ. Compare quotes from 30+ top carriers. Average rates by age, factors affecting cost, and no-exam options available.",
+  metaTitle: "Affordable Life Insurance Quotes in Phoenix, AZ – Compare Rates Today (2026)",
+  metaDescription:
+    "Find affordable life insurance in Phoenix, AZ. Compare quotes from 30+ top carriers. Average rates by age, factors affecting cost, and no-exam options available.",
+  keywords: ["affordable life insurance quotes Phoenix AZ"],
+  category: "LIFE INSURANCE",
+  readTime: "8 min read",
+  displayDate: "April 2026",
+  publishedISO: "2026-04-26",
+  modifiedISO: "2026-04-26",
+  breadcrumbLabel: "Affordable Life Insurance Quotes Phoenix",
+  author: ryanLorschAuthor,
+  heroImage: {
+    src: "https://images.unsplash.com/photo-1554224155-6726b3ff858f",
+    alt: "Phoenix resident comparing affordable life insurance quotes and rates",
+    width: 1920,
+    height: 1080,
+    photographer: "Kelly Sikkema",
+    photographerUrl: "https://unsplash.com/@kellysikkema",
+  },
+  image: {
+    src: "https://images.unsplash.com/photo-1554224155-6726b3ff858f",
+    alt: "Phoenix resident comparing affordable life insurance quotes and rates",
+    width: 1920,
+    height: 1080,
+    photographer: "Kelly Sikkema",
+    photographerUrl: "https://unsplash.com/@kellysikkema",
+  },
+  keyTakeaways: {
+    items: [
+      "The average life insurance premium in Arizona is approximately $615 per year, or about $51 per month — slightly below the national average.",
+      "Age is the single most important factor affecting life insurance rates — the younger you are when you purchase coverage, the lower your premiums will be.",
+      "A 35-year-old non-smoking Phoenix resident can expect to pay $22–$28/month for women or $28–$35/month for men for a $500,000, 20-year term policy.",
+      "Working with an independent agency like Protegrity Insurance gives you access to dozens of carriers simultaneously, saving you time and money.",
+      "Banner Life offers no-exam coverage up to $4 million for qualifying applicants, providing convenient and fast approval for Phoenix residents.",
+    ],
+  },
+  content: [
+    { type: "h2", text: "The Short Answer: Affordable Life Insurance in Phoenix" },
+    {
+      type: "p",
+      text:
+        "Finding affordable life insurance in Phoenix does not have to be complicated or time-consuming. With the right guidance, you can compare quotes from multiple top-rated carriers and secure the coverage your family needs at a price that fits your budget.",
+    },
+    {
+      type: "p",
+      text:
+        "At Protegrity Insurance, we make it easy for Phoenix residents to shop for life insurance. This guide gives you a breakdown of average life insurance rates in Phoenix by age and coverage type, so you know what to expect before you apply.",
+    },
+
+    { type: "h2", text: "Average Life Insurance Rates in Phoenix, AZ" },
+    {
+      type: "p",
+      text:
+        "The average life insurance premium in Arizona is approximately $615 per year, or about $51 per month. However, individual rates vary significantly based on your age, health, gender, lifestyle, and the type and amount of coverage you choose.",
+    },
+    {
+      type: "p",
+      text:
+        "Here are some general benchmarks for a $500,000, 20-year term life insurance policy in Phoenix for non-smokers in good health:",
+    },
+    {
+      type: "p",
+      lead: "Age 25:",
+      text: "$18–$22 per month for women; $22–$28 per month for men.",
+    },
+    {
+      type: "p",
+      lead: "Age 35:",
+      text: "$22–$28 per month for women; $28–$35 per month for men.",
+    },
+    {
+      type: "p",
+      lead: "Age 45:",
+      text: "$45–$60 per month for women; $60–$80 per month for men.",
+    },
+    {
+      type: "p",
+      lead: "Age 55:",
+      text: "$100–$130 per month for women; $140–$185 per month for men.",
+    },
+
+    { type: "h2", text: "Life Insurance Rates by Age and Gender in Phoenix" },
+    {
+      type: "table",
+      caption: "Life Insurance Rates by Age and Gender in Phoenix",
+      columns: [
+        "Age",
+        "Gender",
+        "$500,000 20-Year Term Policy",
+        "Annual Cost",
+        "Health Rating Required",
+      ],
+      rows: [
+        ["25", "Female", "$18 – $22/mo", "$216 – $264/yr", "Preferred non-smoker"],
+        ["25", "Male", "$22 – $28/mo", "$264 – $336/yr", "Preferred non-smoker"],
+        ["35", "Female", "$22 – $28/mo", "$264 – $336/yr", "Preferred non-smoker"],
+        ["35", "Male", "$28 – $35/mo", "$336 – $420/yr", "Preferred non-smoker"],
+        ["45", "Female", "$45 – $60/mo", "$540 – $720/yr", "Standard non-smoker"],
+        ["45", "Male", "$60 – $80/mo", "$720 – $960/yr", "Standard non-smoker"],
+        ["55", "Female", "$100 – $130/mo", "$1,200 – $1,560/yr", "Standard non-smoker"],
+        ["55", "Male", "$140 – $185/mo", "$1,680 – $2,220/yr", "Standard non-smoker"],
+      ],
+    },
+    {
+      type: "p",
+      text:
+        "These rates assume good health and non-smoking status. Applicants with health conditions, higher BMI, or tobacco use will see higher premiums.",
+    },
+
+    { type: "h2", text: "Factors That Affect Your Life Insurance Rate" },
+    {
+      type: "p",
+      lead: "Age is the single most important factor.",
+      text:
+        "The younger you are when you purchase life insurance, the lower your premiums will be.",
+    },
+    {
+      type: "p",
+      lead: "Health status plays a major role.",
+      text:
+        "Conditions like diabetes, high blood pressure, obesity, or a history of cancer can increase your premiums significantly.",
+    },
+    {
+      type: "p",
+      lead: "Smoking is one of the biggest rate drivers.",
+      text:
+        "Smokers can pay two to three times more than non-smokers for the same coverage.",
+    },
+    {
+      type: "p",
+      lead: "Policy type also matters.",
+      text:
+        "Term life insurance is far more affordable than whole life or universal life for the same death benefit amount.",
+    },
+
+    { type: "h2", text: "How to Get the Best Life Insurance Quotes in Phoenix" },
+    {
+      type: "p",
+      text:
+        "The key to finding the best rate is to shop multiple carriers. Different insurance companies assess risk differently, which means the same applicant can receive quotes that vary by hundreds of dollars per year depending on the carrier.",
+    },
+    {
+      type: "p",
+      text:
+        "Working with an independent agency like Protegrity Insurance gives you access to dozens of carriers simultaneously, saving you time and money.",
+    },
+
+    { type: "h2", text: "No-Exam Options for Phoenix Residents" },
+    {
+      type: "p",
+      text:
+        "If you prefer not to undergo a medical exam, several carriers offer no-exam life insurance in Arizona. These policies are convenient and fast, though they typically come with higher premiums or lower coverage limits than fully underwritten policies.",
+    },
+    {
+      type: "p",
+      text:
+        "Banner Life, for example, offers no-exam coverage up to $4 million for qualifying applicants.",
+    },
+
+    { type: "h2", text: "Frequently Asked Questions: Affordable Life Insurance in Phoenix" },
+    {
+      type: "faq",
+      items: [
+        {
+          question: "Q: How much does life insurance cost per month in Phoenix?",
+          answer:
+            "The average life insurance premium in Arizona is approximately $51 per month ($615/year). However, actual rates vary significantly by age and health. A healthy 35-year-old in Phoenix can purchase a $500,000, 20-year term policy for $22-$35/month, while a 55-year-old would pay $100-$185/month for the same coverage.",
+        },
+        {
+          question: "Q: Is life insurance more expensive in Phoenix than other Arizona cities?",
+          answer:
+            "No. Life insurance rates in Phoenix are consistent with rates throughout Arizona. Unlike auto or home insurance, which can vary by ZIP code based on local risk factors, life insurance premiums are based primarily on your age, health, gender, and lifestyle — not your location within the state.",
+        },
+        {
+          question: "Q: How can I get the cheapest life insurance quote in Phoenix?",
+          answer:
+            "The best way to get the cheapest rate is to: (1) Apply when you are young and healthy, (2) Compare quotes from multiple carriers, (3) Work with an independent agent like Protegrity Insurance who can access dozens of carriers, (4) Maintain a healthy weight and lifestyle, (5) Quit smoking at least 12 months before applying.",
+        },
+        {
+          question: "Q: Do Phoenix residents qualify for any life insurance discounts?",
+          answer:
+            "Life insurance premiums are primarily based on actuarial risk and do not typically include \"discounts\" in the traditional sense. However, you can reduce your rate by: maintaining good health, quitting tobacco, purchasing multiple policies from the same carrier, paying annually instead of monthly (avoiding installment fees), and choosing term over permanent coverage.",
+        },
+        {
+          question: "Q: Can I get life insurance without a medical exam in Phoenix?",
+          answer:
+            "Yes. Many carriers offer no-exam life insurance in Phoenix, including Banner Life (up to $4 million), simplified issue policies (typically up to $500,000), and guaranteed issue policies (typically up to $25,000). No-exam policies are convenient and fast, but may cost slightly more than fully underwritten policies for the same coverage amount.",
+        },
+        {
+          question: "Q: How long does it take to get a life insurance quote in Phoenix?",
+          answer:
+            "At Protegrity Insurance, you can receive preliminary quotes in minutes and complete an application in 15-20 minutes. For fully underwritten policies requiring a medical exam, approval typically takes 2-4 weeks. No-exam policies can be approved in 24-48 hours.",
+        },
+      ],
+    },
+  ],
+  finalCta: {
+    headline: "Get Your Free Phoenix Life Insurance Quote Today",
+    intro:
+      "Call Protegrity Insurance: (480) XXX-XXXX (click-to-call) | Get your free quote at protegrityinsurance.com",
+    body: "",
+    phoneLabel: "(480) XXX-XXXX",
+    phoneHref: "tel:480xxxxxxx",
+    quoteHref: "https://protegrityinsurance.com",
+    trustLine:
+      "5-star rated · 30+ top-rated carriers · Licensed Arizona agents · No fees, no pressure",
+  },
+  relatedLinks: [
+    {
+      label: "Life Insurance",
+      href: "/life-insurance",
+      description:
+        "Protect your Phoenix family with the right life insurance coverage and competitive rates.",
+    },
+    {
+      label: "Auto Insurance",
+      href: "/auto-insurance",
+      description:
+        "Bundle life and auto insurance for additional savings with major carriers.",
+    },
+    {
+      label: "Back to Blog",
+      href: "/blog",
+      description:
+        "More guides and insurance resources from our licensed Arizona team.",
+    },
+  ],
+  references: [],
+  footer: {
+    lastUpdated: "Last updated: April 2026",
+    copyright: "© 2026 Protegrity Insurance. All rights reserved. | protegrityinsurance.com",
+  },
+}
+
 /* -------------------------------------------------------------------------- */
 /*  Public exports                                                            */
 /* -------------------------------------------------------------------------- */
@@ -4177,6 +4418,7 @@ export const blogPosts: BlogPost[] = [
   howMuchLifeInsuranceNeedPhoenixPost,
   termVsWholeLifeInsurancePhoenixPost,
   lifeInsuranceYoungFamiliesPhoenixPost,
+  affordableLifeInsuranceQuotesPhoenixPost,
   phoenixAutoCostPost,
   arizonaMinimumCarInsurancePost,
   cheapCarInsurancePhoenixPost,
