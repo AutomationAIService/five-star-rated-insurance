@@ -26,17 +26,17 @@ export function ComparisonTable({
         role="region"
         aria-label={caption}
         tabIndex={0}
-        className="relative -mx-4 overflow-x-auto rounded-lg border border-border bg-surface shadow-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-navy md:mx-0"
+        className="relative -mx-4 overflow-x-auto rounded-lg border border-[#E5E5E5] bg-surface shadow-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-navy md:mx-0"
       >
         <table className="w-full min-w-[640px] border-collapse text-left text-sm md:text-[15px]">
           <caption className="sr-only">{caption}</caption>
           <thead>
-            <tr className="bg-navy text-white">
+            <tr className="bg-[#1E3A5F] text-white">
               {columns.map((column) => (
                 <th
                   key={column}
                   scope="col"
-                  className="border-b border-navy/40 px-4 py-3 text-left font-heading text-sm font-semibold uppercase tracking-wide text-white md:px-5"
+                  className="border-b border-[#1E3A5F]/40 px-4 py-3 text-left font-heading text-sm font-semibold uppercase tracking-wide text-white md:px-5"
                 >
                   {column}
                 </th>
@@ -50,7 +50,7 @@ export function ComparisonTable({
                 className={
                   rowIdx % 2 === 0
                     ? "bg-surface"
-                    : "bg-[color:var(--page-bg)]"
+                    : "bg-[#F8F9FA]"
                 }
               >
                 {row.map((cell, cellIdx) => {
@@ -59,7 +59,7 @@ export function ComparisonTable({
                     <td
                       key={cellIdx}
                       className={
-                        "border-b border-border px-4 py-3 align-top text-foreground md:px-5 " +
+                        "border-b border-[#E5E5E5] px-4 py-3 align-top text-foreground md:px-5 " +
                         (isFirst ? "font-semibold text-navy" : "")
                       }
                     >

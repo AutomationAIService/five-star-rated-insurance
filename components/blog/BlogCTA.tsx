@@ -20,12 +20,12 @@ export function BlogCTA({ data }: BlogCTAProps) {
             href={data.phoneHref}
             className="inline-flex min-h-[56px] items-center justify-center gap-2 rounded-md bg-white px-6 py-3 text-base font-bold text-navy shadow-sm transition-colors hover:bg-white/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-navy md:text-lg"
           >
-            <Phone className="size-5 shrink-0" aria-hidden />
+            <Phone className="size-5 shrink-0 text-[#F5C518]" aria-hidden />
             <span>Call Protegrity Insurance: {data.phoneLabel}</span>
           </a>
           <Link
             href={data.quoteHref}
-            className="inline-flex min-h-[56px] items-center justify-center gap-2 rounded-md bg-gold px-6 py-3 text-base font-bold uppercase tracking-wide text-navy shadow-sm transition-colors hover:bg-gold/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-navy md:text-lg"
+            className="inline-flex min-h-[56px] items-center justify-center gap-2 rounded-md bg-[#F5C518] px-6 py-3 text-base font-bold uppercase tracking-wide text-navy shadow-sm transition-colors hover:bg-[#F5C518]/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-navy md:text-lg"
           >
             <span>Get Your Free Quote</span>
             <ArrowRight className="size-5 shrink-0" aria-hidden />

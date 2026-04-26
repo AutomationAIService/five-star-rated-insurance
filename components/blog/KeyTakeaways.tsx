@@ -15,7 +15,7 @@ export function KeyTakeaways({ data }: KeyTakeawaysProps) {
   return (
     <aside
       aria-labelledby="key-takeaways-heading"
-      className="my-8 rounded-r-lg border-l-4 border-navy bg-gold/10 p-6 md:my-10 md:p-7"
+      className="my-8 rounded-r-lg border-l-4 border-[#1E3A5F] bg-[#F5F5F0] p-6 md:my-10 md:p-7"
     >
       <h2
         id="key-takeaways-heading"

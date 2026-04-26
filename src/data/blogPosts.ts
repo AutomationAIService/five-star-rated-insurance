@@ -34,6 +34,7 @@ export type FaqItem = { question: string; answer: RichText }
 
 export type ContentBlock =
   | { type: "h2"; text: string; id?: string }
+  | { type: "h3"; text: string; id?: string }
   | { type: "p"; lead?: string; text: RichText }
   | { type: "softCta"; text: RichText }
   | { type: "midCta"; intro: string; phoneLabel: string; phoneHref: string; tail?: string }
@@ -138,6 +139,13 @@ export type BlogPost = {
     lastUpdated: string
     copyright: string
   }
+  breadcrumbLabel?: string
+  relatedLinks?: {
+    label: string
+    href: string
+    description?: string
+  }[]
+  heroImage?: BlogPostImage
   /** Optional flag for posts not yet ready (excluded from generateStaticParams). */
   draft?: boolean
 }
@@ -572,11 +580,211 @@ const phoenixHomePost: BlogPost = {
   },
 }
 
+const phoenixAutoPost: BlogPost = {
+  slug: "best-auto-insurance-companies-phoenix-az",
+  title: "Best Auto Insurance Companies in Phoenix, AZ (2026 Guide)",
+  excerpt:
+    "Compare the best auto insurance companies in Phoenix, AZ for 2026. Rates, financial ratings, and expert picks for Valley drivers.",
+  metaTitle: "Best Auto Insurance Companies in Phoenix, AZ (2026 Guide)",
+  metaDescription:
+    "Compare the best auto insurance companies in Phoenix, AZ for 2026. Rates, financial ratings, and expert picks for Valley drivers.",
+  category: "Auto Insurance",
+  readTime: "8 min read",
+  displayDate: "April 2026",
+  publishedISO: "2026-04-26",
+  modifiedISO: "2026-04-26",
+  breadcrumbLabel: "Best Auto Insurance Companies Phoenix",
+  author: {
+    name: "James Harlow",
+    title: "Licensed Arizona Insurance Agent",
+    credential: "License #AZ-8821043",
+    location: "Phoenix, AZ",
+    bio: "James has spent 12 years helping Phoenix-area residents find the right auto insurance at competitive rates. He is based in Phoenix, AZ, licensed with the Arizona Department of Insurance and Financial Institutions (DIFI), and specializes in personal auto, SR-22, and commercial vehicle coverage across the Valley.",
+    avatarSrc: undefined,
+  },
+  heroImage: {
+    src: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000",
+    alt: "Phoenix highway at dusk",
+    width: 1920,
+    height: 1080,
+  },
+  image: {
+    src: "https://images.unsplash.com/photo-1494515843206-f3117d3f51b7",
+    alt: "Phoenix cityscape with traffic",
+    width: 1920,
+    height: 1080,
+  },
+  keyTakeaways: {
+    items: [
+      "The best auto insurance companies for Phoenix, AZ drivers in 2026 are State Farm, GEICO, Progressive, USAA, and Travelers.",
+      "A 35-year-old Phoenix driver with a clean record pays an average of $118/month for full coverage, according to Bankrate 2024 data.",
+      "Phoenix drivers pay an average of $1,416/year for full coverage auto insurance — 12% above the national average of $1,265/year (Bankrate, 2024).",
+      "State Farm holds an A++ AM Best rating and a 0.61 NAIC complaint index — well below the industry average of 1.0.",
+      "USAA offers the lowest average rates for eligible military members at $94/month for full coverage in Phoenix.",
+    ],
+  },
+  content: [
+    { type: "h2", text: "The Short Answer: Best Auto Insurance in Phoenix" },
+    {
+      type: "p",
+      text:
+        "The best auto insurance companies for Phoenix, AZ drivers in 2026 are State Farm, GEICO, Progressive, USAA, and Travelers. A 35-year-old Phoenix driver with a clean record pays an average of $118/month for full coverage, according to Bankrate 2024 data. This guide ranks each carrier by rate competitiveness, claims satisfaction, and specific strengths for Maricopa County drivers.",
+    },
+
+    { type: "h2", text: "Why Auto Insurance in Phoenix Costs More Than the National Average" },
+    {
+      type: "p",
+      text:
+        "Phoenix drivers pay an average of $1,416/year for full coverage auto insurance — 12% above the national average of $1,265/year (Bankrate, 2024). Three factors drive this premium: Arizona's high rate of uninsured drivers (11.9% of all drivers, Insurance Research Council 2023), extreme summer heat that accelerates mechanical wear and increases breakdown claims, and the Maricopa County metro's high population density, which correlates with higher accident frequency.",
+    },
+    {
+      type: "p",
+      text:
+        "Maricopa County recorded 56,482 vehicle crashes in 2023, according to the Arizona Department of Transportation (ADOT). Phoenix, Tempe, and Mesa account for the highest crash concentrations in the state.",
+    },
+
+    { type: "h2", text: "Top 5 Auto Insurance Companies for Phoenix Drivers in 2026" },
+    {
+      type: "table",
+      caption: "Top 5 Auto Insurance Companies for Phoenix Drivers in 2026",
+      columns: [
+        "Carrier",
+        "AM Best Rating",
+        "Avg. Monthly (Full Coverage)",
+        "Best For",
+        "NAIC Complaint Index 2024",
+      ],
+      rows: [
+        ["State Farm", "A++", "$112/mo", "Overall value", "0.61"],
+        ["GEICO", "A++", "$98/mo", "Lowest rates / clean record", "0.72"],
+        ["Progressive", "A+", "$121/mo", "High-risk / SR-22", "0.89"],
+        ["USAA", "A++", "$94/mo", "Military families", "0.43"],
+        ["Travelers", "A++", "$115/mo", "Bundling / homeowners", "0.54"],
+      ],
+    },
+    { type: "h3", text: "State Farm — Best Overall for Phoenix Drivers" },
+    {
+      type: "p",
+      text:
+        "State Farm holds an A++ AM Best rating and a 0.61 NAIC complaint index — well below the industry average of 1.0. Phoenix drivers with State Farm pay an average of $112/month for full coverage. State Farm has the largest agent network in Arizona, with over 140 offices in Maricopa County, making in-person service accessible across Chandler, Scottsdale, Mesa, and Glendale.",
+    },
+    { type: "h3", text: "GEICO — Lowest Rates for Clean-Record Phoenix Drivers" },
+    {
+      type: "p",
+      text:
+        "GEICO offers the lowest average rates for Phoenix drivers with no accidents or violations: $98/month for full coverage. GEICO's DriveEasy telematics program can reduce premiums by up to 25% for safe drivers. GEICO has no local Phoenix offices but provides 24/7 claims support by phone and app.",
+    },
+    { type: "h3", text: "Progressive — Best for High-Risk Drivers and SR-22 in Phoenix" },
+    {
+      type: "p",
+      text:
+        "Progressive insures Phoenix drivers who other carriers decline, including those with DUIs, multiple at-fault accidents, or lapsed coverage requiring an SR-22 filing. Progressive files SR-22 certificates with Arizona MVD at no additional charge beyond the state filing fee of $15–$25. Average full-coverage rate for a Phoenix driver with one at-fault accident: $178/month.",
+    },
+    { type: "h3", text: "USAA — Best for Phoenix Military Families" },
+    {
+      type: "p",
+      text:
+        "USAA's average full-coverage rate in Phoenix is $94/month — the lowest of any major carrier. USAA membership is available to active-duty military, veterans, and their families. Luke Air Force Base in Glendale and Williams Gateway in Mesa are home to thousands of servicemembers who qualify. USAA's NAIC complaint index of 0.43 reflects outstanding customer satisfaction.",
+    },
+    { type: "h3", text: "Travelers — Best for Bundling Auto + Home in Phoenix" },
+    {
+      type: "p",
+      text:
+        "Travelers offers the most competitive multi-policy discounts in Arizona. Phoenix homeowners who bundle auto and home insurance with Travelers save an average of $486/year (Travelers, 2024 data). Travelers also offers new car replacement coverage — a valuable add-on given Phoenix's high rate of vehicle theft (ranked 14th nationally by NICB, 2023).",
+    },
+
+    { type: "h2", text: "Arizona Minimum Auto Insurance Requirements" },
+    {
+      type: "p",
+      text:
+        "Arizona law (ARS § 28-4009) requires all Phoenix drivers to carry: $25,000 bodily injury liability per person, $50,000 bodily injury liability per accident, and $15,000 property damage liability. These minimums — known as 25/50/15 — are among the lowest in the country and are widely considered insufficient for Phoenix's high-cost accident environment.",
+    },
+    {
+      type: "p",
+      text:
+        "A single at-fault accident in the Phoenix metro can easily generate $80,000–$150,000 in medical and vehicle repair costs. Protegrity Insurance recommends a minimum of 100/300/100 coverage for most Phoenix drivers.",
+    },
+
+    { type: "h2", text: "Frequently Asked Questions: Auto Insurance in Phoenix" },
+    {
+      type: "faq",
+      items: [
+        {
+          question: "Q: What is the average cost of car insurance in Phoenix, AZ?",
+          answer:
+            "Phoenix drivers pay an average of $118/month ($1,416/year) for full coverage and $48/month ($576/year) for liability-only coverage (Bankrate, 2024). Rates vary by ZIP code — 85017 (west Phoenix) averages $142/month while 85254 (Scottsdale/Paradise Valley area) averages $104/month due to lower accident density.",
+        },
+        {
+          question: "Q: What is the cheapest auto insurance in Phoenix?",
+          answer:
+            "USAA offers the lowest rates for eligible drivers at $94/month for full coverage. For non-military Phoenix drivers, GEICO averages $98/month for drivers with clean records. Rates increase significantly after an at-fault accident (+42%), DUI (+74%), or lapsed coverage (+31%), according to Bankrate 2024 penalty data.",
+        },
+        {
+          question: "Q: Does Arizona require uninsured motorist coverage?",
+          answer:
+            "Arizona does not require uninsured motorist (UM) coverage, but insurers must offer it. Given that 11.9% of Arizona drivers are uninsured (Insurance Research Council, 2023), Protegrity Insurance strongly recommends adding UM/UIM coverage. The additional cost is typically $8–$14/month for $100,000 in UM protection.",
+        },
+        {
+          question: "Q: How does Phoenix weather affect my auto insurance rate?",
+          answer:
+            "Phoenix's extreme heat — with 110+ days above 100°F annually — increases comprehensive claims for battery failure, tire blowouts, and engine damage. Monsoon season (June–September) adds hail and flood risk. Comprehensive coverage in Phoenix averages $18–$28/month, and carriers factor in Maricopa County's weather profile when setting rates.",
+        },
+        {
+          question: "Q: Can I get same-day auto insurance in Phoenix?",
+          answer:
+            "Yes. GEICO, Progressive, and State Farm all offer same-day auto insurance binding in Arizona. Through Protegrity Insurance, most Phoenix applicants can obtain a quote, select coverage, and receive proof of insurance digitally within 20–40 minutes. SR-22 filings are transmitted electronically to Arizona MVD within 24 hours.",
+        },
+        {
+          question: "Q: What discounts are available for Phoenix auto insurance?",
+          answer:
+            "Phoenix drivers qualify for: multi-car discount (avg. 12–18%), multi-policy/bundle discount (avg. 10–15%), good driver discount (avg. 22%), good student discount (avg. 8–15%), anti-theft device discount (avg. 5–23%), and military discount through USAA and GEICO (avg. 15%). Stacking available discounts can reduce a $120/month policy to $85–$95/month.",
+        },
+      ],
+    },
+  ],
+  finalCta: {
+    headline: "Get Your Free Phoenix Auto Insurance Quote Today",
+    intro:
+      "Call Protegrity Insurance: (602) 555-0190 (click-to-call) | Get your free quote at protegrityinsurance.com",
+    body: "",
+    phoneLabel: "(602) 555-0190",
+    phoneHref: "tel:6025550190",
+    quoteHref: "https://protegrityinsurance.com",
+    trustLine:
+      "5-star rated · 30+ top-rated carriers · Licensed Arizona agents · No fees, no pressure",
+  },
+  relatedLinks: [
+    {
+      label: "Auto Insurance",
+      href: "/auto-insurance",
+      description:
+        "Compare carriers and coverage options for your Phoenix-area vehicle.",
+    },
+    {
+      label: "Home Insurance",
+      href: "/home-insurance",
+      description:
+        "Bundle home and auto for an average 20% discount with major carriers.",
+    },
+    {
+      label: "Back to Blog",
+      href: "/blog",
+      description:
+        "More guides and insurance resources from our licensed Arizona team.",
+    },
+  ],
+  references: [],
+  footer: {
+    lastUpdated: "Last updated: April 2026",
+    copyright: "© 2026 Protegrity Insurance. All rights reserved. | protegrityinsurance.com",
+  },
+}
+
 /* -------------------------------------------------------------------------- */
 /*  Public exports                                                            */
 /* -------------------------------------------------------------------------- */
 
-export const blogPosts: BlogPost[] = [phoenixHomePost]
+export const blogPosts: BlogPost[] = [phoenixHomePost, phoenixAutoPost]
 
 function assertBlogPostsHaveRequiredImages(posts: readonly BlogPost[]): void {
   for (const post of posts) {

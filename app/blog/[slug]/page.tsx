@@ -242,6 +242,7 @@ export default async function BlogPostPage({
           authorName={post.author.name}
           displayDate={post.displayDate}
           readTime={post.readTime}
+          image={post.heroImage}
         />
 
         <article className="bg-surface">
@@ -279,7 +280,7 @@ export default async function BlogPostPage({
                     aria-current="page"
                     className="min-w-0 truncate font-medium text-foreground"
                   >
-                    {post.category}
+                    {post.breadcrumbLabel ?? post.category}
                   </li>
                 </ol>
               </nav>
@@ -307,26 +308,28 @@ export default async function BlogPostPage({
               </section>
 
               <RelatedLinks
-                links={[
-                  {
-                    label: "Home Insurance",
-                    href: "/insurance/home",
-                    description:
-                      "Compare carriers and coverage options for your Phoenix-area home.",
-                  },
-                  {
-                    label: "Auto Insurance",
-                    href: "/insurance/auto",
-                    description:
-                      "Bundle home and auto for an average 20% discount with major carriers.",
-                  },
-                  {
-                    label: "Back to Blog",
-                    href: "/blog",
-                    description:
-                      "More guides and insurance resources from our licensed Arizona team.",
-                  },
-                ]}
+                links={
+                  post.relatedLinks ?? [
+                    {
+                      label: "Home Insurance",
+                      href: "/insurance/home",
+                      description:
+                        "Compare carriers and coverage options for your Phoenix-area home.",
+                    },
+                    {
+                      label: "Auto Insurance",
+                      href: "/insurance/auto",
+                      description:
+                        "Bundle home and auto for an average 20% discount with major carriers.",
+                    },
+                    {
+                      label: "Back to Blog",
+                      href: "/blog",
+                      description:
+                        "More guides and insurance resources from our licensed Arizona team.",
+                    },
+                  ]
+                }
               />
 
               <BlogReferences references={post.references} />

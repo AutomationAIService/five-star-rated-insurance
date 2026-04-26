@@ -1,5 +1,8 @@
 import { BrandNavyStarOverlay } from "@/components/brand/BrandNavyStarOverlay"
 import { CalendarDays, Clock, User } from "lucide-react"
+import Image from "next/image"
+import { blogImageDisplayUrl } from "@/lib/blog/images"
+import type { BlogPostImage } from "@/src/data/blogPosts"
 
 type BlogHeroProps = {
   title: string
@@ -7,6 +10,7 @@ type BlogHeroProps = {
   authorName: string
   displayDate: string
   readTime: string
+  image?: BlogPostImage
 }
 
 /**
@@ -20,13 +24,28 @@ export function BlogHero({
   authorName,
   displayDate,
   readTime,
+  image,
 }: BlogHeroProps) {
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-brand-navy via-brand-navy to-brand-navy/95 text-primary-foreground">
+      {image ? (
+        <>
+          <Image
+            src={blogImageDisplayUrl(image.src)}
+            alt=""
+            fill
+            className="object-cover"
+            sizes="100vw"
+            priority
+            aria-hidden
+          />
+          <div className="absolute inset-0 bg-[#1E3A5F]/80" aria-hidden />
+        </>
+      ) : null}
       <BrandNavyStarOverlay />
       <div className="container relative mx-auto px-4 py-12 md:py-16 lg:py-20">
         <div className="mx-auto max-w-3xl text-center">
-          <p className="mb-4 inline-flex items-center justify-center rounded-full bg-gold/95 px-4 py-1 text-xs font-bold uppercase tracking-wider text-navy">
+          <p className="mb-4 inline-flex items-center justify-center rounded-full bg-[#F5C518] px-4 py-1 text-xs font-bold uppercase tracking-wider text-[#1E3A5F]">
             {category}
           </p>
           <h1 className="mb-6 text-balance font-heading text-2xl font-bold leading-tight text-primary-foreground md:text-3xl lg:text-[2.5rem] lg:leading-[1.15]">

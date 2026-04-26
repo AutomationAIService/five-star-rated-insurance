@@ -31,6 +31,18 @@ export function BlogContent({ blocks }: BlogContentProps) {
               </h2>
             )
           }
+          case "h3": {
+            const id = block.id ?? slugify(block.text)
+            return (
+              <h3
+                key={idx}
+                id={id}
+                className="scroll-mt-24 pt-2 font-heading text-xl font-bold leading-tight text-navy md:text-2xl"
+              >
+                {block.text}
+              </h3>
+            )
+          }
           case "p": {
             return (
               <p
