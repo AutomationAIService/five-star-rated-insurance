@@ -59,13 +59,13 @@ export type BlogReference = {
 
 export type BlogAuthor = {
   name: string
-  /** Short headline shown in the byline, e.g. "Licensed Arizona Insurance Agent". */
+  /** Short headline shown in the byline, e.g. "Licensed Insurance Broker". */
   title: string
   /** Multi-paragraph bio shown in the AuthorBio card. */
   bio: string
   /** Public/relative path to a square headshot image. */
   avatarSrc?: string
-  /** Optional structured credentials/license info (e.g. "License #AZ-8821043"). */
+  /** Optional structured credentials/license info. */
   credential?: string
   /** City/region for schema and bylines. */
   location?: string
@@ -175,6 +175,21 @@ export const intl = (text: string, link: string): RichTextRun => ({
 /*  Posts                                                                     */
 /* -------------------------------------------------------------------------- */
 
+const ryanLorschAuthor: BlogAuthor = {
+  name: "Ryan Lorsch",
+  title: "Licensed Insurance Broker",
+  location: "Phoenix, AZ",
+  bio: `Ryan has worked in the insurance industry since 2012. As an experienced broker, he is sure to get you a low rate, with great coverage.
+
+Ryan is licensed in 40 states, including Arizona, Colorado, California, and others. (See insurance page for complete list)
+
+Bachelor degree in Accounting
+Masters degree in Finance
+
+Bilingual - Spanish and English`,
+  avatarSrc: undefined,
+}
+
 const phoenixHomePost: BlogPost = {
   slug: "how-to-compare-home-insurance-phoenix",
   title: "How to Compare Home Insurance Options in Phoenix, AZ (2026 Guide)",
@@ -188,15 +203,7 @@ const phoenixHomePost: BlogPost = {
   displayDate: "April 2026",
   publishedISO: "2026-04-25",
   modifiedISO: "2026-04-25",
-  author: {
-    name: "James Harlow",
-    title: "Licensed Arizona Insurance Agent",
-    credential: "License #AZ-8821043",
-    location: "Phoenix, AZ",
-    bio: "James has spent 12 years helping Phoenix-area residents protect their homes with the right insurance coverage. He is based in Phoenix, AZ, licensed with the Arizona Department of Insurance and Financial Institutions (DIFI), and specializes in homeowners, seasonal property, and landlord insurance across the Valley with deep experience in Phoenix-area hail, monsoon, and wildfire coverage.",
-    // TODO: replace with real headshot at /public/images/blog/authors/james-harlow.jpg
-    avatarSrc: undefined,
-  },
+  author: ryanLorschAuthor,
   image: {
     src: "https://images.unsplash.com/photo-1750806267476-bc6b7216e69b",
     alt: "Modern Phoenix-area home with desert landscaping representing typical Arizona homeowner insurance properties",
@@ -594,25 +601,22 @@ const phoenixAutoPost: BlogPost = {
   publishedISO: "2026-04-26",
   modifiedISO: "2026-04-26",
   breadcrumbLabel: "Best Auto Insurance Companies Phoenix",
-  author: {
-    name: "James Harlow",
-    title: "Licensed Arizona Insurance Agent",
-    credential: "License #AZ-8821043",
-    location: "Phoenix, AZ",
-    bio: "James has spent 12 years helping Phoenix-area residents find the right auto insurance at competitive rates. He is based in Phoenix, AZ, licensed with the Arizona Department of Insurance and Financial Institutions (DIFI), and specializes in personal auto, SR-22, and commercial vehicle coverage across the Valley.",
-    avatarSrc: undefined,
-  },
+  author: ryanLorschAuthor,
   heroImage: {
-    src: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000",
-    alt: "Phoenix highway at dusk",
+    src: "https://images.unsplash.com/photo-1663773295883-086f86f13e26",
+    alt: "Phoenix highway traffic at sunset with multiple vehicles",
     width: 1920,
     height: 1080,
+    photographer: "Emily Dill Strock",
+    photographerUrl: "https://unsplash.com/@emilydillstrock",
   },
   image: {
-    src: "https://images.unsplash.com/photo-1494515843206-f3117d3f51b7",
-    alt: "Phoenix cityscape with traffic",
+    src: "https://images.unsplash.com/photo-1663773295883-086f86f13e26",
+    alt: "Phoenix highway traffic at sunset with multiple vehicles",
     width: 1920,
     height: 1080,
+    photographer: "Emily Dill Strock",
+    photographerUrl: "https://unsplash.com/@emilydillstrock",
   },
   keyTakeaways: {
     items: [
@@ -780,11 +784,230 @@ const phoenixAutoPost: BlogPost = {
   },
 }
 
+const phoenixAutoCostPost: BlogPost = {
+  slug: "average-cost-car-insurance-phoenix-az",
+  title: "Average Cost of Car Insurance in Phoenix, AZ (2026 Data)",
+  excerpt:
+    "How much does car insurance cost in Phoenix, AZ? 2026 data by age, ZIP code, driving record, and coverage level — with tips to lower your rate.",
+  metaTitle: "Average Cost of Car Insurance in Phoenix, AZ (2026 Data)",
+  metaDescription:
+    "How much does car insurance cost in Phoenix, AZ? 2026 data by age, ZIP code, driving record, and coverage level — with tips to lower your rate.",
+  category: "Auto Insurance",
+  readTime: "8 min read",
+  displayDate: "April 2026",
+  publishedISO: "2026-04-26",
+  modifiedISO: "2026-04-26",
+  breadcrumbLabel: "Average Cost of Car Insurance Phoenix",
+  author: ryanLorschAuthor,
+  heroImage: {
+    src: "https://images.unsplash.com/photo-1645201296236-c14d18e2f21f",
+    alt: "Various vehicles on Phoenix residential street",
+    width: 1920,
+    height: 1080,
+    photographer: "PJ Gal-Szabo",
+    photographerUrl: "https://unsplash.com/@pjgalszabo",
+  },
+  image: {
+    src: "https://images.unsplash.com/photo-1645201296236-c14d18e2f21f",
+    alt: "Various vehicles on Phoenix residential street",
+    width: 1920,
+    height: 1080,
+    photographer: "PJ Gal-Szabo",
+    photographerUrl: "https://unsplash.com/@pjgalszabo",
+  },
+  keyTakeaways: {
+    items: [
+      "Car insurance in Phoenix, AZ costs an average of $118/month ($1,416/year) for full coverage and $48/month ($576/year) for liability-only, according to Bankrate 2024 data.",
+      "Phoenix rates run 12% above the national full-coverage average of $1,265/year.",
+      "Age is the single strongest predictor of auto insurance rates — teen drivers in Phoenix pay 3–4x more than 35-year-old drivers for identical coverage.",
+      "Your ZIP code affects your rate because insurers analyze neighborhood-level accident, theft, and fraud data.",
+      "A single at-fault accident in Phoenix increases your full-coverage premium by an average of 42% — from $118/month to $167/month.",
+    ],
+  },
+  content: [
+    { type: "h2", text: "The Short Answer: What Car Insurance Costs in Phoenix" },
+    {
+      type: "p",
+      text:
+        "Car insurance in Phoenix, AZ costs an average of $118/month ($1,416/year) for full coverage and $48/month ($576/year) for liability-only, according to Bankrate 2024 data. Phoenix rates run 12% above the national full-coverage average of $1,265/year. Your exact rate depends on your age, ZIP code, driving record, vehicle, and credit score under Arizona's insurance scoring rules.",
+    },
+
+    { type: "h2", text: "Why Phoenix Car Insurance Rates Are Above the National Average" },
+    {
+      type: "p",
+      text:
+        "Three data-backed factors push Phoenix premiums above the U.S. average: Maricopa County recorded 56,482 vehicle crashes in 2023 (ADOT); 11.9% of Arizona drivers are uninsured, the 14th-highest rate in the country (Insurance Research Council, 2023); and Phoenix ranks 14th nationally for vehicle theft with 12,847 reported thefts in 2023 (NICB). Each factor increases risk exposure for every insurer operating in the market, which flows through to every policyholder's premium.",
+    },
+
+    { type: "h2", text: "Phoenix Car Insurance Rates by Age" },
+    {
+      type: "p",
+      text:
+        "Age is the single strongest predictor of auto insurance rates. Teen drivers in Phoenix pay 3–4x more than 35-year-old drivers for identical coverage. Rates below are full-coverage averages from State Farm, GEICO, and Progressive combined (Bankrate, 2024 Phoenix market data):",
+    },
+    {
+      type: "table",
+      caption: "Phoenix Car Insurance Rates by Age",
+      columns: [
+        "Age",
+        "Monthly Rate (Female)",
+        "Monthly Rate (Male)",
+        "Annual Cost (Female)",
+      ],
+      rows: [
+        ["16", "$312/mo", "$368/mo", "$3,744/yr"],
+        ["18", "$248/mo", "$295/mo", "$2,976/yr"],
+        ["25", "$138/mo", "$152/mo", "$1,656/yr"],
+        ["35", "$112/mo", "$118/mo", "$1,344/yr"],
+        ["45", "$108/mo", "$112/mo", "$1,296/yr"],
+        ["55", "$104/mo", "$109/mo", "$1,248/yr"],
+        ["65", "$118/mo", "$124/mo", "$1,416/yr"],
+      ],
+    },
+
+    { type: "h2", text: "Phoenix Car Insurance Rates by ZIP Code" },
+    {
+      type: "p",
+      text:
+        "Your ZIP code affects your rate because insurers analyze neighborhood-level accident, theft, and fraud data. These are average full-coverage monthly rates by Phoenix-area ZIP codes (Bankrate, 2024):",
+    },
+    {
+      type: "table",
+      caption: "Phoenix Car Insurance Rates by ZIP Code",
+      columns: [
+        "ZIP Code",
+        "Neighborhood",
+        "Avg. Monthly Rate",
+        "Key Risk Factor",
+      ],
+      rows: [
+        ["85017", "West Phoenix", "$142/mo", "High theft / accident density"],
+        ["85031", "Maryvale", "$138/mo", "High uninsured driver rate"],
+        ["85008", "East Phoenix", "$126/mo", "Moderate accident frequency"],
+        ["85016", "Biltmore area", "$108/mo", "Lower crime / newer vehicles"],
+        ["85254", "Scottsdale border", "$104/mo", "Lower density / lower claims"],
+        ["85224", "Chandler", "$112/mo", "Moderate risk profile"],
+        ["85301", "Glendale", "$119/mo", "Moderate accident frequency"],
+        ["85203", "Mesa", "$115/mo", "Average risk profile"],
+      ],
+    },
+
+    { type: "h2", text: "How Does Your Driving Record Affect Your Phoenix Rate?" },
+    {
+      type: "p",
+      text:
+        "A single at-fault accident in Phoenix increases your full-coverage premium by an average of 42% — from $118/month to $167/month — and the surcharge remains on your record for 3 years under Arizona's point system (Arizona MVD, 2024). Here is a full penalty breakdown:",
+    },
+    {
+      type: "table",
+      caption: "How Does Your Driving Record Affect Your Phoenix Rate?",
+      columns: [
+        "Driving Event",
+        "Avg. Rate Increase",
+        "How Long It Affects Rate",
+        "New Monthly Avg.",
+      ],
+      rows: [
+        ["Clean record (baseline)", "—", "—", "$118/mo"],
+        ["1 speeding ticket (1–15 mph over)", "+18%", "3 years", "$139/mo"],
+        ["1 at-fault accident", "+42%", "3 years", "$167/mo"],
+        ["1 DUI / DWI", "+74%", "5 years", "$205/mo"],
+        ["Lapsed coverage (30+ days)", "+31%", "Until clean 12 months", "$155/mo"],
+        ["Reckless driving conviction", "+82%", "5 years", "$215/mo"],
+      ],
+    },
+
+    { type: "h2", text: "Full Coverage vs. Liability-Only: Which Makes Financial Sense in Phoenix?" },
+    {
+      type: "p",
+      text:
+        "Full coverage (liability + collision + comprehensive) costs an average of $118/month in Phoenix. Liability-only costs $48/month. The $70/month difference ($840/year) is the break-even point. If your vehicle's actual cash value is below $5,000–$6,000, paying for full coverage may cost more than the maximum claim payout — especially with a $500–$1,000 deductible factored in. For vehicles worth over $15,000, full coverage is nearly always financially justified in Phoenix's high-theft, high-accident environment.",
+    },
+
+    { type: "h2", text: "Frequently Asked Questions: Car Insurance Costs in Phoenix" },
+    {
+      type: "faq",
+      items: [
+        {
+          question: "Q: What is the minimum car insurance required in Phoenix, AZ?",
+          answer:
+            "Arizona law requires 25/50/15 liability coverage: $25,000 bodily injury per person, $50,000 per accident, and $15,000 property damage (ARS § 28-4009). Liability-only policies meeting this minimum average $48/month in Phoenix. Protegrity Insurance recommends 100/300/100 for drivers with assets to protect, as minimum limits are exhausted in a single moderate collision.",
+        },
+        {
+          question: "Q: Does credit score affect car insurance rates in Phoenix?",
+          answer:
+            "Yes. Arizona allows insurers to use credit-based insurance scores. Phoenix drivers with poor credit (below 580) pay an average of 91% more than drivers with excellent credit (720+) for identical coverage (Bankrate, 2024). Improving your credit score from 'fair' (580–669) to 'good' (670–739) can reduce your Phoenix auto premium by $28–$44/month.",
+        },
+        {
+          question: "Q: Is Phoenix car insurance more expensive than Tucson?",
+          answer:
+            "Yes. Phoenix full-coverage averages $118/month vs. $104/month in Tucson — a 13.5% difference. The Phoenix premium is higher due to greater population density, more annual vehicle miles traveled per driver in the metro area, and Maricopa County's higher vehicle theft rate compared to Pima County (NICB, 2023).",
+        },
+        {
+          question: "Q: How can I lower my car insurance rate in Phoenix?",
+          answer:
+            "The four highest-impact actions: (1) Bundle auto with homeowners or renters insurance (avg. $486/year savings with Travelers); (2) Enroll in a telematics program like GEICO DriveEasy or State Farm Drive Safe & Save (avg. 15–25% discount); (3) Increase your deductible from $500 to $1,000 (avg. 11% premium reduction); (4) Maintain continuous coverage to avoid the lapsed-coverage surcharge of +31%.",
+        },
+        {
+          question: "Q: Do Phoenix car insurance rates go down at 25?",
+          answer:
+            "Yes. Phoenix drivers see their most significant rate drop between ages 18 and 25. At 18, the average full-coverage rate is $272/month. At 25, it drops to $145/month — a 47% reduction, assuming no accidents or violations were added during those years (Bankrate, Phoenix market, 2024).",
+        },
+        {
+          question: "Q: How much is car insurance for a new car in Phoenix?",
+          answer:
+            "A new 2025 Toyota Camry in Phoenix costs an average of $134/month for full coverage with a $500 deductible. A new 2025 Ford F-150 costs an average of $148/month. Luxury vehicles cost significantly more: a 2025 BMW 5 Series averages $198/month in the Phoenix market due to higher repair costs and theft targeting (State Farm, GEICO, Progressive combined average, 2024).",
+        },
+      ],
+    },
+  ],
+  finalCta: {
+    headline: "Get Your Free Phoenix Auto Insurance Quote Today",
+    intro:
+      "Call Protegrity Insurance: (602) 555-0190 (click-to-call) | Get your free quote at protegrityinsurance.com",
+    body: "",
+    phoneLabel: "(602) 555-0190",
+    phoneHref: "tel:6025550190",
+    quoteHref: "https://protegrityinsurance.com",
+    trustLine:
+      "5-star rated · 30+ top-rated carriers · Licensed Arizona agents · No fees, no pressure",
+  },
+  relatedLinks: [
+    {
+      label: "Auto Insurance",
+      href: "/auto-insurance",
+      description:
+        "Compare carriers and coverage options for your Phoenix-area vehicle.",
+    },
+    {
+      label: "Home Insurance",
+      href: "/home-insurance",
+      description:
+        "Bundle home and auto for an average 20% discount with major carriers.",
+    },
+    {
+      label: "Back to Blog",
+      href: "/blog",
+      description:
+        "More guides and insurance resources from our licensed Arizona team.",
+    },
+  ],
+  references: [],
+  footer: {
+    lastUpdated: "Last updated: April 2026",
+    copyright: "© 2026 Protegrity Insurance. All rights reserved. | protegrityinsurance.com",
+  },
+}
+
 /* -------------------------------------------------------------------------- */
 /*  Public exports                                                            */
 /* -------------------------------------------------------------------------- */
 
-export const blogPosts: BlogPost[] = [phoenixHomePost, phoenixAutoPost]
+export const blogPosts: BlogPost[] = [
+  phoenixHomePost,
+  phoenixAutoPost,
+  phoenixAutoCostPost,
+]
 
 function assertBlogPostsHaveRequiredImages(posts: readonly BlogPost[]): void {
   for (const post of posts) {

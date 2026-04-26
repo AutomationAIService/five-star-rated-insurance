@@ -53,7 +53,7 @@ export function AuthorBio({ author }: AuthorBioProps) {
               <span className="text-muted-foreground"> | {author.credential}</span>
             ) : null}
           </p>
-          <p className="mt-3 text-base leading-relaxed text-foreground/90 md:text-[17px]">
+          <p className="mt-3 whitespace-pre-line text-base leading-relaxed text-foreground/90 md:text-[17px]">
             {author.bio}
           </p>
         </div>
