@@ -10,9 +10,9 @@ import { blogImageCardUrl } from "@/lib/blog/images"
 import { publishedBlogPosts, type BlogPost } from "@/src/data/blogPosts"
 
 export const metadata: Metadata = {
-  title: "Blog | Five Star Rated Insurance",
+  title: "Blog | Five Star Rated Insurance - Phoenix Insurance Tips",
   description:
-    "Insurance tips, guides, and resources from the Five Star Rated Insurance team.",
+    "Expert insurance tips and guides for Phoenix homeowners and drivers. Save money on home and auto insurance with advice from our Arizona team.",
   alternates: {
     canonical: "https://fivestarratedinsurance.com/blog",
   },
@@ -28,14 +28,28 @@ export default function BlogPage() {
       <main className="flex-1">
         <section className="relative overflow-hidden bg-gradient-to-br from-brand-navy via-brand-navy to-brand-navy/95 text-primary-foreground">
           <BrandNavyStarOverlay />
-          <div className="container relative mx-auto px-4 py-12 md:py-16 lg:py-20">
-            <div className="mx-auto max-w-3xl text-center">
-              <h1 className="mb-4 text-balance font-heading text-2xl font-bold md:text-3xl lg:text-4xl">
-                Insurance Tips & Resources
+          <div className="container relative mx-auto flex min-h-[220px] items-center justify-center px-6 py-[60px] md:min-h-[240px] md:py-16 lg:min-h-[280px] lg:pb-[60px] lg:pt-20">
+            <div className="mx-auto max-w-[700px] text-center">
+              <nav
+                aria-label="Breadcrumb"
+                className="mb-3 text-sm leading-relaxed text-primary-foreground/70"
+              >
+                <Link
+                  href="/"
+                  className="rounded-sm underline-offset-2 hover:text-primary-foreground hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
+                >
+                  Home
+                </Link>
+                <span aria-hidden className="mx-1.5">
+                  /
+                </span>
+                <span aria-current="page">Blog</span>
+              </nav>
+              <h1 className="mb-4 text-balance font-heading text-4xl font-bold leading-tight text-primary-foreground md:text-[40px] lg:text-5xl">
+                Blog
               </h1>
-              <p className="text-lg leading-relaxed text-primary-foreground/80 md:text-xl">
-                Stay informed with guides, tips, and updates from the Five Star Rated Insurance
-                team.
+              <p className="mx-auto max-w-[700px] text-base font-normal leading-[1.5] text-primary-foreground/90 md:text-lg lg:text-xl">
+                Insurance insights and money saving tips from our Arizona team
               </p>
             </div>
           </div>
