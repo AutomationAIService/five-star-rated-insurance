@@ -1041,6 +1041,215 @@ const sr22InsurancePhoenixPost: BlogPost = {
   },
 }
 
+const carInsuranceAfterDuiPhoenixPost: BlogPost = {
+  slug: "car-insurance-after-dui-phoenix-az",
+  title: "Car Insurance After a DUI in Phoenix, AZ: Rates, Carriers, and Next Steps (2026)",
+  excerpt:
+    "Got a DUI in Phoenix? Here is exactly what happens to your car insurance rate, which carriers will cover you, and how to minimize costs over the next 5 years in Arizona.",
+  metaTitle:
+    "Car Insurance After a DUI in Phoenix, AZ: Rates, Carriers, and Next Steps (2026)",
+  metaDescription:
+    "Got a DUI in Phoenix? Here is exactly what happens to your car insurance rate, which carriers will cover you, and how to minimize costs over the next 5 years in Arizona.",
+  category: "Auto Insurance",
+  readTime: "8 min read",
+  displayDate: "April 2026",
+  publishedISO: "2026-04-26",
+  modifiedISO: "2026-04-26",
+  breadcrumbLabel: "Car Insurance After DUI Phoenix",
+  author: ryanLorschAuthor,
+  heroImage: {
+    src: "https://images.unsplash.com/photo-1740872233154-b88852f89eda",
+    alt: "DUI checkpoint and law enforcement on Phoenix streets",
+    width: 1920,
+    height: 1080,
+  },
+  image: {
+    src: "https://images.unsplash.com/photo-1740872233154-b88852f89eda",
+    alt: "DUI checkpoint and law enforcement on Phoenix streets",
+    width: 1920,
+    height: 1080,
+  },
+  keyTakeaways: {
+    items: [
+      "A first-offense DUI in Phoenix increases your auto insurance premium by an average of 74% — from $118/month to $205/month — and the surcharge remains for 5 years under Arizona's DUI statute (ARS § 28-1381).",
+      "Arizona requires an SR-22 filing for 3 years after a first DUI.",
+      "The cheapest carrier for post-DUI Phoenix drivers is Progressive at $192/month, followed by Dairyland at $200/month.",
+      "A DUI conviction in Arizona triggers three immediate insurance consequences: your current carrier may cancel or non-renew your policy, you are required to file an SR-22 with Arizona MVD for 3 years, and your premium increases by an average of 74% for 5 years.",
+      "Total additional insurance cost over 5 years after a DUI: $5,220 in premiums alone ($87/month extra × 60 months).",
+    ],
+  },
+  content: [
+    { type: "h2", text: "The Short Answer: Car Insurance After a DUI in Phoenix" },
+    {
+      type: "p",
+      text:
+        "A first-offense DUI in Phoenix increases your auto insurance premium by an average of 74% — from $118/month to $205/month — and the surcharge remains for 5 years under Arizona's DUI statute (ARS § 28-1381). Arizona requires an SR-22 filing for 3 years after a first DUI. The cheapest carrier for post-DUI Phoenix drivers is Progressive at $192/month, followed by Dairyland at $200/month. This guide covers what to expect, which carriers accept DUI drivers, and how to minimize costs.",
+    },
+
+    { type: "h2", text: "What Happens to Your Car Insurance After a DUI in Phoenix?" },
+    {
+      type: "p",
+      text:
+        "A DUI conviction in Arizona triggers three immediate insurance consequences: (1) your current carrier may cancel or non-renew your policy; (2) you are required to file an SR-22 with Arizona MVD for 3 years; (3) your premium increases by an average of 74% for 5 years — the period Arizona insurers use to assess DUI risk.",
+    },
+    {
+      type: "p",
+      text:
+        "Arizona's implied consent law (ARS § 28-1321) means refusal to submit to a BAC test carries the same insurance consequences as a DUI conviction and results in a 12-month license suspension for first refusal.",
+    },
+
+    { type: "h2", text: "How Much Does Car Insurance Cost After a DUI in Phoenix?" },
+    {
+      type: "table",
+      caption: "Car Insurance Rates After a DUI in Phoenix",
+      columns: [
+        "Carrier",
+        "Monthly Rate Post-DUI",
+        "SR-22 Filing",
+        "Accepts DUI Drivers",
+      ],
+      rows: [
+        ["Progressive", "$192/mo", "Yes — electronic, 24hr", "Yes"],
+        ["Dairyland", "$200/mo", "Yes — electronic, 24hr", "Yes"],
+        ["Gainsco", "$208/mo", "Yes — electronic, 24hr", "Yes"],
+        ["State Farm", "$248/mo", "Yes", "Sometimes — underwriting varies"],
+        ["GEICO", "$228/mo", "Yes", "Yes — some offices"],
+        ["Allstate", "$252/mo", "Yes", "Yes — rate varies by agent"],
+        ["USAA (if eligible)", "$195/mo", "Yes", "Yes — first DUI only"],
+      ],
+    },
+
+    { type: "h2", text: "Arizona's DUI Laws and How They Affect Your Insurance" },
+    {
+      type: "p",
+      text:
+        "Arizona has some of the strictest DUI laws in the country. A standard DUI (BAC 0.08%+) under ARS § 28-1381 carries a minimum 10-day jail sentence, $1,480+ in fines, mandatory ignition interlock device (IID) installation, and license suspension. An Extreme DUI (BAC 0.15%+) results in a minimum 30-day jail sentence and $2,780+ in fines.",
+    },
+    {
+      type: "p",
+      text:
+        "Insurance carriers treat Arizona DUI convictions as major violations — the same risk tier as reckless driving. The 74% average rate increase persists for 5 years, meaning a Phoenix driver who paid $118/month before the DUI will pay an average of $205/month for the next 5 years — a total additional cost of $5,220 in insurance premiums alone.",
+    },
+
+    { type: "h2", text: "Steps to Take Immediately After a DUI Conviction in Phoenix" },
+    {
+      type: "p",
+      text:
+        "Step 1: Contact Protegrity Insurance within 7 days. Many standard carriers will cancel your policy upon receiving notice of a DUI conviction. We will shop 30+ carriers to find the best available rate before your current policy lapses.",
+    },
+    {
+      type: "p",
+      text:
+        "Step 2: File for an SR-22 through your new carrier. Arizona MVD requires SR-22 filing within 30 days of license reinstatement. Protegrity Insurance processes same-day SR-22 filings through Progressive and Dairyland.",
+    },
+    {
+      type: "p",
+      text:
+        "Step 3: Install an ignition interlock device (IID). Arizona courts require IID installation on all vehicles you operate after a DUI. Device installation costs $70–$150 and monthly monitoring fees run $60–$80. This is separate from your insurance cost.",
+    },
+    {
+      type: "p",
+      text:
+        "Step 4: Complete alcohol screening and treatment if ordered by the court. Completion of court-ordered programs is noted on your MVD record and some carriers offer modest rate reductions for documented program completion.",
+    },
+
+    { type: "h2", text: "How to Lower Your Car Insurance Rate After a DUI in Phoenix" },
+    {
+      type: "p",
+      text:
+        "Comparison shopping is the highest-impact action. Rate differences between carriers for identical DUI profiles can exceed $60/month in Phoenix. Protegrity Insurance compares Progressive, Dairyland, Gainsco, and 27 other carriers simultaneously.",
+    },
+    {
+      type: "p",
+      text:
+        "Telematics enrollment: Progressive's Snapshot program allows post-DUI Phoenix drivers to demonstrate safe driving behavior and reduce premiums by up to 20% over 12 months.",
+    },
+    {
+      type: "p",
+      text:
+        "Bundling: Adding renters or homeowners insurance to your post-DUI auto policy saves an average of $38–$52/month even on non-standard policies.",
+    },
+    {
+      type: "p",
+      text:
+        "Waiting: Arizona DUI surcharges peak at year 1 and gradually decrease. Most carriers reduce the surcharge by 15–25% at the 3-year mark if no new violations occur.",
+    },
+
+    { type: "h2", text: "Frequently Asked Questions: DUI and Car Insurance in Phoenix" },
+    {
+      type: "faq",
+      items: [
+        {
+          question: "Q: Will my car insurance be cancelled after a DUI in Phoenix?",
+          answer:
+            "Possibly. State Farm, Allstate, and Farmers reserve the right to non-renew (but not mid-term cancel) policies after a DUI conviction. Non-renewal typically occurs at your next policy renewal date. Progressive, Dairyland, and Gainsco specialize in insuring Phoenix drivers with DUIs and will not cancel based on a DUI conviction alone.",
+        },
+        {
+          question: "Q: How long does a DUI stay on my driving record in Arizona?",
+          answer:
+            "A DUI conviction stays on your Arizona MVD driving record permanently — it is never expunged. However, most insurance carriers look back only 5–7 years when setting rates. After 5 years with no additional violations, your insurance rate will return to approximately standard pricing with most Phoenix-area carriers.",
+        },
+        {
+          question: "Q: Can I get car insurance the same day as my DUI conviction in Phoenix?",
+          answer:
+            "Yes. Protegrity Insurance can bind a new policy and submit your SR-22 filing to Arizona MVD within 24 hours of your conviction, even if your current carrier has issued a non-renewal notice. Same-day coverage is available through Progressive and Dairyland for all eligible Phoenix drivers regardless of DUI history.",
+        },
+        {
+          question: "Q: Does an out-of-state DUI affect my Phoenix car insurance?",
+          answer:
+            "Yes. Arizona participates in the Driver License Compact with 44 other states, meaning an out-of-state DUI conviction is reported to Arizona MVD and treated identically to an in-state conviction. Your Phoenix insurer will receive notification and apply the same surcharge and SR-22 requirements as they would for an Arizona DUI.",
+        },
+        {
+          question: "Q: What is an ignition interlock device and is it required after a Phoenix DUI?",
+          answer:
+            "An IID is a breathalyzer installed in your vehicle that prevents the engine from starting if your BAC exceeds 0.02%. Arizona courts require IID installation for all DUI convictions under ARS § 28-1461. Installation costs $70–$150 in Phoenix; monthly monitoring runs $60–$80. Your insurer does not pay for the IID, and the device does not affect your insurance rate directly.",
+        },
+        {
+          question: "Q: How much will a DUI cost me in total in Phoenix?",
+          answer:
+            "A first-offense Phoenix DUI generates an average total cost of $16,000–$24,000 over 5 years: court fines and fees ($1,480–$2,800), attorney fees ($2,500–$8,000), IID costs ($1,080–$2,700 over 18 months), license reinstatement fee ($50), and insurance surcharges ($5,220 based on $87/month extra × 60 months). These figures do not include lost wages during any jail time served.",
+        },
+      ],
+    },
+  ],
+  finalCta: {
+    headline: "Get Your Free Phoenix Auto Insurance Quote Today",
+    intro:
+      "Call Protegrity Insurance: (480) XXX-XXXX (click-to-call) | Get your free quote at protegrityinsurance.com",
+    body: "",
+    phoneLabel: "(480) XXX-XXXX",
+    phoneHref: "tel:480xxxxxxx",
+    quoteHref: "https://protegrityinsurance.com",
+    trustLine:
+      "5-star rated · 30+ top-rated carriers · Licensed Arizona agents · No fees, no pressure",
+  },
+  relatedLinks: [
+    {
+      label: "Auto Insurance",
+      href: "/auto-insurance",
+      description:
+        "Compare carriers and coverage options for your Phoenix-area vehicle.",
+    },
+    {
+      label: "Home Insurance",
+      href: "/home-insurance",
+      description:
+        "Bundle home and auto for an average 20% discount with major carriers.",
+    },
+    {
+      label: "Back to Blog",
+      href: "/blog",
+      description:
+        "More guides and insurance resources from our licensed Arizona team.",
+    },
+  ],
+  references: [],
+  footer: {
+    lastUpdated: "Last updated: April 2026",
+    copyright: "© 2026 Protegrity Insurance. All rights reserved. | protegrityinsurance.com",
+  },
+}
+
 const phoenixAutoCostPost: BlogPost = {
   slug: "average-cost-car-insurance-phoenix-az",
   title: "Average Cost of Car Insurance in Phoenix, AZ (2026 Data)",
@@ -1743,6 +1952,7 @@ export const blogPosts: BlogPost[] = [
   phoenixHomePost,
   phoenixAutoPost,
   sr22InsurancePhoenixPost,
+  carInsuranceAfterDuiPhoenixPost,
   phoenixAutoCostPost,
   arizonaMinimumCarInsurancePost,
   cheapCarInsurancePhoenixPost,
