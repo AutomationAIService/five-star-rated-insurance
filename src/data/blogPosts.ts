@@ -784,6 +784,263 @@ const phoenixAutoPost: BlogPost = {
   },
 }
 
+const sr22InsurancePhoenixPost: BlogPost = {
+  slug: "sr22-insurance-phoenix-az",
+  title: "SR-22 Insurance in Phoenix, AZ: What It Is, What It Costs, and How to File in 2026",
+  excerpt:
+    "Everything Phoenix drivers need to know about SR-22 insurance: what triggers it, how much it costs, which carriers file it, and how to get your license reinstated in Arizona.",
+  metaTitle:
+    "SR-22 Insurance in Phoenix, AZ: What It Is, What It Costs, and How to File in 2026",
+  metaDescription:
+    "Everything Phoenix drivers need to know about SR-22 insurance: what triggers it, how much it costs, which carriers file it, and how to get your license reinstated in Arizona.",
+  category: "Auto Insurance",
+  readTime: "8 min read",
+  displayDate: "April 2026",
+  publishedISO: "2026-04-26",
+  modifiedISO: "2026-04-26",
+  breadcrumbLabel: "SR-22 Insurance Phoenix",
+  author: ryanLorschAuthor,
+  heroImage: {
+    src: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85",
+    alt: "Arizona MVD building and SR-22 insurance filing documentation",
+    width: 1920,
+    height: 1080,
+    photographer: "Scott Graham",
+    photographerUrl: "https://unsplash.com/@homajob",
+  },
+  image: {
+    src: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85",
+    alt: "Arizona MVD building and SR-22 insurance filing documentation",
+    width: 1920,
+    height: 1080,
+    photographer: "Scott Graham",
+    photographerUrl: "https://unsplash.com/@homajob",
+  },
+  keyTakeaways: {
+    items: [
+      "An SR-22 in Phoenix, AZ is a certificate filed by your auto insurer with Arizona MVD confirming you meet the state's minimum liability requirements (25/50/15).",
+      "It is not a type of insurance — it is a filing attached to your existing policy.",
+      "Phoenix drivers required to carry SR-22 pay an average of $155–$215/month for full coverage, compared to $118/month for standard drivers.",
+      "The SR-22 filing fee itself is $15–$25 and is a one-time charge per filing.",
+      "Most Phoenix drivers need SR-22 for 3 years; a second DUI within 7 years requires 5 years.",
+    ],
+  },
+  content: [
+    { type: "h2", text: "The Short Answer: SR-22 Insurance in Phoenix" },
+    {
+      type: "p",
+      text:
+        "An SR-22 in Phoenix, AZ is a certificate filed by your auto insurer with Arizona MVD confirming you meet the state's minimum liability requirements (25/50/15). It is not a type of insurance — it is a filing attached to your existing policy. Phoenix drivers required to carry SR-22 pay an average of $155–$215/month for full coverage, compared to $118/month for standard drivers. The SR-22 filing fee itself is $15–$25 and is a one-time charge per filing.",
+    },
+
+    { type: "h2", text: "What Triggers an SR-22 Requirement in Arizona?" },
+    {
+      type: "p",
+      text:
+        "Arizona MVD requires an SR-22 filing under the following circumstances, per ARS § 28-4034:",
+    },
+    {
+      type: "table",
+      caption: "SR-22 Triggering Events in Arizona",
+      columns: [
+        "Triggering Event",
+        "SR-22 Duration Required",
+        "License Suspension Period",
+      ],
+      rows: [
+        ["DUI / DWI (first offense)", "3 years", "90 days"],
+        ["DUI (second offense within 7 years)", "5 years", "1 year"],
+        ["Driving without insurance", "3 years", "3 months"],
+        ["At-fault accident while uninsured", "3 years", "3–6 months"],
+        ["Reckless driving conviction", "3 years", "90 days"],
+        ["Excessive points on MVD record", "3 years", "Varies"],
+        ["Failure to satisfy accident judgment", "3 years", "Until satisfied"],
+      ],
+    },
+
+    { type: "h2", text: "How Much Does SR-22 Insurance Cost in Phoenix?" },
+    {
+      type: "p",
+      text:
+        "The SR-22 filing fee is $15–$25, paid once to your insurer. The real cost is the underlying insurance premium increase. Here are average monthly rates for Phoenix drivers with SR-22 requirements by triggering event (Progressive, Dairyland, and Gainsco combined averages, 2024):",
+    },
+    {
+      type: "table",
+      caption: "SR-22 Insurance Cost Comparison in Phoenix",
+      columns: [
+        "Driver Situation",
+        "Without SR-22",
+        "With SR-22",
+        "Monthly Increase",
+      ],
+      rows: [
+        [
+          "Driving without insurance (1 offense)",
+          "$118/mo",
+          "$155/mo",
+          "+$37/mo (+31%)",
+        ],
+        ["1 at-fault accident", "$167/mo", "$192/mo", "+$25/mo (+15%)"],
+        [
+          "1 DUI (first offense)",
+          "$118/mo baseline",
+          "$205/mo",
+          "+$87/mo (+74%)",
+        ],
+        [
+          "1 DUI (second offense, 7 yrs)",
+          "$118/mo baseline",
+          "$265/mo",
+          "+$147/mo (+124%)",
+        ],
+        [
+          "Reckless driving",
+          "$118/mo baseline",
+          "$215/mo",
+          "+$97/mo (+82%)",
+        ],
+      ],
+    },
+
+    { type: "h2", text: "Which Carriers File SR-22 in Phoenix?" },
+    {
+      type: "p",
+      text:
+        "Not all carriers offer SR-22 policies. These are the top carriers for SR-22 drivers in Phoenix, AZ:",
+    },
+    {
+      type: "p",
+      text:
+        "Progressive: Files SR-22 electronically with Arizona MVD within 24 hours. Accepts most SR-22 drivers. Average rate: $192–$215/month post-DUI.",
+    },
+    {
+      type: "p",
+      text:
+        "Dairyland: Specializes in high-risk auto insurance. Often the cheapest option for Phoenix drivers with multiple violations. Average rate: $175–$200/month.",
+    },
+    {
+      type: "p",
+      text:
+        "Gainsco: Phoenix-area specialist for high-risk drivers. Offers non-standard policies with SR-22. Average rate: $168–$195/month.",
+    },
+    {
+      type: "p",
+      text:
+        "State Farm: Files SR-22 but underwriting is stricter. May cancel or non-renew after a DUI. Average rate post-DUI: $248/month.",
+    },
+    {
+      type: "p",
+      text:
+        "GEICO: Files SR-22 in Arizona. Competitive rates for driving-without-insurance SR-22s but less competitive post-DUI. Average rate: $195–$228/month.",
+    },
+
+    {
+      type: "h2",
+      text: "How to Reinstate Your License After an SR-22 Requirement in Phoenix",
+    },
+    {
+      type: "p",
+      text:
+        "Step 1: Purchase an auto insurance policy from a carrier licensed in Arizona that offers SR-22 filing. Protegrity Insurance works with Progressive, Dairyland, and Gainsco for same-day SR-22 processing.",
+    },
+    {
+      type: "p",
+      text:
+        "Step 2: Pay the SR-22 filing fee ($15–$25). Your insurer submits the certificate electronically to Arizona MVD. Processing typically takes 24–48 hours.",
+    },
+    {
+      type: "p",
+      text:
+        "Step 3: Pay the Arizona MVD license reinstatement fee. First offense: $50. Second offense: $100. Third offense: $150 (Arizona MVD, 2024 fee schedule).",
+    },
+    {
+      type: "p",
+      text:
+        "Step 4: Maintain continuous insurance coverage for the full SR-22 period (3 or 5 years). Any lapse — even a single missed payment — results in your insurer notifying MVD, which triggers an automatic license suspension.",
+    },
+
+    { type: "h2", text: "Non-Owner SR-22 Insurance in Phoenix" },
+    {
+      type: "p",
+      text:
+        "If you need an SR-22 but do not own a vehicle, you can purchase a non-owner SR-22 policy in Phoenix. Non-owner SR-22 provides liability coverage when you drive a borrowed or rented vehicle. Average cost in Phoenix: $58–$78/month — significantly cheaper than standard SR-22. Progressive and Dairyland both offer non-owner SR-22 policies in Arizona.",
+    },
+
+    { type: "h2", text: "Frequently Asked Questions: SR-22 in Phoenix" },
+    {
+      type: "faq",
+      items: [
+        {
+          question: "Q: How long do I need SR-22 insurance in Arizona?",
+          answer:
+            "Most Phoenix drivers need SR-22 for 3 years. A second DUI within 7 years requires 5 years. The clock starts from the date of license reinstatement, not the date of the original offense. If your coverage lapses at any point, Arizona MVD restarts the entire 3-year or 5-year requirement.",
+        },
+        {
+          question: "Q: Can I get same-day SR-22 filing in Phoenix?",
+          answer:
+            "Yes. Through Protegrity Insurance, Progressive and Dairyland transmit SR-22 certificates electronically to Arizona MVD within 24 hours of policy activation. Most Phoenix drivers can purchase a policy, receive digital proof of insurance, and have their SR-22 filed with MVD within the same business day.",
+        },
+        {
+          question: "Q: What happens if my SR-22 policy lapses in Phoenix?",
+          answer:
+            "If your SR-22 policy lapses, your insurer is legally required to file an SR-26 form with Arizona MVD — a cancellation notice. MVD receives the SR-26 and suspends your license the same day. You must then restart the SR-22 period from the beginning. A single missed payment can cost you months of progress toward reinstatement.",
+        },
+        {
+          question: "Q: Does an SR-22 affect my car insurance rate forever?",
+          answer:
+            "No. The SR-22 surcharge affects your rate only during the required filing period (3 or 5 years). Once the SR-22 requirement expires and is removed from your MVD record, most carriers re-underwrite your policy at standard rates — provided no new violations occurred. Phoenix drivers typically see their rates drop 20–40% in the year after their SR-22 requirement ends.",
+        },
+        {
+          question: "Q: Can I remove SR-22 early in Arizona?",
+          answer:
+            "No. Arizona MVD does not allow early removal of SR-22 requirements. The full 3-year or 5-year period must be completed with continuous coverage. However, you can shop for a lower SR-22 rate each year — many Phoenix drivers save $20–$35/month by switching carriers mid-SR-22 period while maintaining the required filing.",
+        },
+        {
+          question: "Q: Is Protegrity Insurance able to file SR-22 the same day?",
+          answer:
+            "Yes. Protegrity Insurance works with Progressive, Dairyland, and Gainsco to provide same-day SR-22 filing for Phoenix drivers. Call (480) XXX-XXXX and a licensed agent will have your policy active and SR-22 submitted to Arizona MVD within hours. No appointment needed.",
+        },
+      ],
+    },
+  ],
+  finalCta: {
+    headline: "Get Your Free Phoenix Auto Insurance Quote Today",
+    intro:
+      "Call Protegrity Insurance: (480) XXX-XXXX (click-to-call) | Get your free quote at protegrityinsurance.com",
+    body: "",
+    phoneLabel: "(480) XXX-XXXX",
+    phoneHref: "tel:480xxxxxxx",
+    quoteHref: "https://protegrityinsurance.com",
+    trustLine:
+      "5-star rated · 30+ top-rated carriers · Licensed Arizona agents · No fees, no pressure",
+  },
+  relatedLinks: [
+    {
+      label: "Auto Insurance",
+      href: "/auto-insurance",
+      description:
+        "Compare carriers and coverage options for your Phoenix-area vehicle.",
+    },
+    {
+      label: "Home Insurance",
+      href: "/home-insurance",
+      description:
+        "Bundle home and auto for an average 20% discount with major carriers.",
+    },
+    {
+      label: "Back to Blog",
+      href: "/blog",
+      description:
+        "More guides and insurance resources from our licensed Arizona team.",
+    },
+  ],
+  references: [],
+  footer: {
+    lastUpdated: "Last updated: April 2026",
+    copyright: "© 2026 Protegrity Insurance. All rights reserved. | protegrityinsurance.com",
+  },
+}
+
 const phoenixAutoCostPost: BlogPost = {
   slug: "average-cost-car-insurance-phoenix-az",
   title: "Average Cost of Car Insurance in Phoenix, AZ (2026 Data)",
@@ -1485,6 +1742,7 @@ const cheapCarInsurancePhoenixPost: BlogPost = {
 export const blogPosts: BlogPost[] = [
   phoenixHomePost,
   phoenixAutoPost,
+  sr22InsurancePhoenixPost,
   phoenixAutoCostPost,
   arizonaMinimumCarInsurancePost,
   cheapCarInsurancePhoenixPost,
