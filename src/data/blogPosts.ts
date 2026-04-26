@@ -4400,6 +4400,225 @@ const affordableLifeInsuranceQuotesPhoenixPost: BlogPost = {
   },
 }
 
+const lifeInsuranceSeniorsPhoenixPost: BlogPost = {
+  slug: "life-insurance-seniors-phoenix-az",
+  title: "Life Insurance for Seniors in Phoenix, AZ: Best Plans Over 60 in 2026",
+  excerpt:
+    "Life insurance for Phoenix seniors over 60. Final expense, guaranteed issue, and whole life options. Cover funeral costs, leave inheritance, and protect your spouse.",
+  metaTitle: "Life Insurance for Seniors in Phoenix, AZ: Best Plans Over 60 in 2026",
+  metaDescription:
+    "Life insurance for Phoenix seniors over 60. Final expense, guaranteed issue, and whole life options. Cover funeral costs, leave inheritance, and protect your spouse.",
+  keywords: ["life insurance seniors Phoenix AZ"],
+  category: "LIFE INSURANCE",
+  readTime: "8 min read",
+  displayDate: "April 2026",
+  publishedISO: "2026-04-26",
+  modifiedISO: "2026-04-26",
+  breadcrumbLabel: "Life Insurance Seniors Phoenix",
+  author: ryanLorschAuthor,
+  heroImage: {
+    src: "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70",
+    alt: "Phoenix senior couple representing life insurance coverage for those over 60",
+    width: 1920,
+    height: 1080,
+    photographer: "Esther Ann",
+    photographerUrl: "https://unsplash.com/@estherann",
+  },
+  image: {
+    src: "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70",
+    alt: "Phoenix senior couple representing life insurance coverage for those over 60",
+    width: 1920,
+    height: 1080,
+    photographer: "Esther Ann",
+    photographerUrl: "https://unsplash.com/@estherann",
+  },
+  keyTakeaways: {
+    items: [
+      "Life insurance for Phoenix seniors serves purposes beyond income replacement — covering funeral costs ($10,000–$15,000 in Arizona), paying remaining mortgage debt, leaving financial gifts to children, and supporting a surviving spouse.",
+      "Final expense insurance (burial insurance) is a small whole life policy designed to cover end-of-life expenses, typically ranging from $5,000 to $25,000 and available without a medical exam.",
+      "Guaranteed issue life insurance accepts applicants regardless of health status with no medical exam and no health questions — coverage is typically limited with a two-year waiting period.",
+      "All life insurance policies sold in Arizona are protected by the Arizona Life and Disability Insurance Guaranty Fund, providing up to $300,000 in death benefits and $100,000 in cash value.",
+      "Protegrity Insurance takes a compassionate, patient approach to helping Phoenix seniors find the right coverage without pressure or confusion.",
+    ],
+  },
+  content: [
+    { type: "h2", text: "The Short Answer: Life Insurance for Seniors in Phoenix" },
+    {
+      type: "p",
+      text:
+        "It is a common misconception that life insurance is only for young people. In fact, many Phoenix seniors over 60 have excellent options when it comes to life insurance coverage, and the right policy can make an enormous difference for the people they leave behind.",
+    },
+    {
+      type: "p",
+      text:
+        "Whether your goal is to cover final expenses, leave an inheritance, pay estate taxes, or simply provide peace of mind for your spouse, Protegrity Insurance can help you find the best life insurance plan for your situation in Phoenix.",
+    },
+
+    { type: "h2", text: "Why Seniors in Phoenix Still Need Life Insurance" },
+    {
+      type: "p",
+      text:
+        "For many Phoenix seniors, life insurance serves purposes that go beyond basic income replacement. Common reasons include: covering funeral and burial costs, which can easily exceed $10,000 to $15,000 in Arizona; paying off remaining mortgage debt; leaving a financial gift to children or grandchildren; covering medical bills or long-term care costs not covered by Medicare; and supporting a surviving spouse who depends on your income or Social Security benefit.",
+    },
+
+    { type: "h2", text: "Best Life Insurance Options for Seniors in Phoenix" },
+    {
+      type: "p",
+      lead: "Final Expense Insurance:",
+      text:
+        "Also known as burial insurance, this is a small whole life policy designed to cover end-of-life expenses. Policies typically range from $5,000 to $25,000 and are available without a medical exam. Mutual of Omaha and Physicians Mutual are popular options for Phoenix seniors.",
+    },
+    {
+      type: "p",
+      lead: "Guaranteed Issue Life Insurance:",
+      text:
+        "These policies accept applicants regardless of health status. There is no medical exam and no health questions. Coverage is typically limited, and there is usually a waiting period of two years before the full death benefit is payable.",
+    },
+    {
+      type: "p",
+      lead: "Term Life Insurance for Seniors:",
+      text:
+        "If you are between 60 and 70 and in relatively good health, you may still qualify for a 10-year or 15-year term policy at a reasonable rate. This can be a cost-effective way to cover a specific financial obligation.",
+    },
+    {
+      type: "p",
+      lead: "Whole Life Insurance:",
+      text:
+        "Some seniors prefer a permanent policy that builds cash value over time. While premiums are higher, the policy will never expire as long as payments are made.",
+    },
+
+    { type: "h2", text: "Life Insurance Options for Phoenix Seniors by Need" },
+    {
+      type: "table",
+      caption: "Life Insurance Options for Phoenix Seniors by Need",
+      columns: [
+        "Need",
+        "Best Policy Type",
+        "Typical Coverage Amount",
+        "Monthly Premium Range",
+        "Key Features",
+      ],
+      rows: [
+        [
+          "Funeral/burial costs",
+          "Final expense (burial insurance)",
+          "$5,000 – $25,000",
+          "$30 – $120/mo",
+          "No medical exam, guaranteed approval",
+        ],
+        [
+          "Leave small inheritance",
+          "Guaranteed issue whole life",
+          "$10,000 – $50,000",
+          "$50 – $180/mo",
+          "No health questions, 2-year waiting period",
+        ],
+        [
+          "Pay off mortgage",
+          "10 or 15-year term life",
+          "$50,000 – $200,000",
+          "$80 – $300/mo",
+          "Health exam required, lowest cost",
+        ],
+        [
+          "Support surviving spouse",
+          "Whole life insurance",
+          "$25,000 – $100,000",
+          "$120 – $450/mo",
+          "Builds cash value, permanent coverage",
+        ],
+        [
+          "Estate planning",
+          "Permanent life insurance",
+          "$100,000+",
+          "$300+/mo",
+          "Tax-advantaged, probate avoidance",
+        ],
+      ],
+    },
+
+    { type: "h2", text: "Arizona Guaranty Fund Protection" },
+    {
+      type: "p",
+      text:
+        "All life insurance policies sold in Arizona are protected by the Arizona Life and Disability Insurance Guaranty Fund. This fund provides up to $300,000 in death benefits and $100,000 in cash value if your insurer becomes insolvent, giving Phoenix seniors added confidence in their coverage.",
+    },
+
+    { type: "h2", text: "Frequently Asked Questions: Life Insurance for Phoenix Seniors" },
+    {
+      type: "faq",
+      items: [
+        {
+          question: "Q: Can I get life insurance if I am over 60 in Phoenix?",
+          answer:
+            "Yes. Phoenix seniors over 60 have multiple life insurance options including final expense insurance, guaranteed issue policies, and term life insurance if you are in good health. Many carriers offer policies specifically designed for seniors up to age 85.",
+        },
+        {
+          question: "Q: What is final expense insurance and how much does it cost in Phoenix?",
+          answer:
+            "Final expense insurance (also called burial insurance) is a small whole life policy designed to cover funeral, burial, and end-of-life costs. Policies typically range from $5,000 to $25,000. A 65-year-old in Phoenix can expect to pay $40-$80/month for a $10,000 policy. No medical exam is required.",
+        },
+        {
+          question: "Q: What is guaranteed issue life insurance for Phoenix seniors?",
+          answer:
+            "Guaranteed issue life insurance accepts all applicants regardless of health status with no medical exam and no health questions. Coverage is typically limited to $25,000 or less, and most policies have a two-year waiting period before the full death benefit is payable. If you pass away within the first two years, beneficiaries receive a return of premiums plus interest.",
+        },
+        {
+          question: "Q: Does Medicare cover funeral costs in Phoenix?",
+          answer:
+            "No. Medicare does not cover funeral or burial expenses. This is why final expense life insurance is so important for Phoenix seniors. Without coverage, family members must pay these costs out of pocket, often during a difficult emotional time.",
+        },
+        {
+          question: "Q: Can I get term life insurance if I am 65 in Phoenix?",
+          answer:
+            "Yes, if you are in relatively good health. Many carriers offer 10-year or 15-year term policies to applicants up to age 70. Rates will be higher than for younger applicants, but term insurance can still be more affordable than whole life for covering a specific debt like a mortgage or personal loan.",
+        },
+        {
+          question: "Q: How does Protegrity Insurance help Phoenix seniors?",
+          answer:
+            "At Protegrity Insurance, we understand the unique needs of Phoenix seniors. Our agents take a compassionate, patient approach to helping you find the right coverage without pressure or confusion. We work with top carriers that specialize in senior life insurance products and will present you with clear, straightforward options.",
+        },
+      ],
+    },
+  ],
+  finalCta: {
+    headline: "Get Your Free Phoenix Life Insurance Quote Today",
+    intro:
+      "Call Protegrity Insurance: (480) XXX-XXXX (click-to-call) | Get your free quote at protegrityinsurance.com",
+    body: "",
+    phoneLabel: "(480) XXX-XXXX",
+    phoneHref: "tel:480xxxxxxx",
+    quoteHref: "https://protegrityinsurance.com",
+    trustLine:
+      "5-star rated · 30+ top-rated carriers · Licensed Arizona agents · No fees, no pressure",
+  },
+  relatedLinks: [
+    {
+      label: "Life Insurance",
+      href: "/life-insurance",
+      description:
+        "Protect your Phoenix family with the right life insurance coverage and competitive rates.",
+    },
+    {
+      label: "Home Insurance",
+      href: "/home-insurance",
+      description:
+        "Bundle life and home insurance for additional savings with major carriers.",
+    },
+    {
+      label: "Back to Blog",
+      href: "/blog",
+      description:
+        "More guides and insurance resources from our licensed Arizona team.",
+    },
+  ],
+  references: [],
+  footer: {
+    lastUpdated: "Last updated: April 2026",
+    copyright: "© 2026 Protegrity Insurance. All rights reserved. | protegrityinsurance.com",
+  },
+}
+
 /* -------------------------------------------------------------------------- */
 /*  Public exports                                                            */
 /* -------------------------------------------------------------------------- */
@@ -4419,6 +4638,7 @@ export const blogPosts: BlogPost[] = [
   termVsWholeLifeInsurancePhoenixPost,
   lifeInsuranceYoungFamiliesPhoenixPost,
   affordableLifeInsuranceQuotesPhoenixPost,
+  lifeInsuranceSeniorsPhoenixPost,
   phoenixAutoCostPost,
   arizonaMinimumCarInsurancePost,
   cheapCarInsurancePhoenixPost,
