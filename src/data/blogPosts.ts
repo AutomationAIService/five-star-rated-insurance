@@ -429,7 +429,7 @@ const phoenixHomePost: BlogPost = {
       intro:
         "Phoenix-area home with an older roof, prior claim, or wildfire exposure?",
       phoneLabel: "(480) XXX-XXXX",
-      phoneHref: "tel:+14805550000",
+      phoneHref: "tel:480xxxxxxx",
       tail: "to speak with a licensed Arizona broker.",
     },
 
@@ -549,7 +549,7 @@ const phoenixHomePost: BlogPost = {
       "Five Star Rated Insurance simplifies the process by connecting you with licensed Arizona agents through Protegrity Insurance. Instead of getting one quote, compare multiple carriers at once to find the best combination of price and coverage for your Phoenix-area home.",
     body: "",
     phoneLabel: "(480) XXX-XXXX",
-    phoneHref: "tel:+14805550000",
+    phoneHref: "tel:480xxxxxxx",
     quoteHref: "/#quote",
     trustLine:
       "5-star rated · 30+ top-rated carriers · Licensed Arizona agents · Monsoon and hail claim specialists",
@@ -749,10 +749,10 @@ const phoenixAutoPost: BlogPost = {
   finalCta: {
     headline: "Get Your Free Phoenix Auto Insurance Quote Today",
     intro:
-      "Call Protegrity Insurance: (602) 555-0190 (click-to-call) | Get your free quote at protegrityinsurance.com",
+      "Call Protegrity Insurance: (480) XXX-XXXX (click-to-call) | Get your free quote at protegrityinsurance.com",
     body: "",
-    phoneLabel: "(602) 555-0190",
-    phoneHref: "tel:6025550190",
+    phoneLabel: "(480) XXX-XXXX",
+    phoneHref: "tel:480xxxxxxx",
     quoteHref: "https://protegrityinsurance.com",
     trustLine:
       "5-star rated · 30+ top-rated carriers · Licensed Arizona agents · No fees, no pressure",
@@ -964,10 +964,261 @@ const phoenixAutoCostPost: BlogPost = {
   finalCta: {
     headline: "Get Your Free Phoenix Auto Insurance Quote Today",
     intro:
-      "Call Protegrity Insurance: (602) 555-0190 (click-to-call) | Get your free quote at protegrityinsurance.com",
+      "Call Protegrity Insurance: (480) XXX-XXXX (click-to-call) | Get your free quote at protegrityinsurance.com",
     body: "",
-    phoneLabel: "(602) 555-0190",
-    phoneHref: "tel:6025550190",
+    phoneLabel: "(480) XXX-XXXX",
+    phoneHref: "tel:480xxxxxxx",
+    quoteHref: "https://protegrityinsurance.com",
+    trustLine:
+      "5-star rated · 30+ top-rated carriers · Licensed Arizona agents · No fees, no pressure",
+  },
+  relatedLinks: [
+    {
+      label: "Auto Insurance",
+      href: "/auto-insurance",
+      description:
+        "Compare carriers and coverage options for your Phoenix-area vehicle.",
+    },
+    {
+      label: "Home Insurance",
+      href: "/home-insurance",
+      description:
+        "Bundle home and auto for an average 20% discount with major carriers.",
+    },
+    {
+      label: "Back to Blog",
+      href: "/blog",
+      description:
+        "More guides and insurance resources from our licensed Arizona team.",
+    },
+  ],
+  references: [],
+  footer: {
+    lastUpdated: "Last updated: April 2026",
+    copyright: "© 2026 Protegrity Insurance. All rights reserved. | protegrityinsurance.com",
+  },
+}
+
+const arizonaMinimumCarInsurancePost: BlogPost = {
+  slug: "arizona-minimum-car-insurance-requirements-phoenix",
+  title: "Arizona Minimum Car Insurance Requirements: What Phoenix Drivers Must Know in 2026",
+  excerpt:
+    "Arizona requires 25/50/15 liability coverage. Here is what that means for Phoenix drivers, what it does not cover, and why most Valley residents need more.",
+  metaTitle:
+    "Arizona Minimum Car Insurance Requirements: What Phoenix Drivers Must Know in 2026",
+  metaDescription:
+    "Arizona requires 25/50/15 liability coverage. Here is what that means for Phoenix drivers, what it does not cover, and why most Valley residents need more.",
+  category: "Auto Insurance",
+  readTime: "8 min read",
+  displayDate: "April 2026",
+  publishedISO: "2026-04-26",
+  modifiedISO: "2026-04-26",
+  breadcrumbLabel: "Arizona Minimum Car Insurance Requirements",
+  author: ryanLorschAuthor,
+  heroImage: {
+    src: "https://images.unsplash.com/photo-1637763723578-79a4ca9225f7",
+    alt: "Arizona legal requirements and insurance documentation",
+    width: 1920,
+    height: 1080,
+    photographer: "Vlad Deep",
+    photographerUrl: "https://unsplash.com/@vladdeep",
+  },
+  image: {
+    src: "https://images.unsplash.com/photo-1637763723578-79a4ca9225f7",
+    alt: "Arizona legal requirements and insurance documentation",
+    width: 1920,
+    height: 1080,
+    photographer: "Vlad Deep",
+    photographerUrl: "https://unsplash.com/@vladdeep",
+  },
+  keyTakeaways: {
+    items: [
+      "Arizona requires all Phoenix drivers to carry minimum liability coverage of $25,000 per person / $50,000 per accident for bodily injury, and $15,000 for property damage — known as 25/50/15 (ARS § 28-4009).",
+      "These minimums cost an average of $48/month in Phoenix but are widely considered insufficient for Phoenix's high-cost accident environment.",
+      "A single moderate collision in Maricopa County can generate $80,000–$150,000 in damages, far exceeding minimum limits.",
+      "Arizona's minimum coverage is liability-only — it does not pay for your own vehicle damage, your own medical bills, or damages caused by uninsured drivers.",
+      "Protegrity Insurance recommends a minimum of 100/300/100 coverage for most Phoenix drivers.",
+    ],
+  },
+  content: [
+    { type: "h2", text: "The Short Answer: Arizona's Minimum Auto Insurance" },
+    {
+      type: "p",
+      text:
+        "Arizona requires all Phoenix drivers to carry minimum liability coverage of $25,000 per person / $50,000 per accident for bodily injury, and $15,000 for property damage — known as 25/50/15 (ARS § 28-4009). These minimums cost an average of $48/month in Phoenix. However, a single moderate collision in Maricopa County can generate $80,000–$150,000 in damages, far exceeding these limits and leaving the at-fault driver personally liable for the difference.",
+    },
+
+    { type: "h2", text: "What Arizona's 25/50/15 Requirement Actually Covers" },
+    {
+      type: "p",
+      text:
+        "Arizona's minimum coverage is liability-only. It pays for injuries and property damage you cause to other people in an at-fault accident. It does not pay for your own vehicle damage, your own medical bills, or damages caused by uninsured drivers. Here is the breakdown:",
+    },
+    {
+      type: "table",
+      caption: "What Arizona's 25/50/15 Requirement Actually Covers",
+      columns: [
+        "Coverage",
+        "What It Pays",
+        "Arizona Minimum Limit",
+        "Is It Enough?",
+      ],
+      rows: [
+        [
+          "Bodily Injury (per person)",
+          "Medical bills, lost wages for other driver",
+          "$25,000",
+          "Rarely — ER visits avg. $3,800+",
+        ],
+        [
+          "Bodily Injury (per accident)",
+          "Total BI payout for all injured parties",
+          "$50,000",
+          "No — multi-injury accidents exceed this",
+        ],
+        [
+          "Property Damage",
+          "Repairs to other driver's vehicle",
+          "$15,000",
+          "No — avg. new vehicle repair: $4,200+",
+        ],
+        ["Collision", "Your own vehicle repair after crash", "Not required", "Not included"],
+        ["Comprehensive", "Theft, hail, flood, fire damage", "Not required", "Not included"],
+        [
+          "Uninsured Motorist",
+          "Covers you if hit by uninsured driver",
+          "Not required",
+          "Not included",
+        ],
+      ],
+    },
+
+    { type: "h2", text: "Why Arizona's Minimums Are Not Enough for Phoenix Drivers" },
+    {
+      type: "p",
+      text:
+        "The average emergency room visit in Arizona costs $3,847 (Healthcare Bluebook, 2024). A serious multi-person collision with hospitalization can generate $200,000–$500,000 in total medical costs. Arizona's $50,000 per-accident limit leaves a $150,000–$450,000 gap that the at-fault driver must pay out of pocket, through wage garnishment, asset seizure, or civil judgment.",
+    },
+    {
+      type: "p",
+      text:
+        "Protegrity Insurance recommends a minimum of 100/300/100 for most Phoenix drivers — $100,000 per person, $300,000 per accident, and $100,000 in property damage. The additional cost over minimum coverage averages $28–$42/month in the Phoenix market.",
+    },
+
+    { type: "h2", text: "Coverage Comparison: Minimum vs. Recommended for Phoenix Drivers" },
+    {
+      type: "table",
+      caption: "Coverage Comparison: Minimum vs. Recommended for Phoenix Drivers",
+      columns: [
+        "Coverage Level",
+        "Monthly Cost (Phoenix avg.)",
+        "BI Per Person",
+        "BI Per Accident",
+        "PD Limit",
+      ],
+      rows: [
+        ["Arizona minimum (25/50/15)", "$48/mo", "$25,000", "$50,000", "$15,000"],
+        ["Mid-tier (50/100/50)", "$64/mo", "$50,000", "$100,000", "$50,000"],
+        [
+          "Recommended (100/300/100)",
+          "$76/mo",
+          "$100,000",
+          "$300,000",
+          "$100,000",
+        ],
+        [
+          "Full coverage + 100/300/100",
+          "$118/mo",
+          "$100,000",
+          "$300,000",
+          "$100,000",
+        ],
+        [
+          "Full coverage + umbrella ($1M)",
+          "$142/mo",
+          "$1,000,000+",
+          "$1,000,000+",
+          "$1,000,000+",
+        ],
+      ],
+    },
+
+    { type: "h2", text: "What Happens If You Drive Without Insurance in Phoenix?" },
+    {
+      type: "p",
+      text:
+        "Driving without insurance in Arizona triggers immediate consequences under ARS § 28-4135. First offense: $500 minimum fine, 3-month license suspension, SR-22 requirement for 3 years. Second offense within 36 months: $1,000 minimum fine, 6-month suspension, SR-22 for 3 years. Third offense: $1,000 fine, 1-year suspension, possible vehicle impoundment.",
+    },
+    {
+      type: "p",
+      text:
+        "An SR-22 requirement increases average Phoenix auto insurance rates by 31–45% and must be maintained continuously — any lapse resets the 3-year clock and triggers a new suspension.",
+    },
+
+    { type: "h2", text: "What Other Coverages Should Phoenix Drivers Consider?" },
+    {
+      type: "p",
+      lead: "Uninsured/Underinsured Motorist (UM/UIM):",
+      text:
+        "Arizona has an 11.9% uninsured driver rate. UM coverage costs $8–$14/month and pays your medical bills if you are hit by a driver with no insurance or insufficient coverage. Arizona insurers are required to offer UM/UIM but not required to include it automatically.",
+    },
+    {
+      type: "p",
+      lead: "Medical Payments (MedPay):",
+      text:
+        "Pays your medical bills regardless of fault. Costs $4–$9/month in Phoenix and supplements health insurance deductibles.",
+    },
+    {
+      type: "p",
+      lead: "Comprehensive:",
+      text:
+        "Covers theft, hail, flood, fire, and animal collisions. Phoenix averages 19 hail events per year (NOAA, 2023) and ranks 14th nationally for vehicle theft (NICB, 2023). Comprehensive coverage averages $18–$28/month.",
+    },
+
+    { type: "h2", text: "Frequently Asked Questions: Arizona Car Insurance Laws" },
+    {
+      type: "faq",
+      items: [
+        {
+          question: "Q: What is the penalty for driving without insurance in Arizona?",
+          answer:
+            "First-offense drivers face a $500+ fine, 3-month license suspension, and a 3-year SR-22 requirement (ARS § 28-4135). SR-22 surcharges increase Phoenix auto premiums by an average of 31%. Total first-offense financial impact over 3 years, including fines and insurance surcharges, averages $3,800–$5,200.",
+        },
+        {
+          question: "Q: Does Arizona require uninsured motorist coverage?",
+          answer:
+            "Arizona does not require UM/UIM coverage, but all licensed insurers must offer it (ARS § 20-259.01). Given Arizona's 11.9% uninsured driver rate — above the national average of 8.7% (Insurance Research Council, 2023) — Protegrity Insurance includes UM/UIM in every Phoenix auto policy recommendation.",
+        },
+        {
+          question: "Q: What is an SR-22 in Arizona and how long is it required?",
+          answer:
+            "An SR-22 is a certificate filed by your insurer with Arizona MVD confirming you carry minimum required insurance. It is required after a DUI, driving uninsured, or reckless driving conviction. Arizona requires SR-22 for 3 years (5 years for a second DUI). If coverage lapses during that period, Arizona MVD suspends your license the same day the carrier reports the lapse.",
+        },
+        {
+          question: "Q: Can I use electronic proof of insurance in Arizona?",
+          answer:
+            "Yes. Arizona law (ARS § 28-4587) accepts digital proof of insurance displayed on a smartphone. Protegrity Insurance clients receive a digital ID card via email and the Protegrity mobile app immediately upon policy activation. Law enforcement and Arizona MVD accept digital proof in all traffic stop and registration scenarios.",
+        },
+        {
+          question: "Q: Do I need insurance to register my car in Arizona?",
+          answer:
+            "Yes. Arizona MVD requires proof of insurance at the time of vehicle registration and conducts random verification checks throughout the year. Failure to maintain required coverage after registration results in a suspension letter from MVD, giving the driver 30 days to provide proof of insurance or surrender license plates.",
+        },
+        {
+          question: "Q: Is liability insurance enough for a financed car in Phoenix?",
+          answer:
+            "No. If you have an auto loan or lease on a vehicle in Phoenix, your lender contractually requires full coverage — collision plus comprehensive — to protect their collateral. Carrying liability-only on a financed vehicle violates your loan agreement and allows the lender to force-place insurance, which averages $300–$450/month in Arizona and covers only the lender's interest, not yours.",
+        },
+      ],
+    },
+  ],
+  finalCta: {
+    headline: "Get Your Free Phoenix Auto Insurance Quote Today",
+    intro:
+      "Call Protegrity Insurance: (480) XXX-XXXX (click-to-call) | Get your free quote at protegrityinsurance.com",
+    body: "",
+    phoneLabel: "(480) XXX-XXXX",
+    phoneHref: "tel:480xxxxxxx",
     quoteHref: "https://protegrityinsurance.com",
     trustLine:
       "5-star rated · 30+ top-rated carriers · Licensed Arizona agents · No fees, no pressure",
@@ -1007,6 +1258,7 @@ export const blogPosts: BlogPost[] = [
   phoenixHomePost,
   phoenixAutoPost,
   phoenixAutoCostPost,
+  arizonaMinimumCarInsurancePost,
 ]
 
 function assertBlogPostsHaveRequiredImages(posts: readonly BlogPost[]): void {
