@@ -2571,13 +2571,13 @@ const bestLifeInsuranceCompaniesPhoenixPost: BlogPost = {
   breadcrumbLabel: "Best Life Insurance Companies Phoenix",
   author: ryanLorschAuthor,
   heroImage: {
-    src: "https://images.unsplash.com/photo-1664476568096-c58c517b9c90",
+    src: "https://images.unsplash.com/photo-1573164713988-8665fc963095",
     alt: "Phoenix family representing life insurance protection and financial security",
     width: 1920,
     height: 1080,
   },
   image: {
-    src: "https://images.unsplash.com/photo-1664476568096-c58c517b9c90",
+    src: "https://images.unsplash.com/photo-1573164713988-8665fc963095",
     alt: "Phoenix family representing life insurance protection and financial security",
     width: 1920,
     height: 1080,
@@ -3262,13 +3262,13 @@ const lifeInsuranceYoungFamiliesPhoenixPost: BlogPost = {
   breadcrumbLabel: "Life Insurance Young Families Phoenix",
   author: ryanLorschAuthor,
   heroImage: {
-    src: "https://images.unsplash.com/photo-1664476568096-c58c517b9c90",
+    src: "https://images.unsplash.com/photo-1511895426328-dc8714191300",
     alt: "Young Phoenix family with children representing life insurance protection needs",
     width: 1920,
     height: 1080,
   },
   image: {
-    src: "https://images.unsplash.com/photo-1664476568096-c58c517b9c90",
+    src: "https://images.unsplash.com/photo-1511895426328-dc8714191300",
     alt: "Young Phoenix family with children representing life insurance protection needs",
     width: 1920,
     height: 1080,
