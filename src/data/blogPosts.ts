@@ -6557,6 +6557,243 @@ const medicalEvacuationInsuranceMexicoPhoenixPost: BlogPost = {
   },
 }
 
+const lostStolenBaggageInsuranceMexicoPhoenixPost: BlogPost = {
+  slug: "lost-stolen-baggage-insurance-mexico-phoenix",
+  title: "Lost and Stolen Baggage Insurance for Mexico Travel from Phoenix (2026)",
+  excerpt:
+    "Lost and stolen baggage insurance for Mexico trips from Phoenix: what it covers, how much it pays, airline liability limits, and how to protect your belongings on every Mexico trip.",
+  metaTitle: "Lost and Stolen Baggage Insurance for Mexico Travel from Phoenix (2026)",
+  metaDescription:
+    "Lost and stolen baggage insurance for Mexico trips from Phoenix: what it covers, how much it pays, airline liability limits, and how to protect your belongings on every Mexico trip.",
+  keywords: ["lost stolen baggage insurance Mexico travel Phoenix"],
+  category: "TRAVEL INSURANCE",
+  readTime: "8 min read",
+  displayDate: "April 2026",
+  publishedISO: "2026-04-26",
+  modifiedISO: "2026-04-26",
+  breadcrumbLabel: "Lost Stolen Baggage Insurance Mexico",
+  author: ryanLorschAuthor,
+  heroImage: {
+    src: "https://images.unsplash.com/photo-1569154941061-e231b4725ef1",
+    alt: "Lost luggage at airport representing baggage insurance protection for Mexico travelers",
+    width: 1920,
+    height: 1080,
+  },
+  image: {
+    src: "https://images.unsplash.com/photo-1569154941061-e231b4725ef1",
+    alt: "Lost luggage at airport representing baggage insurance protection for Mexico travelers",
+    width: 1920,
+    height: 1080,
+  },
+  keyTakeaways: {
+    items: [
+      "Baggage loss and theft insurance for Mexico travel pays $500–$3,000 per trip for lost, stolen, or damaged luggage and personal belongings.",
+      "Airlines operating Phoenix Sky Harbor to Mexico routes cap liability at $1,700 per passenger for domestic baggage and approximately $2,350 for international segments.",
+      "The average airline settlement for a fully lost bag on a Phoenix-Mexico route is $487–$820, far less than the maximum liability.",
+      "Baggage delay benefit of $200–$600 covers essential purchases when bags are delayed 12+ hours.",
+      "Travel insurance baggage coverage fills the gap between actual replacement costs and airline reimbursement for $4–$8/month.",
+    ],
+  },
+  content: [
+    { type: "h2", text: "The Short Answer: Baggage Insurance for Mexico Travel" },
+    {
+      type: "p",
+      text:
+        "Baggage loss and theft insurance for Mexico travel pays $500–$3,000 per trip for lost, stolen, or damaged luggage and personal belongings, with a baggage delay benefit of $200–$600 for essential purchases when bags are delayed 12+ hours. Airlines operating Phoenix Sky Harbor (PHX) to Mexico routes — including American, Southwest, Alaska, and Volaris — cap liability at $1,700 per passenger for domestic baggage and $1,780 SDR (approximately $2,350) for international segments under the Montreal Convention. For Phoenix travelers carrying electronics, jewelry, or specialized equipment to Mexico, airline liability limits are frequently insufficient. Travel insurance baggage coverage fills this gap for $4–$8/month.",
+    },
+
+    { type: "h2", text: "What Airlines Actually Pay for Lost Baggage on Phoenix-Mexico Flights" },
+    {
+      type: "p",
+      text:
+        "The Montreal Convention (ratified by the U.S. and Mexico) limits airline liability for lost international baggage to 1,288 Special Drawing Rights (SDR) per passenger — approximately $1,700 in 2024. For domestic U.S. flight segments connecting through Phoenix Sky Harbor, the DOT limit is $3,800 per passenger.",
+    },
+    {
+      type: "p",
+      text:
+        "In practice, airlines pay far less than the maximum. The average settlement for a fully lost bag on a Phoenix-Mexico route is $487–$820 (U.S. DOT Air Travel Consumer Report, 2024). Airlines deduct for depreciation, require detailed item-by-item documentation, and frequently dispute high-value claims. Bags delayed more than 21 days are considered permanently lost — at which point the airline's liability process begins, averaging 45–90 days to settlement.",
+    },
+    {
+      type: "table",
+      caption: "Airline vs Travel Insurance Baggage Payouts",
+      columns: [
+        "Airline Scenario",
+        "Airline Liability Limit",
+        "Average Actual Payout",
+        "Travel Insurance Pays",
+      ],
+      rows: [
+        ["Lost bag on PHX → Cancún (international)", "$1,700 (Montreal Convention)", "$487–$820", "Up to your policy limit"],
+        ["Lost bag on PHX → LAX → Cabo (domestic + int'l)", "$3,800 domestic / $1,700 int'l", "$650–$1,100", "Up to your policy limit"],
+        ["Delayed bag (12–24 hours)", "$0 from airline (optional, delayed)", "$0–$200", "$200–$400 (baggage delay benefit)"],
+        ["Stolen from hotel room in Mexico", "$0 — airline not responsible", "$0", "Up to policy limit (theft)"],
+        ["Damaged bag (broken zipper, wheels)", "Negotiated — often denied", "$0–$150", "Covered under baggage damage"],
+        ["Electronics stolen on beach/resort", "$0", "$0", "Covered (sub-limit applies)"],
+      ],
+    },
+
+    { type: "h2", text: "What Mexico Travel Baggage Insurance Covers" },
+    {
+      type: "p",
+      lead: "Lost baggage:",
+      text:
+        "Full reimbursement up to your policy limit for luggage and personal items lost by the airline or carrier during your Mexico trip. Reimbursement is based on actual cash value (depreciated) unless you have a specified items endorsement.",
+    },
+    {
+      type: "p",
+      lead: "Stolen baggage:",
+      text:
+        "Theft of luggage from a hotel room, rental vehicle, beach, or public area in Mexico is covered up to your policy limit. Police report documentation is required for theft claims in Mexico — file an Acta ante el Ministerio Público (Mexican police report) immediately and retain the report number.",
+    },
+    {
+      type: "p",
+      lead: "Baggage delay:",
+      text:
+        "If your checked bags do not arrive within 12 hours of your Mexico arrival, baggage delay coverage reimburses essential purchases — clothing, toiletries, medication — up to $200–$600. Receipts are required; Allianz and Seven Corners process delay claims within 5 business days.",
+    },
+    {
+      type: "p",
+      lead: "High-value item sub-limits:",
+      text:
+        "Most policies apply per-item sub-limits of $250–$500 for electronics (laptops, cameras, tablets) and $500–$1,000 for jewelry. Items above sub-limits require a scheduled items endorsement — available from Allianz for $8–$14 per trip for declared valuables up to $5,000 per item.",
+    },
+
+    { type: "h2", text: "What Baggage Insurance Does NOT Cover on Mexico Trips" },
+    {
+      type: "p",
+      lead: "Cash and travel documents:",
+      text:
+        "Lost cash, passports, visas, and tickets are excluded from standard baggage coverage. Some carriers (AXA Assistance) offer a passport/document replacement benefit of $100–$200 for emergency replacement costs. Keep copies of all documents in a separate location and store digital copies in secure cloud storage.",
+    },
+    {
+      type: "p",
+      lead: "Items left unattended:",
+      text:
+        "Baggage stolen while unattended in public areas — left on a beach while swimming, set down in a restaurant — may be denied under unattended property exclusions in some policies. Allianz explicitly excludes unattended property; Seven Corners covers theft regardless of whether items were attended. Verify your specific policy's unattended property clause before departure.",
+    },
+    {
+      type: "p",
+      lead: "Checked sporting equipment:",
+      text:
+        "Surfboards, golf clubs, dive equipment, and bicycles are frequently excluded or sub-limited to $250–$500 under standard baggage coverage. If you are traveling from Phoenix with sporting equipment to Mexico, verify your policy's sporting equipment provisions and consider a standalone equipment floater policy.",
+    },
+
+    { type: "h2", text: "Baggage Insurance Costs for Phoenix-Mexico Travel" },
+    {
+      type: "table",
+      caption: "Baggage Insurance Costs for Phoenix-Mexico Travel",
+      columns: [
+        "Trip Destination",
+        "Trip Duration",
+        "Travelers",
+        "Baggage Coverage Limit",
+        "Monthly/Per-Trip Cost",
+      ],
+      rows: [
+        ["Puerto Peñasco (Rocky Point)", "3 days", "2 adults", "$1,500/person", "$4–$6/trip"],
+        ["Cabo San Lucas", "7 days", "2 adults", "$2,500/person", "$8–$12/trip"],
+        ["Puerto Vallarta", "7 days", "Family of 4", "$2,500/person", "$16–$24/trip"],
+        ["Cancún / Riviera Maya", "14 days", "2 adults", "$3,000/person", "$12–$18/trip"],
+        ["Mexico City", "10 days", "2 adults", "$3,000/person", "$10–$16/trip"],
+        ["Annual multi-trip plan", "Multiple trips", "1 adult", "Up to $2,500/trip", "$8–$14/month"],
+      ],
+    },
+
+    { type: "h2", text: "How to Maximize Your Baggage Claim After a Mexico Trip" },
+    {
+      type: "p",
+      lead: "Document everything before departure.",
+      text:
+        "Photograph the contents of your luggage with a timestamp before checking bags at Phoenix Sky Harbor. Store photos in cloud backup. This documentation is your strongest evidence for a baggage claim.",
+    },
+    {
+      type: "p",
+      lead: "File a Property Irregularity Report (PIR) with the airline immediately",
+      text:
+        "at the Mexico arrival airport — before leaving the baggage claim area. The PIR number is required for both airline and travel insurance claims. Airlines will not process claims without a PIR filed at the time of discovery.",
+    },
+    {
+      type: "p",
+      lead: "For theft in Mexico, file an Acta ante el Ministerio Público",
+      text:
+        "at the nearest Mexican police station within 24 hours. Retain the report number and a physical copy. Your travel insurer requires this documentation for any theft claim.",
+    },
+
+    { type: "h2", text: "Frequently Asked Questions: Baggage Insurance for Mexico Travel" },
+    {
+      type: "faq",
+      items: [
+        {
+          question: "Q: Does travel insurance cover a stolen phone in Mexico?",
+          answer:
+            "Yes — up to the policy's electronics sub-limit, typically $250–$500 per item. A new iPhone 16 valued at $1,199 would be reimbursed at $250–$500 under most standard policies. AXA Assistance USA offers an electronics rider for $12–$18/trip that increases the per-item electronics limit to $1,500. Keep your phone's purchase receipt or IMEI documentation for the claim. A Mexican police report (Acta) is required for all theft claims.",
+        },
+        {
+          question: "Q: What is the baggage delay benefit and when does it activate?",
+          answer:
+            "Baggage delay pays for essential purchases — clothing, toiletries, medication — when your checked bags do not arrive within 12 hours of your scheduled Mexico arrival. The benefit activates after the 12-hour delay window expires and you have documentation of the delay from the airline (PIR). Allianz pays up to $300 per person; Seven Corners pays up to $500 per person. Receipts for all purchases are required, and only items of immediate necessity qualify.",
+        },
+        {
+          question: "Q: Does my credit card cover baggage loss on Mexico trips?",
+          answer:
+            "Some premium travel credit cards — Chase Sapphire Reserve, American Express Platinum, and Capital One Venture X — include baggage delay and lost luggage benefits when the trip is booked on the card. Chase Sapphire Reserve pays up to $3,000 per passenger for lost baggage. However, credit card baggage benefits often exclude theft, have strict documentation requirements, and do not include the medical and evacuation coverages that a comprehensive Mexico travel policy provides. Credit card baggage coverage can complement — but should not replace — a dedicated Mexico travel insurance policy.",
+        },
+        {
+          question: "Q: Are medications covered under baggage insurance if my bag is lost?",
+          answer:
+            "Prescription medications lost with your luggage are covered under baggage insurance up to the policy's medication sub-limit, typically $250–$500. For maintenance medications that cannot be missed — blood pressure, diabetes, cardiac medications — contact your Phoenix pharmacy before departure to arrange emergency refills at a Mexican pharmacy if needed. Allianz's 24/7 assistance line can also help locate a Mexican pharmacy stocking your specific medication in your destination city.",
+        },
+        {
+          question: "Q: What should I do if my bag is stolen from a hotel room in Cancún?",
+          answer:
+            "File a report with hotel security and request a written incident report from hotel management. File an Acta ante el Ministerio Público at the nearest police station within 24 hours — bring your passport, the hotel report, and a list of stolen items. Photograph the hotel room and any signs of forced entry. Contact your travel insurance carrier's 24/7 assistance line with your policy number. Submit the claim within 90 days of returning to Phoenix with all documentation. Protegrity Insurance provides claim assistance for all Mexico theft claims at no additional charge.",
+        },
+        {
+          question: "Q: How long does a baggage insurance claim take to process?",
+          answer:
+            "Standard baggage loss claims with complete documentation take 7–14 business days at Allianz and Seven Corners. Theft claims requiring police report verification average 14–21 business days. Incomplete claims — missing PIR, no photos of contents, no receipts — significantly extend processing. Protegrity Insurance pre-provides all clients with a Mexico trip baggage claim checklist at policy purchase to ensure complete, first-submission claims for fastest processing.",
+        },
+      ],
+    },
+  ],
+  finalCta: {
+    headline: "Get Your Mexico Travel Insurance Quote Before You Cross the Border",
+    intro:
+      "Call Protegrity Insurance: (480) XXX-XXXX (click-to-call) | Get your free quote at protegrityinsurance.com",
+    body: "",
+    phoneLabel: "(480) XXX-XXXX",
+    phoneHref: "tel:480xxxxxxx",
+    quoteHref: "https://protegrityinsurance.com",
+    trustLine:
+      "5-star rated · 30+ top-rated carriers · Licensed Arizona agents · Mexico travel specialists",
+  },
+  relatedLinks: [
+    {
+      label: "Travel Insurance",
+      href: "/travel-insurance",
+      description:
+        "Protect your Mexico trips with comprehensive travel insurance coverage.",
+    },
+    {
+      label: "Life Insurance",
+      href: "/life-insurance",
+      description:
+        "Protect your family with the right life insurance coverage and competitive rates.",
+    },
+    {
+      label: "Back to Blog",
+      href: "/blog",
+      description:
+        "More guides and insurance resources from our licensed Arizona team.",
+    },
+  ],
+  references: [],
+  footer: {
+    lastUpdated: "Last updated: April 2026",
+    copyright: "© 2026 Protegrity Insurance. All rights reserved. | protegrityinsurance.com",
+  },
+}
+
 /* -------------------------------------------------------------------------- */
 /*  Public exports                                                            */
 /* -------------------------------------------------------------------------- */
@@ -6585,6 +6822,7 @@ export const blogPosts: BlogPost[] = [
   emergencyMedicalInsuranceMexicoTravelPhoenixPost,
   tripCancellationInsuranceMexicoPhoenixPost,
   medicalEvacuationInsuranceMexicoPhoenixPost,
+  lostStolenBaggageInsuranceMexicoPhoenixPost,
   phoenixAutoCostPost,
   arizonaMinimumCarInsurancePost,
   cheapCarInsurancePhoenixPost,
