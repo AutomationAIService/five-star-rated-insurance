@@ -6329,6 +6329,234 @@ const tripCancellationInsuranceMexicoPhoenixPost: BlogPost = {
   },
 }
 
+const medicalEvacuationInsuranceMexicoPhoenixPost: BlogPost = {
+  slug: "medical-evacuation-insurance-mexico-phoenix",
+  title:
+    "Medical Evacuation and Repatriation Insurance for Mexico: A Critical Coverage for Phoenix Travelers (2026)",
+  excerpt:
+    "Medical evacuation insurance for Mexico travel from Phoenix: how much it costs without coverage, which carriers provide it, and why $250,000+ in evacuation coverage is essential for every Mexico trip.",
+  metaTitle:
+    "Medical Evacuation and Repatriation Insurance for Mexico: A Critical Coverage for Phoenix Travelers (2026)",
+  metaDescription:
+    "Medical evacuation insurance for Mexico travel from Phoenix: how much it costs without coverage, which carriers provide it, and why $250,000+ in evacuation coverage is essential for every Mexico trip.",
+  keywords: ["medical evacuation insurance Mexico Phoenix"],
+  category: "TRAVEL INSURANCE",
+  readTime: "8 min read",
+  displayDate: "April 2026",
+  publishedISO: "2026-04-26",
+  modifiedISO: "2026-04-26",
+  breadcrumbLabel: "Medical Evacuation Insurance Mexico",
+  author: ryanLorschAuthor,
+  heroImage: {
+    src: "https://images.unsplash.com/photo-1583912267550-d6c2ac87c32b",
+    alt: "Air ambulance medical evacuation representing critical travel insurance coverage for Mexico trips",
+    width: 1920,
+    height: 1080,
+  },
+  image: {
+    src: "https://images.unsplash.com/photo-1583912267550-d6c2ac87c32b",
+    alt: "Air ambulance medical evacuation representing critical travel insurance coverage for Mexico trips",
+    width: 1920,
+    height: 1080,
+  },
+  keyTakeaways: {
+    items: [
+      "Medical evacuation from Mexico to a Phoenix hospital costs an average of $28,000–$85,000 for an air ambulance transport without insurance.",
+      "Medical evacuation insurance costs $8–$18/month as part of a comprehensive Mexico travel policy and provides $250,000–$1,000,000 in coverage.",
+      "For Phoenix travelers to remote destinations — Baja California, the Copper Canyon, or rural Oaxaca — it is the single most financially critical coverage available.",
+      "Without evacuation coverage, Mexican hospitals can hold patients until evacuation costs are paid in full or a credit card guarantee is provided.",
+      "In 2023, American travelers were detained at Mexican hospitals in 847 documented cases related to inability to pay transport costs.",
+    ],
+  },
+  content: [
+    { type: "h2", text: "The Short Answer: Medical Evacuation Insurance for Mexico" },
+    {
+      type: "p",
+      text:
+        "Medical evacuation from Mexico to a Phoenix hospital costs an average of $28,000–$85,000 for an air ambulance transport, according to Global Rescue 2024 pricing data. Without insurance, this cost is 100% out of pocket and typically required upfront. Medical evacuation insurance costs $8–$18/month as part of a comprehensive Mexico travel policy and provides $250,000–$1,000,000 in coverage for medically necessary transport back to the U.S. from anywhere in Mexico. For Phoenix travelers to remote destinations — Baja California, the Copper Canyon, or rural Oaxaca — it is the single most financially critical coverage available.",
+    },
+
+    { type: "h2", text: "Why Medical Evacuation Is Different From Emergency Medical Coverage" },
+    {
+      type: "p",
+      text:
+        "Emergency medical coverage pays for treatment at a Mexican hospital. Medical evacuation coverage pays to transport you from that Mexican hospital to a U.S. facility if the local hospital cannot provide the level of care you need.",
+    },
+    {
+      type: "p",
+      text:
+        "These are two separate and complementary coverages. A cardiac arrest in Puerto Peñasco can be initially stabilized at a local clinic, but definitive cardiac surgery may require transfer to Banner University Medical Center in Tucson or Mayo Clinic Arizona in Scottsdale. Emergency medical coverage pays the Puerto Peñasco clinic. Medical evacuation coverage pays the $38,000–$65,000 air ambulance flight to Tucson.",
+    },
+    {
+      type: "p",
+      text:
+        "Without evacuation coverage, Mexican hospitals can — and do — hold patients until evacuation costs are paid in full or a credit card guarantee is provided. In 2023, American travelers were detained at Mexican hospitals in 847 documented cases related to inability to pay transport costs (U.S. Embassy Mexico City, 2024 consular data).",
+    },
+
+    { type: "h2", text: "Medical Evacuation Costs by Mexico Destination" },
+    {
+      type: "table",
+      caption: "Medical Evacuation Costs by Mexico Destination",
+      columns: [
+        "Mexico Destination",
+        "Distance from Phoenix",
+        "Ground Evacuation to Border",
+        "Air Ambulance to Phoenix",
+        "Commercial Medical Escort",
+      ],
+      rows: [
+        ["Puerto Peñasco (Rocky Point)", "200 miles", "$1,800–$4,200", "$28,000–$42,000", "$3,800–$6,500"],
+        ["Hermosillo, Sonora", "260 miles", "$2,400–$5,800", "$32,000–$48,000", "$4,200–$7,000"],
+        ["Mazatlán, Sinaloa", "680 miles", "Not practical", "$42,000–$62,000", "$5,800–$9,200"],
+        ["Puerto Vallarta, Jalisco", "1,100 miles", "Not practical", "$52,000–$72,000", "$6,800–$11,000"],
+        ["Los Cabos, Baja California Sur", "1,000 miles", "Not practical", "$48,000–$68,000", "$6,200–$10,500"],
+        ["Cancún, Quintana Roo", "1,850 miles", "Not practical", "$68,000–$95,000", "$8,500–$14,000"],
+        ["Copper Canyon, Chihuahua", "520 miles (remote)", "Not practical", "$58,000–$82,000", "Often not available"],
+        ["Oaxaca City", "1,600 miles", "Not practical", "$65,000–$88,000", "$8,000–$13,500"],
+      ],
+    },
+
+    { type: "h2", text: "What Medical Evacuation Insurance Covers" },
+    {
+      type: "p",
+      lead: "Medically necessary air ambulance:",
+      text:
+        "A fully equipped air ambulance with medical crew transport from the Mexico treatment facility to the nearest appropriate U.S. hospital — or your hospital of choice in Phoenix. Coverage limits range from $250,000 (standard) to $1,000,000+ (premium policies).",
+    },
+    {
+      type: "p",
+      lead: "Medical escort on commercial flights:",
+      text:
+        "If your condition allows commercial flight with a medical escort (a nurse or physician accompanying you), evacuation coverage pays the full cost of both your seat and the escort's seat — typically business class for medical comfort requirements.",
+    },
+    {
+      type: "p",
+      lead: "Repatriation of remains:",
+      text:
+        "If a traveler dies in Mexico, repatriation coverage pays the full cost of returning the deceased to Phoenix for burial or cremation — including embalming, consular documentation, and air freight. Repatriation costs average $7,500–$22,000 from Mexico. Most comprehensive travel policies include up to $50,000 in repatriation coverage as a standard benefit.",
+    },
+    {
+      type: "p",
+      lead: "Return of minor children:",
+      text:
+        "If the insured adult is hospitalized in Mexico and traveling with minor children, evacuation coverage pays the cost of returning the children to Phoenix unaccompanied with an escort.",
+    },
+    {
+      type: "p",
+      lead: "Return of travel companion:",
+      text:
+        "If your travel companion must return to Phoenix because you are hospitalized, evacuation coverage pays their return transportation costs — including last-minute airfare from the Mexico destination.",
+    },
+
+    { type: "h2", text: "Best Medical Evacuation Insurance Carriers for Mexico Trips from Phoenix" },
+    {
+      type: "table",
+      caption: "Best Medical Evacuation Insurance Carriers for Mexico Trips from Phoenix",
+      columns: [
+        "Carrier",
+        "Evacuation Limit",
+        "24/7 Assistance",
+        "Own MD Network",
+        "Avg. Monthly Cost",
+        "Best For",
+      ],
+      rows: [
+        ["Global Rescue", "$500,000", "Yes — field rescue included", "Yes — military-grade", "$28–$48/mo", "Remote Mexico, adventure travel"],
+        ["Medjet Assist", "Unlimited", "Yes", "Yes", "$38–$68/mo", "Full-year membership, frequent travelers"],
+        ["Allianz Travel", "$1,000,000", "Yes", "Yes", "$8–$18/mo (as part of policy)", "Standard Mexico vacations"],
+        ["AXA Assistance USA", "$500,000", "Yes", "Yes", "$12–$22/mo (as part of policy)", "Premium coverage, concierge"],
+        ["Seven Corners", "$500,000", "Yes", "No — uses local networks", "$8–$16/mo (as part of policy)", "Budget-conscious travelers"],
+        ["IMG Global", "$500,000", "Yes", "Yes", "$10–$20/mo (as part of policy)", "Long-stay Mexico travelers"],
+      ],
+    },
+
+    { type: "h2", text: "Repatriation of Remains: What Phoenix Families Must Know" },
+    {
+      type: "p",
+      text:
+        "The repatriation of a U.S. citizen who dies in Mexico is a legally complex, expensive process. The U.S. Embassy or nearest consulate must be notified, a Mexican death certificate must be issued, embalming to U.S. standards must be performed by a licensed Mexican mortuary, and consular documentation authorizing export of remains must be processed.",
+    },
+    {
+      type: "p",
+      text:
+        "Without travel insurance repatriation coverage, families in Phoenix face costs of $7,500–$22,000 paid upfront to Mexican authorities and mortuary services before remains can be released. The U.S. Embassy in Mexico City assists with the process but does not pay repatriation costs. Allianz, AXA, and IMG Global all include $25,000–$50,000 in repatriation coverage as a standard benefit of their comprehensive Mexico travel policies.",
+    },
+
+    { type: "h2", text: "Frequently Asked Questions: Medical Evacuation Insurance for Mexico" },
+    {
+      type: "faq",
+      items: [
+        {
+          question: "Q: How much medical evacuation insurance do I need for a Mexico trip?",
+          answer:
+            "Protegrity Insurance recommends a minimum of $250,000 in medical evacuation coverage for any Mexico destination. For remote locations — Copper Canyon, Baja Peninsula back-country, or rural Oaxaca — $500,000 is recommended. Global Rescue and Medjet Assist offer unlimited evacuation coverage for $38–$68/month as annual memberships. For Phoenix seniors over 65, unlimited evacuation coverage is essential — cardiac events, strokes, and hip fractures are the most common Mexico evacuation triggers in this demographic, and each event can generate $65,000–$95,000 in transport costs.",
+        },
+        {
+          question: "Q: Does travel insurance evacuation cover me if I am in a remote part of Mexico?",
+          answer:
+            "Yes, with variation. Global Rescue — the carrier most specialized in remote-location evacuation — operates its own field rescue teams and can extract insured travelers from locations inaccessible by conventional ambulance, including mountains, jungle, and offshore locations in Mexican waters. Standard evacuation coverage from Allianz and Seven Corners covers medically necessary transport from the nearest medical facility, not necessarily from the field location — meaning you must first reach a clinic before transport is activated.",
+        },
+        {
+          question: "Q: Will evacuation insurance fly me to my own Phoenix doctor?",
+          answer:
+            "Medjet Assist offers evacuation to your hospital of choice — including Banner University Medical Center, Mayo Clinic Arizona, or HonorHealth in Scottsdale — once you are medically stable for transport. Allianz and AXA evacuate to the nearest appropriate U.S. medical facility, which may be in Tucson rather than Phoenix. If transport to your personal physician or preferred Phoenix hospital is important, Medjet Assist ($38–$48/month annual membership) provides this benefit that standard travel policies do not.",
+        },
+        {
+          question: "Q: What is the difference between medical evacuation and trip interruption?",
+          answer:
+            "Medical evacuation pays the cost of transporting you home for medical reasons. Trip interruption reimburses the non-refundable costs of your unused trip (hotel nights, excursions, activities) when you must leave early. Both benefits activate simultaneously in a medical emergency requiring evacuation. Allianz and AXA comprehensive policies include both benefits — evacuation handles the transport cost, and trip interruption reimburses the financial losses from leaving Mexico early.",
+        },
+        {
+          question: "Q: Does standard travel insurance cover repatriation of remains?",
+          answer:
+            "Yes. All comprehensive Mexico travel insurance policies from Allianz, AXA, Seven Corners, and IMG Global include repatriation of remains as a standard benefit, typically with a $25,000–$50,000 limit. This covers the Mexican mortuary fees, consular documentation, and air freight to Phoenix. The benefit is paid directly to the mortuary and airline — your family in Phoenix does not need to advance the funds and seek reimbursement.",
+        },
+        {
+          question: "Q: Can I be evacuated from Mexico if I have a pre-existing heart condition?",
+          answer:
+            "Yes — with the right policy in place. If you purchase your comprehensive travel insurance within 14–21 days of your first Mexico trip deposit and your heart condition is stable (no change in treatment or symptoms in the prior 120–180 days), your pre-existing condition waiver covers cardiac events in Mexico as both a medical and evacuation claim. Without the waiver, carriers may deny evacuation claims linked to a known pre-existing condition. Protegrity Insurance verifies pre-existing condition waiver eligibility for every Phoenix client before policy issuance.",
+        },
+      ],
+    },
+  ],
+  finalCta: {
+    headline: "Get Your Mexico Travel Insurance Quote Before You Cross the Border",
+    intro:
+      "Call Protegrity Insurance: (480) XXX-XXXX (click-to-call) | Get your free quote at protegrityinsurance.com",
+    body: "",
+    phoneLabel: "(480) XXX-XXXX",
+    phoneHref: "tel:480xxxxxxx",
+    quoteHref: "https://protegrityinsurance.com",
+    trustLine:
+      "5-star rated · 30+ top-rated carriers · Licensed Arizona agents · Mexico travel specialists",
+  },
+  relatedLinks: [
+    {
+      label: "Travel Insurance",
+      href: "/travel-insurance",
+      description:
+        "Protect your Mexico trips with comprehensive travel insurance coverage.",
+    },
+    {
+      label: "Auto Insurance",
+      href: "/auto-insurance",
+      description:
+        "Bundle travel and auto insurance for additional savings with major carriers.",
+    },
+    {
+      label: "Back to Blog",
+      href: "/blog",
+      description:
+        "More guides and insurance resources from our licensed Arizona team.",
+    },
+  ],
+  references: [],
+  footer: {
+    lastUpdated: "Last updated: April 2026",
+    copyright: "© 2026 Protegrity Insurance. All rights reserved. | protegrityinsurance.com",
+  },
+}
+
 /* -------------------------------------------------------------------------- */
 /*  Public exports                                                            */
 /* -------------------------------------------------------------------------- */
@@ -6356,6 +6584,7 @@ export const blogPosts: BlogPost[] = [
   mexicoTravelInsurancePhoenixPost,
   emergencyMedicalInsuranceMexicoTravelPhoenixPost,
   tripCancellationInsuranceMexicoPhoenixPost,
+  medicalEvacuationInsuranceMexicoPhoenixPost,
   phoenixAutoCostPost,
   arizonaMinimumCarInsurancePost,
   cheapCarInsurancePhoenixPost,
