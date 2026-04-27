@@ -8743,6 +8743,833 @@ const motorcycleVsAtvInsurancePhoenixPost: BlogPost = {
   },
 }
 
+const boatInsurancePhoenixPost: BlogPost = {
+  slug: "boat-insurance-phoenix-az",
+  title:
+    "Boat Insurance in Phoenix, AZ: Coverage, Costs, and Lake Pleasant Guidelines (2026)",
+  excerpt:
+    "Boat insurance for Phoenix, AZ owners: average rates, coverage types, Arizona boating laws, and what Lake Pleasant and Roosevelt Lake require before you launch.",
+  metaTitle:
+    "Boat Insurance in Phoenix, AZ: Coverage, Costs, and Lake Pleasant Guidelines (2026)",
+  metaDescription:
+    "Boat insurance for Phoenix, AZ owners: average rates, coverage types, Arizona boating laws, and what Lake Pleasant and Roosevelt Lake require before you launch.",
+  keywords: ["boat insurance Phoenix AZ"],
+  category: "SPECIALTY INSURANCE",
+  readTime: "8 min read",
+  displayDate: "April 2026",
+  publishedISO: "2026-04-26",
+  modifiedISO: "2026-04-26",
+  breadcrumbLabel: "Boat Insurance Phoenix",
+  author: ryanLorschAuthor,
+  heroImage: {
+    src: "https://images.unsplash.com/photo-1618857321011-106c2780d129",
+    alt: "Boat on Arizona lake representing boat insurance for Phoenix watercraft owners",
+    width: 1920,
+    height: 1080,
+    photographer: "Susan Weber",
+    photographerUrl: "https://unsplash.com/@havasuartist",
+  },
+  image: {
+    src: "https://images.unsplash.com/photo-1618857321011-106c2780d129",
+    alt: "Boat on Arizona lake representing boat insurance for Phoenix watercraft owners",
+    width: 1920,
+    height: 1080,
+    photographer: "Susan Weber",
+    photographerUrl: "https://unsplash.com/@havasuartist",
+  },
+  keyTakeaways: {
+    items: [
+      "Boat insurance in Phoenix, AZ costs an average of $28–$96/month depending on the vessel type, value, and coverage level.",
+      "Arizona does not require boat insurance by state law, but Lake Pleasant Regional Park requires proof of liability insurance for vessels over 26 feet.",
+      "Lake Pleasant, Roosevelt Lake, Saguaro Lake, and Canyon Lake — all within 60 miles of Phoenix — collectively host over 1.2 million boating visits per year.",
+      "Arizona recorded 124 reportable boating accidents in 2023, resulting in 18 fatalities and $2.8 million in property damage.",
+      "Protegrity Insurance recommends full coverage for any boat valued over $10,000.",
+    ],
+  },
+  content: [
+    { type: "h2", text: "The Short Answer: Boat Insurance in Phoenix" },
+    {
+      type: "p",
+      text:
+        "Boat insurance in Phoenix, AZ costs an average of $28–$96/month depending on the vessel type, value, and coverage level, according to BoatUS 2024 rate data for Maricopa County. Arizona does not require boat insurance by state law, but Lake Pleasant Regional Park — the most popular boating destination within 35 miles of Phoenix — requires proof of liability insurance for vessels over 26 feet. Protegrity Insurance recommends full coverage for any boat valued over $10,000.",
+    },
+
+    { type: "h2", text: "Why Phoenix Boat Owners Need Dedicated Marine Coverage" },
+    {
+      type: "p",
+      text:
+        "Lake Pleasant Regional Park, Roosevelt Lake, Saguaro Lake, and Canyon Lake — all within 60 miles of Phoenix — collectively host over 1.2 million boating visits per year (Maricopa County Parks, 2023). Arizona recorded 124 reportable boating accidents in 2023, resulting in 18 fatalities and $2.8 million in property damage (Arizona State Parks Boating Division). Standard homeowners insurance covers boats under $1,500 in value and under 25 mph — far below what most Phoenix boaters own.",
+    },
+
+    { type: "h2", text: "Boat Insurance Coverage Options for Phoenix Owners" },
+    {
+      type: "table",
+      caption: "Boat Insurance Coverage Options for Phoenix Owners",
+      columns: [
+        "Coverage",
+        "What It Pays",
+        "Required?",
+        "Avg. Monthly Cost (Phoenix)",
+      ],
+      rows: [
+        ["Bodily Injury Liability", "Injuries to others caused by your boat", "At some marinas/parks", "$8–$16/mo"],
+        ["Property Damage Liability", "Damage to other boats/docks/property", "At some marinas/parks", "$6–$12/mo"],
+        ["Collision / Physical Damage", "Your boat's repair after a crash", "No", "$14–$38/mo"],
+        ["Comprehensive", "Theft, fire, storm, vandalism", "No", "$8–$18/mo"],
+        ["Medical Payments", "Your crew's medical bills after accident", "No", "$4–$8/mo"],
+        ["Uninsured Boater", "You're hit by uninsured boat operator", "No", "$4–$8/mo"],
+        ["Towing & Assistance", "On-water towing, fuel delivery", "No", "$3–$6/mo"],
+        ["Personal Effects", "Fishing gear, electronics, clothing", "No", "$4–$10/mo"],
+        ["Trailer Coverage", "Physical damage to boat trailer", "No", "$4–$8/mo"],
+      ],
+    },
+
+    { type: "h2", text: "Boat Insurance Rates by Vessel Type for Phoenix Owners" },
+    {
+      type: "table",
+      caption: "Boat Insurance Rates by Vessel Type for Phoenix Owners",
+      columns: [
+        "Boat Type",
+        "Example Model",
+        "Avg. Value",
+        "Full Coverage Avg. Monthly",
+      ],
+      rows: [
+        ["Pontoon boat", "Bennington 22 SSRX", "$38,000", "$52/mo"],
+        ["Bass / fishing boat", "Ranger Z521L", "$42,000", "$58/mo"],
+        ["Ski / wakeboard boat", "Malibu Wakesetter 23 LSV", "$95,000", "$96/mo"],
+        ["Bowrider / runabout", "Bayliner VR5", "$28,000", "$42/mo"],
+        ["Personal watercraft (PWC)", "Sea-Doo GTX 170", "$14,000", "$28/mo"],
+        ["Sailboat (under 26 ft)", "Hunter 25.5", "$18,000", "$32/mo"],
+        ["Small aluminum / jon boat", "Tracker Pro Guide V-16", "$7,500", "$18/mo"],
+      ],
+    },
+
+    { type: "h2", text: "Arizona Boating Laws That Affect Your Insurance" },
+    {
+      type: "p",
+      text:
+        "Arizona requires boat registration for all motorized vessels operated on state waters (ARS § 5-321). Registration fees range from $20 to $50 annually depending on vessel length. All boats must display a current Arizona registration decal.",
+    },
+    {
+      type: "p",
+      text:
+        "Arizona's Boating Under the Influence (BUI) law (ARS § 5-395) sets a BAC limit of 0.08% — identical to DUI law. A BUI conviction results in an automatic insurance premium increase of 58–82% at renewal and may trigger a policy non-renewal from standard carriers.",
+    },
+    {
+      type: "p",
+      text:
+        "Lake Pleasant Regional Park (Maricopa County Parks) requires proof of liability insurance ($100,000 minimum) for all vessels over 26 feet. Vessels under 26 feet are not subject to this requirement at the park launch, but Protegrity Insurance recommends $300,000 in liability for all Phoenix boaters given the lake's high traffic volume.",
+    },
+
+    {
+      type: "h2",
+      text: "Agreed Value vs. Actual Cash Value: Which Is Right for Phoenix Boaters?",
+    },
+    {
+      type: "p",
+      text:
+        "Marine insurance policies offer two valuation methods: Agreed Value pays the full insured amount with no depreciation if the boat is a total loss. Actual Cash Value (ACV) pays the depreciated market value at the time of loss — which can be 20–40% less than what you paid.",
+    },
+    {
+      type: "p",
+      text:
+        "For boats over $25,000, Protegrity Insurance recommends Agreed Value coverage. The premium difference is typically $8–$18/month — a small cost to ensure you receive full replacement value after a total loss on Saguaro Lake or Lake Pleasant.",
+    },
+
+    { type: "h2", text: "Frequently Asked Questions: Boat Insurance in Phoenix" },
+    {
+      type: "faq",
+      items: [
+        {
+          question: "Q: Is boat insurance required in Arizona?",
+          answer:
+            "Arizona state law does not require boat insurance (ARS Title 5). However, Lake Pleasant Regional Park requires liability insurance of at least $100,000 for vessels over 26 feet. Many marinas and storage facilities in the Phoenix area also require proof of insurance as a condition of slip rental or dry storage contracts. Most lenders financing a boat purchase require comprehensive and collision coverage.",
+        },
+        {
+          question: "Q: Does homeowners insurance cover my boat in Phoenix?",
+          answer:
+            "Standard Arizona homeowners insurance covers boats with less than 25 mph top speed and less than $1,500 in value. Most boats owned by Phoenix residents significantly exceed both limits. A 2024 Bayliner bowrider valued at $28,000 receives zero coverage from a standard homeowners policy once it leaves your driveway. A dedicated boat policy from BoatUS, Progressive, or Markel covers the vessel on Lake Pleasant, Roosevelt Lake, and during transport.",
+        },
+        {
+          question: "Q: How much boat liability insurance do I need for Lake Pleasant?",
+          answer:
+            "Vessels over 26 feet at Lake Pleasant Regional Park require a minimum $100,000 in liability coverage. Protegrity Insurance recommends $300,000 for all boaters — a collision at highway speed on a busy Saturday at Lake Pleasant can easily generate $150,000–$400,000 in combined boat damage and injury costs. The upgrade from $100,000 to $300,000 in liability costs approximately $6–$10/month.",
+        },
+        {
+          question: "Q: Does boat insurance cover damage during transport on a trailer in Phoenix?",
+          answer:
+            "Yes, if your policy includes transit coverage — which most standard boat policies do. Progressive, BoatUS, and Markel all cover your boat during road transport in Arizona as part of the comprehensive and collision provisions. Trailer damage itself requires a separate trailer endorsement, typically $4–$8/month. The trailer must be listed on the policy to be covered.",
+        },
+        {
+          question: "Q: What is the best boat insurance for Phoenix lake boating?",
+          answer:
+            "BoatUS (underwritten by Geovera) and Progressive are the top-rated boat insurers for Phoenix-area freshwater lake boating. BoatUS offers $100 on-water towing coverage as a standard benefit — critical on Lake Pleasant, which has a response area where commercial towing can cost $300–$800. Progressive offers agreed value policies for boats up to $250,000 with trailer coverage included.",
+        },
+        {
+          question: "Q: Does my boat insurance cover fishing equipment and electronics?",
+          answer:
+            "Personal effects coverage — an optional endorsement on most boat policies — covers fishing rods, tackle, coolers, marine electronics, and clothing up to a set limit. Progressive covers personal effects up to $1,000 as standard; higher limits (up to $10,000) are available for $4–$10/month. Electronics (GPS, fish finders, VHF radios) should be inventoried and itemized on your policy application to ensure full replacement value coverage.",
+        },
+      ],
+    },
+  ],
+  finalCta: {
+    headline: "Get Your Free Specialty Insurance Quote in Phoenix Today",
+    intro:
+      "Call Protegrity Insurance: (480) XXX-XXXX (click-to-call) | Get your free quote at protegrityinsurance.com",
+    body: "",
+    phoneLabel: "(480) XXX-XXXX",
+    phoneHref: "tel:480xxxxxxx",
+    quoteHref: "https://protegrityinsurance.com",
+    trustLine:
+      "5-star rated · 30+ top-rated carriers · Licensed Arizona agents · Motorcycle, ATV, Boat, RV specialists",
+  },
+  relatedLinks: [
+    {
+      label: "Auto Insurance",
+      href: "/auto-insurance",
+      description:
+        "Bundle boat and auto insurance for additional savings with major carriers.",
+    },
+    {
+      label: "Home Insurance",
+      href: "/home-insurance",
+      description:
+        "Protect your home and watercraft with comprehensive coverage options.",
+    },
+    {
+      label: "Back to Blog",
+      href: "/blog",
+      description:
+        "More guides and insurance resources from our licensed Arizona team.",
+    },
+  ],
+  references: [],
+  footer: {
+    lastUpdated: "Last updated: April 2026",
+    copyright: "© 2026 Protegrity Insurance. All rights reserved. | protegrityinsurance.com",
+  },
+}
+
+const jetSkiInsurancePhoenixPost: BlogPost = {
+  slug: "jet-ski-insurance-phoenix-az",
+  title:
+    "Jet Ski and Personal Watercraft Insurance in Phoenix, AZ: Rates and Coverage (2026)",
+  excerpt:
+    "Jet ski and PWC insurance in Phoenix, AZ: how much it costs, what it covers, Arizona registration requirements, and the top carriers for Sea-Doo and Yamaha WaveRunner owners.",
+  metaTitle:
+    "Jet Ski and Personal Watercraft Insurance in Phoenix, AZ: Rates and Coverage (2026)",
+  metaDescription:
+    "Jet ski and PWC insurance in Phoenix, AZ: how much it costs, what it covers, Arizona registration requirements, and the top carriers for Sea-Doo and Yamaha WaveRunner owners.",
+  keywords: ["jet ski insurance Phoenix AZ"],
+  category: "SPECIALTY INSURANCE",
+  readTime: "8 min read",
+  displayDate: "April 2026",
+  publishedISO: "2026-04-26",
+  modifiedISO: "2026-04-26",
+  breadcrumbLabel: "Jet Ski Insurance Phoenix",
+  author: ryanLorschAuthor,
+  heroImage: {
+    src: "https://images.unsplash.com/photo-1564633351631-e85bd59a91af",
+    alt: "Jet ski on Arizona lake representing personal watercraft insurance for Phoenix PWC owners",
+    width: 1920,
+    height: 1080,
+    photographer: "Yuriy Bogdanov",
+    photographerUrl: "https://unsplash.com/@profepix",
+  },
+  image: {
+    src: "https://images.unsplash.com/photo-1564633351631-e85bd59a91af",
+    alt: "Jet ski on Arizona lake representing personal watercraft insurance for Phoenix PWC owners",
+    width: 1920,
+    height: 1080,
+    photographer: "Yuriy Bogdanov",
+    photographerUrl: "https://unsplash.com/@profepix",
+  },
+  keyTakeaways: {
+    items: [
+      "Jet ski and personal watercraft (PWC) insurance in Phoenix, AZ costs an average of $22–$38/month for full coverage.",
+      "Arizona does not require PWC insurance by state law, but Lake Pleasant, Saguaro Lake, and Canyon Lake recommend and in some cases require liability coverage.",
+      "A Sea-Doo GTX 170 valued at $14,000 costs approximately $28/month to fully insure in Phoenix.",
+      "Arizona law prohibits PWC operation within 75 feet of another vessel, diver-down flag, dock, or swimmer — violations carry fines of $250–$750 and increase insurance premiums by 14–22%.",
+      "Phoenix's desert storage conditions create above-average theft exposure — comprehensive coverage averaging $6–$10/month is essential.",
+    ],
+  },
+  content: [
+    { type: "h2", text: "The Short Answer: Jet Ski Insurance in Phoenix" },
+    {
+      type: "p",
+      text:
+        "Jet ski and personal watercraft (PWC) insurance in Phoenix, AZ costs an average of $22–$38/month for full coverage, according to Progressive 2024 PWC rate data for Maricopa County. Arizona does not require PWC insurance by state law, but Lake Pleasant, Saguaro Lake, and Canyon Lake — the three most popular Phoenix-area riding locations — are managed by Maricopa County and the U.S. Forest Service, both of which recommend and in some cases require liability coverage. A Sea-Doo GTX 170 valued at $14,000 costs approximately $28/month to fully insure in Phoenix.",
+    },
+
+    { type: "h2", text: "Arizona's Personal Watercraft Laws and Why They Matter for Insurance" },
+    {
+      type: "p",
+      text:
+        "Arizona classifies jet skis and PWCs as motorized vessels under ARS § 5-301. All PWCs must be registered with Arizona State Parks annually — fees range from $20 to $35 based on vessel length. An Arizona Certificate of Number (registration card) and validation decals must be on the PWC at all times when operating on state waters.",
+    },
+    {
+      type: "p",
+      text:
+        "Arizona law (ARS § 5-341) prohibits PWC operation within 75 feet of another vessel, diver-down flag, dock, or swimmer — except when operating in a designated area. Violations carry fines of $250–$750 and are recorded on the operator's boating record, which insurers review at policy renewal. A boating violation increases Phoenix PWC insurance premiums by an average of 14–22%.",
+    },
+
+    { type: "h2", text: "PWC Insurance Coverage Options for Phoenix Riders" },
+    {
+      type: "table",
+      caption: "PWC Insurance Coverage Options for Phoenix Riders",
+      columns: [
+        "Coverage",
+        "What It Pays",
+        "Avg. Monthly Cost (Phoenix)",
+        "Recommended?",
+      ],
+      rows: [
+        ["Bodily Injury Liability ($100K)", "Injuries to others on the water", "$8–$12/mo", "Yes — essential"],
+        ["Property Damage Liability ($50K)", "Damage to docks, boats, property", "$6–$10/mo", "Yes — essential"],
+        ["Collision", "Your PWC repair after a crash", "$8–$14/mo", "Yes if PWC worth over $8K"],
+        ["Comprehensive", "Theft, fire, storm, vandalism", "$6–$10/mo", "Yes — Phoenix theft risk"],
+        ["Medical Payments ($5K)", "Your injuries regardless of fault", "$3–$6/mo", "Yes"],
+        ["Uninsured Boater", "If hit by uninsured PWC", "$3–$6/mo", "Recommended"],
+        ["On-Water Towing", "Tow to nearest shore/marina", "$2–$4/mo", "Yes — Lake Pleasant"],
+        ["Total Loss Replacement", "New-model replacement after total loss", "$4–$8/mo", "Yes for new models"],
+      ],
+    },
+
+    { type: "h2", text: "Jet Ski Insurance Rates by Model in Phoenix" },
+    {
+      type: "table",
+      caption: "Jet Ski Insurance Rates by Model in Phoenix",
+      columns: [
+        "Model",
+        "Year",
+        "MSRP",
+        "Full Coverage Avg. Monthly",
+        "Key Rate Factor",
+      ],
+      rows: [
+        ["Sea-Doo Spark 60hp", "2025", "$6,199", "$18/mo", "Low value, entry-level"],
+        ["Yamaha EX Sport", "2025", "$9,299", "$22/mo", "Moderate value"],
+        ["Sea-Doo GTX 170", "2025", "$14,099", "$28/mo", "Mid-tier, popular theft target"],
+        ["Kawasaki Ultra 160X", "2025", "$16,499", "$32/mo", "High performance"],
+        ["Sea-Doo RXP-X 325", "2025", "$18,999", "$36/mo", "Racing class, higher risk"],
+        ["Yamaha FX Cruiser SVHO", "2025", "$17,999", "$34/mo", "Luxury / touring"],
+        ["Sea-Doo GTI SE 170 (3-seater)", "2025", "$13,299", "$26/mo", "Family / recreational"],
+      ],
+    },
+
+    { type: "h2", text: "Special Risks for Phoenix PWC Owners" },
+    {
+      type: "p",
+      lead: "Theft:",
+      text:
+        "Phoenix's desert storage conditions — with many PWC owners storing units in open driveways or unfenced yards during off-season — create above-average theft exposure. NICB reported 487 PWC thefts in Arizona in 2023, with Maricopa County accounting for 62% of total incidents. Comprehensive coverage (averaging $6–$10/month) is essential for Phoenix PWC owners.",
+    },
+    {
+      type: "p",
+      lead: "Monsoon transport damage:",
+      text:
+        "Transporting a PWC on a trailer during Phoenix's monsoon season (June–September) exposes the unit to high-wind debris, flash flooding of roadway underpasses, and road hazard damage. Comprehensive coverage covers transit damage; a trailer endorsement covers damage to the trailer itself.",
+    },
+    {
+      type: "p",
+      lead: "Reservoir level changes:",
+      text:
+        "Lake Pleasant and Saguaro Lake experience significant water level fluctuations due to drought conditions. Low water levels create submerged rock hazards that increase collision claims — a factor that affects hull insurance pricing for Maricopa County PWC owners specifically.",
+    },
+
+    { type: "h2", text: "Frequently Asked Questions: PWC Insurance in Phoenix" },
+    {
+      type: "faq",
+      items: [
+        {
+          question: "Q: Is jet ski insurance required in Arizona?",
+          answer:
+            "Arizona state law does not mandate PWC insurance. However, Arizona State Parks requires proof of registration for all PWCs on state waters, and some marinas near Phoenix charge a liability insurance requirement for slip rental. Protegrity Insurance recommends $100,000/$300,000 liability plus collision and comprehensive for all Phoenix-area PWC owners — a total package costing $28–$38/month.",
+        },
+        {
+          question: "Q: How old do you have to be to operate a jet ski in Arizona?",
+          answer:
+            "Arizona law (ARS § 5-395.01) requires PWC operators to be at least 16 years old. Operators aged 12–15 may operate a PWC only if a person 18 or older is on board with them. Operators under 12 may not operate a PWC under any circumstances. Insurance policies in Arizona do not cover incidents involving operators under the legal minimum age — a claim arising from an underage operator may be denied.",
+        },
+        {
+          question: "Q: Does my boat insurance cover a jet ski in Phoenix?",
+          answer:
+            "No. A standard boat insurance policy covers only the vessel specifically listed on the policy. A jet ski or PWC requires its own separate policy. If you own both a boat and a PWC, Progressive and Nationwide allow you to list both on the same marine policy with a multi-unit discount of 8–12%. The coverage terms apply separately to each vessel.",
+        },
+        {
+          question: "Q: What is total loss replacement coverage for a jet ski in Phoenix?",
+          answer:
+            "Total loss replacement coverage pays to replace a totaled PWC with a new current-model-year unit — not just the depreciated actual cash value. For a 2025 Sea-Doo GTX 170 worth $14,099, standard ACV coverage after one year of depreciation might pay $11,200 after a total loss. Total loss replacement would pay $14,099 for a brand-new equivalent. Progressive offers this rider for $4–$8/month in Arizona.",
+        },
+        {
+          question: "Q: Can I get PWC insurance if I store my jet ski in Peoria or Surprise near Lake Pleasant?",
+          answer:
+            "Yes. Protegrity Insurance writes PWC policies for Phoenix-area owners in all ZIP codes including Peoria (85345, 85381), Surprise (85374, 85379), Glendale (85301–85310), and all communities within the Lake Pleasant corridor. Storage location affects your comprehensive rate slightly — gated, enclosed storage in Peoria averages $2–$4/month less in comprehensive premium than open driveway storage in Phoenix due to lower theft exposure.",
+        },
+        {
+          question: "Q: What should I do immediately after a jet ski accident on Lake Pleasant?",
+          answer:
+            "Stop the PWC immediately and render aid to any injured parties. Report the accident to Arizona State Parks Game and Fish if there is injury, death, or more than $2,000 in property damage (ARS § 5-381) — failure to report is a Class 3 misdemeanor. Call Protegrity Insurance at (480) XXX-XXXX to initiate your claim. Document all damage with photos before the unit is moved or repaired. Arizona law requires accident reports to be filed within 48 hours of a boating incident meeting the reporting threshold.",
+        },
+      ],
+    },
+  ],
+  finalCta: {
+    headline: "Get Your Free Specialty Insurance Quote in Phoenix Today",
+    intro:
+      "Call Protegrity Insurance: (480) XXX-XXXX (click-to-call) | Get your free quote at protegrityinsurance.com",
+    body: "",
+    phoneLabel: "(480) XXX-XXXX",
+    phoneHref: "tel:480xxxxxxx",
+    quoteHref: "https://protegrityinsurance.com",
+    trustLine:
+      "5-star rated · 30+ top-rated carriers · Licensed Arizona agents · Motorcycle, ATV, Boat, RV specialists",
+  },
+  relatedLinks: [
+    {
+      label: "Auto Insurance",
+      href: "/auto-insurance",
+      description:
+        "Bundle PWC and auto insurance for additional savings with major carriers.",
+    },
+    {
+      label: "Life Insurance",
+      href: "/life-insurance",
+      description:
+        "Protect your family with the right life insurance coverage and competitive rates.",
+    },
+    {
+      label: "Back to Blog",
+      href: "/blog",
+      description:
+        "More guides and insurance resources from our licensed Arizona team.",
+    },
+  ],
+  references: [],
+  footer: {
+    lastUpdated: "Last updated: April 2026",
+    copyright: "© 2026 Protegrity Insurance. All rights reserved. | protegrityinsurance.com",
+  },
+}
+
+const watercraftInsurancePhoenixPost: BlogPost = {
+  slug: "watercraft-insurance-phoenix-az",
+  title:
+    "Watercraft Insurance in Phoenix, AZ: Complete Guide for Every Vessel Type (2026)",
+  excerpt:
+    "Complete watercraft insurance guide for Phoenix, AZ: boats, jet skis, sailboats, canoes, and kayaks. What coverage you need for Lake Pleasant, Saguaro Lake, and Canyon Lake.",
+  metaTitle:
+    "Watercraft Insurance in Phoenix, AZ: Complete Guide for Every Vessel Type (2026)",
+  metaDescription:
+    "Complete watercraft insurance guide for Phoenix, AZ: boats, jet skis, sailboats, canoes, and kayaks. What coverage you need for Lake Pleasant, Saguaro Lake, and Canyon Lake.",
+  keywords: ["watercraft insurance Phoenix AZ"],
+  category: "SPECIALTY INSURANCE",
+  readTime: "9 min read",
+  displayDate: "April 2026",
+  publishedISO: "2026-04-26",
+  modifiedISO: "2026-04-26",
+  breadcrumbLabel: "Watercraft Insurance Phoenix",
+  author: ryanLorschAuthor,
+  heroImage: {
+    src: "https://images.unsplash.com/photo-1724920006997-f04807382fcf",
+    alt: "Variety of watercraft on Arizona lake representing comprehensive watercraft insurance for Phoenix boat owners",
+    width: 1920,
+    height: 1080,
+    photographer: "Miguel Lindo",
+    photographerUrl: "https://unsplash.com/@miguel_ind0",
+  },
+  image: {
+    src: "https://images.unsplash.com/photo-1724920006997-f04807382fcf",
+    alt: "Variety of watercraft on Arizona lake representing comprehensive watercraft insurance for Phoenix boat owners",
+    width: 1920,
+    height: 1080,
+    photographer: "Miguel Lindo",
+    photographerUrl: "https://unsplash.com/@miguel_ind0",
+  },
+  keyTakeaways: {
+    items: [
+      "Watercraft insurance in Phoenix, AZ ranges from $8/month for a kayak or canoe rider to $196/month for a high-performance ski boat, with most Phoenix boaters paying $28–$96/month for full coverage on a powerboat or PWC.",
+      "The four primary Phoenix-area waterways — Lake Pleasant, Saguaro Lake, Canyon Lake, and Roosevelt Lake — fall under county and federal jurisdiction with specific safety and insurance requirements.",
+      "Lake Pleasant Regional Park requires vessels over 26 feet to carry $100,000 liability insurance to launch.",
+      "Phoenix ranks among the top markets for watercraft theft — comprehensive coverage is essential for all motorized vessels stored in the Valley.",
+      "This guide covers every vessel type operated near Phoenix, from kayaks to houseboats.",
+    ],
+  },
+  content: [
+    { type: "h2", text: "The Short Answer: Watercraft Insurance in Phoenix" },
+    {
+      type: "p",
+      text:
+        "Watercraft insurance in Phoenix, AZ ranges from $8/month for a kayak or canoe rider to $196/month for a high-performance ski boat, with most Phoenix boaters paying $28–$96/month for full coverage on a powerboat or PWC (Progressive, BoatUS 2024 rate data). The four primary Phoenix-area waterways — Lake Pleasant, Saguaro Lake, Canyon Lake, and Roosevelt Lake — fall under county and federal jurisdiction with specific safety and insurance requirements. This guide covers every vessel type operated near Phoenix.",
+    },
+
+    {
+      type: "h2",
+      text: "Phoenix's Four Major Boating Destinations and Their Insurance Implications",
+    },
+    {
+      type: "p",
+      lead: "Lake Pleasant Regional Park (Peoria, 35 miles NW of Phoenix):",
+      text:
+        "Managed by Maricopa County Parks, it is the busiest boating lake in Arizona with 1.1 million annual visitors. Vessels over 26 feet require $100,000 liability insurance to launch. Annual lake pass: $100/vehicle plus daily launch fees.",
+    },
+    {
+      type: "p",
+      lead: "Saguaro Lake (Mesa, 30 miles NE of Phoenix):",
+      text:
+        "U.S. Forest Service-managed. No wake zone restrictions apply in 40% of the lake's surface area. High collision frequency in the narrow canyon sections — a significant factor in Phoenix marine insurance claim data.",
+    },
+    {
+      type: "p",
+      lead: "Canyon Lake (Tortilla Flat, 40 miles NE of Phoenix):",
+      text:
+        "Electric motors and gasoline-powered boats are both permitted, but personal watercraft (jet skis) are prohibited. Arizona State Parks manages launch and registration enforcement.",
+    },
+    {
+      type: "p",
+      lead: "Roosevelt Lake (Tonto Basin, 75 miles NE of Phoenix):",
+      text:
+        "The largest lake in Maricopa County with 22,000 surface acres. Open to all vessel types including houseboats. U.S. Forest Service requires vessel registration for all motorized boats.",
+    },
+
+    {
+      type: "h2",
+      text: "Watercraft Insurance by Vessel Type: Coverage and Cost in Phoenix",
+    },
+    {
+      type: "table",
+      caption: "Watercraft Insurance by Vessel Type: Coverage and Cost in Phoenix",
+      columns: [
+        "Vessel Type",
+        "Avg. Phoenix Value",
+        "Full Coverage Avg. Monthly",
+        "Key Coverage Need",
+        "Top Carrier",
+      ],
+      rows: [
+        ["Kayak / Canoe (non-motorized)", "$800–$3,500", "$8–$14/mo", "Liability + personal effects", "National General"],
+        ["Inflatable / Rigid Inflatable (RIB)", "$2,000–$8,000", "$14–$22/mo", "Comprehensive + liability", "Progressive"],
+        ["Jon / Aluminum fishing boat", "$6,000–$12,000", "$18–$28/mo", "Collision + liability", "Progressive"],
+        ["Bowrider / runabout", "$22,000–$55,000", "$38–$68/mo", "Agreed value + liability", "BoatUS, Progressive"],
+        ["Pontoon boat", "$28,000–$80,000", "$42–$82/mo", "Agreed value + towing", "Foremost, BoatUS"],
+        ["Ski / wakeboard boat", "$65,000–$120,000", "$72–$128/mo", "Agreed value + CPE", "Markel, BoatUS"],
+        ["Houseboat (on Roosevelt Lake)", "$85,000–$250,000", "$112–$196/mo", "Full marine coverage", "Markel, GEICO Marine"],
+        ["Personal watercraft (PWC)", "$6,000–$19,000", "$22–$38/mo", "Collision + comprehensive", "Progressive"],
+        ["Sailboat (under 26 ft)", "$12,000–$45,000", "$28–$52/mo", "Agreed value + liability", "Markel, West Marine"],
+      ],
+    },
+
+    { type: "h2", text: "What Does Watercraft Insurance NOT Cover in Phoenix?" },
+    {
+      type: "p",
+      lead: "Racing:",
+      text:
+        "Most standard watercraft policies exclude coverage during any officially sanctioned race or speed trial. Lake Pleasant's annual poker run and Canyon Lake's fishing tournaments are not races — they are covered events. But participation in a timed speed competition voids collision coverage under nearly all marine policies.",
+    },
+    {
+      type: "p",
+      lead: "Wear and tear:",
+      text:
+        "Mechanical breakdown, engine failure from lack of maintenance, and hull blistering from prolonged freshwater exposure are maintenance issues — not insurable losses. Extended marine warranties from Sea Ray, Malibu, and other manufacturers cover mechanical failure separately from insurance.",
+    },
+    {
+      type: "p",
+      lead: "Intentional damage:",
+      text:
+        "Damage you intentionally cause to your own vessel or another's is excluded from all policies. This includes intentional groundings and scuttling.",
+    },
+    {
+      type: "p",
+      lead: "Unseaworthy conditions:",
+      text:
+        "If your vessel is found to be in an unseaworthy condition at the time of a claim — expired fire extinguisher, inoperable running lights, structural damage you were aware of — the carrier can deny the claim under the seaworthiness warranty.",
+    },
+
+    { type: "h2", text: "Frequently Asked Questions: Watercraft Insurance in Phoenix" },
+    {
+      type: "faq",
+      items: [
+        {
+          question: "Q: Do I need insurance for a kayak or canoe in Phoenix?",
+          answer:
+            "Arizona law does not require insurance for non-motorized vessels. However, if you paddle on public waterways — including Lake Pleasant's coves or the Salt River — and cause injury to another person, you face personal liability without insurance. National General and Progressive both offer watercraft liability policies for kayaks and canoes starting at $8/month in Arizona, covering up to $100,000 in liability for less than most people spend on paddling accessories.",
+        },
+        {
+          question: "Q: Can I get insurance for a houseboat on Roosevelt Lake?",
+          answer:
+            "Yes. Roosevelt Lake is one of the few Arizona bodies of water that permits overnight houseboat use. Markel and GEICO Marine are the primary carriers for houseboat coverage in Arizona. Policies include hull insurance (the boat structure), liability ($300,000–$1,000,000), personal property aboard, and slip/mooring liability. A houseboat valued at $120,000 on Roosevelt Lake costs approximately $140–$165/month for comprehensive coverage from Markel.",
+        },
+        {
+          question: "Q: Is watercraft insurance cheaper if I store my boat at a marina?",
+          answer:
+            "Yes. Marina storage (especially covered slip storage) reduces comprehensive premiums by 8–15% compared to open driveway or street storage in Phoenix. This is because marina storage reduces theft exposure and protects the hull from UV degradation and weather damage. Several Phoenix-area marine storage facilities — including Lake Pleasant Marina and Saguaro Lake Marina — offer discount partnerships with Progressive and BoatUS for tenants who carry active watercraft insurance.",
+        },
+        {
+          question: "Q: What happens if I lend my boat to a friend and they crash it on Saguaro Lake?",
+          answer:
+            "Under Arizona's permissive use doctrine, your boat insurance liability coverage extends to anyone you give permission to operate your vessel. If your friend causes a collision on Saguaro Lake while operating your boat with your permission, your liability coverage responds first. If your friend has their own watercraft insurance, their policy provides secondary coverage. Your collision coverage pays for damage to your vessel regardless of who was at the helm, subject to your deductible.",
+        },
+        {
+          question: "Q: Does watercraft insurance cover a boat trailer in Phoenix?",
+          answer:
+            "Only if a trailer endorsement is specifically added to the policy. Standard watercraft policies cover the boat while on the trailer during transport, but do not cover the trailer itself for physical damage. A trailer endorsement from Progressive or Foremost costs $4–$8/month and covers collision, comprehensive, and liability for the trailer. If your trailer is worth more than $5,000, the endorsement is financially justified.",
+        },
+        {
+          question: "Q: How do I get a watercraft insurance quote in Phoenix?",
+          answer:
+            "Call Protegrity Insurance at (480) XXX-XXXX or visit protegrityinsurance.com. Our licensed marine insurance specialists compare Progressive, BoatUS, Foremost, Markel, and 26 additional carriers to find the best coverage at the lowest rate for your specific vessel. Most Phoenix watercraft quotes are completed in under 15 minutes with coverage effective the same day.",
+        },
+      ],
+    },
+  ],
+  finalCta: {
+    headline: "Get Your Free Specialty Insurance Quote in Phoenix Today",
+    intro:
+      "Call Protegrity Insurance: (480) XXX-XXXX (click-to-call) | Get your free quote at protegrityinsurance.com",
+    body: "",
+    phoneLabel: "(480) XXX-XXXX",
+    phoneHref: "tel:480xxxxxxx",
+    quoteHref: "https://protegrityinsurance.com",
+    trustLine:
+      "5-star rated · 30+ top-rated carriers · Licensed Arizona agents · Motorcycle, ATV, Boat, RV specialists",
+  },
+  relatedLinks: [
+    {
+      label: "Auto Insurance",
+      href: "/auto-insurance",
+      description:
+        "Bundle watercraft and auto insurance for additional savings with major carriers.",
+    },
+    {
+      label: "Home Insurance",
+      href: "/home-insurance",
+      description:
+        "Protect your home and watercraft with comprehensive coverage options.",
+    },
+    {
+      label: "Back to Blog",
+      href: "/blog",
+      description:
+        "More guides and insurance resources from our licensed Arizona team.",
+    },
+  ],
+  references: [],
+  footer: {
+    lastUpdated: "Last updated: April 2026",
+    copyright: "© 2026 Protegrity Insurance. All rights reserved. | protegrityinsurance.com",
+  },
+}
+
+const rvInsurancePhoenixPost: BlogPost = {
+  slug: "rv-insurance-phoenix-az",
+  title: "RV Insurance in Phoenix, AZ: Complete Coverage Guide for 2026",
+  excerpt:
+    "RV insurance in Phoenix, AZ: motorhome and travel trailer coverage options, average rates by RV type, Arizona registration requirements, and how to protect your investment in the desert.",
+  metaTitle: "RV Insurance in Phoenix, AZ: Complete Coverage Guide for 2026",
+  metaDescription:
+    "RV insurance in Phoenix, AZ: motorhome and travel trailer coverage options, average rates by RV type, Arizona registration requirements, and how to protect your investment in the desert.",
+  keywords: ["RV insurance Phoenix AZ"],
+  category: "SPECIALTY INSURANCE",
+  readTime: "9 min read",
+  displayDate: "April 2026",
+  publishedISO: "2026-04-26",
+  modifiedISO: "2026-04-26",
+  breadcrumbLabel: "RV Insurance Phoenix",
+  author: ryanLorschAuthor,
+  heroImage: {
+    src: "https://images.unsplash.com/flagged/photo-1579158620196-6a8ba90777cb",
+    alt: "RV motorhome on Arizona highway representing RV insurance for Phoenix recreational vehicle owners",
+    width: 1920,
+    height: 1080,
+    photographer: "Megan Barber",
+    photographerUrl: "https://unsplash.com/@megcbarber",
+  },
+  image: {
+    src: "https://images.unsplash.com/flagged/photo-1579158620196-6a8ba90777cb",
+    alt: "RV motorhome on Arizona highway representing RV insurance for Phoenix recreational vehicle owners",
+    width: 1920,
+    height: 1080,
+    photographer: "Megan Barber",
+    photographerUrl: "https://unsplash.com/@megcbarber",
+  },
+  keyTakeaways: {
+    items: [
+      "RV insurance in Phoenix, AZ costs an average of $82–$248/month for a motorhome and $28–$68/month for a towed travel trailer.",
+      "Arizona requires all motorized RVs to carry minimum liability coverage identical to auto insurance (25/50/15 under ARS § 28-4009).",
+      "Arizona ranks 4th nationally in RV registrations with 187,000 registered RVs statewide — Maricopa County alone has 68,000 registered RVs.",
+      "Phoenix's year-round riding weather and proximity to national parks (Grand Canyon 228 miles, Sedona 116 miles, Zion 309 miles) make it a prime RV departure point.",
+      "Phoenix's January average high of 67°F makes it a year-round destination for full-time RVers and snowbirds, with over 12,000 seasonal RV residents.",
+    ],
+  },
+  content: [
+    { type: "h2", text: "The Short Answer: RV Insurance in Phoenix" },
+    {
+      type: "p",
+      text:
+        "RV insurance in Phoenix, AZ costs an average of $82–$248/month for a motorhome and $28–$68/month for a towed travel trailer, according to Progressive 2024 RV rate data for Maricopa County. Arizona requires all motorized RVs to carry minimum liability coverage identical to auto insurance (25/50/15 under ARS § 28-4009). Travel trailers require no separate insurance by law but must be covered for a financed trailer. Phoenix's year-round riding weather, proximity to national parks, and large snowbird population make RV insurance one of the most actively purchased specialty lines in Arizona.",
+    },
+
+    { type: "h2", text: "Why Phoenix Is One of the Top RV Markets in the United States" },
+    {
+      type: "p",
+      text:
+        "Arizona ranks 4th nationally in RV registrations with 187,000 registered RVs statewide (RVIA, 2024). Maricopa County alone has 68,000 registered RVs — the highest concentration of any Arizona county. Phoenix's January average high of 67°F makes it a year-round destination for full-time RVers and snowbirds, with the Thousand Trails and Outdoor Resorts communities in the East Valley hosting over 12,000 seasonal RV residents from October through April.",
+    },
+    {
+      type: "p",
+      text:
+        "Phoenix is also a prime departure point for Southwest RV travel — Grand Canyon South Rim (228 miles), Sedona (116 miles), Zion National Park (309 miles), and Moab/Arches (450 miles) are all accessible in a single driving day from the Phoenix metro area.",
+    },
+
+    { type: "h2", text: "RV Types and Average Insurance Costs in Phoenix" },
+    {
+      type: "table",
+      caption: "RV Types and Average Insurance Costs in Phoenix",
+      columns: [
+        "RV Type",
+        "Example Model",
+        "Avg. Value",
+        "Full Coverage Monthly",
+        "Required Insurance",
+      ],
+      rows: [
+        ["Class A Motorhome (gas)", "Winnebago Vista 29VE", "$112,000", "$188/mo", "Yes — AZ minimum liability"],
+        ["Class A Motorhome (diesel)", "Tiffin Allegro Bus 45OPP", "$385,000", "$248/mo", "Yes — AZ minimum liability"],
+        ["Class B Campervan", "Airstream Interstate 24GT", "$185,000", "$168/mo", "Yes — AZ minimum liability"],
+        ["Class C Motorhome", "Thor Quantum SE24", "$98,000", "$148/mo", "Yes — AZ minimum liability"],
+        ["Fifth Wheel", "Keystone Montana 3855BR", "$68,000", "$52/mo", "No — recommended"],
+        ["Travel Trailer", "Grand Design Reflection 315RLTS", "$42,000", "$38/mo", "No — recommended"],
+        ["Pop-Up / Folding Camper", "Forest River Flagstaff 228D", "$14,000", "$22/mo", "No — recommended"],
+        ["Toy Hauler", "Heartland Road Warrior 427", "$85,000", "$62/mo", "No — required by lenders"],
+      ],
+    },
+
+    { type: "h2", text: "RV Insurance Coverage Types: What Does Each Cover?" },
+    {
+      type: "p",
+      lead: "Liability (required for motorhomes):",
+      text:
+        "Covers bodily injury and property damage you cause to others. Arizona requires 25/50/15 minimum; Protegrity Insurance recommends 100/300/100 for motorhome operators given the vehicle's size and damage potential.",
+    },
+    {
+      type: "p",
+      lead: "Collision:",
+      text:
+        "Pays to repair or replace your RV after a crash, regardless of fault. A Class A motorhome collision involving slide-out damage can cost $25,000–$80,000 to repair — making collision coverage essential for vehicles over $50,000.",
+    },
+    {
+      type: "p",
+      lead: "Comprehensive:",
+      text:
+        "Covers theft, hail, wind, fire, flood, and animal damage. Phoenix's monsoon season (June–September) generates hail events averaging 1.2 inches in diameter — large enough to cause significant roof and slideout damage on Class A and Class C motorhomes.",
+    },
+    {
+      type: "p",
+      lead: "Full-Timer Coverage:",
+      text:
+        "For Phoenix residents who live in their RV more than 150 days per year, standard RV policies may not provide adequate personal liability or personal property coverage. Full-timer coverage adds $100,000–$500,000 in personal liability and covers personal belongings as a primary residence policy.",
+    },
+    {
+      type: "p",
+      lead: "Emergency Expense Coverage:",
+      text:
+        "If your RV is disabled more than 50 miles from Phoenix, emergency expense coverage pays hotel stays, meals, and transportation while your RV is repaired — typically $750–$1,500 per incident.",
+    },
+
+    { type: "h2", text: "Arizona RV-Specific Laws and Requirements" },
+    {
+      type: "p",
+      text:
+        "All motorized RVs (Class A, B, C) must be registered with Arizona MVD and carry minimum liability insurance (ARS § 28-4009). The registration fee for a Class A motorhome in Arizona ranges from $400 to $2,800 annually based on vehicle weight and age.",
+    },
+    {
+      type: "p",
+      text:
+        "Towed trailers (fifth wheels, travel trailers, toy haulers) require Arizona trailer registration but no mandatory insurance. A 40-foot fifth wheel must display a valid Arizona registration plate on the rear of the trailer at all times.",
+    },
+    {
+      type: "p",
+      text:
+        "Maximum width for RVs on Arizona roads is 102 inches (8.5 feet). Maximum length for a motorhome is 45 feet; a motorhome towing a vehicle can extend to 65 feet total. Exceeding these limits without an oversize permit is a civil traffic violation that carriers may use to dispute collision claims.",
+    },
+
+    { type: "h2", text: "Frequently Asked Questions: RV Insurance in Phoenix" },
+    {
+      type: "faq",
+      items: [
+        {
+          question: "Q: What is the minimum RV insurance required in Arizona?",
+          answer:
+            "Motorized RVs (Class A, B, C) must carry Arizona's standard auto liability minimum of $25,000/$50,000 bodily injury and $15,000 property damage (ARS § 28-4009). Travel trailers, fifth wheels, and pop-up campers are not required to carry insurance by Arizona law, but any lender financing an RV purchase will require collision and comprehensive. Protegrity Insurance recommends 100/300/100 liability for all motorhomes.",
+        },
+        {
+          question: "Q: How much does Class A motorhome insurance cost in Phoenix?",
+          answer:
+            "A Class A gas motorhome (Winnebago Vista, Thor Palazzo) averages $188/month for full coverage in Phoenix. A Class A diesel pusher (Tiffin, Newmar, Entegra) averages $228–$248/month due to significantly higher vehicle values and repair costs. Diesel pusher repair costs average 35% more than gas motorhome repairs — engine work on a Cummins diesel requires specialized technicians available at limited Phoenix-area service centers.",
+        },
+        {
+          question: "Q: Does RV insurance cover my belongings inside the RV?",
+          answer:
+            "Standard RV policies include personal effects coverage up to $1,500–$3,000. For full-timers or snowbirds storing significant belongings in their Phoenix-area RV, this is rarely sufficient. Progressive's full-timer policy includes personal property coverage up to $50,000. Nationwide's RV policy allows personal property riders up to $30,000. Inventory all valuables and electronics before selecting a coverage limit.",
+        },
+        {
+          question: "Q: Is RV insurance different from auto insurance in Arizona?",
+          answer:
+            "Yes. While motorized RVs share the same Arizona minimum liability requirements as automobiles, RV insurance policies include coverage categories that auto policies do not: full-timer liability, vacation liability (coverage while the RV is parked and being used as a temporary residence), emergency expense coverage, and custom equipment coverage for slides, awnings, and satellite systems. An auto policy cannot be used to insure an RV in Arizona.",
+        },
+        {
+          question: "Q: What is vacation liability coverage for Phoenix RV owners?",
+          answer:
+            "Vacation liability coverage protects Phoenix RV owners when the RV is parked and being used as a temporary residence — at a campsite, RV park, or trailhead. If a visitor trips on your awning or is injured at your campsite, vacation liability pays their medical bills and legal defense costs. Most Progressive and Nationwide RV policies include $10,000 in vacation liability as standard, with options up to $500,000 for full-timers.",
+        },
+        {
+          question: "Q: Can I get RV insurance for a vintage or classic motorhome in Phoenix?",
+          answer:
+            "Yes. Agreed value coverage for vintage motorhomes — including pre-1990 Airstreams, vintage VW buses, and classic Winnebagos — is available through Hagerty, Grundy, and Markel in Arizona. Agreed value pays the full stated amount with no depreciation after a total loss. A 1978 Airstream Sovereign restored to $85,000 in value would receive $85,000 — not its depreciated ACV — under an agreed value policy. Premiums for vintage motorhomes average $58–$112/month depending on value and usage.",
+        },
+      ],
+    },
+  ],
+  finalCta: {
+    headline: "Get Your Free Specialty Insurance Quote in Phoenix Today",
+    intro:
+      "Call Protegrity Insurance: (480) XXX-XXXX (click-to-call) | Get your free quote at protegrityinsurance.com",
+    body: "",
+    phoneLabel: "(480) XXX-XXXX",
+    phoneHref: "tel:480xxxxxxx",
+    quoteHref: "https://protegrityinsurance.com",
+    trustLine:
+      "5-star rated · 30+ top-rated carriers · Licensed Arizona agents · Motorcycle, ATV, Boat, RV specialists",
+  },
+  relatedLinks: [
+    {
+      label: "Auto Insurance",
+      href: "/auto-insurance",
+      description:
+        "Bundle RV and auto insurance for additional savings with major carriers.",
+    },
+    {
+      label: "Home Insurance",
+      href: "/home-insurance",
+      description:
+        "Protect your home and recreational vehicles with comprehensive coverage.",
+    },
+    {
+      label: "Back to Blog",
+      href: "/blog",
+      description:
+        "More guides and insurance resources from our licensed Arizona team.",
+    },
+  ],
+  references: [],
+  footer: {
+    lastUpdated: "Last updated: April 2026",
+    copyright: "© 2026 Protegrity Insurance. All rights reserved. | protegrityinsurance.com",
+  },
+}
+
 /* -------------------------------------------------------------------------- */
 /*  Public exports                                                            */
 /* -------------------------------------------------------------------------- */
@@ -8753,6 +9580,10 @@ export const blogPosts: BlogPost[] = [
   motorcycleInsurancePhoenixPost,
   atvInsurancePhoenixPost,
   motorcycleVsAtvInsurancePhoenixPost,
+  boatInsurancePhoenixPost,
+  jetSkiInsurancePhoenixPost,
+  watercraftInsurancePhoenixPost,
+  rvInsurancePhoenixPost,
   sr22InsurancePhoenixPost,
   carInsuranceAfterDuiPhoenixPost,
   fullCoverageCarInsurancePhoenixPost,
