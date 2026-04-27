@@ -7743,6 +7743,363 @@ const bestMexicoTravelInsuranceCompaniesPhoenixPost: BlogPost = {
   },
 }
 
+const mexicoTravelInsuranceChecklistPhoenixPost: BlogPost = {
+  slug: "mexico-travel-insurance-checklist-phoenix",
+  title:
+    "The Complete Mexico Travel Insurance Checklist for Phoenix Residents: Everything You Need Before You Cross the Border (2026)",
+  excerpt:
+    "Complete Mexico travel insurance checklist for Phoenix residents: every coverage type, carrier, cost, deadline, and action item for safe, fully protected Mexico travel in 2026.",
+  metaTitle:
+    "The Complete Mexico Travel Insurance Checklist for Phoenix Residents: Everything You Need Before You Cross the Border (2026)",
+  metaDescription:
+    "Complete Mexico travel insurance checklist for Phoenix residents: every coverage type, carrier, cost, deadline, and action item for safe, fully protected Mexico travel in 2026.",
+  keywords: ["Mexico travel insurance checklist Phoenix residents 2026"],
+  category: "TRAVEL INSURANCE",
+  readTime: "10 min read",
+  displayDate: "April 2026",
+  publishedISO: "2026-04-26",
+  modifiedISO: "2026-04-26",
+  breadcrumbLabel: "Mexico Travel Insurance Checklist",
+  author: ryanLorschAuthor,
+  heroImage: {
+    src: "https://images.unsplash.com/photo-1488646953014-85cb44e25828",
+    alt: "Complete travel checklist representing comprehensive Mexico travel insurance preparation for Phoenix residents",
+    width: 1920,
+    height: 1080,
+    photographer: "rawpixel",
+    photographerUrl: "https://unsplash.com/@rawpixel",
+  },
+  image: {
+    src: "https://images.unsplash.com/photo-1488646953014-85cb44e25828",
+    alt: "Complete travel checklist representing comprehensive Mexico travel insurance preparation for Phoenix residents",
+    width: 1920,
+    height: 1080,
+    photographer: "rawpixel",
+    photographerUrl: "https://unsplash.com/@rawpixel",
+  },
+  keyTakeaways: {
+    items: [
+      "Phoenix residents traveling to Mexico need six core protections: emergency medical coverage ($250,000+ minimum), medical evacuation ($500,000+ minimum), trip cancellation, emergency dental, baggage protection, and Mexico auto insurance if driving.",
+      "Total comprehensive coverage costs Phoenix travelers $28–$96/month for a standard Mexico vacation.",
+      "Without proper coverage, a single medical emergency in Mexico can cost $28,000–$95,000 out of pocket.",
+      "Most U.S. health insurance provides zero coverage in Mexico — 97% of standard Arizona health plans provide no useful Mexico coverage beyond 25 miles from the border.",
+      "This complete checklist covers every step from booking through return to ensure Phoenix travelers are fully protected.",
+    ],
+  },
+  content: [
+    { type: "h2", text: "The Short Answer: Your Mexico Travel Insurance Checklist" },
+    {
+      type: "p",
+      text:
+        "Phoenix residents traveling to Mexico need six core protections: (1) Emergency medical coverage ($250,000+ minimum); (2) Medical evacuation ($500,000+ minimum); (3) Trip cancellation for covered events or CFAR for any reason; (4) Emergency dental coverage; (5) Baggage loss and theft protection; and (6) Mexico auto insurance if driving any vehicle — personal or rental — across the border. Total comprehensive coverage costs Phoenix travelers $28–$96/month for a standard Mexico vacation. Without it, a single medical emergency in Mexico can cost $28,000–$95,000 out of pocket. This checklist covers every step from booking to return.",
+    },
+
+    { type: "h2", text: "The Phoenix Traveler's Mexico Insurance Checklist: Before Booking" },
+    {
+      type: "p",
+      lead: "Verify your U.S. health insurance Mexico coverage:",
+      text:
+        "Call your Arizona health plan — Blue Cross Blue Shield of Arizona at (602) 864-4400, Aetna at (888) 800-0729, or Banner Health Network at (602) 747-7000 — and ask specifically: 'What are my emergency medical benefits in Mexico?' Document the answer in writing. 97% of standard Arizona health plans provide no useful Mexico coverage beyond 25 miles from the border.",
+    },
+    {
+      type: "p",
+      lead: "Check Medicare coverage if over 65:",
+      text:
+        "Contact 1-800-MEDICARE (1-800-633-4227) and confirm your specific plan's international emergency benefits. Request documentation in writing. Do not rely on verbal assurances that 'Medicare covers emergencies' — it does not, in Mexico.",
+    },
+    {
+      type: "p",
+      lead: "Identify pre-existing conditions that require a waiver:",
+      text:
+        "List every condition for which you have received treatment, taken medication, or had symptoms in the past 12 months. These conditions require a pre-existing condition waiver — which must be purchased within 14–21 days of your first Mexico trip deposit.",
+    },
+
+    { type: "h2", text: "The Phoenix Traveler's Mexico Insurance Checklist: At Booking" },
+    {
+      type: "table",
+      caption: "The Phoenix Traveler's Mexico Insurance Checklist: At Booking",
+      columns: ["Action Item", "Deadline", "Why It Matters"],
+      rows: [
+        [
+          "Purchase comprehensive travel insurance",
+          "Within 14 days of first deposit (Allianz) / 21 days (AXA, Travelex)",
+          "Unlocks pre-ex waiver + CFAR eligibility",
+        ],
+        [
+          "Add CFAR if desired",
+          "Same day as policy purchase, within 14–21 day window",
+          "Cannot be added later — must be simultaneous",
+        ],
+        [
+          "Insure full non-refundable trip cost",
+          "At time of policy purchase",
+          "Underinsuring voids proportional claim recovery",
+        ],
+        [
+          "Confirm medical evacuation limit ($500K+)",
+          "At policy purchase",
+          "Standard $250K may be insufficient for remote Mexico",
+        ],
+        [
+          "Purchase Mexico auto insurance if driving",
+          "Before crossing the border",
+          "U.S. insurance invalid in Mexico — criminal liability",
+        ],
+        [
+          "Purchase Mexico rental car insurance if renting",
+          "Before picking up rental car",
+          "U.S. credit card coverage excluded in Mexico",
+        ],
+      ],
+    },
+
+    { type: "h2", text: "The Phoenix Traveler's Mexico Insurance Checklist: Before Departure" },
+    {
+      type: "p",
+      text:
+        "- Save carrier emergency assistance number in your phone: Allianz: 1-800-654-1908. Seven Corners: 1-317-582-2622. AXA: 1-855-327-1441.",
+    },
+    {
+      type: "p",
+      text:
+        "- Email your policy number and emergency contact info to a family member in Phoenix.",
+    },
+    {
+      type: "p",
+      text:
+        "- Download your digital insurance card to your phone — accessible offline if data is unavailable in Mexico.",
+    },
+    {
+      type: "p",
+      text:
+        "- Photograph all luggage contents with a timestamp before checking bags at Phoenix Sky Harbor.",
+    },
+    {
+      type: "p",
+      text:
+        "- Carry physical copies of your passport, travel insurance card, and Mexico auto insurance in a separate bag from your main luggage.",
+    },
+    {
+      type: "p",
+      text:
+        "- Verify your Mexico destination's U.S. State Department advisory level at travel.state.gov — current as of the day before departure.",
+    },
+    {
+      type: "p",
+      text:
+        "- Confirm hospital locations at your Mexico destination: nearest JCI-accredited facility, nearest private hospital, and distance from your resort or accommodation.",
+    },
+
+    { type: "h2", text: "Mexico-Specific Risks by Destination: Phoenix Travelers Reference Guide" },
+    {
+      type: "table",
+      caption: "Mexico-Specific Risks by Destination: Phoenix Travelers Reference Guide",
+      columns: [
+        "Destination",
+        "Distance from Phoenix",
+        "Primary Risk",
+        "Key Insurance Priority",
+        "Nearest U.S.-Quality Hospital",
+      ],
+      rows: [
+        [
+          "Puerto Peñasco (Rocky Point)",
+          "200 miles",
+          "Limited local medical care",
+          "Evacuation ($500K+)",
+          "CIMA Hermosillo (90 mi away)",
+        ],
+        [
+          "San Carlos / Guaymas",
+          "300 miles",
+          "Limited English-speaking care",
+          "Medical + Evacuation",
+          "Hospital CIMA Hermosillo",
+        ],
+        [
+          "Puerto Vallarta",
+          "1,100 miles",
+          "High tourist activity, theft",
+          "Medical + Baggage + Rental Car",
+          "Amerimed or Hospital CMQ",
+        ],
+        [
+          "Los Cabos / Cabo San Lucas",
+          "1,000 miles",
+          "High alcohol-related incidents",
+          "Medical + Evacuation + CFAR",
+          "Hospital H+ or Blue Net",
+        ],
+        [
+          "Cancún / Riviera Maya",
+          "1,850 miles",
+          "Hurricane season, theft",
+          "CFAR + Medical + Baggage",
+          "Hospiten or Hospital Galenia",
+        ],
+        [
+          "Mexico City (CDMX)",
+          "1,600 miles",
+          "Air quality, altitude, traffic",
+          "Medical + Trip Interruption",
+          "Hospital Ángeles Pedregal",
+        ],
+        [
+          "Copper Canyon (Chihuahua)",
+          "520 miles (remote)",
+          "Extreme remoteness, no clinics",
+          "Evacuation ($500K+) + Global Rescue",
+          "El Paso, TX (nearest U.S.)",
+        ],
+        [
+          "Tulum / Riviera Maya south",
+          "1,900 miles",
+          "Remote cenotes, limited care",
+          "Medical ($500K) + Evacuation",
+          "Playa del Carmen private clinics",
+        ],
+      ],
+    },
+
+    { type: "h2", text: "The Phoenix Traveler's Mexico Insurance Checklist: In Mexico" },
+    {
+      type: "p",
+      lead: "Medical emergency:",
+      text:
+        "Call your insurer's 24/7 assistance line before going to a hospital when the situation permits. They direct you to the nearest approved facility and initiate direct billing. If you must go to a hospital immediately, call from the hospital and provide your policy number. Keep all receipts, discharge paperwork, and prescription documentation.",
+    },
+    {
+      type: "p",
+      lead: "Auto accident:",
+      text:
+        "Do not move vehicles. Call your Mexico auto insurance carrier's claims line immediately (Baja Bound: 1-800-552-0890). Photograph all vehicles, road conditions, and injuries. Get the other driver's Mexican license number and vehicle registration. Do not sign any Mexican documents without your insurer's legal representative present.",
+    },
+    {
+      type: "p",
+      lead: "Theft:",
+      text:
+        "File an Acta ante el Ministerio Público at the nearest police station within 24 hours. Keep the report number and a physical copy. Contact your travel insurance carrier with the police report number and a list of stolen items. Contact your credit card company for card theft within 24 hours.",
+    },
+    {
+      type: "p",
+      lead: "Trip interruption:",
+      text:
+        "Contact your insurer's assistance line before making any new travel arrangements — booking a flight home without pre-authorization may result in reimbursement denial. Your insurer's assistance team books the return transportation directly and bills it to the policy when possible.",
+    },
+
+    { type: "h2", text: "What Mexico Travel Insurance Does NOT Cover: The Complete Exclusion List" },
+    {
+      type: "table",
+      caption: "What Mexico Travel Insurance Does NOT Cover: The Complete Exclusion List",
+      columns: ["Excluded Scenario", "Why It Is Excluded", "Alternative Protection"],
+      rows: [
+        [
+          "Planned dental work in Mexico",
+          "Elective procedure, not an emergency",
+          "No insurance covers planned elective care",
+        ],
+        ["Alcohol-related incidents (intoxicated)", "Willful intoxication exclusion", "None — personal responsibility"],
+        [
+          "Pre-existing condition without waiver",
+          "Not purchased within required window",
+          "Buy policy within 14 days of first deposit",
+        ],
+        [
+          "Driving without Mexico auto insurance",
+          "Criminal non-compliance in Mexico",
+          "Purchase Baja Bound before crossing border",
+        ],
+        [
+          "Fear of travel / anxiety about Mexico",
+          "Not a covered cancellation reason",
+          "CFAR covers this — purchase within 14 days",
+        ],
+        ["Mexico travel for drug purchases", "Illegal purpose exclusion", "No insurance product covers illegal activity"],
+        [
+          "Adventure sports (skydiving, racing)",
+          "Excluded under standard policy",
+          "Adventure sports rider from Seven Corners or AXA",
+        ],
+        ["War, civil unrest, terrorism (declared)", "Force majeure exclusion", "CFAR may cover cancellation due to instability"],
+        ["COVID-19 fear (not ill)", "Not a medical emergency", "CFAR covers cancellation due to COVID concern"],
+      ],
+    },
+
+    { type: "h2", text: "Frequently Asked Questions: Mexico Travel Insurance Complete Guide" },
+    {
+      type: "faq",
+      items: [
+        {
+          question: "Q: How much does comprehensive Mexico travel insurance cost for a Phoenix family?",
+          answer:
+            "A Phoenix family of four (2 adults aged 40, 2 children) with a $5,600 Puerto Vallarta 7-day trip pays $248–$312 for comprehensive coverage including medical ($500K), evacuation ($1M), trip cancellation, baggage, and CFAR through Travelex Travel Select. Children 17 and under travel free as additional insureds under one adult's Travelex policy. Per-person cost averages $62–$78 for the trip — about 4.4–5.6% of total trip cost.",
+        },
+        {
+          question: "Q: What is the single most important Mexico travel insurance coverage for Phoenix travelers?",
+          answer:
+            "Medical evacuation. A cardiac event, serious accident, or stroke in Puerto Peñasco requires an air ambulance to Phoenix averaging $38,000–$65,000. In Cancún, evacuation costs $68,000–$95,000. These costs are required upfront or by credit card guarantee — Mexican hospitals will not release patients for transport without payment confirmation. Medical evacuation coverage ($500,000 minimum) from Allianz or Seven Corners costs $8–$18/month as part of a comprehensive policy and is the difference between a manageable emergency and a financial catastrophe.",
+        },
+        {
+          question: "Q: Do I need Mexico travel insurance for a day trip to Nogales?",
+          answer:
+            "For a same-day border crossing to Nogales, Sonora — shopping, dining, dental appointment — a full comprehensive travel policy is not necessary but medical coverage is still strongly recommended. A day-trip Mexico medical policy from Trawick International costs $4–$8 for 24-hour coverage with $50,000 in emergency medical. If you are driving to Nogales, a one-day Mexico auto insurance policy from Baja Bound costs $12–$18 and is legally required the moment you cross the border.",
+        },
+        {
+          question: "Q: What happens if I get COVID-19 in Mexico?",
+          answer:
+            "As of April 2026, all major Mexico travel insurance carriers treat COVID-19 as a standard illness. Hospitalization for COVID-19 is covered under emergency medical up to your policy limit. A positive COVID-19 test before departure that prevents travel is a covered trip cancellation reason with medical documentation. Quarantine costs — if you test positive in Mexico and must extend your stay — are covered under trip interruption at most carriers. A CFAR policy covers cancellation due to COVID concerns without any illness documentation requirement.",
+        },
+        {
+          question: "Q: Can I purchase Mexico travel insurance if I am already in Mexico?",
+          answer:
+            "Most carriers will not issue a new Mexico travel insurance policy after you have already departed the U.S. Allianz, Seven Corners, and AXA all require the policy to be purchased before your departure date from the United States. If you are already in Mexico without coverage, IMG Global's expatriate plans are the only major carrier that accepts mid-trip enrollment for travelers already outside the U.S. — with a waiting period of 7 days for pre-existing conditions. Purchase before you leave Phoenix.",
+        },
+        {
+          question: "Q: How do I contact Protegrity Insurance to get a Mexico travel insurance quote?",
+          answer:
+            "Call Protegrity Insurance at (480) XXX-XXXX Monday through Saturday, 8 AM to 6 PM MST. Emergency after-hours line available for same-day border-crossing policy needs. Visit protegrityinsurance.com for online quotes comparing Allianz, Seven Corners, AXA, Travelex, GeoBlue, IMG Global, and 22 additional carriers. Most Phoenix clients receive a full Mexico travel insurance comparison and policy issuance within 20 minutes. Digital insurance cards are delivered via email immediately upon policy purchase and are accepted by Mexican authorities, hospitals, and rental car agencies.",
+        },
+      ],
+    },
+  ],
+  finalCta: {
+    headline: "Get Your Mexico Travel Insurance Quote Before You Cross the Border",
+    intro:
+      "Call Protegrity Insurance: (480) XXX-XXXX (click-to-call) | Get your free quote at protegrityinsurance.com",
+    body: "",
+    phoneLabel: "(480) XXX-XXXX",
+    phoneHref: "tel:480xxxxxxx",
+    quoteHref: "https://protegrityinsurance.com",
+    trustLine:
+      "5-star rated · 30+ top-rated carriers · Licensed Arizona agents · Mexico travel specialists",
+  },
+  relatedLinks: [
+    {
+      label: "Travel Insurance",
+      href: "/travel-insurance",
+      description:
+        "Protect your Mexico trips with comprehensive travel insurance coverage.",
+    },
+    {
+      label: "Life Insurance",
+      href: "/life-insurance",
+      description:
+        "Protect your family with the right life insurance coverage and competitive rates.",
+    },
+    {
+      label: "Back to Blog",
+      href: "/blog",
+      description:
+        "More guides and insurance resources from our licensed Arizona team.",
+    },
+  ],
+  references: [],
+  footer: {
+    lastUpdated: "Last updated: April 2026",
+    copyright: "© 2026 Protegrity Insurance. All rights reserved. | protegrityinsurance.com",
+  },
+}
+
 /* -------------------------------------------------------------------------- */
 /*  Public exports                                                            */
 /* -------------------------------------------------------------------------- */
@@ -7776,6 +8133,7 @@ export const blogPosts: BlogPost[] = [
   cancelForAnyReasonInsuranceMexicoPhoenixPost,
   mexicoTravelInsuranceSeniorsOver60PhoenixPost,
   bestMexicoTravelInsuranceCompaniesPhoenixPost,
+  mexicoTravelInsuranceChecklistPhoenixPost,
   phoenixAutoCostPost,
   arizonaMinimumCarInsurancePost,
   cheapCarInsurancePhoenixPost,
