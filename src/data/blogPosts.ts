@@ -10210,11 +10210,336 @@ const bestSpecialtyInsuranceCompaniesPhoenixPost: BlogPost = {
   },
 }
 
+const generalLiabilityInsuranceArizonaPost: BlogPost = {
+  slug: "what-does-general-liability-insurance-cover",
+  title: "What Does General Liability Insurance Cover for Your Business?",
+  excerpt:
+    "Learn what general liability insurance covers for Arizona businesses. Compare quotes from 10+ carriers through Protegrity Insurance and find the best rate.",
+  metaTitle: "General Liability Insurance for AZ Businesses | 2026",
+  metaDescription:
+    "Learn what general liability insurance covers for Arizona businesses. Compare quotes from 10+ carriers through Protegrity Insurance and find the best rate.",
+  keywords: ["general liability insurance Arizona"],
+  category: "Business Insurance",
+  readTime: "10 min read",
+  displayDate: "April 2026",
+  publishedISO: "2026-04-26",
+  modifiedISO: "2026-04-26",
+  breadcrumbLabel: "General Liability Insurance",
+  author: ryanLorschAuthor,
+  heroImage: {
+    src: "https://images.unsplash.com/photo-1554224155-6726b3ff858f",
+    alt: "Arizona small business owner reviewing general liability insurance coverage",
+    width: 1920,
+    height: 1080,
+    photographer: "Scott Graham",
+    photographerUrl: "https://unsplash.com/@homajob",
+  },
+  image: {
+    src: "https://images.unsplash.com/photo-1554224155-6726b3ff858f",
+    alt: "Arizona small business owner reviewing general liability insurance coverage",
+    width: 1920,
+    height: 1080,
+    photographer: "Scott Graham",
+    photographerUrl: "https://unsplash.com/@homajob",
+  },
+  keyTakeaways: {
+    items: [
+      "Arizona small businesses pay a median of $45/month for general liability insurance (Insureon, 2025).",
+      "GL covers bodily injury, property damage, and advertising injury — but not employee injuries or professional errors.",
+      "Most commercial leases, client contracts, and Arizona contractor licenses require proof of GL coverage.",
+      "Quoting across 10 or more business insurance carriers through an independent brokerage is the most effective way to find the right coverage at the best price — each carrier prices the same business differently.",
+    ],
+  },
+  content: [
+    { type: "h2", text: "The Short Answer: General Liability Insurance" },
+    {
+      type: "p",
+      text:
+        "General liability insurance covers third-party bodily injury, property damage, and advertising injury claims made against your business. According to Insureon's 2025 market data, small businesses pay a median of $45 per month — or $500 per year — for a standard $1 million per-occurrence / $2 million aggregate policy. This guide is for Phoenix, Scottsdale, Mesa, Chandler, and Gilbert business owners who want to understand what GL insurance covers, what it does not, and how to compare quotes across 10 or more business insurance carriers before making a decision.",
+    },
+
+    { type: "h2", text: "What is general liability insurance?" },
+    {
+      type: "p",
+      text:
+        "General liability insurance — also called commercial general liability (CGL) — is a policy that pays for claims made by third parties who say your business caused them harm. That includes a customer who slips and falls in your Phoenix storefront, a client whose property your employee accidentally damages, or a competitor who claims your advertising defamed them.",
+    },
+    {
+      type: "p",
+      text:
+        "Arizona does not legally require most businesses to carry general liability insurance. However, commercial leases, vendor contracts, and many professional license applications in the state require proof of coverage before a business can operate. In practice, most Phoenix-area businesses need it to open their doors and win clients.",
+    },
+
+    { type: "h2", text: "Who needs general liability insurance in Arizona?" },
+    {
+      type: "p",
+      text:
+        "Nearly every business that interacts with customers, works on client property, or signs commercial contracts needs general liability coverage. This includes:",
+    },
+    {
+      type: "p",
+      text:
+        "Retail stores, restaurants, and service businesses open to the public in Phoenix, Mesa, and Tempe. Contractors, landscapers, and tradespeople working on client properties in Scottsdale, Chandler, and Gilbert. Freelancers and consultants whose clients require proof of insurance before signing a contract. Startups and LLCs leasing commercial office space anywhere in the Valley. Event-based businesses that need a certificate of insurance (COI) before a venue will book them.",
+    },
+    {
+      type: "p",
+      text: "Arizona has 641,000 small businesses employing more than 1.1 million workers.",
+    },
+
+    { type: "h2", text: "What does general liability insurance usually cover?" },
+    {
+      type: "table",
+      caption: "What does general liability insurance usually cover?",
+      columns: ["Coverage Type", "What It Pays For", "Real-World Example"],
+      rows: [
+        [
+          "Bodily injury",
+          "Medical bills and legal fees if a non-employee is injured",
+          "Customer slips on a wet floor at your Chandler shop",
+        ],
+        [
+          "Property damage",
+          "Repair or replacement of a third party's property you damaged",
+          "Your crew breaks a client's window in Scottsdale",
+        ],
+        [
+          "Advertising injury",
+          "Libel, slander, or copyright infringement in your marketing",
+          "Competitor sues over a misleading ad your business ran",
+        ],
+        [
+          "Legal defense costs",
+          "Attorney and court fees for covered claims — even if you win",
+          "Frivolous slip-and-fall lawsuit against your Mesa restaurant",
+        ],
+        [
+          "Medical payments",
+          "Immediate reimbursement for minor injuries, no lawsuit needed",
+          "Vendor cuts their hand at your Gilbert warehouse",
+        ],
+      ],
+    },
+
+    { type: "h2", text: "What does general liability insurance NOT cover?" },
+    {
+      type: "p",
+      text:
+        "General liability insurance does not cover employee injuries — that is workers' compensation, which Arizona law requires for any business with at least one employee. It does not cover professional mistakes or bad advice — that requires professional liability (errors and omissions) insurance. Your own business property or equipment requires commercial property insurance. Business-owned vehicles require commercial auto insurance under Arizona law. Cyberattacks or data breaches require a separate cyber liability policy. Intentional acts or fraud are excluded from all liability policies.",
+    },
+
+    {
+      type: "h2",
+      text: "How much does general liability insurance cost for Arizona businesses?",
+    },
+    {
+      type: "p",
+      text:
+        "Pricing varies significantly by industry, business size, location, and claims history. The table below shows real-world premium ranges for common Arizona business types, based on 2025 market data:",
+    },
+    {
+      type: "table",
+      caption: "How much does general liability insurance cost for Arizona businesses?",
+      columns: ["Business Type", "Monthly Range", "Annual Range"],
+      rows: [
+        ["Consultant / freelancer", "$25–$45/mo", "$300–$540/yr"],
+        ["Retail store", "$58–$125/mo", "$700–$1,500/yr"],
+        ["Restaurant / food service", "$83–$208/mo", "$1,000–$3,000/yr"],
+        ["Landscaper / contractor", "$85–$200/mo", "$1,000–$3,500/yr"],
+        ["Construction", "Up to $417/mo", "Up to $5,000/yr"],
+        ["Arizona median (all industries)", "$45/mo", "$500/yr"],
+      ],
+    },
+    {
+      type: "p",
+      text:
+        "The single most important factor in your premium is your industry. A slip-and-fall claim costs an average of $45,000 to resolve, according to The Hartford's 2025 small business claims study. For most businesses, a $45–$83 monthly premium is a fraction of a single uncovered claim.",
+    },
+
+    { type: "h2", text: "Why quoting across 10 or more business insurance carriers matters" },
+    {
+      type: "p",
+      text:
+        "Business insurance is not priced like a commodity. Every carrier uses its own underwriting model to assess risk — which means the same Phoenix landscaping business could receive quotes ranging from $900 to $2,400 per year for identical coverage limits, depending on which carriers are asked.",
+    },
+    {
+      type: "p",
+      text:
+        "A business that calls one carrier gets one price. A business that quotes across 10 or more carriers gets the market rate — and keeps the difference.",
+    },
+    {
+      type: "p",
+      text:
+        "This spread is wider in business insurance than in personal lines because commercial underwriting involves more variables: your industry classification, payroll, gross receipts, subcontractor exposure, premises square footage, and prior claims history. Each carrier weights these factors differently. One carrier may specialize in contractors and offer aggressive pricing there. Another may be more competitive for retail or food service. Without quoting broadly, you have no way to know which carrier is the best fit for your specific operation.",
+    },
+    {
+      type: "p",
+      text:
+        "Protegrity Insurance, as an independent licensed brokerage, submits your business profile to 10 or more commercial carriers simultaneously. The result is a side-by-side comparison of real quotes — not estimates — so you can evaluate price, coverage limits, deductibles, and carrier financial strength before making a decision.",
+    },
+
+    { type: "h2", text: "How does quoting through a brokerage compare to going direct?" },
+    {
+      type: "table",
+      caption: "How does quoting through a brokerage compare to going direct?",
+      columns: ["Factor", "Single Carrier Direct", "Protegrity Insurance Brokerage"],
+      rows: [
+        ["Quotes received", "1", "10+ business insurance carriers"],
+        ["Carrier options", "That carrier's products only", "Multiple competing commercial carriers"],
+        ["Pricing power", "Take it or leave it", "Carriers compete — you choose the best fit"],
+        [
+          "Industry-specific pricing",
+          "Limited to one underwriting model",
+          "Matched to carriers that specialize in your industry",
+        ],
+        [
+          "Non-standard or higher-risk businesses",
+          "Often declined or rated up",
+          "Access to specialty commercial markets",
+        ],
+        [
+          "Coverage gap review",
+          "Focused on their own products",
+          "Independent advice — no carrier bias",
+        ],
+        [
+          "Certificate of insurance (COI)",
+          "Issued by that carrier only",
+          "Issued same day across whichever carrier binds the policy",
+        ],
+        ["Best for", "Very low-risk, brand-loyal customer", "Most Arizona business owners"],
+      ],
+    },
+    {
+      type: "p",
+      text:
+        "Independent brokerages are also better positioned to identify bundling opportunities. A Business Owner's Policy (BOP) — which combines general liability and commercial property insurance — costs an average of $83 per month, according to Insureon's 2025 data, and is often 20–30% less than purchasing each policy separately. A broker can tell you whether a BOP makes sense for your business or whether standalone GL is the right call — without any incentive to push one carrier's product over another.",
+    },
+
+    { type: "h2", text: "Common mistakes Arizona business owners make with GL insurance" },
+    {
+      type: "p",
+      text:
+        "Getting only one quote — pricing for identical coverage can vary by hundreds of dollars per year across carriers.",
+    },
+    {
+      type: "p",
+      text:
+        "Choosing the cheapest policy without comparing limits — a $1M per-occurrence limit is standard; lower limits may leave you exposed on a serious claim.",
+    },
+    {
+      type: "p",
+      text:
+        "Assuming GL covers employee injuries — it does not; workers' compensation is a separate legally required policy in Arizona for any business with employees.",
+    },
+    {
+      type: "p",
+      text:
+        "Waiting until a client or landlord demands proof of insurance — reactive coverage purchases create gaps and often cost more.",
+    },
+    {
+      type: "p",
+      text:
+        "Not updating coverage after business growth — a policy written for a 2-person operation may be underinsured for a 15-person team.",
+    },
+
+    { type: "h2", text: "When should you speak with a licensed business insurance agent?" },
+    {
+      type: "p",
+      text:
+        "If your business is signing a new commercial lease in Phoenix or Tempe, taking on a large client contract, hiring your first employee, or operating in a high-risk industry like construction, food service, or healthcare — talk to a licensed agent before you buy. An independent broker can review your contracts, identify the coverage minimums your landlord or client requires, match you to the right carriers for your industry, and make sure the policy you purchase actually fits the risks your business faces in the Valley.",
+    },
+
+    { type: "h2", text: "Frequently Asked Questions: General Liability Insurance" },
+    {
+      type: "faq",
+      items: [
+        {
+          question: "Q: What does general liability insurance cover for a small business?",
+          answer:
+            "General liability insurance covers third-party bodily injury, property damage, and advertising injury claims. It pays legal defense costs and settlements up to your policy limit — even if the lawsuit is ultimately dismissed. It does not cover employee injuries, professional errors, or your own business property. Most Arizona small businesses carry a $1 million per-occurrence / $2 million aggregate limit as a baseline.",
+        },
+        {
+          question: "Q: How much does general liability insurance cost in Arizona?",
+          answer:
+            "Arizona small businesses pay a median of $45 per month for general liability insurance, according to Insureon's 2025 data. Annual costs range from around $300 for low-risk consultants to $5,000 or more for construction businesses. Because pricing varies widely across carriers for the same business, quoting with 10 or more commercial carriers through a brokerage is the most reliable way to find the best rate.",
+        },
+        {
+          question: "Q: Is general liability insurance required by law in Arizona?",
+          answer:
+            "Arizona does not legally require most businesses to carry general liability insurance. However, commercial leases, client contracts, and many professional licensing applications in the state require proof of coverage before a business can operate. Most Phoenix-area businesses — from retailers to contractors in Peoria and Glendale — need it to sign leases, win clients, and enter job sites.",
+        },
+        {
+          question: "Q: Why should I quote general liability with multiple carriers instead of one?",
+          answer:
+            "Business insurance carriers each use different underwriting models, meaning the same Phoenix business can receive quotes varying by $500 to $1,500 per year for identical coverage. Quoting across 10 or more commercial carriers through an independent brokerage like Protegrity Insurance gives you real, side-by-side comparisons — not estimates — so you can choose the best combination of price, coverage, and carrier financial strength.",
+        },
+        {
+          question: "Q: What is the difference between general liability and professional liability insurance?",
+          answer:
+            "General liability covers physical accidents and third-party property damage. Professional liability — also called errors and omissions (E&O) insurance — covers financial losses a client claims resulted from your professional advice or a service mistake. A consultant in Scottsdale needs both: GL for physical incidents during client visits, and E&O if a client sues over a project deliverable or outcome.",
+        },
+        {
+          question: "Q: What is a Business Owner's Policy and should I consider one?",
+          answer:
+            "A Business Owner's Policy (BOP) bundles general liability and commercial property insurance into one discounted policy. According to Insureon's 2025 data, a BOP averages $83 per month — often 20–30% less than purchasing each policy separately. It is a strong starting point for most Phoenix-area small businesses that have physical assets to protect alongside liability exposure. A broker can confirm if it fits your situation.",
+        },
+        {
+          question: "Q: Does general liability insurance cover slip-and-fall accidents in Arizona?",
+          answer:
+            "Yes. Slip-and-fall accidents are one of the most common covered claims under a general liability policy. According to The Hartford's 2025 small business claims study, they account for roughly 20% of all small business insurance claims, with an average resolution cost of $45,000. For most Arizona businesses, a monthly GL premium is a small fraction of a single uncovered incident.",
+        },
+        {
+          question: "Q: How do I get a certificate of insurance (COI) for a client or landlord in Arizona?",
+          answer:
+            "A certificate of insurance (COI) is issued by your carrier or broker as proof of active coverage. Once your policy is bound, your broker can issue a COI the same day — ready to share with a landlord, general contractor, or client. Protegrity Insurance provides COIs to policyholders as needed for commercial leases, job site entry, and contract requirements throughout the Phoenix metro area.",
+        },
+      ],
+    },
+  ],
+  finalCta: {
+    headline: "Get Your Free Business Insurance Quote in Phoenix Today",
+    intro:
+      "Call Protegrity Insurance: (480) XXX-XXXX (click-to-call) | Get your free quote at protegrityinsurance.com",
+    body: "",
+    phoneLabel: "(480) XXX-XXXX",
+    phoneHref: "tel:480xxxxxxx",
+    quoteHref: "https://protegrityinsurance.com",
+    trustLine:
+      "5-star rated · 10+ commercial carriers · Licensed Arizona agents · General liability, workers' comp, commercial auto",
+  },
+  relatedLinks: [
+    {
+      label: "Auto Insurance",
+      href: "/auto-insurance",
+      description:
+        "Protect your business vehicles with commercial auto insurance coverage.",
+    },
+    {
+      label: "Home Insurance",
+      href: "/home-insurance",
+      description:
+        "Protect your home with comprehensive homeowners insurance coverage.",
+    },
+    {
+      label: "Back to Blog",
+      href: "/blog",
+      description:
+        "More guides and insurance resources from our licensed Arizona team.",
+    },
+  ],
+  references: [],
+  footer: {
+    lastUpdated: "Last updated: April 2026",
+    copyright: "© 2026 Protegrity Insurance. All rights reserved. | protegrityinsurance.com",
+  },
+}
+
 /* -------------------------------------------------------------------------- */
 /*  Public exports                                                            */
 /* -------------------------------------------------------------------------- */
 
 export const blogPosts: BlogPost[] = [
+  generalLiabilityInsuranceArizonaPost,
   phoenixHomePost,
   phoenixAutoPost,
   motorcycleInsurancePhoenixPost,
