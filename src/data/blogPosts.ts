@@ -9570,6 +9570,646 @@ const rvInsurancePhoenixPost: BlogPost = {
   },
 }
 
+const travelTrailerInsurancePhoenixPost: BlogPost = {
+  slug: "travel-trailer-insurance-phoenix-az",
+  title:
+    "Travel Trailer and Fifth Wheel Insurance in Phoenix, AZ: Do You Need It? (2026)",
+  excerpt:
+    "Travel trailer and fifth wheel insurance in Phoenix, AZ: what Arizona law requires, what your auto policy does and doesn't cover, and how much dedicated trailer coverage costs.",
+  metaTitle:
+    "Travel Trailer and Fifth Wheel Insurance in Phoenix, AZ: Do You Need It? (2026)",
+  metaDescription:
+    "Travel trailer and fifth wheel insurance in Phoenix, AZ: what Arizona law requires, what your auto policy does and doesn't cover, and how much dedicated trailer coverage costs.",
+  keywords: ["travel trailer insurance Phoenix AZ"],
+  category: "SPECIALTY INSURANCE",
+  readTime: "8 min read",
+  displayDate: "April 2026",
+  publishedISO: "2026-04-26",
+  modifiedISO: "2026-04-26",
+  breadcrumbLabel: "Travel Trailer Insurance Phoenix",
+  author: ryanLorschAuthor,
+  heroImage: {
+    src: "https://images.unsplash.com/photo-1605377294702-2a112984fa62",
+    alt: "Fifth wheel travel trailer on Arizona road representing travel trailer insurance for Phoenix RV owners",
+    width: 1920,
+    height: 1080,
+    photographer: "Rodrigo Curi",
+    photographerUrl: "https://unsplash.com/@rodrigocuri",
+  },
+  image: {
+    src: "https://images.unsplash.com/photo-1605377294702-2a112984fa62",
+    alt: "Fifth wheel travel trailer on Arizona road representing travel trailer insurance for Phoenix RV owners",
+    width: 1920,
+    height: 1080,
+    photographer: "Rodrigo Curi",
+    photographerUrl: "https://unsplash.com/@rodrigocuri",
+  },
+  keyTakeaways: {
+    items: [
+      "Travel trailer and fifth wheel insurance in Phoenix costs an average of $28–$68/month for full coverage, depending on the unit's length, value, and amenities.",
+      "Arizona law does not require insurance for towed trailers, but your auto insurance covers only liability for a towed trailer — not physical damage to the trailer itself.",
+      "A 40-foot Grand Design fifth wheel valued at $68,000 receives zero collision or comprehensive coverage under your auto policy.",
+      "Phoenix's extreme heat warps slideout seals, creating water intrusion damage — slideout failures can cost $3,500–$12,000 to repair.",
+      "An estimated 12,000–15,000 Phoenix-area residents live in travel trailers or fifth wheels on a full-time or snowbird basis.",
+    ],
+  },
+  content: [
+    {
+      type: "h2",
+      text: "The Short Answer: Travel Trailer and Fifth Wheel Insurance in Phoenix",
+    },
+    {
+      type: "p",
+      text:
+        "Travel trailer and fifth wheel insurance in Phoenix costs an average of $28–$68/month for full coverage, depending on the unit's length, value, and amenities (Progressive, Foremost 2024 rate data for Maricopa County). Arizona law does not require insurance for towed trailers, but your auto insurance covers only liability for a towed trailer — not physical damage to the trailer itself. A 40-foot Grand Design fifth wheel valued at $68,000 receives zero collision or comprehensive coverage under your auto policy. A dedicated trailer policy costs $38–$52/month and protects your full investment.",
+    },
+
+    { type: "h2", text: "What Your Auto Insurance Actually Covers for a Towed Trailer" },
+    {
+      type: "p",
+      text:
+        "This is the most misunderstood aspect of trailer ownership in Phoenix. Your Arizona auto insurance liability coverage does extend to a trailer you are towing — meaning if the trailer causes damage to another vehicle or property, your auto liability pays. But that is where the auto policy's coverage ends.",
+    },
+    {
+      type: "p",
+      text:
+        "Damage to the trailer itself — collision, theft, hail, fire — receives zero coverage from a standard Arizona auto policy. A hailstorm on I-17 northbound that destroys the roof of your $68,000 fifth wheel while towing toward Flagstaff is a total out-of-pocket loss without a dedicated trailer policy.",
+    },
+    {
+      type: "table",
+      caption: "What Your Auto Insurance Actually Covers for a Towed Trailer",
+      columns: ["Scenario", "Covered by Auto Policy?", "Covered by Trailer Policy?"],
+      rows: [
+        ["You cause a crash and damage another vehicle", "Yes — auto liability pays", "Yes — also has liability"],
+        ["Your trailer's contents fall off and damage another car", "Yes — auto liability pays", "Yes"],
+        ["The trailer is damaged in a crash (your fault)", "No", "Yes — collision coverage"],
+        ["The trailer is damaged in a crash (other driver's fault)", "No", "Yes — or other driver's liability"],
+        ["Hail damages the trailer roof and AC unit", "No", "Yes — comprehensive"],
+        ["Trailer is stolen from your Phoenix driveway", "No", "Yes — comprehensive"],
+        ["Trailer contents (furniture, electronics) stolen", "No", "Yes — with personal effects rider"],
+        ["Someone is injured at your campsite", "No", "Yes — vacation liability"],
+      ],
+    },
+
+    { type: "h2", text: "Travel Trailer Insurance Rates by Unit Type in Phoenix" },
+    {
+      type: "table",
+      caption: "Travel Trailer Insurance Rates by Unit Type in Phoenix",
+      columns: [
+        "Trailer Type",
+        "Example Unit",
+        "Avg. Value",
+        "Full Coverage Monthly",
+        "Key Coverage",
+      ],
+      rows: [
+        ["Pop-up / folding camper", "Forest River Flagstaff 228D", "$14,000", "$18–$24/mo", "Comprehensive + liability"],
+        ["Teardrop / micro trailer", "nuCamp TAB 400", "$22,000", "$24–$32/mo", "Agreed value preferred"],
+        ["Standard travel trailer (under 25 ft)", "Airstream Bambi 16RB", "$38,000", "$32–$42/mo", "Agreed value + contents"],
+        ["Large travel trailer (25–35 ft)", "Grand Design Imagine 2970RL", "$48,000", "$38–$52/mo", "Full coverage + slideout"],
+        ["Fifth wheel (under 36 ft)", "Keystone Montana 3121RL", "$52,000", "$42–$56/mo", "Full coverage + vacation liability"],
+        ["Fifth wheel (over 36 ft)", "Grand Design Solitude 390RK", "$78,000", "$52–$68/mo", "Agreed value + full-timer option"],
+        ["Toy hauler fifth wheel", "Lance 3006", "$85,000", "$58–$72/mo", "Garage contents + agreed value"],
+      ],
+    },
+
+    {
+      type: "h2",
+      text: "Slideout Coverage: A Critical Detail for Phoenix Fifth Wheel Owners",
+    },
+    {
+      type: "p",
+      text:
+        "Slideout rooms — the hydraulic or electric extensions that expand the living area — are the most commonly damaged component on fifth wheels and travel trailers in Arizona. Phoenix's extreme heat warps slideout seals, creating water intrusion damage. Wind and monsoon debris impact slideout panels. A single slideout failure can cost $3,500–$12,000 to repair.",
+    },
+    {
+      type: "p",
+      text:
+        "Standard trailer policies cover slideout damage under collision (if caused by an accident) and comprehensive (if caused by a covered peril like hail or falling debris). Mechanical breakdown of the slideout motor or hydraulics is excluded — that falls under an extended warranty. Protegrity Insurance recommends documenting all slideout dimensions and conditions annually for Phoenix-area trailer owners.",
+    },
+
+    { type: "h2", text: "Full-Timer Coverage for Phoenix-Area Long-Term Trailer Residents" },
+    {
+      type: "p",
+      text:
+        "An estimated 12,000–15,000 Phoenix-area residents live in travel trailers or fifth wheels on a full-time or snowbird basis (RVIA, 2024). Standard trailer insurance is designed for occasional use — policies that include full-timer coverage add personal liability ($100,000–$500,000), medical payments for visitors, and broader personal property protection appropriate for a primary or secondary residence.",
+    },
+    {
+      type: "p",
+      text:
+        "Full-timer upgrade adds approximately $18–$32/month to a standard trailer policy. It is required by most permanent RV parks in the Phoenix metro including Usery Pass Recreation Area and Mesa Spirit RV Resort, which mandate full-timer liability coverage as a condition of long-term lease agreements.",
+    },
+
+    { type: "h2", text: "Frequently Asked Questions: Travel Trailer Insurance in Phoenix" },
+    {
+      type: "faq",
+      items: [
+        {
+          question: "Q: Does my auto insurance cover a travel trailer in Arizona?",
+          answer:
+            "Your auto insurance liability coverage extends to a trailer you are actively towing — meaning damage you cause to others is covered. Physical damage to the trailer itself (collision, theft, hail, fire) is not covered by any standard Arizona auto policy. A dedicated travel trailer policy from Progressive, Foremost, or National General costs $18–$68/month and covers the trailer 24 hours a day, whether attached, parked at a campsite, or stored in your Phoenix driveway.",
+        },
+        {
+          question: "Q: Is travel trailer insurance required in Arizona?",
+          answer:
+            "Arizona does not require insurance for towed trailers by state law. However: (1) any lender financing a trailer purchase requires collision and comprehensive coverage; (2) many Phoenix-area RV parks and campgrounds require proof of liability insurance for permanent or long-term stays; and (3) Protegrity Insurance recommends coverage for any trailer valued over $10,000 because an uninsured theft or total loss is a complete financial loss with no recourse.",
+        },
+        {
+          question: "Q: How much does fifth wheel insurance cost in Phoenix?",
+          answer:
+            "A fifth wheel valued at $52,000–$78,000 costs $42–$68/month for full coverage in Phoenix from Progressive or Foremost. This includes collision, comprehensive (covering Phoenix's hail and monsoon exposure), $300,000 in liability, personal effects up to $3,000, and emergency expense coverage. Agreed value policies — which pay the stated insured amount with no depreciation — add approximately $8–$14/month and are strongly recommended for fifth wheels over $50,000.",
+        },
+        {
+          question: "Q: What is toy hauler insurance in Phoenix and what does the garage section cover?",
+          answer:
+            "A toy hauler's garage section — the rear cargo area used to transport ATVs, motorcycles, dirt bikes, or golf carts — is covered under the trailer's comprehensive and collision policies as part of the vehicle structure. However, the recreational vehicles inside the garage are not covered by the trailer policy. Each ATV, motorcycle, or dirt bike inside the toy hauler requires its own separate insurance policy. Protegrity Insurance can bundle toy hauler and ATV/motorcycle policies for a combined multi-unit discount of 8–12%.",
+        },
+        {
+          question: "Q: Does travel trailer insurance cover theft of belongings inside the trailer?",
+          answer:
+            "Personal effects coverage — included as standard by Progressive (up to $1,500) and available as a rider up to $30,000 — covers theft of belongings inside your trailer: clothing, bedding, kitchen items, portable electronics, and recreational equipment. Items permanently installed in the trailer (built-in appliances, custom cabinetry, built-in entertainment systems) are covered under the trailer's physical damage coverage, not personal effects.",
+        },
+        {
+          question: "Q: Can I insure a travel trailer I store year-round in Phoenix?",
+          answer:
+            "Yes, and Protegrity Insurance recommends comprehensive coverage even during storage periods. Phoenix's storage season risks include: theft (ATV trailers and large fifth wheels are targeted in Maricopa County storage facilities), monsoon hail damage (even in covered storage, wind-driven hail can damage exterior panels), rodent damage (packrat intrusion is a documented comprehensive claim category in Arizona — some carriers cover rodent damage; confirm before purchasing), and UV degradation from extreme sun exposure requiring roof and seal maintenance claims.",
+        },
+      ],
+    },
+  ],
+  finalCta: {
+    headline: "Get Your Free Specialty Insurance Quote in Phoenix Today",
+    intro:
+      "Call Protegrity Insurance: (480) XXX-XXXX (click-to-call) | Get your free quote at protegrityinsurance.com",
+    body: "",
+    phoneLabel: "(480) XXX-XXXX",
+    phoneHref: "tel:480xxxxxxx",
+    quoteHref: "https://protegrityinsurance.com",
+    trustLine:
+      "5-star rated · 30+ top-rated carriers · Licensed Arizona agents · Motorcycle, ATV, Boat, RV specialists",
+  },
+  relatedLinks: [
+    {
+      label: "Auto Insurance",
+      href: "/auto-insurance",
+      description:
+        "Bundle travel trailer and auto insurance for additional savings with major carriers.",
+    },
+    {
+      label: "Life Insurance",
+      href: "/life-insurance",
+      description:
+        "Protect your family with the right life insurance coverage and competitive rates.",
+    },
+    {
+      label: "Back to Blog",
+      href: "/blog",
+      description:
+        "More guides and insurance resources from our licensed Arizona team.",
+    },
+  ],
+  references: [],
+  footer: {
+    lastUpdated: "Last updated: April 2026",
+    copyright: "© 2026 Protegrity Insurance. All rights reserved. | protegrityinsurance.com",
+  },
+}
+
+const motorhomeInsurancePhoenixPost: BlogPost = {
+  slug: "motorhome-insurance-phoenix-az",
+  title:
+    "Motorhome Insurance in Phoenix, AZ: Class A, B, and C Coverage Guide (2026)",
+  excerpt:
+    "Motorhome insurance in Phoenix, AZ: rates for Class A, B, and C motorhomes, Arizona requirements, full-timer coverage, and how to save on RV insurance for your Valley-based rig.",
+  metaTitle:
+    "Motorhome Insurance in Phoenix, AZ: Class A, B, and C Coverage Guide (2026)",
+  metaDescription:
+    "Motorhome insurance in Phoenix, AZ: rates for Class A, B, and C motorhomes, Arizona requirements, full-timer coverage, and how to save on RV insurance for your Valley-based rig.",
+  keywords: ["motorhome insurance Phoenix AZ"],
+  category: "SPECIALTY INSURANCE",
+  readTime: "9 min read",
+  displayDate: "April 2026",
+  publishedISO: "2026-04-26",
+  modifiedISO: "2026-04-26",
+  breadcrumbLabel: "Motorhome Insurance Phoenix",
+  author: ryanLorschAuthor,
+  heroImage: {
+    src: "https://images.unsplash.com/photo-1655827268198-aee7f7ace729",
+    alt: "Class A motorhome on Arizona highway representing motorhome insurance for Phoenix RV owners",
+    width: 1920,
+    height: 1080,
+    photographer: "Matthew Mendini",
+    photographerUrl: "https://unsplash.com/@matthewmendini",
+  },
+  image: {
+    src: "https://images.unsplash.com/photo-1655827268198-aee7f7ace729",
+    alt: "Class A motorhome on Arizona highway representing motorhome insurance for Phoenix RV owners",
+    width: 1920,
+    height: 1080,
+    photographer: "Matthew Mendini",
+    photographerUrl: "https://unsplash.com/@matthewmendini",
+  },
+  keyTakeaways: {
+    items: [
+      "Motorhome insurance in Phoenix, AZ costs an average of $148–$248/month for full coverage depending on class and vehicle value.",
+      "Arizona law requires all Class A, B, and C motorhomes to carry minimum liability of 25/50/15 (ARS § 28-4009) — the same as an automobile.",
+      "A motorhome is not a car: its size, value, and dual-use as both a vehicle and a temporary residence require a specialized policy that standard auto insurance cannot provide.",
+      "Phoenix motorhome owners can save $28–$44/month by bundling motorhome and auto insurance through the same carrier.",
+      "Full-timer coverage for Phoenix residents living in their RV adds $22–$38/month but provides $300,000–$500,000 in personal liability coverage.",
+    ],
+  },
+  content: [
+    { type: "h2", text: "The Short Answer: Motorhome Insurance in Phoenix" },
+    {
+      type: "p",
+      text:
+        "Motorhome insurance in Phoenix, AZ costs an average of $148–$248/month for full coverage depending on class and vehicle value, according to Progressive and Nationwide 2024 RV rate data for Maricopa County. Arizona law requires all Class A, B, and C motorhomes to carry minimum liability of 25/50/15 (ARS § 28-4009) — the same as an automobile. However, a motorhome is not a car: its size, value, and dual-use as both a vehicle and a temporary residence require a specialized policy that standard auto insurance cannot provide.",
+    },
+
+    {
+      type: "h2",
+      text: "Class A vs. Class B vs. Class C: How Does Each Affect Insurance Costs?",
+    },
+    {
+      type: "table",
+      caption: "Class A vs. Class B vs. Class C: How Does Each Affect Insurance Costs?",
+      columns: [
+        "Class",
+        "Description",
+        "Typical Length",
+        "Avg. Value Range",
+        "Avg. Monthly Premium (Phoenix)",
+      ],
+      rows: [
+        ["Class A — Gas", "Full-size coach on truck chassis", "28–40 ft", "$80,000–$175,000", "$148–$198/mo"],
+        ["Class A — Diesel Pusher", "Full-size coach, rear diesel engine", "38–45 ft", "$200,000–$600,000", "$212–$248/mo"],
+        ["Class B — Campervan", "Van-based, full-featured", "18–24 ft", "$120,000–$250,000", "$138–$178/mo"],
+        ["Class C — Gas", "Cab-over design on truck frame", "20–33 ft", "$65,000–$140,000", "$112–$158/mo"],
+        ["Class C — Super C (diesel)", "Truck cab-over, heavy duty", "33–40 ft", "$175,000–$380,000", "$178–$228/mo"],
+      ],
+    },
+
+    { type: "h2", text: "What Motorhome Insurance Covers in Phoenix That Auto Insurance Does Not" },
+    {
+      type: "p",
+      lead: "Vacation liability:",
+      text:
+        "If your Phoenix motorhome is parked at a Sedona RV park and a visitor trips and is injured at your campsite, auto liability does not cover this. Motorhome vacation liability — included in all specialty RV policies — covers bodily injury claims that occur while the motorhome is parked and being used as a temporary dwelling.",
+    },
+    {
+      type: "p",
+      lead: "Emergency expense coverage:",
+      text:
+        "If your Class A diesel breaks down on I-40 near Winslow (135 miles from Phoenix), emergency expense coverage pays $750–$1,500 per incident for hotel rooms, meals, and alternative transportation while your motorhome is repaired. Auto insurance provides no such coverage.",
+    },
+    {
+      type: "p",
+      lead: "Total loss replacement:",
+      text:
+        "For motorhomes less than 5 model years old, Progressive and Nationwide offer total loss replacement coverage — replacing a totaled unit with a comparable current-year model rather than paying depreciated actual cash value. A 2023 Thor Palazzo worth $162,000 at purchase may have an ACV of $138,000 after one year — a $24,000 gap that total loss replacement covers.",
+    },
+    {
+      type: "p",
+      lead: "Attached accessories:",
+      text:
+        "Awnings, satellite dishes, solar panels, exterior entertainment systems, and generator units attached to the motorhome are covered under comprehensive and collision. Detached accessories (chairs, tables, external grills) require a personal effects rider.",
+    },
+
+    { type: "h2", text: "Top Motorhome Insurance Carriers for Phoenix Residents" },
+    {
+      type: "table",
+      caption: "Top Motorhome Insurance Carriers for Phoenix Residents",
+      columns: [
+        "Carrier",
+        "Class A Monthly Avg.",
+        "Full-Timer Option",
+        "Total Loss Replacement",
+        "Best For",
+      ],
+      rows: [
+        ["Progressive", "$162/mo", "Yes", "Yes (under 5 yrs)", "Best overall rates"],
+        ["Nationwide", "$172/mo", "Yes", "Yes (under 7 yrs)", "Full-timer specialists"],
+        ["Good Sam (Nationwide)", "$168/mo", "Yes", "Yes", "Membership discounts"],
+        ["Foremost", "$178/mo", "Yes", "Yes", "High-value Class A diesel"],
+        ["Safeco (Liberty Mutual)", "$188/mo", "No", "No", "Bundle with homeowners"],
+        ["USAA", "$148/mo", "Yes", "Yes", "Military families only"],
+      ],
+    },
+
+    { type: "h2", text: "Saving on Motorhome Insurance in Phoenix: 6 Actionable Strategies" },
+    {
+      type: "p",
+      lead: "1. Storage discount:",
+      text:
+        "If your Phoenix motorhome is stored in a covered facility (not operated) for more than 30 consecutive days, Progressive and Nationwide offer a storage discount of 8–15%. Many Phoenix snowbirds earn this discount from May through September when the motorhome sits at a Mesa or Chandler storage facility.",
+    },
+    {
+      type: "p",
+      lead: "2. Multi-vehicle bundle:",
+      text:
+        "Insuring your motorhome and tow vehicle (or auto) through the same carrier saves an average of $28–$44/month in Phoenix on the combined policies.",
+    },
+    {
+      type: "p",
+      lead: "3. RV safety course:",
+      text:
+        "Completion of an RV-specific driving safety course (available through the RV Safety & Education Foundation) earns a 5–10% discount at Progressive and Nationwide in Arizona.",
+    },
+    {
+      type: "p",
+      lead: "4. Good Sam membership:",
+      text:
+        "Good Sam members receive a 4–8% discount on Good Sam-branded Nationwide policies — a meaningful saving on a $172/month base premium.",
+    },
+    {
+      type: "p",
+      lead: "5. Pay annually:",
+      text:
+        "Paying your full annual premium upfront saves $96–$216/year in installment fees on most Phoenix motorhome policies.",
+    },
+    {
+      type: "p",
+      lead: "6. Raise your deductible:",
+      text:
+        "Increasing the collision deductible from $1,000 to $2,500 on a Class A motorhome policy reduces the monthly premium by an average of $18–$28/month in Phoenix — a meaningful saving given that most motorhome collision claims exceed $10,000.",
+    },
+
+    { type: "h2", text: "Frequently Asked Questions: Motorhome Insurance in Phoenix" },
+    {
+      type: "faq",
+      items: [
+        {
+          question: "Q: Do I need a special license to drive a motorhome in Arizona?",
+          answer:
+            "Arizona does not require a special license for motorhomes under 26,000 lbs GVWR — which covers most Class A gas, Class B, and Class C motorhomes. Class A diesel pushers over 26,000 lbs require a Class B commercial license (CDL-B) in Arizona under ARS § 28-3001. Driving a CDL-required motorhome without the appropriate license may void your insurance coverage in the event of an accident.",
+        },
+        {
+          question: "Q: What is the best motorhome insurance for a Phoenix full-timer?",
+          answer:
+            "Nationwide's Specialty Motorhome program and Progressive's full-timer endorsement are the two best options for Phoenix residents living in their motorhome full-time. Both programs add personal liability ($300,000–$500,000), medical payments for guests, broader personal property coverage (up to $50,000), and loss of use coverage. Full-timer upgrades add $22–$38/month to a standard motorhome policy in Phoenix.",
+        },
+        {
+          question: "Q: Does motorhome insurance cover the toad (towed vehicle) in Arizona?",
+          answer:
+            "No. A toad (a car or truck flat-towed behind a Class A motorhome) requires its own separate auto insurance policy. The motorhome's liability coverage may extend to the toad while it is being towed, but physical damage to the toad is not covered by the motorhome policy. Many Phoenix Class A owners carry a separate non-owner auto policy or maintain their toad's regular auto insurance policy specifically for physical damage coverage.",
+        },
+        {
+          question: "Q: How does Arizona's heat affect motorhome insurance claims in Phoenix?",
+          answer:
+            "Phoenix's extreme summer heat — with 100+ days above 100°F annually — generates specific motorhome claim categories: roof delamination from UV exposure, slideout seal failure from heat warping, tire blowouts on I-10 and I-8 during summer travel, and AC unit failures from overload. Roof and slideout damage from heat-caused delamination are maintenance issues excluded from standard policies. Tire blowout damage to the motorhome's exterior from a heat-caused blowout may be covered under comprehensive if documented as a sudden loss rather than gradual wear.",
+        },
+        {
+          question: "Q: Can I use my motorhome as a primary residence in Phoenix?",
+          answer:
+            "Yes. Phoenix has no municipal ordinance prohibiting full-time RV living in permitted RV parks and communities. Thousand Trails Phoenix, Arizona Sands RV Park in Mesa, and Val Vista Village in Mesa are among the Phoenix-area communities that accommodate full-time RV residents. Full-time residence in a motorhome requires a full-timer insurance policy — standard motorhome insurance is voided if the carrier discovers the unit is used as a primary residence without the appropriate endorsement.",
+        },
+        {
+          question: "Q: What discounts are available for motorhome insurance in Phoenix?",
+          answer:
+            "Phoenix motorhome owners qualify for: multi-vehicle bundle ($28–$44/month savings), storage discount during summer months (8–15%), annual payment ($8–$18/month savings), Good Sam membership (4–8%), RV safety course completion (5–10%), and claim-free renewal bonus (5–8% after 3 years without a claim). Stacking all available discounts can reduce a $172/month Nationwide Class A policy to approximately $128–$138/month for a qualifying Phoenix driver.",
+        },
+      ],
+    },
+  ],
+  finalCta: {
+    headline: "Get Your Free Specialty Insurance Quote in Phoenix Today",
+    intro:
+      "Call Protegrity Insurance: (480) XXX-XXXX (click-to-call) | Get your free quote at protegrityinsurance.com",
+    body: "",
+    phoneLabel: "(480) XXX-XXXX",
+    phoneHref: "tel:480xxxxxxx",
+    quoteHref: "https://protegrityinsurance.com",
+    trustLine:
+      "5-star rated · 30+ top-rated carriers · Licensed Arizona agents · Motorcycle, ATV, Boat, RV specialists",
+  },
+  relatedLinks: [
+    {
+      label: "Auto Insurance",
+      href: "/auto-insurance",
+      description:
+        "Bundle motorhome and auto insurance for additional savings with major carriers.",
+    },
+    {
+      label: "Home Insurance",
+      href: "/home-insurance",
+      description:
+        "Protect your home and motorhome with comprehensive coverage options.",
+    },
+    {
+      label: "Back to Blog",
+      href: "/blog",
+      description:
+        "More guides and insurance resources from our licensed Arizona team.",
+    },
+  ],
+  references: [],
+  footer: {
+    lastUpdated: "Last updated: April 2026",
+    copyright: "© 2026 Protegrity Insurance. All rights reserved. | protegrityinsurance.com",
+  },
+}
+
+const bestSpecialtyInsuranceCompaniesPhoenixPost: BlogPost = {
+  slug: "best-specialty-insurance-companies-phoenix-az",
+  title:
+    "Best Specialty Insurance Companies in Phoenix, AZ for Motorcycles, Boats, ATVs, and RVs (2026)",
+  excerpt:
+    "The best specialty insurance carriers in Phoenix, AZ for motorcycles, ATVs, boats, jet skis, and RVs — rated by price, coverage, claims satisfaction, and Maricopa County market data.",
+  metaTitle:
+    "Best Specialty Insurance Companies in Phoenix, AZ for Motorcycles, Boats, ATVs, and RVs (2026)",
+  metaDescription:
+    "The best specialty insurance carriers in Phoenix, AZ for motorcycles, ATVs, boats, jet skis, and RVs — rated by price, coverage, claims satisfaction, and Maricopa County market data.",
+  keywords: ["specialty insurance companies Phoenix AZ"],
+  category: "SPECIALTY INSURANCE",
+  readTime: "9 min read",
+  displayDate: "April 2026",
+  publishedISO: "2026-04-26",
+  modifiedISO: "2026-04-26",
+  breadcrumbLabel: "Best Specialty Insurance Companies Phoenix",
+  author: ryanLorschAuthor,
+  heroImage: {
+    src: "https://images.unsplash.com/photo-1654476727699-8589bfd5e9bd",
+    alt: "Collection of recreational vehicles representing specialty insurance companies serving Phoenix Arizona",
+    width: 1920,
+    height: 1080,
+    photographer: "Leo_Visions",
+    photographerUrl: "https://unsplash.com/@leo_visions_",
+  },
+  image: {
+    src: "https://images.unsplash.com/photo-1654476727699-8589bfd5e9bd",
+    alt: "Collection of recreational vehicles representing specialty insurance companies serving Phoenix Arizona",
+    width: 1920,
+    height: 1080,
+    photographer: "Leo_Visions",
+    photographerUrl: "https://unsplash.com/@leo_visions_",
+  },
+  keyTakeaways: {
+    items: [
+      "The best specialty insurance companies for Phoenix, AZ residents in 2026 are Progressive (motorcycles, ATVs, boats, PWC), Foremost (RVs, trailers, high-value marine), Markel (vintage vehicles, classic boats, custom builds), BoatUS (marine/watercraft), and USAA (all specialty lines for military families).",
+      "Progressive is the #1 specialty vehicle insurer in Arizona by policy count and offers the lowest average rates for motorcycles ($58/month), ATVs ($28–$72/month), and PWCs ($22–$38/month).",
+      "Foremost is the top-rated RV and trailer insurer in the Phoenix market, with specific expertise in Class A diesel motorhomes and high-value fifth wheels.",
+      "Protegrity Insurance works with 30+ carriers to match each Phoenix client with the right specialty insurer for their specific vehicles.",
+      "Bundling multiple specialty vehicles with one carrier saves Phoenix owners an average of $10–$22/month compared to separate policies.",
+    ],
+  },
+  content: [
+    { type: "h2", text: "The Short Answer: Best Specialty Insurance in Phoenix" },
+    {
+      type: "p",
+      text:
+        "The best specialty insurance companies for Phoenix, AZ residents in 2026 are Progressive (motorcycles, ATVs, boats, PWC), Foremost (RVs, trailers, high-value marine), Markel (vintage vehicles, classic boats, custom builds), BoatUS (marine/watercraft), and USAA (all specialty lines for military families). This guide ranks each carrier by coverage quality, price competitiveness, and specific strengths in the Maricopa County market across all five specialty vehicle categories.",
+    },
+
+    { type: "h2", text: "Why Specialty Vehicle Insurance Is Different From Standard Auto Coverage" },
+    {
+      type: "p",
+      text:
+        "Standard auto insurance in Arizona (ARS § 28-4009) covers passenger vehicles on public roads. It does not extend to motorcycles, ATVs, boats, jet skis, or RVs beyond the towing liability provision for trailers. Each specialty vehicle category requires a dedicated policy with underwriting criteria, coverage options, and claim processes specific to that vehicle type. Protegrity Insurance works with 30+ carriers to match each Phoenix client with the right specialty insurer for their specific vehicles.",
+    },
+
+    { type: "h2", text: "Best Specialty Insurance Carriers in Phoenix: Full Comparison" },
+    {
+      type: "table",
+      caption: "Best Specialty Insurance Carriers in Phoenix: Full Comparison",
+      columns: [
+        "Carrier",
+        "AM Best Rating",
+        "Motorcycle",
+        "ATV/UTV",
+        "Boat/PWC",
+        "RV/Motorhome",
+        "NAIC Complaint Index",
+      ],
+      rows: [
+        ["Progressive", "A+", "★★★★★", "★★★★★", "★★★★☆", "★★★★☆", "0.89"],
+        ["Foremost (Farmers)", "A+", "★★★☆☆", "★★★★☆", "★★★★☆", "★★★★★", "0.74"],
+        ["Markel", "A", "★★★★☆", "★★★☆☆", "★★★★★", "★★★☆☆", "0.62"],
+        ["BoatUS (GeoVera)", "A-", "★☆☆☆☆", "★☆☆☆☆", "★★★★★", "★☆☆☆☆", "0.58"],
+        ["Dairyland", "A+", "★★★★☆", "★★★☆☆", "★☆☆☆☆", "★☆☆☆☆", "0.94"],
+        ["Nationwide", "A+", "★★★★☆", "★★★★☆", "★★★☆☆", "★★★★☆", "0.54"],
+        ["USAA", "A++", "★★★★★", "★★★★★", "★★★★★", "★★★★★", "0.43"],
+        ["Hagerty / Grundy", "A", "★★★★★ (vintage)", "★★★★☆ (vintage)", "★★★★☆", "★★★★☆ (vintage)", "0.41"],
+      ],
+    },
+
+    { type: "h2", text: "Progressive: Best Overall Specialty Carrier in Phoenix" },
+    {
+      type: "p",
+      text:
+        "Progressive is the #1 specialty vehicle insurer in Arizona by policy count and is Protegrity Insurance's most-quoted carrier across all Phoenix specialty lines. Progressive offers the lowest average rates for motorcycles ($58/month full coverage), ATVs ($28–$72/month), and PWCs ($22–$38/month). Their custom parts and equipment coverage reaches $30,000 for motorcycles and $50,000 for ATVs — the highest limits of any standard carrier in Arizona. Progressive files SR-22 for motorcycles and has the broadest underwriting acceptance of any specialty carrier, including riders with prior DUIs or lapses.",
+    },
+
+    { type: "h2", text: "Foremost: Best for RVs and High-Value Trailers in Phoenix" },
+    {
+      type: "p",
+      text:
+        "Foremost (owned by Farmers Insurance) is the top-rated RV and trailer insurer in the Phoenix market, with specific expertise in Class A diesel motorhomes, high-value fifth wheels, and toy haulers. Foremost's agreed value motorhome policies pay the full insured value with no depreciation — critical for diesel pushers worth $200,000–$600,000. Foremost insures over 800,000 RVs nationally and has the deepest claims experience with Maricopa County-specific risks including monsoon hail, UV roof damage, and slideout failures.",
+    },
+
+    { type: "h2", text: "Markel: Best for Vintage, Custom, and High-Value Marine in Phoenix" },
+    {
+      type: "p",
+      text:
+        "Markel specializes in vehicles that standard carriers decline: vintage motorcycles (pre-1980), custom choppers, classic wooden boats, and high-value ski boats over $100,000. Markel's agreed value policies for vintage motorcycles cover agreed value up to $150,000 — standard carriers cap coverage at $30,000–$50,000. For Phoenix boat owners with Malibu Wakesetter or MasterCraft ski boats above $85,000, Markel offers the most competitive agreed value marine coverage in the Arizona market.",
+    },
+
+    { type: "h2", text: "BoatUS: Best Dedicated Marine Carrier for Phoenix Boaters" },
+    {
+      type: "p",
+      text:
+        "BoatUS (underwritten by GeoVera) is the country's largest dedicated boat insurance provider and has the deepest experience with Arizona freshwater lake boating claims. BoatUS policies include $100 on-water towing as a standard benefit — critical for Lake Pleasant and Saguaro Lake where commercial towing costs $300–$800. BoatUS offers agreed value coverage on boats up to $500,000 and consistently earns top ratings from J.D. Power's marine insurance satisfaction survey.",
+    },
+
+    {
+      type: "h2",
+      text: "How Protegrity Insurance Matches Phoenix Clients to the Right Specialty Carrier",
+    },
+    {
+      type: "p",
+      text:
+        "At Protegrity Insurance, we do not default every client to a single carrier. Our licensed Phoenix agents use a structured needs assessment that evaluates: vehicle type and value, intended use (recreational, full-time, racing), storage location and conditions, custom parts and modifications, desired deductibles and coverage limits, and existing policy relationships for bundle opportunities.",
+    },
+    {
+      type: "p",
+      text:
+        "This assessment, applied to 30+ carrier options, consistently produces specialty insurance placements that save Phoenix clients an average of $28–$62/month compared to clients who purchase directly through a single carrier's online portal.",
+    },
+
+    { type: "h2", text: "Frequently Asked Questions: Specialty Insurance Carriers in Phoenix" },
+    {
+      type: "faq",
+      items: [
+        {
+          question: "Q: Which carrier is best for insuring multiple specialty vehicles in Phoenix?",
+          answer:
+            "Progressive is the best single carrier for Phoenix owners with multiple specialty vehicles — motorcycle + ATV, motorcycle + boat, or ATV + PWC combinations. Progressive offers multi-unit specialty discounts of 8–15% on all covered vehicles. For an owner with a motorcycle ($68/month), an ATV ($34/month), and a PWC ($28/month), a Progressive multi-unit policy averages $108/month combined — versus $130/month for three separate policies from different carriers.",
+        },
+        {
+          question: "Q: Does USAA offer specialty vehicle insurance in Phoenix?",
+          answer:
+            "Yes. USAA offers motorcycle, ATV, boat, PWC, and RV insurance to eligible members in Arizona — and their rates are consistently the lowest of any carrier across all specialty categories. A USAA-eligible Phoenix rider pays $54/month for full motorcycle coverage versus $58/month at Progressive. USAA membership requires active duty, veteran, or eligible family member status. Luke Air Force Base and Williams Gateway Airport personnel in the Phoenix metro area qualify.",
+        },
+        {
+          question: "Q: What is the difference between agreed value and actual cash value for specialty vehicles?",
+          answer:
+            "Agreed value pays the full stated insured amount after a total loss with no depreciation deduction. Actual cash value (ACV) pays the depreciated market value at the time of loss. For a 2022 Polaris RZR Pro XP purchased at $22,000, ACV after two years may be $16,000. Agreed value pays $22,000. The cost difference is $6–$18/month in Phoenix. Agreed value is strongly recommended for any specialty vehicle over $15,000.",
+        },
+        {
+          question: "Q: Can I bundle all my specialty vehicles with one Phoenix carrier?",
+          answer:
+            "Yes, through Protegrity Insurance. We can structure multi-vehicle specialty packages combining motorcycle, ATV, boat, and RV coverage with a single carrier — typically Progressive or Nationwide — with all vehicles on one bill and one renewal date. This eliminates administrative complexity and earns bundle discounts across all vehicles. A Phoenix family with a Class C motorhome, two ATVs, and a pontoon boat averages $228/month combined under a Nationwide multi-vehicle specialty package versus $284/month across separate single-carrier policies.",
+        },
+        {
+          question: "Q: How quickly can I get specialty insurance in Phoenix?",
+          answer:
+            "Through Protegrity Insurance, most Phoenix specialty vehicle policies are quoted, bound, and issued with digital proof of insurance within 20–40 minutes. Same-day coverage is available for motorcycles, ATVs, boats, PWCs, and travel trailers from Progressive and Foremost. RV motorhome policies may require 24–48 hours for proper valuation on high-value Class A diesel units. SR-22 filings for motorcycle policies are transmitted electronically to Arizona MVD within 24 hours.",
+        },
+        {
+          question: "Q: Who should I call if I have a specialty insurance claim in Phoenix?",
+          answer:
+            "Call Protegrity Insurance first at (480) XXX-XXXX. Our licensed Phoenix agents are available to help you initiate your claim with the correct carrier, document the loss properly, and navigate the claims process from first notice through settlement. Arizona law (ARS § 20-462) requires insurers to acknowledge your claim within 10 business days — Protegrity Insurance monitors claim timelines on your behalf to ensure your carrier meets its statutory obligations.",
+        },
+      ],
+    },
+  ],
+  finalCta: {
+    headline: "Get Your Free Specialty Insurance Quote in Phoenix Today",
+    intro:
+      "Call Protegrity Insurance: (480) XXX-XXXX (click-to-call) | Get your free quote at protegrityinsurance.com",
+    body: "",
+    phoneLabel: "(480) XXX-XXXX",
+    phoneHref: "tel:480xxxxxxx",
+    quoteHref: "https://protegrityinsurance.com",
+    trustLine:
+      "5-star rated · 30+ top-rated carriers · Licensed Arizona agents · Motorcycle, ATV, Boat, RV specialists",
+  },
+  relatedLinks: [
+    {
+      label: "Auto Insurance",
+      href: "/auto-insurance",
+      description:
+        "Bundle specialty and auto insurance for additional savings with major carriers.",
+    },
+    {
+      label: "Home Insurance",
+      href: "/home-insurance",
+      description:
+        "Protect your home and recreational vehicles with comprehensive coverage.",
+    },
+    {
+      label: "Back to Blog",
+      href: "/blog",
+      description:
+        "More guides and insurance resources from our licensed Arizona team.",
+    },
+  ],
+  references: [],
+  footer: {
+    lastUpdated: "Last updated: April 2026",
+    copyright: "© 2026 Protegrity Insurance. All rights reserved. | protegrityinsurance.com",
+  },
+}
+
 /* -------------------------------------------------------------------------- */
 /*  Public exports                                                            */
 /* -------------------------------------------------------------------------- */
@@ -9584,6 +10224,9 @@ export const blogPosts: BlogPost[] = [
   jetSkiInsurancePhoenixPost,
   watercraftInsurancePhoenixPost,
   rvInsurancePhoenixPost,
+  travelTrailerInsurancePhoenixPost,
+  motorhomeInsurancePhoenixPost,
+  bestSpecialtyInsuranceCompaniesPhoenixPost,
   sr22InsurancePhoenixPost,
   carInsuranceAfterDuiPhoenixPost,
   fullCoverageCarInsurancePhoenixPost,
