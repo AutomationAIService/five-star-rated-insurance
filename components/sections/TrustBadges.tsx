@@ -2,6 +2,7 @@ import Image from "next/image"
 import { BrandNavyStarOverlay } from "@/components/brand/BrandNavyStarOverlay"
 import { Check, Star } from "lucide-react"
 import { cn } from "@/lib/utils"
+import protegrityLogo from "@/5 Star Insurance Logos/Protegrity Logo Updated BG Removed Cropped.png"
 
 const GOLD_STAR = "#FFD700"
 
@@ -58,33 +59,39 @@ export function TrustBadges() {
 
         <div className="mx-auto mt-10 flex max-w-5xl flex-col gap-10 lg:mt-12 lg:flex-row lg:items-start lg:justify-center lg:gap-12 lg:gap-14">
           {/* Google style rating card */}
-          <div className="mx-auto w-full max-w-md shrink-0 lg:mx-0">
+          <div className="mx-auto h-auto w-full max-w-md shrink-0 self-center lg:mx-0 lg:self-start">
             <div
               className={cn(
-                "rounded-2xl border border-slate-200/90 bg-white p-6 shadow-md md:p-8",
+                "rounded-2xl border border-slate-200/90 bg-white px-6 py-7 shadow-lg md:px-8 md:py-8",
                 "ring-1 ring-black/[0.04]",
                 "transition-shadow duration-200 hover:shadow-lg"
               )}
             >
               <div className="flex flex-col items-center text-center">
                 <Image
-                  src="/images/Protegrity Logo 240.png"
+                  src={protegrityLogo}
                   alt="Protegrity Insurance"
-                  width={240}
-                  height={155}
-                  className="mx-auto h-auto w-[240px] max-w-full object-contain"
+                  className="h-auto w-44 object-contain md:w-52"
+                  priority
                 />
+
+                <p className="mt-3 text-xs font-semibold uppercase tracking-[0.28em] text-navy">
+                  PROTECTION WITH INTEGRITY
+                </p>
+
                 <div
-                  className="mt-3 flex items-center justify-center gap-2 md:gap-3"
+                  className="mt-6 flex items-center justify-center gap-2"
                   aria-label="Rating 5.0 out of 5"
                 >
-                  <span className="font-heading text-xl font-bold leading-none text-navy">
+                  <span className="font-heading text-lg font-bold leading-none text-slate-950">
                     5.0
                   </span>
                   <GoldStarsRow starClassName="size-5 md:size-6" />
                 </div>
-                <p className="mt-1 text-sm text-gray-600">Insurance Broker</p>
-                <p className="mt-4 max-w-[20rem] text-sm leading-snug text-[#5f6368] md:text-base">
+
+                <p className="mt-1 text-sm text-slate-700">Insurance Broker</p>
+
+                <p className="mt-4 max-w-[20rem] text-sm leading-snug text-slate-600 md:text-base">
                   Based on 465+ authentic Google reviews
                 </p>
               </div>
