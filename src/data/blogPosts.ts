@@ -10876,11 +10876,374 @@ const personalUmbrellaInsuranceArizonaPost: BlogPost = {
   },
 }
 
+const commercialAutoInsuranceArizonaPost: BlogPost = {
+  slug: "commercial-auto-insurance-arizona",
+  title: "Commercial Auto Insurance in Arizona: What It Covers, What It Costs, and How to Compare",
+  excerpt:
+    "Arizona law requires commercial auto insurance on all business vehicles. Compare quotes across 10 carriers through Protegrity Insurance — 5-star rated, 466 Google reviews.",
+  metaTitle: "Commercial Auto Insurance Arizona | 2026 Guide",
+  metaDescription:
+    "Arizona law requires commercial auto insurance on all business vehicles. Compare quotes across 10 carriers through Protegrity Insurance — 5-star rated, 466 Google reviews.",
+  keywords: ["commercial auto insurance Arizona"],
+  category: "Business Insurance",
+  readTime: "11 min read",
+  displayDate: "April 2026",
+  publishedISO: "2026-04-26",
+  modifiedISO: "2026-04-26",
+  breadcrumbLabel: "Commercial Auto Insurance Arizona",
+  author: ryanLorschAuthor,
+  heroImage: {
+    src: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7",
+    alt: "Commercial delivery van on Arizona highway representing commercial auto insurance for Phoenix businesses",
+    width: 1920,
+    height: 1080,
+  },
+  image: {
+    src: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7",
+    alt: "Commercial delivery van on Arizona highway representing commercial auto insurance for Phoenix businesses",
+    width: 1920,
+    height: 1080,
+  },
+  keyTakeaways: {
+    items: [
+      "Arizona law requires all business vehicles to carry minimum 25/50/15 liability coverage — and higher limits for trucks, vehicles-for-hire, and vehicles crossing state lines.",
+      "The average cost of commercial auto insurance in Arizona is $205/month — 39% above the national average of $147/month (Insureon, 2025).",
+      "Commercial auto rates have increased for 55 consecutive quarters nationally, driven by nuclear verdicts, driver shortages, and rising repair costs.",
+      "Your personal auto policy does not cover accidents that happen during business use — a gap that leaves drivers financially exposed without a commercial policy.",
+      "Protegrity Insurance shops across 10 commercial auto carriers — including Progressive, SIAA Travelers, and GEICO — and holds a 5-star rating backed by 466 verified Google reviews.",
+    ],
+  },
+  content: [
+    { type: "h2", text: "The Short Answer: Commercial Auto Insurance in Arizona" },
+    {
+      type: "p",
+      text:
+        "Commercial auto insurance in Arizona is required by state law for all business-owned vehicles, with minimum liability limits of $25,000 per person / $50,000 per accident / $15,000 property damage (25/50/15). The average cost of commercial auto insurance in Arizona is $205 per month, according to Insureon's 2025 small business data — 39% higher than the national average of $147 per month. This guide helps Phoenix, Scottsdale, Mesa, Chandler, and Gilbert business owners understand what commercial auto insurance covers, what it costs by vehicle type and industry, and how to compare quotes across 10 carriers before buying.",
+    },
+
+    { type: "h2", text: "What is commercial auto insurance and why does it matter in Arizona?" },
+    {
+      type: "p",
+      text:
+        "Commercial auto insurance covers vehicles used for business purposes — from a single contractor's pickup in Chandler to a fleet of delivery vans operating across the Phoenix metro area. Arizona law requires commercial auto coverage on all business-owned vehicles operating on state roads. Personal auto insurance policies do not cover accidents that occur during business use, which means a single at-fault accident while making a delivery or driving to a job site can expose your business to tens of thousands of dollars in uncovered liability.",
+    },
+    {
+      type: "p",
+      text:
+        "According to the Arizona Department of Insurance and Financial Institutions (DIFI), Arizona is home to over 592,000 small businesses — the majority of which use vehicles in daily operations. A commercial auto policy covers your liability to others, protects your vehicles from physical damage, and keeps your business legally compliant on every road from Loop 101 in Phoenix to the I-10 corridor through Chandler and Gilbert.",
+    },
+    {
+      type: "p",
+      text:
+        "Commercial auto insurance has recorded 13 consecutive years of underwriting losses nationally, according to Conning's 2025 Commercial Auto Insurance Market report — a trend driven by nuclear verdicts, distracted driving, rising repair costs, and driver shortages. That market pressure makes shopping across multiple carriers more important than ever for Arizona business owners.",
+    },
+
+    { type: "h2", text: "What does commercial auto insurance cover?" },
+    {
+      type: "table",
+      caption: "What does commercial auto insurance cover?",
+      columns: ["Coverage Type", "What It Pays For"],
+      rows: [
+        [
+          "Bodily injury liability",
+          "Medical bills, lost wages, and legal costs for third parties injured in an accident where your driver is at fault — required by Arizona law",
+        ],
+        [
+          "Property damage liability",
+          "Repairs or replacement of another person's vehicle or property damaged by your business vehicle — required by Arizona law",
+        ],
+        [
+          "Collision coverage",
+          "Repairs or replacement of your business vehicle after a collision, regardless of fault",
+        ],
+        [
+          "Comprehensive coverage",
+          "Non-collision damage — theft, vandalism, hail, fire, or weather events — important for fleets parked outdoors in Phoenix and the East Valley",
+        ],
+        [
+          "Uninsured / underinsured motorist",
+          "Covers your vehicle and drivers when hit by an at-fault driver who has no insurance or insufficient coverage",
+        ],
+        [
+          "Medical payments (MedPay)",
+          "Covers medical expenses for your drivers and passengers after an accident, regardless of fault",
+        ],
+        [
+          "Hired and non-owned auto (HNOA)",
+          "Covers employees using personal or rented vehicles for business purposes — critical for businesses without company-owned fleets",
+        ],
+        [
+          "Cargo / equipment coverage",
+          "Protects tools, equipment, and goods being transported — especially important for contractors in Scottsdale, Peoria, and Glendale",
+        ],
+      ],
+    },
+
+    { type: "h2", text: "What does commercial auto insurance NOT cover?" },
+    {
+      type: "p",
+      text:
+        "Personal use beyond your policy terms — if an employee uses a company vehicle for personal errands outside covered use, a claim can be denied. Unlisted drivers — drivers not listed on your policy at the time of an accident are not covered; always update your driver roster. Mexico operations — Arizona commercial auto policies do not cover incidents in Mexico; separate Mexican liability coverage is required for cross-border operations. Intentional acts or criminal use of a vehicle. Employee injuries from a vehicle accident — those are covered under workers' compensation, which Arizona law requires separately for any business with employees.",
+    },
+
+    { type: "h2", text: "Arizona commercial auto insurance requirements by vehicle type" },
+    {
+      type: "p",
+      text:
+        "Arizona's minimum 25/50/15 liability requirement applies to standard business vehicles. Higher limits are required by Arizona DIFI and federal FMCSA regulations for the following:",
+    },
+    {
+      type: "table",
+      caption: "Arizona commercial auto insurance requirements by vehicle type",
+      columns: ["Vehicle / Operation Type", "Minimum Coverage Required", "Governing Authority"],
+      rows: [
+        ["Standard business vehicles (cars, vans, SUVs)", "25/50/15 liability", "Arizona DIFI"],
+        ["Vehicles over 10,001 lbs (USDOT registered)", "Higher limits + USDOT filing", "FMCSA"],
+        [
+          "For-hire passenger vehicles (taxis, limos, rideshare)",
+          "Higher state-mandated limits",
+          "Arizona DIFI",
+        ],
+        ["Interstate commercial trucks", "$750,000–$1,000,000 liability minimum", "FMCSA"],
+        [
+          "Vehicles crossing into Mexico",
+          "Separate Mexican liability policy required",
+          "Mexican insurers only",
+        ],
+        [
+          "All commercial vehicles in Arizona (baseline)",
+          "At minimum: 25/50/15 liability",
+          "Arizona Revised Statutes Title 28",
+        ],
+      ],
+    },
+
+    { type: "h2", text: "How much does commercial auto insurance cost in Arizona?" },
+    {
+      type: "p",
+      text:
+        "The average cost of commercial auto insurance in Arizona is $205 per month, according to Insureon's 2025 data — 39% above the national average of $147 per month. Costs vary significantly by industry, vehicle type, and fleet size. The table below shows 2024–2025 average monthly premiums by business type:",
+    },
+    {
+      type: "table",
+      caption: "How much does commercial auto insurance cost in Arizona?",
+      columns: ["Business / Vehicle Type", "Avg Monthly Cost", "Annual Range"],
+      rows: [
+        ["Nonprofit / real estate", "$168–$192/mo", "$2,016–$2,304/yr"],
+        ["Contractor / tradesperson", "$264–$272/mo", "$3,168–$3,264/yr"],
+        ["Installation / service vehicles", "$299/mo", "~$3,588/yr"],
+        ["Tow trucks", "$619/mo", "~$7,428/yr"],
+        ["For-hire transport trucks", "$954/mo", "~$11,448/yr"],
+        ["Arizona small business average (all types)", "$205/mo", "~$2,460/yr"],
+      ],
+    },
+    {
+      type: "p",
+      text:
+        "Commercial auto premiums are often tax-deductible for Arizona businesses, according to IRS guidelines, which reduces the effective annual cost. Commercial auto premiums increased 10.4% in Q1 2025 — the 55th consecutive quarterly increase — according to the Council of Insurance Agents & Brokers (CIAB). Businesses that compare quotes across multiple carriers are positioned to offset a significant portion of those market increases.",
+    },
+
+    {
+      type: "h2",
+      text: "Why is Protegrity Insurance the right brokerage partner for commercial auto in Arizona?",
+    },
+    {
+      type: "p",
+      text:
+        "Protegrity Insurance is a licensed independent insurance brokerage that shops commercial auto coverage across 10 carriers for Arizona business owners. With a 5-star rating on Google backed by 466 verified reviews, Protegrity has built its reputation on one outcome: finding the right coverage at the right price for businesses across Phoenix, Scottsdale, Mesa, Tempe, Chandler, and Gilbert.",
+    },
+    {
+      type: "p",
+      text:
+        "A single carrier gives you one quote at their price. Protegrity Insurance gives you quotes from 10 commercial auto carriers simultaneously — so carriers compete for your business and you choose the best combination of price, coverage, and service.",
+    },
+    {
+      type: "table",
+      caption: "Why is Protegrity Insurance the right brokerage partner for commercial auto in Arizona?",
+      columns: ["Factor", "Single Carrier Direct", "Protegrity Insurance Brokerage"],
+      rows: [
+        ["Carriers quoted", "1", "10 commercial auto carriers"],
+        ["Pricing leverage", "Take it or leave it", "Carriers compete — you choose"],
+        [
+          "Industry-specific underwriting",
+          "One model, one risk appetite",
+          "Matched to carriers that specialize in your industry and vehicle type",
+        ],
+        [
+          "Higher-risk businesses",
+          "May be declined or rated up significantly",
+          "Access to specialty commercial markets and non-standard carriers",
+        ],
+        [
+          "Certificate of insurance (COI)",
+          "Issued by that carrier only",
+          "Issued same day — ready for clients, job sites, and lease requirements",
+        ],
+        [
+          "Verified customer satisfaction",
+          "Varies by carrier",
+          "5-star rated · 466 verified Google reviews",
+        ],
+        [
+          "Point of contact",
+          "That carrier's representatives",
+          "Protegrity Insurance — one licensed Arizona brokerage, one relationship",
+        ],
+        [
+          "Best for",
+          "Very low-risk fleet already bundled with that carrier",
+          "Most Arizona business owners — especially those with multiple vehicles, higher-risk industries, or fleet growth",
+        ],
+      ],
+    },
+
+    { type: "h2", text: "Which carriers does Protegrity Insurance quote for commercial auto?" },
+    {
+      type: "p",
+      text:
+        "Protegrity Insurance has access to 10 commercial auto carriers for Arizona business owners. Each carrier has different underwriting models, industry specializations, and pricing structures — which is why the same business can receive quotes varying by hundreds of dollars per year depending on which carriers are asked.",
+    },
+    {
+      type: "p",
+      text:
+        "Progressive Commercial is the #1 commercial auto insurer in America with strong Arizona market presence and broad vehicle class coverage — best for contractors, tradespeople, and small fleets. SIAA Travelers is one of the largest commercial lines carriers in the U.S. with strong claims infrastructure and financial stability — best for mid-size businesses and established fleets. GEICO Commercial offers competitive pricing for low-to-moderate risk vehicles with fast online certificate issuance — best for service businesses, delivery drivers, and single-vehicle operators.",
+    },
+    {
+      type: "p",
+      text:
+        "Protegrity Insurance submits your business profile across all applicable carriers, returns real quotes — not estimates — and presents them side by side so you can compare price, coverage limits, deductibles, and carrier financial strength before making a decision.",
+    },
+
+    { type: "h2", text: "Common mistakes Arizona business owners make with commercial auto insurance" },
+    {
+      type: "p",
+      text:
+        "Relying on personal auto insurance for business use — personal policies exclude business-use accidents; a single denied claim can cost more than years of commercial premiums.",
+    },
+    {
+      type: "p",
+      text:
+        "Carrying only the state minimum 25/50/15 liability — a single serious accident on I-10 or the SR-202 can generate damages far above the $50,000 bodily injury limit.",
+    },
+    {
+      type: "p",
+      text:
+        "Not listing all drivers — unlisted drivers are not covered; any employee who drives a company vehicle must be listed on the policy.",
+    },
+    {
+      type: "p",
+      text:
+        "Getting only one quote — commercial auto pricing varies significantly across carriers for the same vehicle and driver profile; one quote is rarely the best rate available.",
+    },
+    {
+      type: "p",
+      text:
+        "Ignoring hired and non-owned auto (HNOA) coverage — businesses whose employees use personal vehicles for work errands carry uncovered liability without an HNOA endorsement.",
+    },
+    {
+      type: "p",
+      text:
+        "Not updating coverage after adding vehicles or drivers — mid-term additions that are not reported leave new vehicles and drivers uninsured.",
+    },
+
+    { type: "h2", text: "When should you speak with a licensed commercial auto agent?" },
+    {
+      type: "p",
+      text:
+        "If your Phoenix, Scottsdale, Mesa, or Chandler business owns or regularly uses vehicles for deliveries, client visits, job site travel, or equipment transport — speak with a licensed agent before your next renewal. With commercial auto rates having increased for 55 consecutive quarters nationally, the difference between the highest and lowest competitive quotes for the same business can be $500 to $2,000 per year or more. The licensed agents at Protegrity Insurance review your fleet profile, driver records, industry classification, and coverage needs — then shop 10 carriers to find the best available option.",
+    },
+
+    { type: "h2", text: "Frequently Asked Questions: Commercial Auto Insurance" },
+    {
+      type: "faq",
+      items: [
+        {
+          question: "Q: What does commercial auto insurance cover in Arizona?",
+          answer:
+            "Commercial auto insurance in Arizona covers bodily injury liability, property damage liability, collision, comprehensive, uninsured motorist, medical payments, and hired/non-owned auto coverage for vehicles used in business operations. Arizona law requires minimum 25/50/15 liability on all business vehicles. Personal auto policies do not cover accidents that occur during business use — a separate commercial policy is required.",
+        },
+        {
+          question: "Q: How much does commercial auto insurance cost in Arizona?",
+          answer:
+            "Commercial auto insurance in Arizona costs an average of $205 per month, according to Insureon's 2025 data — 39% above the national average of $147 per month. Costs range from $168/month for low-risk vehicles to $954/month for for-hire transport trucks. Rates have increased for 55 consecutive quarters nationally (CIAB, Q1 2025), making multi-carrier comparison through Protegrity Insurance more valuable than ever.",
+        },
+        {
+          question: "Q: Is commercial auto insurance required in Arizona?",
+          answer:
+            "Yes — commercial auto insurance is required by Arizona law for all business-owned vehicles. The state minimum is 25/50/15 liability: $25,000 bodily injury per person, $50,000 per accident, and $15,000 property damage. Higher limits are required for vehicles over 10,001 lbs, for-hire passenger vehicles, and trucks operating under FMCSA authority across state lines. Driving uninsured risks license suspension and vehicle registration revocation.",
+        },
+        {
+          question: "Q: Does my personal auto policy cover me when driving for work?",
+          answer:
+            "No — personal auto insurance does not cover accidents that occur during business use. If you or an employee is in an at-fault accident while making a delivery, driving to a job site in Peoria, or transporting clients in Glendale, your personal auto insurer can deny the claim. A commercial auto policy or hired and non-owned auto (HNOA) endorsement is required to cover business-related driving exposure.",
+        },
+        {
+          question: "Q: Why are commercial auto insurance rates so high right now?",
+          answer:
+            "Commercial auto rates have increased for 55 consecutive quarters nationally, according to the Council of Insurance Agents & Brokers (CIAB, Q1 2025). The primary drivers are nuclear verdicts — large jury awards that exceed $10 million — rising vehicle repair costs due to advanced sensor and camera technology, driver shortages leading to less experienced operators, and third-party litigation funding. Arizona businesses that compare multiple carriers absorb less of this increase.",
+        },
+        {
+          question: "Q: What is hired and non-owned auto (HNOA) insurance?",
+          answer:
+            "Hired and non-owned auto (HNOA) insurance covers liability when employees use personal or rented vehicles for business purposes. If a Mesa-based employee drives their own car to a client meeting and causes an accident, your business faces liability — but their personal policy will likely deny the claim. HNOA coverage fills that gap. It does not cover physical damage to the employee's vehicle — only your business's liability exposure.",
+        },
+        {
+          question: "Q: How does Protegrity Insurance's brokerage model save Arizona businesses money?",
+          answer:
+            "Protegrity Insurance shops your commercial auto coverage across 10 carriers simultaneously — including Progressive, SIAA Travelers, and GEICO — and presents real quotes side by side. Because commercial auto carriers each use different underwriting models, the same Phoenix business can receive quotes varying by $500 to $2,000 per year for identical coverage. With 466 verified 5-star Google reviews, Protegrity's track record reflects consistent results for Arizona business owners.",
+        },
+        {
+          question: "Q: Are commercial auto insurance premiums tax-deductible in Arizona?",
+          answer:
+            "Yes — commercial auto insurance premiums are generally tax-deductible as a business expense under IRS guidelines, provided the vehicle is used for business purposes. The deductibility depends on the percentage of business use versus personal use. Vehicles used exclusively for business operations in Phoenix, Scottsdale, or anywhere in Arizona qualify for full deduction. Consult a licensed tax professional to confirm treatment for your specific business structure.",
+        },
+      ],
+    },
+  ],
+  finalCta: {
+    headline: "Get Your Free Commercial Auto Insurance Quote in Phoenix Today",
+    intro:
+      "Call Protegrity Insurance: (480) XXX-XXXX (click-to-call) | Get your free quote at protegrityinsurance.com",
+    body: "",
+    phoneLabel: "(480) XXX-XXXX",
+    phoneHref: "tel:480xxxxxxx",
+    quoteHref: "https://protegrityinsurance.com",
+    trustLine:
+      "5-star rated · 466 verified Google reviews · 10 commercial auto carriers · Licensed Arizona agents",
+  },
+  relatedLinks: [
+    {
+      label: "General Liability Insurance",
+      href: "/general-liability-insurance",
+      description:
+        "Protect your business with comprehensive general liability coverage options.",
+    },
+    {
+      label: "Auto Insurance",
+      href: "/auto-insurance",
+      description:
+        "Compare personal auto insurance quotes from top-rated carriers in Arizona.",
+    },
+    {
+      label: "Back to Blog",
+      href: "/blog",
+      description:
+        "More guides and insurance resources from our licensed Arizona team.",
+    },
+  ],
+  references: [],
+  footer: {
+    lastUpdated: "Last updated: April 2026",
+    copyright: "© 2026 Protegrity Insurance. All rights reserved. | protegrityinsurance.com",
+  },
+}
+
 /* -------------------------------------------------------------------------- */
 /*  Public exports                                                            */
 /* -------------------------------------------------------------------------- */
 
 export const blogPosts: BlogPost[] = [
+  commercialAutoInsuranceArizonaPost,
   personalUmbrellaInsuranceArizonaPost,
   generalLiabilityInsuranceArizonaPost,
   phoenixHomePost,
