@@ -10534,11 +10534,354 @@ const generalLiabilityInsuranceArizonaPost: BlogPost = {
   },
 }
 
+const personalUmbrellaInsuranceArizonaPost: BlogPost = {
+  slug: "personal-umbrella-insurance-arizona",
+  title: "What Is Personal Umbrella Insurance — and Do You Need It in Arizona?",
+  excerpt:
+    "Learn what personal umbrella insurance covers in Arizona, how much it costs, and how Protegrity Insurance compares quotes across Progressive, Safeco, Markel, Stillwater, and Farmers.",
+  metaTitle: "Personal Umbrella Insurance Arizona | 2026 Guide",
+  metaDescription:
+    "Learn what personal umbrella insurance covers in Arizona, how much it costs, and how Protegrity Insurance compares quotes across Progressive, Safeco, Markel, Stillwater, and Farmers.",
+  keywords: ["personal umbrella insurance Arizona"],
+  category: "Personal Insurance",
+  readTime: "10 min read",
+  displayDate: "April 2026",
+  publishedISO: "2026-04-26",
+  modifiedISO: "2026-04-26",
+  breadcrumbLabel: "Personal Umbrella Insurance Arizona",
+  author: ryanLorschAuthor,
+  heroImage: {
+    src: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6",
+    alt: "Arizona family home representing personal umbrella insurance protection in Phoenix",
+    width: 1920,
+    height: 1080,
+  },
+  image: {
+    src: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6",
+    alt: "Arizona family home representing personal umbrella insurance protection in Phoenix",
+    width: 1920,
+    height: 1080,
+  },
+  keyTakeaways: {
+    items: [
+      "A $1 million personal umbrella policy costs an average of $383/year — about $32/month (ACE Private Risk Services, 2025).",
+      "Umbrella coverage activates after your home or auto policy limits are exhausted — it does not replace those policies.",
+      "Arizona's comparative fault system means you can be held liable for a large share of damages even in a multi-party accident.",
+      "Phoenix-area homeowners with equity, savings, teenage drivers, pools, dogs, or rental properties carry the highest liability exposure.",
+      "Protegrity Insurance quotes across Progressive, Safeco, Markel, Monoline, Stillwater, and Farmers — one conversation, multiple carriers.",
+    ],
+  },
+  content: [
+    { type: "h2", text: "The Short Answer: Personal Umbrella Insurance in Arizona" },
+    {
+      type: "p",
+      text:
+        "Personal umbrella insurance in Arizona provides liability coverage of $1 million or more that activates after your home or auto policy limits are exhausted — protecting your savings, home equity, and future wages from lawsuits. According to an ACE Private Risk Services study, a $1 million personal umbrella policy costs an average of $383 per year. This guide is for Phoenix, Scottsdale, Mesa, Chandler, and Gilbert homeowners who want to understand what umbrella insurance covers, what it costs, and how to compare quotes across carriers before buying.",
+    },
+
+    { type: "h2", text: "What is personal umbrella insurance and why does it matter in Phoenix?" },
+    {
+      type: "p",
+      text:
+        "Personal umbrella insurance is a liability policy that extends beyond your existing home and auto coverage. Standard homeowners policies in Phoenix carry $100,000 to $300,000 in personal liability protection. Standard auto policies carry $250,000 to $500,000 in bodily injury liability. When a lawsuit or accident generates damages above those limits, you pay the remainder out of your own pocket — home equity, savings, retirement accounts, and future wages included.",
+    },
+    {
+      type: "p",
+      text:
+        "Arizona's comparative fault legal system apportions financial responsibility based on each party's percentage of fault. According to the Arizona Department of Insurance and Financial Institutions (DIFI), this means a driver found 60% at fault in a multi-car accident on SR-51 or the Loop 101 could personally owe hundreds of thousands of dollars above their auto policy's limit. Umbrella insurance covers that gap.",
+    },
+    {
+      type: "p",
+      text:
+        "According to data tracked by the Insurance Information Institute, average personal injury verdicts in auto liability cases now exceed $900,000 — a figure that outpaces the liability limit on most standard Arizona auto policies.",
+    },
+
+    { type: "h2", text: "Who needs personal umbrella insurance in Arizona?" },
+    {
+      type: "p",
+      text:
+        "Personal umbrella insurance is not limited to high-net-worth households. Courts in Arizona can garnish future wages for years to satisfy a judgment — meaning a 35-year-old earning $80,000 per year carries over $2 million in future earnings at risk. Phoenix-area residents with any of the following should evaluate umbrella coverage:",
+    },
+    {
+      type: "p",
+      text:
+        "Homeowners with equity in Scottsdale, Chandler, Peoria, or Ahwatukee — home equity is a primary target in civil judgments. Families with teenage drivers — teen drivers are 3 times more likely than adults to be involved in serious accidents (Insurance Information Institute, 2025). Pool or trampoline owners — both are classified as \"attractive nuisances\" under Arizona law, generating elevated third-party injury claims. Dog owners — dog bites account for one-third of all homeowners liability claims nationally, with an average claim cost exceeding $50,000 (Insurance Information Institute, 2025). Landlords with rental properties in Mesa, Tempe, or Glendale — tenant injuries, slip-and-falls, and habitability claims create liability that standard landlord policies do not fully cover. Frequent entertainers — Arizona social host liability laws can hold homeowners responsible for injuries connected to gatherings at their property.",
+    },
+
+    { type: "h2", text: "What does personal umbrella insurance cover?" },
+    {
+      type: "table",
+      caption: "What does personal umbrella insurance cover?",
+      columns: ["Coverage", "What It Pays For"],
+      rows: [
+        [
+          "Bodily injury liability",
+          "Medical bills and lost wages for third parties injured in accidents where you are at fault — including auto accidents, injuries at your home, or incidents on your rental property in Mesa or Tempe",
+        ],
+        [
+          "Property damage liability",
+          "Damage to someone else's property beyond your primary policy's limit — a multi-vehicle accident or accidental damage to a neighbor's property in Chandler",
+        ],
+        [
+          "Personal injury claims",
+          "Libel, slander, defamation of character, and invasion of privacy — including claims originating from social media posts",
+        ],
+        [
+          "Legal defense costs",
+          "Attorney fees and court costs for covered claims, paid even when you are ultimately not found liable",
+        ],
+        [
+          "Worldwide liability",
+          "Incidents occurring outside the U.S. are covered as long as the claim is filed in the United States",
+        ],
+        [
+          "Rental property liability",
+          "Liability above your landlord policy limit for tenant injuries, habitability claims, or slip-and-falls at properties you own in the Phoenix metro area",
+        ],
+      ],
+    },
+
+    { type: "h2", text: "What does personal umbrella insurance NOT cover?" },
+    {
+      type: "p",
+      text:
+        "Your own bodily injuries or property damage — umbrella is liability-only coverage directed at third-party claims against you. Business-related liabilities — personal umbrella does not extend to business operations; a commercial umbrella policy is required separately. Intentional or criminal acts — no liability policy covers deliberate harm. Household employee injuries — if you employ staff at your Phoenix or Scottsdale home, workers' compensation coverage is required separately. Contractual liability — obligations assumed through signed contracts are excluded from standard umbrella coverage.",
+    },
+
+    { type: "h2", text: "How much does personal umbrella insurance cost in Arizona?" },
+    {
+      type: "p",
+      text:
+        "Personal umbrella coverage starts at $1 million and increases in $1 million increments. Each additional $1 million of coverage adds $75–$100 per year to your premium, according to Mercury Insurance's 2025–2026 customer data.",
+    },
+    {
+      type: "table",
+      caption: "How much does personal umbrella insurance cost in Arizona?",
+      columns: ["Coverage Level", "Annual Cost Estimate", "Monthly Cost Estimate"],
+      rows: [
+        ["$1 million", "$150–$383/yr", "$13–$32/mo"],
+        ["$2 million", "$225–$475/yr", "$19–$40/mo"],
+        ["$3 million", "$300–$550/yr", "$25–$46/mo"],
+        ["$5 million", "$383–$608/yr", "$32–$51/mo"],
+        ["Most common for AZ households", "$1M–$2M policy", "$13–$40/mo"],
+      ],
+    },
+    {
+      type: "p",
+      text:
+        "Factors that increase your premium above the baseline: a teenage driver in the household adds 15–50% to umbrella costs; a swimming pool or trampoline raises the rate under Arizona attractive nuisance law; dog breeds flagged by carriers as higher risk; prior liability claims; and ownership of multiple properties or recreational vehicles. Bundling your umbrella with home and auto policies from the same carrier reduces the total combined premium by $50–$100 per year.",
+    },
+
+    {
+      type: "h2",
+      text: "Which carriers does Protegrity Insurance quote for umbrella coverage?",
+    },
+    {
+      type: "p",
+      text:
+        "Not all carriers write personal umbrella policies, and those that do price the same household differently. Protegrity Insurance quotes across the following six carriers for Arizona policyholders, then presents a side-by-side comparison — one conversation, no carrier-hopping required:",
+    },
+    {
+      type: "table",
+      caption: "Which carriers does Protegrity Insurance quote for umbrella coverage?",
+      columns: ["Carrier", "Best For", "Key Strength"],
+      rows: [
+        [
+          "Progressive",
+          "Households with existing Progressive home and auto",
+          "Bundling discounts; $1M–$5M limits; straightforward underwriting",
+        ],
+        [
+          "Safeco",
+          "Households wanting flexible, customizable coverage",
+          "Adjustable limits; competitive pricing for lower-risk profiles in the Valley",
+        ],
+        [
+          "Markel (Personal Umbrella)",
+          "Higher-risk households — pools, dogs, teen drivers",
+          "Specialty personal umbrella underwriter with a broader risk appetite than standard carriers",
+        ],
+        [
+          "Monoline",
+          "Households whose primary carrier does not offer umbrella",
+          "Standalone umbrella with no requirement to bundle home and auto",
+        ],
+        [
+          "Stillwater",
+          "Budget-conscious homeowners with lower exposure",
+          "Competitive base pricing for straightforward household profiles",
+        ],
+        [
+          "Farmers",
+          "Households with an existing Farmers home or auto policy",
+          "Available as a carrier option through Protegrity Insurance",
+        ],
+      ],
+    },
+    {
+      type: "p",
+      text:
+        "Protegrity Insurance acts as your single point of contact across all six carriers. You do not need to contact each one individually — Protegrity submits your household profile, gathers the quotes, and presents a comparison so you can choose based on price, coverage limits, and carrier financial strength.",
+    },
+
+    {
+      type: "h2",
+      text: "How does quoting through Protegrity Insurance compare to going direct to one carrier?",
+    },
+    {
+      type: "table",
+      caption: "How does quoting through Protegrity Insurance compare to going direct to one carrier?",
+      columns: ["Factor", "Single Carrier Direct", "Protegrity Insurance Brokerage"],
+      rows: [
+        [
+          "Carriers quoted",
+          "1",
+          "Progressive, Safeco, Markel, Monoline, Stillwater, Farmers",
+        ],
+        ["Pricing transparency", "Take it or leave it", "Side-by-side real quotes — not estimates"],
+        [
+          "Underlying policy review",
+          "Focused on their own products",
+          "Reviews existing home and auto limits to ensure umbrella connects correctly",
+        ],
+        [
+          "Coverage gap identification",
+          "No incentive to flag gaps",
+          "Independent review — no carrier bias",
+        ],
+        [
+          "Higher-risk households",
+          "May be rated up or declined",
+          "Markel and Monoline available for households declined or overpriced elsewhere",
+        ],
+        [
+          "Point of contact",
+          "That carrier's own representatives",
+          "Protegrity Insurance — licensed Arizona brokerage, one relationship",
+        ],
+        [
+          "Best for",
+          "Low-risk household already bundled with that carrier",
+          "Most Phoenix-area homeowners — especially those with equity, teens, or elevated risk factors",
+        ],
+      ],
+    },
+    {
+      type: "p",
+      text:
+        "A single quote tells you one carrier's price. Comparing across Progressive, Safeco, Markel, Monoline, Stillwater, and Farmers through Protegrity Insurance tells you what umbrella coverage is actually worth in the Arizona market — and puts you in a position to choose.",
+    },
+
+    { type: "h2", text: "Common mistakes Arizona homeowners make with umbrella insurance" },
+    {
+      type: "p",
+      text:
+        "13% of personal injury liability awards and settlements exceed $1 million, according to InsuredBetter's 2025 insurance market analysis. The following mistakes leave Arizona households exposed:",
+    },
+    {
+      type: "p",
+      text:
+        "Assuming standard home and auto liability limits are sufficient — a single serious accident on I-10 or the Loop 202 can produce damages well above a $300,000 auto liability cap. Skipping umbrella coverage because current net worth is modest — Arizona courts can garnish wages for years; future earning potential is at risk, not just current assets. Failing to disclose all risk factors at application — pools, dogs, rental properties, and teen drivers must be disclosed; undisclosed risks can result in claim denials. Purchasing the minimum $1 million limit without calculating actual asset exposure — Scottsdale and Ahwatukee homeowners with significant equity and retirement savings frequently need $2–$3 million. Getting a quote from one carrier only — pricing across Progressive, Safeco, Markel, Stillwater, and Farmers varies by hundreds of dollars per year for identical coverage.",
+    },
+
+    { type: "h2", text: "When should you speak with a licensed agent about umbrella coverage?" },
+    {
+      type: "p",
+      text:
+        "If you own a home in Phoenix, Scottsdale, Mesa, Tempe, or Chandler — and you carry home equity, have teenage drivers, own a pool, keep a dog, rent out a property, or hold meaningful retirement savings — speak with a licensed agent before your next policy renewal. The licensed agents at Protegrity Insurance review your existing coverage limits, calculate your total asset and income exposure, and identify which carrier among Progressive, Safeco, Markel, Monoline, Stillwater, and Farmers offers the best fit for your household profile.",
+    },
+
+    { type: "h2", text: "Frequently Asked Questions: Personal Umbrella Insurance" },
+    {
+      type: "faq",
+      items: [
+        {
+          question: "Q: What does personal umbrella insurance cover in Arizona?",
+          answer:
+            "Personal umbrella insurance in Arizona covers bodily injury liability, property damage liability, personal injury claims including libel and defamation, and legal defense costs — all after your home or auto policy limits are exhausted. Most policies extend to rental properties and include worldwide coverage. It does not cover your own injuries, business liabilities, or intentional acts.",
+        },
+        {
+          question: "Q: How much does personal umbrella insurance cost in Arizona?",
+          answer:
+            "Personal umbrella insurance in Arizona costs an average of $383 per year for $1 million in coverage, according to an ACE Private Risk Services study. Rates range from $150 to $600 per year depending on your risk profile. Each additional $1 million adds $75–$100 per year. Progressive, Safeco, Stillwater, and Farmers all price this differently — Protegrity Insurance compares them for you in one conversation.",
+        },
+        {
+          question: "Q: Do I need umbrella insurance if my net worth is under $500,000?",
+          answer:
+            "Yes — umbrella insurance is not limited to high-net-worth households. Arizona courts can garnish future wages for years to satisfy a civil judgment. A 35-year-old earning $80,000 per year has over $2 million in future earnings at risk. Home equity, savings, and retirement accounts are also vulnerable. For $32 per month or less, umbrella coverage through Protegrity Insurance protects both current and future financial assets.",
+        },
+        {
+          question: "Q: How much umbrella coverage do I need in Arizona?",
+          answer:
+            "Umbrella coverage in Arizona should equal or exceed your total net worth — home equity, bank accounts, investments, and retirement funds combined. $1 million is the standard starting point for most homeowners. Households with teenage drivers, pools, rental properties in Mesa or Glendale, or significant savings should consider $2–$3 million. The licensed agents at Protegrity Insurance calculate your actual exposure before recommending a limit.",
+        },
+        {
+          question: "Q: Does umbrella insurance cover dog bites in Arizona?",
+          answer:
+            "Yes — dog bite liability is one of the most common personal umbrella claims in Arizona. Dog bites account for one-third of all homeowners liability claims nationally, with an average claim cost exceeding $50,000, according to the Insurance Information Institute (2025). When a claim surpasses your homeowners liability limit, your umbrella policy — available through carriers like Safeco and Markel via Protegrity Insurance — covers the remainder.",
+        },
+        {
+          question: "Q: Does Arizona umbrella insurance cover rental properties?",
+          answer:
+            "Yes — personal umbrella insurance covers liability above your landlord policy limit for rental properties you own in Mesa, Tempe, Glendale, or elsewhere in the Phoenix metro area. Tenant injuries, slip-and-falls, and habitability claims are all covered. Rental property ownership must be disclosed to Protegrity Insurance at application to ensure the property is correctly included in the umbrella policy.",
+        },
+        {
+          question: "Q: Can I get umbrella insurance without bundling it with my home and auto?",
+          answer:
+            "Yes — standalone umbrella policies are available through Markel and Monoline carriers and do not require bundling home and auto with the same company. Most other carriers — including Progressive, Safeco, Stillwater, and Farmers — require underlying home and auto policies before issuing an umbrella. Protegrity Insurance identifies the right structure for your household and places the policy with the appropriate carrier.",
+        },
+        {
+          question: "Q: Does personal umbrella insurance cover social media defamation claims?",
+          answer:
+            "Yes — personal umbrella insurance covers personal injury claims including libel, slander, defamation of character, and invasion of privacy, which extend to posts and statements made on social media. A post that results in a lawsuit could generate a judgment above your homeowners liability limit. Carriers available through Protegrity Insurance — including Safeco and Markel — include personal injury coverage in their standard umbrella policies.",
+        },
+      ],
+    },
+  ],
+  finalCta: {
+    headline: "Get Your Free Umbrella Insurance Quote in Phoenix Today",
+    intro:
+      "Call Protegrity Insurance: (480) XXX-XXXX (click-to-call) | Get your free quote at protegrityinsurance.com",
+    body: "",
+    phoneLabel: "(480) XXX-XXXX",
+    phoneHref: "tel:480xxxxxxx",
+    quoteHref: "https://protegrityinsurance.com",
+    trustLine:
+      "5-star rated · Progressive · Safeco · Markel · Monoline · Stillwater · Farmers · Licensed Arizona agents",
+  },
+  relatedLinks: [
+    {
+      label: "Home Insurance",
+      href: "/home-insurance",
+      description:
+        "Protect your home with comprehensive homeowners insurance coverage options.",
+    },
+    {
+      label: "Auto Insurance",
+      href: "/auto-insurance",
+      description:
+        "Compare auto insurance quotes from top-rated carriers in Arizona.",
+    },
+    {
+      label: "Back to Blog",
+      href: "/blog",
+      description:
+        "More guides and insurance resources from our licensed Arizona team.",
+    },
+  ],
+  references: [],
+  footer: {
+    lastUpdated: "Last updated: April 2026",
+    copyright: "© 2026 Protegrity Insurance. All rights reserved. | protegrityinsurance.com",
+  },
+}
+
 /* -------------------------------------------------------------------------- */
 /*  Public exports                                                            */
 /* -------------------------------------------------------------------------- */
 
 export const blogPosts: BlogPost[] = [
+  personalUmbrellaInsuranceArizonaPost,
   generalLiabilityInsuranceArizonaPost,
   phoenixHomePost,
   phoenixAutoPost,
