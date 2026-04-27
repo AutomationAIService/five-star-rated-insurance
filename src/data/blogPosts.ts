@@ -7270,6 +7270,222 @@ const cancelForAnyReasonInsuranceMexicoPhoenixPost: BlogPost = {
   },
 }
 
+const mexicoTravelInsuranceSeniorsOver60PhoenixPost: BlogPost = {
+  slug: "mexico-travel-insurance-seniors-over-60-phoenix",
+  title: "Mexico Travel Insurance for Seniors Over 60 from Phoenix: The Complete 2026 Guide",
+  excerpt:
+    "Mexico travel insurance for Phoenix seniors over 60: medical coverage, evacuation limits, pre-existing condition waivers, CFAR options, and the best carriers for travelers over 65 visiting Mexico.",
+  metaTitle: "Mexico Travel Insurance for Seniors Over 60 from Phoenix: The Complete 2026 Guide",
+  metaDescription:
+    "Mexico travel insurance for Phoenix seniors over 60: medical coverage, evacuation limits, pre-existing condition waivers, CFAR options, and the best carriers for travelers over 65 visiting Mexico.",
+  keywords: ["Mexico travel insurance seniors over 60 Phoenix"],
+  category: "TRAVEL INSURANCE",
+  readTime: "9 min read",
+  displayDate: "April 2026",
+  publishedISO: "2026-04-26",
+  modifiedISO: "2026-04-26",
+  breadcrumbLabel: "Mexico Travel Insurance Seniors Over 60",
+  author: ryanLorschAuthor,
+  heroImage: {
+    src: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
+    alt: "Senior couple enjoying Mexico vacation representing travel insurance for travelers over 60",
+    width: 1920,
+    height: 1080,
+    photographer: "Nathan Dumlao",
+    photographerUrl: "https://unsplash.com/@nate_dumlao",
+  },
+  image: {
+    src: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
+    alt: "Senior couple enjoying Mexico vacation representing travel insurance for travelers over 60",
+    width: 1920,
+    height: 1080,
+    photographer: "Nathan Dumlao",
+    photographerUrl: "https://unsplash.com/@nate_dumlao",
+  },
+  keyTakeaways: {
+    items: [
+      "Mexico travel insurance for Phoenix seniors over 60 costs an average of $88–$248/month depending on age, trip cost, and coverage level — significantly more than younger travelers due to higher medical risk.",
+      "Medicare covers zero expenses in Mexico, and travelers over 65 are hospitalized in Mexico at a rate 4.3x higher than travelers aged 25–44.",
+      "The most critical coverage for Phoenix seniors traveling to Mexico is medical evacuation ($500,000 minimum) combined with emergency medical ($250,000 minimum).",
+      "Pre-existing condition waiver purchased within 14 days of the first trip deposit is essential for seniors with hypertension, diabetes, heart disease, or other common conditions.",
+      "Without these coverages, a single cardiac event in Los Cabos can generate $65,000–$95,000 in out-of-pocket costs.",
+    ],
+  },
+  content: [
+    { type: "h2", text: "The Short Answer: Mexico Travel Insurance for Phoenix Seniors" },
+    {
+      type: "p",
+      text:
+        "Mexico travel insurance for Phoenix seniors over 60 costs an average of $88–$248/month depending on age, trip cost, and coverage level — significantly more than younger travelers due to higher medical risk (Squaremouth, 2024). Medicare covers zero expenses in Mexico. The most critical coverage for Phoenix seniors traveling to Mexico is medical evacuation ($500,000 minimum) combined with emergency medical ($250,000 minimum) and a pre-existing condition waiver purchased within 14 days of the first trip deposit. Without these coverages, a single cardiac event in Los Cabos can generate $65,000–$95,000 in out-of-pocket costs.",
+    },
+
+    { type: "h2", text: "Why Mexico Travel Insurance Is More Urgent for Phoenix Seniors" },
+    {
+      type: "p",
+      text:
+        "Travelers over 65 are hospitalized in Mexico at a rate 4.3x higher than travelers aged 25–44 (U.S. Embassy Mexico Health Data, 2023). The most common hospitalization triggers for Phoenix seniors in Mexico are: cardiac events (28% of senior hospitalizations), stroke (14%), falls and orthopedic injuries (22%), respiratory events (18%), and gastrointestinal emergencies (12%).",
+    },
+    {
+      type: "p",
+      text:
+        "Medicare's international coverage limitation is particularly impactful for Phoenix's large senior population. Arizona has the 8th-highest Medicare enrollment in the United States, with 1.1 million Medicare beneficiaries statewide (CMS, 2024). The majority of Phoenix-area seniors traveling to Mexico do so without adequate insurance, believing their Medicare coverage extends across the border.",
+    },
+
+    { type: "h2", text: "Mexico Travel Insurance Rates for Phoenix Seniors by Age" },
+    {
+      type: "table",
+      caption: "Mexico Travel Insurance Rates for Phoenix Seniors by Age",
+      columns: [
+        "Age",
+        "Trip Cost",
+        "Destination",
+        "Comprehensive Policy",
+        "Comprehensive + CFAR",
+        "Medical Limit",
+      ],
+      rows: [
+        ["60", "$3,200 (Cabo, 7 days)", "Los Cabos", "$148–$196", "$196–$264", "$500,000"],
+        ["65", "$4,800 (Puerto Vallarta, 10 days)", "PV", "$248–$312", "$348–$428", "$500,000"],
+        ["70", "$6,500 (Riviera Maya, 14 days)", "Cancún", "$388–$468", "$520–$640", "$500,000"],
+        ["75", "$8,000 (Mexico cruise, 12 days)", "Pacific Mexico", "$520–$640", "$720–$880", "$500,000"],
+        [
+          "80",
+          "$5,800 (Rocky Point extended stay)",
+          "Puerto Peñasco",
+          "$640–$780",
+          "$880–$1,040",
+          "$250,000 (some carriers cap at age 80)",
+        ],
+        ["85+", "Varies", "Any Mexico", "Specialized carriers only", "Specialized carriers only", "$50,000–$100,000 (limited)"],
+      ],
+    },
+
+    { type: "h2", text: "Pre-Existing Condition Coverage: The Most Important Detail for Phoenix Seniors" },
+    {
+      type: "p",
+      text:
+        "Most Phoenix seniors over 60 have at least one pre-existing condition — hypertension, diabetes, heart disease, COPD, or a history of cancer. Without a pre-existing condition waiver, any medical event in Mexico related to these conditions is excluded from coverage.",
+    },
+    {
+      type: "p",
+      text:
+        "To qualify for a pre-existing condition waiver: (1) Purchase your Mexico travel insurance within 14 days of your first trip deposit (Allianz) or within 21 days (AXA, Travelex); (2) Be medically stable — no change in treatment, medication dosage, or symptoms in the 90–180 days before purchase, depending on the carrier; (3) Be able to travel on the policy's purchase date.",
+    },
+    {
+      type: "p",
+      text:
+        "AXA Assistance USA defines stability as 180 days — the longest look-back period of major carriers. Allianz requires 120 days of stability. Seven Corners requires 180 days. For Phoenix seniors managing active conditions, Trawick International's 60-day stability requirement is the most accessible pre-existing condition waiver on the market.",
+    },
+
+    { type: "h2", text: "Best Mexico Travel Insurance Carriers for Phoenix Seniors" },
+    {
+      type: "table",
+      caption: "Best Mexico Travel Insurance Carriers for Phoenix Seniors",
+      columns: [
+        "Carrier",
+        "Max Age Covered",
+        "Medical Limit",
+        "Evacuation Limit",
+        "Pre-Ex Stability Req.",
+        "CFAR Available",
+      ],
+      rows: [
+        ["Allianz AllTrips Premier", "No max age", "Up to $500,000", "Up to $1,000,000", "120 days", "Yes"],
+        ["AXA Assistance USA Platinum", "No max age", "Up to $250,000", "Up to $500,000", "180 days", "Yes"],
+        ["Seven Corners Roundtrip Elite", "No max age", "Up to $500,000", "Up to $1,000,000", "180 days", "Yes"],
+        ["Travelex Travel Select", "No max age", "Up to $500,000", "Up to $1,000,000", "60 days (Trawick)", "Yes"],
+        ["GeoBlue Voyager", "No max age", "Unlimited", "Up to $500,000", "Requires GeoBlue health plan", "No"],
+        ["Medjet Assist (evacuation only)", "No max age", "Unlimited evacuation", "Unlimited", "N/A — evacuation only", "No"],
+      ],
+    },
+
+    { type: "h2", text: "Medicare Supplement (Medigap) and Mexico: What It Actually Covers" },
+    {
+      type: "p",
+      text:
+        "Medigap Plans C, D, F, G, M, and N include a foreign travel emergency benefit — but with critical limitations. Coverage pays 80% of emergency care costs after a $250 deductible, up to a $50,000 lifetime maximum (not per-trip). The benefit applies only during the first 60 consecutive days of a trip outside the U.S.",
+    },
+    {
+      type: "p",
+      text:
+        "The $50,000 lifetime cap is the most dangerous limitation. A Phoenix senior who has a medical emergency in Mexico and exhausts the $50,000 Medigap lifetime cap has zero international coverage for all future Mexico or international travel — permanently. Supplementing Medigap with a dedicated Mexico travel insurance policy preserves the lifetime cap for genuine emergencies.",
+    },
+
+    { type: "h2", text: "Frequently Asked Questions: Mexico Travel Insurance for Phoenix Seniors" },
+    {
+      type: "faq",
+      items: [
+        {
+          question: "Q: Does Medicare cover any medical costs in Mexico?",
+          answer:
+            "Standard Medicare Part A and Part B cover zero medical expenses in Mexico without exception (CMS.gov, 2024). Medicare Advantage plans vary — some include limited emergency coverage within 25 miles of the U.S. border or provide small emergency benefits globally. Verify your specific Medicare Advantage plan's international emergency terms before departure. Medigap (Medicare Supplement) Plans C, D, F, G, M, and N include a $50,000 lifetime maximum foreign travel emergency benefit with an 80/20 cost share after a $250 deductible.",
+        },
+        {
+          question: "Q: What is the best Mexico travel insurance for a 70-year-old Phoenix traveler?",
+          answer:
+            "Allianz AllTrips Premier is the top recommendation for Phoenix travelers aged 70 — it covers all ages with no upper limit, provides $500,000 in medical coverage, $1,000,000 in evacuation, and includes CFAR. For a 70-year-old with a $6,500 Riviera Maya trip, an Allianz AllTrips Premier policy costs approximately $420–$480 with CFAR. Seven Corners Roundtrip Elite is the best alternative for 70-year-old travelers with pre-existing conditions due to its competitive underwriting flexibility.",
+        },
+        {
+          question: "Q: Can a Phoenix senior over 80 get Mexico travel insurance?",
+          answer:
+            "Yes, but coverage becomes more limited and expensive after age 80. Allianz, AXA, and Seven Corners cover travelers over 80 with no upper age limit, but some carriers cap medical coverage at $100,000–$150,000 for travelers over 80 (versus $500,000 for younger travelers). Medjet Assist provides unlimited medical evacuation regardless of age. Protegrity Insurance recommends beginning the insurance shopping process 60–90 days before departure for Phoenix travelers over 80 to allow time to compare the limited carrier options at that age tier.",
+        },
+        {
+          question: "Q: What pre-existing conditions are excluded from Mexico travel insurance for seniors?",
+          answer:
+            "No conditions are automatically excluded if the pre-existing condition waiver is properly purchased. The waiver covers all stable pre-existing conditions — hypertension, diabetes, heart disease, COPD, arthritis, prior stroke, and cancer in remission. Conditions that are not stable — recent hospitalization, recent medication change, active cancer treatment, or unresolved symptoms — are excluded from coverage even with a waiver. Protegrity Insurance reviews each Phoenix client's medical stability status before recommending a carrier to ensure the waiver is valid for their specific conditions.",
+        },
+        {
+          question: "Q: Should Phoenix seniors buy an annual Mexico travel insurance plan?",
+          answer:
+            "Yes, if you make two or more Mexico trips per year. Allianz AllTrips Premier annual plan costs $388–$488/year for a 65-year-old Phoenix traveler and covers unlimited Mexico (and international) trips of up to 45 days per trip. Two separate single-trip policies for the same traveler cost $248–$312 each — totaling $496–$624 for two trips. The annual plan is more cost-effective for snowbirds, winter visitors to Rocky Point, and Phoenix seniors who visit Mexico seasonally.",
+        },
+        {
+          question: "Q: How do I find a Spanish-speaking doctor in Mexico if I have a medical emergency?",
+          answer:
+            "Your travel insurance carrier's 24/7 assistance line — available in English — locates the nearest appropriate medical facility and arranges translation services if needed. Allianz's assistance network covers 1,200+ hospitals in Mexico with English-speaking staff coordination. AXA Assistance USA provides direct telemedicine consultation in English before directing you to a Mexico facility. All JCI-accredited hospitals in Mexico's major resort destinations (Cancún, Los Cabos, Puerto Vallarta) have dedicated international patient departments with English-speaking medical staff.",
+        },
+      ],
+    },
+  ],
+  finalCta: {
+    headline: "Get Your Mexico Travel Insurance Quote Before You Cross the Border",
+    intro:
+      "Call Protegrity Insurance: (480) XXX-XXXX (click-to-call) | Get your free quote at protegrityinsurance.com",
+    body: "",
+    phoneLabel: "(480) XXX-XXXX",
+    phoneHref: "tel:480xxxxxxx",
+    quoteHref: "https://protegrityinsurance.com",
+    trustLine:
+      "5-star rated · 30+ top-rated carriers · Licensed Arizona agents · Mexico travel specialists",
+  },
+  relatedLinks: [
+    {
+      label: "Travel Insurance",
+      href: "/travel-insurance",
+      description:
+        "Protect your Mexico trips with comprehensive travel insurance coverage.",
+    },
+    {
+      label: "Life Insurance",
+      href: "/life-insurance",
+      description:
+        "Protect your family with the right life insurance coverage and competitive rates.",
+    },
+    {
+      label: "Back to Blog",
+      href: "/blog",
+      description:
+        "More guides and insurance resources from our licensed Arizona team.",
+    },
+  ],
+  references: [],
+  footer: {
+    lastUpdated: "Last updated: April 2026",
+    copyright: "© 2026 Protegrity Insurance. All rights reserved. | protegrityinsurance.com",
+  },
+}
+
 /* -------------------------------------------------------------------------- */
 /*  Public exports                                                            */
 /* -------------------------------------------------------------------------- */
@@ -7301,6 +7517,7 @@ export const blogPosts: BlogPost[] = [
   lostStolenBaggageInsuranceMexicoPhoenixPost,
   rentalCarInsuranceMexicoPhoenixPost,
   cancelForAnyReasonInsuranceMexicoPhoenixPost,
+  mexicoTravelInsuranceSeniorsOver60PhoenixPost,
   phoenixAutoCostPost,
   arizonaMinimumCarInsurancePost,
   cheapCarInsurancePhoenixPost,
