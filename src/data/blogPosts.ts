@@ -1949,13 +1949,13 @@ const carInsuranceDiscountsPhoenixPost: BlogPost = {
   breadcrumbLabel: "Car Insurance Discounts Phoenix",
   author: ryanLorschAuthor,
   heroImage: {
-    src: "https://unsplash.com/photos/_q73Dk8e2Y4/download?force=true",
+    src: "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d",
     alt: "Phoenix driver benefiting from car insurance discounts and savings",
     width: 1920,
     height: 1080,
   },
   image: {
-    src: "https://unsplash.com/photos/_q73Dk8e2Y4/download?force=true",
+    src: "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d",
     alt: "Phoenix driver benefiting from car insurance discounts and savings",
     width: 1920,
     height: 1080,
@@ -2240,20 +2240,16 @@ const classicCarInsurancePhoenixPost: BlogPost = {
   breadcrumbLabel: "Classic Car Insurance Phoenix",
   author: ryanLorschAuthor,
   heroImage: {
-    src: "https://images.unsplash.com/photo-1776765550574-b6090b5c1e48",
+    src: "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7",
     alt: "Classic vintage collector car representing specialized insurance coverage in Phoenix",
     width: 1920,
     height: 1080,
-    photographer: "Salman Sidheek",
-    photographerUrl: "https://unsplash.com/@salman_sidheek",
   },
   image: {
-    src: "https://images.unsplash.com/photo-1776765550574-b6090b5c1e48",
+    src: "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7",
     alt: "Classic vintage collector car representing specialized insurance coverage in Phoenix",
     width: 1920,
     height: 1080,
-    photographer: "Salman Sidheek",
-    photographerUrl: "https://unsplash.com/@salman_sidheek",
   },
   keyTakeaways: {
     items: [
