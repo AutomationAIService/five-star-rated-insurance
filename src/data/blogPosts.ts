@@ -6348,20 +6348,20 @@ const medicalEvacuationInsuranceMexicoPhoenixPost: BlogPost = {
   breadcrumbLabel: "Medical Evacuation Insurance Mexico",
   author: ryanLorschAuthor,
   heroImage: {
-    src: "https://images.unsplash.com/photo-1696243144310-f44e46a209fe",
+    src: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d",
     alt: "Air ambulance medical evacuation representing critical travel insurance coverage for Mexico trips",
     width: 1920,
     height: 1080,
-    photographer: "Mathurin NAPOLY",
-    photographerUrl: "https://unsplash.com/@matnapo",
+    photographer: "Adhy Savala",
+    photographerUrl: "https://unsplash.com/@adhy_savala",
   },
   image: {
-    src: "https://images.unsplash.com/photo-1696243144310-f44e46a209fe",
+    src: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d",
     alt: "Air ambulance medical evacuation representing critical travel insurance coverage for Mexico trips",
     width: 1920,
     height: 1080,
-    photographer: "Mathurin NAPOLY",
-    photographerUrl: "https://unsplash.com/@matnapo",
+    photographer: "Adhy Savala",
+    photographerUrl: "https://unsplash.com/@adhy_savala",
   },
   keyTakeaways: {
     items: [
