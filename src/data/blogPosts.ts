@@ -12064,6 +12064,448 @@ const earthquakeInsuranceArizonaPost: BlogPost = {
   },
 }
 
+const floodInsuranceArizonaPost: BlogPost = {
+  slug: "flood-insurance-arizona",
+  title:
+    "Flood Insurance in Arizona: What It Covers, What It Costs, and Why Every Homeowner Should Consider It",
+  excerpt:
+    "Standard home insurance does not cover flood damage in Arizona. Compare NFIP and private flood quotes through Protegrity Insurance — 5-star rated, 466 Google reviews.",
+  metaTitle: "Flood Insurance Arizona | 2026 Guide",
+  metaDescription:
+    "Standard home insurance does not cover flood damage in Arizona. Compare NFIP and private flood quotes through Protegrity Insurance — 5-star rated, 466 Google reviews.",
+  keywords: ["flood insurance Arizona"],
+  category: "Home Insurance",
+  readTime: "11 min read",
+  displayDate: "April 2026",
+  publishedISO: "2026-04-26",
+  modifiedISO: "2026-04-26",
+  breadcrumbLabel: "Flood Insurance Arizona",
+  author: ryanLorschAuthor,
+  heroImage: {
+    src: "https://images.unsplash.com/photo-1547683905-f686c993aae5",
+    alt: "Arizona monsoon flooding representing flood insurance for Phoenix homeowners during flash flood season",
+    width: 1920,
+    height: 1080,
+  },
+  image: {
+    src: "https://images.unsplash.com/photo-1547683905-f686c993aae5",
+    alt: "Arizona monsoon flooding representing flood insurance for Phoenix homeowners during flash flood season",
+    width: 1920,
+    height: 1080,
+  },
+  keyTakeaways: {
+    items: [
+      "Standard homeowners insurance does not cover flood damage. A separate flood policy is required in Arizona and every other state (FEMA, 2025).",
+      "Arizona has received 18 federal disaster declarations for flooding and weather events, and Arizona properties have filed 5,320 NFIP claims totaling $62.6 million in payouts since 1978 (OpenFEMA, March 2026).",
+      "40% of all NFIP flood insurance claims nationally come from outside high-risk flood zones, meaning Zone X homeowners in Phoenix, Chandler, and Gilbert are not safe from flood damage (FEMA / NFIP).",
+      "Arizona currently has 25,944 active NFIP policies with an average annual premium of $811, and private flood insurance options are available that may offer broader coverage or lower premiums (OpenFEMA, March 2026).",
+      "Protegrity Insurance, 5-star rated with 466 verified Google reviews, shops both NFIP and private flood insurance options simultaneously, returning real side-by-side comparisons for Arizona homeowners.",
+    ],
+  },
+  content: [
+    { type: "h2", text: "The Short Answer: Flood Insurance in Arizona" },
+    {
+      type: "p",
+      text:
+        "Flood insurance in Arizona is a separate policy, excluded from every standard homeowners policy, that covers structural damage, personal property loss, and cleanup costs caused by flooding during monsoon season, flash floods, and stormwater overflows. The national average NFIP flood insurance policy costs $899 per year, according to NerdWallet's 2025 analysis of NFIP rate data, while Arizona homeowners in low-risk zones pay an average of $667 per year. This guide helps Phoenix, Scottsdale, Mesa, Chandler, and Tempe homeowners understand Arizona's real flood risk, what flood coverage pays for, and why comparing NFIP and private options through Protegrity Insurance produces better results than going direct.",
+    },
+
+    { type: "h2", text: "What is flood insurance and why does it matter in Arizona?" },
+    {
+      type: "p",
+      text:
+        "Flood insurance is a standalone policy that pays for structural damage, personal property loss, and cleanup costs caused by flooding. Standard homeowners insurance policies in Arizona, from every carrier, explicitly exclude flooding. This exclusion covers flash floods, monsoon stormwater runoff, river overflow, and any other flood event where water enters the home from the ground up. The only way to be covered is a separate flood policy, either through FEMA's National Flood Insurance Program (NFIP) or a private flood carrier.",
+    },
+    {
+      type: "p",
+      text:
+        "Arizona's desert climate creates a dangerous misconception: that flooding is not a meaningful risk. In reality, the Arizona Department of Water Resources (ADWR) reports that flash floods cause an average of $12 million in property damage annually in the state. Arizona's hardpan desert soil, which absorbs very little water, combined with intense monsoon rainfall events causes water to sheet across the surface rapidly, overwhelming drainage systems and flooding streets, neighborhoods, and homes with little warning.",
+    },
+    {
+      type: "p",
+      text:
+        "Over the past 20 years, 99% of U.S. counties have experienced at least one flood event, according to FEMA's National Flood Insurance Program data. The July 2025 Texas flash flood disaster, which killed more than 100 people along the Guadalupe River, was a devastating reminder that desert and inland communities face catastrophic flood risk even far from coastlines. For Arizona homeowners, the question is not whether flooding can happen. It is whether they will be covered when it does.",
+    },
+    {
+      type: "p",
+      lead: "Critical coverage gap:",
+      text:
+        " Your homeowners policy from every major carrier (Progressive, Safeco, Farmers, Stillwater, and others) explicitly excludes flood damage. Arizona monsoon flooding, flash floods, and stormwater overflow are not covered events under any standard home insurance policy. A separate flood policy is the only solution.",
+    },
+
+    { type: "h2", text: "Is Arizona really at risk for flooding?" },
+    {
+      type: "p",
+      text:
+        "Arizona's flood risk is concentrated along washes, rivers, low-lying neighborhoods, and areas downstream from mountain runoff, but the risk extends beyond designated flood zones. Flash floods in the Phoenix metro area, Tucson, and Flagstaff can strike any neighborhood during Arizona's monsoon season, which runs June through September.",
+    },
+    {
+      type: "table",
+      caption: "Is Arizona really at risk for flooding?",
+      columns: ["Area / Risk Type", "Flood Risk Level", "Key Driver"],
+      rows: [
+        [
+          "Properties in FEMA Zone AE (Special Flood Hazard Area)",
+          "High - federally mandated flood insurance required with government-backed mortgage",
+          "Located within the 100-year floodplain near rivers, washes, and drainage channels",
+        ],
+        [
+          "Properties near Salt River, Verde River, and Gila River",
+          "High - flood insurance strongly recommended",
+          "River overflow risk during heavy monsoon events; historical flooding on record",
+        ],
+        [
+          "Low-lying neighborhoods in Phoenix, Tempe, and Glendale",
+          "Moderate - Zone X but with documented flash flood history",
+          "Impervious urban surfaces accelerate stormwater runoff into residential areas",
+        ],
+        [
+          "Chandler, Gilbert, and Peoria washes and retention basins",
+          "Moderate - adjacent to engineered flood control channels",
+          "Capacity can be exceeded during extreme rainfall events",
+        ],
+        [
+          "Flagstaff and Northern Arizona",
+          "Moderate - snowmelt plus monsoon creates compounded risk",
+          "Spring snowmelt combined with monsoon rain overwhelms drainage systems",
+        ],
+        [
+          "Arizona statewide (all zones)",
+          "Active flood risk every monsoon season",
+          "Source: Arizona Department of Water Resources (ADWR); OpenFEMA, March 2026",
+        ],
+      ],
+    },
+    {
+      type: "p",
+      text:
+        "40% of all NFIP flood insurance claims nationally come from outside designated high-risk flood zones, according to FEMA. This means Phoenix, Chandler, Gilbert, and Scottsdale homeowners in Zone X, where flood insurance is not federally required, file real claims and receive real payouts. The Maricopa County Flood Control District confirms that all Arizona residences are eligible for flood insurance regardless of FEMA zone designation.",
+    },
+
+    { type: "h2", text: "What does flood insurance cover?" },
+    {
+      type: "table",
+      caption: "What does flood insurance cover?",
+      columns: ["Coverage Type", "What It Pays For"],
+      rows: [
+        [
+          "Building / structure coverage",
+          "Repairs or replacement of the home's foundation, walls, floors, roof, built-in appliances, electrical and plumbing systems, HVAC equipment, fuel tanks, and solar energy equipment. NFIP maximum: $250,000 for residential structures.",
+        ],
+        [
+          "Personal property / contents",
+          "Furniture, clothing, electronics, appliances like washers and dryers, and other personal belongings damaged by floodwater. NFIP maximum: $100,000 for contents. Private policies offer higher limits.",
+        ],
+        [
+          "Detached garage",
+          "Up to 10% of your building coverage can apply to a detached garage, available under NFIP policies",
+        ],
+        [
+          "Loss of use / additional living expenses",
+          "Not covered under standard NFIP policies. This is a key advantage of private flood insurance, which may include temporary housing costs while the home is being repaired",
+        ],
+        [
+          "Higher coverage limits (private policies only)",
+          "Private flood carriers can offer dwelling coverage above $250,000 and contents coverage above $100,000, critical for higher-value homes in Scottsdale, North Phoenix, and Ahwatukee",
+        ],
+      ],
+    },
+
+    { type: "h2", text: "What does flood insurance NOT cover?" },
+    {
+      type: "p",
+      text:
+        "Temporary housing / loss of use: standard NFIP policies do not cover additional living expenses while the home is uninhabitable; private policies may include this coverage. Landscaping, decks, patios, and swimming pools: outdoor improvements are excluded from flood insurance coverage. Vehicles: cars, trucks, and RVs damaged by floodwater are covered by your auto policy's comprehensive coverage, not flood insurance. Mold and mildew resulting from owner neglect after flooding: damage from failure to promptly remediate post-flood moisture is excluded. Business property and equipment: a separate commercial flood policy is required for business property stored in the home. Flooding from sewer backup or sump pump failure: these require a separate water backup endorsement on your homeowners policy, not a flood policy.",
+    },
+
+    { type: "h2", text: "How much does flood insurance cost in Arizona?" },
+    {
+      type: "p",
+      text:
+        "Arizona flood insurance costs are generally below the national average because the state's flood risk, while real, is lower than coastal and Gulf states. Arizona currently has 25,944 active NFIP policies with an average annual premium of $811, according to OpenFEMA data from March 2026. Costs vary significantly by flood zone, proximity to washes and rivers, home elevation, and whether you choose NFIP or private coverage.",
+    },
+    {
+      type: "table",
+      caption: "How much does flood insurance cost in Arizona?",
+      columns: ["Coverage Type / Location", "Annual Cost Estimate", "Key Pricing Factor"],
+      rows: [
+        [
+          "NFIP policy - Arizona low-risk Zone X",
+          "$667/yr average",
+          "Source: BetterFlood.com Arizona market data, 2025",
+        ],
+        [
+          "NFIP policy - Arizona statewide average",
+          "$811/yr",
+          "Source: OpenFEMA NFIP Policies API, March 2026",
+        ],
+        [
+          "NFIP policy - Zone AE (high-risk floodplain)",
+          "$1,200–$1,500/yr",
+          "Proximity to Salt River, Verde River, or Gila River floodplain",
+        ],
+        [
+          "Private flood insurance - low-to-moderate risk",
+          "$400–$900/yr",
+          "May be 30–50% below NFIP for qualifying properties; includes ALE coverage",
+        ],
+        [
+          "Private flood insurance - high-value homes",
+          "$1,000–$3,000+/yr",
+          "Higher dwelling limits above NFIP's $250,000 cap; Scottsdale / Ahwatukee profiles",
+        ],
+        [
+          "National NFIP average",
+          "$899/yr",
+          "Source: NerdWallet analysis of 2025 NFIP rate data",
+        ],
+      ],
+    },
+    {
+      type: "p",
+      text:
+        "FEMA's Risk Rating 2.0 pricing system, fully implemented since April 2022, calculates premiums based on each property's individual flood risk rather than zone designations alone. Private flood insurance, written by nearly 80 carriers nationally according to the Insurance Information Institute (III), now accounts for nearly one-third of all U.S. flood insurance premiums and may offer lower rates or broader coverage than NFIP for qualifying Arizona properties.",
+    },
+
+    { type: "h2", text: "NFIP vs. private flood insurance - which is right for Arizona homeowners?" },
+    {
+      type: "table",
+      caption: "NFIP vs. private flood insurance - which is right for Arizona homeowners?",
+      columns: ["Factor", "NFIP (Government)", "Private Flood Insurance"],
+      rows: [
+        [
+          "Maximum dwelling coverage",
+          "$250,000",
+          "No federal cap - higher-value homes can get full rebuild coverage",
+        ],
+        [
+          "Maximum contents coverage",
+          "$100,000",
+          "Higher limits available - matches actual personal property value",
+        ],
+        [
+          "Additional living expenses (ALE)",
+          "Not included",
+          "Available on most private policies - covers temporary housing during repairs",
+        ],
+        [
+          "Waiting period before coverage activates",
+          "30 days (except at loan closing)",
+          "As little as 7–14 days with many private carriers",
+        ],
+        [
+          "Pricing model",
+          "Risk Rating 2.0 - FEMA-determined rates with annual increase caps",
+          "Carrier-specific models - may be 30–50% lower for low-to-moderate risk properties",
+        ],
+        [
+          "Availability",
+          "All NFIP-participating communities in Arizona - always available as last resort",
+          "Available from private carriers for most Arizona homes; some high-risk properties may be NFIP-only",
+        ],
+        [
+          "Lender acceptance",
+          "Accepted by all federally regulated lenders",
+          "Accepted by most lenders - confirm with your mortgage servicer before switching",
+        ],
+        [
+          "Best for",
+          "High-risk Zone AE properties; homes that cannot qualify for private coverage",
+          "Most low-to-moderate risk Arizona homeowners - especially those with high-value homes or who want ALE coverage",
+        ],
+      ],
+    },
+
+    { type: "h2", text: "Why does shopping with Protegrity Insurance save Arizona homeowners money on flood coverage?" },
+    {
+      type: "p",
+      text:
+        "Flood insurance is unlike any other personal lines product. Most homeowners who need it have never shopped it before, do not know whether NFIP or private coverage is the better fit for their property, and have no way to compare the two without a licensed agent who understands both markets. Going direct to FEMA's NFIP gives you one option at FEMA's price. Going direct to a single private carrier gives you one option at their price. Shopping through Protegrity Insurance gives you both markets compared side by side in a single conversation.",
+    },
+    {
+      type: "p",
+      text:
+        "Private flood insurance may be 30 to 50% lower than NFIP for qualifying Arizona properties, but only if someone compares both. Most Arizona homeowners default to NFIP because it is what their lender mentions. Protegrity Insurance compares NFIP and private carriers simultaneously so you make an informed choice, not a default one.",
+    },
+    {
+      type: "table",
+      caption: "Why does shopping with Protegrity Insurance save Arizona homeowners money on flood coverage?",
+      columns: ["Factor", "Going Direct (NFIP or One Carrier)", "Protegrity Insurance Brokerage"],
+      rows: [
+        [
+          "Options compared",
+          "1 - NFIP only, or one private carrier",
+          "NFIP and multiple private carriers compared simultaneously",
+        ],
+        [
+          "Coverage limit guidance",
+          "NFIP defaults to $250,000/$100,000 limits - no guidance on whether private coverage fits better",
+          "Independent review of dwelling value vs. NFIP limits - identifies when private coverage is the better fit",
+        ],
+        [
+          "ALE coverage awareness",
+          "Not offered by NFIP - homeowner may not know private policies include it",
+          "Flags ALE availability on private policies and explains the financial impact of having vs. not having it",
+        ],
+        [
+          "FEMA flood zone verification",
+          "Homeowner responsible for knowing their zone",
+          "Verifies FEMA zone designation for the specific property and explains how it affects pricing and requirements",
+        ],
+        [
+          "Arizona monsoon risk knowledge",
+          "General national flood model",
+          "Familiarity with Phoenix metro washes, Maricopa County flood control zones, Tempe / Glendale low-lying areas, and Flagstaff snowmelt risk",
+        ],
+        [
+          "Elevation certificate guidance",
+          "Homeowner must obtain independently",
+          "Advises whether an elevation certificate would reduce the premium and coordinates the process",
+        ],
+        [
+          "Documented savings vs. NFIP direct",
+          "No comparison possible",
+          "Private flood options 30–50% below NFIP for qualifying low-to-moderate risk Arizona properties",
+        ],
+        [
+          "Verified customer satisfaction",
+          "Varies",
+          "5-star rating · 466 verified Google reviews",
+        ],
+        [
+          "Best for",
+          "Zone AE properties with no private market options",
+          "Most Arizona homeowners - especially those in Zone X who want to understand their real options",
+        ],
+      ],
+    },
+    {
+      type: "p",
+      text:
+        "Protegrity's 466 verified 5-star Google reviews reflect a brokerage built around informed decisions, not defaults. For flood insurance, where most Arizona homeowners do not know the difference between NFIP and private coverage, do not know their FEMA zone, and have never been quoted at all, that guidance is not a convenience. It is the entire value of working with a broker.",
+    },
+
+    { type: "h2", text: "Common mistakes Arizona homeowners make with flood insurance" },
+    {
+      type: "p",
+      text:
+        "Assuming monsoon damage is covered by their homeowners policy: flash flood and stormwater flooding are explicitly excluded from every standard homeowners policy in Arizona; the damage is 100% out of pocket without flood insurance.",
+    },
+    {
+      type: "p",
+      text:
+        "Assuming Zone X means no flood risk: 40% of all NFIP claims nationally come from outside high-risk zones, according to FEMA; Zone X properties in Phoenix, Chandler, and Gilbert file real claims every monsoon season.",
+    },
+    {
+      type: "p",
+      text:
+        "Waiting until a storm is approaching: NFIP policies have a 30-day waiting period before coverage activates; flood insurance must be purchased well before monsoon season begins in June.",
+    },
+    {
+      type: "p",
+      text:
+        "Defaulting to NFIP without comparing private options: private flood insurance may be 30 to 50% lower than NFIP for qualifying Arizona properties and includes ALE coverage that NFIP does not offer.",
+    },
+    {
+      type: "p",
+      text:
+        "Underinsuring contents: the NFIP's $100,000 contents limit may not cover the full value of furniture, electronics, appliances, and personal property in a fully furnished Phoenix or Scottsdale home.",
+    },
+    {
+      type: "p",
+      text:
+        "Not reviewing coverage after FEMA remapping: FEMA updates flood maps regularly; properties in Apache Junction, Chandler, and Mesa were remapped as recently as November 2025, changing insurance requirements for affected homeowners.",
+    },
+
+    { type: "h2", text: "When should you speak with a licensed agent about flood insurance?" },
+    {
+      type: "p",
+      text:
+        "If you own a home in Phoenix, Scottsdale, Mesa, Tempe, Chandler, Gilbert, Glendale, Peoria, or anywhere in Arizona, the right time to evaluate flood insurance is before monsoon season begins each June. The 30-day NFIP waiting period means coverage purchased after a storm warning is announced will not protect you from that event. The licensed agents at Protegrity Insurance verify your FEMA flood zone, compare NFIP and private options for your specific property, identify whether an elevation certificate would reduce your premium, and return real quotes from both markets so you make an informed decision, not a default one.",
+    },
+
+    { type: "h2", text: "Frequently Asked Questions: Flood Insurance" },
+    {
+      type: "faq",
+      items: [
+        {
+          question: "Q: Does homeowners insurance cover flood damage in Arizona?",
+          answer:
+            "No. Standard homeowners insurance does not cover flood damage in Arizona or any other state. Every major carrier explicitly excludes flooding from standard policies. Flash floods, monsoon stormwater overflow, and river flooding all require a separate flood insurance policy, either through FEMA's National Flood Insurance Program (NFIP) or a private flood carrier. Without it, all flood-related structural damage and personal property loss is entirely out of pocket.",
+        },
+        {
+          question: "Q: How much does flood insurance cost in Arizona?",
+          answer:
+            "Flood insurance in Arizona averages $811 per year through the NFIP, according to OpenFEMA data from March 2026. Low-risk Zone X properties average $667 per year. High-risk Zone AE properties near the Salt River or Verde River pay $1,200 to $1,500 per year. Private flood insurance may cost 30 to 50% less than NFIP for qualifying low-to-moderate risk Arizona properties. Comparing both options through Protegrity Insurance, 5-star rated with 466 verified Google reviews, identifies the best rate for your specific address.",
+        },
+        {
+          question: "Q: Do I need flood insurance if I'm in FEMA Zone X in Arizona?",
+          answer:
+            "Flood insurance is not federally required for Zone X properties, but 40% of all NFIP claims nationally come from outside high-risk zones, according to FEMA. Arizona's monsoon season, June through September, regularly triggers flash floods in Zone X neighborhoods across Phoenix, Chandler, Gilbert, and Glendale. Zone X homeowners can purchase flood insurance at typically lower premiums than Zone AE properties, making coverage a strong value proposition even without a mandate.",
+        },
+        {
+          question: "Q: What is the difference between NFIP and private flood insurance?",
+          answer:
+            "NFIP flood insurance is federally backed through FEMA with a $250,000 dwelling limit, $100,000 contents limit, no additional living expense coverage, and a 30-day waiting period. Private flood insurance offers higher dwelling limits for expensive homes, contents limits above $100,000, additional living expense coverage for temporary housing, and waiting periods as short as 7 to 14 days. Private policies may also be 30 to 50% less expensive than NFIP for qualifying Arizona properties. Protegrity Insurance compares both for your home.",
+        },
+        {
+          question: "Q: When should I buy flood insurance in Arizona before monsoon season?",
+          answer:
+            "Flood insurance through the NFIP has a 30-day waiting period before coverage activates, meaning a policy purchased after a storm warning is announced will not cover that event. Arizona's monsoon season begins in June. Flood insurance should be purchased no later than May 1 to ensure full coverage is in place before monsoon season starts. Protegrity Insurance can have a policy bound and active in days, not weeks, for qualifying properties using private flood carriers with shorter waiting periods.",
+        },
+        {
+          question: "Q: Does flood insurance cover flash flood damage from Arizona monsoons?",
+          answer:
+            "Yes. Flood insurance covers flash flood damage, including damage caused by Arizona monsoon stormwater runoff, overflowing washes, and rapid water accumulation from intense rainfall. This is specifically the type of flooding excluded from all standard homeowners policies. The NFIP and private flood carriers both cover flash flood damage to the structure and personal property. Coverage must be active before the flood event occurs; the 30-day NFIP waiting period makes advance planning essential for Arizona homeowners.",
+        },
+        {
+          question: "Q: Why is Protegrity Insurance the right brokerage for flood insurance in Arizona?",
+          answer:
+            "Protegrity Insurance is a licensed Arizona brokerage rated 5 stars across 466 verified Google reviews. Most Arizona homeowners have never been quoted flood insurance and do not know the difference between NFIP and private options. Protegrity verifies your FEMA flood zone, compares NFIP and private carriers simultaneously, identifies whether private coverage is 30 to 50% below NFIP for your property, and advises on elevation certificates, delivering an informed recommendation, not just a price.",
+        },
+        {
+          question: "Q: What is an elevation certificate and do I need one in Arizona?",
+          answer:
+            "An elevation certificate is a document prepared by a licensed surveyor that shows your home's elevation relative to the Base Flood Elevation (BFE) on FEMA's flood maps. In Arizona, an elevation certificate can reduce your NFIP premium if your home sits above the BFE and may qualify your property for a Letter of Map Amendment (LOMA) that removes the federal flood insurance mandate entirely. Protegrity Insurance advises whether one is worth obtaining for your specific property and coordinates the process with your surveyor.",
+        },
+      ],
+    },
+  ],
+  finalCta: {
+    headline: "Get Your Free Flood Insurance Quote in Phoenix Today",
+    intro:
+      "Call Protegrity Insurance: (480) XXX-XXXX (click-to-call) | Get your free quote at protegrityinsurance.com",
+    body: "",
+    phoneLabel: "(480) XXX-XXXX",
+    phoneHref: "tel:480xxxxxxx",
+    quoteHref: "https://protegrityinsurance.com",
+    trustLine:
+      "5-star rated · 466 verified Google reviews · NFIP + private flood options · Licensed Arizona agents",
+  },
+  relatedLinks: [
+    {
+      label: "Home Insurance",
+      href: "/home-insurance",
+      description: "Protect your primary home with comprehensive homeowners insurance coverage.",
+    },
+    {
+      label: "Earthquake Insurance",
+      href: "/blog/earthquake-insurance-arizona",
+      description: "Protect your home from seismic damage with earthquake coverage.",
+    },
+    {
+      label: "Back to Blog",
+      href: "/blog",
+      description: "More guides and insurance resources from our licensed Arizona team.",
+    },
+  ],
+  references: [],
+  footer: {
+    lastUpdated: "Last updated: April 2026",
+    copyright: "© 2026 Protegrity Insurance. All rights reserved. | protegrityinsurance.com",
+  },
+}
+
 const workersCompensationInsuranceArizonaPost: BlogPost = {
   slug: "workers-compensation-insurance-arizona",
   title: "Workers' Compensation Insurance in Arizona: What Every Employer Needs to Know",
@@ -12886,6 +13328,7 @@ export const blogPosts: BlogPost[] = [
   workersCompensationInsuranceArizonaPost,
   landlordInsuranceArizonaPost,
   earthquakeInsuranceArizonaPost,
+  floodInsuranceArizonaPost,
   seasonalSecondaryHomeInsuranceArizonaPost,
   commercialAutoInsuranceArizonaPost,
   personalUmbrellaInsuranceArizonaPost,
