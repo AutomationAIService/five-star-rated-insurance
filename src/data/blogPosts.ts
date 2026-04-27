@@ -8100,6 +8100,649 @@ const mexicoTravelInsuranceChecklistPhoenixPost: BlogPost = {
   },
 }
 
+const motorcycleInsurancePhoenixPost: BlogPost = {
+  slug: "motorcycle-insurance-phoenix-az",
+  title:
+    "Motorcycle Insurance in Phoenix, AZ: Coverage, Costs, and Arizona Requirements (2026)",
+  excerpt:
+    "Everything Phoenix riders need to know about motorcycle insurance in 2026: Arizona requirements, average rates, top carriers, and coverage options for Valley motorcyclists.",
+  metaTitle:
+    "Motorcycle Insurance in Phoenix, AZ: Coverage, Costs, and Arizona Requirements (2026)",
+  metaDescription:
+    "Everything Phoenix riders need to know about motorcycle insurance in 2026: Arizona requirements, average rates, top carriers, and coverage options for Valley motorcyclists.",
+  keywords: ["motorcycle insurance Phoenix AZ"],
+  category: "SPECIALTY INSURANCE",
+  readTime: "8 min read",
+  displayDate: "April 2026",
+  publishedISO: "2026-04-26",
+  modifiedISO: "2026-04-26",
+  breadcrumbLabel: "Motorcycle Insurance Phoenix",
+  author: ryanLorschAuthor,
+  heroImage: {
+    src: "https://images.unsplash.com/photo-1604438072130-1bccc665c0e3",
+    alt: "Motorcycle on Arizona desert highway representing motorcycle insurance for Phoenix riders",
+    width: 1920,
+    height: 1080,
+    photographer: "Ed Berrevoets",
+    photographerUrl: "https://unsplash.com/@preservenature",
+  },
+  image: {
+    src: "https://images.unsplash.com/photo-1604438072130-1bccc665c0e3",
+    alt: "Motorcycle on Arizona desert highway representing motorcycle insurance for Phoenix riders",
+    width: 1920,
+    height: 1080,
+    photographer: "Ed Berrevoets",
+    photographerUrl: "https://unsplash.com/@preservenature",
+  },
+  keyTakeaways: {
+    items: [
+      "Motorcycle insurance in Phoenix, AZ costs an average of $34/month ($408/year) for minimum liability coverage and $72/month ($864/year) for full coverage.",
+      "Arizona requires all motorcyclists to carry minimum liability of 25/50/15 under ARS § 28-4009.",
+      "Phoenix riders face above-average risk: Maricopa County recorded 892 motorcycle crashes in 2023 (ADOT), making comprehensive coverage essential for Valley riders.",
+      "Phoenix ranks among the top 10 U.S. cities for motorcycle theft, with 1,847 motorcycles reported stolen in Maricopa County in 2023.",
+      "Protegrity Insurance works with 30+ carriers to find Phoenix riders the best motorcycle insurance at competitive rates.",
+    ],
+  },
+  content: [
+    { type: "h2", text: "The Short Answer: Motorcycle Insurance in Phoenix" },
+    {
+      type: "p",
+      text:
+        "Motorcycle insurance in Phoenix, AZ costs an average of $34/month ($408/year) for minimum liability coverage and $72/month ($864/year) for full coverage, according to Cycle World 2024 rate data. Arizona requires all motorcyclists to carry minimum liability of 25/50/15 under ARS § 28-4009. Phoenix riders face above-average risk: Maricopa County recorded 892 motorcycle crashes in 2023 (ADOT), making comprehensive coverage essential for Valley riders.",
+    },
+
+    { type: "h2", text: "Why Phoenix Motorcycle Riders Need More Than the State Minimum" },
+    {
+      type: "p",
+      text:
+        "Arizona's minimum motorcycle insurance — $25,000/$50,000 bodily injury and $15,000 property damage — costs as little as $34/month in Phoenix but leaves significant financial gaps. A single motorcycle crash in Maricopa County generates an average of $28,000 in medical costs for the rider alone (Arizona Department of Health Services, 2023). Minimum liability covers damage to others; it pays nothing for your own injuries, your bike's repair, or replacement if it is stolen.",
+    },
+    {
+      type: "p",
+      text:
+        "Phoenix ranks among the top 10 U.S. cities for motorcycle theft, with 1,847 motorcycles reported stolen in Maricopa County in 2023 (NICB). Without comprehensive coverage, a stolen bike is a total financial loss.",
+    },
+
+    { type: "h2", text: "Motorcycle Insurance Coverage Options for Phoenix Riders" },
+    {
+      type: "table",
+      caption: "Motorcycle Insurance Coverage Options for Phoenix Riders",
+      columns: [
+        "Coverage Type",
+        "What It Pays",
+        "Required by AZ Law?",
+        "Avg. Monthly Cost Phoenix",
+      ],
+      rows: [
+        ["Bodily Injury Liability", "Injuries you cause to others", "Yes (25/50 minimum)", "$18–$28/mo"],
+        ["Property Damage Liability", "Damage you cause to others' property", "Yes ($15K minimum)", "$8–$12/mo"],
+        ["Collision", "Your bike's repair after a crash", "No", "$18–$32/mo"],
+        ["Comprehensive", "Theft, fire, vandalism, weather damage", "No", "$10–$18/mo"],
+        ["Uninsured Motorist (UM)", "Your injuries if hit by uninsured driver", "No (must be offered)", "$8–$14/mo"],
+        ["Medical Payments (MedPay)", "Your medical bills regardless of fault", "No", "$4–$8/mo"],
+        ["Custom Parts & Equipment", "Aftermarket accessories, custom paint", "No", "$4–$12/mo"],
+        ["Roadside Assistance", "Towing, flat tire, fuel delivery", "No", "$2–$4/mo"],
+      ],
+    },
+
+    { type: "h2", text: "Top Motorcycle Insurance Carriers in Phoenix for 2026" },
+    {
+      type: "table",
+      caption: "Top Motorcycle Insurance Carriers in Phoenix for 2026",
+      columns: [
+        "Carrier",
+        "Avg. Monthly (Full Coverage)",
+        "AM Best Rating",
+        "Best For",
+        "Custom Parts Limit",
+      ],
+      rows: [
+        ["Progressive", "$58/mo", "A+", "Most riders / best rates", "Up to $30,000"],
+        ["Dairyland", "$62/mo", "A+", "High-risk / lapsed coverage", "Up to $20,000"],
+        ["Markel", "$68/mo", "A", "Vintage / custom bikes", "Up to $30,000"],
+        ["Nationwide", "$64/mo", "A+", "Multi-policy bundle", "Up to $25,000"],
+        ["State Farm", "$72/mo", "A++", "Full service / bundling", "Up to $20,000"],
+        ["USAA", "$54/mo", "A++", "Military riders only", "Up to $30,000"],
+      ],
+    },
+
+    { type: "h2", text: "How Much Does Motorcycle Insurance Cost in Phoenix by Bike Type?" },
+    {
+      type: "table",
+      caption: "How Much Does Motorcycle Insurance Cost in Phoenix by Bike Type?",
+      columns: [
+        "Motorcycle Type",
+        "Example Model",
+        "Avg. Monthly (Full Coverage)",
+        "Key Rate Driver",
+      ],
+      rows: [
+        ["Cruiser", "Harley-Davidson Sportster", "$68/mo", "High theft target, moderate repair cost"],
+        ["Sport / Supersport", "Kawasaki Ninja ZX-6R", "$112/mo", "High speed, high crash frequency"],
+        ["Standard / Naked", "Honda CB500F", "$52/mo", "Moderate risk, lower repair cost"],
+        ["Touring", "Honda Gold Wing", "$78/mo", "High value, higher comprehensive cost"],
+        ["Scooter (under 150cc)", "Vespa GTS 300", "$28/mo", "Low speed, low liability exposure"],
+        ["Dual Sport / ADV", "BMW GS 1250", "$74/mo", "Off-road use adds risk"],
+        ["Electric", "Zero SR/F", "$88/mo", "High repair cost, limited parts availability"],
+      ],
+    },
+
+    { type: "h2", text: "Arizona-Specific Motorcycle Laws That Affect Your Coverage" },
+    {
+      type: "p",
+      lead: "Helmet law:",
+      text:
+        "Arizona does not require helmets for riders 18 and older (ARS § 28-964). However, riders without helmets face higher medical costs after a crash — the average non-helmeted rider incurs 23% more in head injury costs than helmeted riders (NHTSA, 2023). Some carriers apply a 5–8% premium surcharge for policies on riders who document helmet non-use.",
+    },
+    {
+      type: "p",
+      lead: "Lane splitting:",
+      text:
+        "Arizona does not permit lane splitting (riding between lanes of traffic). Carriers can deny collision claims if the crash occurred during a lane-splitting maneuver, as the practice is illegal under ARS § 28-815.",
+    },
+    {
+      type: "p",
+      lead: "Seasonal discounts:",
+      text:
+        "Unlike cold-weather states, Phoenix riders ride year-round. Carriers do not offer lay-up or seasonal discounts in Arizona because the riding season is continuous, which keeps annual premiums slightly higher than in states where bikes are stored for winter.",
+    },
+
+    { type: "h2", text: "Frequently Asked Questions: Motorcycle Insurance in Phoenix" },
+    {
+      type: "faq",
+      items: [
+        {
+          question: "Q: Is motorcycle insurance required in Arizona?",
+          answer:
+            "Yes. Arizona requires all motorcycle operators to carry minimum liability insurance of $25,000 per person / $50,000 per accident bodily injury and $15,000 property damage (ARS § 28-4009). Riding without insurance results in a minimum $500 fine, license suspension, and a 3-year SR-22 requirement. Proof of insurance must be carried at all times when operating a motorcycle in Phoenix.",
+        },
+        {
+          question: "Q: What is the cheapest motorcycle insurance in Phoenix?",
+          answer:
+            "USAA offers the lowest rates for eligible military riders at $54/month for full coverage. For non-military Phoenix riders, Progressive averages $58/month for full coverage on a standard cruiser or naked bike. Liability-only minimum coverage starts at $28–$34/month. Rates increase significantly for sport bikes — a Kawasaki Ninja ZX-6R averages $112/month for full coverage due to high crash frequency data.",
+        },
+        {
+          question: "Q: Does my auto insurance cover my motorcycle in Phoenix?",
+          answer:
+            "No. Standard Arizona auto insurance policies explicitly exclude motorcycles under ARS § 28-4001 definitions. A motorcycle requires a separate dedicated policy. Some carriers — including Progressive and State Farm — allow you to bundle a motorcycle policy with your existing auto policy for a multi-policy discount of 8–12%, but they remain separate policies with separate premiums and coverage terms.",
+        },
+        {
+          question: "Q: Does motorcycle insurance cover custom parts in Phoenix?",
+          answer:
+            "Standard motorcycle policies cover factory-installed parts up to the bike's actual cash value. Aftermarket additions — custom exhaust, custom paint, upgraded suspension, GPS systems, luggage systems — require a custom parts and equipment (CPE) rider. Progressive offers CPE coverage up to $30,000/year for $4–$12/month in Phoenix. Document all modifications with photos and receipts at the time of installation.",
+        },
+        {
+          question: "Q: How does monsoon season affect motorcycle insurance claims in Phoenix?",
+          answer:
+            "Phoenix's monsoon season (June–September) generates flash flooding, dust storms (haboobs), and high winds that cause comprehensive claims for tipped bikes, flood damage, and debris impact. ADOT recorded 42 weather-related motorcycle incidents in Maricopa County during monsoon season 2023. Comprehensive coverage — which averages $10–$18/month — covers all weather-related damage including monsoon events.",
+        },
+        {
+          question: "Q: Can I get same-day motorcycle insurance in Phoenix?",
+          answer:
+            "Yes. Through Protegrity Insurance, Progressive and Dairyland both offer same-day motorcycle insurance binding in Arizona. Most Phoenix riders can obtain a quote, select coverage, and receive digital proof of insurance within 20–30 minutes. If you need an SR-22 filing on your motorcycle policy, same-day electronic filing with Arizona MVD is available through Progressive and Dairyland.",
+        },
+      ],
+    },
+  ],
+  finalCta: {
+    headline: "Get Your Free Specialty Insurance Quote in Phoenix Today",
+    intro:
+      "Call Protegrity Insurance: (480) XXX-XXXX (click-to-call) | Get your free quote at protegrityinsurance.com",
+    body: "",
+    phoneLabel: "(480) XXX-XXXX",
+    phoneHref: "tel:480xxxxxxx",
+    quoteHref: "https://protegrityinsurance.com",
+    trustLine:
+      "5-star rated · 30+ top-rated carriers · Licensed Arizona agents · Motorcycle, ATV, Boat, RV specialists",
+  },
+  relatedLinks: [
+    {
+      label: "Auto Insurance",
+      href: "/auto-insurance",
+      description:
+        "Bundle motorcycle and auto insurance for additional savings with major carriers.",
+    },
+    {
+      label: "Home Insurance",
+      href: "/home-insurance",
+      description:
+        "Protect your home and motorcycle with comprehensive coverage options.",
+    },
+    {
+      label: "Back to Blog",
+      href: "/blog",
+      description:
+        "More guides and insurance resources from our licensed Arizona team.",
+    },
+  ],
+  references: [],
+  footer: {
+    lastUpdated: "Last updated: April 2026",
+    copyright: "© 2026 Protegrity Insurance. All rights reserved. | protegrityinsurance.com",
+  },
+}
+
+const atvInsurancePhoenixPost: BlogPost = {
+  slug: "atv-insurance-phoenix-az",
+  title:
+    "ATV Insurance in Phoenix, AZ: What It Covers, What It Costs, and Who Needs It (2026)",
+  excerpt:
+    "ATV insurance in Phoenix, AZ: coverage types, average costs, Arizona off-road laws, and top carriers for Maricopa County riders. Get the right protection before your next trail ride.",
+  metaTitle:
+    "ATV Insurance in Phoenix, AZ: What It Covers, What It Costs, and Who Needs It (2026)",
+  metaDescription:
+    "ATV insurance in Phoenix, AZ: coverage types, average costs, Arizona off-road laws, and top carriers for Maricopa County riders. Get the right protection before your next trail ride.",
+  keywords: ["ATV insurance Phoenix AZ"],
+  category: "SPECIALTY INSURANCE",
+  readTime: "8 min read",
+  displayDate: "April 2026",
+  publishedISO: "2026-04-26",
+  modifiedISO: "2026-04-26",
+  breadcrumbLabel: "ATV Insurance Phoenix",
+  author: ryanLorschAuthor,
+  heroImage: {
+    src: "https://images.unsplash.com/photo-1583385183144-e134f61fa433",
+    alt: "ATV on Arizona desert trail representing ATV insurance for Phoenix off-road enthusiasts",
+    width: 1920,
+    height: 1080,
+    photographer: "Spencer Davis",
+    photographerUrl: "https://unsplash.com/@spencerdavis",
+  },
+  image: {
+    src: "https://images.unsplash.com/photo-1583385183144-e134f61fa433",
+    alt: "ATV on Arizona desert trail representing ATV insurance for Phoenix off-road enthusiasts",
+    width: 1920,
+    height: 1080,
+    photographer: "Spencer Davis",
+    photographerUrl: "https://unsplash.com/@spencerdavis",
+  },
+  keyTakeaways: {
+    items: [
+      "ATV insurance in Phoenix, AZ costs an average of $24–$48/month depending on the ATV's value, engine size, and coverage level.",
+      "Arizona does not require ATV insurance for off-road-only use on private land, but any ATV operated on public land or roads must carry liability coverage.",
+      "The Phoenix metro area is surrounded by premier ATV riding destinations: Tonto National Forest (30 miles northeast), Lake Pleasant Regional Park (35 miles northwest), and Vulture Mountains Recreation Area (45 miles west).",
+      "ATV accidents in Arizona resulted in 847 injuries and 24 fatalities in 2023, with medical costs from rollover incidents averaging $42,000 per hospitalized rider.",
+      "Protegrity Insurance recommends full coverage for any ATV worth over $5,000.",
+    ],
+  },
+  content: [
+    { type: "h2", text: "The Short Answer: ATV Insurance in Phoenix" },
+    {
+      type: "p",
+      text:
+        "ATV insurance in Phoenix, AZ costs an average of $24–$48/month depending on the ATV's value, engine size, and coverage level, according to Progressive 2024 rate data for Maricopa County. Arizona does not require ATV insurance for off-road-only use on private land, but any ATV operated on public land or roads — including Tonto National Forest trails and Bureau of Land Management (BLM) areas near Phoenix — must carry liability coverage. Protegrity Insurance recommends full coverage for any ATV worth over $5,000.",
+    },
+
+    { type: "h2", text: "Why Phoenix ATV Owners Need Dedicated Coverage" },
+    {
+      type: "p",
+      text:
+        "The Phoenix metro area is surrounded by premier ATV riding destinations: Tonto National Forest (30 miles northeast), Lake Pleasant Regional Park (35 miles northwest), and the Vulture Mountains Recreation Area (45 miles west). These areas collectively host over 280,000 ATV and off-highway vehicle (OHV) visits per year (Bureau of Land Management Arizona, 2023).",
+    },
+    {
+      type: "p",
+      text:
+        "ATV accidents in Arizona resulted in 847 injuries and 24 fatalities in 2023 (Arizona State Parks OHV Division). Medical costs from ATV rollover incidents average $42,000 per hospitalized rider. A standard homeowners or auto policy does not cover ATV accidents — a dedicated ATV policy is required.",
+    },
+
+    { type: "h2", text: "ATV Insurance Coverage Options Available in Phoenix" },
+    {
+      type: "table",
+      caption: "ATV Insurance Coverage Options Available in Phoenix",
+      columns: [
+        "Coverage",
+        "What It Pays",
+        "Required in AZ?",
+        "Avg. Monthly Cost Phoenix",
+      ],
+      rows: [
+        ["Bodily Injury Liability", "Injuries to others you cause", "Yes — on public land/roads", "$8–$14/mo"],
+        ["Property Damage Liability", "Damage to others' property", "Yes — on public land/roads", "$4–$8/mo"],
+        ["Collision", "Your ATV's repair after crash", "No", "$10–$18/mo"],
+        ["Comprehensive", "Theft, fire, vandalism, flood", "No", "$6–$12/mo"],
+        ["Medical Payments", "Your medical bills after a crash", "No", "$4–$8/mo"],
+        ["Uninsured Motorist", "If hit by uninsured OHV rider", "No", "$4–$8/mo"],
+        ["Accessories / Custom Parts", "Aftermarket upgrades, winches, racks", "No", "$3–$8/mo"],
+        ["Guest Passenger Liability", "Injuries to passengers on your ATV", "No", "$3–$6/mo"],
+      ],
+    },
+
+    { type: "h2", text: "ATV Insurance Rates by Vehicle Type in Phoenix" },
+    {
+      type: "table",
+      caption: "ATV Insurance Rates by Vehicle Type in Phoenix",
+      columns: [
+        "ATV Type",
+        "Example Model",
+        "Avg. Value",
+        "Full Coverage Avg. Monthly",
+      ],
+      rows: [
+        ["Sport ATV (under 400cc)", "Yamaha YFZ450R", "$7,500", "$28/mo"],
+        ["Utility ATV (400–700cc)", "Can-Am Outlander 450", "$9,200", "$34/mo"],
+        ["Side-by-Side / UTV (recreational)", "Polaris RZR Pro XP", "$22,000", "$58/mo"],
+        ["Side-by-Side / UTV (heavy duty)", "Can-Am Defender MAX", "$28,000", "$72/mo"],
+        ["Youth ATV (under 90cc)", "Honda TRX90X", "$2,800", "$14/mo"],
+        ["Electric ATV", "Polaris Ranger XP Kinetic", "$32,000", "$82/mo"],
+      ],
+    },
+
+    { type: "h2", text: "Arizona OHV Laws That Affect Your ATV Coverage" },
+    {
+      type: "p",
+      text:
+        "Arizona requires OHV registration for all ATVs operated on public lands, including BLM areas, state trust land, and national forest trails (ARS § 28-2153). The annual OHV registration fee is $25 for residents. Operating an unregistered ATV on public land carries a $500 fine.",
+    },
+    {
+      type: "p",
+      text:
+        "Liability coverage is required under ARS § 28-4009 whenever an ATV is operated on a public road or highway — including crossing a road to access a trail. ATVs used exclusively on private property are not required to carry insurance under Arizona law, but Protegrity Insurance recommends liability coverage in all cases due to guest injury exposure.",
+    },
+    {
+      type: "p",
+      text:
+        "Arizona's OHV safety law (ARS § 28-2157) requires riders under 18 to wear a helmet when operating an ATV on public land. Carriers may deny medical payments claims for underage riders injured without a helmet if the policy includes a safety compliance clause.",
+    },
+
+    { type: "h2", text: "Top ATV Insurance Carriers for Phoenix Riders" },
+    {
+      type: "table",
+      caption: "Top ATV Insurance Carriers for Phoenix Riders",
+      columns: [
+        "Carrier",
+        "Avg. Monthly (Full Coverage)",
+        "Custom Parts Limit",
+        "Guest Passenger Coverage",
+        "Best For",
+      ],
+      rows: [
+        ["Progressive", "$28–$72/mo", "Up to $50,000", "Yes", "Best rates, widest acceptance"],
+        ["Markel", "$32–$78/mo", "Up to $30,000", "Yes", "Vintage / collector ATVs"],
+        ["Foremost", "$34–$82/mo", "Up to $25,000", "Yes", "UTVs and side-by-sides"],
+        ["Nationwide", "$30–$68/mo", "Up to $30,000", "Yes", "Bundle with auto/home"],
+        ["USAA", "$24–$58/mo", "Up to $30,000", "Yes", "Military families only"],
+      ],
+    },
+
+    { type: "h2", text: "Frequently Asked Questions: ATV Insurance in Phoenix" },
+    {
+      type: "faq",
+      items: [
+        {
+          question: "Q: Is ATV insurance required in Arizona?",
+          answer:
+            "Arizona requires ATV liability insurance whenever the vehicle is operated on a public road, highway, or public land including BLM and national forest areas (ARS § 28-4009). ATVs used exclusively on private property are not legally required to be insured, but Protegrity Insurance recommends coverage in all cases — a guest injured on your property can generate a personal liability claim that homeowners insurance may not cover.",
+        },
+        {
+          question: "Q: Does homeowners insurance cover my ATV in Phoenix?",
+          answer:
+            "Standard homeowners insurance in Arizona covers ATVs only while they are stored on your property and only up to $1,500 in most policies — far below the value of most ATVs. Once an ATV leaves your property, homeowners coverage ends entirely. An ATV crash on Tonto National Forest trails is completely uncovered by a homeowners policy. A dedicated ATV policy from Progressive or Foremost costs $24–$48/month and covers the vehicle wherever it rides.",
+        },
+        {
+          question: "Q: What is the best ATV insurance for a side-by-side (UTV) in Phoenix?",
+          answer:
+            "Progressive and Foremost are the top carriers for side-by-side / UTV coverage in Phoenix. A Polaris RZR Pro XP valued at $22,000 runs $58/month for full coverage through Progressive. Foremost specializes in high-value UTVs and offers accessory coverage up to $25,000 — critical for Phoenix riders who add winches, lift kits, light bars, and sound systems to their vehicles.",
+        },
+        {
+          question: "Q: Does ATV insurance cover riding in Tonto National Forest?",
+          answer:
+            "Yes, if your policy includes public land / off-premises coverage — which all standard ATV policies from Progressive, Foremost, and Markel include by default. Tonto National Forest's OHV trail system, including the Bulldog Canyon OHV area 30 miles northeast of Phoenix, is designated public land. ATV liability insurance is required by the U.S. Forest Service for all motorized vehicles on designated trails.",
+        },
+        {
+          question: "Q: Can I insure multiple ATVs on one policy in Phoenix?",
+          answer:
+            "Yes. Progressive and Nationwide offer multi-ATV policies covering up to 10 vehicles on a single policy with a multi-unit discount of 10–15%. A Phoenix family with two ATVs and one UTV saves an average of $18–$28/month on combined premiums compared to three separate single-unit policies. All vehicles must be registered to the same household.",
+        },
+        {
+          question: "Q: What happens if someone borrows my ATV and crashes it in Arizona?",
+          answer:
+            "If you give a licensed adult permission to operate your ATV, your Arizona ATV policy's liability coverage extends to that driver under the permissive use doctrine. Collision coverage for damage to your ATV also applies regardless of who was driving, as long as they had your permission. If someone takes your ATV without permission, coverage depends on your carrier's unauthorized use clause — Progressive and Foremost both cover theft-related damage without a permissive use restriction.",
+        },
+      ],
+    },
+  ],
+  finalCta: {
+    headline: "Get Your Free Specialty Insurance Quote in Phoenix Today",
+    intro:
+      "Call Protegrity Insurance: (480) XXX-XXXX (click-to-call) | Get your free quote at protegrityinsurance.com",
+    body: "",
+    phoneLabel: "(480) XXX-XXXX",
+    phoneHref: "tel:480xxxxxxx",
+    quoteHref: "https://protegrityinsurance.com",
+    trustLine:
+      "5-star rated · 30+ top-rated carriers · Licensed Arizona agents · Motorcycle, ATV, Boat, RV specialists",
+  },
+  relatedLinks: [
+    {
+      label: "Auto Insurance",
+      href: "/auto-insurance",
+      description:
+        "Bundle ATV and auto insurance for additional savings with major carriers.",
+    },
+    {
+      label: "Home Insurance",
+      href: "/home-insurance",
+      description:
+        "Protect your home and recreational vehicles with comprehensive coverage.",
+    },
+    {
+      label: "Back to Blog",
+      href: "/blog",
+      description:
+        "More guides and insurance resources from our licensed Arizona team.",
+    },
+  ],
+  references: [],
+  footer: {
+    lastUpdated: "Last updated: April 2026",
+    copyright: "© 2026 Protegrity Insurance. All rights reserved. | protegrityinsurance.com",
+  },
+}
+
+const motorcycleVsAtvInsurancePhoenixPost: BlogPost = {
+  slug: "motorcycle-vs-atv-insurance-phoenix",
+  title:
+    "Motorcycle vs. ATV Insurance in Phoenix: Key Differences Every Rider Should Know (2026)",
+  excerpt:
+    "Motorcycle vs. ATV insurance in Phoenix, AZ: coverage differences, cost comparison, Arizona law requirements, and which policy you need for your specific recreational vehicle.",
+  metaTitle:
+    "Motorcycle vs. ATV Insurance in Phoenix: Key Differences Every Rider Should Know (2026)",
+  metaDescription:
+    "Motorcycle vs. ATV insurance in Phoenix, AZ: coverage differences, cost comparison, Arizona law requirements, and which policy you need for your specific recreational vehicle.",
+  keywords: ["motorcycle vs ATV insurance Phoenix AZ"],
+  category: "SPECIALTY INSURANCE",
+  readTime: "8 min read",
+  displayDate: "April 2026",
+  publishedISO: "2026-04-26",
+  modifiedISO: "2026-04-26",
+  breadcrumbLabel: "Motorcycle vs ATV Insurance Phoenix",
+  author: ryanLorschAuthor,
+  heroImage: {
+    src: "https://images.unsplash.com/photo-1601057455228-898e3692ef53",
+    alt: "Motorcycle and ATV comparison representing insurance differences for Phoenix recreational vehicle owners",
+    width: 1920,
+    height: 1080,
+    photographer: "LOGAN WEAVER | @LGNWVR",
+    photographerUrl: "https://unsplash.com/@lgnwvr",
+  },
+  image: {
+    src: "https://images.unsplash.com/photo-1601057455228-898e3692ef53",
+    alt: "Motorcycle and ATV comparison representing insurance differences for Phoenix recreational vehicle owners",
+    width: 1920,
+    height: 1080,
+    photographer: "LOGAN WEAVER | @LGNWVR",
+    photographerUrl: "https://unsplash.com/@lgnwvr",
+  },
+  keyTakeaways: {
+    items: [
+      "Motorcycle insurance in Phoenix averages $58–$72/month for full coverage; ATV insurance averages $28–$58/month.",
+      "The key difference is legal use: motorcycles are licensed for public roads and require mandatory liability insurance at all times, while ATVs are off-road vehicles requiring insurance only on public land or roads.",
+      "Both require separate dedicated policies — your auto insurance covers neither vehicle type.",
+      "The greater Phoenix area is one of the top dual-sport recreational markets in the United States, with many residents owning both motorcycles and ATVs.",
+      "Bundling motorcycle and ATV policies through the same carrier saves an average of $10–$22/month compared to separate policies.",
+    ],
+  },
+  content: [
+    { type: "h2", text: "The Short Answer: Motorcycle vs. ATV Insurance in Phoenix" },
+    {
+      type: "p",
+      text:
+        "Motorcycle insurance in Phoenix averages $58–$72/month for full coverage; ATV insurance averages $28–$58/month. The key difference is legal use: motorcycles are licensed for public roads and require mandatory liability insurance under ARS § 28-4009 at all times. ATVs are off-road vehicles that require insurance only when operated on public land or roads. Both require separate dedicated policies — your auto insurance covers neither.",
+    },
+
+    { type: "h2", text: "Why Phoenix Riders Often Need Both Policies" },
+    {
+      type: "p",
+      text:
+        "The greater Phoenix area is one of the top dual-sport recreational markets in the United States. Riders who commute by motorcycle through Scottsdale or Tempe on weekdays and run ATV trails in the Tonto National Forest on weekends need two entirely separate insurance policies. Maricopa County has 892 registered motorcycle dealers and 340+ OHV-rated trail miles within 60 miles of downtown Phoenix (Arizona State Parks, 2023), making the combination of motorcycle and ATV ownership common across the Valley.",
+    },
+
+    { type: "h2", text: "Side-by-Side Comparison: Motorcycle vs. ATV Insurance" },
+    {
+      type: "table",
+      caption: "Side-by-Side Comparison: Motorcycle vs. ATV Insurance",
+      columns: ["Factor", "Motorcycle Insurance", "ATV Insurance"],
+      rows: [
+        ["Arizona law requirement", "Always required on public roads (ARS § 28-4009)", "Required on public land/roads only"],
+        ["Average full coverage (Phoenix)", "$58–$72/month", "$28–$58/month"],
+        ["Average liability-only (Phoenix)", "$28–$38/month", "$12–$22/month"],
+        ["Covers street/highway use", "Yes", "No — street use requires motorcycle classification"],
+        ["Covers off-road trails", "Limited — depends on policy", "Yes — all standard ATV policies"],
+        ["Custom parts coverage", "Up to $30,000 (Progressive)", "Up to $50,000 (Progressive)"],
+        ["Guest passenger liability", "Yes (standard)", "Yes (add-on, $3–$6/mo)"],
+        ["Theft coverage (comprehensive)", "Yes ($10–$18/mo)", "Yes ($6–$12/mo)"],
+        ["Top carrier in Phoenix", "Progressive, USAA", "Progressive, Foremost"],
+        ["Multi-policy discount available", "Yes — bundle with auto/home", "Yes — bundle with auto/home"],
+      ],
+    },
+
+    { type: "h2", text: "What Coverage Do Both Policies Share?" },
+    {
+      type: "p",
+      text:
+        "Both motorcycle and ATV insurance in Phoenix include the same core coverage categories: bodily injury liability, property damage liability, collision, comprehensive, uninsured motorist, and medical payments. The key difference is the legal context of use, not the coverage structure.",
+    },
+    {
+      type: "p",
+      text:
+        "Both policies also offer custom parts and equipment coverage — a critical add-on for Phoenix riders who invest in aftermarket upgrades. Progressive offers CPE limits of $30,000 for motorcycles and $50,000 for ATVs/UTVs in Arizona. Markel and Foremost offer comparable limits for vintage and custom builds.",
+    },
+
+    { type: "h2", text: "Cost Comparison: Bundling Motorcycle and ATV Policies in Phoenix" },
+    {
+      type: "table",
+      caption: "Cost Comparison: Bundling Motorcycle and ATV Policies in Phoenix",
+      columns: [
+        "Scenario",
+        "Separate Policies Monthly",
+        "Bundled Monthly",
+        "Annual Savings",
+      ],
+      rows: [
+        ["Cruiser motorcycle + utility ATV", "$68 + $34 = $102/mo", "$88/mo", "$168/yr"],
+        ["Sport motorcycle + sport ATV", "$112 + $38 = $150/mo", "$128/mo", "$264/yr"],
+        ["Touring motorcycle + UTV", "$78 + $58 = $136/mo", "$114/mo", "$264/yr"],
+        ["Standard motorcycle + youth ATV", "$52 + $14 = $66/mo", "$56/mo", "$120/yr"],
+      ],
+    },
+    {
+      type: "p",
+      text:
+        "Progressive and Nationwide both offer multi-vehicle specialty discounts in Arizona. A Phoenix rider who insures a motorcycle and ATV through the same carrier saves an average of $10–$22/month compared to two separate single-vehicle policies.",
+    },
+
+    { type: "h2", text: "When Do You Need a Motorcycle Policy vs. an ATV Policy?" },
+    {
+      type: "p",
+      text:
+        "You need a motorcycle policy if: your vehicle has a VIN registered with Arizona MVD as a motorcycle, you operate it on public streets or highways, or it is classified as a motor-driven cycle under ARS § 28-101.",
+    },
+    {
+      type: "p",
+      text:
+        "You need an ATV policy if: your vehicle is classified as an off-highway vehicle (OHV) under ARS § 28-2151, you ride on BLM land, national forest trails, or any other public off-road area, or your vehicle has never been street-registered with Arizona MVD.",
+    },
+    {
+      type: "p",
+      text:
+        "Dual-sport motorcycles (bikes with both street and off-road capability, such as the BMW GS series or KTM Adventure) require a motorcycle policy because they are street-registered. Off-road riding by a dual-sport is covered under the motorcycle policy's comprehensive and collision provisions.",
+    },
+
+    { type: "h2", text: "Frequently Asked Questions: Motorcycle vs. ATV Insurance" },
+    {
+      type: "faq",
+      items: [
+        {
+          question: "Q: Can I use one policy for both a motorcycle and an ATV in Phoenix?",
+          answer:
+            "No. Arizona insurers classify motorcycles and ATVs as separate vehicle types requiring separate policies. However, you can purchase both through the same carrier — Progressive, Nationwide, and State Farm all allow this — and receive a multi-vehicle specialty discount of 8–15% on both policies simultaneously.",
+        },
+        {
+          question: "Q: Does my motorcycle insurance cover me if I ride my ATV?",
+          answer:
+            "No. A motorcycle insurance policy covers only the specific motorcycle listed on the policy. It provides no coverage for an ATV, even if both vehicles are owned by the same person and insured by the same carrier. Each vehicle requires its own policy with its own premium and coverage limits.",
+        },
+        {
+          question: "Q: Which is more expensive to insure in Phoenix — a motorcycle or a UTV?",
+          answer:
+            "A high-end UTV (side-by-side) typically costs more to insure than a standard motorcycle in Phoenix. A Can-Am Defender MAX valued at $28,000 averages $72/month for full coverage. A standard Honda CB500F motorcycle averages $52/month. The higher UTV cost reflects the vehicle's greater value, higher passenger capacity, and greater liability exposure when used for group recreation on trails near Phoenix.",
+        },
+        {
+          question: "Q: Is there a discount for taking a motorcycle safety course in Arizona?",
+          answer:
+            "Yes. Arizona's Motorcycle Safety Program (MSP) — offered at Maricopa Community Colleges locations in Phoenix, Mesa, and Scottsdale — earns a 5–10% insurance discount at Progressive, Dairyland, and Nationwide. The 2-day course costs $50–$80 and also waives the Arizona MVD road skills test for new motorcycle license applicants. The insurance discount is applied at your next policy renewal upon submitting the completion certificate.",
+        },
+        {
+          question: "Q: Are UTVs classified as ATVs for insurance purposes in Phoenix?",
+          answer:
+            "Yes. For insurance purposes in Arizona, UTVs (side-by-sides like Polaris RZR, Can-Am Maverick, and Yamaha YXZ) are classified under the same ATV/OHV policy category. Foremost and Progressive both insure UTVs under their ATV product lines in Arizona. Some carriers offer standalone UTV-specific policies with higher accessory limits — Foremost's UTV policy covers accessories up to $25,000 per incident.",
+        },
+        {
+          question: "Q: What if I ride my ATV on a street to get from my property to the trail in Phoenix?",
+          answer:
+            "Operating an ATV on a public street in Arizona — even for one block — requires it to be street-legal (registered as a motor vehicle with Arizona MVD) and insured under a liability policy meeting the 25/50/15 minimum. ATVs are not street-legal in Arizona unless they meet specific equipment standards (headlights, tail lights, mirrors, horn) and have been individually registered as motor vehicles. Crossing a road on an unregistered ATV is a civil traffic violation under ARS § 28-2153.",
+        },
+      ],
+    },
+  ],
+  finalCta: {
+    headline: "Get Your Free Specialty Insurance Quote in Phoenix Today",
+    intro:
+      "Call Protegrity Insurance: (480) XXX-XXXX (click-to-call) | Get your free quote at protegrityinsurance.com",
+    body: "",
+    phoneLabel: "(480) XXX-XXXX",
+    phoneHref: "tel:480xxxxxxx",
+    quoteHref: "https://protegrityinsurance.com",
+    trustLine:
+      "5-star rated · 30+ top-rated carriers · Licensed Arizona agents · Motorcycle, ATV, Boat, RV specialists",
+  },
+  relatedLinks: [
+    {
+      label: "Auto Insurance",
+      href: "/auto-insurance",
+      description:
+        "Bundle specialty and auto insurance for additional savings with major carriers.",
+    },
+    {
+      label: "Life Insurance",
+      href: "/life-insurance",
+      description:
+        "Protect your family with the right life insurance coverage and competitive rates.",
+    },
+    {
+      label: "Back to Blog",
+      href: "/blog",
+      description:
+        "More guides and insurance resources from our licensed Arizona team.",
+    },
+  ],
+  references: [],
+  footer: {
+    lastUpdated: "Last updated: April 2026",
+    copyright: "© 2026 Protegrity Insurance. All rights reserved. | protegrityinsurance.com",
+  },
+}
+
 /* -------------------------------------------------------------------------- */
 /*  Public exports                                                            */
 /* -------------------------------------------------------------------------- */
@@ -8107,6 +8750,9 @@ const mexicoTravelInsuranceChecklistPhoenixPost: BlogPost = {
 export const blogPosts: BlogPost[] = [
   phoenixHomePost,
   phoenixAutoPost,
+  motorcycleInsurancePhoenixPost,
+  atvInsurancePhoenixPost,
+  motorcycleVsAtvInsurancePhoenixPost,
   sr22InsurancePhoenixPost,
   carInsuranceAfterDuiPhoenixPost,
   fullCoverageCarInsurancePhoenixPost,
