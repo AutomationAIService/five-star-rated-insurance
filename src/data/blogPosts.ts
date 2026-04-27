@@ -5585,6 +5585,243 @@ const estatePlanningLifeInsurancePhoenixPost: BlogPost = {
   },
 }
 
+const mexicoTravelInsurancePhoenixPost: BlogPost = {
+  slug: "mexico-travel-insurance-phoenix-az",
+  title: "Mexico Travel Insurance from Phoenix, AZ: Complete Guide for 2026",
+  excerpt:
+    "Everything Phoenix travelers need to know about Mexico travel insurance in 2026: what it covers, what it costs, top carriers, and why your U.S. health insurance stops at the border.",
+  metaTitle: "Mexico Travel Insurance from Phoenix, AZ: Complete Guide for 2026",
+  metaDescription:
+    "Everything Phoenix travelers need to know about Mexico travel insurance in 2026: what it covers, what it costs, top carriers, and why your U.S. health insurance stops at the border.",
+  keywords: ["Mexico travel insurance Phoenix AZ"],
+  category: "TRAVEL INSURANCE",
+  readTime: "8 min read",
+  displayDate: "April 2026",
+  publishedISO: "2026-04-26",
+  modifiedISO: "2026-04-26",
+  breadcrumbLabel: "Mexico Travel Insurance Phoenix",
+  author: ryanLorschAuthor,
+  heroImage: {
+    src: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
+    alt: "Phoenix travelers crossing into Mexico representing travel insurance coverage needs",
+    width: 1920,
+    height: 1080,
+    photographer: "Sean Oulashin",
+    photographerUrl: "https://unsplash.com/@oulashin",
+  },
+  image: {
+    src: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
+    alt: "Phoenix travelers crossing into Mexico representing travel insurance coverage needs",
+    width: 1920,
+    height: 1080,
+    photographer: "Sean Oulashin",
+    photographerUrl: "https://unsplash.com/@oulashin",
+  },
+  keyTakeaways: {
+    items: [
+      "Mexico travel insurance for Phoenix residents costs an average of $28–$96/month for comprehensive coverage including emergency medical, trip cancellation, medical evacuation, and baggage protection.",
+      "U.S. health insurance — including Medicare, Medicaid, and most employer-sponsored plans — provides zero coverage in Mexico.",
+      "Phoenix is 180 miles from the Nogales border crossing and 360 miles from Puerto Peñasco (Rocky Point), making Mexico the most common international travel destination for Valley residents.",
+      "A 3-day hospitalization in Puerto Vallarta averages $8,400–$18,000, while emergency medical evacuation from Baja California to Phoenix averages $28,000–$85,000.",
+      "Protegrity Insurance works with over 30 top-rated carriers to find Phoenix travelers the best Mexico travel insurance at competitive rates.",
+    ],
+  },
+  content: [
+    { type: "h2", text: "The Short Answer: Mexico Travel Insurance from Phoenix" },
+    {
+      type: "p",
+      text:
+        "Mexico travel insurance for Phoenix residents costs an average of $28–$96/month for comprehensive coverage including emergency medical, trip cancellation, medical evacuation, and baggage protection, according to Squaremouth 2024 travel insurance rate data. U.S. health insurance — including Medicare, Medicaid, and most employer-sponsored plans — provides zero coverage in Mexico. Phoenix is 180 miles from the Nogales border crossing and 360 miles from Puerto Peñasco (Rocky Point), making Mexico the most common international travel destination for Valley residents. This guide covers every coverage type, cost, and carrier available to Phoenix travelers in 2026.",
+    },
+
+    { type: "h2", text: "Why Phoenix Travelers Need Mexico-Specific Travel Insurance" },
+    {
+      type: "p",
+      text:
+        "U.S. health insurance stops at the border. Medicare does not cover any medical expenses incurred in Mexico (Medicare.gov, 2024). Medicaid provides no international coverage. Most private employer-sponsored health plans in Arizona — including Blue Cross Blue Shield of Arizona, Aetna, and UnitedHealthcare — exclude or severely limit coverage outside the United States.",
+    },
+    {
+      type: "p",
+      text:
+        "Mexico's private hospitals — where U.S. travelers receive the best care — require full upfront payment or a credit card guarantee before treating non-emergency patients. A 3-day hospitalization in Puerto Vallarta averages $8,400–$18,000 (International Medical Group, 2024). Emergency medical evacuation from a remote location in Baja California to Phoenix averages $28,000–$85,000 depending on distance and medical requirements. Without travel insurance, these costs are 100% out of pocket.",
+    },
+    {
+      type: "p",
+      text:
+        "Beyond medical costs, Mexico travel insurance protects Phoenix travelers against trip cancellation losses, lost or stolen baggage, rental car damage, and the financial impact of unexpected trip interruptions — all of which are statistically more likely in international travel than domestic trips.",
+    },
+
+    { type: "h2", text: "What Does Mexico Travel Insurance Cover?" },
+    {
+      type: "table",
+      caption: "What Does Mexico Travel Insurance Cover?",
+      columns: [
+        "Coverage Type",
+        "What It Pays",
+        "Avg. Coverage Limit",
+        "Avg. Monthly Cost (Phoenix)",
+      ],
+      rows: [
+        ["Emergency Medical", "Hospital, doctor, surgery, prescriptions in Mexico", "$50,000–$500,000", "$12–$28/mo"],
+        ["Medical Evacuation", "Air transport to U.S. hospital if needed", "$250,000–$1,000,000", "$8–$18/mo"],
+        ["Trip Cancellation", "Non-refundable trip costs if you cancel before departure", "100% of trip cost", "$18–$42/mo"],
+        ["Trip Interruption", "Return travel + unused trip costs if cut short", "100–150% of trip cost", "Included with cancellation"],
+        ["Emergency Dental", "Acute dental pain, injury, infection in Mexico", "$500–$2,500", "$4–$8/mo"],
+        ["Baggage Loss/Theft", "Replacement of lost, stolen, or damaged luggage", "$500–$3,000/trip", "$4–$8/mo"],
+        ["Baggage Delay", "Essential items if bags delayed 12+ hours", "$200–$600", "Included with baggage"],
+        ["Rental Car Damage (Mexico)", "Collision/theft damage to rental car in Mexico", "$35,000–$50,000", "$8–$14/mo"],
+        ["Cancel For Any Reason (CFAR)", "Refund 75% of trip cost regardless of reason", "75% of trip cost", "Add 40–60% to base premium"],
+        ["Repatriation of Remains", "Return of remains to Phoenix if traveler dies abroad", "$25,000–$50,000", "Included with evacuation"],
+      ],
+    },
+
+    { type: "h2", text: "Top Mexico Travel Insurance Carriers for Phoenix Residents" },
+    {
+      type: "table",
+      caption: "Top Mexico Travel Insurance Carriers for Phoenix Residents",
+      columns: [
+        "Carrier",
+        "AM Best Rating",
+        "Medical Limit",
+        "Evacuation Limit",
+        "CFAR Available",
+        "Best For",
+      ],
+      rows: [
+        ["Allianz Travel", "A+", "Up to $500,000", "Up to $1,000,000", "Yes", "Frequent travelers, annual plans"],
+        ["Seven Corners", "A-", "Up to $500,000", "Up to $1,000,000", "Yes", "Budget-conscious Phoenix travelers"],
+        ["IMG Global", "A-", "Up to $8,000,000", "Up to $500,000", "Yes", "Long stays, digital nomads"],
+        ["Travelex", "A+", "Up to $100,000", "Up to $1,000,000", "Yes", "Families, cruise add-ons"],
+        ["AXA Assistance USA", "AA", "Up to $250,000", "Up to $500,000", "Yes", "Premium coverage, concierge"],
+        ["GeoBlue (Blue Cross)", "A+", "Unlimited", "Up to $500,000", "No", "Existing BCBS members"],
+        ["Trawick International", "A", "Up to $150,000", "Up to $500,000", "Yes", "Short Mexico trips, Rocky Point"],
+      ],
+    },
+
+    { type: "h2", text: "How Much Does Mexico Travel Insurance Cost for Phoenix Travelers?" },
+    {
+      type: "p",
+      text:
+        "Travel insurance to Mexico typically costs 4–10% of your total prepaid, non-refundable trip costs for a comprehensive policy (Squaremouth, 2024). The percentage rises with age — a 65-year-old pays proportionally more than a 35-year-old for identical coverage.",
+    },
+    {
+      type: "table",
+      caption: "How Much Does Mexico Travel Insurance Cost for Phoenix Travelers?",
+      columns: [
+        "Traveler Age",
+        "Trip Cost",
+        "Policy Type",
+        "Estimated Premium",
+        "Carrier",
+      ],
+      rows: [
+        ["30", "$1,500 (Rocky Point weekend)", "Comprehensive", "$48–$72", "Seven Corners"],
+        ["40", "$3,200 (Cabo 7-day)", "Comprehensive + CFAR", "$148–$196", "Allianz"],
+        ["55", "$4,800 (Puerto Vallarta 10-day)", "Comprehensive + CFAR", "$248–$312", "AXA Assistance"],
+        ["65", "$6,500 (Riviera Maya 14-day)", "Comprehensive + CFAR", "$388–$468", "Allianz"],
+        ["70", "$8,000 (Mexico cruise, 12-day)", "Comprehensive + CFAR", "$520–$640", "Travelex"],
+        ["Any age", "Annual multi-trip plan", "Annual comprehensive", "$248–$488/yr", "Allianz, GeoBlue"],
+      ],
+    },
+
+    {
+      type: "h2",
+      text: "Phoenix-Specific Mexico Travel Patterns and Their Insurance Implications",
+    },
+    {
+      type: "p",
+      lead: "Puerto Peñasco (Rocky Point):",
+      text:
+        "200 miles from Phoenix via I-8 and Mexico Route 8. Arizona's most popular Mexico destination — an estimated 800,000 Phoenix-area residents visit annually. Medical facilities in Puerto Peñasco are limited to one IMSS clinic and two private clinics. Serious medical emergencies require evacuation to Hermosillo (90 miles) or Phoenix (200 miles by ground). Medical evacuation insurance is essential for Rocky Point travelers.",
+    },
+    {
+      type: "p",
+      lead: "San Carlos / Guaymas:",
+      text:
+        "300 miles from Phoenix via I-19 and Mexico Federal Highway 15. Popular for RV travelers and boaters. Requires vehicle permit (TIP) for driving beyond the border free zone. Driving your vehicle into Mexico requires a separate Mexico auto insurance policy — U.S. auto insurance is invalid in Mexico.",
+    },
+    {
+      type: "p",
+      lead: "Nogales / Sonora border region:",
+      text:
+        "Arizona's primary commercial border crossing, 180 miles from Phoenix. Many Phoenix residents cross for dental work, medications, and medical procedures. A planned dental procedure that results in emergency complications requires travel insurance with emergency medical coverage — standard travel policies cover acute emergency dental; pre-planned elective procedures are excluded.",
+    },
+
+    { type: "h2", text: "Frequently Asked Questions: Mexico Travel Insurance from Phoenix" },
+    {
+      type: "faq",
+      items: [
+        {
+          question: "Q: Does my U.S. health insurance cover me in Mexico?",
+          answer:
+            "No. Medicare provides zero coverage in Mexico under any circumstances (Medicare.gov, 2024). Medicaid covers only emergency stabilization at the border in limited circumstances. Most private Arizona health plans — Blue Cross Blue Shield of Arizona, Banner Health Network, and UnitedHealthcare — exclude coverage in Mexico except for emergency stabilization within 25 miles of the border. Beyond that zone, you are uninsured. A standalone Mexico travel health policy from IMG Global or GeoBlue costs $12–$28/month and provides coverage throughout Mexico.",
+        },
+        {
+          question: "Q: How far in advance should I buy Mexico travel insurance?",
+          answer:
+            "Purchase Mexico travel insurance within 14–21 days of making your first trip deposit to maximize coverage eligibility. Buying within this window qualifies you for: pre-existing condition coverage waivers (most carriers, including Allianz and Seven Corners), Cancel For Any Reason (CFAR) eligibility, and financial default coverage if a tour operator or airline goes out of business before your trip. Policies purchased the day before departure are valid but exclude pre-existing condition coverage and CFAR.",
+        },
+        {
+          question: "Q: Does travel insurance cover COVID-19 illness in Mexico?",
+          answer:
+            "As of 2026, all major Mexico travel insurance carriers — including Allianz, Seven Corners, and AXA — treat COVID-19 as a standard illness under emergency medical coverage. Hospitalization for COVID-19 in Mexico is covered up to your policy's medical limit. Trip cancellation for COVID-19 illness is covered if you test positive before departure with a verified test result. Trip cancellation due to fear of COVID-19 or a government travel advisory (without personal illness) requires a CFAR policy.",
+        },
+        {
+          question: "Q: Is travel insurance required to enter Mexico?",
+          answer:
+            "Mexico does not currently require travel insurance as a condition of entry for U.S. citizens as of April 2026. However, several resort areas — including Los Cabos and Riviera Nayarit — and some hotel properties require proof of medical coverage as a check-in condition. The U.S. State Department's current Mexico travel advisory (Level 2: Exercise Increased Caution as of April 2026) strongly recommends travel insurance for all U.S. visitors.",
+        },
+        {
+          question: "Q: Can I buy Mexico travel insurance the same day I leave Phoenix?",
+          answer:
+            "Yes. Allianz, Seven Corners, and Trawick International all offer same-day Mexico travel insurance issuance through Protegrity Insurance. Policies purchased the day of departure are effective immediately upon payment confirmation and cover all insured events occurring after the effective time. Same-day policies exclude pre-existing condition waivers and CFAR options — these benefits require purchase within 14–21 days of your initial trip deposit.",
+        },
+        {
+          question: "Q: Does Mexico travel insurance cover activities like ATV tours, zip-lining, or scuba diving?",
+          answer:
+            "Standard Mexico travel insurance covers most recreational activities including snorkeling, zip-lining, ATV tours, and horseback riding. High-risk adventure activities — including skydiving, cliff diving, free solo climbing, and motorized racing — are excluded from most standard policies. Seven Corners Roundtrip Choice and AXA Assistance USA offer adventure sports riders that add coverage for bungee jumping, paragliding, and advanced scuba diving (below 130 feet) for an additional $12–$24 per trip.",
+        },
+      ],
+    },
+  ],
+  finalCta: {
+    headline: "Get Your Mexico Travel Insurance Quote Before You Cross the Border",
+    intro:
+      "Call Protegrity Insurance: (480) XXX-XXXX (click-to-call) | Get your free quote at protegrityinsurance.com",
+    body: "",
+    phoneLabel: "(480) XXX-XXXX",
+    phoneHref: "tel:480xxxxxxx",
+    quoteHref: "https://protegrityinsurance.com",
+    trustLine:
+      "5-star rated · 30+ top-rated carriers · Licensed Arizona agents · Mexico travel specialists",
+  },
+  relatedLinks: [
+    {
+      label: "Travel Insurance",
+      href: "/travel-insurance",
+      description:
+        "Protect your Mexico trips with comprehensive travel insurance coverage.",
+    },
+    {
+      label: "Auto Insurance",
+      href: "/auto-insurance",
+      description:
+        "Bundle travel and auto insurance for additional savings with major carriers.",
+    },
+    {
+      label: "Back to Blog",
+      href: "/blog",
+      description:
+        "More guides and insurance resources from our licensed Arizona team.",
+    },
+  ],
+  references: [],
+  footer: {
+    lastUpdated: "Last updated: April 2026",
+    copyright: "© 2026 Protegrity Insurance. All rights reserved. | protegrityinsurance.com",
+  },
+}
+
 /* -------------------------------------------------------------------------- */
 /*  Public exports                                                            */
 /* -------------------------------------------------------------------------- */
@@ -5609,6 +5846,7 @@ export const blogPosts: BlogPost[] = [
   arizonaLifeInsuranceLawsPhoenixPost,
   mortgageProtectionLifeInsurancePhoenixPost,
   estatePlanningLifeInsurancePhoenixPost,
+  mexicoTravelInsurancePhoenixPost,
   phoenixAutoCostPost,
   arizonaMinimumCarInsurancePost,
   cheapCarInsurancePhoenixPost,
