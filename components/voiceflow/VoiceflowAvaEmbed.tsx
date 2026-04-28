@@ -78,6 +78,12 @@ export function VoiceflowAvaEmbed() {
         voice: {
           url: "https://runtime-api.voiceflow.com",
         },
+        // Embedded mode defaults autostart to false (overlay defaults true); without this
+        // the widget shows "Start new chat" instead of opening the intake flow.
+        autostart: true,
+        assistant: {
+          persistence: "memory",
+        },
         render: {
           mode: "embedded",
           target: document.getElementById(EMBED_ID),
