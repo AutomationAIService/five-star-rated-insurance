@@ -1,6 +1,6 @@
 import Image from "next/image"
 import { BrandNavyStarOverlay } from "@/components/brand/BrandNavyStarOverlay"
-import { QuoteAssistant } from "@/components/quote-assistant"
+import { VoiceflowAvaEmbed } from "@/components/voiceflow/VoiceflowAvaEmbed"
 
 export function HeroSection() {
   return (
@@ -45,7 +45,7 @@ export function HeroSection() {
           </p>
           <div className="flex justify-center" aria-labelledby="hero-chat-cta">
             <div className="w-full max-w-xl">
-              <QuoteAssistant />
+              <VoiceflowAvaEmbed />
             </div>
           </div>
         </div>
