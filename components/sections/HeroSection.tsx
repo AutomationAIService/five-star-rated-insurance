@@ -4,11 +4,13 @@ import { VoiceflowAvaEmbed } from "@/components/voiceflow/VoiceflowAvaEmbed"
 
 export function HeroSection() {
   return (
-    <section 
+    <section
       id="quote"
-      className="relative overflow-hidden bg-gradient-to-br from-brand-navy via-brand-navy to-brand-navy/95 text-primary-foreground"
+      className="relative bg-gradient-to-br from-brand-navy via-brand-navy to-brand-navy/95 text-primary-foreground"
     >
-      <BrandNavyStarOverlay />
+      <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden>
+        <BrandNavyStarOverlay />
+      </div>
 
       <div className="container relative mx-auto px-4 py-12 md:py-16 lg:py-20">
         <div className="mx-auto mb-8 max-w-3xl text-center md:mb-10">

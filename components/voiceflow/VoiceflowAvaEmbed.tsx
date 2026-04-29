@@ -83,6 +83,7 @@ export function VoiceflowAvaEmbed() {
         autostart: true,
         assistant: {
           persistence: "memory",
+          stylesheet: `${window.location.origin}/voiceflow-ava-mobile.css`,
         },
         render: {
           mode: "embedded",
@@ -115,5 +116,9 @@ export function VoiceflowAvaEmbed() {
     }
   }, [])
 
-  return <div id={EMBED_ID} className="w-full" />
+  return (
+    <div className="w-full max-md:relative max-md:z-[70] max-md:mx-auto max-md:w-[min(100%,calc(100vw-24px))] max-md:max-w-[calc(100vw-24px)]">
+      <div id={EMBED_ID} className="w-full" />
+    </div>
+  )
 }

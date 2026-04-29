@@ -1,0 +1,41 @@
+/**
+ * Mobile-only overrides for Voiceflow embedded chat (Ava).
+ * Loaded via assistant.stylesheet — applies inside the widget shadow DOM.
+ * Desktop: unchanged (@media max-width 767px only).
+ */
+@media (max-width: 767px) {
+  .vfrc-widget {
+    width: 100% !important;
+    max-width: calc(100vw - 24px) !important;
+    max-height: calc(100dvh - 24px) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+  }
+
+  .vfrc-chat {
+    max-height: calc(100dvh - 24px) !important;
+    min-height: 0 !important;
+    height: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+  }
+
+  .vfrc-header {
+    flex-shrink: 0 !important;
+  }
+
+  .vfrc-chat--dialog {
+    flex: 1 1 auto !important;
+    min-height: 0 !important;
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .vfrc-footer {
+    flex-shrink: 0 !important;
+  }
+}
