@@ -1,41 +1,55 @@
 /**
- * Mobile-only overrides for Voiceflow embedded chat (Ava).
- * Loaded via assistant.stylesheet — applies inside the widget shadow DOM.
- * Desktop: unchanged (@media max-width 767px only).
+ * Voiceflow embedded chat (Ava) — scroll + flex layout inside the widget shadow DOM.
+ * Loaded via assistant.stylesheet (Voiceflow-supported customization; not parent iframe hacks).
+ * Base rules apply all breakpoints; narrow screens add width / viewport constraints.
  */
+.vfrc-widget {
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+  height: 100% !important;
+  max-height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.vfrc-chat {
+  flex: 1 1 auto !important;
+  min-height: 0 !important;
+  height: auto !important;
+  max-height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  overflow: hidden !important;
+  box-sizing: border-box !important;
+}
+
+.vfrc-header {
+  flex-shrink: 0 !important;
+}
+
+.vfrc-chat--dialog {
+  flex: 1 1 auto !important;
+  min-height: 0 !important;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+  overscroll-behavior: contain !important;
+  -webkit-overflow-scrolling: touch !important;
+}
+
+.vfrc-footer {
+  flex-shrink: 0 !important;
+}
+
 @media (max-width: 767px) {
   .vfrc-widget {
     width: 100% !important;
     max-width: calc(100vw - 24px) !important;
-    max-height: calc(100dvh - 24px) !important;
+    max-height: min(calc(100dvh - 24px), 100%) !important;
     margin-left: auto !important;
     margin-right: auto !important;
-    box-sizing: border-box !important;
-    overflow: hidden !important;
   }
 
   .vfrc-chat {
-    max-height: calc(100dvh - 24px) !important;
-    min-height: 0 !important;
-    height: auto !important;
-    display: flex !important;
-    flex-direction: column !important;
-    overflow: hidden !important;
-    box-sizing: border-box !important;
-  }
-
-  .vfrc-header {
-    flex-shrink: 0 !important;
-  }
-
-  .vfrc-chat--dialog {
-    flex: 1 1 auto !important;
-    min-height: 0 !important;
-    overflow-y: auto !important;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  .vfrc-footer {
-    flex-shrink: 0 !important;
+    max-height: min(calc(100dvh - 24px), 100%) !important;
   }
 }

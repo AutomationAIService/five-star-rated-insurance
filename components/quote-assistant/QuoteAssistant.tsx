@@ -1,7 +1,7 @@
 "use client"
 
 import { useRouter } from "next/navigation"
-import { useState, useCallback, useRef, useEffect } from "react"
+import { useState, useCallback, useRef, useEffect, useLayoutEffect } from "react"
 import { BrandNavyStarOverlay } from "@/components/brand/BrandNavyStarOverlay"
 import { MessageBubble } from "./MessageBubble"
 import { QuickReplies, type InsuranceType } from "./QuickReplies"
@@ -116,25 +116,24 @@ export function QuoteAssistant() {
   const [inputValue, setInputValue] = useState("")
   const [validationError, setValidationError] = useState<string | null>(null)
   const [isSubmitting, setIsSubmitting] = useState(false)
-  const messagesEndRef = useRef<HTMLDivElement>(null)
+  const messagesContainerRef = useRef<HTMLDivElement>(null)
   const hasMountedRef = useRef(false)
 
-  const scrollToBottom = useCallback(() => {
-    // `block: "nearest"` keeps the scroll contained to the chat's own
-    // scrollable container and prevents the browser from scrolling the
-    // entire page to bring the chatbot into view.
-    messagesEndRef.current?.scrollIntoView({ behavior: "smooth", block: "nearest" })
+  const scrollMessagesToBottom = useCallback(() => {
+    const el = messagesContainerRef.current
+    if (!el) return
+    el.scrollTop = el.scrollHeight
   }, [])
 
-  useEffect(() => {
-    // Skip the very first render so the chatbot mounts silently and
-    // does not hijack the page scroll on navigation.
+  useLayoutEffect(() => {
+    // Skip the first layout pass so the chatbot does not adjust scroll
+    // before the conversation is hydrated.
     if (!hasMountedRef.current) {
       hasMountedRef.current = true
       return
     }
-    scrollToBottom()
-  }, [messages, scrollToBottom])
+    scrollMessagesToBottom()
+  }, [messages, currentStep, scrollMessagesToBottom])
 
   useEffect(() => {
     const empty: LeadData = {
@@ -299,9 +298,9 @@ export function QuoteAssistant() {
   const isComplete = currentStep === "complete"
 
   return (
-    <div className="flex flex-col w-full max-w-xl bg-surface rounded-xl shadow-lg border border-border overflow-hidden">
+    <div className="flex min-h-0 w-full max-h-[calc(100dvh-8rem)] max-w-xl flex-col overflow-hidden rounded-xl border border-border bg-surface shadow-lg sm:max-h-[calc(100dvh-7rem)]">
       {/* Header */}
-      <div className="relative flex items-center gap-3 overflow-hidden bg-brand-navy px-4 py-3 text-primary-foreground">
+      <div className="relative flex shrink-0 items-center gap-3 overflow-hidden bg-brand-navy px-4 py-3 text-primary-foreground">
         <BrandNavyStarOverlay />
         <Image
           src="/images/shield-icon.png"
@@ -321,10 +320,15 @@ export function QuoteAssistant() {
       </div>
 
       {/* Progress Bar */}
-      <ProgressBar progress={progress} />
+      <div className="shrink-0">
+        <ProgressBar progress={progress} />
+      </div>
 
       {/* Messages */}
-      <div className="flex-1 p-4 space-y-4 max-h-80 overflow-y-auto bg-surface">
+      <div
+        ref={messagesContainerRef}
+        className="min-h-0 flex-1 space-y-4 overflow-y-auto overscroll-contain bg-surface p-4"
+      >
         {messages.map((message) => (
           <MessageBubble
             key={message.id}
@@ -332,11 +336,10 @@ export function QuoteAssistant() {
             content={message.content}
           />
         ))}
-        <div ref={messagesEndRef} />
       </div>
 
       {/* Input Area — non-interactive (no navigation, submissions, or chat actions) */}
-      <div className="pointer-events-none border-t border-border bg-surface p-4">
+      <div className="pointer-events-none shrink-0 border-t border-border bg-surface p-4">
         {showQuickReplies && (
           <QuickReplies options={INSURANCE_OPTIONS} onSelect={handleInsuranceSelect} />
         )}
