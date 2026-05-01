@@ -154,15 +154,42 @@ export function VoiceflowAvaEmbed() {
       }
       if (cancelled) return
 
-      if (!document.getElementById(EMBED_ID) || !window.voiceflow?.chat) return
+      const target = document.getElementById(EMBED_ID)
+      if (!target || !window.voiceflow?.chat) return
 
-      window.voiceflow.chat.load({
+      let makeConfig: (userID: string) => Record<string, unknown>
+
+      const performFullSessionReload = async () => {
+        if (cancelled || !window.voiceflow?.chat) return
+        detachAutoScroll?.()
+        detachAutoScroll = undefined
+        try {
+          window.voiceflow.chat.destroy()
+        } catch {
+          /* noop */
+        }
+        if (cancelled) return
+        const nextUserId = `user_${Date.now()}`
+        window.voiceflow.chat.load(makeConfig(nextUserId))
+        await new Promise<void>((resolve) => {
+          requestAnimationFrame(() => {
+            requestAnimationFrame(() => resolve())
+          })
+        })
+        if (!cancelled) {
+          const el = document.getElementById(EMBED_ID)
+          if (el) detachAutoScroll = attachVoiceflowDialogAutoScroll(el, () => cancelled)
+        }
+      }
+
+      makeConfig = (userID: string) => ({
         verify: { projectID: "69ed99dc767e1d39e62bb861" },
         url: "https://general-runtime.voiceflow.com",
         versionID: "production",
         voice: {
           url: "https://runtime-api.voiceflow.com",
         },
+        userID,
         // Embedded mode defaults autostart to false (overlay defaults true); without this
         // the widget shows "Start new chat" instead of opening the intake flow.
         autostart: true,
@@ -174,7 +201,13 @@ export function VoiceflowAvaEmbed() {
           mode: "embedded",
           target: document.getElementById(EMBED_ID),
         },
+        // Widget-next: replaces default restart / "new chat" so we can rotate userID
+        // and get a fresh Voiceflow session instead of restoring state.
+        onRestartChatOverride: performFullSessionReload,
+        onStartNewChatOverride: performFullSessionReload,
       })
+
+      window.voiceflow.chat.load(makeConfig(`user_${Date.now()}`))
 
       if (cancelled) {
         try {
