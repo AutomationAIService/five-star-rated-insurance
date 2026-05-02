@@ -1,12 +1,16 @@
 import { Footer, Header } from "@/components/layout"
+import { FAQAccordion } from "@/components/blog/FAQAccordion"
 import { BrandNavyStarOverlay } from "@/components/brand/BrandNavyStarOverlay"
 import { QuoteAssistant } from "@/components/quote-assistant"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
+import { insuranceProductById } from "@/src/data/insuranceProducts"
 import type { Metadata } from "next"
 import Link from "next/link"
 
 const SITE_URL = "https://www.fivestarratedinsurance.com"
+
+const product = insuranceProductById.auto
 
 const PHONE_DISPLAY = "(480) XXX-XXXX"
 const PHONE_TEL = "tel:+1480XXXXXXX"
@@ -15,16 +19,14 @@ const ctaButtonClassName =
   "bg-gold hover:bg-gold/90 text-navy font-bold uppercase tracking-wide text-base h-12 px-8 rounded-md shadow-lg shadow-black/20 border-0"
 
 export const metadata: Metadata = {
-  title: "Auto Insurance in Phoenix, AZ | Five Star Rated Insurance",
-  description:
-    "Compare auto insurance in Phoenix, AZ from top-rated carriers. Liability, collision, SR-22, and classic car coverage. Free quote from licensed Arizona agents.",
+  title: product.seoTitle,
+  description: product.seoDescription,
   alternates: {
     canonical: "/insurance/auto",
   },
   openGraph: {
-    title: "Auto Insurance in Phoenix, AZ | Five Star Rated Insurance",
-    description:
-      "Compare auto insurance in Phoenix, AZ from top-rated carriers. Liability, collision, SR-22, and classic car coverage. Free quote from licensed Arizona agents.",
+    title: product.seoTitle,
+    description: product.seoDescription,
     url: `${SITE_URL}/insurance/auto`,
     siteName: "Five Star Rated Insurance",
     locale: "en_US",
@@ -54,6 +56,24 @@ const localBusinessInsuranceAgencySchema = {
     "Independent insurance marketing connecting Arizona drivers with auto coverage options from multiple admitted carriers, with licensed support through Protegrity Insurance Brokerage.",
 }
 
+const autoFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: product.faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.answer,
+    },
+  })),
+}
+
+const faqAccordionItems = product.faqs.map((f) => ({
+  question: f.question,
+  answer: f.answer,
+}))
+
 export default function AutoInsurancePage() {
   return (
     <>
@@ -61,6 +81,12 @@ export default function AutoInsurancePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(localBusinessInsuranceAgencySchema),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(autoFaqSchema),
         }}
       />
 
@@ -77,18 +103,10 @@ export default function AutoInsurancePage() {
             <div className="container relative mx-auto px-4 py-12 md:py-16 lg:py-20">
               <div className="mx-auto max-w-3xl text-center md:mb-10">
                 <h1 className="mb-4 text-balance font-heading text-2xl font-bold md:text-3xl lg:text-4xl">
-                  Auto Insurance in Phoenix, AZ
+                  {product.pageH1}
                 </h1>
-                <h2 className="mb-6 text-balance font-heading text-xl font-semibold text-primary-foreground/95 md:text-2xl">
-                  Experts in Your Peace of Mind - Top-Rated Car Insurance for Every Driver in the
-                  Valley
-                </h2>
                 <p className="text-lg leading-relaxed text-primary-foreground/80 md:text-xl">
-                  Finding the right auto insurance in Phoenix shouldn&apos;t feel like a second job.
-                  Whether you commute daily on the I-10, own a classic car you take out on weekends,
-                  or need an SR-22 to stay compliant, we give you access to coverage from multiple
-                  top-rated carriers so you can compare real options and choose what fits your life
-                  and your budget. Licensed Arizona agents, honest guidance, no pressure.
+                  {product.heroDescription}
                 </p>
               </div>
               <div className="mt-10 flex justify-center">
@@ -108,37 +126,37 @@ export default function AutoInsurancePage() {
                     id="coverage-drivers-heading"
                     className="font-heading text-2xl font-bold md:text-3xl"
                   >
-                    Coverage for Every Driver in Phoenix, Scottsdale, Mesa, Gilbert, and the
-                    Surrounding Valley
+                    Coverage Options for Phoenix-Area Drivers
                   </h2>
                   <div className="mt-6 space-y-6 text-base leading-relaxed text-muted-foreground">
                     <p>
-                      Not every driver on the road has the same needs, and not every policy is the
-                      same. Arizona requires liability coverage for every driver, but the minimum
-                      limits rarely tell the whole story. A serious accident on the Loop 101 can push
-                      costs well beyond what state-minimum coverage pays. We help you understand what
-                      you&apos;re actually buying before you sign anything.
+                      Arizona sets minimum liability requirements, but valley traffic,
+                      freeway speeds, and uninsured-driver exposure mean minimum limits
+                      rarely reflect real-world losses. Whether you commute daily or keep
+                      a weekend collector car garaged in Phoenix, licensed brokers compare
+                      liability, collision, comprehensive, uninsured motorist, and MedPay
+                      across carriers so you understand what each quote includes before you
+                      bind.
                     </p>
                     <ul className="list-none space-y-6 pl-0">
                       <li>
                         <p>
-                          <strong className="text-foreground">Regular Coverage - </strong>
-                          Liability, collision, comprehensive, uninsured motorist, and MedPay for
-                          daily drivers across the Phoenix metro.
+                          <strong className="text-foreground">Regular coverage — </strong>
+                          {product.coverageItems[0]?.description}
                         </p>
                       </li>
                       <li>
                         <p>
-                          <strong className="text-foreground">Classic Car Coverage - </strong>
-                          Agreed-value policies for collector and vintage vehicles that deserve more
-                          than a depreciated standard payout.
+                          <strong className="text-foreground">Classic coverage — </strong>
+                          {product.coverageItems[1]?.description}
                         </p>
                       </li>
                       <li>
                         <p>
-                          <strong className="text-foreground">SR-22 and State Filings - </strong>
-                          Certificate of financial responsibility handled correctly and monitored so
-                          your compliance stays continuous.
+                          <strong className="text-foreground">
+                            SR-22 and state filings —{" "}
+                          </strong>
+                          {product.coverageItems[2]?.description}
                         </p>
                       </li>
                     </ul>
@@ -150,17 +168,36 @@ export default function AutoInsurancePage() {
                     id="why-choose-heading"
                     className="font-heading text-2xl font-bold md:text-3xl"
                   >
-                    Why Phoenix Drivers Choose Five Star Rated Insurance
+                    Why Drivers Compare Quotes With Five Star Rated Insurance
                   </h2>
                   <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-                    We don&apos;t work for one insurance company - we work for you. That means
-                    comparing auto insurance quotes from dozens of admitted Arizona carriers and
-                    showing you the options that actually match your situation. Our Gilbert-based
-                    team answers questions in plain English and stays with you if you ever need to
-                    file a claim.
+                    Five Star Rated Insurance is an authorized marketing partner of
+                    Protegrity Insurance Brokerage—your request routes to licensed brokers
+                    backed by 465+ Google reviews. Instead of a single-carrier pitch, you
+                    see multiple admitted-market options explained in plain language with
+                    guidance on deductibles, discounts, and filings such as SR-22 when they
+                    apply.
                   </p>
                 </section>
               </article>
+
+              <section
+                className="mt-14 border-t border-border pt-14"
+                aria-labelledby="auto-faq-heading"
+              >
+                <h2
+                  id="auto-faq-heading"
+                  className="font-heading text-2xl font-bold text-foreground md:text-3xl"
+                >
+                  Frequently Asked Questions
+                </h2>
+                <p className="mt-4 text-muted-foreground md:text-lg">
+                  Common questions Arizona drivers ask before switching or adding coverage.
+                </p>
+                <div className="mt-8">
+                  <FAQAccordion items={faqAccordionItems} />
+                </div>
+              </section>
 
               {/* CTA */}
               <section
@@ -169,7 +206,11 @@ export default function AutoInsurancePage() {
               >
                 <BrandNavyStarOverlay />
                 <div className="relative mx-auto max-w-2xl">
-                  <p className="text-base leading-relaxed text-primary-foreground/90">
+                  <p className="text-base font-medium leading-relaxed text-primary-foreground/95 md:text-lg">
+                    Ready to compare car insurance quotes in Phoenix? Start above or call —
+                    brokers quote through Protegrity Insurance Brokerage.
+                  </p>
+                  <p className="mt-4 text-base leading-relaxed text-primary-foreground/90">
                     Phone:{" "}
                     <a
                       href={PHONE_TEL}
@@ -193,7 +234,8 @@ export default function AutoInsurancePage() {
                     </Button>
                   </div>
                   <p className="mt-4 text-sm text-primary-foreground/70">
-                    Quoted by Protegrity Insurance Brokerage
+                    Licensed brokers at Protegrity Insurance Brokerage—no obligation to
+                    purchase.
                   </p>
                 </div>
               </section>

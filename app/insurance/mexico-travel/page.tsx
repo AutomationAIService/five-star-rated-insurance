@@ -19,25 +19,24 @@ const product = {
     {
       name: "Medical evacuation and repatriation",
       description:
-        "Coverage for emergency medical transport to an adequate facility or return to the U.S., including air ambulance services and repatriation of remains when medically necessary.",
+        "Benefits for emergency medical transport to an appropriate facility—or back to Arizona when medically necessary—including air ambulance where the plan provides it.",
     },
     {
       name: "Lost/stolen baggage",
       description:
-        "Reimbursement for lost, delayed, or stolen luggage and personal belongings during your trip to Mexico, plus coverage for essentials when baggage arrives late.",
+        "Coverage for lost, stolen, or delayed baggage and personal effects during your Mexico trip—plus reimbursement for essentials when bags arrive late.",
     },
     {
       name: "Cancel for any reason (CFAR)",
       description:
-        "Upgraded cancellation flexibility that reimburses a portion of your non-refundable trip costs when you need to cancel for reasons outside the standard covered list.",
+        "Optional upgrade that refunds part of prepaid trip costs when you cancel outside standard covered reasons—subject to eligibility windows and policy percentages.",
     },
   ],
 }
 
 export const metadata: Metadata = {
-  title: "Mexico Travel Insurance Quotes | Five Star Rated",
-  description:
-    "Get Mexico travel insurance quotes including rental car coverage, trip cancellation, and emergency medical. Quoted by Protegrity Insurance Brokerage.",
+  title: product.seoTitle,
+  description: product.seoDescription,
 }
 
 export default function MexicoTravelInsurancePage() {

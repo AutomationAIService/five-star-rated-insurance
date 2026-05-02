@@ -27,11 +27,11 @@ export function CTABanner() {
               </span>
             </div>
             <h2 className="font-heading font-bold text-2xl md:text-3xl lg:text-4xl mb-4 text-balance text-primary-foreground">
-              Compare Top Rates Before You Renew And Overpay.
+              Compare Phoenix Quotes Before Your Renewal Lands
             </h2>
             <p className="text-lg md:text-xl text-primary-foreground/85 max-w-xl leading-relaxed">
-              Connect with the licensed brokers at Protegrity to review your auto, home, and life
-              options with zero pressure.
+              Licensed brokers at Protegrity Insurance Brokerage shop auto, home, life, business,
+              and specialty markets for you—465+ five-star Google reviews back their service.
             </p>
           </div>
 

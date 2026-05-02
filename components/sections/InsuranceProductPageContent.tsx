@@ -1,4 +1,5 @@
 import { BrandNavyStarOverlay } from "@/components/brand/BrandNavyStarOverlay"
+import { FAQAccordion } from "@/components/blog/FAQAccordion"
 import { QuoteAssistant } from "@/components/quote-assistant"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
@@ -80,6 +81,27 @@ export function InsuranceProductPageContent({
 }: InsuranceProductPageContentProps) {
   const titleHrefs = COVERAGE_ITEM_HREFS[product.id] ?? {}
 
+  const faqSchema =
+    product.faqs.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: product.faqs.map((faq) => ({
+            "@type": "Question",
+            name: faq.question,
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: faq.answer,
+            },
+          })),
+        }
+      : null
+
+  const faqAccordionItems = product.faqs.map((f) => ({
+    question: f.question,
+    answer: f.answer,
+  }))
+
   return (
     <>
       <section
@@ -90,7 +112,7 @@ export function InsuranceProductPageContent({
         <div className="container relative mx-auto px-4 py-12 md:py-16 lg:py-20">
           <div className="mx-auto mb-10 max-w-3xl text-center md:mb-12">
             <h1 className="mb-4 text-balance font-heading text-2xl font-bold md:text-3xl lg:text-4xl">
-              {product.title}
+              {product.pageH1}
             </h1>
             <p className="text-lg leading-relaxed text-primary-foreground/80 md:text-xl">
               {product.heroDescription}
@@ -108,11 +130,11 @@ export function InsuranceProductPageContent({
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-4xl text-center">
             <h2 className="mb-4 text-balance font-heading text-2xl font-bold text-foreground md:text-3xl lg:text-4xl">
-              What's Included
+              Coverage Highlights
             </h2>
             <p className="mx-auto max-w-2xl text-lg text-muted-foreground">
-              Every policy is tailored to your situation, with clear options and
-              straightforward guidance on the coverage that matters most.
+              Explore common coverage buckets below—your broker tailors quotes,
+              limits, and deductibles to your situation once you connect.
             </p>
           </div>
 
@@ -154,16 +176,48 @@ export function InsuranceProductPageContent({
               className="w-full max-w-md cursor-default bg-yellow-400 font-bold text-blue-900 hover:bg-yellow-500 pointer-events-none sm:w-auto sm:min-w-[280px]"
             >
               <span className="flex items-center justify-center">
-                Get Quote
+                Get Your Free Quote
                 <ArrowRight className="ml-2 h-5 w-5" />
               </span>
             </Button>
             <p className="mt-3 text-center text-sm text-gray-500">
-              Quoted by Protegrity Insurance Brokerage
+              Licensed brokers at Protegrity Insurance Brokerage compare options
+              with you—no obligation.
             </p>
           </div>
         </div>
       </section>
+
+      {product.faqs.length > 0 ? (
+        <section
+          className="border-t border-border bg-muted/30 py-16 md:py-20"
+          aria-labelledby="product-faq-heading"
+        >
+          <div className="container mx-auto px-4">
+            <div className="mx-auto max-w-3xl text-center">
+              <h2
+                id="product-faq-heading"
+                className="mb-4 text-balance font-heading text-2xl font-bold text-foreground md:text-3xl"
+              >
+                Frequently Asked Questions
+              </h2>
+              <p className="mb-10 text-muted-foreground md:text-lg">
+                Straightforward answers about how quotes work and what to expect.
+              </p>
+            </div>
+            <div className="mx-auto max-w-3xl">
+              <FAQAccordion items={faqAccordionItems} />
+            </div>
+          </div>
+        </section>
+      ) : null}
+
+      {faqSchema ? (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      ) : null}
     </>
   )
 }

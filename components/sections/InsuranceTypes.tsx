@@ -73,7 +73,7 @@ const INSURANCE_TYPES: InsuranceTypeCard[] = [
     icon: Bike,
     title: "Specialty Insurance",
     description:
-      "Coverage options for motorcycles, ATVs, boats, jet skis, RVs, motorhomes, and trailers.",
+      "Motorcycles, ATVs, boats, jet skis, RVs, motorhomes, trailers, and other recreational risks.",
     features: [
       "Motorcycle and ATV coverage",
       "Boat and jet ski protection",
@@ -83,7 +83,8 @@ const INSURANCE_TYPES: InsuranceTypeCard[] = [
   {
     icon: Palmtree,
     title: "Mexico Travel Insurance",
-    description: "Coverage for travelers heading to Mexico.",
+    description:
+      "Rental cars in Mexico, trip cancellation or interruption, emergency medical care, evacuation, baggage, and CFAR upgrades when eligible.",
     features: [
       "Rental car coverage in Mexico",
       "Trip cancellation and interruption",
@@ -93,7 +94,8 @@ const INSURANCE_TYPES: InsuranceTypeCard[] = [
   {
     icon: Umbrella,
     title: "Other Insurance",
-    description: "Additional coverage options for comprehensive protection.",
+    description:
+      "Umbrella liability, flood, earthquake, and scheduled valuables layered above base policies.",
     features: [
       "Umbrella insurance",
       "Flood and earthquake coverage",
@@ -115,16 +117,18 @@ export function InsuranceTypes({ headingLevel = "h2" }: InsuranceTypesProps) {
       <div className="bg-white px-4 py-8 md:px-6 md:py-12">
         <div className="mx-auto max-w-4xl text-center text-blue-900">
           <HeadingTag className="mb-4 text-balance font-heading text-3xl font-bold md:text-4xl">
-            Premium Coverage For What You Drive, Own, And Protect
+            Compare Arizona Coverage With Licensed Brokers in Phoenix
           </HeadingTag>
           <p className="mb-2 text-xl font-medium">
             Powered by Protegrity Insurance Brokerage
           </p>
           <p className="mb-6 text-base font-medium text-blue-900/80 md:text-lg">
-            Licensed experts backed by 465+ five star reviews
+            Licensed experts backed by 465+ Google reviews
           </p>
           <p className="mx-auto max-w-2xl text-lg text-blue-900/90">
-            Compare top rates for your auto, home, and business in one fast simple quote request.
+            Request one quote flow for auto, home, life, business, commercial auto, specialty lines,
+            Mexico travel add-ons, umbrella, flood, earthquake, and scheduled valuables—then review
+            real carrier options built around your goals.
           </p>
         </div>
       </div>

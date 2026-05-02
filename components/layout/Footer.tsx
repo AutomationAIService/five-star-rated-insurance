@@ -232,7 +232,7 @@ export function Footer() {
                 <div className="flex items-start gap-2 text-blue-900">
                   <MapPin className="mt-0.5 h-[22px] w-[22px] shrink-0 text-blue-900" aria-hidden />
                   <span className="min-w-0 flex-1 break-words [overflow-wrap:anywhere]">
-                    Protegrity Office: 2680 S Val Vista Dr Bldg 15 Ste 185, Gilbert, AZ 85295
+                    2680 S Val Vista Dr Bldg 15 Ste 185, Gilbert, AZ 85295
                   </span>
                 </div>
               </div>
@@ -354,8 +354,8 @@ export function Footer() {
             <p className="relative text-sm leading-relaxed text-white">
               Five Star Rated Insurance is an authorized marketing partner of Protegrity Insurance
               Brokerage. Insurance products are offered through Protegrity Insurance Brokerage. Not
-              available in all states. Coverage and availability vary by state, carrier, and individual
-              circumstances.
+              available in all states. Coverage availability, eligibility, pricing, policy terms,
+              and carrier options vary by state, carrier, coverage type, and individual circumstances.
             </p>
           </div>
         </div>

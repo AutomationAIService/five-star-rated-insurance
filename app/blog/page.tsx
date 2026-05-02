@@ -12,11 +12,20 @@ import { publishedBlogPosts, type BlogPost } from "@/src/data/blogPosts"
 const POSTS_PER_PAGE = 6
 
 export const metadata: Metadata = {
-  title: "Blog | Five Star Rated Insurance - Phoenix Insurance Tips",
+  title: "Arizona Insurance Guides | Auto, Home, Business & Life Insurance Tips",
   description:
-    "Expert insurance tips and guides for Phoenix homeowners and drivers. Save money on home and auto insurance with advice from our Arizona team.",
+    "Read practical Arizona insurance guides for auto, home, business, commercial auto, workers' compensation, life insurance, and specialty coverage.",
   alternates: {
-    canonical: "https://fivestarratedinsurance.com/blog",
+    canonical: "https://www.fivestarratedinsurance.com/blog",
+  },
+  openGraph: {
+    title: "Arizona Insurance Guides | Auto, Home, Business & Life Insurance Tips",
+    description:
+      "Read practical Arizona insurance guides for auto, home, business, commercial auto, workers' compensation, life insurance, and specialty coverage.",
+    url: "https://www.fivestarratedinsurance.com/blog",
+    siteName: "Five Star Rated Insurance",
+    locale: "en_US",
+    type: "website",
   },
 }
 
@@ -60,10 +69,11 @@ export default async function BlogPage({
                 <span aria-current="page">Blog</span>
               </nav>
               <h1 className="mb-3 text-balance font-heading text-[32px] font-bold leading-[1.2] text-primary-foreground md:mb-4 md:text-[40px] lg:text-5xl">
-                Blog
+                Arizona Insurance Guides
               </h1>
               <p className="mx-auto max-w-[90%] text-sm font-normal leading-[1.5] text-primary-foreground/90 md:max-w-[700px] md:text-lg lg:text-xl">
-                Insurance insights and money saving tips from our Arizona team
+                Practical tips on auto, home, business, life, and specialty coverage for Arizona
+                residents and businesses.
               </p>
             </div>
           </div>

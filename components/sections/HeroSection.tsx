@@ -15,10 +15,12 @@ export function HeroSection() {
       <div className="container relative mx-auto px-4 py-12 md:py-16 lg:py-20">
         <div className="mx-auto mb-8 max-w-3xl text-center md:mb-10">
           <h1 className="mb-4 text-balance font-heading text-2xl font-bold leading-tight text-primary-foreground md:text-3xl lg:text-4xl">
-            Compare Insurance Quotes in Phoenix, AZ
+            Insurance Agency in Phoenix, AZ for Auto, Home, Life & Business Coverage
           </h1>
           <p className="mx-auto max-w-2xl text-base font-medium leading-relaxed text-primary-foreground/90 md:text-lg">
-            Chat with Ava to start your quote and book with Protegrity.
+            Compare auto, home, life, business, commercial auto, and specialty insurance quotes
+            through licensed brokers backed by 465+ Google reviews. Chat with Ava to start your
+            quote with Protegrity Insurance Brokerage.
           </p>
         </div>
 

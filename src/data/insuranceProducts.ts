@@ -31,7 +31,14 @@ export type InsuranceFaq = {
 
 export type InsuranceProduct = {
   id: InsuranceProductId
+  /** Short label for menus and cards where a compact title is needed. */
   title: string
+  /** Visible page `<h1>` for product landing pages. */
+  pageH1: string
+  /** Browser `<title>` / Open Graph title (full string). */
+  seoTitle: string
+  /** Meta description (`description` tag / OG). */
+  seoDescription: string
   /** Lucide icon name (PascalCase); resolve to a component in UI. */
   icon: InsuranceProductIconName
   heroDescription: string
@@ -44,51 +51,55 @@ export const insuranceProducts: InsuranceProduct[] = [
   {
     id: "auto",
     title: "Auto Insurance",
+    pageH1: "Auto Insurance in Phoenix, AZ",
+    seoTitle: "Auto Insurance in Phoenix, AZ | Compare Car Insurance Quotes",
+    seoDescription:
+      "Compare auto insurance quotes in Phoenix, AZ for daily drivers, classic cars, SR-22 filings, liability, collision, comprehensive, uninsured motorist, and MedPay coverage.",
     icon: "Car",
     heroDescription:
-      "Compare liability, collision, and comprehensive options from multiple carriers in one place. We help you balance protection and premium so you are not paying for coverage you do not need.",
+      "Compare auto insurance quotes in Phoenix for daily drivers, collector vehicles, and SR-22 filings. Licensed brokers help you weigh liability, collision, comprehensive, uninsured motorist, and MedPay options side by side.",
     coverageItems: [
       {
         name: "Regular coverage",
         description:
-          "Standard auto policies for daily drivers, including liability, uninsured motorist, and optional physical damage for your vehicle.",
+          "Policies built for daily drivers: liability, collision, comprehensive, uninsured/underinsured motorist, and medical payments (MedPay)—quoted across multiple carriers so you see real choices for Phoenix-area roads.",
       },
       {
         name: "Classic coverage",
         description:
-          "Agreed-value and specialty options for collector and classic cars, with mileage and usage tailored to how you actually drive.",
+          "Agreed-value and specialty programs for classic and collector cars—mileage and usage tailored to weekend drives and shows instead of a one-size-fits-all commuter policy.",
       },
       {
         name: "State filings & SR-22",
         description:
-          "Certificate of financial responsibility filings when required by your state, handled correctly so you stay compliant and insured.",
+          "SR-22 and certificate-of-financial-responsibility filings when required, handled correctly so you stay compliant without guessing which carriers will file on your behalf.",
       },
     ],
     faqs: [
       {
-        question: "What auto coverage is required in my state?",
+        question: "What auto coverage should Phoenix drivers carry beyond state minimums?",
         answer:
-          "Most states require liability insurance at minimum limits, and some require uninsured motorist coverage. We review your state rules and recommend limits that meet legal requirements and protect your assets.",
+          "Arizona requires liability at mandated limits, but serious accidents on busy corridors can exhaust minimum limits quickly. Many drivers add collision and comprehensive for financed vehicles, uninsured motorist coverage for hit-and-run or uninsured exposure, and MedPay for quicker medical expense payments after an accident.",
       },
       {
-        question: "What is the difference between collision and comprehensive?",
+        question: "How do collision and comprehensive differ?",
         answer:
-          "Collision pays for damage to your car from accidents with other vehicles or objects. Comprehensive covers theft, vandalism, weather, and animal strikes. Many lenders require both if you finance or lease.",
+          "Collision pays for damage to your vehicle from collisions with other vehicles or objects. Comprehensive covers theft, vandalism, weather, fire, and animal strikes. Lenders often require both until the loan is satisfied.",
       },
       {
-        question: "Do I need full coverage on an older car?",
+        question: "Do I need full coverage on an older vehicle?",
         answer:
-          "It depends on the car’s value and your comfort with out-of-pocket repairs. If premiums plus deductible approach the car’s value, you might choose liability only—but we will walk through the numbers with you.",
+          "It depends on value and how you would pay for repairs or replacement out of pocket. If premiums plus deductible approach the vehicle’s market value, liability-only may make sense—we walk through the trade-offs before you decide.",
       },
       {
         question: "How does an SR-22 filing work?",
         answer:
-          "An SR-22 is a form your insurer files with the state to prove you carry required insurance after certain violations. Not every carrier offers SR-22, so we match you with insurers that can file on your behalf.",
+          "An SR-22 is proof filed with the state that you maintain required insurance after certain violations. Not every insurer offers SR-22—we match you with carriers that can file and monitor compliance.",
       },
       {
         question: "Can I insure a classic or modified vehicle?",
         answer:
-          "Yes. Classic and modified cars often need agreed-value coverage and usage limits different from a daily driver. We help you document value and choose a policy designed for collector vehicles.",
+          "Yes. Classics often benefit from agreed-value coverage and usage guidelines designed for hobby vehicles rather than daily commuting. Documented value and photos help carriers price coverage accurately.",
       },
     ],
     pageRoute: "/insurance/auto",
@@ -96,51 +107,55 @@ export const insuranceProducts: InsuranceProduct[] = [
   {
     id: "home",
     title: "Home Insurance",
+    pageH1: "Home Insurance in Phoenix, AZ",
+    seoTitle: "Home Insurance in Phoenix, AZ | Compare Homeowners Insurance Quotes",
+    seoDescription:
+      "Compare home insurance quotes in Phoenix, AZ for primary homes, seasonal homes, rental properties, liability, personal property, replacement cost, and optional endorsements.",
     icon: "Home",
     heroDescription:
-      "Protect your dwelling, belongings, and liability with a policy built around how you use the property. From primary residences to rentals, we help you understand replacement cost, deductibles, and optional endorsements.",
+      "Compare homeowners insurance in Phoenix for primary residences, seasonal homes, and rentals. Understand dwelling limits, replacement cost, personal property, liability, and optional endorsements with licensed brokers.",
     coverageItems: [
       {
         name: "Primary home",
         description:
-          "HO-3 and similar policies for your main residence, covering the structure, personal property, and liability where you live every day.",
+          "HO-style coverage for where you live full time: dwelling, other structures, personal property, liability, and loss of use—with replacement cost options when available.",
       },
       {
         name: "Seasonal home",
         description:
-          "Coverage for vacation or second homes, including occupancy considerations and options for when the home is unoccupied part of the year.",
+          "Second homes and vacation properties with occupancy and vacancy considerations, plus endorsements for the months the home sits unoccupied.",
       },
       {
         name: "Rental home",
         description:
-          "Landlord or dwelling policies for properties you lease to tenants, with liability and loss-of-rents options suited to rental exposure.",
+          "Landlord-focused protection for dwellings you lease out, including liability for tenant and guest injuries and options such as loss of rents after a covered claim.",
       },
     ],
     faqs: [
       {
-        question: "What does a standard homeowners policy cover?",
+        question: "What does a typical Phoenix homeowners policy cover?",
         answer:
-          "It typically covers your dwelling, other structures, personal property, loss of use, personal liability, and medical payments to others—subject to limits, deductibles, and exclusions like flood or earthquake unless added.",
+          "Most policies cover the dwelling, other structures, personal property, loss of use, personal liability, and guest medical payments—subject to limits, deductibles, and exclusions such as flood or earthquake unless added separately.",
       },
       {
-        question: "How is my home’s replacement cost determined?",
+        question: "How is replacement cost determined?",
         answer:
-          "Carriers estimate rebuild cost using construction details, local labor and materials, and square footage—not market value. We help you review the dwelling limit so you are not underinsured after a major loss.",
+          "Carriers estimate rebuild cost using construction type, square footage, and local labor and materials—not market value or Zestimates. We help you align dwelling limits with realistic rebuild scenarios after a major loss.",
       },
       {
-        question: "Do I need extra coverage for jewelry or electronics?",
+        question: "Do I need scheduled coverage for jewelry or electronics?",
         answer:
-          "High-value items may have sub-limits in a base policy. Scheduled personal property or endorsements can cover jewelry, art, and electronics to their full value with appropriate documentation.",
+          "Base policies often cap unscheduled theft of high-value items. Scheduling jewelry, collectibles, or expensive gear can lift sub-limits and reduce claim disputes with documentation.",
       },
       {
-        question: "Is flood damage covered by home insurance?",
+        question: "Is flood damage included?",
         answer:
-          "Standard home policies exclude flood. Separate flood insurance through the NFIP or private markets may be required, especially in flood-prone areas or when your lender mandates it.",
+          "Standard home policies exclude flood. Separate flood coverage through the NFIP or private markets may be required—especially where lenders mandate it or properties sit in high-hazard zones.",
       },
       {
-        question: "Does a seasonal or second home need a different policy?",
+        question: "Does a seasonal home need different coverage?",
         answer:
-          "Often yes. Occupancy, location, and maintenance when vacant can affect eligibility and coverage. We place coverage that matches how often you use the home and whether it is rented or guest-occupied.",
+          "Often yes. Vacancy periods, remote maintenance, and short-term rental use can affect eligibility and optional endorsements. We place coverage that matches how often you occupy the home and whether it is rented.",
       },
     ],
     pageRoute: "/insurance/home",
@@ -148,51 +163,55 @@ export const insuranceProducts: InsuranceProduct[] = [
   {
     id: "life",
     title: "Life Insurance",
+    pageH1: "Life Insurance in Phoenix, AZ",
+    seoTitle: "Life Insurance in Phoenix, AZ | Term & Whole Life Insurance Quotes",
+    seoDescription:
+      "Compare life insurance quotes in Phoenix, AZ for term life, whole life, family protection, income replacement, mortgage protection, and long-term financial security.",
     icon: "Heart",
     heroDescription:
-      "Give your family financial breathing room if something happens to you. We explain term versus permanent coverage, beneficiary designations, and how much protection fits your budget and goals.",
+      "Compare term and whole life quotes in Phoenix for income replacement, mortgage protection, and long-term family security. Licensed brokers explain beneficiary designations and realistic face amounts for your budget.",
     coverageItems: [
       {
         name: "Term life options",
         description:
-          "Fixed-period coverage with level premiums for a chosen term, often used to cover mortgages, income replacement, and education costs.",
+          "Level-premium term coverage for a defined period—often used to cover mortgages, replace income during working years, and fund education goals.",
       },
       {
         name: "Whole life plans",
         description:
-          "Permanent insurance with a guaranteed death benefit and cash value component that grows on a schedule defined by the policy.",
+          "Permanent insurance with a guaranteed death benefit and scheduled cash-value growth—suited when coverage needs extend for a lifetime, not just a term window.",
       },
       {
         name: "Family protection",
         description:
-          "Strategies to cover spouses and dependents, including rider options and coordination with workplace coverage you may already have.",
+          "Strategies covering spouses and dependents, including coordination with workplace life benefits and riders for children or additional insureds where available.",
       },
     ],
     faqs: [
       {
         question: "How much life insurance do I need?",
         answer:
-          "A common approach is multiplying income by years of support needed, then adding debts and goals like college. We help you stress-test scenarios so the amount matches your family’s actual expenses.",
+          "Many families start with income replacement, debts, final expenses, and education goals. We stress-test scenarios so the death benefit aligns with ongoing expenses—not a generic rule-of-thumb-only number.",
       },
       {
-        question: "What is the difference between term and whole life?",
+        question: "Term vs. whole life—how do I choose?",
         answer:
-          "Term provides coverage for a set period at a lower initial cost. Whole life lasts your lifetime and builds cash value but has higher premiums. The right choice depends on duration of need and budget.",
+          "Term offers the most coverage per premium dollar for temporary needs (e.g., until the mortgage is paid). Whole life lasts a lifetime with cash-value mechanics and higher premiums. The right fit depends on duration of need and budget.",
       },
       {
-        question: "Can I get coverage if I have health issues?",
+        question: "Can I qualify with health conditions?",
         answer:
-          "Many people can. Underwriting varies by carrier and product; some policies have simplified issue or graded benefits. We discuss options honestly so expectations match likely offers.",
+          "Underwriting varies by carrier and product. Some risks fit standard markets; others may use modified or graded offerings. We set expectations early so quotes reflect likely outcomes.",
       },
       {
-        question: "Should my policy go through my estate?",
+        question: "Should policies be owned by a trust?",
         answer:
-          "Beneficiary designations usually pass outside probate, but estate taxes and trusts can complicate planning. We recommend coordinating with your attorney for large estates or blended families.",
+          "Beneficiary designations often pass outside probate, but trusts, estates, and blended families add complexity. Attorneys should guide large estates; we coordinate on face amounts and ownership details as needed.",
       },
       {
-        question: "Can I change beneficiaries later?",
+        question: "Can I update beneficiaries later?",
         answer:
-          "Yes, in most cases you can update beneficiaries with a form from the insurer. Keeping designations current after marriage, divorce, or new children is essential to avoid unintended outcomes.",
+          "Yes—insurers typically allow beneficiary changes by form. Keeping designations current after marriage, divorce, or new children avoids unintended payouts.",
       },
     ],
     pageRoute: "/insurance/life",
@@ -200,51 +219,55 @@ export const insuranceProducts: InsuranceProduct[] = [
   {
     id: "commercial-auto",
     title: "Commercial Auto",
+    pageH1: "Commercial Auto Insurance in Phoenix, AZ",
+    seoTitle: "Commercial Auto Insurance in Phoenix, AZ | Business Vehicle Quotes",
+    seoDescription:
+      "Compare commercial auto insurance quotes in Phoenix, AZ for work trucks, business vehicles, fleets, cargo protection, liability, and contractor vehicle coverage.",
     icon: "Truck",
     heroDescription:
-      "Keep your business vehicles, drivers, and cargo protected with commercial auto coverage suited to your operations. We help you navigate filings, hired and non-owned auto, and fleet-rated programs when you scale.",
+      "Protect work trucks, contractor vehicles, and fleets operating from Phoenix with liability and physical damage tailored to commercial use—including cargo needs and filings where applicable.",
     coverageItems: [
       {
         name: "Fleet coverage",
         description:
-          "Scheduled vehicle coverage for multiple units, often with fleet pricing and driver eligibility rules aligned with DOT or state requirements.",
+          "Scheduled vehicles rated together for businesses running multiple units—often with fleet pricing and underwriting aligned to DOT or Arizona filing requirements.",
       },
       {
         name: "Cargo protection",
         description:
-          "Motor truck cargo and related coverages for goods you haul, with limits and deductibles matched to commodity type and contract terms.",
+          "Motor truck cargo and related coverages for goods you haul, with limits shaped by commodity type, radius, and contract obligations.",
       },
       {
         name: "Business liability",
         description:
-          "Liability for bodily injury and property damage arising from your use of covered autos in the course of business.",
+          "Auto liability arising from business use—bodily injury and property damage tied to owned, hired, or non-owned vehicles in your operations.",
       },
     ],
     faqs: [
       {
-        question: "When do I need commercial auto instead of personal auto?",
+        question: "When is commercial auto required instead of personal auto?",
         answer:
-          "If vehicles are titled to a business, used to carry passengers for hire, haul tools or cargo for work, or exceed personal policy allowances, you likely need commercial coverage. Misclassifying use can void a claim.",
+          "If vehicles are titled to a business, used to haul tools or materials for pay, transport passengers for hire, or exceed personal policy allowances, commercial coverage is typically required. Misclassified use can jeopardize claims.",
       },
       {
-        question: "What is hired and non-owned auto coverage?",
+        question: "What is hired and non-owned auto?",
         answer:
-          "HNOA covers liability when employees use rented vehicles or their personal cars for your business. It is important for companies that do not own vehicles but still have driving exposure.",
+          "HNOA responds when employees rent vehicles or use personal cars for your business. Even businesses without owned vehicles can have meaningful driving exposure.",
       },
       {
-        question: "Do I need special filings for interstate commerce?",
+        question: "Do interstate operations need special filings?",
         answer:
-          "Interstate carriers often need FMCSA authority, USDOT numbers, and appropriate insurance filings. Requirements depend on weight, cargo, and radius—we align coverage with how you operate.",
+          "Interstate carriers often need FMCSA authority, USDOT numbers, and evidenced liability limits matching operations. Requirements vary by weight, cargo, and radius—we align filings with how you actually run.",
       },
       {
-        question: "How are commercial auto premiums calculated?",
+        question: "How are premiums calculated?",
         answer:
-          "Carriers weigh vehicle types, radius, driver records, garaging location, coverage limits, and loss history. Safety programs and telematics can sometimes improve pricing over time.",
+          "Underwriters weigh vehicle classes, garaging ZIP codes, radius, driver histories, limits, cargo type, and loss experience. Safety programs and telematics can influence pricing over time.",
       },
       {
-        question: "Does commercial auto cover tools and equipment in the vehicle?",
+        question: "Are tools inside the vehicle covered automatically?",
         answer:
-          "Cargo and equipment may need inland marine or tool coverage beyond the auto policy. We review what is included under physical damage and what should be scheduled separately.",
+          "Inland marine or contractor equipment schedules often supplement auto physical damage. We clarify what the auto policy pays versus what should be insured separately.",
       },
     ],
     pageRoute: "/insurance/commercial-auto",
@@ -252,51 +275,55 @@ export const insuranceProducts: InsuranceProduct[] = [
   {
     id: "business",
     title: "Business Insurance",
+    pageH1: "Business Insurance in Phoenix, AZ",
+    seoTitle: "Business Insurance in Phoenix, AZ | Compare Small Business Insurance Quotes",
+    seoDescription:
+      "Compare business insurance quotes in Phoenix, AZ for general liability, property coverage, workers' compensation, professional liability, and commercial risk protection.",
     icon: "Briefcase",
     heroDescription:
-      "Shield your company from lawsuits, property loss, and workplace injuries with coverage tailored to your industry. We bundle general liability, property, and workers compensation when it makes sense for your risk profile.",
+      "Shield Phoenix-area businesses with general liability, commercial property, workers’ compensation, and professional liability matched to your industry—from storefronts to contractors.",
     coverageItems: [
       {
         name: "General liability",
         description:
-          "Protection against third-party claims for bodily injury, property damage, and personal and advertising injury tied to your operations.",
+          "Third-party bodily injury, property damage, and personal and advertising injury stemming from day-to-day operations and premises exposures.",
       },
       {
         name: "Property coverage",
         description:
-          "Coverage for buildings, tenant improvements, inventory, and equipment against perils named in the policy, plus business income where selected.",
+          "Buildings, tenant improvements, inventory, and equipment against covered perils—with business income extensions where selected.",
       },
       {
         name: "Workers comp",
         description:
-          "Statutory benefits for employees injured on the job, including medical care and wage replacement per state law.",
+          "Statutory benefits for employee injuries on the job, structured to Arizona compliance and class-code pricing.",
       },
     ],
     faqs: [
       {
-        question: "What does a business owners policy (BOP) include?",
+        question: "What is a business owners policy (BOP)?",
         answer:
-          "A BOP typically bundles general liability and property coverage for small to midsize businesses at a packaged rate. Eligibility depends on operations, size, and risk class.",
+          "A BOP typically bundles general liability and property for eligible small businesses at a packaged rate. Eligibility depends on operations, size, and risk class.",
       },
       {
         question: "Is professional liability the same as general liability?",
         answer:
-          "No. General liability covers bodily injury and property damage from your premises or operations. Professional liability (errors and omissions) covers financial loss from mistakes in professional services.",
+          "No. General liability covers bodily injury and property damage from operations. Professional liability (E&O) covers financial harm from errors or omissions in professional services.",
       },
       {
-        question: "Who needs workers compensation?",
+        question: "Who needs workers’ compensation in Arizona?",
         answer:
-          "Most states require it once you have employees, with thresholds varying by state. Sole proprietors may elect coverage. Penalties for noncompliance can be severe, so we confirm rules for your location.",
+          "Most employers with employees must carry workers’ comp; thresholds and exemptions vary for sole proprietors and certain classifications. Noncompliance carries stiff penalties—we verify requirements for your entity.",
       },
       {
-        question: "How do I insure home-based business equipment?",
+        question: "How do I insure home-based business property?",
         answer:
-          "Homeowners policies often limit business property and exclude certain business liability. A small commercial policy or endorsement may be needed for inventory, gear, and client-related claims.",
+          "Homeowners policies often cap business personal property and exclude many business liabilities. Endorsements or standalone commercial policies may be needed for gear, inventory, and client-related claims.",
       },
       {
         question: "Can one policy cover multiple locations?",
         answer:
-          "Often yes—schedules can list multiple premises and blanket property limits. Complex operations may need layered programs; we structure coverage to match how you grow.",
+          "Many programs schedule multiple premises or offer blanket property. As you add locations or revenue, we revisit limits and layering so growth does not outpace coverage.",
       },
     ],
     pageRoute: "/insurance/business",
@@ -304,51 +331,55 @@ export const insuranceProducts: InsuranceProduct[] = [
   {
     id: "specialty",
     title: "Specialty Insurance",
+    pageH1: "Specialty Insurance in Arizona",
+    seoTitle: "Specialty Insurance in Arizona | Motorcycle, RV, Boat & ATV Coverage",
+    seoDescription:
+      "Compare specialty insurance quotes in Arizona for motorcycles, ATVs, boats, jet skis, RVs, motorhomes, trailers, and recreational vehicles.",
     icon: "Bike",
     heroDescription:
-      "Cover motorcycles, watercraft, and recreational vehicles with policies designed for how and where you ride. We help you choose agreed value, accessory coverage, and seasonal options that fit your lifestyle.",
+      "Coverage built for Arizona recreation—motorcycles, ATVs, boats, jet skis, RVs, motorhomes, and trailers—with accessory and agreed-value options where available.",
     coverageItems: [
       {
         name: "Motorcycle & ATV",
         description:
-          "Liability, collision, comprehensive, and accessory coverage for bikes and off-road vehicles, including gear and custom parts when endorsed.",
+          "Liability, collision, comprehensive, and accessory coverage for street bikes and off-road machines—including gear endorsements when offered.",
       },
       {
         name: "Boats & jet skis",
         description:
-          "Hull, liability, and towing coverage for personal watercraft and boats, with navigational limits and agreed hull values where applicable.",
+          "Hull and liability protection for personal watercraft and boats with navigational territories and towing limits aligned to how you use Arizona lakes and rivers.",
       },
       {
         name: "RVs & motorhomes",
         description:
-          "Full-timer and recreational use options for Class A, B, and C units, including personal effects and emergency expense coverage.",
+          "Coverage for drivable and towable units—from weekend campers to seasonal snowbirds—with options for personal effects and emergency expense benefits.",
       },
     ],
     faqs: [
       {
         question: "Is my motorcycle covered under my auto policy?",
         answer:
-          "Usually no—motorcycles typically need a separate motorcycle policy. Using the wrong policy type can leave gaps in liability and physical damage.",
+          "Typically no—motorcycles usually require a standalone motorcycle policy. Mixing vehicle types incorrectly can leave liability and physical damage gaps.",
       },
       {
-        question: "What is agreed value versus actual cash value?",
+        question: "Agreed value vs. actual cash value?",
         answer:
-          "Agreed value pays a set amount for a total loss if defined upfront. Actual cash value depreciates the payout. Collector bikes and many specialty vehicles benefit from agreed value when available.",
+          "Agreed value locks in a payout for total losses when documented upfront. Actual cash value depreciates the settlement—fine for some risks, insufficient for specialty builds.",
       },
       {
-        question: "Does boat insurance cover me in all waters?",
+        question: "Does boat insurance cover every waterway?",
         answer:
-          "Policies specify navigational territories and may exclude racing or commercial use. We match territory and lay-up periods to how you actually use the vessel.",
+          "Policies specify navigational limits and may exclude racing or paid charters. Match territory and seasonal lay-up periods to real usage.",
       },
       {
-        question: "Do I need RV insurance if I only use it seasonally?",
+        question: "Do seasonal RVs still need coverage off-season?",
         answer:
-          "You still need liability when on the road and comprehensive when stored. Seasonal or storage-only adjustments can reduce cost while keeping theft and storm damage in force.",
+          "You generally still want comprehensive in storage for theft or storm damage and liability whenever the unit moves under its own power or is towed on public roads.",
       },
       {
-        question: "Are accessories and trailers covered automatically?",
+        question: "Are trailers and accessories automatic?",
         answer:
-          "Base limits may cap accessories and trailers. We review trailer scheduling, accessory endorsements, and tow vehicle coordination so nothing important is left uninsured.",
+          "Trailers and bolt-on accessories may need scheduling or increased accessory limits. We coordinate trailer VINs and stated accessory values so upgrades are reflected.",
       },
     ],
     pageRoute: "/insurance/specialty",
@@ -356,51 +387,55 @@ export const insuranceProducts: InsuranceProduct[] = [
   {
     id: "mexico-travel",
     title: "Mexico Travel Insurance",
+    pageH1: "Mexico Travel Insurance for Arizona Travelers",
+    seoTitle: "Mexico Travel Insurance from Arizona | Compare Travel Coverage Options",
+    seoDescription:
+      "Compare Mexico travel insurance options for Arizona travelers, including rental car coverage, emergency medical, trip interruption, evacuation, baggage, and CFAR coverage.",
     icon: "Palmtree",
     heroDescription:
-      "Travel with confidence across the border. Compare Mexico travel insurance options for rental car protection, trip cancellation and interruption, and emergency medical and dental care—tailored to your itinerary and quoted by licensed brokers.",
+      "Heading south from Arizona? Compare Mexico travel insurance that can bundle rental car protection, emergency medical and evacuation, trip interruption, baggage benefits, and optional cancel-for-any-reason upgrades.",
     coverageItems: [
       {
         name: "Rental car coverage in Mexico",
         description:
-          "Liability and physical damage options for vehicles driven in Mexico, aligned with entry requirements and rental agreements so you are not left exposed after an accident or theft.",
+          "Liability and physical damage aligned with Mexican legal requirements and rental contracts—critical because many U.S. auto policies do not satisfy liability south of the border.",
       },
       {
         name: "Trip cancellation and interruption",
         description:
-          "Protection when covered events force you to cancel before departure or cut your trip short, with benefits subject to the policy terms you select.",
+          "Benefits when covered events force you to cancel before departure or end a trip early—subject to the plan’s named perils and documentation rules.",
       },
       {
         name: "Emergency medical and dental",
         description:
-          "Access to emergency treatment while traveling in Mexico, including situations where your domestic health plan offers limited or no coverage outside the U.S.",
+          "Access to urgent treatment while in Mexico when domestic health plans offer little or no cross-border coverage—especially for emergencies and urgent care visits.",
       },
     ],
     faqs: [
       {
-        question: "Do I need separate insurance to drive a rental car in Mexico?",
+        question: "Do Arizona drivers need separate coverage to rent or drive in Mexico?",
         answer:
-          "Mexican law generally requires liability from a Mexico-authorized insurer; your U.S. auto policy may not satisfy that requirement. Travel and rental plans can bundle the right liability and physical damage protection for how you will drive.",
+          "Mexican law generally requires liability through a Mexico-authorized insurer. U.S. policies often do not meet that requirement at the border. Rental and travel plans can bundle liability and physical damage appropriate for your route and vehicle.",
       },
       {
-        question: "Does my U.S. health insurance cover me in Mexico?",
+        question: "Will my U.S. health plan cover me in Mexico?",
         answer:
-          "Many plans offer limited emergency coverage abroad or require you to pay upfront and seek reimbursement. Travel medical coverage can fill gaps for emergencies and urgent care while you are in Mexico.",
+          "Many plans reimburse little abroad or require upfront payment. Travel medical coverage can bridge emergency and urgent-care costs while you are outside the United States.",
       },
       {
         question: "What is the difference between trip cancellation and interruption?",
         answer:
-          "Cancellation covers prepaid, non-refundable costs if you cannot travel for a covered reason. Interruption applies if a covered event occurs during your trip and you must return early or incur extra expenses.",
+          "Cancellation reimburses forfeited prepaid costs if you cannot depart for a covered reason. Interruption covers extra costs or unused portions of the trip if a covered event occurs after you have left.",
       },
       {
-        question: "When should I buy Mexico travel insurance?",
+        question: "When should I buy travel insurance?",
         answer:
-          "Purchasing soon after you make major prepaid bookings can maximize cancellation benefits, subject to policy rules. For medical and rental coverage, effective dates should align with your entire time in Mexico.",
+          "Buy soon after major prepaid bookings if you want cancellation protection (subject to timing rules in the policy). Align effective dates with the entire time you are in Mexico for medical and rental benefits.",
       },
       {
         question: "How do I get a quote through Five Star Rated Insurance?",
         answer:
-          "Start a quote request online and connect with the licensed brokers at Protegrity Insurance Brokerage. They will review your trip details and match you with options suited to your travel and coverage needs.",
+          "Start a quote request online to connect with licensed brokers at Protegrity Insurance Brokerage. They review your itinerary and match you to options that fit your travel and coverage priorities.",
       },
     ],
     pageRoute: "/insurance/mexico-travel",
@@ -408,51 +443,55 @@ export const insuranceProducts: InsuranceProduct[] = [
   {
     id: "other",
     title: "Other Insurance",
+    pageH1: "Umbrella, Flood, Earthquake, and Valuable Items Insurance in Arizona",
+    seoTitle: "Umbrella, Flood, Earthquake & Valuable Items Insurance in Arizona",
+    seoDescription:
+      "Compare other insurance coverage options in Arizona, including umbrella insurance, flood insurance, earthquake insurance, and valuable items protection.",
     icon: "Umbrella",
     heroDescription:
-      "Additional coverage options for comprehensive protection. We help you structure umbrella liability, flood and earthquake endorsements, and scheduled valuables to close gaps left by standard policies.",
+      "Close common coverage gaps with umbrella liability, standalone or endorsed flood and earthquake protection, and scheduled valuable items backed by documented appraisals.",
     coverageItems: [
       {
         name: "Umbrella insurance",
         description:
-          "Extra liability limits above your auto and home policies, protecting assets and future earnings after a serious claim.",
+          "Extra liability limits that follow your underlying auto and home policies—important when lawsuits threaten assets and future earnings beyond base policy caps.",
       },
       {
         name: "Flood and earthquake coverage",
         description:
-          "Standalone or endorsed coverage for perils typically excluded from standard homeowners policies, tailored to your location and risk.",
+          "Protection for perils typically excluded from standard homeowners policies—structured for Arizona’s monsoon flood exposure and seismic risk pockets.",
       },
       {
         name: "Valuable items protection",
         description:
-          "Scheduled jewelry, art, collectibles, and high-value personal property with agreed values and appropriate deductibles.",
+          "Scheduled jewelry, art, and collectibles with agreed or stated values so high-value items are not capped by homeowners sub-limits.",
       },
     ],
     faqs: [
       {
-        question: "Why do I need umbrella insurance?",
+        question: "Why add an umbrella policy?",
         answer:
-          "If you are sued for a large liability judgment, your underlying auto or home limits may not be enough. Umbrella coverage adds an extra layer of protection at a relatively low cost per million of coverage.",
+          "Serious liability verdicts can exceed auto and home liability limits. Umbrellas add millions in extra protection for a comparatively modest premium when you qualify.",
       },
       {
         question: "Does homeowners insurance cover flood or earthquake?",
         answer:
-          "Usually not. Flood typically requires a separate flood policy; earthquake is often a separate endorsement or policy. We review maps, deductibles, and rebuilding costs for your area.",
+          "Usually not. Flood typically needs a dedicated flood policy; earthquake is usually a separate endorsement or policy. We review mapping, deductibles, and rebuild values for your address.",
       },
       {
-        question: "How are valuable items scheduled?",
+        question: "How are valuables scheduled?",
         answer:
-          "You provide appraisals or documentation; carriers list items with agreed or stated values. This avoids low sub-limits that apply to unscheduled jewelry or collectibles.",
+          "Appraisals, invoices, or photos support agreed values listed on the policy. Scheduling reduces conflicts at claim time versus relying on generic personal property limits.",
       },
       {
-        question: "Can umbrella coverage apply to rental properties?",
+        question: "Does umbrella extend to rentals?",
         answer:
-          "Often yes, when underlying landlord or personal policies are listed correctly. We coordinate limits and named insureds so the umbrella responds as intended.",
+          "Often, when underlying landlord policies are properly listed and limits meet carrier requirements. We coordinate named insureds and underlying liability so the umbrella responds as intended.",
       },
       {
-        question: "How do I get a quote for multiple lines?",
+        question: "Can I bundle multiple specialty lines?",
         answer:
-          "We review your current policies, assets, and exposure, then bundle or layer coverage with carriers that fit your profile.",
+          "Yes—we review assets, exposures, and existing policies to layer umbrella, flood, earthquake, and scheduled valuables with carriers suited to your profile.",
       },
     ],
     pageRoute: "/insurance/other",

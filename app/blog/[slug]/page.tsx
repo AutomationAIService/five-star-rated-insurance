@@ -11,6 +11,7 @@ import {
   BlogContent,
   BlogCTA,
   BlogHero,
+  BlogLegalDisclaimer,
   BlogReferences,
   KeyTakeaways,
   RelatedLinks,
@@ -25,6 +26,7 @@ import {
   type RichText,
   type RichTextRun,
 } from "@/src/data/blogPosts"
+import { resolveBlogFinalCta } from "@/lib/blog/resolveBlogFinalCta"
 
 const SITE_URL = "https://fivestarratedinsurance.com"
 const SITE_NAME = "Five Star Rated Insurance"
@@ -228,6 +230,8 @@ export default async function BlogPostPage({
   const post = getBlogPostBySlug(slug)
   if (!post) notFound()
 
+  const finalCta = resolveBlogFinalCta(post)
+
   const faqs = collectFaqs(post.content)
   const blogPostingSchema = buildBlogPostingSchema(post)
   const faqSchema = buildFaqSchema(faqs)
@@ -300,12 +304,12 @@ export default async function BlogPostPage({
                   id="final-cta-heading"
                   className="scroll-mt-24 pt-2 font-heading text-2xl font-bold leading-tight text-navy md:text-3xl"
                 >
-                  {post.finalCta.headline}
+                  {finalCta.headline}
                 </h2>
                 <p className="mt-4 text-base leading-relaxed text-foreground md:text-[17px] md:leading-[1.75]">
-                  {post.finalCta.intro}
+                  {finalCta.intro}
                 </p>
-                <BlogCTA data={post.finalCta} />
+                <BlogCTA data={finalCta} />
               </section>
 
               <RelatedLinks
@@ -336,6 +340,8 @@ export default async function BlogPostPage({
               <BlogReferences references={post.references} />
 
               <AuthorBio author={post.author} />
+
+              <BlogLegalDisclaimer />
 
               <BlogPhotoAttribution image={post.image} />
 

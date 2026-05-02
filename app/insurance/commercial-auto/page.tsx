@@ -6,8 +6,8 @@ import type { Metadata } from "next"
 const product = insuranceProductById["commercial-auto"]
 
 export const metadata: Metadata = {
-  title: `${product.title} | Five Star Rated Insurance`,
-  description: product.heroDescription,
+  title: product.seoTitle,
+  description: product.seoDescription,
 }
 
 export default function CommercialAutoInsurancePage() {

@@ -7,9 +7,9 @@ import protegrityLogo from "@/5 Star Insurance Logos/Protegrity Logo Updated BG 
 const GOLD_STAR = "#FFD700"
 
 const SCAN_ITEMS: string[] = [
-  "Access to 30+ insurance carriers",
-  "Licensed to serve in 40 states",
-  "Protection with integrity",
+  "Licensed brokers quoting multiple carriers",
+  "Serving Arizona families and businesses statewide",
+  "Connecting you to protection with integrity",
 ]
 
 const CARRIER_LOGOS: { src: string; alt: string; width: number; height: number }[] = [
@@ -50,10 +50,11 @@ export function TrustBadges() {
             id="trust-section-heading"
             className="font-heading text-3xl font-bold leading-tight tracking-tight text-foreground md:text-4xl lg:text-[2.5rem]"
           >
-            {"It's The Service That Counts"}
+            Service-First Brokerage Support
           </h2>
           <p className="mt-3 text-base text-muted-foreground md:text-lg">
-            Five Star Rated Insurance connects your quote request with our partnered brokerage.
+            Five Star Rated Insurance routes every request to Protegrity Insurance Brokerage—where
+            licensed producers compare carriers instead of pitching a single quota.
           </p>
         </div>
 
@@ -119,12 +120,13 @@ export function TrustBadges() {
         </div>
 
         <p className="mx-auto mt-10 max-w-3xl text-center text-xl font-semibold leading-relaxed text-foreground md:mt-12 md:text-2xl">
-          Compare auto home life and business insurance through one trusted partner.
+          Compare auto, home, life, business, commercial auto, specialty, umbrella, flood,
+          earthquake, and scheduled valuables coverage through one Phoenix-based partner.
         </p>
 
         <p className="mx-auto mt-10 max-w-3xl text-center text-xs text-muted-foreground sm:text-sm">
-          Carrier availability, quote options, and coverage eligibility vary by state, coverage
-          type, carrier, and individual circumstances.
+          Coverage availability, eligibility, pricing, policy terms, and carrier options vary by
+          state, carrier, coverage type, and individual circumstances.
         </p>
       </div>
 

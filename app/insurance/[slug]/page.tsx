@@ -26,8 +26,8 @@ export async function generateMetadata({
     return { title: "Insurance | Five Star Rated Insurance" }
   }
   return {
-    title: `${product.title} | Five Star Rated Insurance`,
-    description: product.heroDescription,
+    title: product.seoTitle,
+    description: product.seoDescription,
   }
 }
 
@@ -54,7 +54,7 @@ export default async function InsuranceProductPage({
           <div className="container mx-auto px-4 py-12 md:py-16 lg:py-20 relative">
             <div className="text-center mb-10 md:mb-12 max-w-3xl mx-auto">
               <h1 className="font-heading font-bold text-2xl md:text-3xl lg:text-4xl text-balance mb-4">
-                {product.title}
+                {product.pageH1}
               </h1>
               <p className="text-lg md:text-xl text-primary-foreground/80 leading-relaxed">
                 {product.heroDescription}
