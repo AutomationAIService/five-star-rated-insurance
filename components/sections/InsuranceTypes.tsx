@@ -127,7 +127,7 @@ export function InsuranceTypes({ headingLevel = "h2" }: InsuranceTypesProps) {
           </p>
           <p className="mx-auto max-w-2xl text-lg text-blue-900/90">
             Request one quote flow for auto, home, life, business, commercial auto, specialty lines,
-            Mexico travel add-ons, umbrella, flood, earthquake, and scheduled valuables—then review
+            Mexico travel add-ons, umbrella, flood, earthquake, and scheduled valuables, then review
             real carrier options built around your goals.
           </p>
         </div>

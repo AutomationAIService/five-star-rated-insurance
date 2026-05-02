@@ -17,7 +17,7 @@
  * A single inline run inside a paragraph or table cell.
  * Strings render as plain text. Objects represent a citation marker
  * (rendered as a superscript anchor) or an inline link (internal or
- * external — externals get `rel="noopener noreferrer" target="_blank"`).
+ * external, externals get `rel="noopener noreferrer" target="_blank"`).
  */
 export type RichTextRun =
   | string
@@ -52,7 +52,7 @@ export type ContentBlock =
 /* -------------------------------------------------------------------------- */
 
 export type BlogReference = {
-  /** Display label, e.g. "Policygenius — Phoenix homeowners insurance data". */
+  /** Display label, e.g. "Policygenius, Phoenix homeowners insurance data". */
   label: string
   url: string
 }
@@ -262,13 +262,13 @@ const phoenixHomePost: BlogPost = {
     {
       type: "p",
       text:
-        "Each insurance carrier uses its own underwriting model. The Arizona Department of Insurance and Financial Institutions (DIFI) allows carriers to file independent rate structures, which is why two homeowners on the same Scottsdale street can receive quotes that differ by hundreds of dollars annually from the same carrier — and the gap between carriers is often dramatically wider.",
+        "Each insurance carrier uses its own underwriting model. The Arizona Department of Insurance and Financial Institutions (DIFI) allows carriers to file independent rate structures, which is why two homeowners on the same Scottsdale street can receive quotes that differ by hundreds of dollars annually from the same carrier, and the gap between carriers is often dramatically wider.",
     },
 
     {
       type: "softCta",
       text: [
-        "If you want to skip the comparison work, our licensed Arizona team can shop 30+ carriers for your home in under 24 hours — ",
+        "If you want to skip the comparison work, our licensed Arizona team can shop 30+ carriers for your home in under 24 hours, ",
         intl("start your quote here", "/#quote"),
         ".",
       ],
@@ -377,7 +377,7 @@ const phoenixHomePost: BlogPost = {
         ],
         [
           "Pricing leverage",
-          "None — you take the carrier's number",
+          "None: you take the carrier's number",
           "Carriers compete for your business",
         ],
         [
@@ -388,14 +388,14 @@ const phoenixHomePost: BlogPost = {
         [
           "Best for",
           "Existing loyal customer",
-          "Most homeowners — especially new buyers",
+          "Most homeowners, especially new buyers",
         ],
       ],
     },
     {
       type: "p",
       text:
-        "The single biggest financial mistake Phoenix homeowners make is not collecting at least three quotes. The verified $5,989 spread between the cheapest and most expensive carriers in the Phoenix market is real money — and it does not require sacrificing coverage quality.",
+        "The single biggest financial mistake Phoenix homeowners make is not collecting at least three quotes. The verified $5,989 spread between the cheapest and most expensive carriers in the Phoenix market is real money, and it does not require sacrificing coverage quality.",
     },
 
     { type: "h2", text: "Phoenix Climate and Property Risks That Affect Your Premium" },
@@ -422,7 +422,7 @@ const phoenixHomePost: BlogPost = {
       text: [
         "Phoenix records an average of 111 days per year above 100°F and 21 days above 110°F (NOAA 30-year normals, 1991–2020)",
         cite(6),
-        ". Extreme heat accelerates roof deterioration, HVAC failure, and pool equipment damage — all of which factor into how carriers price Phoenix policies. Roof age is one of the strongest pricing variables in the Phoenix market: roofs over 15 years old often trigger surcharges or coverage restrictions.",
+        ". Extreme heat accelerates roof deterioration, HVAC failure, and pool equipment damage, all of which factor into how carriers price Phoenix policies. Roof age is one of the strongest pricing variables in the Phoenix market: roofs over 15 years old often trigger surcharges or coverage restrictions.",
       ],
     },
 
@@ -496,7 +496,7 @@ const phoenixHomePost: BlogPost = {
           answer: [
             "Phoenix home insurance costs an average of $1,781 per year, or about $148 per month, according to Policygenius 2024 data",
             cite(1),
-            ". Rates vary significantly by ZIP code, home size, roof age, and carrier — Phoenix premiums for identical homes range from $725 to $6,714 annually. The Arizona state average is $1,667 per year, putting Phoenix 7% above the state baseline.",
+            ". Rates vary significantly by ZIP code, home size, roof age, and carrier, Phoenix premiums for identical homes range from $725 to $6,714 annually. The Arizona state average is $1,667 per year, putting Phoenix 7% above the state baseline.",
           ],
         },
         {
@@ -515,7 +515,7 @@ const phoenixHomePost: BlogPost = {
         {
           question: "How many home insurance quotes should I get in Phoenix?",
           answer: [
-            "Get at least three to five home insurance quotes before making a decision. Phoenix data shows premiums for the same home range from $725 to over $6,700 between carriers — a $5,989 spread (Policygenius, 2024",
+            "Get at least three to five home insurance quotes before making a decision. Phoenix data shows premiums for the same home range from $725 to over $6,700 between carriers, a $5,989 spread (Policygenius, 2024",
             cite(1),
             "; MoneyGeek, 2026",
             cite(2),
@@ -558,11 +558,11 @@ const phoenixHomePost: BlogPost = {
   },
   references: [
     {
-      label: "Policygenius — Phoenix homeowners insurance data",
+      label: "Policygenius: Phoenix homeowners insurance data",
       url: "https://www.policygenius.com/homeowners-insurance/arizona/phoenix/",
     },
     {
-      label: "MoneyGeek — Average cost of home insurance in Arizona",
+      label: "MoneyGeek: Average cost of home insurance in Arizona",
       url: "https://www.moneygeek.com/insurance/homeowners/average-cost-home-insurance-arizona/",
     },
     {
@@ -578,7 +578,7 @@ const phoenixHomePost: BlogPost = {
       url: "https://www.floodsmart.gov",
     },
     {
-      label: "NOAA National Weather Service — Phoenix forecast office",
+      label: "NOAA National Weather Service: Phoenix forecast office",
       url: "https://www.weather.gov/psr/",
     },
   ],
@@ -624,8 +624,8 @@ const phoenixAutoPost: BlogPost = {
     items: [
       "The best auto insurance companies for Phoenix, AZ drivers in 2026 are State Farm, GEICO, Progressive, USAA, and Travelers.",
       "A 35-year-old Phoenix driver with a clean record pays an average of $118/month for full coverage, according to Bankrate 2024 data.",
-      "Phoenix drivers pay an average of $1,416/year for full coverage auto insurance — 12% above the national average of $1,265/year (Bankrate, 2024).",
-      "State Farm holds an A++ AM Best rating and a 0.61 NAIC complaint index — well below the industry average of 1.0.",
+      "Phoenix drivers pay an average of $1,416/year for full coverage auto insurance, 12% above the national average of $1,265/year (Bankrate, 2024).",
+      "State Farm holds an A++ AM Best rating and a 0.61 NAIC complaint index, well below the industry average of 1.0.",
       "USAA offers the lowest average rates for eligible military members at $94/month for full coverage in Phoenix.",
     ],
   },
@@ -641,7 +641,7 @@ const phoenixAutoPost: BlogPost = {
     {
       type: "p",
       text:
-        "Phoenix drivers pay an average of $1,416/year for full coverage auto insurance — 12% above the national average of $1,265/year (Bankrate, 2024). Three factors drive this premium: Arizona's high rate of uninsured drivers (11.9% of all drivers, Insurance Research Council 2023), extreme summer heat that accelerates mechanical wear and increases breakdown claims, and the Maricopa County metro's high population density, which correlates with higher accident frequency.",
+        "Phoenix drivers pay an average of $1,416/year for full coverage auto insurance, 12% above the national average of $1,265/year (Bankrate, 2024). Three factors drive this premium: Arizona's high rate of uninsured drivers (11.9% of all drivers, Insurance Research Council 2023), extreme summer heat that accelerates mechanical wear and increases breakdown claims, and the Maricopa County metro's high population density, which correlates with higher accident frequency.",
     },
     {
       type: "p",
@@ -668,42 +668,42 @@ const phoenixAutoPost: BlogPost = {
         ["Travelers", "A++", "$115/mo", "Bundling / homeowners", "0.54"],
       ],
     },
-    { type: "h3", text: "State Farm — Best Overall for Phoenix Drivers" },
+    { type: "h3", text: "State Farm: Best Overall for Phoenix Drivers" },
     {
       type: "p",
       text:
-        "State Farm holds an A++ AM Best rating and a 0.61 NAIC complaint index — well below the industry average of 1.0. Phoenix drivers with State Farm pay an average of $112/month for full coverage. State Farm has the largest agent network in Arizona, with over 140 offices in Maricopa County, making in-person service accessible across Chandler, Scottsdale, Mesa, and Glendale.",
+        "State Farm holds an A++ AM Best rating and a 0.61 NAIC complaint index, well below the industry average of 1.0. Phoenix drivers with State Farm pay an average of $112/month for full coverage. State Farm has the largest agent network in Arizona, with over 140 offices in Maricopa County, making in-person service accessible across Chandler, Scottsdale, Mesa, and Glendale.",
     },
-    { type: "h3", text: "GEICO — Lowest Rates for Clean-Record Phoenix Drivers" },
+    { type: "h3", text: "GEICO: Lowest Rates for Clean-Record Phoenix Drivers" },
     {
       type: "p",
       text:
         "GEICO offers the lowest average rates for Phoenix drivers with no accidents or violations: $98/month for full coverage. GEICO's DriveEasy telematics program can reduce premiums by up to 25% for safe drivers. GEICO has no local Phoenix offices but provides 24/7 claims support by phone and app.",
     },
-    { type: "h3", text: "Progressive — Best for High-Risk Drivers and SR-22 in Phoenix" },
+    { type: "h3", text: "Progressive: Best for High-Risk Drivers and SR-22 in Phoenix" },
     {
       type: "p",
       text:
         "Progressive insures Phoenix drivers who other carriers decline, including those with DUIs, multiple at-fault accidents, or lapsed coverage requiring an SR-22 filing. Progressive files SR-22 certificates with Arizona MVD at no additional charge beyond the state filing fee of $15–$25. Average full-coverage rate for a Phoenix driver with one at-fault accident: $178/month.",
     },
-    { type: "h3", text: "USAA — Best for Phoenix Military Families" },
+    { type: "h3", text: "USAA: Best for Phoenix Military Families" },
     {
       type: "p",
       text:
-        "USAA's average full-coverage rate in Phoenix is $94/month — the lowest of any major carrier. USAA membership is available to active-duty military, veterans, and their families. Luke Air Force Base in Glendale and Williams Gateway in Mesa are home to thousands of servicemembers who qualify. USAA's NAIC complaint index of 0.43 reflects outstanding customer satisfaction.",
+        "USAA's average full-coverage rate in Phoenix is $94/month, the lowest of any major carrier. USAA membership is available to active-duty military, veterans, and their families. Luke Air Force Base in Glendale and Williams Gateway in Mesa are home to thousands of servicemembers who qualify. USAA's NAIC complaint index of 0.43 reflects outstanding customer satisfaction.",
     },
-    { type: "h3", text: "Travelers — Best for Bundling Auto + Home in Phoenix" },
+    { type: "h3", text: "Travelers: Best for Bundling Auto + Home in Phoenix" },
     {
       type: "p",
       text:
-        "Travelers offers the most competitive multi-policy discounts in Arizona. Phoenix homeowners who bundle auto and home insurance with Travelers save an average of $486/year (Travelers, 2024 data). Travelers also offers new car replacement coverage — a valuable add-on given Phoenix's high rate of vehicle theft (ranked 14th nationally by NICB, 2023).",
+        "Travelers offers the most competitive multi-policy discounts in Arizona. Phoenix homeowners who bundle auto and home insurance with Travelers save an average of $486/year (Travelers, 2024 data). Travelers also offers new car replacement coverage, a valuable add-on given Phoenix's high rate of vehicle theft (ranked 14th nationally by NICB, 2023).",
     },
 
     { type: "h2", text: "Arizona Minimum Auto Insurance Requirements" },
     {
       type: "p",
       text:
-        "Arizona law (ARS § 28-4009) requires all Phoenix drivers to carry: $25,000 bodily injury liability per person, $50,000 bodily injury liability per accident, and $15,000 property damage liability. These minimums — known as 25/50/15 — are among the lowest in the country and are widely considered insufficient for Phoenix's high-cost accident environment.",
+        "Arizona law (ARS § 28-4009) requires all Phoenix drivers to carry: $25,000 bodily injury liability per person, $50,000 bodily injury liability per accident, and $15,000 property damage liability. These minimums (known as 25/50/15) are among the lowest in the country and are widely considered insufficient for Phoenix's high-cost accident environment.",
     },
     {
       type: "p",
@@ -718,7 +718,7 @@ const phoenixAutoPost: BlogPost = {
         {
           question: "Q: What is the average cost of car insurance in Phoenix, AZ?",
           answer:
-            "Phoenix drivers pay an average of $118/month ($1,416/year) for full coverage and $48/month ($576/year) for liability-only coverage (Bankrate, 2024). Rates vary by ZIP code — 85017 (west Phoenix) averages $142/month while 85254 (Scottsdale/Paradise Valley area) averages $104/month due to lower accident density.",
+            "Phoenix drivers pay an average of $118/month ($1,416/year) for full coverage and $48/month ($576/year) for liability-only coverage (Bankrate, 2024). Rates vary by ZIP code, 85017 (west Phoenix) averages $142/month while 85254 (Scottsdale/Paradise Valley area) averages $104/month due to lower accident density.",
         },
         {
           question: "Q: What is the cheapest auto insurance in Phoenix?",
@@ -733,7 +733,7 @@ const phoenixAutoPost: BlogPost = {
         {
           question: "Q: How does Phoenix weather affect my auto insurance rate?",
           answer:
-            "Phoenix's extreme heat — with 110+ days above 100°F annually — increases comprehensive claims for battery failure, tire blowouts, and engine damage. Monsoon season (June–September) adds hail and flood risk. Comprehensive coverage in Phoenix averages $18–$28/month, and carriers factor in Maricopa County's weather profile when setting rates.",
+            "Phoenix's extreme heat, with 110+ days above 100°F annually, increases comprehensive claims for battery failure, tire blowouts, and engine damage. Monsoon season (June–September) adds hail and flood risk. Comprehensive coverage in Phoenix averages $18–$28/month, and carriers factor in Maricopa County's weather profile when setting rates.",
         },
         {
           question: "Q: Can I get same-day auto insurance in Phoenix?",
@@ -821,7 +821,7 @@ const sr22InsurancePhoenixPost: BlogPost = {
   keyTakeaways: {
     items: [
       "An SR-22 in Phoenix, AZ is a certificate filed by your auto insurer with Arizona MVD confirming you meet the state's minimum liability requirements (25/50/15).",
-      "It is not a type of insurance — it is a filing attached to your existing policy.",
+      "It is not a type of insurance; it is a filing attached to your existing policy.",
       "Phoenix drivers required to carry SR-22 pay an average of $155–$215/month for full coverage, compared to $118/month for standard drivers.",
       "The SR-22 filing fee itself is $15–$25 and is a one-time charge per filing.",
       "Most Phoenix drivers need SR-22 for 3 years; a second DUI within 7 years requires 5 years.",
@@ -832,7 +832,7 @@ const sr22InsurancePhoenixPost: BlogPost = {
     {
       type: "p",
       text:
-        "An SR-22 in Phoenix, AZ is a certificate filed by your auto insurer with Arizona MVD confirming you meet the state's minimum liability requirements (25/50/15). It is not a type of insurance — it is a filing attached to your existing policy. Phoenix drivers required to carry SR-22 pay an average of $155–$215/month for full coverage, compared to $118/month for standard drivers. The SR-22 filing fee itself is $15–$25 and is a one-time charge per filing.",
+        "An SR-22 in Phoenix, AZ is a certificate filed by your auto insurer with Arizona MVD confirming you meet the state's minimum liability requirements (25/50/15). It is not a type of insurance; it is a filing attached to your existing policy. Phoenix drivers required to carry SR-22 pay an average of $155–$215/month for full coverage, compared to $118/month for standard drivers. The SR-22 filing fee itself is $15–$25 and is a one-time charge per filing.",
     },
 
     { type: "h2", text: "What Triggers an SR-22 Requirement in Arizona?" },
@@ -958,14 +958,14 @@ const sr22InsurancePhoenixPost: BlogPost = {
     {
       type: "p",
       text:
-        "Step 4: Maintain continuous insurance coverage for the full SR-22 period (3 or 5 years). Any lapse — even a single missed payment — results in your insurer notifying MVD, which triggers an automatic license suspension.",
+        "Step 4: Maintain continuous insurance coverage for the full SR-22 period (3 or 5 years). Any lapse, even a single missed payment, results in your insurer notifying MVD, which triggers an automatic license suspension.",
     },
 
     { type: "h2", text: "Non-Owner SR-22 Insurance in Phoenix" },
     {
       type: "p",
       text:
-        "If you need an SR-22 but do not own a vehicle, you can purchase a non-owner SR-22 policy in Phoenix. Non-owner SR-22 provides liability coverage when you drive a borrowed or rented vehicle. Average cost in Phoenix: $58–$78/month — significantly cheaper than standard SR-22. Progressive and Dairyland both offer non-owner SR-22 policies in Arizona.",
+        "If you need an SR-22 but do not own a vehicle, you can purchase a non-owner SR-22 policy in Phoenix. Non-owner SR-22 provides liability coverage when you drive a borrowed or rented vehicle. Average cost in Phoenix: $58–$78/month, significantly cheaper than standard SR-22. Progressive and Dairyland both offer non-owner SR-22 policies in Arizona.",
     },
 
     { type: "h2", text: "Frequently Asked Questions: SR-22 in Phoenix" },
@@ -985,17 +985,17 @@ const sr22InsurancePhoenixPost: BlogPost = {
         {
           question: "Q: What happens if my SR-22 policy lapses in Phoenix?",
           answer:
-            "If your SR-22 policy lapses, your insurer is legally required to file an SR-26 form with Arizona MVD — a cancellation notice. MVD receives the SR-26 and suspends your license the same day. You must then restart the SR-22 period from the beginning. A single missed payment can cost you months of progress toward reinstatement.",
+            "If your SR-22 policy lapses, your insurer is legally required to file an SR-26 form with Arizona MVD, a cancellation notice. MVD receives the SR-26 and suspends your license the same day. You must then restart the SR-22 period from the beginning. A single missed payment can cost you months of progress toward reinstatement.",
         },
         {
           question: "Q: Does an SR-22 affect my car insurance rate forever?",
           answer:
-            "No. The SR-22 surcharge affects your rate only during the required filing period (3 or 5 years). Once the SR-22 requirement expires and is removed from your MVD record, most carriers re-underwrite your policy at standard rates — provided no new violations occurred. Phoenix drivers typically see their rates drop 20–40% in the year after their SR-22 requirement ends.",
+            "No. The SR-22 surcharge affects your rate only during the required filing period (3 or 5 years). Once the SR-22 requirement expires and is removed from your MVD record, most carriers re-underwrite your policy at standard rates, provided no new violations occurred. Phoenix drivers typically see their rates drop 20–40% in the year after their SR-22 requirement ends.",
         },
         {
           question: "Q: Can I remove SR-22 early in Arizona?",
           answer:
-            "No. Arizona MVD does not allow early removal of SR-22 requirements. The full 3-year or 5-year period must be completed with continuous coverage. However, you can shop for a lower SR-22 rate each year — many Phoenix drivers save $20–$35/month by switching carriers mid-SR-22 period while maintaining the required filing.",
+            "No. Arizona MVD does not allow early removal of SR-22 requirements. The full 3-year or 5-year period must be completed with continuous coverage. However, you can shop for a lower SR-22 rate each year, many Phoenix drivers save $20–$35/month by switching carriers mid-SR-22 period while maintaining the required filing.",
         },
         {
           question: "Q: Is Protegrity Insurance able to file SR-22 the same day?",
@@ -1073,7 +1073,7 @@ const carInsuranceAfterDuiPhoenixPost: BlogPost = {
   },
   keyTakeaways: {
     items: [
-      "A first-offense DUI in Phoenix increases your auto insurance premium by an average of 74% — from $118/month to $205/month — and the surcharge remains for 5 years under Arizona's DUI statute (ARS § 28-1381).",
+      "A first-offense DUI in Phoenix increases your auto insurance premium by an average of 74%, from $118/month to $205/month, and the surcharge remains for 5 years under Arizona's DUI statute (ARS § 28-1381).",
       "Arizona requires an SR-22 filing for 3 years after a first DUI.",
       "The cheapest carrier for post-DUI Phoenix drivers is Progressive at $192/month, followed by Dairyland at $200/month.",
       "A DUI conviction in Arizona triggers three immediate insurance consequences: your current carrier may cancel or non-renew your policy, you are required to file an SR-22 with Arizona MVD for 3 years, and your premium increases by an average of 74% for 5 years.",
@@ -1085,14 +1085,14 @@ const carInsuranceAfterDuiPhoenixPost: BlogPost = {
     {
       type: "p",
       text:
-        "A first-offense DUI in Phoenix increases your auto insurance premium by an average of 74% — from $118/month to $205/month — and the surcharge remains for 5 years under Arizona's DUI statute (ARS § 28-1381). Arizona requires an SR-22 filing for 3 years after a first DUI. The cheapest carrier for post-DUI Phoenix drivers is Progressive at $192/month, followed by Dairyland at $200/month. This guide covers what to expect, which carriers accept DUI drivers, and how to minimize costs.",
+        "A first-offense DUI in Phoenix increases your auto insurance premium by an average of 74%, from $118/month to $205/month, and the surcharge remains for 5 years under Arizona's DUI statute (ARS § 28-1381). Arizona requires an SR-22 filing for 3 years after a first DUI. The cheapest carrier for post-DUI Phoenix drivers is Progressive at $192/month, followed by Dairyland at $200/month. This guide covers what to expect, which carriers accept DUI drivers, and how to minimize costs.",
     },
 
     { type: "h2", text: "What Happens to Your Car Insurance After a DUI in Phoenix?" },
     {
       type: "p",
       text:
-        "A DUI conviction in Arizona triggers three immediate insurance consequences: (1) your current carrier may cancel or non-renew your policy; (2) you are required to file an SR-22 with Arizona MVD for 3 years; (3) your premium increases by an average of 74% for 5 years — the period Arizona insurers use to assess DUI risk.",
+        "A DUI conviction in Arizona triggers three immediate insurance consequences: (1) your current carrier may cancel or non-renew your policy; (2) you are required to file an SR-22 with Arizona MVD for 3 years; (3) your premium increases by an average of 74% for 5 years, the period Arizona insurers use to assess DUI risk.",
     },
     {
       type: "p",
@@ -1111,13 +1111,13 @@ const carInsuranceAfterDuiPhoenixPost: BlogPost = {
         "Accepts DUI Drivers",
       ],
       rows: [
-        ["Progressive", "$192/mo", "Yes — electronic, 24hr", "Yes"],
-        ["Dairyland", "$200/mo", "Yes — electronic, 24hr", "Yes"],
-        ["Gainsco", "$208/mo", "Yes — electronic, 24hr", "Yes"],
-        ["State Farm", "$248/mo", "Yes", "Sometimes — underwriting varies"],
-        ["GEICO", "$228/mo", "Yes", "Yes — some offices"],
-        ["Allstate", "$252/mo", "Yes", "Yes — rate varies by agent"],
-        ["USAA (if eligible)", "$195/mo", "Yes", "Yes — first DUI only"],
+        ["Progressive", "$192/mo", "Yes: electronic, 24hr", "Yes"],
+        ["Dairyland", "$200/mo", "Yes: electronic, 24hr", "Yes"],
+        ["Gainsco", "$208/mo", "Yes: electronic, 24hr", "Yes"],
+        ["State Farm", "$248/mo", "Yes", "Sometimes; underwriting varies"],
+        ["GEICO", "$228/mo", "Yes", "Yes; some offices"],
+        ["Allstate", "$252/mo", "Yes", "Yes; rate varies by agent"],
+        ["USAA (if eligible)", "$195/mo", "Yes", "Yes; first DUI only"],
       ],
     },
 
@@ -1130,7 +1130,7 @@ const carInsuranceAfterDuiPhoenixPost: BlogPost = {
     {
       type: "p",
       text:
-        "Insurance carriers treat Arizona DUI convictions as major violations — the same risk tier as reckless driving. The 74% average rate increase persists for 5 years, meaning a Phoenix driver who paid $118/month before the DUI will pay an average of $205/month for the next 5 years — a total additional cost of $5,220 in insurance premiums alone.",
+        "Insurance carriers treat Arizona DUI convictions as major violations, the same risk tier as reckless driving. The 74% average rate increase persists for 5 years, meaning a Phoenix driver who paid $118/month before the DUI will pay an average of $205/month for the next 5 years, a total additional cost of $5,220 in insurance premiums alone.",
     },
 
     { type: "h2", text: "Steps to Take Immediately After a DUI Conviction in Phoenix" },
@@ -1189,7 +1189,7 @@ const carInsuranceAfterDuiPhoenixPost: BlogPost = {
         {
           question: "Q: How long does a DUI stay on my driving record in Arizona?",
           answer:
-            "A DUI conviction stays on your Arizona MVD driving record permanently — it is never expunged. However, most insurance carriers look back only 5–7 years when setting rates. After 5 years with no additional violations, your insurance rate will return to approximately standard pricing with most Phoenix-area carriers.",
+            "A DUI conviction stays on your Arizona MVD driving record permanently, it is never expunged. However, most insurance carriers look back only 5–7 years when setting rates. After 5 years with no additional violations, your insurance rate will return to approximately standard pricing with most Phoenix-area carriers.",
         },
         {
           question: "Q: Can I get car insurance the same day as my DUI conviction in Phoenix?",
@@ -1287,7 +1287,7 @@ const fullCoverageCarInsurancePhoenixPost: BlogPost = {
   keyTakeaways: {
     items: [
       "Full coverage car insurance in Phoenix, AZ costs an average of $118/month ($1,416/year) and combines three policies: liability, collision, and comprehensive.",
-      "It is not a single product — it is a package. Arizona does not define 'full coverage' in state law, so the exact coverages vary by carrier.",
+      "It is not a single product; it is a package. Arizona does not define 'full coverage' in state law, so the exact coverages vary by carrier.",
       "A 35-year-old Phoenix driver with a clean record, good credit, and a 2022 Toyota Camry pays approximately $112–$124/month from major carriers.",
       "If your vehicle's actual cash value is below $5,000–$6,000, paying for full coverage may cost more than the maximum claim payout.",
       "For vehicles worth over $15,000, full coverage is nearly always financially justified in Phoenix's high-theft, high-accident environment.",
@@ -1298,7 +1298,7 @@ const fullCoverageCarInsurancePhoenixPost: BlogPost = {
     {
       type: "p",
       text:
-        "Full coverage car insurance in Phoenix, AZ costs an average of $118/month ($1,416/year) and combines three policies: liability, collision, and comprehensive. It is not a single product — it is a package. Arizona does not define 'full coverage' in state law, so the exact coverages vary by carrier. A 35-year-old Phoenix driver with a clean record, good credit, and a 2022 Toyota Camry pays approximately $112–$124/month from major carriers. This guide breaks down what is and is not included.",
+        "Full coverage car insurance in Phoenix, AZ costs an average of $118/month ($1,416/year) and combines three policies: liability, collision, and comprehensive. It is not a single product; it is a package. Arizona does not define 'full coverage' in state law, so the exact coverages vary by carrier. A 35-year-old Phoenix driver with a clean record, good credit, and a 2022 Toyota Camry pays approximately $112–$124/month from major carriers. This guide breaks down what is and is not included.",
     },
 
     { type: "h2", text: "What Does Full Coverage Actually Include in Phoenix?" },
@@ -1397,7 +1397,7 @@ const fullCoverageCarInsurancePhoenixPost: BlogPost = {
     {
       type: "p",
       text:
-        "The break-even rule: if your vehicle's actual cash value (ACV) is below 10x your annual full-coverage premium, the math favors dropping to liability-only. Example: a 2012 Honda Civic with an ACV of $7,000. Full coverage costs $98/month ($1,176/year). With a $500 deductible, the maximum collision payout is $6,500. Over 6 years, you pay $7,056 in premiums to protect a $6,500 asset — a net loss even without a deductible. For vehicles worth $15,000+, full coverage is almost always financially justified in Phoenix's high-theft and high-accident environment.",
+        "The break-even rule: if your vehicle's actual cash value (ACV) is below 10x your annual full-coverage premium, the math favors dropping to liability-only. Example: a 2012 Honda Civic with an ACV of $7,000. Full coverage costs $98/month ($1,176/year). With a $500 deductible, the maximum collision payout is $6,500. Over 6 years, you pay $7,056 in premiums to protect a $6,500 asset, a net loss even without a deductible. For vehicles worth $15,000+, full coverage is almost always financially justified in Phoenix's high-theft and high-accident environment.",
     },
 
     { type: "h2", text: "What Full Coverage Does NOT Cover in Phoenix" },
@@ -1409,7 +1409,7 @@ const fullCoverageCarInsurancePhoenixPost: BlogPost = {
     {
       type: "p",
       text:
-        "Personal belongings: Items stolen from your vehicle — a laptop, camera, or tools — are not covered by comprehensive. Arizona homeowners or renters insurance covers off-premises theft of personal property, typically with a $500–$1,000 deductible.",
+        "Personal belongings: Items stolen from your vehicle, a laptop, camera, or tools, are not covered by comprehensive. Arizona homeowners or renters insurance covers off-premises theft of personal property, typically with a $500–$1,000 deductible.",
     },
     {
       type: "p",
@@ -1434,12 +1434,12 @@ const fullCoverageCarInsurancePhoenixPost: BlogPost = {
         {
           question: "Q: Is full coverage required in Phoenix?",
           answer:
-            "Arizona law does not require full coverage. However, if you have an auto loan or lease, your lender contractually requires collision and comprehensive. Failure to maintain full coverage on a financed vehicle allows the lender to force-place insurance — which averages $300–$450/month in Arizona and covers only the lender's interest, not yours.",
+            "Arizona law does not require full coverage. However, if you have an auto loan or lease, your lender contractually requires collision and comprehensive. Failure to maintain full coverage on a financed vehicle allows the lender to force-place insurance, which averages $300–$450/month in Arizona and covers only the lender's interest, not yours.",
         },
         {
           question: "Q: What deductible should I choose for full coverage in Phoenix?",
           answer:
-            "A $500 deductible is the most common choice in Phoenix. Increasing to $1,000 reduces your monthly premium by approximately 11% ($13/month on a $118/month policy). Choose the highest deductible you can comfortably pay out of pocket immediately following an accident. Avoid $100 or $250 deductibles — the premium savings versus $500 are minimal and not worth the lower payout difference.",
+            "A $500 deductible is the most common choice in Phoenix. Increasing to $1,000 reduces your monthly premium by approximately 11% ($13/month on a $118/month policy). Choose the highest deductible you can comfortably pay out of pocket immediately following an accident. Avoid $100 or $250 deductibles, the premium savings versus $500 are minimal and not worth the lower payout difference.",
         },
         {
           question: "Q: Does full coverage pay for hail damage in Phoenix?",
@@ -1531,7 +1531,7 @@ const teenDriversCarInsurancePhoenixPost: BlogPost = {
       "A standalone policy for a 16-year-old in Phoenix averages $312–$368/month for full coverage (Bankrate, 2024).",
       "State Farm is the cheapest major carrier for teen drivers in Phoenix at $248–$295/month for full coverage.",
       "Good student and telematics discounts can reduce these costs by up to 30%.",
-      "Maricopa County teen drivers (16–19) are involved in 8,241 crashes per year — 14.6% of all crashes despite representing 5.8% of licensed drivers (ADOT, 2023).",
+      "Maricopa County teen drivers (16–19) are involved in 8,241 crashes per year, 14.6% of all crashes despite representing 5.8% of licensed drivers (ADOT, 2023).",
     ],
   },
   content: [
@@ -1546,7 +1546,7 @@ const teenDriversCarInsurancePhoenixPost: BlogPost = {
     {
       type: "p",
       text:
-        "Maricopa County teen drivers (16–19) are involved in 8,241 crashes per year — 14.6% of all crashes despite representing 5.8% of licensed drivers (ADOT, 2023). Phoenix's highway grid — including I-10, I-17, Loop 101, and Loop 202 — exposes new drivers to high-speed merging situations daily. These factors make teen drivers statistically the highest-risk category in Arizona's most crash-dense county, which carriers directly price into premiums.",
+        "Maricopa County teen drivers (16–19) are involved in 8,241 crashes per year, 14.6% of all crashes despite representing 5.8% of licensed drivers (ADOT, 2023). Phoenix's highway grid, including I-10, I-17, Loop 101, and Loop 202, exposes new drivers to high-speed merging situations daily. These factors make teen drivers statistically the highest-risk category in Arizona's most crash-dense county, which carriers directly price into premiums.",
     },
 
     { type: "h2", text: "Teen Driver Rates by Age in Phoenix" },
@@ -1573,7 +1573,7 @@ const teenDriversCarInsurancePhoenixPost: BlogPost = {
     {
       type: "p",
       text:
-        "Adding a teen to a parent's existing policy is consistently cheaper than a standalone policy. A 16-year-old male on his parents' State Farm policy costs $148/month additional — $220/month less than a standalone policy. The discount comes from the family's established insurance history and multi-car policy structure.",
+        "Adding a teen to a parent's existing policy is consistently cheaper than a standalone policy. A 16-year-old male on his parents' State Farm policy costs $148/month additional, $220/month less than a standalone policy. The discount comes from the family's established insurance history and multi-car policy structure.",
     },
 
     { type: "h2", text: "7 Discounts That Cut Teen Driver Rates in Phoenix" },
@@ -1627,22 +1627,22 @@ const teenDriversCarInsurancePhoenixPost: BlogPost = {
         {
           question: "Q: At what age does car insurance get cheaper in Phoenix?",
           answer:
-            "Phoenix teen drivers see their biggest rate drop between 18 and 25. At 18, the average male pays $295/month for full coverage. At 25, the same driver pays $152/month — a 49% reduction. Each year without an accident or ticket reduces the rate by 8–15%. Maintaining a clean record through the teen years is the single most valuable long-term insurance decision a young Phoenix driver can make.",
+            "Phoenix teen drivers see their biggest rate drop between 18 and 25. At 18, the average male pays $295/month for full coverage. At 25, the same driver pays $152/month, a 49% reduction. Each year without an accident or ticket reduces the rate by 8–15%. Maintaining a clean record through the teen years is the single most valuable long-term insurance decision a young Phoenix driver can make.",
         },
         {
           question: "Q: Should my teen be on my policy or their own policy in Phoenix?",
           answer:
-            "Adding a teen to your existing Phoenix policy is almost always cheaper — by an average of $120–$160/month — than a standalone policy. However, if your teen causes an at-fault accident, the surcharge applies to your household policy and affects every driver's rate. For high-risk teens with prior violations, a separate policy protects the parents' rates.",
+            "Adding a teen to your existing Phoenix policy is almost always cheaper, by an average of $120–$160/month, than a standalone policy. However, if your teen causes an at-fault accident, the surcharge applies to your household policy and affects every driver's rate. For high-risk teens with prior violations, a separate policy protects the parents' rates.",
         },
         {
           question: "Q: What car should my Phoenix teen drive to keep insurance costs low?",
           answer:
-            "The lowest-rate vehicles for Phoenix teen drivers are used Honda Civics ($188/month), Toyota Corollas ($192/month), and Ford Focuses ($185/month) with full coverage. Sports cars (Mustang, Camaro) cost $280–$340/month for teen drivers due to performance-risk classification. SUVs fall in the middle at $215–$255/month. Avoid high-theft vehicles like Ford F-150s and Chevrolet Silverados — theft risk significantly increases comprehensive premiums for teen drivers.",
+            "The lowest-rate vehicles for Phoenix teen drivers are used Honda Civics ($188/month), Toyota Corollas ($192/month), and Ford Focuses ($185/month) with full coverage. Sports cars (Mustang, Camaro) cost $280–$340/month for teen drivers due to performance-risk classification. SUVs fall in the middle at $215–$255/month. Avoid high-theft vehicles like Ford F-150s and Chevrolet Silverados, theft risk significantly increases comprehensive premiums for teen drivers.",
         },
         {
           question: "Q: Does a teen driver ticket affect my Phoenix car insurance rates?",
           answer:
-            "Yes. A single speeding ticket on a teen driver's record increases the household policy premium by an average of 24% in Phoenix — more than the 18% increase for an adult driver with the same ticket. Ticket surcharges remain on the teen's Arizona MVD record for 3 years. Contesting or attending defensive driving school (eligible once per 12 months in Arizona) removes the ticket from the insurance record.",
+            "Yes. A single speeding ticket on a teen driver's record increases the household policy premium by an average of 24% in Phoenix, more than the 18% increase for an adult driver with the same ticket. Ticket surcharges remain on the teen's Arizona MVD record for 3 years. Contesting or attending defensive driving school (eligible once per 12 months in Arizona) removes the ticket from the insurance record.",
         },
         {
           question: "Q: What is Arizona's graduated driver license law?",
@@ -1730,9 +1730,9 @@ const uninsuredMotoristCoveragePhoenixPost: BlogPost = {
   keyTakeaways: {
     items: [
       "Uninsured motorist (UM) coverage in Phoenix pays your medical bills, lost wages, and pain and suffering if you are hit by a driver with no insurance or insufficient coverage.",
-      "Arizona has an 11.9% uninsured driver rate — 14th highest in the country (Insurance Research Council, 2023).",
+      "Arizona has an 11.9% uninsured driver rate, 14th highest in the country (Insurance Research Council, 2023).",
       "UM coverage costs $8–$14/month in Phoenix for $100,000 in protection.",
-      "Arizona law requires insurers to offer UM/UIM but does not mandate that drivers purchase it — a significant gap Protegrity Insurance helps every Phoenix client fill.",
+      "Arizona law requires insurers to offer UM/UIM but does not mandate that drivers purchase it, a significant gap Protegrity Insurance helps every Phoenix client fill.",
       "1 in every 8.4 Phoenix-area drivers operates without insurance, translating to approximately 340,000 uninsured vehicles on the road at any given time.",
     ],
   },
@@ -1741,7 +1741,7 @@ const uninsuredMotoristCoveragePhoenixPost: BlogPost = {
     {
       type: "p",
       text:
-        "Uninsured motorist (UM) coverage in Phoenix pays your medical bills, lost wages, and pain and suffering if you are hit by a driver with no insurance or insufficient coverage. Arizona has an 11.9% uninsured driver rate — 14th highest in the country (Insurance Research Council, 2023). UM coverage costs $8–$14/month in Phoenix for $100,000 in protection. Arizona law requires insurers to offer UM/UIM but does not mandate that drivers purchase it — a significant gap Protegrity Insurance helps every Phoenix client fill.",
+        "Uninsured motorist (UM) coverage in Phoenix pays your medical bills, lost wages, and pain and suffering if you are hit by a driver with no insurance or insufficient coverage. Arizona has an 11.9% uninsured driver rate, 14th highest in the country (Insurance Research Council, 2023). UM coverage costs $8–$14/month in Phoenix for $100,000 in protection. Arizona law requires insurers to offer UM/UIM but does not mandate that drivers purchase it, a significant gap Protegrity Insurance helps every Phoenix client fill.",
     },
 
     { type: "h2", text: "Arizona's Uninsured Driver Problem: The Numbers" },
@@ -1791,7 +1791,7 @@ const uninsuredMotoristCoveragePhoenixPost: BlogPost = {
     {
       type: "p",
       text:
-        "Example: You are stopped at a red light on Camelback Road when an uninsured driver rear-ends you. Your vehicle sustains $8,400 in damage, and you suffer a herniated disc requiring $28,000 in medical treatment. Without UM coverage, you pursue the at-fault driver personally — but most uninsured drivers have no collectible assets. With $100,000 UM coverage, your insurer pays all of it, up to policy limits, after your deductible (typically $250).",
+        "Example: You are stopped at a red light on Camelback Road when an uninsured driver rear-ends you. Your vehicle sustains $8,400 in damage, and you suffer a herniated disc requiring $28,000 in medical treatment. Without UM coverage, you pursue the at-fault driver personally, but most uninsured drivers have no collectible assets. With $100,000 UM coverage, your insurer pays all of it, up to policy limits, after your deductible (typically $250).",
     },
 
     { type: "h2", text: "UM Coverage Limits: How Much Do You Need in Phoenix?" },
@@ -1808,31 +1808,31 @@ const uninsuredMotoristCoveragePhoenixPost: BlogPost = {
         [
           "$25,000/person, $50,000/accident",
           "$6–$9/mo",
-          "Partial — avg ER visit $3,847",
+          "Partial, avg ER visit $3,847",
           "Drivers with health insurance",
         ],
         [
           "$50,000/person, $100,000/accident",
           "$8–$11/mo",
-          "Moderate — covers 1 hospitalization",
+          "Moderate, covers 1 hospitalization",
           "Most Phoenix drivers",
         ],
         [
           "$100,000/person, $300,000/accident",
           "$12–$16/mo",
-          "Yes — covers major injury",
+          "Yes, covers major injury",
           "Recommended standard",
         ],
         [
           "$250,000/person, $500,000/accident",
           "$18–$24/mo",
-          "Yes — covers catastrophic injury",
+          "Yes, covers catastrophic injury",
           "High-income drivers",
         ],
         [
           "$500,000 + umbrella policy",
           "$28–$36/mo",
-          "Yes — comprehensive protection",
+          "Yes, comprehensive protection",
           "Business owners, high net worth",
         ],
       ],
@@ -1842,14 +1842,14 @@ const uninsuredMotoristCoveragePhoenixPost: BlogPost = {
     {
       type: "p",
       text:
-        "Yes — even if you carry UM coverage. Arizona's high uninsured driver rate is factored into every Phoenix auto insurance premium because insurers model the probability that any given policyholder will be involved in an uninsured motorist claim. This is one reason Phoenix premiums run 12% above the national average. Carrying UM coverage does not increase this base rate calculation — it simply protects you against the risk already priced into the market.",
+        "Yes, even if you carry UM coverage. Arizona's high uninsured driver rate is factored into every Phoenix auto insurance premium because insurers model the probability that any given policyholder will be involved in an uninsured motorist claim. This is one reason Phoenix premiums run 12% above the national average. Carrying UM coverage does not increase this base rate calculation, it simply protects you against the risk already priced into the market.",
     },
 
     { type: "h2", text: "What Happens If You Are Hit By an Uninsured Driver in Phoenix Without UM Coverage?" },
     {
       type: "p",
       text:
-        "Without UM coverage, your options are: (1) sue the at-fault driver personally in Maricopa County Superior Court — a process that averages 12–18 months and frequently results in uncollectable judgments against financially insolvent defendants; or (2) file a claim against your own collision coverage for vehicle damage (subject to your deductible), but pay all medical expenses out of pocket.",
+        "Without UM coverage, your options are: (1) sue the at-fault driver personally in Maricopa County Superior Court, a process that averages 12–18 months and frequently results in uncollectable judgments against financially insolvent defendants; or (2) file a claim against your own collision coverage for vehicle damage (subject to your deductible), but pay all medical expenses out of pocket.",
     },
     {
       type: "p",
@@ -1864,17 +1864,17 @@ const uninsuredMotoristCoveragePhoenixPost: BlogPost = {
         {
           question: "Q: Is uninsured motorist coverage required in Arizona?",
           answer:
-            "No. Arizona law (ARS § 20-259.01) requires insurers to offer UM/UIM coverage but does not require drivers to purchase it. However, given Arizona's 11.9% uninsured driver rate — nearly 1 in 8 Phoenix drivers — Protegrity Insurance includes UM/UIM in every auto insurance recommendation and considers it essential, not optional.",
+            "No. Arizona law (ARS § 20-259.01) requires insurers to offer UM/UIM coverage but does not require drivers to purchase it. However, given Arizona's 11.9% uninsured driver rate, nearly 1 in 8 Phoenix drivers, Protegrity Insurance includes UM/UIM in every auto insurance recommendation and considers it essential, not optional.",
         },
         {
           question: "Q: How much does uninsured motorist coverage cost in Phoenix?",
           answer:
-            "UM coverage costs $8–$14/month in Phoenix for $100,000 per person / $300,000 per accident in coverage. UM property damage (for vehicle repairs) costs $4–$8/month additional. Combined UM + UIM + UMPD protection averages $18–$26/month — less than the cost of a single deductible payment in most accident scenarios.",
+            "UM coverage costs $8–$14/month in Phoenix for $100,000 per person / $300,000 per accident in coverage. UM property damage (for vehicle repairs) costs $4–$8/month additional. Combined UM + UIM + UMPD protection averages $18–$26/month, less than the cost of a single deductible payment in most accident scenarios.",
         },
         {
           question: "Q: Does UM coverage pay if I am hit as a pedestrian or cyclist in Phoenix?",
           answer:
-            "Yes. Arizona UM policies cover you as a pedestrian or cyclist if you are struck by an uninsured motorist. Phoenix averages 1,847 pedestrian and cyclist incidents per year (ADOT, 2023). Your UM coverage follows you as a person, not your vehicle — making it relevant any time you are in traffic, including while walking, cycling, or riding a scooter in Phoenix.",
+            "Yes. Arizona UM policies cover you as a pedestrian or cyclist if you are struck by an uninsured motorist. Phoenix averages 1,847 pedestrian and cyclist incidents per year (ADOT, 2023). Your UM coverage follows you as a person, not your vehicle, making it relevant any time you are in traffic, including while walking, cycling, or riding a scooter in Phoenix.",
         },
         {
           question: "Q: What is the stacking option for UM coverage in Arizona?",
@@ -1884,7 +1884,7 @@ const uninsuredMotoristCoveragePhoenixPost: BlogPost = {
         {
           question: "Q: Does my health insurance cover injuries from an uninsured driver in Phoenix?",
           answer:
-            "Yes, with limitations. Your health insurance will cover medical treatment after an accident with an uninsured driver, but it will not pay for lost wages, pain and suffering, or vehicle damage. Additionally, most health insurers have subrogation rights — meaning they can recover what they paid from any settlement you receive. UM coverage operates independently of health insurance and provides categories of compensation that health insurance does not.",
+            "Yes, with limitations. Your health insurance will cover medical treatment after an accident with an uninsured driver, but it will not pay for lost wages, pain and suffering, or vehicle damage. Additionally, most health insurers have subrogation rights, meaning they can recover what they paid from any settlement you receive. UM coverage operates independently of health insurance and provides categories of compensation that health insurance does not.",
         },
         {
           question: "Q: How do I file a UM claim after being hit by an uninsured driver in Phoenix?",
@@ -1963,7 +1963,7 @@ const carInsuranceDiscountsPhoenixPost: BlogPost = {
   keyTakeaways: {
     items: [
       "Phoenix drivers have access to 18+ individual car insurance discounts from major carriers, with individual savings ranging from $4/month (paperless billing) to $50/month (multi-policy bundle).",
-      "A Phoenix driver who qualifies for and stacks five common discounts — bundle, telematics, good driver, multi-car, and pay-in-full — can reduce a $118/month average full-coverage policy to $72–$85/month.",
+      "A Phoenix driver who qualifies for and stacks five common discounts, bundle, telematics, good driver, multi-car, and pay-in-full, can reduce a $118/month average full-coverage policy to $72–$85/month.",
       "The multi-policy bundle discount is the largest single discount available, saving an average of $38–$52/month ($456–$624/year).",
       "Phoenix's average full-coverage premium of $118/month is 12% above the national average, making discount optimization more valuable here than in cheaper markets.",
       "A 25% combined discount on a $118/month Phoenix policy saves $354/year.",
@@ -1974,7 +1974,7 @@ const carInsuranceDiscountsPhoenixPost: BlogPost = {
     {
       type: "p",
       text:
-        "Phoenix drivers have access to 18+ individual car insurance discounts from major carriers, with individual savings ranging from $4/month (paperless billing) to $50/month (multi-policy bundle). A Phoenix driver who qualifies for and stacks five common discounts — bundle, telematics, good driver, multi-car, and pay-in-full — can reduce a $118/month average full-coverage policy to $72–$85/month. This guide lists every available discount, average savings, and eligibility requirements.",
+        "Phoenix drivers have access to 18+ individual car insurance discounts from major carriers, with individual savings ranging from $4/month (paperless billing) to $50/month (multi-policy bundle). A Phoenix driver who qualifies for and stacks five common discounts, bundle, telematics, good driver, multi-car, and pay-in-full, can reduce a $118/month average full-coverage policy to $72–$85/month. This guide lists every available discount, average savings, and eligibility requirements.",
     },
 
     { type: "h2", text: "Why Discount Stacking Matters More in Phoenix Than Other Arizona Cities" },
@@ -2117,18 +2117,18 @@ const carInsuranceDiscountsPhoenixPost: BlogPost = {
       caption: "How to Stack Car Insurance Discounts in Phoenix",
       columns: ["Discount Applied", "Monthly Savings", "New Monthly Rate"],
       rows: [
-        ["Baseline rate", "—", "$124/mo"],
+        ["Baseline rate", "-", "$124/mo"],
         ["Add multi-policy bundle (home)", "-$44/mo", "$80/mo"],
         ["Enroll in Drive Safe & Save", "-$22/mo (est. 6-month average)", "$58/mo"],
         ["Switch to annual payment", "-$10/mo", "$48/mo"],
         ["Add UM/UIM (small increase)", "+$12/mo", "$60/mo"],
-        ["Final optimized rate (with UM)", "—", "$60/mo"],
+        ["Final optimized rate (with UM)", "-", "$60/mo"],
       ],
     },
     {
       type: "p",
       text:
-        "This real-world optimization saves $64/month ($768/year) while adding uninsured motorist protection the driver did not previously have. The starting point — comparing only two carriers — is replaced by a comprehensive discount audit that most Phoenix drivers never receive.",
+        "This real-world optimization saves $64/month ($768/year) while adding uninsured motorist protection the driver did not previously have. The starting point, comparing only two carriers, is replaced by a comprehensive discount audit that most Phoenix drivers never receive.",
     },
 
     { type: "h2", text: "Discounts Phoenix Drivers Most Commonly Miss" },
@@ -2140,7 +2140,7 @@ const carInsuranceDiscountsPhoenixPost: BlogPost = {
     {
       type: "p",
       text:
-        "Defensive driving school completion: Arizona law (ARS § 28-3392) allows drivers to attend a state-approved defensive driving school once per 12 months to remove a ticket from their insurance record. At $75–$90 for the course, the ROI is immediate — preventing a $18–$37/month surcharge for 3 years.",
+        "Defensive driving school completion: Arizona law (ARS § 28-3392) allows drivers to attend a state-approved defensive driving school once per 12 months to remove a ticket from their insurance record. At $75–$90 for the course, the ROI is immediate, preventing a $18–$37/month surcharge for 3 years.",
     },
     {
       type: "p",
@@ -2165,22 +2165,22 @@ const carInsuranceDiscountsPhoenixPost: BlogPost = {
         {
           question: "Q: Does being a safe driver actually lower my rate in Phoenix?",
           answer:
-            "Yes — two ways. A clean driving record (no accidents or violations for 3+ years) earns a good driver discount of $22–$30/month from most Phoenix carriers. Separately, enrolling in a telematics program and scoring well earns an additional 15–25% reduction. Combined, a documented safe driver in Phoenix can save $40–$55/month versus the same driver without these recognitions.",
+            "Yes, two ways. A clean driving record (no accidents or violations for 3+ years) earns a good driver discount of $22–$30/month from most Phoenix carriers. Separately, enrolling in a telematics program and scoring well earns an additional 15–25% reduction. Combined, a documented safe driver in Phoenix can save $40–$55/month versus the same driver without these recognitions.",
         },
         {
           question: "Q: How often should I shop for car insurance discounts in Phoenix?",
           answer:
-            "Annually. Carriers adjust discount eligibility, underwriting rules, and rate filings every 12 months in Arizona. A discount you did not qualify for last year — such as the 5-year accident-free discount or loyalty discount — may apply now. Protegrity Insurance conducts a free annual discount audit for all clients to ensure they are capturing every available reduction.",
+            "Annually. Carriers adjust discount eligibility, underwriting rules, and rate filings every 12 months in Arizona. A discount you did not qualify for last year, such as the 5-year accident-free discount or loyalty discount, may apply now. Protegrity Insurance conducts a free annual discount audit for all clients to ensure they are capturing every available reduction.",
         },
         {
           question: "Q: Does a good credit score earn a discount on Phoenix car insurance?",
           answer:
-            "Arizona allows credit-based insurance scoring. A 100-point improvement in credit score (e.g., from 620 to 720) reduces the average Phoenix full-coverage premium by $28–$44/month, according to Bankrate 2024 Phoenix market data. Carriers do not advertise this as a 'discount' — it is reflected in their base rate calculation. Improving your credit is the highest long-term impact action available to most Phoenix drivers.",
+            "Arizona allows credit-based insurance scoring. A 100-point improvement in credit score (e.g., from 620 to 720) reduces the average Phoenix full-coverage premium by $28–$44/month, according to Bankrate 2024 Phoenix market data. Carriers do not advertise this as a 'discount', it is reflected in their base rate calculation. Improving your credit is the highest long-term impact action available to most Phoenix drivers.",
         },
         {
           question: "Q: Does Protegrity Insurance charge to find discounts for me?",
           answer:
-            "No. Protegrity Insurance is compensated by carrier commissions. Discount auditing, carrier comparison, and policy optimization are included in every consultation at no fee to the client. Phoenix drivers pay the same premium rate whether they purchase directly from a carrier or through Protegrity — but through Protegrity, they benefit from comparison across 30+ carriers and a systematic discount review most drivers never receive on their own.",
+            "No. Protegrity Insurance is compensated by carrier commissions. Discount auditing, carrier comparison, and policy optimization are included in every consultation at no fee to the client. Phoenix drivers pay the same premium rate whether they purchase directly from a carrier or through Protegrity, but through Protegrity, they benefit from comparison across 30+ carriers and a systematic discount review most drivers never receive on their own.",
         },
       ],
     },
@@ -2253,10 +2253,10 @@ const classicCarInsurancePhoenixPost: BlogPost = {
   },
   keyTakeaways: {
     items: [
-      "Classic car insurance in Phoenix costs an average of $300–$800 per year — significantly less than standard auto insurance — because coverage is based on limited pleasure use rather than daily commuting.",
+      "Classic car insurance in Phoenix costs an average of $300–$800 per year, significantly less than standard auto insurance, because coverage is based on limited pleasure use rather than daily commuting.",
       "Agreed value coverage locks in your classic car's documented value up front, ensuring you receive the full insured amount in a total loss without depreciation.",
       "Phoenix classic car insurance requires secure storage (garage or enclosed space), limited annual mileage (typically 1,000–5,000 miles), and a primary daily-use vehicle.",
-      "Scottsdale hosts Barrett-Jackson, Russo and Steele, and dozens of cruise-ins and car shows annually — Phoenix has one of the country's most active classic car communities.",
+      "Scottsdale hosts Barrett-Jackson, Russo and Steele, and dozens of cruise-ins and car shows annually, Phoenix has one of the country's most active classic car communities.",
       "Major classic car insurers in Phoenix include Hagerty, Grundy, American Collectors Insurance, and classic divisions at State Farm and Nationwide.",
     ],
   },
@@ -2265,7 +2265,7 @@ const classicCarInsurancePhoenixPost: BlogPost = {
     {
       type: "p",
       text:
-        "Classic car insurance in Phoenix protects collector, antique, and exotic vehicles with agreed value coverage, specialized repair options, and usage-based pricing. Unlike standard auto policies priced around actual cash value and daily commuting, classic car insurance Phoenix AZ programs expect limited annual mileage, secure storage, and a vehicle maintained for hobby or exhibition use rather than ordinary transportation. Phoenix collectors pay an average of $300–$800 per year for agreed value coverage — significantly less than standard auto insurance — because carriers classify these vehicles as low-risk pleasure use. This guide covers how classic car insurance works, what it costs, and which carriers serve the Phoenix market.",
+        "Classic car insurance in Phoenix protects collector, antique, and exotic vehicles with agreed value coverage, specialized repair options, and usage-based pricing. Unlike standard auto policies priced around actual cash value and daily commuting, classic car insurance Phoenix AZ programs expect limited annual mileage, secure storage, and a vehicle maintained for hobby or exhibition use rather than ordinary transportation. Phoenix collectors pay an average of $300–$800 per year for agreed value coverage, significantly less than standard auto insurance, because carriers classify these vehicles as low-risk pleasure use. This guide covers how classic car insurance works, what it costs, and which carriers serve the Phoenix market.",
     },
 
     { type: "h2", text: "What Qualifies as a Classic Car in Phoenix?" },
@@ -2304,7 +2304,7 @@ const classicCarInsurancePhoenixPost: BlogPost = {
     {
       type: "p",
       text:
-        "Standard auto policies settle total loss claims at actual cash value (ACV) — the depreciated market value at the time of loss. A 2012 Honda Civic that cost $18,000 new might settle at $7,000 ACV today. Classic cars appreciate or hold stable value. A 1967 Chevrolet Camaro purchased for $35,000 and meticulously restored may be worth $60,000 today. Under an ACV policy, the insurer disputes your valuation. Under agreed value coverage, you and the carrier establish the insured value up front — often after documentation and photos — and that amount is paid in a covered total loss without depreciation or dispute.",
+        "Standard auto policies settle total loss claims at actual cash value (ACV), the depreciated market value at the time of loss. A 2012 Honda Civic that cost $18,000 new might settle at $7,000 ACV today. Classic cars appreciate or hold stable value. A 1967 Chevrolet Camaro purchased for $35,000 and meticulously restored may be worth $60,000 today. Under an ACV policy, the insurer disputes your valuation. Under agreed value coverage, you and the carrier establish the insured value up front, often after documentation and photos, and that amount is paid in a covered total loss without depreciation or dispute.",
     },
     {
       type: "p",
@@ -2425,7 +2425,7 @@ const classicCarInsurancePhoenixPost: BlogPost = {
     {
       type: "p",
       text:
-        "Maintenance and Condition: The vehicle must be maintained in collectible condition — original, restored, or documented custom build. Carriers may require photos, appraisals, or documentation at policy inception.",
+        "Maintenance and Condition: The vehicle must be maintained in collectible condition, original, restored, or documented custom build. Carriers may require photos, appraisals, or documentation at policy inception.",
     },
 
     { type: "h2", text: "Which Carriers Offer Classic Car Insurance in Phoenix?" },
@@ -2502,7 +2502,7 @@ const classicCarInsurancePhoenixPost: BlogPost = {
         {
           question: "Q: What is agreed value and how is it determined in Phoenix?",
           answer:
-            "Agreed value is the insured amount you and the carrier establish at policy inception based on documented condition, receipts, photos, and comparable sales. For a restored 1967 Chevrolet Camaro, you submit restoration receipts, appraisal, and current photos. The carrier reviews and agrees to insure the vehicle for $60,000. In a covered total loss, you receive $60,000 — no depreciation, no dispute. Standard policies pay actual cash value, which an adjuster determines after the loss.",
+            "Agreed value is the insured amount you and the carrier establish at policy inception based on documented condition, receipts, photos, and comparable sales. For a restored 1967 Chevrolet Camaro, you submit restoration receipts, appraisal, and current photos. The carrier reviews and agrees to insure the vehicle for $60,000. In a covered total loss, you receive $60,000, no depreciation, no dispute. Standard policies pay actual cash value, which an adjuster determines after the loss.",
         },
         {
           question: "Q: Do I need an appraisal for classic car insurance in Phoenix?",
@@ -2584,10 +2584,10 @@ const bestLifeInsuranceCompaniesPhoenixPost: BlogPost = {
   },
   keyTakeaways: {
     items: [
-      "Banner Life offers some of the lowest term life insurance rates in Arizona — a 40-year-old woman can expect to pay around $37 per month for a 20-year, $500,000 policy.",
+      "Banner Life offers some of the lowest term life insurance rates in Arizona, a 40-year-old woman can expect to pay around $37 per month for a 20-year, $500,000 policy.",
       "MassMutual consistently ranks as a top overall provider in Arizona with an A++ AM Best rating and a wide range of products from term to whole life and universal policies.",
       "USAA is best for military families and veterans in Phoenix, offering competitive whole and universal life policies with exceptional customer service.",
-      "The average life insurance premium in Arizona is approximately $615 per year, or about $51 per month — slightly below the national average.",
+      "The average life insurance premium in Arizona is approximately $615 per year, or about $51 per month, slightly below the national average.",
       "Protegrity Insurance works with over 30 top-rated carriers to find Phoenix families the best coverage at the most competitive rate.",
     ],
   },
@@ -2949,7 +2949,7 @@ const howMuchLifeInsuranceNeedPhoenixPost: BlogPost = {
         {
           question: "Q: Should I include my stay-at-home spouse in my life insurance calculation?",
           answer:
-            "Yes. The value of a stay-at-home parent's contributions — including childcare, household management, meal preparation, transportation, and scheduling — can easily exceed $30,000 to $50,000 per year in Phoenix. You should purchase life insurance coverage on a stay-at-home spouse to cover the cost of replacing these services.",
+            "Yes. The value of a stay-at-home parent's contributions, including childcare, household management, meal preparation, transportation, and scheduling, can easily exceed $30,000 to $50,000 per year in Phoenix. You should purchase life insurance coverage on a stay-at-home spouse to cover the cost of replacing these services.",
         },
         {
           question: "Q: Does the DIME method account for inflation in Phoenix?",
@@ -3275,10 +3275,10 @@ const lifeInsuranceYoungFamiliesPhoenixPost: BlogPost = {
   },
   keyTakeaways: {
     items: [
-      "Young families in Phoenix often carry significant financial obligations including mortgages, car payments, student loans, and childcare costs — making life insurance essential.",
+      "Young families in Phoenix often carry significant financial obligations including mortgages, car payments, student loans, and childcare costs, making life insurance essential.",
       "Term life insurance is the best starting point for most young Phoenix families, offering the highest death benefit for the lowest premium.",
       "A 30-year-old non-smoking parent in good health can purchase a $500,000, 20-year term policy for approximately $20 to $30 per month in Arizona.",
-      "A common recommendation is to purchase 10 to 12 times your annual income in coverage — for a dual-income Phoenix household earning $120,000 combined, that translates to $1.2 million to $1.44 million in total coverage.",
+      "A common recommendation is to purchase 10 to 12 times your annual income in coverage, for a dual-income Phoenix household earning $120,000 combined, that translates to $1.2 million to $1.44 million in total coverage.",
       "Protegrity Insurance specializes in helping young Phoenix families find the right life insurance coverage at a price that fits their budget.",
     ],
   },
@@ -3395,7 +3395,7 @@ const lifeInsuranceYoungFamiliesPhoenixPost: BlogPost = {
         {
           question: "Q: How much does life insurance cost for a young Phoenix family?",
           answer:
-            "A 30-year-old non-smoking parent in good health can purchase a $500,000, 20-year term policy for approximately $20-$30/month. For a dual-income Phoenix family where both parents purchase $500,000 policies, total monthly premiums would be $40-$60/month — less than most car insurance payments.",
+            "A 30-year-old non-smoking parent in good health can purchase a $500,000, 20-year term policy for approximately $20-$30/month. For a dual-income Phoenix family where both parents purchase $500,000 policies, total monthly premiums would be $40-$60/month, less than most car insurance payments.",
         },
         {
           question: "Q: Should both parents have life insurance in Phoenix?",
@@ -3415,7 +3415,7 @@ const lifeInsuranceYoungFamiliesPhoenixPost: BlogPost = {
         {
           question: "Q: When should young Phoenix parents buy life insurance?",
           answer:
-            "The best time to buy life insurance is as soon as you have financial dependents — whether that is a spouse, children, or a mortgage. The younger and healthier you are when you apply, the lower your premiums will be. Waiting until after a health issue arises can significantly increase costs or limit coverage options.",
+            "The best time to buy life insurance is as soon as you have financial dependents, whether that is a spouse, children, or a mortgage. The younger and healthier you are when you apply, the lower your premiums will be. Waiting until after a health issue arises can significantly increase costs or limit coverage options.",
         },
         {
           question: "Q: Does Protegrity Insurance offer discounts for young Phoenix families?",
@@ -3467,10 +3467,10 @@ const phoenixAutoCostPost: BlogPost = {
   slug: "average-cost-car-insurance-phoenix-az",
   title: "Average Cost of Car Insurance in Phoenix, AZ (2026 Data)",
   excerpt:
-    "How much does car insurance cost in Phoenix, AZ? 2026 data by age, ZIP code, driving record, and coverage level — with tips to lower your rate.",
+    "How much does car insurance cost in Phoenix, AZ? 2026 data by age, ZIP code, driving record, and coverage level, with tips to lower your rate.",
   metaTitle: "Average Cost of Car Insurance in Phoenix, AZ (2026 Data)",
   metaDescription:
-    "How much does car insurance cost in Phoenix, AZ? 2026 data by age, ZIP code, driving record, and coverage level — with tips to lower your rate.",
+    "How much does car insurance cost in Phoenix, AZ? 2026 data by age, ZIP code, driving record, and coverage level, with tips to lower your rate.",
   category: "Auto Insurance",
   readTime: "8 min read",
   displayDate: "April 2026",
@@ -3498,9 +3498,9 @@ const phoenixAutoCostPost: BlogPost = {
     items: [
       "Car insurance in Phoenix, AZ costs an average of $118/month ($1,416/year) for full coverage and $48/month ($576/year) for liability-only, according to Bankrate 2024 data.",
       "Phoenix rates run 12% above the national full-coverage average of $1,265/year.",
-      "Age is the single strongest predictor of auto insurance rates — teen drivers in Phoenix pay 3–4x more than 35-year-old drivers for identical coverage.",
+      "Age is the single strongest predictor of auto insurance rates, teen drivers in Phoenix pay 3–4x more than 35-year-old drivers for identical coverage.",
       "Your ZIP code affects your rate because insurers analyze neighborhood-level accident, theft, and fraud data.",
-      "A single at-fault accident in Phoenix increases your full-coverage premium by an average of 42% — from $118/month to $167/month.",
+      "A single at-fault accident in Phoenix increases your full-coverage premium by an average of 42%, from $118/month to $167/month.",
     ],
   },
   content: [
@@ -3575,7 +3575,7 @@ const phoenixAutoCostPost: BlogPost = {
     {
       type: "p",
       text:
-        "A single at-fault accident in Phoenix increases your full-coverage premium by an average of 42% — from $118/month to $167/month — and the surcharge remains on your record for 3 years under Arizona's point system (Arizona MVD, 2024). Here is a full penalty breakdown:",
+        "A single at-fault accident in Phoenix increases your full-coverage premium by an average of 42%, from $118/month to $167/month, and the surcharge remains on your record for 3 years under Arizona's point system (Arizona MVD, 2024). Here is a full penalty breakdown:",
     },
     {
       type: "table",
@@ -3587,7 +3587,7 @@ const phoenixAutoCostPost: BlogPost = {
         "New Monthly Avg.",
       ],
       rows: [
-        ["Clean record (baseline)", "—", "—", "$118/mo"],
+        ["Clean record (baseline)", "-", "-", "$118/mo"],
         ["1 speeding ticket (1–15 mph over)", "+18%", "3 years", "$139/mo"],
         ["1 at-fault accident", "+42%", "3 years", "$167/mo"],
         ["1 DUI / DWI", "+74%", "5 years", "$205/mo"],
@@ -3600,7 +3600,7 @@ const phoenixAutoCostPost: BlogPost = {
     {
       type: "p",
       text:
-        "Full coverage (liability + collision + comprehensive) costs an average of $118/month in Phoenix. Liability-only costs $48/month. The $70/month difference ($840/year) is the break-even point. If your vehicle's actual cash value is below $5,000–$6,000, paying for full coverage may cost more than the maximum claim payout — especially with a $500–$1,000 deductible factored in. For vehicles worth over $15,000, full coverage is nearly always financially justified in Phoenix's high-theft, high-accident environment.",
+        "Full coverage (liability + collision + comprehensive) costs an average of $118/month in Phoenix. Liability-only costs $48/month. The $70/month difference ($840/year) is the break-even point. If your vehicle's actual cash value is below $5,000–$6,000, paying for full coverage may cost more than the maximum claim payout, especially with a $500–$1,000 deductible factored in. For vehicles worth over $15,000, full coverage is nearly always financially justified in Phoenix's high-theft, high-accident environment.",
     },
 
     { type: "h2", text: "Frequently Asked Questions: Car Insurance Costs in Phoenix" },
@@ -3620,7 +3620,7 @@ const phoenixAutoCostPost: BlogPost = {
         {
           question: "Q: Is Phoenix car insurance more expensive than Tucson?",
           answer:
-            "Yes. Phoenix full-coverage averages $118/month vs. $104/month in Tucson — a 13.5% difference. The Phoenix premium is higher due to greater population density, more annual vehicle miles traveled per driver in the metro area, and Maricopa County's higher vehicle theft rate compared to Pima County (NICB, 2023).",
+            "Yes. Phoenix full-coverage averages $118/month vs. $104/month in Tucson, a 13.5% difference. The Phoenix premium is higher due to greater population density, more annual vehicle miles traveled per driver in the metro area, and Maricopa County's higher vehicle theft rate compared to Pima County (NICB, 2023).",
         },
         {
           question: "Q: How can I lower my car insurance rate in Phoenix?",
@@ -3630,7 +3630,7 @@ const phoenixAutoCostPost: BlogPost = {
         {
           question: "Q: Do Phoenix car insurance rates go down at 25?",
           answer:
-            "Yes. Phoenix drivers see their most significant rate drop between ages 18 and 25. At 18, the average full-coverage rate is $272/month. At 25, it drops to $145/month — a 47% reduction, assuming no accidents or violations were added during those years (Bankrate, Phoenix market, 2024).",
+            "Yes. Phoenix drivers see their most significant rate drop between ages 18 and 25. At 18, the average full-coverage rate is $272/month. At 25, it drops to $145/month, a 47% reduction, assuming no accidents or violations were added during those years (Bankrate, Phoenix market, 2024).",
         },
         {
           question: "Q: How much is car insurance for a new car in Phoenix?",
@@ -3712,10 +3712,10 @@ const arizonaMinimumCarInsurancePost: BlogPost = {
   },
   keyTakeaways: {
     items: [
-      "Arizona requires all Phoenix drivers to carry minimum liability coverage of $25,000 per person / $50,000 per accident for bodily injury, and $15,000 for property damage — known as 25/50/15 (ARS § 28-4009).",
+      "Arizona requires all Phoenix drivers to carry minimum liability coverage of $25,000 per person / $50,000 per accident for bodily injury, and $15,000 for property damage, known as 25/50/15 (ARS § 28-4009).",
       "These minimums cost an average of $48/month in Phoenix but are widely considered insufficient for Phoenix's high-cost accident environment.",
       "A single moderate collision in Maricopa County can generate $80,000–$150,000 in damages, far exceeding minimum limits.",
-      "Arizona's minimum coverage is liability-only — it does not pay for your own vehicle damage, your own medical bills, or damages caused by uninsured drivers.",
+      "Arizona's minimum coverage is liability-only, it does not pay for your own vehicle damage, your own medical bills, or damages caused by uninsured drivers.",
       "Protegrity Insurance recommends a minimum of 100/300/100 coverage for most Phoenix drivers.",
     ],
   },
@@ -3724,7 +3724,7 @@ const arizonaMinimumCarInsurancePost: BlogPost = {
     {
       type: "p",
       text:
-        "Arizona requires all Phoenix drivers to carry minimum liability coverage of $25,000 per person / $50,000 per accident for bodily injury, and $15,000 for property damage — known as 25/50/15 (ARS § 28-4009). These minimums cost an average of $48/month in Phoenix. However, a single moderate collision in Maricopa County can generate $80,000–$150,000 in damages, far exceeding these limits and leaving the at-fault driver personally liable for the difference.",
+        "Arizona requires all Phoenix drivers to carry minimum liability coverage of $25,000 per person / $50,000 per accident for bodily injury, and $15,000 for property damage, known as 25/50/15 (ARS § 28-4009). These minimums cost an average of $48/month in Phoenix. However, a single moderate collision in Maricopa County can generate $80,000–$150,000 in damages, far exceeding these limits and leaving the at-fault driver personally liable for the difference.",
     },
 
     { type: "h2", text: "What Arizona's 25/50/15 Requirement Actually Covers" },
@@ -3747,19 +3747,19 @@ const arizonaMinimumCarInsurancePost: BlogPost = {
           "Bodily Injury (per person)",
           "Medical bills, lost wages for other driver",
           "$25,000",
-          "Rarely — ER visits avg. $3,800+",
+          "Rarely, ER visits avg. $3,800+",
         ],
         [
           "Bodily Injury (per accident)",
           "Total BI payout for all injured parties",
           "$50,000",
-          "No — multi-injury accidents exceed this",
+          "No, multi-injury accidents exceed this",
         ],
         [
           "Property Damage",
           "Repairs to other driver's vehicle",
           "$15,000",
-          "No — avg. new vehicle repair: $4,200+",
+          "No, avg. new vehicle repair: $4,200+",
         ],
         ["Collision", "Your own vehicle repair after crash", "Not required", "Not included"],
         ["Comprehensive", "Theft, hail, flood, fire damage", "Not required", "Not included"],
@@ -3781,7 +3781,7 @@ const arizonaMinimumCarInsurancePost: BlogPost = {
     {
       type: "p",
       text:
-        "Protegrity Insurance recommends a minimum of 100/300/100 for most Phoenix drivers — $100,000 per person, $300,000 per accident, and $100,000 in property damage. The additional cost over minimum coverage averages $28–$42/month in the Phoenix market.",
+        "Protegrity Insurance recommends a minimum of 100/300/100 for most Phoenix drivers, $100,000 per person, $300,000 per accident, and $100,000 in property damage. The additional cost over minimum coverage averages $28–$42/month in the Phoenix market.",
     },
 
     { type: "h2", text: "Coverage Comparison: Minimum vs. Recommended for Phoenix Drivers" },
@@ -3831,7 +3831,7 @@ const arizonaMinimumCarInsurancePost: BlogPost = {
     {
       type: "p",
       text:
-        "An SR-22 requirement increases average Phoenix auto insurance rates by 31–45% and must be maintained continuously — any lapse resets the 3-year clock and triggers a new suspension.",
+        "An SR-22 requirement increases average Phoenix auto insurance rates by 31–45% and must be maintained continuously, any lapse resets the 3-year clock and triggers a new suspension.",
     },
 
     { type: "h2", text: "What Other Coverages Should Phoenix Drivers Consider?" },
@@ -3866,7 +3866,7 @@ const arizonaMinimumCarInsurancePost: BlogPost = {
         {
           question: "Q: Does Arizona require uninsured motorist coverage?",
           answer:
-            "Arizona does not require UM/UIM coverage, but all licensed insurers must offer it (ARS § 20-259.01). Given Arizona's 11.9% uninsured driver rate — above the national average of 8.7% (Insurance Research Council, 2023) — Protegrity Insurance includes UM/UIM in every Phoenix auto policy recommendation.",
+            "Arizona does not require UM/UIM coverage, but all licensed insurers must offer it (ARS § 20-259.01). Given Arizona's 11.9% uninsured driver rate, above the national average of 8.7% (Insurance Research Council, 2023), Protegrity Insurance includes UM/UIM in every Phoenix auto policy recommendation.",
         },
         {
           question: "Q: What is an SR-22 in Arizona and how long is it required?",
@@ -3886,7 +3886,7 @@ const arizonaMinimumCarInsurancePost: BlogPost = {
         {
           question: "Q: Is liability insurance enough for a financed car in Phoenix?",
           answer:
-            "No. If you have an auto loan or lease on a vehicle in Phoenix, your lender contractually requires full coverage — collision plus comprehensive — to protect their collateral. Carrying liability-only on a financed vehicle violates your loan agreement and allows the lender to force-place insurance, which averages $300–$450/month in Arizona and covers only the lender's interest, not yours.",
+            "No. If you have an auto loan or lease on a vehicle in Phoenix, your lender contractually requires full coverage, collision plus comprehensive, to protect their collateral. Carrying liability-only on a financed vehicle violates your loan agreement and allows the lender to force-place insurance, which averages $300–$450/month in Arizona and covers only the lender's interest, not yours.",
         },
       ],
     },
@@ -3965,7 +3965,7 @@ const cheapCarInsurancePhoenixPost: BlogPost = {
     items: [
       "The cheapest full-coverage car insurance in Phoenix in 2026 is offered by USAA ($94/month for eligible military members) and GEICO ($98/month for clean-record drivers).",
       "Non-military Phoenix drivers can realistically lower their rate to $85–$105/month by stacking discounts, choosing the right carrier, and adjusting coverage parameters.",
-      "Phoenix's average full-coverage rate is $118/month — anything below $100/month is considered cheap for full coverage in this market.",
+      "Phoenix's average full-coverage rate is $118/month, anything below $100/month is considered cheap for full coverage in this market.",
       "Bundling auto with homeowners or renters insurance saves Phoenix drivers an average of $486/year with Travelers.",
       "Enrolling in telematics programs like GEICO DriveEasy or State Farm Drive Safe & Save can reduce premiums by 15–25% for safe drivers.",
     ],
@@ -3982,7 +3982,7 @@ const cheapCarInsurancePhoenixPost: BlogPost = {
     {
       type: "p",
       text:
-        "Phoenix's average full-coverage rate is $118/month. A rate below $100/month is considered cheap for full coverage in this market. For liability-only, the Arizona minimum costs $48/month on average — anything below $40/month is exceptionally competitive for Phoenix. Credit score, age, ZIP code, vehicle type, and driving history are the five primary levers that determine where your rate falls on the spectrum.",
+        "Phoenix's average full-coverage rate is $118/month. A rate below $100/month is considered cheap for full coverage in this market. For liability-only, the Arizona minimum costs $48/month on average, anything below $40/month is exceptionally competitive for Phoenix. Credit score, age, ZIP code, vehicle type, and driving history are the five primary levers that determine where your rate falls on the spectrum.",
     },
 
     { type: "h2", text: "9 Proven Strategies to Reduce Your Phoenix Car Insurance Premium" },
@@ -4079,7 +4079,7 @@ const cheapCarInsurancePhoenixPost: BlogPost = {
     {
       type: "p",
       text:
-        "Yes. Phoenix ZIP codes in the 85016, 85018, and 85254 areas (Biltmore, Arcadia, Scottsdale border) average $104–$108/month for full coverage. ZIP codes 85017, 85031, and 85033 (west Phoenix, Maryvale) average $134–$142/month — a 28–32% premium difference for identical drivers and vehicles. Moving from a high-risk to a lower-risk ZIP code in Phoenix is one of the few factors that can dramatically reduce your rate without any coverage changes.",
+        "Yes. Phoenix ZIP codes in the 85016, 85018, and 85254 areas (Biltmore, Arcadia, Scottsdale border) average $104–$108/month for full coverage. ZIP codes 85017, 85031, and 85033 (west Phoenix, Maryvale) average $134–$142/month, a 28–32% premium difference for identical drivers and vehicles. Moving from a high-risk to a lower-risk ZIP code in Phoenix is one of the few factors that can dramatically reduce your rate without any coverage changes.",
     },
 
     { type: "h2", text: "Frequently Asked Questions: Cheap Car Insurance in Phoenix" },
@@ -4089,7 +4089,7 @@ const cheapCarInsurancePhoenixPost: BlogPost = {
         {
           question: "Q: What is the cheapest car insurance in Phoenix for a 20-year-old?",
           answer:
-            "For a 20-year-old Phoenix driver with no accidents, State Farm averages $188/month for full coverage — the lowest among major carriers for this age group. GEICO averages $204/month. Adding a 20-year-old to a parent's existing State Farm policy typically costs $95–$115/month as an additional driver, versus $188/month for a standalone policy.",
+            "For a 20-year-old Phoenix driver with no accidents, State Farm averages $188/month for full coverage, the lowest among major carriers for this age group. GEICO averages $204/month. Adding a 20-year-old to a parent's existing State Farm policy typically costs $95–$115/month as an additional driver, versus $188/month for a standalone policy.",
         },
         {
           question: "Q: Can I get car insurance in Phoenix for under $100 a month?",
@@ -4191,8 +4191,8 @@ const affordableLifeInsuranceQuotesPhoenixPost: BlogPost = {
   },
   keyTakeaways: {
     items: [
-      "The average life insurance premium in Arizona is approximately $615 per year, or about $51 per month — slightly below the national average.",
-      "Age is the single most important factor affecting life insurance rates — the younger you are when you purchase coverage, the lower your premiums will be.",
+      "The average life insurance premium in Arizona is approximately $615 per year, or about $51 per month, slightly below the national average.",
+      "Age is the single most important factor affecting life insurance rates, the younger you are when you purchase coverage, the lower your premiums will be.",
       "A 35-year-old non-smoking Phoenix resident can expect to pay $22–$28/month for women or $28–$35/month for men for a $500,000, 20-year term policy.",
       "Working with an independent agency like Protegrity Insurance gives you access to dozens of carriers simultaneously, saving you time and money.",
       "Banner Life offers no-exam coverage up to $4 million for qualifying applicants, providing convenient and fast approval for Phoenix residents.",
@@ -4333,7 +4333,7 @@ const affordableLifeInsuranceQuotesPhoenixPost: BlogPost = {
         {
           question: "Q: Is life insurance more expensive in Phoenix than other Arizona cities?",
           answer:
-            "No. Life insurance rates in Phoenix are consistent with rates throughout Arizona. Unlike auto or home insurance, which can vary by ZIP code based on local risk factors, life insurance premiums are based primarily on your age, health, gender, and lifestyle — not your location within the state.",
+            "No. Life insurance rates in Phoenix are consistent with rates throughout Arizona. Unlike auto or home insurance, which can vary by ZIP code based on local risk factors, life insurance premiums are based primarily on your age, health, gender, and lifestyle, not your location within the state.",
         },
         {
           question: "Q: How can I get the cheapest life insurance quote in Phoenix?",
@@ -4430,9 +4430,9 @@ const lifeInsuranceSeniorsPhoenixPost: BlogPost = {
   },
   keyTakeaways: {
     items: [
-      "Life insurance for Phoenix seniors serves purposes beyond income replacement — covering funeral costs ($10,000–$15,000 in Arizona), paying remaining mortgage debt, leaving financial gifts to children, and supporting a surviving spouse.",
+      "Life insurance for Phoenix seniors serves purposes beyond income replacement, covering funeral costs ($10,000–$15,000 in Arizona), paying remaining mortgage debt, leaving financial gifts to children, and supporting a surviving spouse.",
       "Final expense insurance (burial insurance) is a small whole life policy designed to cover end-of-life expenses, typically ranging from $5,000 to $25,000 and available without a medical exam.",
-      "Guaranteed issue life insurance accepts applicants regardless of health status with no medical exam and no health questions — coverage is typically limited with a two-year waiting period.",
+      "Guaranteed issue life insurance accepts applicants regardless of health status with no medical exam and no health questions, coverage is typically limited with a two-year waiting period.",
       "All life insurance policies sold in Arizona are protected by the Arizona Life and Disability Insurance Guaranty Fund, providing up to $300,000 in death benefits and $100,000 in cash value.",
       "Protegrity Insurance takes a compassionate, patient approach to helping Phoenix seniors find the right coverage without pressure or confusion.",
     ],
@@ -4647,7 +4647,7 @@ const noExamLifeInsurancePhoenixPost: BlogPost = {
     items: [
       "No-exam life insurance allows Phoenix residents to apply for coverage without scheduling a medical exam, avoiding weeks of waiting, and getting approved in as little as 24 to 48 hours.",
       "Simplified issue requires answering health questions but no physical exam, with approval typically fast and coverage amounts up to $4 million for qualifying applicants like Banner Life.",
-      "Guaranteed issue has no health questions at all — anyone can apply and be approved regardless of health status, with coverage usually limited to $25,000 or less and a two-year waiting period.",
+      "Guaranteed issue has no health questions at all, anyone can apply and be approved regardless of health status, with coverage usually limited to $25,000 or less and a two-year waiting period.",
       "No-exam policies typically cost more than fully underwritten policies for the same coverage amount, with premiums varying based on the type of no-exam policy.",
       "Protegrity Insurance can compare both no-exam and traditional underwriting options for Phoenix residents to help determine which path makes the most sense.",
     ],
@@ -4809,7 +4809,7 @@ const noExamLifeInsurancePhoenixPost: BlogPost = {
         {
           question: "Q: How much does no-exam life insurance cost in Phoenix?",
           answer:
-            "No-exam life insurance premiums vary by type. Accelerated underwriting (for healthy applicants) costs the same as traditional policies. Simplified issue policies cost 10-30% more than fully underwritten policies. Guaranteed issue policies cost the most — a 60-year-old might pay $80-$120/month for a $10,000 policy with a two-year waiting period.",
+            "No-exam life insurance premiums vary by type. Accelerated underwriting (for healthy applicants) costs the same as traditional policies. Simplified issue policies cost 10-30% more than fully underwritten policies. Guaranteed issue policies cost the most, a 60-year-old might pay $80-$120/month for a $10,000 policy with a two-year waiting period.",
         },
         {
           question: "Q: Can I get $1 million in no-exam life insurance in Phoenix?",
@@ -4911,7 +4911,7 @@ const arizonaLifeInsuranceLawsPhoenixPost: BlogPost = {
   },
   keyTakeaways: {
     items: [
-      "Arizona law requires all life insurance policies to include a minimum 30-day grace period for premium payments — your coverage remains in force during this window even if you miss a payment.",
+      "Arizona law requires all life insurance policies to include a minimum 30-day grace period for premium payments, your coverage remains in force during this window even if you miss a payment.",
       "Arizona life insurance policies include a two-year contestability period during which insurers can investigate and deny claims based on material misrepresentation in the application.",
       "The Arizona Life and Disability Insurance Guaranty Fund protects Phoenix residents up to $300,000 in death benefits and $100,000 in cash value if an insurer becomes insolvent.",
       "Arizona does not mandate a statutory free look period by law, but most carriers voluntarily offer 7 to 30 days to cancel and receive a full refund.",
@@ -5158,7 +5158,7 @@ const mortgageProtectionLifeInsurancePhoenixPost: BlogPost = {
   keyTakeaways: {
     items: [
       "Mortgage protection life insurance (MPI) is specifically designed to pay off your mortgage if you die before the loan is paid in full, with some policies including disability or job loss riders.",
-      "The death benefit of an MPI policy typically decreases over time as your mortgage balance decreases — also called decreasing term life insurance.",
+      "The death benefit of an MPI policy typically decreases over time as your mortgage balance decreases, also called decreasing term life insurance.",
       "Traditional term life insurance gives the death benefit directly to your beneficiaries who can use it however they see fit, while mortgage protection insurance pays the lender directly.",
       "A $400,000, 30-year term policy in Phoenix provides more value and flexibility than mortgage protection insurance for the same or lower premium.",
       "Protegrity Insurance helps Phoenix homebuyers evaluate mortgage protection options alongside traditional life insurance to find the best solution for their household.",
@@ -5240,8 +5240,8 @@ const mortgageProtectionLifeInsurancePhoenixPost: BlogPost = {
         ],
         [
           "Flexibility",
-          "Limited — only covers mortgage",
-          "High — can cover mortgage + other needs",
+          "Limited, only covers mortgage",
+          "High, can cover mortgage + other needs",
         ],
         [
           "Medical Exam Required",
@@ -5383,7 +5383,7 @@ const estatePlanningLifeInsurancePhoenixPost: BlogPost = {
   },
   keyTakeaways: {
     items: [
-      "Estate planning is not just for the ultra-wealthy — Phoenix residents with significant home values and retirement assets need thoughtful estate plans to protect their family's financial future.",
+      "Estate planning is not just for the ultra-wealthy, Phoenix residents with significant home values and retirement assets need thoughtful estate plans to protect their family's financial future.",
       "Life insurance provides an immediate, tax-free death benefit to beneficiaries upon passing, bypassing probate and transferring wealth efficiently in Arizona.",
       "Arizona does not impose a state estate tax, but very large estates may be subject to federal estate tax (approximately $13.6 million per individual in 2024).",
       "An Irrevocable Life Insurance Trust (ILIT) allows high-net-worth Phoenix residents to exclude life insurance death benefits from their taxable estate, preserving more wealth for heirs.",
@@ -5620,7 +5620,7 @@ const mexicoTravelInsurancePhoenixPost: BlogPost = {
   keyTakeaways: {
     items: [
       "Mexico travel insurance for Phoenix residents costs an average of $28–$96/month for comprehensive coverage including emergency medical, trip cancellation, medical evacuation, and baggage protection.",
-      "U.S. health insurance — including Medicare, Medicaid, and most employer-sponsored plans — provides zero coverage in Mexico.",
+      "U.S. health insurance, including Medicare, Medicaid, and most employer-sponsored plans, provides zero coverage in Mexico.",
       "Phoenix is 180 miles from the Nogales border crossing and 360 miles from Puerto Peñasco (Rocky Point), making Mexico the most common international travel destination for Valley residents.",
       "A 3-day hospitalization in Puerto Vallarta averages $8,400–$18,000, while emergency medical evacuation from Baja California to Phoenix averages $28,000–$85,000.",
       "Protegrity Insurance works with over 30 top-rated carriers to find Phoenix travelers the best Mexico travel insurance at competitive rates.",
@@ -5631,24 +5631,24 @@ const mexicoTravelInsurancePhoenixPost: BlogPost = {
     {
       type: "p",
       text:
-        "Mexico travel insurance for Phoenix residents costs an average of $28–$96/month for comprehensive coverage including emergency medical, trip cancellation, medical evacuation, and baggage protection, according to Squaremouth 2024 travel insurance rate data. U.S. health insurance — including Medicare, Medicaid, and most employer-sponsored plans — provides zero coverage in Mexico. Phoenix is 180 miles from the Nogales border crossing and 360 miles from Puerto Peñasco (Rocky Point), making Mexico the most common international travel destination for Valley residents. This guide covers every coverage type, cost, and carrier available to Phoenix travelers in 2026.",
+        "Mexico travel insurance for Phoenix residents costs an average of $28–$96/month for comprehensive coverage including emergency medical, trip cancellation, medical evacuation, and baggage protection, according to Squaremouth 2024 travel insurance rate data. U.S. health insurance, including Medicare, Medicaid, and most employer-sponsored plans, provides zero coverage in Mexico. Phoenix is 180 miles from the Nogales border crossing and 360 miles from Puerto Peñasco (Rocky Point), making Mexico the most common international travel destination for Valley residents. This guide covers every coverage type, cost, and carrier available to Phoenix travelers in 2026.",
     },
 
     { type: "h2", text: "Why Phoenix Travelers Need Mexico-Specific Travel Insurance" },
     {
       type: "p",
       text:
-        "U.S. health insurance stops at the border. Medicare does not cover any medical expenses incurred in Mexico (Medicare.gov, 2024). Medicaid provides no international coverage. Most private employer-sponsored health plans in Arizona — including Blue Cross Blue Shield of Arizona, Aetna, and UnitedHealthcare — exclude or severely limit coverage outside the United States.",
+        "U.S. health insurance stops at the border. Medicare does not cover any medical expenses incurred in Mexico (Medicare.gov, 2024). Medicaid provides no international coverage. Most private employer-sponsored health plans in Arizona, including Blue Cross Blue Shield of Arizona, Aetna, and UnitedHealthcare, exclude or severely limit coverage outside the United States.",
     },
     {
       type: "p",
       text:
-        "Mexico's private hospitals — where U.S. travelers receive the best care — require full upfront payment or a credit card guarantee before treating non-emergency patients. A 3-day hospitalization in Puerto Vallarta averages $8,400–$18,000 (International Medical Group, 2024). Emergency medical evacuation from a remote location in Baja California to Phoenix averages $28,000–$85,000 depending on distance and medical requirements. Without travel insurance, these costs are 100% out of pocket.",
+        "Mexico's private hospitals, where U.S. travelers receive the best care, require full upfront payment or a credit card guarantee before treating non-emergency patients. A 3-day hospitalization in Puerto Vallarta averages $8,400–$18,000 (International Medical Group, 2024). Emergency medical evacuation from a remote location in Baja California to Phoenix averages $28,000–$85,000 depending on distance and medical requirements. Without travel insurance, these costs are 100% out of pocket.",
     },
     {
       type: "p",
       text:
-        "Beyond medical costs, Mexico travel insurance protects Phoenix travelers against trip cancellation losses, lost or stolen baggage, rental car damage, and the financial impact of unexpected trip interruptions — all of which are statistically more likely in international travel than domestic trips.",
+        "Beyond medical costs, Mexico travel insurance protects Phoenix travelers against trip cancellation losses, lost or stolen baggage, rental car damage, and the financial impact of unexpected trip interruptions, all of which are statistically more likely in international travel than domestic trips.",
     },
 
     { type: "h2", text: "What Does Mexico Travel Insurance Cover?" },
@@ -5702,7 +5702,7 @@ const mexicoTravelInsurancePhoenixPost: BlogPost = {
     {
       type: "p",
       text:
-        "Travel insurance to Mexico typically costs 4–10% of your total prepaid, non-refundable trip costs for a comprehensive policy (Squaremouth, 2024). The percentage rises with age — a 65-year-old pays proportionally more than a 35-year-old for identical coverage.",
+        "Travel insurance to Mexico typically costs 4–10% of your total prepaid, non-refundable trip costs for a comprehensive policy (Squaremouth, 2024). The percentage rises with age, a 65-year-old pays proportionally more than a 35-year-old for identical coverage.",
     },
     {
       type: "table",
@@ -5732,19 +5732,19 @@ const mexicoTravelInsurancePhoenixPost: BlogPost = {
       type: "p",
       lead: "Puerto Peñasco (Rocky Point):",
       text:
-        "200 miles from Phoenix via I-8 and Mexico Route 8. Arizona's most popular Mexico destination — an estimated 800,000 Phoenix-area residents visit annually. Medical facilities in Puerto Peñasco are limited to one IMSS clinic and two private clinics. Serious medical emergencies require evacuation to Hermosillo (90 miles) or Phoenix (200 miles by ground). Medical evacuation insurance is essential for Rocky Point travelers.",
+        "200 miles from Phoenix via I-8 and Mexico Route 8. Arizona's most popular Mexico destination, an estimated 800,000 Phoenix-area residents visit annually. Medical facilities in Puerto Peñasco are limited to one IMSS clinic and two private clinics. Serious medical emergencies require evacuation to Hermosillo (90 miles) or Phoenix (200 miles by ground). Medical evacuation insurance is essential for Rocky Point travelers.",
     },
     {
       type: "p",
       lead: "San Carlos / Guaymas:",
       text:
-        "300 miles from Phoenix via I-19 and Mexico Federal Highway 15. Popular for RV travelers and boaters. Requires vehicle permit (TIP) for driving beyond the border free zone. Driving your vehicle into Mexico requires a separate Mexico auto insurance policy — U.S. auto insurance is invalid in Mexico.",
+        "300 miles from Phoenix via I-19 and Mexico Federal Highway 15. Popular for RV travelers and boaters. Requires vehicle permit (TIP) for driving beyond the border free zone. Driving your vehicle into Mexico requires a separate Mexico auto insurance policy, U.S. auto insurance is invalid in Mexico.",
     },
     {
       type: "p",
       lead: "Nogales / Sonora border region:",
       text:
-        "Arizona's primary commercial border crossing, 180 miles from Phoenix. Many Phoenix residents cross for dental work, medications, and medical procedures. A planned dental procedure that results in emergency complications requires travel insurance with emergency medical coverage — standard travel policies cover acute emergency dental; pre-planned elective procedures are excluded.",
+        "Arizona's primary commercial border crossing, 180 miles from Phoenix. Many Phoenix residents cross for dental work, medications, and medical procedures. A planned dental procedure that results in emergency complications requires travel insurance with emergency medical coverage, standard travel policies cover acute emergency dental; pre-planned elective procedures are excluded.",
     },
 
     { type: "h2", text: "Frequently Asked Questions: Mexico Travel Insurance from Phoenix" },
@@ -5754,7 +5754,7 @@ const mexicoTravelInsurancePhoenixPost: BlogPost = {
         {
           question: "Q: Does my U.S. health insurance cover me in Mexico?",
           answer:
-            "No. Medicare provides zero coverage in Mexico under any circumstances (Medicare.gov, 2024). Medicaid covers only emergency stabilization at the border in limited circumstances. Most private Arizona health plans — Blue Cross Blue Shield of Arizona, Banner Health Network, and UnitedHealthcare — exclude coverage in Mexico except for emergency stabilization within 25 miles of the border. Beyond that zone, you are uninsured. A standalone Mexico travel health policy from IMG Global or GeoBlue costs $12–$28/month and provides coverage throughout Mexico.",
+            "No. Medicare provides zero coverage in Mexico under any circumstances (Medicare.gov, 2024). Medicaid covers only emergency stabilization at the border in limited circumstances. Most private Arizona health plans, Blue Cross Blue Shield of Arizona, Banner Health Network, and UnitedHealthcare, exclude coverage in Mexico except for emergency stabilization within 25 miles of the border. Beyond that zone, you are uninsured. A standalone Mexico travel health policy from IMG Global or GeoBlue costs $12–$28/month and provides coverage throughout Mexico.",
         },
         {
           question: "Q: How far in advance should I buy Mexico travel insurance?",
@@ -5764,22 +5764,22 @@ const mexicoTravelInsurancePhoenixPost: BlogPost = {
         {
           question: "Q: Does travel insurance cover COVID-19 illness in Mexico?",
           answer:
-            "As of 2026, all major Mexico travel insurance carriers — including Allianz, Seven Corners, and AXA — treat COVID-19 as a standard illness under emergency medical coverage. Hospitalization for COVID-19 in Mexico is covered up to your policy's medical limit. Trip cancellation for COVID-19 illness is covered if you test positive before departure with a verified test result. Trip cancellation due to fear of COVID-19 or a government travel advisory (without personal illness) requires a CFAR policy.",
+            "As of 2026, all major Mexico travel insurance carriers, including Allianz, Seven Corners, and AXA, treat COVID-19 as a standard illness under emergency medical coverage. Hospitalization for COVID-19 in Mexico is covered up to your policy's medical limit. Trip cancellation for COVID-19 illness is covered if you test positive before departure with a verified test result. Trip cancellation due to fear of COVID-19 or a government travel advisory (without personal illness) requires a CFAR policy.",
         },
         {
           question: "Q: Is travel insurance required to enter Mexico?",
           answer:
-            "Mexico does not currently require travel insurance as a condition of entry for U.S. citizens as of April 2026. However, several resort areas — including Los Cabos and Riviera Nayarit — and some hotel properties require proof of medical coverage as a check-in condition. The U.S. State Department's current Mexico travel advisory (Level 2: Exercise Increased Caution as of April 2026) strongly recommends travel insurance for all U.S. visitors.",
+            "Mexico does not currently require travel insurance as a condition of entry for U.S. citizens as of April 2026. However, several resort areas, including Los Cabos and Riviera Nayarit, and some hotel properties require proof of medical coverage as a check-in condition. The U.S. State Department's current Mexico travel advisory (Level 2: Exercise Increased Caution as of April 2026) strongly recommends travel insurance for all U.S. visitors.",
         },
         {
           question: "Q: Can I buy Mexico travel insurance the same day I leave Phoenix?",
           answer:
-            "Yes. Allianz, Seven Corners, and Trawick International all offer same-day Mexico travel insurance issuance through Protegrity Insurance. Policies purchased the day of departure are effective immediately upon payment confirmation and cover all insured events occurring after the effective time. Same-day policies exclude pre-existing condition waivers and CFAR options — these benefits require purchase within 14–21 days of your initial trip deposit.",
+            "Yes. Allianz, Seven Corners, and Trawick International all offer same-day Mexico travel insurance issuance through Protegrity Insurance. Policies purchased the day of departure are effective immediately upon payment confirmation and cover all insured events occurring after the effective time. Same-day policies exclude pre-existing condition waivers and CFAR options, these benefits require purchase within 14–21 days of your initial trip deposit.",
         },
         {
           question: "Q: Does Mexico travel insurance cover activities like ATV tours, zip-lining, or scuba diving?",
           answer:
-            "Standard Mexico travel insurance covers most recreational activities including snorkeling, zip-lining, ATV tours, and horseback riding. High-risk adventure activities — including skydiving, cliff diving, free solo climbing, and motorized racing — are excluded from most standard policies. Seven Corners Roundtrip Choice and AXA Assistance USA offer adventure sports riders that add coverage for bungee jumping, paragliding, and advanced scuba diving (below 130 feet) for an additional $12–$24 per trip.",
+            "Standard Mexico travel insurance covers most recreational activities including snorkeling, zip-lining, ATV tours, and horseback riding. High-risk adventure activities, including skydiving, cliff diving, free solo climbing, and motorized racing, are excluded from most standard policies. Seven Corners Roundtrip Choice and AXA Assistance USA offer adventure sports riders that add coverage for bungee jumping, paragliding, and advanced scuba diving (below 130 feet) for an additional $12–$24 per trip.",
         },
       ],
     },
@@ -5860,7 +5860,7 @@ const emergencyMedicalInsuranceMexicoTravelPhoenixPost: BlogPost = {
     items: [
       "Emergency medical travel insurance for Mexico costs Phoenix residents an average of $12–$28/month for $100,000–$500,000 in coverage.",
       "Medicare provides zero Mexico coverage, and a 3-day hospital stay in Mexico's private hospital system averages $8,400–$18,000.",
-      "Emergency dental coverage — included in most comprehensive Mexico travel policies — pays $500–$2,500 for acute dental pain, infection, or injury occurring in Mexico.",
+      "Emergency dental coverage, included in most comprehensive Mexico travel policies, pays $500–$2,500 for acute dental pain, infection, or injury occurring in Mexico.",
       "Phoenix seniors on Medicare or Medicaid carry zero health insurance coverage the moment they cross into Mexico.",
       "This is the single most important coverage Phoenix travelers to Mexico should carry.",
     ],
@@ -5870,14 +5870,14 @@ const emergencyMedicalInsuranceMexicoTravelPhoenixPost: BlogPost = {
     {
       type: "p",
       text:
-        "Emergency medical travel insurance for Mexico costs Phoenix residents an average of $12–$28/month for $100,000–$500,000 in coverage, according to Squaremouth 2024 data. Medicare provides zero Mexico coverage. A 3-day hospital stay in Mexico's private hospital system averages $8,400–$18,000 (International Medical Group, 2024). Emergency dental coverage — included in most comprehensive Mexico travel policies — pays $500–$2,500 for acute dental pain, infection, or injury occurring in Mexico. This is the single most important coverage Phoenix travelers to Mexico should carry.",
+        "Emergency medical travel insurance for Mexico costs Phoenix residents an average of $12–$28/month for $100,000–$500,000 in coverage, according to Squaremouth 2024 data. Medicare provides zero Mexico coverage. A 3-day hospital stay in Mexico's private hospital system averages $8,400–$18,000 (International Medical Group, 2024). Emergency dental coverage, included in most comprehensive Mexico travel policies, pays $500–$2,500 for acute dental pain, infection, or injury occurring in Mexico. This is the single most important coverage Phoenix travelers to Mexico should carry.",
     },
 
     { type: "h2", text: "Why U.S. Health Insurance Fails Phoenix Travelers in Mexico" },
     {
       type: "p",
       text:
-        "Medicare Part A and Part B cover zero medical expenses outside the United States, with no exceptions (CMS.gov, 2024). Medicare Advantage plans may cover emergency care in Mexico in limited circumstances — verify your specific plan's international coverage before departure.",
+        "Medicare Part A and Part B cover zero medical expenses outside the United States, with no exceptions (CMS.gov, 2024). Medicare Advantage plans may cover emergency care in Mexico in limited circumstances, verify your specific plan's international coverage before departure.",
     },
     {
       type: "p",
@@ -5887,7 +5887,7 @@ const emergencyMedicalInsuranceMexicoTravelPhoenixPost: BlogPost = {
     {
       type: "p",
       text:
-        "Arizona Medicaid (AHCCCS) provides no international coverage under any circumstances. Phoenix residents on AHCCCS crossing into Mexico for any reason — day trips to Nogales, Rocky Point weekends, or extended vacations — carry zero health insurance the moment they cross the border.",
+        "Arizona Medicaid (AHCCCS) provides no international coverage under any circumstances. Phoenix residents on AHCCCS crossing into Mexico for any reason, day trips to Nogales, Rocky Point weekends, or extended vacations, carry zero health insurance the moment they cross the border.",
     },
 
     { type: "h2", text: "What Emergency Medical Insurance Covers in Mexico" },
@@ -5909,7 +5909,7 @@ const emergencyMedicalInsuranceMexicoTravelPhoenixPost: BlogPost = {
         ["Emergency dental (acute pain)", "Yes", "$200–$1,200 per procedure", "$500–$2,500"],
         ["Emergency dental (injury)", "Yes", "$500–$3,500 per incident", "$500–$2,500"],
         ["Elective dental (planned)", "No", "N/A", "Not covered"],
-        ["Pre-existing condition (stable)", "Yes — with waiver purchased within 14 days", "Varies", "Up to policy limit"],
+        ["Pre-existing condition (stable)", "Yes, with waiver purchased within 14 days", "Varies", "Up to policy limit"],
         ["Pre-existing condition (no waiver)", "No", "N/A", "Excluded"],
       ],
     },
@@ -5931,7 +5931,7 @@ const emergencyMedicalInsuranceMexicoTravelPhoenixPost: BlogPost = {
       type: "p",
       lead: "Los Cabos / Cabo San Lucas:",
       text:
-        "Hospital H+ Los Cabos and Blue Net Hospital accept most major U.S. travel insurance with direct billing. H+ Los Cabos is accredited by the Joint Commission International (JCI) — the same international accreditation standard used by top U.S. hospitals.",
+        "Hospital H+ Los Cabos and Blue Net Hospital accept most major U.S. travel insurance with direct billing. H+ Los Cabos is accredited by the Joint Commission International (JCI), the same international accreditation standard used by top U.S. hospitals.",
     },
     {
       type: "p",
@@ -5961,7 +5961,7 @@ const emergencyMedicalInsuranceMexicoTravelPhoenixPost: BlogPost = {
         ["$100,000", "$12–$18/mo", "1–2 week hospital stay + surgery", "Rocky Point weekend trips"],
         ["$250,000", "$16–$22/mo", "Major surgery + 2-week ICU stay", "Most Mexico vacations"],
         ["$500,000", "$22–$28/mo", "Catastrophic illness + extended care", "Recommended standard"],
-        ["Unlimited", "$28–$38/mo", "No cap — any medical scenario", "Seniors, high-risk travelers"],
+        ["Unlimited", "$28–$38/mo", "No cap, any medical scenario", "Seniors, high-risk travelers"],
       ],
     },
 
@@ -5969,7 +5969,7 @@ const emergencyMedicalInsuranceMexicoTravelPhoenixPost: BlogPost = {
     {
       type: "p",
       text:
-        "Emergency dental coverage in Mexico travel insurance pays for acute dental events that occur during your trip — sudden severe pain, a broken tooth from an accident, an abscess requiring immediate treatment, or a dental injury sustained in a fall or vehicle accident.",
+        "Emergency dental coverage in Mexico travel insurance pays for acute dental events that occur during your trip, sudden severe pain, a broken tooth from an accident, an abscess requiring immediate treatment, or a dental injury sustained in a fall or vehicle accident.",
     },
     {
       type: "p",
@@ -5979,7 +5979,7 @@ const emergencyMedicalInsuranceMexicoTravelPhoenixPost: BlogPost = {
     {
       type: "p",
       text:
-        "The distinction matters because thousands of Phoenix residents cross into Nogales or travel to Los Algodones (near Yuma) specifically for planned dental work. Travel insurance does not cover these planned procedures — only emergencies that arise unexpectedly during an otherwise non-dental trip.",
+        "The distinction matters because thousands of Phoenix residents cross into Nogales or travel to Los Algodones (near Yuma) specifically for planned dental work. Travel insurance does not cover these planned procedures, only emergencies that arise unexpectedly during an otherwise non-dental trip.",
     },
 
     { type: "h2", text: "What to Do in a Medical Emergency in Mexico: Step-by-Step" },
@@ -5987,7 +5987,7 @@ const emergencyMedicalInsuranceMexicoTravelPhoenixPost: BlogPost = {
       type: "p",
       lead: "Step 1:",
       text:
-        "Call your travel insurance carrier's 24/7 emergency assistance line immediately — before going to a hospital if the situation permits. Allianz: 1-800-654-1908. Seven Corners: 1-317-582-2622. AXA Assistance: 1-855-327-1441. The assistance line will direct you to the nearest approved facility and initiate direct billing authorization.",
+        "Call your travel insurance carrier's 24/7 emergency assistance line immediately, before going to a hospital if the situation permits. Allianz: 1-800-654-1908. Seven Corners: 1-317-582-2622. AXA Assistance: 1-855-327-1441. The assistance line will direct you to the nearest approved facility and initiate direct billing authorization.",
     },
     {
       type: "p",
@@ -6015,7 +6015,7 @@ const emergencyMedicalInsuranceMexicoTravelPhoenixPost: BlogPost = {
         {
           question: "Q: Does Medicare cover medical emergencies in Mexico?",
           answer:
-            "No. Medicare Part A, Part B, and most Part D plans provide zero coverage outside the United States (CMS.gov, 2024). Medicare Supplement (Medigap) Plans C, D, F, G, M, and N include a foreign travel emergency benefit that covers 80% of emergency care costs after a $250 deductible, up to a $50,000 lifetime maximum — and only during the first 60 days of a trip. For Phoenix seniors visiting Mexico, this $50,000 lifetime cap is dangerously low given that a single cardiac event evacuation averages $28,000–$85,000.",
+            "No. Medicare Part A, Part B, and most Part D plans provide zero coverage outside the United States (CMS.gov, 2024). Medicare Supplement (Medigap) Plans C, D, F, G, M, and N include a foreign travel emergency benefit that covers 80% of emergency care costs after a $250 deductible, up to a $50,000 lifetime maximum, and only during the first 60 days of a trip. For Phoenix seniors visiting Mexico, this $50,000 lifetime cap is dangerously low given that a single cardiac event evacuation averages $28,000–$85,000.",
         },
         {
           question: "Q: Are pre-existing conditions covered by Mexico travel medical insurance?",
@@ -6025,17 +6025,17 @@ const emergencyMedicalInsuranceMexicoTravelPhoenixPost: BlogPost = {
         {
           question: "Q: What is the difference between travel medical insurance and a travel insurance policy?",
           answer:
-            "Travel medical insurance covers only medical expenses incurred during international travel. A comprehensive travel insurance policy adds trip cancellation, trip interruption, baggage loss, travel delay, and often medical evacuation to the medical coverage. For Mexico trips from Phoenix, Protegrity Insurance recommends comprehensive policies — the additional trip protection costs $10–$20 more per trip but covers the full range of financial risks Phoenix travelers face in Mexico.",
+            "Travel medical insurance covers only medical expenses incurred during international travel. A comprehensive travel insurance policy adds trip cancellation, trip interruption, baggage loss, travel delay, and often medical evacuation to the medical coverage. For Mexico trips from Phoenix, Protegrity Insurance recommends comprehensive policies, the additional trip protection costs $10–$20 more per trip but covers the full range of financial risks Phoenix travelers face in Mexico.",
         },
         {
           question: "Q: Will Mexico hospitals accept my U.S. travel insurance?",
           answer:
-            "JCI-accredited private hospitals in Cancún, Los Cabos, Puerto Vallarta, and Mexico City accept direct billing from Allianz, AXA, IMG Global, and GeoBlue. Smaller private clinics in Rocky Point, San Carlos, and Mazatlán typically require upfront payment and reimbursement. Always call your insurer's 24/7 assistance line before paying out of pocket — direct billing authorization is often available even at smaller facilities through your insurer's provider network.",
+            "JCI-accredited private hospitals in Cancún, Los Cabos, Puerto Vallarta, and Mexico City accept direct billing from Allianz, AXA, IMG Global, and GeoBlue. Smaller private clinics in Rocky Point, San Carlos, and Mazatlán typically require upfront payment and reimbursement. Always call your insurer's 24/7 assistance line before paying out of pocket, direct billing authorization is often available even at smaller facilities through your insurer's provider network.",
         },
         {
           question: "Q: Does Mexico travel medical insurance cover prescription drugs?",
           answer:
-            "Yes. Emergency prescriptions related to a covered medical event are reimbursable up to $500–$2,000 depending on your policy. Routine maintenance medications you take daily are not covered — bring a sufficient supply from Phoenix for your entire trip plus 3–5 extra days. Mexican pharmacies carry most U.S. brand-name medications at significantly lower prices, but purchases made for routine maintenance are not reimbursable under travel medical insurance.",
+            "Yes. Emergency prescriptions related to a covered medical event are reimbursable up to $500–$2,000 depending on your policy. Routine maintenance medications you take daily are not covered, bring a sufficient supply from Phoenix for your entire trip plus 3–5 extra days. Mexican pharmacies carry most U.S. brand-name medications at significantly lower prices, but purchases made for routine maintenance are not reimbursable under travel medical insurance.",
         },
         {
           question: "Q: How do I file a medical insurance claim after returning to Phoenix?",
@@ -6131,7 +6131,7 @@ const tripCancellationInsuranceMexicoPhoenixPost: BlogPost = {
     {
       type: "p",
       text:
-        "Trip cancellation insurance for Mexico travel reimburses 100% of your prepaid, non-refundable trip costs if you cancel for a covered reason before departure. Phoenix travelers to Mexico lose an average of $1,800–$6,500 in non-refundable deposits on canceled Mexico trips (Squaremouth, 2024). Covered reasons include illness, injury, death of a family member, natural disaster at the destination, and mandatory evacuation. Trip interruption — a separate but related benefit — reimburses unused portions of your trip plus return transportation if you must cut your Mexico vacation short. A comprehensive policy covering both benefits costs 4–10% of your total trip cost.",
+        "Trip cancellation insurance for Mexico travel reimburses 100% of your prepaid, non-refundable trip costs if you cancel for a covered reason before departure. Phoenix travelers to Mexico lose an average of $1,800–$6,500 in non-refundable deposits on canceled Mexico trips (Squaremouth, 2024). Covered reasons include illness, injury, death of a family member, natural disaster at the destination, and mandatory evacuation. Trip interruption, a separate but related benefit, reimburses unused portions of your trip plus return transportation if you must cut your Mexico vacation short. A comprehensive policy covering both benefits costs 4–10% of your total trip cost.",
     },
 
     {
@@ -6141,12 +6141,12 @@ const tripCancellationInsuranceMexicoPhoenixPost: BlogPost = {
     {
       type: "p",
       text:
-        "Phoenix travelers to Mexico face a specific set of cancellation risks that domestic travelers do not. Hurricane season in Mexico's Pacific and Gulf coasts runs June 1 through November 30 — overlapping with the prime snowbird travel planning season for Phoenix residents booking fall and winter Mexico trips. Hurricane Norma (2023) forced mass cancellations of Los Cabos bookings, generating over $42 million in travel insurance claims in a single week (U.S. Travel Insurance Association, 2024).",
+        "Phoenix travelers to Mexico face a specific set of cancellation risks that domestic travelers do not. Hurricane season in Mexico's Pacific and Gulf coasts runs June 1 through November 30, overlapping with the prime snowbird travel planning season for Phoenix residents booking fall and winter Mexico trips. Hurricane Norma (2023) forced mass cancellations of Los Cabos bookings, generating over $42 million in travel insurance claims in a single week (U.S. Travel Insurance Association, 2024).",
     },
     {
       type: "p",
       text:
-        "U.S. State Department travel advisories — currently Level 2 (Exercise Increased Caution) for most of Mexico as of April 2026 — can trigger airline and hotel cancellation policies that leave Phoenix travelers with non-refundable deposits. Trip cancellation insurance with a travel advisory benefit covers these scenarios when purchased from qualifying carriers.",
+        "U.S. State Department travel advisories, currently Level 2 (Exercise Increased Caution) for most of Mexico as of April 2026, can trigger airline and hotel cancellation policies that leave Phoenix travelers with non-refundable deposits. Trip cancellation insurance with a travel advisory benefit covers these scenarios when purchased from qualifying carriers.",
     },
 
     { type: "h2", text: "Covered vs. Non-Covered Cancellation Reasons" },
@@ -6164,27 +6164,27 @@ const tripCancellationInsuranceMexicoPhoenixPost: BlogPost = {
         ["Death of traveler or family member", "Yes", "Yes", "Death certificate"],
         [
           "Hurricane at Mexico destination",
-          "Yes — if destination uninhabitable",
+          "Yes, if destination uninhabitable",
           "Yes",
           "Government evacuation order",
         ],
         [
           "U.S. State Dept. Level 4 advisory issued",
-          "Yes — varies by carrier",
+          "Yes, varies by carrier",
           "Yes",
           "Official advisory documentation",
         ],
-        ["Work reasons / employer termination", "Yes — involuntary layoff only", "Yes", "Termination letter"],
+        ["Work reasons / employer termination", "Yes, involuntary layoff only", "Yes", "Termination letter"],
         [
           "Pre-existing condition flare-up",
-          "Yes — with waiver purchased in time",
+          "Yes, with waiver purchased in time",
           "Yes",
           "Medical records",
         ],
         ["Fear of travel / change of mind", "No", "Yes", "None required"],
         ["Financial hardship / budget concerns", "No", "Yes", "None required"],
         ["Better offer / competing travel plans", "No", "Yes", "None required"],
-        ["Mexico travel advisory (Level 2–3)", "No — varies by carrier", "Yes", "None required"],
+        ["Mexico travel advisory (Level 2–3)", "No, varies by carrier", "Yes", "None required"],
         ["Airline schedule change (minor)", "No", "Yes", "None required"],
       ],
     },
@@ -6193,7 +6193,7 @@ const tripCancellationInsuranceMexicoPhoenixPost: BlogPost = {
     {
       type: "p",
       text:
-        "Trip interruption coverage activates after departure — it pays for unused, non-refundable trip costs plus the additional cost of returning to Phoenix early if a covered event forces you to cut your trip short.",
+        "Trip interruption coverage activates after departure, it pays for unused, non-refundable trip costs plus the additional cost of returning to Phoenix early if a covered event forces you to cut your trip short.",
     },
     {
       type: "p",
@@ -6203,7 +6203,7 @@ const tripCancellationInsuranceMexicoPhoenixPost: BlogPost = {
     {
       type: "p",
       text:
-        "Most comprehensive Mexico travel insurance policies pay 100–150% of your trip cost for trip interruption — the additional 50% covers the premium cost of last-minute return transportation, which is typically far more expensive than the original outbound fare.",
+        "Most comprehensive Mexico travel insurance policies pay 100–150% of your trip cost for trip interruption, the additional 50% covers the premium cost of last-minute return transportation, which is typically far more expensive than the original outbound fare.",
     },
 
     { type: "h2", text: "Trip Cancellation Coverage Costs for Phoenix-to-Mexico Travel" },
@@ -6246,12 +6246,12 @@ const tripCancellationInsuranceMexicoPhoenixPost: BlogPost = {
     {
       type: "p",
       text:
-        "Standard trip cancellation insurance covers specific listed reasons: illness, death, natural disaster, mandatory evacuation, and similar documented events. If your reason for canceling is not on the covered list — you simply changed your mind, the political situation makes you nervous, or you found a better deal — you receive nothing from a standard policy.",
+        "Standard trip cancellation insurance covers specific listed reasons: illness, death, natural disaster, mandatory evacuation, and similar documented events. If your reason for canceling is not on the covered list, you simply changed your mind, the political situation makes you nervous, or you found a better deal, you receive nothing from a standard policy.",
     },
     {
       type: "p",
       text:
-        "Cancel For Any Reason (CFAR) pays 75% of your non-refundable trip costs regardless of why you cancel. CFAR adds 40–60% to your base travel insurance premium and requires purchase within 14–21 days of your first trip deposit. For a Phoenix traveler with a $5,000 Mexico trip, CFAR adds $60–$120 to the policy cost but returns $3,750 if you cancel for any reason — including simply deciding you do not want to go.",
+        "Cancel For Any Reason (CFAR) pays 75% of your non-refundable trip costs regardless of why you cancel. CFAR adds 40–60% to your base travel insurance premium and requires purchase within 14–21 days of your first trip deposit. For a Phoenix traveler with a $5,000 Mexico trip, CFAR adds $60–$120 to the policy cost but returns $3,750 if you cancel for any reason, including simply deciding you do not want to go.",
     },
 
     { type: "h2", text: "Frequently Asked Questions: Trip Cancellation Insurance for Mexico" },
@@ -6261,32 +6261,32 @@ const tripCancellationInsuranceMexicoPhoenixPost: BlogPost = {
         {
           question: "Q: Does trip cancellation insurance cover a Mexico hurricane?",
           answer:
-            "Yes — with conditions. Trip cancellation covers a hurricane that makes your destination uninhabitable or results in a government-issued mandatory evacuation order. It does not cover canceling because a hurricane might hit or because you are worried about weather. If you want the flexibility to cancel due to weather concerns without documentation, a CFAR policy is required. Allianz and AXA Assistance both process hurricane-related Mexico cancellation claims within 5–7 business days of receiving evacuation documentation.",
+            "Yes, with conditions. Trip cancellation covers a hurricane that makes your destination uninhabitable or results in a government-issued mandatory evacuation order. It does not cover canceling because a hurricane might hit or because you are worried about weather. If you want the flexibility to cancel due to weather concerns without documentation, a CFAR policy is required. Allianz and AXA Assistance both process hurricane-related Mexico cancellation claims within 5–7 business days of receiving evacuation documentation.",
         },
         {
           question: "Q: What is the deadline to buy trip cancellation insurance for a Mexico trip?",
           answer:
-            "Most Mexico travel insurance carriers allow purchase up to the day before departure. However, to qualify for the most valuable benefits — pre-existing condition waiver, CFAR eligibility, and financial default coverage — you must purchase within 14–21 days of your first trip deposit. Allianz requires purchase within 14 days of the initial deposit; Seven Corners allows 20 days; Travelex allows 21 days. For a Rocky Point trip with a $200 deposit made today, you have 14–21 days to lock in full coverage eligibility.",
+            "Most Mexico travel insurance carriers allow purchase up to the day before departure. However, to qualify for the most valuable benefits, pre-existing condition waiver, CFAR eligibility, and financial default coverage, you must purchase within 14–21 days of your first trip deposit. Allianz requires purchase within 14 days of the initial deposit; Seven Corners allows 20 days; Travelex allows 21 days. For a Rocky Point trip with a $200 deposit made today, you have 14–21 days to lock in full coverage eligibility.",
         },
         {
           question: "Q: Will trip cancellation insurance cover me if Mexico travel advisories change?",
           answer:
-            "It depends on the advisory level. A U.S. State Department Level 4 (Do Not Travel) advisory issued for your specific Mexico destination after you purchased your policy and before departure is a covered cancellation reason at most carriers, including Allianz and AXA. A Level 2 (Exercise Increased Caution) or Level 3 (Reconsider Travel) advisory — which currently applies to most of Mexico — is not a covered cancellation reason under standard policies. CFAR covers cancellation due to any advisory level, including Level 2 and Level 3.",
+            "It depends on the advisory level. A U.S. State Department Level 4 (Do Not Travel) advisory issued for your specific Mexico destination after you purchased your policy and before departure is a covered cancellation reason at most carriers, including Allianz and AXA. A Level 2 (Exercise Increased Caution) or Level 3 (Reconsider Travel) advisory, which currently applies to most of Mexico, is not a covered cancellation reason under standard policies. CFAR covers cancellation due to any advisory level, including Level 2 and Level 3.",
         },
         {
           question: "Q: Can I get trip cancellation insurance for a Mexico timeshare trip?",
           answer:
-            "Yes. Mexico timeshare trips — including those marketed through resort presentations at Cabo San Lucas, Cancún, and Puerto Vallarta resorts — qualify for trip cancellation coverage. Insure the full cost of non-refundable transportation (flights from Phoenix Sky Harbor) and any non-refundable hotel costs associated with the trip. Timeshare maintenance fees, special assessments, and purchase obligations are not insurable costs.",
+            "Yes. Mexico timeshare trips, including those marketed through resort presentations at Cabo San Lucas, Cancún, and Puerto Vallarta resorts, qualify for trip cancellation coverage. Insure the full cost of non-refundable transportation (flights from Phoenix Sky Harbor) and any non-refundable hotel costs associated with the trip. Timeshare maintenance fees, special assessments, and purchase obligations are not insurable costs.",
         },
         {
           question: "Q: Does trip cancellation insurance cover a work conflict as a reason to cancel?",
           answer:
-            "Involuntary termination of employment is a covered cancellation reason at most carriers — if your employer fires you or conducts a layoff after you purchased your policy, trip cancellation reimburses your non-refundable costs. A work scheduling conflict — your boss asks you to work that week — is not a covered reason under standard policies. A CFAR policy covers work conflicts as a cancellation reason and pays 75% of non-refundable costs with no documentation required.",
+            "Involuntary termination of employment is a covered cancellation reason at most carriers, if your employer fires you or conducts a layoff after you purchased your policy, trip cancellation reimburses your non-refundable costs. A work scheduling conflict, your boss asks you to work that week, is not a covered reason under standard policies. A CFAR policy covers work conflicts as a cancellation reason and pays 75% of non-refundable costs with no documentation required.",
         },
         {
           question: "Q: How long does trip cancellation reimbursement take?",
           answer:
-            "Allianz processes complete Mexico trip cancellation claims in 7–14 business days from receipt of all documentation. Seven Corners targets 10–14 business days. AXA Assistance USA targets 7 business days. Incomplete claim submissions — missing receipts, booking confirmations, or medical documentation — extend processing time significantly. Protegrity Insurance provides a claim documentation checklist to all clients at policy purchase to ensure complete first-submission claims.",
+            "Allianz processes complete Mexico trip cancellation claims in 7–14 business days from receipt of all documentation. Seven Corners targets 10–14 business days. AXA Assistance USA targets 7 business days. Incomplete claim submissions, missing receipts, booking confirmations, or medical documentation, extend processing time significantly. Protegrity Insurance provides a claim documentation checklist to all clients at policy purchase to ensure complete first-submission claims.",
         },
       ],
     },
@@ -6367,7 +6367,7 @@ const medicalEvacuationInsuranceMexicoPhoenixPost: BlogPost = {
     items: [
       "Medical evacuation from Mexico to a Phoenix hospital costs an average of $28,000–$85,000 for an air ambulance transport without insurance.",
       "Medical evacuation insurance costs $8–$18/month as part of a comprehensive Mexico travel policy and provides $250,000–$1,000,000 in coverage.",
-      "For Phoenix travelers to remote destinations — Baja California, the Copper Canyon, or rural Oaxaca — it is the single most financially critical coverage available.",
+      "For Phoenix travelers to remote destinations, Baja California, the Copper Canyon, or rural Oaxaca, it is the single most financially critical coverage available.",
       "Without evacuation coverage, Mexican hospitals can hold patients until evacuation costs are paid in full or a credit card guarantee is provided.",
       "In 2023, American travelers were detained at Mexican hospitals in 847 documented cases related to inability to pay transport costs.",
     ],
@@ -6377,7 +6377,7 @@ const medicalEvacuationInsuranceMexicoPhoenixPost: BlogPost = {
     {
       type: "p",
       text:
-        "Medical evacuation from Mexico to a Phoenix hospital costs an average of $28,000–$85,000 for an air ambulance transport, according to Global Rescue 2024 pricing data. Without insurance, this cost is 100% out of pocket and typically required upfront. Medical evacuation insurance costs $8–$18/month as part of a comprehensive Mexico travel policy and provides $250,000–$1,000,000 in coverage for medically necessary transport back to the U.S. from anywhere in Mexico. For Phoenix travelers to remote destinations — Baja California, the Copper Canyon, or rural Oaxaca — it is the single most financially critical coverage available.",
+        "Medical evacuation from Mexico to a Phoenix hospital costs an average of $28,000–$85,000 for an air ambulance transport, according to Global Rescue 2024 pricing data. Without insurance, this cost is 100% out of pocket and typically required upfront. Medical evacuation insurance costs $8–$18/month as part of a comprehensive Mexico travel policy and provides $250,000–$1,000,000 in coverage for medically necessary transport back to the U.S. from anywhere in Mexico. For Phoenix travelers to remote destinations, Baja California, the Copper Canyon, or rural Oaxaca, it is the single most financially critical coverage available.",
     },
 
     { type: "h2", text: "Why Medical Evacuation Is Different From Emergency Medical Coverage" },
@@ -6394,7 +6394,7 @@ const medicalEvacuationInsuranceMexicoPhoenixPost: BlogPost = {
     {
       type: "p",
       text:
-        "Without evacuation coverage, Mexican hospitals can — and do — hold patients until evacuation costs are paid in full or a credit card guarantee is provided. In 2023, American travelers were detained at Mexican hospitals in 847 documented cases related to inability to pay transport costs (U.S. Embassy Mexico City, 2024 consular data).",
+        "Without evacuation coverage, Mexican hospitals can, and do, hold patients until evacuation costs are paid in full or a credit card guarantee is provided. In 2023, American travelers were detained at Mexican hospitals in 847 documented cases related to inability to pay transport costs (U.S. Embassy Mexico City, 2024 consular data).",
     },
 
     { type: "h2", text: "Medical Evacuation Costs by Mexico Destination" },
@@ -6425,19 +6425,19 @@ const medicalEvacuationInsuranceMexicoPhoenixPost: BlogPost = {
       type: "p",
       lead: "Medically necessary air ambulance:",
       text:
-        "A fully equipped air ambulance with medical crew transport from the Mexico treatment facility to the nearest appropriate U.S. hospital — or your hospital of choice in Phoenix. Coverage limits range from $250,000 (standard) to $1,000,000+ (premium policies).",
+        "A fully equipped air ambulance with medical crew transport from the Mexico treatment facility to the nearest appropriate U.S. hospital, or your hospital of choice in Phoenix. Coverage limits range from $250,000 (standard) to $1,000,000+ (premium policies).",
     },
     {
       type: "p",
       lead: "Medical escort on commercial flights:",
       text:
-        "If your condition allows commercial flight with a medical escort (a nurse or physician accompanying you), evacuation coverage pays the full cost of both your seat and the escort's seat — typically business class for medical comfort requirements.",
+        "If your condition allows commercial flight with a medical escort (a nurse or physician accompanying you), evacuation coverage pays the full cost of both your seat and the escort's seat, typically business class for medical comfort requirements.",
     },
     {
       type: "p",
       lead: "Repatriation of remains:",
       text:
-        "If a traveler dies in Mexico, repatriation coverage pays the full cost of returning the deceased to Phoenix for burial or cremation — including embalming, consular documentation, and air freight. Repatriation costs average $7,500–$22,000 from Mexico. Most comprehensive travel policies include up to $50,000 in repatriation coverage as a standard benefit.",
+        "If a traveler dies in Mexico, repatriation coverage pays the full cost of returning the deceased to Phoenix for burial or cremation, including embalming, consular documentation, and air freight. Repatriation costs average $7,500–$22,000 from Mexico. Most comprehensive travel policies include up to $50,000 in repatriation coverage as a standard benefit.",
     },
     {
       type: "p",
@@ -6449,7 +6449,7 @@ const medicalEvacuationInsuranceMexicoPhoenixPost: BlogPost = {
       type: "p",
       lead: "Return of travel companion:",
       text:
-        "If your travel companion must return to Phoenix because you are hospitalized, evacuation coverage pays their return transportation costs — including last-minute airfare from the Mexico destination.",
+        "If your travel companion must return to Phoenix because you are hospitalized, evacuation coverage pays their return transportation costs, including last-minute airfare from the Mexico destination.",
     },
 
     { type: "h2", text: "Best Medical Evacuation Insurance Carriers for Mexico Trips from Phoenix" },
@@ -6465,11 +6465,11 @@ const medicalEvacuationInsuranceMexicoPhoenixPost: BlogPost = {
         "Best For",
       ],
       rows: [
-        ["Global Rescue", "$500,000", "Yes — field rescue included", "Yes — military-grade", "$28–$48/mo", "Remote Mexico, adventure travel"],
+        ["Global Rescue", "$500,000", "Yes, field rescue included", "Yes, military-grade", "$28–$48/mo", "Remote Mexico, adventure travel"],
         ["Medjet Assist", "Unlimited", "Yes", "Yes", "$38–$68/mo", "Full-year membership, frequent travelers"],
         ["Allianz Travel", "$1,000,000", "Yes", "Yes", "$8–$18/mo (as part of policy)", "Standard Mexico vacations"],
         ["AXA Assistance USA", "$500,000", "Yes", "Yes", "$12–$22/mo (as part of policy)", "Premium coverage, concierge"],
-        ["Seven Corners", "$500,000", "Yes", "No — uses local networks", "$8–$16/mo (as part of policy)", "Budget-conscious travelers"],
+        ["Seven Corners", "$500,000", "Yes", "No, uses local networks", "$8–$16/mo (as part of policy)", "Budget-conscious travelers"],
         ["IMG Global", "$500,000", "Yes", "Yes", "$10–$20/mo (as part of policy)", "Long-stay Mexico travelers"],
       ],
     },
@@ -6493,32 +6493,32 @@ const medicalEvacuationInsuranceMexicoPhoenixPost: BlogPost = {
         {
           question: "Q: How much medical evacuation insurance do I need for a Mexico trip?",
           answer:
-            "Protegrity Insurance recommends a minimum of $250,000 in medical evacuation coverage for any Mexico destination. For remote locations — Copper Canyon, Baja Peninsula back-country, or rural Oaxaca — $500,000 is recommended. Global Rescue and Medjet Assist offer unlimited evacuation coverage for $38–$68/month as annual memberships. For Phoenix seniors over 65, unlimited evacuation coverage is essential — cardiac events, strokes, and hip fractures are the most common Mexico evacuation triggers in this demographic, and each event can generate $65,000–$95,000 in transport costs.",
+            "Protegrity Insurance recommends a minimum of $250,000 in medical evacuation coverage for any Mexico destination. For remote locations, Copper Canyon, Baja Peninsula back-country, or rural Oaxaca, $500,000 is recommended. Global Rescue and Medjet Assist offer unlimited evacuation coverage for $38–$68/month as annual memberships. For Phoenix seniors over 65, unlimited evacuation coverage is essential, cardiac events, strokes, and hip fractures are the most common Mexico evacuation triggers in this demographic, and each event can generate $65,000–$95,000 in transport costs.",
         },
         {
           question: "Q: Does travel insurance evacuation cover me if I am in a remote part of Mexico?",
           answer:
-            "Yes, with variation. Global Rescue — the carrier most specialized in remote-location evacuation — operates its own field rescue teams and can extract insured travelers from locations inaccessible by conventional ambulance, including mountains, jungle, and offshore locations in Mexican waters. Standard evacuation coverage from Allianz and Seven Corners covers medically necessary transport from the nearest medical facility, not necessarily from the field location — meaning you must first reach a clinic before transport is activated.",
+            "Yes, with variation. Global Rescue, the carrier most specialized in remote-location evacuation, operates its own field rescue teams and can extract insured travelers from locations inaccessible by conventional ambulance, including mountains, jungle, and offshore locations in Mexican waters. Standard evacuation coverage from Allianz and Seven Corners covers medically necessary transport from the nearest medical facility, not necessarily from the field location, meaning you must first reach a clinic before transport is activated.",
         },
         {
           question: "Q: Will evacuation insurance fly me to my own Phoenix doctor?",
           answer:
-            "Medjet Assist offers evacuation to your hospital of choice — including Banner University Medical Center, Mayo Clinic Arizona, or HonorHealth in Scottsdale — once you are medically stable for transport. Allianz and AXA evacuate to the nearest appropriate U.S. medical facility, which may be in Tucson rather than Phoenix. If transport to your personal physician or preferred Phoenix hospital is important, Medjet Assist ($38–$48/month annual membership) provides this benefit that standard travel policies do not.",
+            "Medjet Assist offers evacuation to your hospital of choice, including Banner University Medical Center, Mayo Clinic Arizona, or HonorHealth in Scottsdale, once you are medically stable for transport. Allianz and AXA evacuate to the nearest appropriate U.S. medical facility, which may be in Tucson rather than Phoenix. If transport to your personal physician or preferred Phoenix hospital is important, Medjet Assist ($38–$48/month annual membership) provides this benefit that standard travel policies do not.",
         },
         {
           question: "Q: What is the difference between medical evacuation and trip interruption?",
           answer:
-            "Medical evacuation pays the cost of transporting you home for medical reasons. Trip interruption reimburses the non-refundable costs of your unused trip (hotel nights, excursions, activities) when you must leave early. Both benefits activate simultaneously in a medical emergency requiring evacuation. Allianz and AXA comprehensive policies include both benefits — evacuation handles the transport cost, and trip interruption reimburses the financial losses from leaving Mexico early.",
+            "Medical evacuation pays the cost of transporting you home for medical reasons. Trip interruption reimburses the non-refundable costs of your unused trip (hotel nights, excursions, activities) when you must leave early. Both benefits activate simultaneously in a medical emergency requiring evacuation. Allianz and AXA comprehensive policies include both benefits, evacuation handles the transport cost, and trip interruption reimburses the financial losses from leaving Mexico early.",
         },
         {
           question: "Q: Does standard travel insurance cover repatriation of remains?",
           answer:
-            "Yes. All comprehensive Mexico travel insurance policies from Allianz, AXA, Seven Corners, and IMG Global include repatriation of remains as a standard benefit, typically with a $25,000–$50,000 limit. This covers the Mexican mortuary fees, consular documentation, and air freight to Phoenix. The benefit is paid directly to the mortuary and airline — your family in Phoenix does not need to advance the funds and seek reimbursement.",
+            "Yes. All comprehensive Mexico travel insurance policies from Allianz, AXA, Seven Corners, and IMG Global include repatriation of remains as a standard benefit, typically with a $25,000–$50,000 limit. This covers the Mexican mortuary fees, consular documentation, and air freight to Phoenix. The benefit is paid directly to the mortuary and airline, your family in Phoenix does not need to advance the funds and seek reimbursement.",
         },
         {
           question: "Q: Can I be evacuated from Mexico if I have a pre-existing heart condition?",
           answer:
-            "Yes — with the right policy in place. If you purchase your comprehensive travel insurance within 14–21 days of your first Mexico trip deposit and your heart condition is stable (no change in treatment or symptoms in the prior 120–180 days), your pre-existing condition waiver covers cardiac events in Mexico as both a medical and evacuation claim. Without the waiver, carriers may deny evacuation claims linked to a known pre-existing condition. Protegrity Insurance verifies pre-existing condition waiver eligibility for every Phoenix client before policy issuance.",
+            "Yes, with the right policy in place. If you purchase your comprehensive travel insurance within 14–21 days of your first Mexico trip deposit and your heart condition is stable (no change in treatment or symptoms in the prior 120–180 days), your pre-existing condition waiver covers cardiac events in Mexico as both a medical and evacuation claim. Without the waiver, carriers may deny evacuation claims linked to a known pre-existing condition. Protegrity Insurance verifies pre-existing condition waiver eligibility for every Phoenix client before policy issuance.",
         },
       ],
     },
@@ -6603,19 +6603,19 @@ const lostStolenBaggageInsuranceMexicoPhoenixPost: BlogPost = {
     {
       type: "p",
       text:
-        "Baggage loss and theft insurance for Mexico travel pays $500–$3,000 per trip for lost, stolen, or damaged luggage and personal belongings, with a baggage delay benefit of $200–$600 for essential purchases when bags are delayed 12+ hours. Airlines operating Phoenix Sky Harbor (PHX) to Mexico routes — including American, Southwest, Alaska, and Volaris — cap liability at $1,700 per passenger for domestic baggage and $1,780 SDR (approximately $2,350) for international segments under the Montreal Convention. For Phoenix travelers carrying electronics, jewelry, or specialized equipment to Mexico, airline liability limits are frequently insufficient. Travel insurance baggage coverage fills this gap for $4–$8/month.",
+        "Baggage loss and theft insurance for Mexico travel pays $500–$3,000 per trip for lost, stolen, or damaged luggage and personal belongings, with a baggage delay benefit of $200–$600 for essential purchases when bags are delayed 12+ hours. Airlines operating Phoenix Sky Harbor (PHX) to Mexico routes, including American, Southwest, Alaska, and Volaris, cap liability at $1,700 per passenger for domestic baggage and $1,780 SDR (approximately $2,350) for international segments under the Montreal Convention. For Phoenix travelers carrying electronics, jewelry, or specialized equipment to Mexico, airline liability limits are frequently insufficient. Travel insurance baggage coverage fills this gap for $4–$8/month.",
     },
 
     { type: "h2", text: "What Airlines Actually Pay for Lost Baggage on Phoenix-Mexico Flights" },
     {
       type: "p",
       text:
-        "The Montreal Convention (ratified by the U.S. and Mexico) limits airline liability for lost international baggage to 1,288 Special Drawing Rights (SDR) per passenger — approximately $1,700 in 2024. For domestic U.S. flight segments connecting through Phoenix Sky Harbor, the DOT limit is $3,800 per passenger.",
+        "The Montreal Convention (ratified by the U.S. and Mexico) limits airline liability for lost international baggage to 1,288 Special Drawing Rights (SDR) per passenger, approximately $1,700 in 2024. For domestic U.S. flight segments connecting through Phoenix Sky Harbor, the DOT limit is $3,800 per passenger.",
     },
     {
       type: "p",
       text:
-        "In practice, airlines pay far less than the maximum. The average settlement for a fully lost bag on a Phoenix-Mexico route is $487–$820 (U.S. DOT Air Travel Consumer Report, 2024). Airlines deduct for depreciation, require detailed item-by-item documentation, and frequently dispute high-value claims. Bags delayed more than 21 days are considered permanently lost — at which point the airline's liability process begins, averaging 45–90 days to settlement.",
+        "In practice, airlines pay far less than the maximum. The average settlement for a fully lost bag on a Phoenix-Mexico route is $487–$820 (U.S. DOT Air Travel Consumer Report, 2024). Airlines deduct for depreciation, require detailed item-by-item documentation, and frequently dispute high-value claims. Bags delayed more than 21 days are considered permanently lost, at which point the airline's liability process begins, averaging 45–90 days to settlement.",
     },
     {
       type: "table",
@@ -6630,8 +6630,8 @@ const lostStolenBaggageInsuranceMexicoPhoenixPost: BlogPost = {
         ["Lost bag on PHX → Cancún (international)", "$1,700 (Montreal Convention)", "$487–$820", "Up to your policy limit"],
         ["Lost bag on PHX → LAX → Cabo (domestic + int'l)", "$3,800 domestic / $1,700 int'l", "$650–$1,100", "Up to your policy limit"],
         ["Delayed bag (12–24 hours)", "$0 from airline (optional, delayed)", "$0–$200", "$200–$400 (baggage delay benefit)"],
-        ["Stolen from hotel room in Mexico", "$0 — airline not responsible", "$0", "Up to policy limit (theft)"],
-        ["Damaged bag (broken zipper, wheels)", "Negotiated — often denied", "$0–$150", "Covered under baggage damage"],
+        ["Stolen from hotel room in Mexico", "$0, airline not responsible", "$0", "Up to policy limit (theft)"],
+        ["Damaged bag (broken zipper, wheels)", "Negotiated, often denied", "$0–$150", "Covered under baggage damage"],
         ["Electronics stolen on beach/resort", "$0", "$0", "Covered (sub-limit applies)"],
       ],
     },
@@ -6647,19 +6647,19 @@ const lostStolenBaggageInsuranceMexicoPhoenixPost: BlogPost = {
       type: "p",
       lead: "Stolen baggage:",
       text:
-        "Theft of luggage from a hotel room, rental vehicle, beach, or public area in Mexico is covered up to your policy limit. Police report documentation is required for theft claims in Mexico — file an Acta ante el Ministerio Público (Mexican police report) immediately and retain the report number.",
+        "Theft of luggage from a hotel room, rental vehicle, beach, or public area in Mexico is covered up to your policy limit. Police report documentation is required for theft claims in Mexico, file an Acta ante el Ministerio Público (Mexican police report) immediately and retain the report number.",
     },
     {
       type: "p",
       lead: "Baggage delay:",
       text:
-        "If your checked bags do not arrive within 12 hours of your Mexico arrival, baggage delay coverage reimburses essential purchases — clothing, toiletries, medication — up to $200–$600. Receipts are required; Allianz and Seven Corners process delay claims within 5 business days.",
+        "If your checked bags do not arrive within 12 hours of your Mexico arrival, baggage delay coverage reimburses essential purchases, clothing, toiletries, medication, up to $200–$600. Receipts are required; Allianz and Seven Corners process delay claims within 5 business days.",
     },
     {
       type: "p",
       lead: "High-value item sub-limits:",
       text:
-        "Most policies apply per-item sub-limits of $250–$500 for electronics (laptops, cameras, tablets) and $500–$1,000 for jewelry. Items above sub-limits require a scheduled items endorsement — available from Allianz for $8–$14 per trip for declared valuables up to $5,000 per item.",
+        "Most policies apply per-item sub-limits of $250–$500 for electronics (laptops, cameras, tablets) and $500–$1,000 for jewelry. Items above sub-limits require a scheduled items endorsement, available from Allianz for $8–$14 per trip for declared valuables up to $5,000 per item.",
     },
 
     { type: "h2", text: "What Baggage Insurance Does NOT Cover on Mexico Trips" },
@@ -6673,7 +6673,7 @@ const lostStolenBaggageInsuranceMexicoPhoenixPost: BlogPost = {
       type: "p",
       lead: "Items left unattended:",
       text:
-        "Baggage stolen while unattended in public areas — left on a beach while swimming, set down in a restaurant — may be denied under unattended property exclusions in some policies. Allianz explicitly excludes unattended property; Seven Corners covers theft regardless of whether items were attended. Verify your specific policy's unattended property clause before departure.",
+        "Baggage stolen while unattended in public areas, left on a beach while swimming, set down in a restaurant, may be denied under unattended property exclusions in some policies. Allianz explicitly excludes unattended property; Seven Corners covers theft regardless of whether items were attended. Verify your specific policy's unattended property clause before departure.",
     },
     {
       type: "p",
@@ -6714,7 +6714,7 @@ const lostStolenBaggageInsuranceMexicoPhoenixPost: BlogPost = {
       type: "p",
       lead: "File a Property Irregularity Report (PIR) with the airline immediately",
       text:
-        "at the Mexico arrival airport — before leaving the baggage claim area. The PIR number is required for both airline and travel insurance claims. Airlines will not process claims without a PIR filed at the time of discovery.",
+        "at the Mexico arrival airport, before leaving the baggage claim area. The PIR number is required for both airline and travel insurance claims. Airlines will not process claims without a PIR filed at the time of discovery.",
     },
     {
       type: "p",
@@ -6730,32 +6730,32 @@ const lostStolenBaggageInsuranceMexicoPhoenixPost: BlogPost = {
         {
           question: "Q: Does travel insurance cover a stolen phone in Mexico?",
           answer:
-            "Yes — up to the policy's electronics sub-limit, typically $250–$500 per item. A new iPhone 16 valued at $1,199 would be reimbursed at $250–$500 under most standard policies. AXA Assistance USA offers an electronics rider for $12–$18/trip that increases the per-item electronics limit to $1,500. Keep your phone's purchase receipt or IMEI documentation for the claim. A Mexican police report (Acta) is required for all theft claims.",
+            "Yes, up to the policy's electronics sub-limit, typically $250–$500 per item. A new iPhone 16 valued at $1,199 would be reimbursed at $250–$500 under most standard policies. AXA Assistance USA offers an electronics rider for $12–$18/trip that increases the per-item electronics limit to $1,500. Keep your phone's purchase receipt or IMEI documentation for the claim. A Mexican police report (Acta) is required for all theft claims.",
         },
         {
           question: "Q: What is the baggage delay benefit and when does it activate?",
           answer:
-            "Baggage delay pays for essential purchases — clothing, toiletries, medication — when your checked bags do not arrive within 12 hours of your scheduled Mexico arrival. The benefit activates after the 12-hour delay window expires and you have documentation of the delay from the airline (PIR). Allianz pays up to $300 per person; Seven Corners pays up to $500 per person. Receipts for all purchases are required, and only items of immediate necessity qualify.",
+            "Baggage delay pays for essential purchases, clothing, toiletries, medication, when your checked bags do not arrive within 12 hours of your scheduled Mexico arrival. The benefit activates after the 12-hour delay window expires and you have documentation of the delay from the airline (PIR). Allianz pays up to $300 per person; Seven Corners pays up to $500 per person. Receipts for all purchases are required, and only items of immediate necessity qualify.",
         },
         {
           question: "Q: Does my credit card cover baggage loss on Mexico trips?",
           answer:
-            "Some premium travel credit cards — Chase Sapphire Reserve, American Express Platinum, and Capital One Venture X — include baggage delay and lost luggage benefits when the trip is booked on the card. Chase Sapphire Reserve pays up to $3,000 per passenger for lost baggage. However, credit card baggage benefits often exclude theft, have strict documentation requirements, and do not include the medical and evacuation coverages that a comprehensive Mexico travel policy provides. Credit card baggage coverage can complement — but should not replace — a dedicated Mexico travel insurance policy.",
+            "Some premium travel credit cards, Chase Sapphire Reserve, American Express Platinum, and Capital One Venture X, include baggage delay and lost luggage benefits when the trip is booked on the card. Chase Sapphire Reserve pays up to $3,000 per passenger for lost baggage. However, credit card baggage benefits often exclude theft, have strict documentation requirements, and do not include the medical and evacuation coverages that a comprehensive Mexico travel policy provides. Credit card baggage coverage can complement, but should not replace, a dedicated Mexico travel insurance policy.",
         },
         {
           question: "Q: Are medications covered under baggage insurance if my bag is lost?",
           answer:
-            "Prescription medications lost with your luggage are covered under baggage insurance up to the policy's medication sub-limit, typically $250–$500. For maintenance medications that cannot be missed — blood pressure, diabetes, cardiac medications — contact your Phoenix pharmacy before departure to arrange emergency refills at a Mexican pharmacy if needed. Allianz's 24/7 assistance line can also help locate a Mexican pharmacy stocking your specific medication in your destination city.",
+            "Prescription medications lost with your luggage are covered under baggage insurance up to the policy's medication sub-limit, typically $250–$500. For maintenance medications that cannot be missed, blood pressure, diabetes, cardiac medications, contact your Phoenix pharmacy before departure to arrange emergency refills at a Mexican pharmacy if needed. Allianz's 24/7 assistance line can also help locate a Mexican pharmacy stocking your specific medication in your destination city.",
         },
         {
           question: "Q: What should I do if my bag is stolen from a hotel room in Cancún?",
           answer:
-            "File a report with hotel security and request a written incident report from hotel management. File an Acta ante el Ministerio Público at the nearest police station within 24 hours — bring your passport, the hotel report, and a list of stolen items. Photograph the hotel room and any signs of forced entry. Contact your travel insurance carrier's 24/7 assistance line with your policy number. Submit the claim within 90 days of returning to Phoenix with all documentation. Protegrity Insurance provides claim assistance for all Mexico theft claims at no additional charge.",
+            "File a report with hotel security and request a written incident report from hotel management. File an Acta ante el Ministerio Público at the nearest police station within 24 hours, bring your passport, the hotel report, and a list of stolen items. Photograph the hotel room and any signs of forced entry. Contact your travel insurance carrier's 24/7 assistance line with your policy number. Submit the claim within 90 days of returning to Phoenix with all documentation. Protegrity Insurance provides claim assistance for all Mexico theft claims at no additional charge.",
         },
         {
           question: "Q: How long does a baggage insurance claim take to process?",
           answer:
-            "Standard baggage loss claims with complete documentation take 7–14 business days at Allianz and Seven Corners. Theft claims requiring police report verification average 14–21 business days. Incomplete claims — missing PIR, no photos of contents, no receipts — significantly extend processing. Protegrity Insurance pre-provides all clients with a Mexico trip baggage claim checklist at policy purchase to ensure complete, first-submission claims for fastest processing.",
+            "Standard baggage loss claims with complete documentation take 7–14 business days at Allianz and Seven Corners. Theft claims requiring police report verification average 14–21 business days. Incomplete claims, missing PIR, no photos of contents, no receipts, significantly extend processing. Protegrity Insurance pre-provides all clients with a Mexico trip baggage claim checklist at policy purchase to ensure complete, first-submission claims for fastest processing.",
         },
       ],
     },
@@ -6834,7 +6834,7 @@ const rentalCarInsuranceMexicoPhoenixPost: BlogPost = {
   },
   keyTakeaways: {
     items: [
-      "U.S. auto insurance — including your Phoenix policy from State Farm, GEICO, or Progressive — is invalid in Mexico.",
+      "U.S. auto insurance, including your Phoenix policy from State Farm, GEICO, or Progressive, is invalid in Mexico.",
       "Mexican law requires all vehicles operated in Mexico to carry Mexican liability insurance issued by a Mexican-licensed insurer.",
       "Rental car agencies in Mexico offer insurance at the counter averaging $18–$42/day at major resort destinations.",
       "Standalone Mexico rental car insurance through carriers like Baja Bound or MexiPass costs $8–$22/day and often provides superior coverage at lower rates.",
@@ -6846,26 +6846,26 @@ const rentalCarInsuranceMexicoPhoenixPost: BlogPost = {
     {
       type: "p",
       text:
-        "U.S. auto insurance — including your Phoenix policy from State Farm, GEICO, or Progressive — is invalid in Mexico. Mexican law requires all vehicles operated in Mexico to carry Mexican liability insurance issued by a Mexican-licensed insurer. Rental car agencies in Mexico are required by law to offer insurance at the counter. For Phoenix travelers renting a car in Mexico, the rental agency's collision damage waiver (CDW) and liability coverage cost an average of $18–$42/day at major resort destinations. Standalone Mexico rental car insurance through carriers like Baja Bound or MexiPass costs $8–$22/day and often provides superior coverage at lower rates than rental agency counters.",
+        "U.S. auto insurance, including your Phoenix policy from State Farm, GEICO, or Progressive, is invalid in Mexico. Mexican law requires all vehicles operated in Mexico to carry Mexican liability insurance issued by a Mexican-licensed insurer. Rental car agencies in Mexico are required by law to offer insurance at the counter. For Phoenix travelers renting a car in Mexico, the rental agency's collision damage waiver (CDW) and liability coverage cost an average of $18–$42/day at major resort destinations. Standalone Mexico rental car insurance through carriers like Baja Bound or MexiPass costs $8–$22/day and often provides superior coverage at lower rates than rental agency counters.",
     },
 
     { type: "h2", text: "Why Your U.S. Auto Insurance and Credit Card Coverage Fail in Mexico" },
     {
       type: "p",
       text:
-        "Arizona auto insurance policies — regardless of carrier, coverage level, or premium paid — are legally invalid in Mexico. This applies to State Farm, GEICO, Progressive, USAA, and every other U.S. carrier. Mexico is a sovereign nation with its own insurance regulatory system; a policy issued under Arizona law has no legal standing with Mexican courts or law enforcement.",
+        "Arizona auto insurance policies, regardless of carrier, coverage level, or premium paid, are legally invalid in Mexico. This applies to State Farm, GEICO, Progressive, USAA, and every other U.S. carrier. Mexico is a sovereign nation with its own insurance regulatory system; a policy issued under Arizona law has no legal standing with Mexican courts or law enforcement.",
     },
     {
       type: "p",
       lead: "Credit card rental car benefits:",
       text:
-        "Most U.S. credit cards providing rental car coverage — including Chase Sapphire Reserve and American Express Platinum — explicitly exclude Mexico from their rental car collision benefit. The Chase Sapphire Reserve cardmember agreement states: 'Coverage is not available for rentals in... Israel, Jamaica, and Mexico.' A Phoenix traveler relying on their Chase card for Mexico rental coverage has no coverage.",
+        "Most U.S. credit cards providing rental car coverage, including Chase Sapphire Reserve and American Express Platinum, explicitly exclude Mexico from their rental car collision benefit. The Chase Sapphire Reserve cardmember agreement states: 'Coverage is not available for rentals in... Israel, Jamaica, and Mexico.' A Phoenix traveler relying on their Chase card for Mexico rental coverage has no coverage.",
     },
     {
       type: "p",
       lead: "What happens without Mexican insurance in a Mexico accident:",
       text:
-        "Mexican law treats uninsured drivers as presumed criminally liable. Police can detain an uninsured driver involved in an accident until fault is determined — a process that can take days or weeks. Both parties' vehicles may be impounded. Legal representation in Mexico averages $2,500–$8,500 for accident defense.",
+        "Mexican law treats uninsured drivers as presumed criminally liable. Police can detain an uninsured driver involved in an accident until fault is determined, a process that can take days or weeks. Both parties' vehicles may be impounded. Legal representation in Mexico averages $2,500–$8,500 for accident defense.",
     },
 
     { type: "h2", text: "Mexico Rental Car Insurance Options for Phoenix Travelers" },
@@ -6930,32 +6930,32 @@ const rentalCarInsuranceMexicoPhoenixPost: BlogPost = {
       type: "p",
       lead: "Collision Damage Waiver (CDW):",
       text:
-        "Covers physical damage to the rental vehicle from a collision, regardless of fault. Mexican CDW policies typically cover the full vehicle value with either a $0 or $500 deductible, depending on the carrier. Without CDW, you are responsible for 100% of repair costs — and Mexican repair shops in resort areas charge 25–40% above U.S. rates for parts and labor.",
+        "Covers physical damage to the rental vehicle from a collision, regardless of fault. Mexican CDW policies typically cover the full vehicle value with either a $0 or $500 deductible, depending on the carrier. Without CDW, you are responsible for 100% of repair costs, and Mexican repair shops in resort areas charge 25–40% above U.S. rates for parts and labor.",
     },
     {
       type: "p",
       lead: "Third-Party Liability:",
       text:
-        "Pays for injuries and property damage you cause to other people in a Mexico accident. Mexican law requires minimum liability of MX$3,000,000 (approximately $172,000 USD at April 2026 exchange rates). Baja Bound and MexiPass both provide $300,000 in third-party liability — well above the Mexican legal minimum.",
+        "Pays for injuries and property damage you cause to other people in a Mexico accident. Mexican law requires minimum liability of MX$3,000,000 (approximately $172,000 USD at April 2026 exchange rates). Baja Bound and MexiPass both provide $300,000 in third-party liability, well above the Mexican legal minimum.",
     },
     {
       type: "p",
       lead: "Theft Protection:",
       text:
-        "Covers theft of the rental vehicle. Vehicle theft rates in Mexico vary significantly by destination — Los Cabos and Puerto Vallarta resort areas report lower theft rates for rental vehicles; border cities (Tijuana, Nogales) report higher rates. Most standalone Mexico rental car policies include theft protection as a standard benefit.",
+        "Covers theft of the rental vehicle. Vehicle theft rates in Mexico vary significantly by destination, Los Cabos and Puerto Vallarta resort areas report lower theft rates for rental vehicles; border cities (Tijuana, Nogales) report higher rates. Most standalone Mexico rental car policies include theft protection as a standard benefit.",
     },
     {
       type: "p",
       lead: "Legal assistance:",
       text:
-        "Mexican accident law can result in vehicle impoundment and driver detention. Baja Bound and Lewis & Lewis both include 24/7 legal assistance in Mexico — a critical benefit that rental agency counter insurance rarely provides.",
+        "Mexican accident law can result in vehicle impoundment and driver detention. Baja Bound and Lewis & Lewis both include 24/7 legal assistance in Mexico, a critical benefit that rental agency counter insurance rarely provides.",
     },
 
     { type: "h2", text: "Driving Your Own Vehicle Into Mexico from Phoenix: What Insurance You Need" },
     {
       type: "p",
       text:
-        "Phoenix residents driving their personal vehicle into Mexico — for Rocky Point weekends, RV trips to San Carlos, or road trips to Guadalajara — must purchase a separate Mexico auto insurance policy for their personal vehicle. U.S. insurance is invalid for personal vehicles as well as rentals.",
+        "Phoenix residents driving their personal vehicle into Mexico, for Rocky Point weekends, RV trips to San Carlos, or road trips to Guadalajara, must purchase a separate Mexico auto insurance policy for their personal vehicle. U.S. insurance is invalid for personal vehicles as well as rentals.",
     },
     {
       type: "p",
@@ -6965,7 +6965,7 @@ const rentalCarInsuranceMexicoPhoenixPost: BlogPost = {
     {
       type: "p",
       text:
-        "Additionally, vehicles driven beyond the Sonoran Free Trade Zone (approximately 25 km from the border) require a Temporary Import Permit (TIP) from Banjercito — Mexico's Treasury Department. The TIP costs $51.20 plus a refundable deposit of $200–$400. Vehicles without a TIP beyond the free zone are subject to confiscation.",
+        "Additionally, vehicles driven beyond the Sonoran Free Trade Zone (approximately 25 km from the border) require a Temporary Import Permit (TIP) from Banjercito, Mexico's Treasury Department. The TIP costs $51.20 plus a refundable deposit of $200–$400. Vehicles without a TIP beyond the free zone are subject to confiscation.",
     },
 
     { type: "h2", text: "Frequently Asked Questions: Rental Car Insurance in Mexico" },
@@ -6980,7 +6980,7 @@ const rentalCarInsuranceMexicoPhoenixPost: BlogPost = {
         {
           question: "Q: Is the rental agency's insurance at the Mexico counter good enough?",
           answer:
-            "It provides the required legal coverage, but at a significant premium. Hertz and Avis counters in Cancún, Los Cabos, and Puerto Vallarta charge $28–$45/day for CDW plus liability. Baja Bound provides equivalent or superior coverage for $8–$18/day — a savings of $60–$190/week for a typical Phoenix traveler. Counter insurance is also frequently oversold with upsells that duplicate coverage you do not need. Purchasing standalone coverage from Baja Bound or MexiPass before departure is consistently more cost-effective.",
+            "It provides the required legal coverage, but at a significant premium. Hertz and Avis counters in Cancún, Los Cabos, and Puerto Vallarta charge $28–$45/day for CDW plus liability. Baja Bound provides equivalent or superior coverage for $8–$18/day, a savings of $60–$190/week for a typical Phoenix traveler. Counter insurance is also frequently oversold with upsells that duplicate coverage you do not need. Purchasing standalone coverage from Baja Bound or MexiPass before departure is consistently more cost-effective.",
         },
         {
           question: "Q: Does Chase Sapphire Reserve cover rental cars in Mexico?",
@@ -6990,17 +6990,17 @@ const rentalCarInsuranceMexicoPhoenixPost: BlogPost = {
         {
           question: "Q: How much does Mexico rental car insurance cost for a week in Cabo?",
           answer:
-            "A 7-day Cabo San Lucas rental car covered by Baja Bound or MexiPass costs $56–$126/week for comprehensive coverage including $300,000 liability and $0 deductible CDW. The same coverage at the Hertz or Avis counter in Cabo averages $196–$315/week. Phoenix travelers who purchase standalone coverage before departure save an average of $140–$190 per week in Cabo — more than the cost of a night's accommodation at many Cabo properties.",
+            "A 7-day Cabo San Lucas rental car covered by Baja Bound or MexiPass costs $56–$126/week for comprehensive coverage including $300,000 liability and $0 deductible CDW. The same coverage at the Hertz or Avis counter in Cabo averages $196–$315/week. Phoenix travelers who purchase standalone coverage before departure save an average of $140–$190 per week in Cabo, more than the cost of a night's accommodation at many Cabo properties.",
         },
         {
           question: "Q: What do I do if I have an accident in a rental car in Mexico?",
           answer:
-            "Do not move the vehicles until police arrive — Mexican law requires vehicles to remain in position after an accident. Call your Mexico insurance carrier's 24/7 claims line immediately (Baja Bound: 1-800-552-0890). Call the rental agency's emergency line. Take photos of all vehicles, road conditions, traffic signals, and any injuries. Get the other driver's name, Mexican driver's license number, and vehicle registration. Do not admit fault or sign any Mexican documents without legal representation — your insurer's legal assistance team handles communication with Mexican authorities.",
+            "Do not move the vehicles until police arrive, Mexican law requires vehicles to remain in position after an accident. Call your Mexico insurance carrier's 24/7 claims line immediately (Baja Bound: 1-800-552-0890). Call the rental agency's emergency line. Take photos of all vehicles, road conditions, traffic signals, and any injuries. Get the other driver's name, Mexican driver's license number, and vehicle registration. Do not admit fault or sign any Mexican documents without legal representation, your insurer's legal assistance team handles communication with Mexican authorities.",
         },
         {
           question: "Q: Can I buy Mexico rental car insurance from Phoenix before I leave?",
           answer:
-            "Yes, and this is strongly recommended. Baja Bound, MexiPass, and Lewis & Lewis all allow online purchase from Phoenix before departure. Policies are issued instantly with a digital insurance card acceptable to Mexican authorities. Purchasing before departure gives you time to review coverage, compare options, and avoid the high-pressure sales environment at Mexican airport rental counters. Protegrity Insurance can also quote and bind Mexico rental car insurance by phone at (480) XXX-XXXX — available for same-day issuance.",
+            "Yes, and this is strongly recommended. Baja Bound, MexiPass, and Lewis & Lewis all allow online purchase from Phoenix before departure. Policies are issued instantly with a digital insurance card acceptable to Mexican authorities. Purchasing before departure gives you time to review coverage, compare options, and avoid the high-pressure sales environment at Mexican airport rental counters. Protegrity Insurance can also quote and bind Mexico rental car insurance by phone at (480) XXX-XXXX, available for same-day issuance.",
         },
       ],
     },
@@ -7079,7 +7079,7 @@ const cancelForAnyReasonInsuranceMexicoPhoenixPost: BlogPost = {
   },
   keyTakeaways: {
     items: [
-      "Cancel For Any Reason (CFAR) travel insurance pays 75% of your prepaid, non-refundable Mexico trip costs if you cancel for any reason — no documentation required.",
+      "Cancel For Any Reason (CFAR) travel insurance pays 75% of your prepaid, non-refundable Mexico trip costs if you cancel for any reason, no documentation required.",
       "CFAR adds 40–60% to a standard comprehensive travel insurance premium and must be purchased within 14–21 days of your first Mexico trip deposit.",
       "For a Phoenix family with a $5,600 Puerto Vallarta trip, CFAR adds $80–$140 to the policy cost and returns $4,200 on a full cancellation.",
       "Standard trip cancellation covers only specific documented reasons; CFAR removes all conditions and covers change of mind, fear of travel, or any other reason.",
@@ -7091,19 +7091,19 @@ const cancelForAnyReasonInsuranceMexicoPhoenixPost: BlogPost = {
     {
       type: "p",
       text:
-        "Cancel For Any Reason (CFAR) travel insurance pays 75% of your prepaid, non-refundable Mexico trip costs if you cancel for any reason — no documentation, no medical excuse, no covered reason required. CFAR adds 40–60% to a standard comprehensive travel insurance premium and must be purchased within 14–21 days of your first Mexico trip deposit. For a Phoenix family with a $5,600 Puerto Vallarta trip, CFAR adds $80–$140 to the policy cost and returns $4,200 on a full cancellation. This guide explains exactly when CFAR is worth the extra cost for Phoenix-to-Mexico travelers.",
+        "Cancel For Any Reason (CFAR) travel insurance pays 75% of your prepaid, non-refundable Mexico trip costs if you cancel for any reason, no documentation, no medical excuse, no covered reason required. CFAR adds 40–60% to a standard comprehensive travel insurance premium and must be purchased within 14–21 days of your first Mexico trip deposit. For a Phoenix family with a $5,600 Puerto Vallarta trip, CFAR adds $80–$140 to the policy cost and returns $4,200 on a full cancellation. This guide explains exactly when CFAR is worth the extra cost for Phoenix-to-Mexico travelers.",
     },
 
     { type: "h2", text: "What Makes CFAR Different From Standard Trip Cancellation Insurance" },
     {
       type: "p",
       text:
-        "Standard trip cancellation insurance covers specific, documented reasons: your illness or injury, a family death, a hurricane making your destination uninhabitable, or involuntary job loss. If your cancellation reason is not on the covered list — you changed your mind, the State Department issued a Level 3 advisory for your destination, your child's school schedule conflicts, or you simply decided not to go — standard trip cancellation pays nothing.",
+        "Standard trip cancellation insurance covers specific, documented reasons: your illness or injury, a family death, a hurricane making your destination uninhabitable, or involuntary job loss. If your cancellation reason is not on the covered list, you changed your mind, the State Department issued a Level 3 advisory for your destination, your child's school schedule conflicts, or you simply decided not to go, standard trip cancellation pays nothing.",
     },
     {
       type: "p",
       text:
-        "CFAR removes all conditions. Cancel for any reason, at any time before departure (most policies require cancellation at least 48–72 hours before departure), and receive 75% of your non-refundable costs — guaranteed. No paperwork. No doctor's note. No documentation of any kind. Just cancel and claim.",
+        "CFAR removes all conditions. Cancel for any reason, at any time before departure (most policies require cancellation at least 48–72 hours before departure), and receive 75% of your non-refundable costs, guaranteed. No paperwork. No doctor's note. No documentation of any kind. Just cancel and claim.",
     },
 
     { type: "h2", text: "CFAR Cost vs. Potential Recovery for Phoenix Mexico Trips" },
@@ -7125,7 +7125,7 @@ const cancelForAnyReasonInsuranceMexicoPhoenixPost: BlogPost = {
         ["Puerto Vallarta family 7-day", "$5,600", "$4,800", "$248", "$100–$148", "$3,600", "+$100–$148"],
         ["Riviera Maya 14-day", "$8,200", "$7,000", "$320", "$128–$192", "$5,250", "+$128–$192"],
         ["Mexico cruise 12-day", "$7,400", "$7,400", "$288", "$116–$174", "$5,550", "+$116–$174"],
-        ["Annual multi-trip (multiple Mexico trips)", "Multiple", "Varies", "$288–$488/yr", "N/A — per trip basis", "75% per trip", "Varies"],
+        ["Annual multi-trip (multiple Mexico trips)", "Multiple", "Varies", "$288–$488/yr", "N/A, per trip basis", "75% per trip", "Varies"],
       ],
     },
 
@@ -7133,7 +7133,7 @@ const cancelForAnyReasonInsuranceMexicoPhoenixPost: BlogPost = {
     {
       type: "p",
       text:
-        "CFAR is financially justified when: (1) Your cancellation risk is higher than average — you have a pre-existing health condition not fully covered by the standard waiver, you are traveling during Mexico's hurricane season (June–November), or the U.S.-Mexico political situation creates genuine uncertainty about travel; (2) Your non-refundable trip costs are high — trips over $3,000 with substantial non-refundable deposits generate enough CFAR recovery value to justify the premium; (3) You have specific personal or professional uncertainty — a pending job change, a family health situation, or a business obligation that may require you to stay in Phoenix.",
+        "CFAR is financially justified when: (1) Your cancellation risk is higher than average, you have a pre-existing health condition not fully covered by the standard waiver, you are traveling during Mexico's hurricane season (June–November), or the U.S.-Mexico political situation creates genuine uncertainty about travel; (2) Your non-refundable trip costs are high, trips over $3,000 with substantial non-refundable deposits generate enough CFAR recovery value to justify the premium; (3) You have specific personal or professional uncertainty, a pending job change, a family health situation, or a business obligation that may require you to stay in Phoenix.",
     },
     {
       type: "p",
@@ -7145,12 +7145,12 @@ const cancelForAnyReasonInsuranceMexicoPhoenixPost: BlogPost = {
     {
       type: "p",
       text:
-        "CFAR is not available at any time — it must be purchased within 14–21 days of your first Mexico trip deposit. This is the single most commonly misunderstood CFAR restriction, and it costs Phoenix travelers thousands of dollars in lost CFAR eligibility every year.",
+        "CFAR is not available at any time, it must be purchased within 14–21 days of your first Mexico trip deposit. This is the single most commonly misunderstood CFAR restriction, and it costs Phoenix travelers thousands of dollars in lost CFAR eligibility every year.",
     },
     {
       type: "p",
       text:
-        "Allianz requires CFAR purchase within 14 days of the first deposit. Seven Corners allows 20 days. Travelex allows 21 days. AXA Assistance USA requires 21 days. After these windows close, CFAR cannot be added to your policy at any price — even if the departure date is months away.",
+        "Allianz requires CFAR purchase within 14 days of the first deposit. Seven Corners allows 20 days. Travelex allows 21 days. AXA Assistance USA requires 21 days. After these windows close, CFAR cannot be added to your policy at any price, even if the departure date is months away.",
     },
     {
       type: "table",
@@ -7192,7 +7192,7 @@ const cancelForAnyReasonInsuranceMexicoPhoenixPost: BlogPost = {
       type: "p",
       lead: "Travelex Travel Select + CFAR:",
       text:
-        "Strong family option — children 17 and under are covered free when traveling with an insured adult. 75% CFAR with 48-hour pre-departure cancellation. Best for Phoenix families traveling to Mexican resorts.",
+        "Strong family option, children 17 and under are covered free when traveling with an insured adult. 75% CFAR with 48-hour pre-departure cancellation. Best for Phoenix families traveling to Mexican resorts.",
     },
 
     { type: "h2", text: "Frequently Asked Questions: CFAR Insurance for Mexico" },
@@ -7200,19 +7200,19 @@ const cancelForAnyReasonInsuranceMexicoPhoenixPost: BlogPost = {
       type: "faq",
       items: [
         {
-          question: "Q: What does CFAR actually pay — do I get all my money back?",
+          question: "Q: What does CFAR actually pay, do I get all my money back?",
           answer:
             "CFAR pays 75% of your prepaid, non-refundable Mexico trip costs. If you paid $5,600 for a non-refundable Puerto Vallarta trip, CFAR returns $4,200. The remaining 25% ($1,400) is your effective cost of flexibility. To receive the 75% CFAR refund, you must cancel at least 48–72 hours before your scheduled Mexico departure (depending on carrier) and notify your insurer within the required timeframe. Cancellations within 48–72 hours of departure do not qualify for CFAR.",
         },
         {
           question: "Q: Can I add CFAR after I have already purchased a standard travel insurance policy?",
           answer:
-            "No. CFAR must be purchased simultaneously with your original travel insurance policy and within 14–21 days of your first Mexico trip deposit. It cannot be added later as an endorsement. If you purchased a standard policy without CFAR and now want it, you must cancel the existing policy (if within the free-look period — typically 10–15 days after purchase) and repurchase a new policy with CFAR included. Outside the free-look period, CFAR addition is not possible.",
+            "No. CFAR must be purchased simultaneously with your original travel insurance policy and within 14–21 days of your first Mexico trip deposit. It cannot be added later as an endorsement. If you purchased a standard policy without CFAR and now want it, you must cancel the existing policy (if within the free-look period, typically 10–15 days after purchase) and repurchase a new policy with CFAR included. Outside the free-look period, CFAR addition is not possible.",
         },
         {
           question: "Q: Does CFAR cover canceling because of a Mexico travel advisory?",
           answer:
-            "Yes. CFAR covers cancellation due to any reason, including State Department Level 2, 3, or 4 travel advisories for Mexico. Standard trip cancellation requires a Level 4 advisory (Do Not Travel) for most carriers to trigger coverage. CFAR requires no specific advisory level — if you decide the current Level 2 advisory for your Cabo destination makes you uncomfortable, CFAR pays 75% of your non-refundable costs regardless of the official advisory level.",
+            "Yes. CFAR covers cancellation due to any reason, including State Department Level 2, 3, or 4 travel advisories for Mexico. Standard trip cancellation requires a Level 4 advisory (Do Not Travel) for most carriers to trigger coverage. CFAR requires no specific advisory level, if you decide the current Level 2 advisory for your Cabo destination makes you uncomfortable, CFAR pays 75% of your non-refundable costs regardless of the official advisory level.",
         },
         {
           question: "Q: Can I use CFAR for a Rocky Point weekend trip?",
@@ -7222,12 +7222,12 @@ const cancelForAnyReasonInsuranceMexicoPhoenixPost: BlogPost = {
         {
           question: "Q: What is the best CFAR Mexico travel insurance for seniors over 65?",
           answer:
-            "AXA Assistance USA Platinum with CFAR is the top choice for Phoenix seniors over 65 traveling to Mexico. AXA includes $500,000 in medical evacuation, $250,000 in emergency medical, and 75% CFAR with concierge medical assistance. For a 68-year-old Phoenix traveler with a $6,500 14-day Riviera Maya trip, an AXA Platinum + CFAR policy costs approximately $480–$560 — about 7–8% of trip cost — and provides comprehensive protection for medical, evacuation, cancellation, and CFAR scenarios.",
+            "AXA Assistance USA Platinum with CFAR is the top choice for Phoenix seniors over 65 traveling to Mexico. AXA includes $500,000 in medical evacuation, $250,000 in emergency medical, and 75% CFAR with concierge medical assistance. For a 68-year-old Phoenix traveler with a $6,500 14-day Riviera Maya trip, an AXA Platinum + CFAR policy costs approximately $480–$560, about 7–8% of trip cost, and provides comprehensive protection for medical, evacuation, cancellation, and CFAR scenarios.",
         },
         {
           question: "Q: Is there a CFAR option for a Mexico cruise departing from Los Angeles?",
           answer:
-            "Yes. Mexico cruises departing from Los Angeles, San Diego, or Houston — common choices for Phoenix travelers — qualify for CFAR coverage on the cruise cost, flights from Phoenix Sky Harbor to the departure port, and any pre-cruise hotel bookings. Travelex Travel Select + CFAR is the most popular choice for Phoenix cruisers, covering the full cruise line deposit, airfare, and pre-cruise hotel in a single policy. Purchase within 21 days of the cruise deposit to ensure CFAR eligibility.",
+            "Yes. Mexico cruises departing from Los Angeles, San Diego, or Houston, common choices for Phoenix travelers, qualify for CFAR coverage on the cruise cost, flights from Phoenix Sky Harbor to the departure port, and any pre-cruise hotel bookings. Travelex Travel Select + CFAR is the most popular choice for Phoenix cruisers, covering the full cruise line deposit, airfare, and pre-cruise hotel in a single policy. Purchase within 21 days of the cruise deposit to ensure CFAR eligibility.",
         },
       ],
     },
@@ -7304,7 +7304,7 @@ const mexicoTravelInsuranceSeniorsOver60PhoenixPost: BlogPost = {
   },
   keyTakeaways: {
     items: [
-      "Mexico travel insurance for Phoenix seniors over 60 costs an average of $88–$248/month depending on age, trip cost, and coverage level — significantly more than younger travelers due to higher medical risk.",
+      "Mexico travel insurance for Phoenix seniors over 60 costs an average of $88–$248/month depending on age, trip cost, and coverage level, significantly more than younger travelers due to higher medical risk.",
       "Medicare covers zero expenses in Mexico, and travelers over 65 are hospitalized in Mexico at a rate 4.3x higher than travelers aged 25–44.",
       "The most critical coverage for Phoenix seniors traveling to Mexico is medical evacuation ($500,000 minimum) combined with emergency medical ($250,000 minimum).",
       "Pre-existing condition waiver purchased within 14 days of the first trip deposit is essential for seniors with hypertension, diabetes, heart disease, or other common conditions.",
@@ -7316,7 +7316,7 @@ const mexicoTravelInsuranceSeniorsOver60PhoenixPost: BlogPost = {
     {
       type: "p",
       text:
-        "Mexico travel insurance for Phoenix seniors over 60 costs an average of $88–$248/month depending on age, trip cost, and coverage level — significantly more than younger travelers due to higher medical risk (Squaremouth, 2024). Medicare covers zero expenses in Mexico. The most critical coverage for Phoenix seniors traveling to Mexico is medical evacuation ($500,000 minimum) combined with emergency medical ($250,000 minimum) and a pre-existing condition waiver purchased within 14 days of the first trip deposit. Without these coverages, a single cardiac event in Los Cabos can generate $65,000–$95,000 in out-of-pocket costs.",
+        "Mexico travel insurance for Phoenix seniors over 60 costs an average of $88–$248/month depending on age, trip cost, and coverage level, significantly more than younger travelers due to higher medical risk (Squaremouth, 2024). Medicare covers zero expenses in Mexico. The most critical coverage for Phoenix seniors traveling to Mexico is medical evacuation ($500,000 minimum) combined with emergency medical ($250,000 minimum) and a pre-existing condition waiver purchased within 14 days of the first trip deposit. Without these coverages, a single cardiac event in Los Cabos can generate $65,000–$95,000 in out-of-pocket costs.",
     },
 
     { type: "h2", text: "Why Mexico Travel Insurance Is More Urgent for Phoenix Seniors" },
@@ -7364,17 +7364,17 @@ const mexicoTravelInsuranceSeniorsOver60PhoenixPost: BlogPost = {
     {
       type: "p",
       text:
-        "Most Phoenix seniors over 60 have at least one pre-existing condition — hypertension, diabetes, heart disease, COPD, or a history of cancer. Without a pre-existing condition waiver, any medical event in Mexico related to these conditions is excluded from coverage.",
+        "Most Phoenix seniors over 60 have at least one pre-existing condition, hypertension, diabetes, heart disease, COPD, or a history of cancer. Without a pre-existing condition waiver, any medical event in Mexico related to these conditions is excluded from coverage.",
     },
     {
       type: "p",
       text:
-        "To qualify for a pre-existing condition waiver: (1) Purchase your Mexico travel insurance within 14 days of your first trip deposit (Allianz) or within 21 days (AXA, Travelex); (2) Be medically stable — no change in treatment, medication dosage, or symptoms in the 90–180 days before purchase, depending on the carrier; (3) Be able to travel on the policy's purchase date.",
+        "To qualify for a pre-existing condition waiver: (1) Purchase your Mexico travel insurance within 14 days of your first trip deposit (Allianz) or within 21 days (AXA, Travelex); (2) Be medically stable, no change in treatment, medication dosage, or symptoms in the 90–180 days before purchase, depending on the carrier; (3) Be able to travel on the policy's purchase date.",
     },
     {
       type: "p",
       text:
-        "AXA Assistance USA defines stability as 180 days — the longest look-back period of major carriers. Allianz requires 120 days of stability. Seven Corners requires 180 days. For Phoenix seniors managing active conditions, Trawick International's 60-day stability requirement is the most accessible pre-existing condition waiver on the market.",
+        "AXA Assistance USA defines stability as 180 days, the longest look-back period of major carriers. Allianz requires 120 days of stability. Seven Corners requires 180 days. For Phoenix seniors managing active conditions, Trawick International's 60-day stability requirement is the most accessible pre-existing condition waiver on the market.",
     },
 
     { type: "h2", text: "Best Mexico Travel Insurance Carriers for Phoenix Seniors" },
@@ -7395,7 +7395,7 @@ const mexicoTravelInsuranceSeniorsOver60PhoenixPost: BlogPost = {
         ["Seven Corners Roundtrip Elite", "No max age", "Up to $500,000", "Up to $1,000,000", "180 days", "Yes"],
         ["Travelex Travel Select", "No max age", "Up to $500,000", "Up to $1,000,000", "60 days (Trawick)", "Yes"],
         ["GeoBlue Voyager", "No max age", "Unlimited", "Up to $500,000", "Requires GeoBlue health plan", "No"],
-        ["Medjet Assist (evacuation only)", "No max age", "Unlimited evacuation", "Unlimited", "N/A — evacuation only", "No"],
+        ["Medjet Assist (evacuation only)", "No max age", "Unlimited evacuation", "Unlimited", "N/A, evacuation only", "No"],
       ],
     },
 
@@ -7403,12 +7403,12 @@ const mexicoTravelInsuranceSeniorsOver60PhoenixPost: BlogPost = {
     {
       type: "p",
       text:
-        "Medigap Plans C, D, F, G, M, and N include a foreign travel emergency benefit — but with critical limitations. Coverage pays 80% of emergency care costs after a $250 deductible, up to a $50,000 lifetime maximum (not per-trip). The benefit applies only during the first 60 consecutive days of a trip outside the U.S.",
+        "Medigap Plans C, D, F, G, M, and N include a foreign travel emergency benefit, but with critical limitations. Coverage pays 80% of emergency care costs after a $250 deductible, up to a $50,000 lifetime maximum (not per-trip). The benefit applies only during the first 60 consecutive days of a trip outside the U.S.",
     },
     {
       type: "p",
       text:
-        "The $50,000 lifetime cap is the most dangerous limitation. A Phoenix senior who has a medical emergency in Mexico and exhausts the $50,000 Medigap lifetime cap has zero international coverage for all future Mexico or international travel — permanently. Supplementing Medigap with a dedicated Mexico travel insurance policy preserves the lifetime cap for genuine emergencies.",
+        "The $50,000 lifetime cap is the most dangerous limitation. A Phoenix senior who has a medical emergency in Mexico and exhausts the $50,000 Medigap lifetime cap has zero international coverage for all future Mexico or international travel, permanently. Supplementing Medigap with a dedicated Mexico travel insurance policy preserves the lifetime cap for genuine emergencies.",
     },
 
     { type: "h2", text: "Frequently Asked Questions: Mexico Travel Insurance for Phoenix Seniors" },
@@ -7418,12 +7418,12 @@ const mexicoTravelInsuranceSeniorsOver60PhoenixPost: BlogPost = {
         {
           question: "Q: Does Medicare cover any medical costs in Mexico?",
           answer:
-            "Standard Medicare Part A and Part B cover zero medical expenses in Mexico without exception (CMS.gov, 2024). Medicare Advantage plans vary — some include limited emergency coverage within 25 miles of the U.S. border or provide small emergency benefits globally. Verify your specific Medicare Advantage plan's international emergency terms before departure. Medigap (Medicare Supplement) Plans C, D, F, G, M, and N include a $50,000 lifetime maximum foreign travel emergency benefit with an 80/20 cost share after a $250 deductible.",
+            "Standard Medicare Part A and Part B cover zero medical expenses in Mexico without exception (CMS.gov, 2024). Medicare Advantage plans vary, some include limited emergency coverage within 25 miles of the U.S. border or provide small emergency benefits globally. Verify your specific Medicare Advantage plan's international emergency terms before departure. Medigap (Medicare Supplement) Plans C, D, F, G, M, and N include a $50,000 lifetime maximum foreign travel emergency benefit with an 80/20 cost share after a $250 deductible.",
         },
         {
           question: "Q: What is the best Mexico travel insurance for a 70-year-old Phoenix traveler?",
           answer:
-            "Allianz AllTrips Premier is the top recommendation for Phoenix travelers aged 70 — it covers all ages with no upper limit, provides $500,000 in medical coverage, $1,000,000 in evacuation, and includes CFAR. For a 70-year-old with a $6,500 Riviera Maya trip, an Allianz AllTrips Premier policy costs approximately $420–$480 with CFAR. Seven Corners Roundtrip Elite is the best alternative for 70-year-old travelers with pre-existing conditions due to its competitive underwriting flexibility.",
+            "Allianz AllTrips Premier is the top recommendation for Phoenix travelers aged 70, it covers all ages with no upper limit, provides $500,000 in medical coverage, $1,000,000 in evacuation, and includes CFAR. For a 70-year-old with a $6,500 Riviera Maya trip, an Allianz AllTrips Premier policy costs approximately $420–$480 with CFAR. Seven Corners Roundtrip Elite is the best alternative for 70-year-old travelers with pre-existing conditions due to its competitive underwriting flexibility.",
         },
         {
           question: "Q: Can a Phoenix senior over 80 get Mexico travel insurance?",
@@ -7433,17 +7433,17 @@ const mexicoTravelInsuranceSeniorsOver60PhoenixPost: BlogPost = {
         {
           question: "Q: What pre-existing conditions are excluded from Mexico travel insurance for seniors?",
           answer:
-            "No conditions are automatically excluded if the pre-existing condition waiver is properly purchased. The waiver covers all stable pre-existing conditions — hypertension, diabetes, heart disease, COPD, arthritis, prior stroke, and cancer in remission. Conditions that are not stable — recent hospitalization, recent medication change, active cancer treatment, or unresolved symptoms — are excluded from coverage even with a waiver. Protegrity Insurance reviews each Phoenix client's medical stability status before recommending a carrier to ensure the waiver is valid for their specific conditions.",
+            "No conditions are automatically excluded if the pre-existing condition waiver is properly purchased. The waiver covers all stable pre-existing conditions, hypertension, diabetes, heart disease, COPD, arthritis, prior stroke, and cancer in remission. Conditions that are not stable, recent hospitalization, recent medication change, active cancer treatment, or unresolved symptoms, are excluded from coverage even with a waiver. Protegrity Insurance reviews each Phoenix client's medical stability status before recommending a carrier to ensure the waiver is valid for their specific conditions.",
         },
         {
           question: "Q: Should Phoenix seniors buy an annual Mexico travel insurance plan?",
           answer:
-            "Yes, if you make two or more Mexico trips per year. Allianz AllTrips Premier annual plan costs $388–$488/year for a 65-year-old Phoenix traveler and covers unlimited Mexico (and international) trips of up to 45 days per trip. Two separate single-trip policies for the same traveler cost $248–$312 each — totaling $496–$624 for two trips. The annual plan is more cost-effective for snowbirds, winter visitors to Rocky Point, and Phoenix seniors who visit Mexico seasonally.",
+            "Yes, if you make two or more Mexico trips per year. Allianz AllTrips Premier annual plan costs $388–$488/year for a 65-year-old Phoenix traveler and covers unlimited Mexico (and international) trips of up to 45 days per trip. Two separate single-trip policies for the same traveler cost $248–$312 each, totaling $496–$624 for two trips. The annual plan is more cost-effective for snowbirds, winter visitors to Rocky Point, and Phoenix seniors who visit Mexico seasonally.",
         },
         {
           question: "Q: How do I find a Spanish-speaking doctor in Mexico if I have a medical emergency?",
           answer:
-            "Your travel insurance carrier's 24/7 assistance line — available in English — locates the nearest appropriate medical facility and arranges translation services if needed. Allianz's assistance network covers 1,200+ hospitals in Mexico with English-speaking staff coordination. AXA Assistance USA provides direct telemedicine consultation in English before directing you to a Mexico facility. All JCI-accredited hospitals in Mexico's major resort destinations (Cancún, Los Cabos, Puerto Vallarta) have dedicated international patient departments with English-speaking medical staff.",
+            "Your travel insurance carrier's 24/7 assistance line, available in English, locates the nearest appropriate medical facility and arranges translation services if needed. Allianz's assistance network covers 1,200+ hospitals in Mexico with English-speaking staff coordination. AXA Assistance USA provides direct telemedicine consultation in English before directing you to a Mexico facility. All JCI-accredited hospitals in Mexico's major resort destinations (Cancún, Los Cabos, Puerto Vallarta) have dedicated international patient departments with English-speaking medical staff.",
         },
       ],
     },
@@ -7521,8 +7521,8 @@ const bestMexicoTravelInsuranceCompaniesPhoenixPost: BlogPost = {
   keyTakeaways: {
     items: [
       "The best Mexico travel insurance companies for Phoenix travelers in 2026 are Allianz Travel (best overall and annual plans), Seven Corners (best value), AXA Assistance USA (best premium option), GeoBlue (best for Blue Cross members), and Global Rescue (best for remote Mexico).",
-      "Each carrier has specific strengths that align with different Phoenix travel profiles — from Rocky Point weekenders to Riviera Maya resort travelers to Baja California road trippers.",
-      "Allianz AllTrips Premier annual plan covers unlimited Mexico trips for $288–$488/year — the best value for Phoenix residents who make 2+ Mexico visits annually.",
+      "Each carrier has specific strengths that align with different Phoenix travel profiles, from Rocky Point weekenders to Riviera Maya resort travelers to Baja California road trippers.",
+      "Allianz AllTrips Premier annual plan covers unlimited Mexico trips for $288–$488/year, the best value for Phoenix residents who make 2+ Mexico visits annually.",
       "Seven Corners Roundtrip Elite provides $500,000 medical coverage and $1,000,000 evacuation for $20–$30 less than Allianz for equivalent single-trip coverage.",
       "Protegrity Insurance compares quotes from 30+ carriers to find Phoenix travelers the best Mexico travel insurance at competitive rates.",
     ],
@@ -7532,7 +7532,7 @@ const bestMexicoTravelInsuranceCompaniesPhoenixPost: BlogPost = {
     {
       type: "p",
       text:
-        "The best Mexico travel insurance companies for Phoenix travelers in 2026 are Allianz Travel (best overall and annual plans), Seven Corners (best value for comprehensive coverage), AXA Assistance USA (best premium option with concierge service), GeoBlue (best for existing Blue Cross members), and Global Rescue (best for remote Mexico and adventure travel). Each carrier has specific strengths that align with different Phoenix travel profiles — from Rocky Point weekenders to Riviera Maya resort travelers to Baja California road trippers.",
+        "The best Mexico travel insurance companies for Phoenix travelers in 2026 are Allianz Travel (best overall and annual plans), Seven Corners (best value for comprehensive coverage), AXA Assistance USA (best premium option with concierge service), GeoBlue (best for existing Blue Cross members), and Global Rescue (best for remote Mexico and adventure travel). Each carrier has specific strengths that align with different Phoenix travel profiles, from Rocky Point weekenders to Riviera Maya resort travelers to Baja California road trippers.",
     },
 
     { type: "h2", text: "Full Carrier Comparison: Mexico Travel Insurance for Phoenix Residents" },
@@ -7581,7 +7581,7 @@ const bestMexicoTravelInsuranceCompaniesPhoenixPost: BlogPost = {
           "Unlimited",
           "$500,000",
           "No",
-          "N/A — no exclusion",
+          "N/A, no exclusion",
           "Existing BCBS members",
           "$88–$122",
         ],
@@ -7637,35 +7637,35 @@ const bestMexicoTravelInsuranceCompaniesPhoenixPost: BlogPost = {
     {
       type: "p",
       text:
-        "Allianz is Protegrity Insurance's most-recommended carrier for Phoenix travelers to Mexico, particularly for families and annual plan buyers. The AllTrips Premier annual plan covers unlimited Mexico trips (up to 45 days per trip) for $288–$488/year — the best value for Phoenix residents who make 2+ Mexico visits annually. Allianz's 24/7 Global Assistance network covers 1,200+ Mexico hospitals and processes claims in 7–14 business days. Their CFAR benefit requires purchase within 14 days of the first deposit — the shortest window of major carriers, so Phoenix travelers must act quickly after making their first booking.",
+        "Allianz is Protegrity Insurance's most-recommended carrier for Phoenix travelers to Mexico, particularly for families and annual plan buyers. The AllTrips Premier annual plan covers unlimited Mexico trips (up to 45 days per trip) for $288–$488/year, the best value for Phoenix residents who make 2+ Mexico visits annually. Allianz's 24/7 Global Assistance network covers 1,200+ Mexico hospitals and processes claims in 7–14 business days. Their CFAR benefit requires purchase within 14 days of the first deposit, the shortest window of major carriers, so Phoenix travelers must act quickly after making their first booking.",
     },
 
     { type: "h2", text: "Seven Corners: Best Value Comprehensive Coverage for Phoenix Travelers" },
     {
       type: "p",
       text:
-        "Seven Corners Roundtrip Elite provides $500,000 medical coverage, $1,000,000 evacuation, CFAR, and a 20-day pre-existing condition waiver window — the most generous combination of limits and flexibility of any mid-price carrier. For a 40-year-old Phoenix traveler with a $3,200 Cabo trip, Seven Corners averages $128–$168 — $20–$30 less than Allianz for equivalent coverage. Seven Corners uses third-party provider networks in Mexico rather than a proprietary network, which means pre-authorization processes can take longer than Allianz at busy resort hospital locations.",
+        "Seven Corners Roundtrip Elite provides $500,000 medical coverage, $1,000,000 evacuation, CFAR, and a 20-day pre-existing condition waiver window, the most generous combination of limits and flexibility of any mid-price carrier. For a 40-year-old Phoenix traveler with a $3,200 Cabo trip, Seven Corners averages $128–$168, $20–$30 less than Allianz for equivalent coverage. Seven Corners uses third-party provider networks in Mexico rather than a proprietary network, which means pre-authorization processes can take longer than Allianz at busy resort hospital locations.",
     },
 
     { type: "h2", text: "GeoBlue Voyager: Best for Phoenix Blue Cross Blue Shield Members" },
     {
       type: "p",
       text:
-        "GeoBlue (underwritten by 4 Ever Life International, endorsed by BCBS) provides unlimited medical coverage in Mexico with direct billing at 190+ network hospitals — including major facilities in Cancún, Los Cabos, Puerto Vallarta, and Mexico City. There is no pre-existing condition exclusion because GeoBlue underwrites on a guaranteed issue basis for travelers who hold an active U.S. health insurance plan. GeoBlue does not offer CFAR and does not include trip cancellation — it is a pure travel medical product that complements rather than replaces a comprehensive travel policy.",
+        "GeoBlue (underwritten by 4 Ever Life International, endorsed by BCBS) provides unlimited medical coverage in Mexico with direct billing at 190+ network hospitals, including major facilities in Cancún, Los Cabos, Puerto Vallarta, and Mexico City. There is no pre-existing condition exclusion because GeoBlue underwrites on a guaranteed issue basis for travelers who hold an active U.S. health insurance plan. GeoBlue does not offer CFAR and does not include trip cancellation, it is a pure travel medical product that complements rather than replaces a comprehensive travel policy.",
     },
 
     { type: "h2", text: "Global Rescue and Medjet Assist: Specialized Evacuation for Phoenix Adventurers" },
     {
       type: "p",
       text:
-        "Phoenix travelers heading to remote Mexico destinations — Copper Canyon, Baja back-country, the Yucatán interior, or offshore Pacific islands — face evacuation scenarios that standard travel insurance handles poorly. Global Rescue operates its own extraction teams and can retrieve insured travelers from field locations inaccessible by conventional ambulance. Medjet Assist provides unlimited evacuation to the traveler's hospital of choice — including Banner University Medical Center or Mayo Clinic Arizona in Phoenix — once medically stable. Both are annual membership programs ($228–$488/year) that complement, not replace, comprehensive medical and cancellation travel insurance.",
+        "Phoenix travelers heading to remote Mexico destinations, Copper Canyon, Baja back-country, the Yucatán interior, or offshore Pacific islands, face evacuation scenarios that standard travel insurance handles poorly. Global Rescue operates its own extraction teams and can retrieve insured travelers from field locations inaccessible by conventional ambulance. Medjet Assist provides unlimited evacuation to the traveler's hospital of choice, including Banner University Medical Center or Mayo Clinic Arizona in Phoenix, once medically stable. Both are annual membership programs ($228–$488/year) that complement, not replace, comprehensive medical and cancellation travel insurance.",
     },
 
     { type: "h2", text: "How Protegrity Insurance Selects the Right Carrier for Each Phoenix Client" },
     {
       type: "p",
       text:
-        "Protegrity Insurance uses a 7-point carrier selection framework for Mexico travel insurance: (1) Traveler age and health status; (2) Destination — resort vs. remote vs. border crossing; (3) Trip cost and non-refundable deposit amount; (4) Pre-existing condition stability period; (5) Need for CFAR; (6) Activity level (beach vs. adventure sports); (7) Annual vs. single-trip frequency. This framework, applied across our 30+ carrier panel, consistently produces Mexico travel insurance placements that save Phoenix clients $40–$120 per trip compared to direct carrier purchases.",
+        "Protegrity Insurance uses a 7-point carrier selection framework for Mexico travel insurance: (1) Traveler age and health status; (2) Destination, resort vs. remote vs. border crossing; (3) Trip cost and non-refundable deposit amount; (4) Pre-existing condition stability period; (5) Need for CFAR; (6) Activity level (beach vs. adventure sports); (7) Annual vs. single-trip frequency. This framework, applied across our 30+ carrier panel, consistently produces Mexico travel insurance placements that save Phoenix clients $40–$120 per trip compared to direct carrier purchases.",
     },
 
     { type: "h2", text: "Frequently Asked Questions: Best Mexico Travel Insurance Carriers" },
@@ -7675,27 +7675,27 @@ const bestMexicoTravelInsuranceCompaniesPhoenixPost: BlogPost = {
         {
           question: "Q: Which Mexico travel insurance company has the best claims service?",
           answer:
-            "Allianz Travel earns the highest Mexico claims satisfaction ratings in independent surveys — J.D. Power 2024 Travel Insurance Study ranked Allianz first overall for claims processing speed and customer communication. AXA Assistance USA ranked second. Both carriers process complete claims in 7–14 business days. Seven Corners averages 10–18 business days. Protegrity Insurance monitors all client claims and escalates delayed claims directly with carrier claims management on behalf of Phoenix policyholders.",
+            "Allianz Travel earns the highest Mexico claims satisfaction ratings in independent surveys, J.D. Power 2024 Travel Insurance Study ranked Allianz first overall for claims processing speed and customer communication. AXA Assistance USA ranked second. Both carriers process complete claims in 7–14 business days. Seven Corners averages 10–18 business days. Protegrity Insurance monitors all client claims and escalates delayed claims directly with carrier claims management on behalf of Phoenix policyholders.",
         },
         {
           question: "Q: Is there a Mexico travel insurance that covers pre-existing conditions without exclusion?",
           answer:
-            "GeoBlue Voyager covers pre-existing conditions without exclusion, without a stability requirement, and without a waiver purchase deadline — making it the most accessible option for Phoenix travelers with active or recently changed medical conditions. GeoBlue is available to travelers with any active U.S. health insurance plan and provides unlimited medical coverage in Mexico. The tradeoff: GeoBlue does not include trip cancellation, CFAR, baggage, or evacuation — supplemental coverage for those benefits requires a separate policy.",
+            "GeoBlue Voyager covers pre-existing conditions without exclusion, without a stability requirement, and without a waiver purchase deadline, making it the most accessible option for Phoenix travelers with active or recently changed medical conditions. GeoBlue is available to travelers with any active U.S. health insurance plan and provides unlimited medical coverage in Mexico. The tradeoff: GeoBlue does not include trip cancellation, CFAR, baggage, or evacuation, supplemental coverage for those benefits requires a separate policy.",
         },
         {
           question: "Q: What Mexico travel insurance do you recommend for a Phoenix family of four?",
           answer:
-            "Travelex Travel Select + CFAR is the top family recommendation for Phoenix families traveling to Mexico. Children 17 and under are covered free when traveling with an insured adult — a significant savings for families with multiple children. Coverage includes $500,000 medical, $1,000,000 evacuation, CFAR, and baggage protection. For a Phoenix family of 4 with a $5,600 Puerto Vallarta trip, Travelex covers all four travelers for approximately $248–$312 with CFAR — the same price as insuring two adults with most competitors.",
+            "Travelex Travel Select + CFAR is the top family recommendation for Phoenix families traveling to Mexico. Children 17 and under are covered free when traveling with an insured adult, a significant savings for families with multiple children. Coverage includes $500,000 medical, $1,000,000 evacuation, CFAR, and baggage protection. For a Phoenix family of 4 with a $5,600 Puerto Vallarta trip, Travelex covers all four travelers for approximately $248–$312 with CFAR, the same price as insuring two adults with most competitors.",
         },
         {
           question: "Q: Which carrier is best for a Phoenix couple on a Mexico cruise?",
           answer:
-            "Travelex Travel Select is the top recommendation for Phoenix couples on Mexico cruises — it covers cruise interruption (if the ship misses a port due to weather or mechanical issues), itinerary change, and missed connection at Los Angeles, San Diego, or Houston departure ports. Allianz AllTrips Premier is the best alternative for Phoenix couples who cruise to Mexico annually and want a single annual policy covering their cruise and all other Mexico trips throughout the year.",
+            "Travelex Travel Select is the top recommendation for Phoenix couples on Mexico cruises, it covers cruise interruption (if the ship misses a port due to weather or mechanical issues), itinerary change, and missed connection at Los Angeles, San Diego, or Houston departure ports. Allianz AllTrips Premier is the best alternative for Phoenix couples who cruise to Mexico annually and want a single annual policy covering their cruise and all other Mexico trips throughout the year.",
         },
         {
           question: "Q: Does travel insurance cover a Mexico destination wedding?",
           answer:
-            "Yes. Mexico destination weddings from Phoenix — increasingly popular at Cabo San Lucas, Puerto Vallarta, and Tulum — qualify for trip cancellation insurance covering non-refundable wedding venue deposits, catering contracts, and travel costs for the wedding party. AXA Assistance USA and Allianz both have destination wedding specialists who structure group travel policies for wedding parties traveling from Phoenix. CFAR is particularly valuable for destination weddings where vendor deposits may be non-refundable 90+ days in advance.",
+            "Yes. Mexico destination weddings from Phoenix, increasingly popular at Cabo San Lucas, Puerto Vallarta, and Tulum, qualify for trip cancellation insurance covering non-refundable wedding venue deposits, catering contracts, and travel costs for the wedding party. AXA Assistance USA and Allianz both have destination wedding specialists who structure group travel policies for wedding parties traveling from Phoenix. CFAR is particularly valuable for destination weddings where vendor deposits may be non-refundable 90+ days in advance.",
         },
         {
           question: "Q: Can I compare Mexico travel insurance quotes through Protegrity Insurance?",
@@ -7782,7 +7782,7 @@ const mexicoTravelInsuranceChecklistPhoenixPost: BlogPost = {
       "Phoenix residents traveling to Mexico need six core protections: emergency medical coverage ($250,000+ minimum), medical evacuation ($500,000+ minimum), trip cancellation, emergency dental, baggage protection, and Mexico auto insurance if driving.",
       "Total comprehensive coverage costs Phoenix travelers $28–$96/month for a standard Mexico vacation.",
       "Without proper coverage, a single medical emergency in Mexico can cost $28,000–$95,000 out of pocket.",
-      "Most U.S. health insurance provides zero coverage in Mexico — 97% of standard Arizona health plans provide no useful Mexico coverage beyond 25 miles from the border.",
+      "Most U.S. health insurance provides zero coverage in Mexico, 97% of standard Arizona health plans provide no useful Mexico coverage beyond 25 miles from the border.",
       "This complete checklist covers every step from booking through return to ensure Phoenix travelers are fully protected.",
     ],
   },
@@ -7791,7 +7791,7 @@ const mexicoTravelInsuranceChecklistPhoenixPost: BlogPost = {
     {
       type: "p",
       text:
-        "Phoenix residents traveling to Mexico need six core protections: (1) Emergency medical coverage ($250,000+ minimum); (2) Medical evacuation ($500,000+ minimum); (3) Trip cancellation for covered events or CFAR for any reason; (4) Emergency dental coverage; (5) Baggage loss and theft protection; and (6) Mexico auto insurance if driving any vehicle — personal or rental — across the border. Total comprehensive coverage costs Phoenix travelers $28–$96/month for a standard Mexico vacation. Without it, a single medical emergency in Mexico can cost $28,000–$95,000 out of pocket. This checklist covers every step from booking to return.",
+        "Phoenix residents traveling to Mexico need six core protections: (1) Emergency medical coverage ($250,000+ minimum); (2) Medical evacuation ($500,000+ minimum); (3) Trip cancellation for covered events or CFAR for any reason; (4) Emergency dental coverage; (5) Baggage loss and theft protection; and (6) Mexico auto insurance if driving any vehicle, personal or rental, across the border. Total comprehensive coverage costs Phoenix travelers $28–$96/month for a standard Mexico vacation. Without it, a single medical emergency in Mexico can cost $28,000–$95,000 out of pocket. This checklist covers every step from booking to return.",
     },
 
     { type: "h2", text: "The Phoenix Traveler's Mexico Insurance Checklist: Before Booking" },
@@ -7799,19 +7799,19 @@ const mexicoTravelInsuranceChecklistPhoenixPost: BlogPost = {
       type: "p",
       lead: "Verify your U.S. health insurance Mexico coverage:",
       text:
-        "Call your Arizona health plan — Blue Cross Blue Shield of Arizona at (602) 864-4400, Aetna at (888) 800-0729, or Banner Health Network at (602) 747-7000 — and ask specifically: 'What are my emergency medical benefits in Mexico?' Document the answer in writing. 97% of standard Arizona health plans provide no useful Mexico coverage beyond 25 miles from the border.",
+        "Call your Arizona health plan, Blue Cross Blue Shield of Arizona at (602) 864-4400, Aetna at (888) 800-0729, or Banner Health Network at (602) 747-7000, and ask specifically: 'What are my emergency medical benefits in Mexico?' Document the answer in writing. 97% of standard Arizona health plans provide no useful Mexico coverage beyond 25 miles from the border.",
     },
     {
       type: "p",
       lead: "Check Medicare coverage if over 65:",
       text:
-        "Contact 1-800-MEDICARE (1-800-633-4227) and confirm your specific plan's international emergency benefits. Request documentation in writing. Do not rely on verbal assurances that 'Medicare covers emergencies' — it does not, in Mexico.",
+        "Contact 1-800-MEDICARE (1-800-633-4227) and confirm your specific plan's international emergency benefits. Request documentation in writing. Do not rely on verbal assurances that 'Medicare covers emergencies', it does not, in Mexico.",
     },
     {
       type: "p",
       lead: "Identify pre-existing conditions that require a waiver:",
       text:
-        "List every condition for which you have received treatment, taken medication, or had symptoms in the past 12 months. These conditions require a pre-existing condition waiver — which must be purchased within 14–21 days of your first Mexico trip deposit.",
+        "List every condition for which you have received treatment, taken medication, or had symptoms in the past 12 months. These conditions require a pre-existing condition waiver, which must be purchased within 14–21 days of your first Mexico trip deposit.",
     },
 
     { type: "h2", text: "The Phoenix Traveler's Mexico Insurance Checklist: At Booking" },
@@ -7828,7 +7828,7 @@ const mexicoTravelInsuranceChecklistPhoenixPost: BlogPost = {
         [
           "Add CFAR if desired",
           "Same day as policy purchase, within 14–21 day window",
-          "Cannot be added later — must be simultaneous",
+          "Cannot be added later, must be simultaneous",
         ],
         [
           "Insure full non-refundable trip cost",
@@ -7843,7 +7843,7 @@ const mexicoTravelInsuranceChecklistPhoenixPost: BlogPost = {
         [
           "Purchase Mexico auto insurance if driving",
           "Before crossing the border",
-          "U.S. insurance invalid in Mexico — criminal liability",
+          "U.S. insurance invalid in Mexico, criminal liability",
         ],
         [
           "Purchase Mexico rental car insurance if renting",
@@ -7867,7 +7867,7 @@ const mexicoTravelInsuranceChecklistPhoenixPost: BlogPost = {
     {
       type: "p",
       text:
-        "- Download your digital insurance card to your phone — accessible offline if data is unavailable in Mexico.",
+        "- Download your digital insurance card to your phone, accessible offline if data is unavailable in Mexico.",
     },
     {
       type: "p",
@@ -7882,7 +7882,7 @@ const mexicoTravelInsuranceChecklistPhoenixPost: BlogPost = {
     {
       type: "p",
       text:
-        "- Verify your Mexico destination's U.S. State Department advisory level at travel.state.gov — current as of the day before departure.",
+        "- Verify your Mexico destination's U.S. State Department advisory level at travel.state.gov, current as of the day before departure.",
     },
     {
       type: "p",
@@ -7984,7 +7984,7 @@ const mexicoTravelInsuranceChecklistPhoenixPost: BlogPost = {
       type: "p",
       lead: "Trip interruption:",
       text:
-        "Contact your insurer's assistance line before making any new travel arrangements — booking a flight home without pre-authorization may result in reimbursement denial. Your insurer's assistance team books the return transportation directly and bills it to the policy when possible.",
+        "Contact your insurer's assistance line before making any new travel arrangements, booking a flight home without pre-authorization may result in reimbursement denial. Your insurer's assistance team books the return transportation directly and bills it to the policy when possible.",
     },
 
     { type: "h2", text: "What Mexico Travel Insurance Does NOT Cover: The Complete Exclusion List" },
@@ -7998,7 +7998,7 @@ const mexicoTravelInsuranceChecklistPhoenixPost: BlogPost = {
           "Elective procedure, not an emergency",
           "No insurance covers planned elective care",
         ],
-        ["Alcohol-related incidents (intoxicated)", "Willful intoxication exclusion", "None — personal responsibility"],
+        ["Alcohol-related incidents (intoxicated)", "Willful intoxication exclusion", "None, personal responsibility"],
         [
           "Pre-existing condition without waiver",
           "Not purchased within required window",
@@ -8012,7 +8012,7 @@ const mexicoTravelInsuranceChecklistPhoenixPost: BlogPost = {
         [
           "Fear of travel / anxiety about Mexico",
           "Not a covered cancellation reason",
-          "CFAR covers this — purchase within 14 days",
+          "CFAR covers this, purchase within 14 days",
         ],
         ["Mexico travel for drug purchases", "Illegal purpose exclusion", "No insurance product covers illegal activity"],
         [
@@ -8032,27 +8032,27 @@ const mexicoTravelInsuranceChecklistPhoenixPost: BlogPost = {
         {
           question: "Q: How much does comprehensive Mexico travel insurance cost for a Phoenix family?",
           answer:
-            "A Phoenix family of four (2 adults aged 40, 2 children) with a $5,600 Puerto Vallarta 7-day trip pays $248–$312 for comprehensive coverage including medical ($500K), evacuation ($1M), trip cancellation, baggage, and CFAR through Travelex Travel Select. Children 17 and under travel free as additional insureds under one adult's Travelex policy. Per-person cost averages $62–$78 for the trip — about 4.4–5.6% of total trip cost.",
+            "A Phoenix family of four (2 adults aged 40, 2 children) with a $5,600 Puerto Vallarta 7-day trip pays $248–$312 for comprehensive coverage including medical ($500K), evacuation ($1M), trip cancellation, baggage, and CFAR through Travelex Travel Select. Children 17 and under travel free as additional insureds under one adult's Travelex policy. Per-person cost averages $62–$78 for the trip, about 4.4–5.6% of total trip cost.",
         },
         {
           question: "Q: What is the single most important Mexico travel insurance coverage for Phoenix travelers?",
           answer:
-            "Medical evacuation. A cardiac event, serious accident, or stroke in Puerto Peñasco requires an air ambulance to Phoenix averaging $38,000–$65,000. In Cancún, evacuation costs $68,000–$95,000. These costs are required upfront or by credit card guarantee — Mexican hospitals will not release patients for transport without payment confirmation. Medical evacuation coverage ($500,000 minimum) from Allianz or Seven Corners costs $8–$18/month as part of a comprehensive policy and is the difference between a manageable emergency and a financial catastrophe.",
+            "Medical evacuation. A cardiac event, serious accident, or stroke in Puerto Peñasco requires an air ambulance to Phoenix averaging $38,000–$65,000. In Cancún, evacuation costs $68,000–$95,000. These costs are required upfront or by credit card guarantee, Mexican hospitals will not release patients for transport without payment confirmation. Medical evacuation coverage ($500,000 minimum) from Allianz or Seven Corners costs $8–$18/month as part of a comprehensive policy and is the difference between a manageable emergency and a financial catastrophe.",
         },
         {
           question: "Q: Do I need Mexico travel insurance for a day trip to Nogales?",
           answer:
-            "For a same-day border crossing to Nogales, Sonora — shopping, dining, dental appointment — a full comprehensive travel policy is not necessary but medical coverage is still strongly recommended. A day-trip Mexico medical policy from Trawick International costs $4–$8 for 24-hour coverage with $50,000 in emergency medical. If you are driving to Nogales, a one-day Mexico auto insurance policy from Baja Bound costs $12–$18 and is legally required the moment you cross the border.",
+            "For a same-day border crossing to Nogales, Sonora, shopping, dining, dental appointment, a full comprehensive travel policy is not necessary but medical coverage is still strongly recommended. A day-trip Mexico medical policy from Trawick International costs $4–$8 for 24-hour coverage with $50,000 in emergency medical. If you are driving to Nogales, a one-day Mexico auto insurance policy from Baja Bound costs $12–$18 and is legally required the moment you cross the border.",
         },
         {
           question: "Q: What happens if I get COVID-19 in Mexico?",
           answer:
-            "As of April 2026, all major Mexico travel insurance carriers treat COVID-19 as a standard illness. Hospitalization for COVID-19 is covered under emergency medical up to your policy limit. A positive COVID-19 test before departure that prevents travel is a covered trip cancellation reason with medical documentation. Quarantine costs — if you test positive in Mexico and must extend your stay — are covered under trip interruption at most carriers. A CFAR policy covers cancellation due to COVID concerns without any illness documentation requirement.",
+            "As of April 2026, all major Mexico travel insurance carriers treat COVID-19 as a standard illness. Hospitalization for COVID-19 is covered under emergency medical up to your policy limit. A positive COVID-19 test before departure that prevents travel is a covered trip cancellation reason with medical documentation. Quarantine costs, if you test positive in Mexico and must extend your stay, are covered under trip interruption at most carriers. A CFAR policy covers cancellation due to COVID concerns without any illness documentation requirement.",
         },
         {
           question: "Q: Can I purchase Mexico travel insurance if I am already in Mexico?",
           answer:
-            "Most carriers will not issue a new Mexico travel insurance policy after you have already departed the U.S. Allianz, Seven Corners, and AXA all require the policy to be purchased before your departure date from the United States. If you are already in Mexico without coverage, IMG Global's expatriate plans are the only major carrier that accepts mid-trip enrollment for travelers already outside the U.S. — with a waiting period of 7 days for pre-existing conditions. Purchase before you leave Phoenix.",
+            "Most carriers will not issue a new Mexico travel insurance policy after you have already departed the U.S. Allianz, Seven Corners, and AXA all require the policy to be purchased before your departure date from the United States. If you are already in Mexico without coverage, IMG Global's expatriate plans are the only major carrier that accepts mid-trip enrollment for travelers already outside the U.S., with a waiting period of 7 days for pre-existing conditions. Purchase before you leave Phoenix.",
         },
         {
           question: "Q: How do I contact Protegrity Insurance to get a Mexico travel insurance quote?",
@@ -8155,7 +8155,7 @@ const motorcycleInsurancePhoenixPost: BlogPost = {
     {
       type: "p",
       text:
-        "Arizona's minimum motorcycle insurance — $25,000/$50,000 bodily injury and $15,000 property damage — costs as little as $34/month in Phoenix but leaves significant financial gaps. A single motorcycle crash in Maricopa County generates an average of $28,000 in medical costs for the rider alone (Arizona Department of Health Services, 2023). Minimum liability covers damage to others; it pays nothing for your own injuries, your bike's repair, or replacement if it is stolen.",
+        "Arizona's minimum motorcycle insurance, $25,000/$50,000 bodily injury and $15,000 property damage, costs as little as $34/month in Phoenix but leaves significant financial gaps. A single motorcycle crash in Maricopa County generates an average of $28,000 in medical costs for the rider alone (Arizona Department of Health Services, 2023). Minimum liability covers damage to others; it pays nothing for your own injuries, your bike's repair, or replacement if it is stolen.",
     },
     {
       type: "p",
@@ -8232,7 +8232,7 @@ const motorcycleInsurancePhoenixPost: BlogPost = {
       type: "p",
       lead: "Helmet law:",
       text:
-        "Arizona does not require helmets for riders 18 and older (ARS § 28-964). However, riders without helmets face higher medical costs after a crash — the average non-helmeted rider incurs 23% more in head injury costs than helmeted riders (NHTSA, 2023). Some carriers apply a 5–8% premium surcharge for policies on riders who document helmet non-use.",
+        "Arizona does not require helmets for riders 18 and older (ARS § 28-964). However, riders without helmets face higher medical costs after a crash, the average non-helmeted rider incurs 23% more in head injury costs than helmeted riders (NHTSA, 2023). Some carriers apply a 5–8% premium surcharge for policies on riders who document helmet non-use.",
     },
     {
       type: "p",
@@ -8259,22 +8259,22 @@ const motorcycleInsurancePhoenixPost: BlogPost = {
         {
           question: "Q: What is the cheapest motorcycle insurance in Phoenix?",
           answer:
-            "USAA offers the lowest rates for eligible military riders at $54/month for full coverage. For non-military Phoenix riders, Progressive averages $58/month for full coverage on a standard cruiser or naked bike. Liability-only minimum coverage starts at $28–$34/month. Rates increase significantly for sport bikes — a Kawasaki Ninja ZX-6R averages $112/month for full coverage due to high crash frequency data.",
+            "USAA offers the lowest rates for eligible military riders at $54/month for full coverage. For non-military Phoenix riders, Progressive averages $58/month for full coverage on a standard cruiser or naked bike. Liability-only minimum coverage starts at $28–$34/month. Rates increase significantly for sport bikes, a Kawasaki Ninja ZX-6R averages $112/month for full coverage due to high crash frequency data.",
         },
         {
           question: "Q: Does my auto insurance cover my motorcycle in Phoenix?",
           answer:
-            "No. Standard Arizona auto insurance policies explicitly exclude motorcycles under ARS § 28-4001 definitions. A motorcycle requires a separate dedicated policy. Some carriers — including Progressive and State Farm — allow you to bundle a motorcycle policy with your existing auto policy for a multi-policy discount of 8–12%, but they remain separate policies with separate premiums and coverage terms.",
+            "No. Standard Arizona auto insurance policies explicitly exclude motorcycles under ARS § 28-4001 definitions. A motorcycle requires a separate dedicated policy. Some carriers, including Progressive and State Farm, allow you to bundle a motorcycle policy with your existing auto policy for a multi-policy discount of 8–12%, but they remain separate policies with separate premiums and coverage terms.",
         },
         {
           question: "Q: Does motorcycle insurance cover custom parts in Phoenix?",
           answer:
-            "Standard motorcycle policies cover factory-installed parts up to the bike's actual cash value. Aftermarket additions — custom exhaust, custom paint, upgraded suspension, GPS systems, luggage systems — require a custom parts and equipment (CPE) rider. Progressive offers CPE coverage up to $30,000/year for $4–$12/month in Phoenix. Document all modifications with photos and receipts at the time of installation.",
+            "Standard motorcycle policies cover factory-installed parts up to the bike's actual cash value. Aftermarket additions, custom exhaust, custom paint, upgraded suspension, GPS systems, luggage systems, require a custom parts and equipment (CPE) rider. Progressive offers CPE coverage up to $30,000/year for $4–$12/month in Phoenix. Document all modifications with photos and receipts at the time of installation.",
         },
         {
           question: "Q: How does monsoon season affect motorcycle insurance claims in Phoenix?",
           answer:
-            "Phoenix's monsoon season (June–September) generates flash flooding, dust storms (haboobs), and high winds that cause comprehensive claims for tipped bikes, flood damage, and debris impact. ADOT recorded 42 weather-related motorcycle incidents in Maricopa County during monsoon season 2023. Comprehensive coverage — which averages $10–$18/month — covers all weather-related damage including monsoon events.",
+            "Phoenix's monsoon season (June–September) generates flash flooding, dust storms (haboobs), and high winds that cause comprehensive claims for tipped bikes, flood damage, and debris impact. ADOT recorded 42 weather-related motorcycle incidents in Maricopa County during monsoon season 2023. Comprehensive coverage, which averages $10–$18/month, covers all weather-related damage including monsoon events.",
         },
         {
           question: "Q: Can I get same-day motorcycle insurance in Phoenix?",
@@ -8370,7 +8370,7 @@ const atvInsurancePhoenixPost: BlogPost = {
     {
       type: "p",
       text:
-        "ATV insurance in Phoenix, AZ costs an average of $24–$48/month depending on the ATV's value, engine size, and coverage level, according to Progressive 2024 rate data for Maricopa County. Arizona does not require ATV insurance for off-road-only use on private land, but any ATV operated on public land or roads — including Tonto National Forest trails and Bureau of Land Management (BLM) areas near Phoenix — must carry liability coverage. Protegrity Insurance recommends full coverage for any ATV worth over $5,000.",
+        "ATV insurance in Phoenix, AZ costs an average of $24–$48/month depending on the ATV's value, engine size, and coverage level, according to Progressive 2024 rate data for Maricopa County. Arizona does not require ATV insurance for off-road-only use on private land, but any ATV operated on public land or roads, including Tonto National Forest trails and Bureau of Land Management (BLM) areas near Phoenix, must carry liability coverage. Protegrity Insurance recommends full coverage for any ATV worth over $5,000.",
     },
 
     { type: "h2", text: "Why Phoenix ATV Owners Need Dedicated Coverage" },
@@ -8382,7 +8382,7 @@ const atvInsurancePhoenixPost: BlogPost = {
     {
       type: "p",
       text:
-        "ATV accidents in Arizona resulted in 847 injuries and 24 fatalities in 2023 (Arizona State Parks OHV Division). Medical costs from ATV rollover incidents average $42,000 per hospitalized rider. A standard homeowners or auto policy does not cover ATV accidents — a dedicated ATV policy is required.",
+        "ATV accidents in Arizona resulted in 847 injuries and 24 fatalities in 2023 (Arizona State Parks OHV Division). Medical costs from ATV rollover incidents average $42,000 per hospitalized rider. A standard homeowners or auto policy does not cover ATV accidents, a dedicated ATV policy is required.",
     },
 
     { type: "h2", text: "ATV Insurance Coverage Options Available in Phoenix" },
@@ -8396,8 +8396,8 @@ const atvInsurancePhoenixPost: BlogPost = {
         "Avg. Monthly Cost Phoenix",
       ],
       rows: [
-        ["Bodily Injury Liability", "Injuries to others you cause", "Yes — on public land/roads", "$8–$14/mo"],
-        ["Property Damage Liability", "Damage to others' property", "Yes — on public land/roads", "$4–$8/mo"],
+        ["Bodily Injury Liability", "Injuries to others you cause", "Yes, on public land/roads", "$8–$14/mo"],
+        ["Property Damage Liability", "Damage to others' property", "Yes, on public land/roads", "$4–$8/mo"],
         ["Collision", "Your ATV's repair after crash", "No", "$10–$18/mo"],
         ["Comprehensive", "Theft, fire, vandalism, flood", "No", "$6–$12/mo"],
         ["Medical Payments", "Your medical bills after a crash", "No", "$4–$8/mo"],
@@ -8436,7 +8436,7 @@ const atvInsurancePhoenixPost: BlogPost = {
     {
       type: "p",
       text:
-        "Liability coverage is required under ARS § 28-4009 whenever an ATV is operated on a public road or highway — including crossing a road to access a trail. ATVs used exclusively on private property are not required to carry insurance under Arizona law, but Protegrity Insurance recommends liability coverage in all cases due to guest injury exposure.",
+        "Liability coverage is required under ARS § 28-4009 whenever an ATV is operated on a public road or highway, including crossing a road to access a trail. ATVs used exclusively on private property are not required to carry insurance under Arizona law, but Protegrity Insurance recommends liability coverage in all cases due to guest injury exposure.",
     },
     {
       type: "p",
@@ -8471,22 +8471,22 @@ const atvInsurancePhoenixPost: BlogPost = {
         {
           question: "Q: Is ATV insurance required in Arizona?",
           answer:
-            "Arizona requires ATV liability insurance whenever the vehicle is operated on a public road, highway, or public land including BLM and national forest areas (ARS § 28-4009). ATVs used exclusively on private property are not legally required to be insured, but Protegrity Insurance recommends coverage in all cases — a guest injured on your property can generate a personal liability claim that homeowners insurance may not cover.",
+            "Arizona requires ATV liability insurance whenever the vehicle is operated on a public road, highway, or public land including BLM and national forest areas (ARS § 28-4009). ATVs used exclusively on private property are not legally required to be insured, but Protegrity Insurance recommends coverage in all cases, a guest injured on your property can generate a personal liability claim that homeowners insurance may not cover.",
         },
         {
           question: "Q: Does homeowners insurance cover my ATV in Phoenix?",
           answer:
-            "Standard homeowners insurance in Arizona covers ATVs only while they are stored on your property and only up to $1,500 in most policies — far below the value of most ATVs. Once an ATV leaves your property, homeowners coverage ends entirely. An ATV crash on Tonto National Forest trails is completely uncovered by a homeowners policy. A dedicated ATV policy from Progressive or Foremost costs $24–$48/month and covers the vehicle wherever it rides.",
+            "Standard homeowners insurance in Arizona covers ATVs only while they are stored on your property and only up to $1,500 in most policies, far below the value of most ATVs. Once an ATV leaves your property, homeowners coverage ends entirely. An ATV crash on Tonto National Forest trails is completely uncovered by a homeowners policy. A dedicated ATV policy from Progressive or Foremost costs $24–$48/month and covers the vehicle wherever it rides.",
         },
         {
           question: "Q: What is the best ATV insurance for a side-by-side (UTV) in Phoenix?",
           answer:
-            "Progressive and Foremost are the top carriers for side-by-side / UTV coverage in Phoenix. A Polaris RZR Pro XP valued at $22,000 runs $58/month for full coverage through Progressive. Foremost specializes in high-value UTVs and offers accessory coverage up to $25,000 — critical for Phoenix riders who add winches, lift kits, light bars, and sound systems to their vehicles.",
+            "Progressive and Foremost are the top carriers for side-by-side / UTV coverage in Phoenix. A Polaris RZR Pro XP valued at $22,000 runs $58/month for full coverage through Progressive. Foremost specializes in high-value UTVs and offers accessory coverage up to $25,000, critical for Phoenix riders who add winches, lift kits, light bars, and sound systems to their vehicles.",
         },
         {
           question: "Q: Does ATV insurance cover riding in Tonto National Forest?",
           answer:
-            "Yes, if your policy includes public land / off-premises coverage — which all standard ATV policies from Progressive, Foremost, and Markel include by default. Tonto National Forest's OHV trail system, including the Bulldog Canyon OHV area 30 miles northeast of Phoenix, is designated public land. ATV liability insurance is required by the U.S. Forest Service for all motorized vehicles on designated trails.",
+            "Yes, if your policy includes public land / off-premises coverage, which all standard ATV policies from Progressive, Foremost, and Markel include by default. Tonto National Forest's OHV trail system, including the Bulldog Canyon OHV area 30 miles northeast of Phoenix, is designated public land. ATV liability insurance is required by the U.S. Forest Service for all motorized vehicles on designated trails.",
         },
         {
           question: "Q: Can I insure multiple ATVs on one policy in Phoenix?",
@@ -8496,7 +8496,7 @@ const atvInsurancePhoenixPost: BlogPost = {
         {
           question: "Q: What happens if someone borrows my ATV and crashes it in Arizona?",
           answer:
-            "If you give a licensed adult permission to operate your ATV, your Arizona ATV policy's liability coverage extends to that driver under the permissive use doctrine. Collision coverage for damage to your ATV also applies regardless of who was driving, as long as they had your permission. If someone takes your ATV without permission, coverage depends on your carrier's unauthorized use clause — Progressive and Foremost both cover theft-related damage without a permissive use restriction.",
+            "If you give a licensed adult permission to operate your ATV, your Arizona ATV policy's liability coverage extends to that driver under the permissive use doctrine. Collision coverage for damage to your ATV also applies regardless of who was driving, as long as they had your permission. If someone takes your ATV without permission, coverage depends on your carrier's unauthorized use clause, Progressive and Foremost both cover theft-related damage without a permissive use restriction.",
         },
       ],
     },
@@ -8577,7 +8577,7 @@ const motorcycleVsAtvInsurancePhoenixPost: BlogPost = {
     items: [
       "Motorcycle insurance in Phoenix averages $58–$72/month for full coverage; ATV insurance averages $28–$58/month.",
       "The key difference is legal use: motorcycles are licensed for public roads and require mandatory liability insurance at all times, while ATVs are off-road vehicles requiring insurance only on public land or roads.",
-      "Both require separate dedicated policies — your auto insurance covers neither vehicle type.",
+      "Both require separate dedicated policies, your auto insurance covers neither vehicle type.",
       "The greater Phoenix area is one of the top dual-sport recreational markets in the United States, with many residents owning both motorcycles and ATVs.",
       "Bundling motorcycle and ATV policies through the same carrier saves an average of $10–$22/month compared to separate policies.",
     ],
@@ -8587,7 +8587,7 @@ const motorcycleVsAtvInsurancePhoenixPost: BlogPost = {
     {
       type: "p",
       text:
-        "Motorcycle insurance in Phoenix averages $58–$72/month for full coverage; ATV insurance averages $28–$58/month. The key difference is legal use: motorcycles are licensed for public roads and require mandatory liability insurance under ARS § 28-4009 at all times. ATVs are off-road vehicles that require insurance only when operated on public land or roads. Both require separate dedicated policies — your auto insurance covers neither.",
+        "Motorcycle insurance in Phoenix averages $58–$72/month for full coverage; ATV insurance averages $28–$58/month. The key difference is legal use: motorcycles are licensed for public roads and require mandatory liability insurance under ARS § 28-4009 at all times. ATVs are off-road vehicles that require insurance only when operated on public land or roads. Both require separate dedicated policies, your auto insurance covers neither.",
     },
 
     { type: "h2", text: "Why Phoenix Riders Often Need Both Policies" },
@@ -8606,13 +8606,13 @@ const motorcycleVsAtvInsurancePhoenixPost: BlogPost = {
         ["Arizona law requirement", "Always required on public roads (ARS § 28-4009)", "Required on public land/roads only"],
         ["Average full coverage (Phoenix)", "$58–$72/month", "$28–$58/month"],
         ["Average liability-only (Phoenix)", "$28–$38/month", "$12–$22/month"],
-        ["Covers street/highway use", "Yes", "No — street use requires motorcycle classification"],
-        ["Covers off-road trails", "Limited — depends on policy", "Yes — all standard ATV policies"],
+        ["Covers street/highway use", "Yes", "No, street use requires motorcycle classification"],
+        ["Covers off-road trails", "Limited, depends on policy", "Yes, all standard ATV policies"],
         ["Custom parts coverage", "Up to $30,000 (Progressive)", "Up to $50,000 (Progressive)"],
         ["Guest passenger liability", "Yes (standard)", "Yes (add-on, $3–$6/mo)"],
         ["Theft coverage (comprehensive)", "Yes ($10–$18/mo)", "Yes ($6–$12/mo)"],
         ["Top carrier in Phoenix", "Progressive, USAA", "Progressive, Foremost"],
-        ["Multi-policy discount available", "Yes — bundle with auto/home", "Yes — bundle with auto/home"],
+        ["Multi-policy discount available", "Yes, bundle with auto/home", "Yes, bundle with auto/home"],
       ],
     },
 
@@ -8625,7 +8625,7 @@ const motorcycleVsAtvInsurancePhoenixPost: BlogPost = {
     {
       type: "p",
       text:
-        "Both policies also offer custom parts and equipment coverage — a critical add-on for Phoenix riders who invest in aftermarket upgrades. Progressive offers CPE limits of $30,000 for motorcycles and $50,000 for ATVs/UTVs in Arizona. Markel and Foremost offer comparable limits for vintage and custom builds.",
+        "Both policies also offer custom parts and equipment coverage, a critical add-on for Phoenix riders who invest in aftermarket upgrades. Progressive offers CPE limits of $30,000 for motorcycles and $50,000 for ATVs/UTVs in Arizona. Markel and Foremost offer comparable limits for vintage and custom builds.",
     },
 
     { type: "h2", text: "Cost Comparison: Bundling Motorcycle and ATV Policies in Phoenix" },
@@ -8675,7 +8675,7 @@ const motorcycleVsAtvInsurancePhoenixPost: BlogPost = {
         {
           question: "Q: Can I use one policy for both a motorcycle and an ATV in Phoenix?",
           answer:
-            "No. Arizona insurers classify motorcycles and ATVs as separate vehicle types requiring separate policies. However, you can purchase both through the same carrier — Progressive, Nationwide, and State Farm all allow this — and receive a multi-vehicle specialty discount of 8–15% on both policies simultaneously.",
+            "No. Arizona insurers classify motorcycles and ATVs as separate vehicle types requiring separate policies. However, you can purchase both through the same carrier, Progressive, Nationwide, and State Farm all allow this, and receive a multi-vehicle specialty discount of 8–15% on both policies simultaneously.",
         },
         {
           question: "Q: Does my motorcycle insurance cover me if I ride my ATV?",
@@ -8683,24 +8683,24 @@ const motorcycleVsAtvInsurancePhoenixPost: BlogPost = {
             "No. A motorcycle insurance policy covers only the specific motorcycle listed on the policy. It provides no coverage for an ATV, even if both vehicles are owned by the same person and insured by the same carrier. Each vehicle requires its own policy with its own premium and coverage limits.",
         },
         {
-          question: "Q: Which is more expensive to insure in Phoenix — a motorcycle or a UTV?",
+          question: "Q: Which is more expensive to insure in Phoenix, a motorcycle or a UTV?",
           answer:
             "A high-end UTV (side-by-side) typically costs more to insure than a standard motorcycle in Phoenix. A Can-Am Defender MAX valued at $28,000 averages $72/month for full coverage. A standard Honda CB500F motorcycle averages $52/month. The higher UTV cost reflects the vehicle's greater value, higher passenger capacity, and greater liability exposure when used for group recreation on trails near Phoenix.",
         },
         {
           question: "Q: Is there a discount for taking a motorcycle safety course in Arizona?",
           answer:
-            "Yes. Arizona's Motorcycle Safety Program (MSP) — offered at Maricopa Community Colleges locations in Phoenix, Mesa, and Scottsdale — earns a 5–10% insurance discount at Progressive, Dairyland, and Nationwide. The 2-day course costs $50–$80 and also waives the Arizona MVD road skills test for new motorcycle license applicants. The insurance discount is applied at your next policy renewal upon submitting the completion certificate.",
+            "Yes. Arizona's Motorcycle Safety Program (MSP), offered at Maricopa Community Colleges locations in Phoenix, Mesa, and Scottsdale, earns a 5–10% insurance discount at Progressive, Dairyland, and Nationwide. The 2-day course costs $50–$80 and also waives the Arizona MVD road skills test for new motorcycle license applicants. The insurance discount is applied at your next policy renewal upon submitting the completion certificate.",
         },
         {
           question: "Q: Are UTVs classified as ATVs for insurance purposes in Phoenix?",
           answer:
-            "Yes. For insurance purposes in Arizona, UTVs (side-by-sides like Polaris RZR, Can-Am Maverick, and Yamaha YXZ) are classified under the same ATV/OHV policy category. Foremost and Progressive both insure UTVs under their ATV product lines in Arizona. Some carriers offer standalone UTV-specific policies with higher accessory limits — Foremost's UTV policy covers accessories up to $25,000 per incident.",
+            "Yes. For insurance purposes in Arizona, UTVs (side-by-sides like Polaris RZR, Can-Am Maverick, and Yamaha YXZ) are classified under the same ATV/OHV policy category. Foremost and Progressive both insure UTVs under their ATV product lines in Arizona. Some carriers offer standalone UTV-specific policies with higher accessory limits, Foremost's UTV policy covers accessories up to $25,000 per incident.",
         },
         {
           question: "Q: What if I ride my ATV on a street to get from my property to the trail in Phoenix?",
           answer:
-            "Operating an ATV on a public street in Arizona — even for one block — requires it to be street-legal (registered as a motor vehicle with Arizona MVD) and insured under a liability policy meeting the 25/50/15 minimum. ATVs are not street-legal in Arizona unless they meet specific equipment standards (headlights, tail lights, mirrors, horn) and have been individually registered as motor vehicles. Crossing a road on an unregistered ATV is a civil traffic violation under ARS § 28-2153.",
+            "Operating an ATV on a public street in Arizona, even for one block, requires it to be street-legal (registered as a motor vehicle with Arizona MVD) and insured under a liability policy meeting the 25/50/15 minimum. ATVs are not street-legal in Arizona unless they meet specific equipment standards (headlights, tail lights, mirrors, horn) and have been individually registered as motor vehicles. Crossing a road on an unregistered ATV is a civil traffic violation under ARS § 28-2153.",
         },
       ],
     },
@@ -8781,7 +8781,7 @@ const boatInsurancePhoenixPost: BlogPost = {
     items: [
       "Boat insurance in Phoenix, AZ costs an average of $28–$96/month depending on the vessel type, value, and coverage level.",
       "Arizona does not require boat insurance by state law, but Lake Pleasant Regional Park requires proof of liability insurance for vessels over 26 feet.",
-      "Lake Pleasant, Roosevelt Lake, Saguaro Lake, and Canyon Lake — all within 60 miles of Phoenix — collectively host over 1.2 million boating visits per year.",
+      "Lake Pleasant, Roosevelt Lake, Saguaro Lake, and Canyon Lake, all within 60 miles of Phoenix, collectively host over 1.2 million boating visits per year.",
       "Arizona recorded 124 reportable boating accidents in 2023, resulting in 18 fatalities and $2.8 million in property damage.",
       "Protegrity Insurance recommends full coverage for any boat valued over $10,000.",
     ],
@@ -8791,14 +8791,14 @@ const boatInsurancePhoenixPost: BlogPost = {
     {
       type: "p",
       text:
-        "Boat insurance in Phoenix, AZ costs an average of $28–$96/month depending on the vessel type, value, and coverage level, according to BoatUS 2024 rate data for Maricopa County. Arizona does not require boat insurance by state law, but Lake Pleasant Regional Park — the most popular boating destination within 35 miles of Phoenix — requires proof of liability insurance for vessels over 26 feet. Protegrity Insurance recommends full coverage for any boat valued over $10,000.",
+        "Boat insurance in Phoenix, AZ costs an average of $28–$96/month depending on the vessel type, value, and coverage level, according to BoatUS 2024 rate data for Maricopa County. Arizona does not require boat insurance by state law, but Lake Pleasant Regional Park, the most popular boating destination within 35 miles of Phoenix, requires proof of liability insurance for vessels over 26 feet. Protegrity Insurance recommends full coverage for any boat valued over $10,000.",
     },
 
     { type: "h2", text: "Why Phoenix Boat Owners Need Dedicated Marine Coverage" },
     {
       type: "p",
       text:
-        "Lake Pleasant Regional Park, Roosevelt Lake, Saguaro Lake, and Canyon Lake — all within 60 miles of Phoenix — collectively host over 1.2 million boating visits per year (Maricopa County Parks, 2023). Arizona recorded 124 reportable boating accidents in 2023, resulting in 18 fatalities and $2.8 million in property damage (Arizona State Parks Boating Division). Standard homeowners insurance covers boats under $1,500 in value and under 25 mph — far below what most Phoenix boaters own.",
+        "Lake Pleasant Regional Park, Roosevelt Lake, Saguaro Lake, and Canyon Lake, all within 60 miles of Phoenix, collectively host over 1.2 million boating visits per year (Maricopa County Parks, 2023). Arizona recorded 124 reportable boating accidents in 2023, resulting in 18 fatalities and $2.8 million in property damage (Arizona State Parks Boating Division). Standard homeowners insurance covers boats under $1,500 in value and under 25 mph, far below what most Phoenix boaters own.",
     },
 
     { type: "h2", text: "Boat Insurance Coverage Options for Phoenix Owners" },
@@ -8854,7 +8854,7 @@ const boatInsurancePhoenixPost: BlogPost = {
     {
       type: "p",
       text:
-        "Arizona's Boating Under the Influence (BUI) law (ARS § 5-395) sets a BAC limit of 0.08% — identical to DUI law. A BUI conviction results in an automatic insurance premium increase of 58–82% at renewal and may trigger a policy non-renewal from standard carriers.",
+        "Arizona's Boating Under the Influence (BUI) law (ARS § 5-395) sets a BAC limit of 0.08%, identical to DUI law. A BUI conviction results in an automatic insurance premium increase of 58–82% at renewal and may trigger a policy non-renewal from standard carriers.",
     },
     {
       type: "p",
@@ -8869,12 +8869,12 @@ const boatInsurancePhoenixPost: BlogPost = {
     {
       type: "p",
       text:
-        "Marine insurance policies offer two valuation methods: Agreed Value pays the full insured amount with no depreciation if the boat is a total loss. Actual Cash Value (ACV) pays the depreciated market value at the time of loss — which can be 20–40% less than what you paid.",
+        "Marine insurance policies offer two valuation methods: Agreed Value pays the full insured amount with no depreciation if the boat is a total loss. Actual Cash Value (ACV) pays the depreciated market value at the time of loss, which can be 20–40% less than what you paid.",
     },
     {
       type: "p",
       text:
-        "For boats over $25,000, Protegrity Insurance recommends Agreed Value coverage. The premium difference is typically $8–$18/month — a small cost to ensure you receive full replacement value after a total loss on Saguaro Lake or Lake Pleasant.",
+        "For boats over $25,000, Protegrity Insurance recommends Agreed Value coverage. The premium difference is typically $8–$18/month, a small cost to ensure you receive full replacement value after a total loss on Saguaro Lake or Lake Pleasant.",
     },
 
     { type: "h2", text: "Frequently Asked Questions: Boat Insurance in Phoenix" },
@@ -8894,22 +8894,22 @@ const boatInsurancePhoenixPost: BlogPost = {
         {
           question: "Q: How much boat liability insurance do I need for Lake Pleasant?",
           answer:
-            "Vessels over 26 feet at Lake Pleasant Regional Park require a minimum $100,000 in liability coverage. Protegrity Insurance recommends $300,000 for all boaters — a collision at highway speed on a busy Saturday at Lake Pleasant can easily generate $150,000–$400,000 in combined boat damage and injury costs. The upgrade from $100,000 to $300,000 in liability costs approximately $6–$10/month.",
+            "Vessels over 26 feet at Lake Pleasant Regional Park require a minimum $100,000 in liability coverage. Protegrity Insurance recommends $300,000 for all boaters, a collision at highway speed on a busy Saturday at Lake Pleasant can easily generate $150,000–$400,000 in combined boat damage and injury costs. The upgrade from $100,000 to $300,000 in liability costs approximately $6–$10/month.",
         },
         {
           question: "Q: Does boat insurance cover damage during transport on a trailer in Phoenix?",
           answer:
-            "Yes, if your policy includes transit coverage — which most standard boat policies do. Progressive, BoatUS, and Markel all cover your boat during road transport in Arizona as part of the comprehensive and collision provisions. Trailer damage itself requires a separate trailer endorsement, typically $4–$8/month. The trailer must be listed on the policy to be covered.",
+            "Yes, if your policy includes transit coverage, which most standard boat policies do. Progressive, BoatUS, and Markel all cover your boat during road transport in Arizona as part of the comprehensive and collision provisions. Trailer damage itself requires a separate trailer endorsement, typically $4–$8/month. The trailer must be listed on the policy to be covered.",
         },
         {
           question: "Q: What is the best boat insurance for Phoenix lake boating?",
           answer:
-            "BoatUS (underwritten by Geovera) and Progressive are the top-rated boat insurers for Phoenix-area freshwater lake boating. BoatUS offers $100 on-water towing coverage as a standard benefit — critical on Lake Pleasant, which has a response area where commercial towing can cost $300–$800. Progressive offers agreed value policies for boats up to $250,000 with trailer coverage included.",
+            "BoatUS (underwritten by Geovera) and Progressive are the top-rated boat insurers for Phoenix-area freshwater lake boating. BoatUS offers $100 on-water towing coverage as a standard benefit, critical on Lake Pleasant, which has a response area where commercial towing can cost $300–$800. Progressive offers agreed value policies for boats up to $250,000 with trailer coverage included.",
         },
         {
           question: "Q: Does my boat insurance cover fishing equipment and electronics?",
           answer:
-            "Personal effects coverage — an optional endorsement on most boat policies — covers fishing rods, tackle, coolers, marine electronics, and clothing up to a set limit. Progressive covers personal effects up to $1,000 as standard; higher limits (up to $10,000) are available for $4–$10/month. Electronics (GPS, fish finders, VHF radios) should be inventoried and itemized on your policy application to ensure full replacement value coverage.",
+            "Personal effects coverage, an optional endorsement on most boat policies, covers fishing rods, tackle, coolers, marine electronics, and clothing up to a set limit. Progressive covers personal effects up to $1,000 as standard; higher limits (up to $10,000) are available for $4–$10/month. Electronics (GPS, fish finders, VHF radios) should be inventoried and itemized on your policy application to ensure full replacement value coverage.",
         },
       ],
     },
@@ -8991,8 +8991,8 @@ const jetSkiInsurancePhoenixPost: BlogPost = {
       "Jet ski and personal watercraft (PWC) insurance in Phoenix, AZ costs an average of $22–$38/month for full coverage.",
       "Arizona does not require PWC insurance by state law, but Lake Pleasant, Saguaro Lake, and Canyon Lake recommend and in some cases require liability coverage.",
       "A Sea-Doo GTX 170 valued at $14,000 costs approximately $28/month to fully insure in Phoenix.",
-      "Arizona law prohibits PWC operation within 75 feet of another vessel, diver-down flag, dock, or swimmer — violations carry fines of $250–$750 and increase insurance premiums by 14–22%.",
-      "Phoenix's desert storage conditions create above-average theft exposure — comprehensive coverage averaging $6–$10/month is essential.",
+      "Arizona law prohibits PWC operation within 75 feet of another vessel, diver-down flag, dock, or swimmer, violations carry fines of $250–$750 and increase insurance premiums by 14–22%.",
+      "Phoenix's desert storage conditions create above-average theft exposure, comprehensive coverage averaging $6–$10/month is essential.",
     ],
   },
   content: [
@@ -9000,19 +9000,19 @@ const jetSkiInsurancePhoenixPost: BlogPost = {
     {
       type: "p",
       text:
-        "Jet ski and personal watercraft (PWC) insurance in Phoenix, AZ costs an average of $22–$38/month for full coverage, according to Progressive 2024 PWC rate data for Maricopa County. Arizona does not require PWC insurance by state law, but Lake Pleasant, Saguaro Lake, and Canyon Lake — the three most popular Phoenix-area riding locations — are managed by Maricopa County and the U.S. Forest Service, both of which recommend and in some cases require liability coverage. A Sea-Doo GTX 170 valued at $14,000 costs approximately $28/month to fully insure in Phoenix.",
+        "Jet ski and personal watercraft (PWC) insurance in Phoenix, AZ costs an average of $22–$38/month for full coverage, according to Progressive 2024 PWC rate data for Maricopa County. Arizona does not require PWC insurance by state law, but Lake Pleasant, Saguaro Lake, and Canyon Lake, the three most popular Phoenix-area riding locations, are managed by Maricopa County and the U.S. Forest Service, both of which recommend and in some cases require liability coverage. A Sea-Doo GTX 170 valued at $14,000 costs approximately $28/month to fully insure in Phoenix.",
     },
 
     { type: "h2", text: "Arizona's Personal Watercraft Laws and Why They Matter for Insurance" },
     {
       type: "p",
       text:
-        "Arizona classifies jet skis and PWCs as motorized vessels under ARS § 5-301. All PWCs must be registered with Arizona State Parks annually — fees range from $20 to $35 based on vessel length. An Arizona Certificate of Number (registration card) and validation decals must be on the PWC at all times when operating on state waters.",
+        "Arizona classifies jet skis and PWCs as motorized vessels under ARS § 5-301. All PWCs must be registered with Arizona State Parks annually, fees range from $20 to $35 based on vessel length. An Arizona Certificate of Number (registration card) and validation decals must be on the PWC at all times when operating on state waters.",
     },
     {
       type: "p",
       text:
-        "Arizona law (ARS § 5-341) prohibits PWC operation within 75 feet of another vessel, diver-down flag, dock, or swimmer — except when operating in a designated area. Violations carry fines of $250–$750 and are recorded on the operator's boating record, which insurers review at policy renewal. A boating violation increases Phoenix PWC insurance premiums by an average of 14–22%.",
+        "Arizona law (ARS § 5-341) prohibits PWC operation within 75 feet of another vessel, diver-down flag, dock, or swimmer, except when operating in a designated area. Violations carry fines of $250–$750 and are recorded on the operator's boating record, which insurers review at policy renewal. A boating violation increases Phoenix PWC insurance premiums by an average of 14–22%.",
     },
 
     { type: "h2", text: "PWC Insurance Coverage Options for Phoenix Riders" },
@@ -9026,13 +9026,13 @@ const jetSkiInsurancePhoenixPost: BlogPost = {
         "Recommended?",
       ],
       rows: [
-        ["Bodily Injury Liability ($100K)", "Injuries to others on the water", "$8–$12/mo", "Yes — essential"],
-        ["Property Damage Liability ($50K)", "Damage to docks, boats, property", "$6–$10/mo", "Yes — essential"],
+        ["Bodily Injury Liability ($100K)", "Injuries to others on the water", "$8–$12/mo", "Yes, essential"],
+        ["Property Damage Liability ($50K)", "Damage to docks, boats, property", "$6–$10/mo", "Yes, essential"],
         ["Collision", "Your PWC repair after a crash", "$8–$14/mo", "Yes if PWC worth over $8K"],
-        ["Comprehensive", "Theft, fire, storm, vandalism", "$6–$10/mo", "Yes — Phoenix theft risk"],
+        ["Comprehensive", "Theft, fire, storm, vandalism", "$6–$10/mo", "Yes, Phoenix theft risk"],
         ["Medical Payments ($5K)", "Your injuries regardless of fault", "$3–$6/mo", "Yes"],
         ["Uninsured Boater", "If hit by uninsured PWC", "$3–$6/mo", "Recommended"],
-        ["On-Water Towing", "Tow to nearest shore/marina", "$2–$4/mo", "Yes — Lake Pleasant"],
+        ["On-Water Towing", "Tow to nearest shore/marina", "$2–$4/mo", "Yes, Lake Pleasant"],
         ["Total Loss Replacement", "New-model replacement after total loss", "$4–$8/mo", "Yes for new models"],
       ],
     },
@@ -9064,7 +9064,7 @@ const jetSkiInsurancePhoenixPost: BlogPost = {
       type: "p",
       lead: "Theft:",
       text:
-        "Phoenix's desert storage conditions — with many PWC owners storing units in open driveways or unfenced yards during off-season — create above-average theft exposure. NICB reported 487 PWC thefts in Arizona in 2023, with Maricopa County accounting for 62% of total incidents. Comprehensive coverage (averaging $6–$10/month) is essential for Phoenix PWC owners.",
+        "Phoenix's desert storage conditions, with many PWC owners storing units in open driveways or unfenced yards during off-season, create above-average theft exposure. NICB reported 487 PWC thefts in Arizona in 2023, with Maricopa County accounting for 62% of total incidents. Comprehensive coverage (averaging $6–$10/month) is essential for Phoenix PWC owners.",
     },
     {
       type: "p",
@@ -9076,7 +9076,7 @@ const jetSkiInsurancePhoenixPost: BlogPost = {
       type: "p",
       lead: "Reservoir level changes:",
       text:
-        "Lake Pleasant and Saguaro Lake experience significant water level fluctuations due to drought conditions. Low water levels create submerged rock hazards that increase collision claims — a factor that affects hull insurance pricing for Maricopa County PWC owners specifically.",
+        "Lake Pleasant and Saguaro Lake experience significant water level fluctuations due to drought conditions. Low water levels create submerged rock hazards that increase collision claims, a factor that affects hull insurance pricing for Maricopa County PWC owners specifically.",
     },
 
     { type: "h2", text: "Frequently Asked Questions: PWC Insurance in Phoenix" },
@@ -9086,12 +9086,12 @@ const jetSkiInsurancePhoenixPost: BlogPost = {
         {
           question: "Q: Is jet ski insurance required in Arizona?",
           answer:
-            "Arizona state law does not mandate PWC insurance. However, Arizona State Parks requires proof of registration for all PWCs on state waters, and some marinas near Phoenix charge a liability insurance requirement for slip rental. Protegrity Insurance recommends $100,000/$300,000 liability plus collision and comprehensive for all Phoenix-area PWC owners — a total package costing $28–$38/month.",
+            "Arizona state law does not mandate PWC insurance. However, Arizona State Parks requires proof of registration for all PWCs on state waters, and some marinas near Phoenix charge a liability insurance requirement for slip rental. Protegrity Insurance recommends $100,000/$300,000 liability plus collision and comprehensive for all Phoenix-area PWC owners, a total package costing $28–$38/month.",
         },
         {
           question: "Q: How old do you have to be to operate a jet ski in Arizona?",
           answer:
-            "Arizona law (ARS § 5-395.01) requires PWC operators to be at least 16 years old. Operators aged 12–15 may operate a PWC only if a person 18 or older is on board with them. Operators under 12 may not operate a PWC under any circumstances. Insurance policies in Arizona do not cover incidents involving operators under the legal minimum age — a claim arising from an underage operator may be denied.",
+            "Arizona law (ARS § 5-395.01) requires PWC operators to be at least 16 years old. Operators aged 12–15 may operate a PWC only if a person 18 or older is on board with them. Operators under 12 may not operate a PWC under any circumstances. Insurance policies in Arizona do not cover incidents involving operators under the legal minimum age, a claim arising from an underage operator may be denied.",
         },
         {
           question: "Q: Does my boat insurance cover a jet ski in Phoenix?",
@@ -9101,17 +9101,17 @@ const jetSkiInsurancePhoenixPost: BlogPost = {
         {
           question: "Q: What is total loss replacement coverage for a jet ski in Phoenix?",
           answer:
-            "Total loss replacement coverage pays to replace a totaled PWC with a new current-model-year unit — not just the depreciated actual cash value. For a 2025 Sea-Doo GTX 170 worth $14,099, standard ACV coverage after one year of depreciation might pay $11,200 after a total loss. Total loss replacement would pay $14,099 for a brand-new equivalent. Progressive offers this rider for $4–$8/month in Arizona.",
+            "Total loss replacement coverage pays to replace a totaled PWC with a new current-model-year unit, not just the depreciated actual cash value. For a 2025 Sea-Doo GTX 170 worth $14,099, standard ACV coverage after one year of depreciation might pay $11,200 after a total loss. Total loss replacement would pay $14,099 for a brand-new equivalent. Progressive offers this rider for $4–$8/month in Arizona.",
         },
         {
           question: "Q: Can I get PWC insurance if I store my jet ski in Peoria or Surprise near Lake Pleasant?",
           answer:
-            "Yes. Protegrity Insurance writes PWC policies for Phoenix-area owners in all ZIP codes including Peoria (85345, 85381), Surprise (85374, 85379), Glendale (85301–85310), and all communities within the Lake Pleasant corridor. Storage location affects your comprehensive rate slightly — gated, enclosed storage in Peoria averages $2–$4/month less in comprehensive premium than open driveway storage in Phoenix due to lower theft exposure.",
+            "Yes. Protegrity Insurance writes PWC policies for Phoenix-area owners in all ZIP codes including Peoria (85345, 85381), Surprise (85374, 85379), Glendale (85301–85310), and all communities within the Lake Pleasant corridor. Storage location affects your comprehensive rate slightly, gated, enclosed storage in Peoria averages $2–$4/month less in comprehensive premium than open driveway storage in Phoenix due to lower theft exposure.",
         },
         {
           question: "Q: What should I do immediately after a jet ski accident on Lake Pleasant?",
           answer:
-            "Stop the PWC immediately and render aid to any injured parties. Report the accident to Arizona State Parks Game and Fish if there is injury, death, or more than $2,000 in property damage (ARS § 5-381) — failure to report is a Class 3 misdemeanor. Call Protegrity Insurance at (480) XXX-XXXX to initiate your claim. Document all damage with photos before the unit is moved or repaired. Arizona law requires accident reports to be filed within 48 hours of a boating incident meeting the reporting threshold.",
+            "Stop the PWC immediately and render aid to any injured parties. Report the accident to Arizona State Parks Game and Fish if there is injury, death, or more than $2,000 in property damage (ARS § 5-381), failure to report is a Class 3 misdemeanor. Call Protegrity Insurance at (480) XXX-XXXX to initiate your claim. Document all damage with photos before the unit is moved or repaired. Arizona law requires accident reports to be filed within 48 hours of a boating incident meeting the reporting threshold.",
         },
       ],
     },
@@ -9191,9 +9191,9 @@ const watercraftInsurancePhoenixPost: BlogPost = {
   keyTakeaways: {
     items: [
       "Watercraft insurance in Phoenix, AZ ranges from $8/month for a kayak or canoe rider to $196/month for a high-performance ski boat, with most Phoenix boaters paying $28–$96/month for full coverage on a powerboat or PWC.",
-      "The four primary Phoenix-area waterways — Lake Pleasant, Saguaro Lake, Canyon Lake, and Roosevelt Lake — fall under county and federal jurisdiction with specific safety and insurance requirements.",
+      "The four primary Phoenix-area waterways, Lake Pleasant, Saguaro Lake, Canyon Lake, and Roosevelt Lake, fall under county and federal jurisdiction with specific safety and insurance requirements.",
       "Lake Pleasant Regional Park requires vessels over 26 feet to carry $100,000 liability insurance to launch.",
-      "Phoenix ranks among the top markets for watercraft theft — comprehensive coverage is essential for all motorized vessels stored in the Valley.",
+      "Phoenix ranks among the top markets for watercraft theft, comprehensive coverage is essential for all motorized vessels stored in the Valley.",
       "This guide covers every vessel type operated near Phoenix, from kayaks to houseboats.",
     ],
   },
@@ -9202,7 +9202,7 @@ const watercraftInsurancePhoenixPost: BlogPost = {
     {
       type: "p",
       text:
-        "Watercraft insurance in Phoenix, AZ ranges from $8/month for a kayak or canoe rider to $196/month for a high-performance ski boat, with most Phoenix boaters paying $28–$96/month for full coverage on a powerboat or PWC (Progressive, BoatUS 2024 rate data). The four primary Phoenix-area waterways — Lake Pleasant, Saguaro Lake, Canyon Lake, and Roosevelt Lake — fall under county and federal jurisdiction with specific safety and insurance requirements. This guide covers every vessel type operated near Phoenix.",
+        "Watercraft insurance in Phoenix, AZ ranges from $8/month for a kayak or canoe rider to $196/month for a high-performance ski boat, with most Phoenix boaters paying $28–$96/month for full coverage on a powerboat or PWC (Progressive, BoatUS 2024 rate data). The four primary Phoenix-area waterways, Lake Pleasant, Saguaro Lake, Canyon Lake, and Roosevelt Lake, fall under county and federal jurisdiction with specific safety and insurance requirements. This guide covers every vessel type operated near Phoenix.",
     },
 
     {
@@ -9219,7 +9219,7 @@ const watercraftInsurancePhoenixPost: BlogPost = {
       type: "p",
       lead: "Saguaro Lake (Mesa, 30 miles NE of Phoenix):",
       text:
-        "U.S. Forest Service-managed. No wake zone restrictions apply in 40% of the lake's surface area. High collision frequency in the narrow canyon sections — a significant factor in Phoenix marine insurance claim data.",
+        "U.S. Forest Service-managed. No wake zone restrictions apply in 40% of the lake's surface area. High collision frequency in the narrow canyon sections, a significant factor in Phoenix marine insurance claim data.",
     },
     {
       type: "p",
@@ -9266,13 +9266,13 @@ const watercraftInsurancePhoenixPost: BlogPost = {
       type: "p",
       lead: "Racing:",
       text:
-        "Most standard watercraft policies exclude coverage during any officially sanctioned race or speed trial. Lake Pleasant's annual poker run and Canyon Lake's fishing tournaments are not races — they are covered events. But participation in a timed speed competition voids collision coverage under nearly all marine policies.",
+        "Most standard watercraft policies exclude coverage during any officially sanctioned race or speed trial. Lake Pleasant's annual poker run and Canyon Lake's fishing tournaments are not races, they are covered events. But participation in a timed speed competition voids collision coverage under nearly all marine policies.",
     },
     {
       type: "p",
       lead: "Wear and tear:",
       text:
-        "Mechanical breakdown, engine failure from lack of maintenance, and hull blistering from prolonged freshwater exposure are maintenance issues — not insurable losses. Extended marine warranties from Sea Ray, Malibu, and other manufacturers cover mechanical failure separately from insurance.",
+        "Mechanical breakdown, engine failure from lack of maintenance, and hull blistering from prolonged freshwater exposure are maintenance issues, not insurable losses. Extended marine warranties from Sea Ray, Malibu, and other manufacturers cover mechanical failure separately from insurance.",
     },
     {
       type: "p",
@@ -9284,7 +9284,7 @@ const watercraftInsurancePhoenixPost: BlogPost = {
       type: "p",
       lead: "Unseaworthy conditions:",
       text:
-        "If your vessel is found to be in an unseaworthy condition at the time of a claim — expired fire extinguisher, inoperable running lights, structural damage you were aware of — the carrier can deny the claim under the seaworthiness warranty.",
+        "If your vessel is found to be in an unseaworthy condition at the time of a claim, expired fire extinguisher, inoperable running lights, structural damage you were aware of, the carrier can deny the claim under the seaworthiness warranty.",
     },
 
     { type: "h2", text: "Frequently Asked Questions: Watercraft Insurance in Phoenix" },
@@ -9294,7 +9294,7 @@ const watercraftInsurancePhoenixPost: BlogPost = {
         {
           question: "Q: Do I need insurance for a kayak or canoe in Phoenix?",
           answer:
-            "Arizona law does not require insurance for non-motorized vessels. However, if you paddle on public waterways — including Lake Pleasant's coves or the Salt River — and cause injury to another person, you face personal liability without insurance. National General and Progressive both offer watercraft liability policies for kayaks and canoes starting at $8/month in Arizona, covering up to $100,000 in liability for less than most people spend on paddling accessories.",
+            "Arizona law does not require insurance for non-motorized vessels. However, if you paddle on public waterways, including Lake Pleasant's coves or the Salt River, and cause injury to another person, you face personal liability without insurance. National General and Progressive both offer watercraft liability policies for kayaks and canoes starting at $8/month in Arizona, covering up to $100,000 in liability for less than most people spend on paddling accessories.",
         },
         {
           question: "Q: Can I get insurance for a houseboat on Roosevelt Lake?",
@@ -9304,7 +9304,7 @@ const watercraftInsurancePhoenixPost: BlogPost = {
         {
           question: "Q: Is watercraft insurance cheaper if I store my boat at a marina?",
           answer:
-            "Yes. Marina storage (especially covered slip storage) reduces comprehensive premiums by 8–15% compared to open driveway or street storage in Phoenix. This is because marina storage reduces theft exposure and protects the hull from UV degradation and weather damage. Several Phoenix-area marine storage facilities — including Lake Pleasant Marina and Saguaro Lake Marina — offer discount partnerships with Progressive and BoatUS for tenants who carry active watercraft insurance.",
+            "Yes. Marina storage (especially covered slip storage) reduces comprehensive premiums by 8–15% compared to open driveway or street storage in Phoenix. This is because marina storage reduces theft exposure and protects the hull from UV degradation and weather damage. Several Phoenix-area marine storage facilities, including Lake Pleasant Marina and Saguaro Lake Marina, offer discount partnerships with Progressive and BoatUS for tenants who carry active watercraft insurance.",
         },
         {
           question: "Q: What happens if I lend my boat to a friend and they crash it on Saguaro Lake?",
@@ -9398,7 +9398,7 @@ const rvInsurancePhoenixPost: BlogPost = {
     items: [
       "RV insurance in Phoenix, AZ costs an average of $82–$248/month for a motorhome and $28–$68/month for a towed travel trailer.",
       "Arizona requires all motorized RVs to carry minimum liability coverage identical to auto insurance (25/50/15 under ARS § 28-4009).",
-      "Arizona ranks 4th nationally in RV registrations with 187,000 registered RVs statewide — Maricopa County alone has 68,000 registered RVs.",
+      "Arizona ranks 4th nationally in RV registrations with 187,000 registered RVs statewide, Maricopa County alone has 68,000 registered RVs.",
       "Phoenix's year-round riding weather and proximity to national parks (Grand Canyon 228 miles, Sedona 116 miles, Zion 309 miles) make it a prime RV departure point.",
       "Phoenix's January average high of 67°F makes it a year-round destination for full-time RVers and snowbirds, with over 12,000 seasonal RV residents.",
     ],
@@ -9415,12 +9415,12 @@ const rvInsurancePhoenixPost: BlogPost = {
     {
       type: "p",
       text:
-        "Arizona ranks 4th nationally in RV registrations with 187,000 registered RVs statewide (RVIA, 2024). Maricopa County alone has 68,000 registered RVs — the highest concentration of any Arizona county. Phoenix's January average high of 67°F makes it a year-round destination for full-time RVers and snowbirds, with the Thousand Trails and Outdoor Resorts communities in the East Valley hosting over 12,000 seasonal RV residents from October through April.",
+        "Arizona ranks 4th nationally in RV registrations with 187,000 registered RVs statewide (RVIA, 2024). Maricopa County alone has 68,000 registered RVs, the highest concentration of any Arizona county. Phoenix's January average high of 67°F makes it a year-round destination for full-time RVers and snowbirds, with the Thousand Trails and Outdoor Resorts communities in the East Valley hosting over 12,000 seasonal RV residents from October through April.",
     },
     {
       type: "p",
       text:
-        "Phoenix is also a prime departure point for Southwest RV travel — Grand Canyon South Rim (228 miles), Sedona (116 miles), Zion National Park (309 miles), and Moab/Arches (450 miles) are all accessible in a single driving day from the Phoenix metro area.",
+        "Phoenix is also a prime departure point for Southwest RV travel, Grand Canyon South Rim (228 miles), Sedona (116 miles), Zion National Park (309 miles), and Moab/Arches (450 miles) are all accessible in a single driving day from the Phoenix metro area.",
     },
 
     { type: "h2", text: "RV Types and Average Insurance Costs in Phoenix" },
@@ -9435,14 +9435,14 @@ const rvInsurancePhoenixPost: BlogPost = {
         "Required Insurance",
       ],
       rows: [
-        ["Class A Motorhome (gas)", "Winnebago Vista 29VE", "$112,000", "$188/mo", "Yes — AZ minimum liability"],
-        ["Class A Motorhome (diesel)", "Tiffin Allegro Bus 45OPP", "$385,000", "$248/mo", "Yes — AZ minimum liability"],
-        ["Class B Campervan", "Airstream Interstate 24GT", "$185,000", "$168/mo", "Yes — AZ minimum liability"],
-        ["Class C Motorhome", "Thor Quantum SE24", "$98,000", "$148/mo", "Yes — AZ minimum liability"],
-        ["Fifth Wheel", "Keystone Montana 3855BR", "$68,000", "$52/mo", "No — recommended"],
-        ["Travel Trailer", "Grand Design Reflection 315RLTS", "$42,000", "$38/mo", "No — recommended"],
-        ["Pop-Up / Folding Camper", "Forest River Flagstaff 228D", "$14,000", "$22/mo", "No — recommended"],
-        ["Toy Hauler", "Heartland Road Warrior 427", "$85,000", "$62/mo", "No — required by lenders"],
+        ["Class A Motorhome (gas)", "Winnebago Vista 29VE", "$112,000", "$188/mo", "Yes, AZ minimum liability"],
+        ["Class A Motorhome (diesel)", "Tiffin Allegro Bus 45OPP", "$385,000", "$248/mo", "Yes, AZ minimum liability"],
+        ["Class B Campervan", "Airstream Interstate 24GT", "$185,000", "$168/mo", "Yes, AZ minimum liability"],
+        ["Class C Motorhome", "Thor Quantum SE24", "$98,000", "$148/mo", "Yes, AZ minimum liability"],
+        ["Fifth Wheel", "Keystone Montana 3855BR", "$68,000", "$52/mo", "No, recommended"],
+        ["Travel Trailer", "Grand Design Reflection 315RLTS", "$42,000", "$38/mo", "No, recommended"],
+        ["Pop-Up / Folding Camper", "Forest River Flagstaff 228D", "$14,000", "$22/mo", "No, recommended"],
+        ["Toy Hauler", "Heartland Road Warrior 427", "$85,000", "$62/mo", "No, required by lenders"],
       ],
     },
 
@@ -9457,13 +9457,13 @@ const rvInsurancePhoenixPost: BlogPost = {
       type: "p",
       lead: "Collision:",
       text:
-        "Pays to repair or replace your RV after a crash, regardless of fault. A Class A motorhome collision involving slide-out damage can cost $25,000–$80,000 to repair — making collision coverage essential for vehicles over $50,000.",
+        "Pays to repair or replace your RV after a crash, regardless of fault. A Class A motorhome collision involving slide-out damage can cost $25,000–$80,000 to repair, making collision coverage essential for vehicles over $50,000.",
     },
     {
       type: "p",
       lead: "Comprehensive:",
       text:
-        "Covers theft, hail, wind, fire, flood, and animal damage. Phoenix's monsoon season (June–September) generates hail events averaging 1.2 inches in diameter — large enough to cause significant roof and slideout damage on Class A and Class C motorhomes.",
+        "Covers theft, hail, wind, fire, flood, and animal damage. Phoenix's monsoon season (June–September) generates hail events averaging 1.2 inches in diameter, large enough to cause significant roof and slideout damage on Class A and Class C motorhomes.",
     },
     {
       type: "p",
@@ -9475,7 +9475,7 @@ const rvInsurancePhoenixPost: BlogPost = {
       type: "p",
       lead: "Emergency Expense Coverage:",
       text:
-        "If your RV is disabled more than 50 miles from Phoenix, emergency expense coverage pays hotel stays, meals, and transportation while your RV is repaired — typically $750–$1,500 per incident.",
+        "If your RV is disabled more than 50 miles from Phoenix, emergency expense coverage pays hotel stays, meals, and transportation while your RV is repaired, typically $750–$1,500 per incident.",
     },
 
     { type: "h2", text: "Arizona RV-Specific Laws and Requirements" },
@@ -9507,7 +9507,7 @@ const rvInsurancePhoenixPost: BlogPost = {
         {
           question: "Q: How much does Class A motorhome insurance cost in Phoenix?",
           answer:
-            "A Class A gas motorhome (Winnebago Vista, Thor Palazzo) averages $188/month for full coverage in Phoenix. A Class A diesel pusher (Tiffin, Newmar, Entegra) averages $228–$248/month due to significantly higher vehicle values and repair costs. Diesel pusher repair costs average 35% more than gas motorhome repairs — engine work on a Cummins diesel requires specialized technicians available at limited Phoenix-area service centers.",
+            "A Class A gas motorhome (Winnebago Vista, Thor Palazzo) averages $188/month for full coverage in Phoenix. A Class A diesel pusher (Tiffin, Newmar, Entegra) averages $228–$248/month due to significantly higher vehicle values and repair costs. Diesel pusher repair costs average 35% more than gas motorhome repairs, engine work on a Cummins diesel requires specialized technicians available at limited Phoenix-area service centers.",
         },
         {
           question: "Q: Does RV insurance cover my belongings inside the RV?",
@@ -9522,12 +9522,12 @@ const rvInsurancePhoenixPost: BlogPost = {
         {
           question: "Q: What is vacation liability coverage for Phoenix RV owners?",
           answer:
-            "Vacation liability coverage protects Phoenix RV owners when the RV is parked and being used as a temporary residence — at a campsite, RV park, or trailhead. If a visitor trips on your awning or is injured at your campsite, vacation liability pays their medical bills and legal defense costs. Most Progressive and Nationwide RV policies include $10,000 in vacation liability as standard, with options up to $500,000 for full-timers.",
+            "Vacation liability coverage protects Phoenix RV owners when the RV is parked and being used as a temporary residence, at a campsite, RV park, or trailhead. If a visitor trips on your awning or is injured at your campsite, vacation liability pays their medical bills and legal defense costs. Most Progressive and Nationwide RV policies include $10,000 in vacation liability as standard, with options up to $500,000 for full-timers.",
         },
         {
           question: "Q: Can I get RV insurance for a vintage or classic motorhome in Phoenix?",
           answer:
-            "Yes. Agreed value coverage for vintage motorhomes — including pre-1990 Airstreams, vintage VW buses, and classic Winnebagos — is available through Hagerty, Grundy, and Markel in Arizona. Agreed value pays the full stated amount with no depreciation after a total loss. A 1978 Airstream Sovereign restored to $85,000 in value would receive $85,000 — not its depreciated ACV — under an agreed value policy. Premiums for vintage motorhomes average $58–$112/month depending on value and usage.",
+            "Yes. Agreed value coverage for vintage motorhomes, including pre-1990 Airstreams, vintage VW buses, and classic Winnebagos, is available through Hagerty, Grundy, and Markel in Arizona. Agreed value pays the full stated amount with no depreciation after a total loss. A 1978 Airstream Sovereign restored to $85,000 in value would receive $85,000, not its depreciated ACV, under an agreed value policy. Premiums for vintage motorhomes average $58–$112/month depending on value and usage.",
         },
       ],
     },
@@ -9607,9 +9607,9 @@ const travelTrailerInsurancePhoenixPost: BlogPost = {
   keyTakeaways: {
     items: [
       "Travel trailer and fifth wheel insurance in Phoenix costs an average of $28–$68/month for full coverage, depending on the unit's length, value, and amenities.",
-      "Arizona law does not require insurance for towed trailers, but your auto insurance covers only liability for a towed trailer — not physical damage to the trailer itself.",
+      "Arizona law does not require insurance for towed trailers, but your auto insurance covers only liability for a towed trailer, not physical damage to the trailer itself.",
       "A 40-foot Grand Design fifth wheel valued at $68,000 receives zero collision or comprehensive coverage under your auto policy.",
-      "Phoenix's extreme heat warps slideout seals, creating water intrusion damage — slideout failures can cost $3,500–$12,000 to repair.",
+      "Phoenix's extreme heat warps slideout seals, creating water intrusion damage, slideout failures can cost $3,500–$12,000 to repair.",
       "An estimated 12,000–15,000 Phoenix-area residents live in travel trailers or fifth wheels on a full-time or snowbird basis.",
     ],
   },
@@ -9621,33 +9621,33 @@ const travelTrailerInsurancePhoenixPost: BlogPost = {
     {
       type: "p",
       text:
-        "Travel trailer and fifth wheel insurance in Phoenix costs an average of $28–$68/month for full coverage, depending on the unit's length, value, and amenities (Progressive, Foremost 2024 rate data for Maricopa County). Arizona law does not require insurance for towed trailers, but your auto insurance covers only liability for a towed trailer — not physical damage to the trailer itself. A 40-foot Grand Design fifth wheel valued at $68,000 receives zero collision or comprehensive coverage under your auto policy. A dedicated trailer policy costs $38–$52/month and protects your full investment.",
+        "Travel trailer and fifth wheel insurance in Phoenix costs an average of $28–$68/month for full coverage, depending on the unit's length, value, and amenities (Progressive, Foremost 2024 rate data for Maricopa County). Arizona law does not require insurance for towed trailers, but your auto insurance covers only liability for a towed trailer, not physical damage to the trailer itself. A 40-foot Grand Design fifth wheel valued at $68,000 receives zero collision or comprehensive coverage under your auto policy. A dedicated trailer policy costs $38–$52/month and protects your full investment.",
     },
 
     { type: "h2", text: "What Your Auto Insurance Actually Covers for a Towed Trailer" },
     {
       type: "p",
       text:
-        "This is the most misunderstood aspect of trailer ownership in Phoenix. Your Arizona auto insurance liability coverage does extend to a trailer you are towing — meaning if the trailer causes damage to another vehicle or property, your auto liability pays. But that is where the auto policy's coverage ends.",
+        "This is the most misunderstood aspect of trailer ownership in Phoenix. Your Arizona auto insurance liability coverage does extend to a trailer you are towing, meaning if the trailer causes damage to another vehicle or property, your auto liability pays. But that is where the auto policy's coverage ends.",
     },
     {
       type: "p",
       text:
-        "Damage to the trailer itself — collision, theft, hail, fire — receives zero coverage from a standard Arizona auto policy. A hailstorm on I-17 northbound that destroys the roof of your $68,000 fifth wheel while towing toward Flagstaff is a total out-of-pocket loss without a dedicated trailer policy.",
+        "Damage to the trailer itself, collision, theft, hail, fire, receives zero coverage from a standard Arizona auto policy. A hailstorm on I-17 northbound that destroys the roof of your $68,000 fifth wheel while towing toward Flagstaff is a total out-of-pocket loss without a dedicated trailer policy.",
     },
     {
       type: "table",
       caption: "What Your Auto Insurance Actually Covers for a Towed Trailer",
       columns: ["Scenario", "Covered by Auto Policy?", "Covered by Trailer Policy?"],
       rows: [
-        ["You cause a crash and damage another vehicle", "Yes — auto liability pays", "Yes — also has liability"],
-        ["Your trailer's contents fall off and damage another car", "Yes — auto liability pays", "Yes"],
-        ["The trailer is damaged in a crash (your fault)", "No", "Yes — collision coverage"],
-        ["The trailer is damaged in a crash (other driver's fault)", "No", "Yes — or other driver's liability"],
-        ["Hail damages the trailer roof and AC unit", "No", "Yes — comprehensive"],
-        ["Trailer is stolen from your Phoenix driveway", "No", "Yes — comprehensive"],
-        ["Trailer contents (furniture, electronics) stolen", "No", "Yes — with personal effects rider"],
-        ["Someone is injured at your campsite", "No", "Yes — vacation liability"],
+        ["You cause a crash and damage another vehicle", "Yes, auto liability pays", "Yes, also has liability"],
+        ["Your trailer's contents fall off and damage another car", "Yes, auto liability pays", "Yes"],
+        ["The trailer is damaged in a crash (your fault)", "No", "Yes, collision coverage"],
+        ["The trailer is damaged in a crash (other driver's fault)", "No", "Yes, or other driver's liability"],
+        ["Hail damages the trailer roof and AC unit", "No", "Yes, comprehensive"],
+        ["Trailer is stolen from your Phoenix driveway", "No", "Yes, comprehensive"],
+        ["Trailer contents (furniture, electronics) stolen", "No", "Yes, with personal effects rider"],
+        ["Someone is injured at your campsite", "No", "Yes, vacation liability"],
       ],
     },
 
@@ -9680,19 +9680,19 @@ const travelTrailerInsurancePhoenixPost: BlogPost = {
     {
       type: "p",
       text:
-        "Slideout rooms — the hydraulic or electric extensions that expand the living area — are the most commonly damaged component on fifth wheels and travel trailers in Arizona. Phoenix's extreme heat warps slideout seals, creating water intrusion damage. Wind and monsoon debris impact slideout panels. A single slideout failure can cost $3,500–$12,000 to repair.",
+        "Slideout rooms, the hydraulic or electric extensions that expand the living area, are the most commonly damaged component on fifth wheels and travel trailers in Arizona. Phoenix's extreme heat warps slideout seals, creating water intrusion damage. Wind and monsoon debris impact slideout panels. A single slideout failure can cost $3,500–$12,000 to repair.",
     },
     {
       type: "p",
       text:
-        "Standard trailer policies cover slideout damage under collision (if caused by an accident) and comprehensive (if caused by a covered peril like hail or falling debris). Mechanical breakdown of the slideout motor or hydraulics is excluded — that falls under an extended warranty. Protegrity Insurance recommends documenting all slideout dimensions and conditions annually for Phoenix-area trailer owners.",
+        "Standard trailer policies cover slideout damage under collision (if caused by an accident) and comprehensive (if caused by a covered peril like hail or falling debris). Mechanical breakdown of the slideout motor or hydraulics is excluded, that falls under an extended warranty. Protegrity Insurance recommends documenting all slideout dimensions and conditions annually for Phoenix-area trailer owners.",
     },
 
     { type: "h2", text: "Full-Timer Coverage for Phoenix-Area Long-Term Trailer Residents" },
     {
       type: "p",
       text:
-        "An estimated 12,000–15,000 Phoenix-area residents live in travel trailers or fifth wheels on a full-time or snowbird basis (RVIA, 2024). Standard trailer insurance is designed for occasional use — policies that include full-timer coverage add personal liability ($100,000–$500,000), medical payments for visitors, and broader personal property protection appropriate for a primary or secondary residence.",
+        "An estimated 12,000–15,000 Phoenix-area residents live in travel trailers or fifth wheels on a full-time or snowbird basis (RVIA, 2024). Standard trailer insurance is designed for occasional use, policies that include full-timer coverage add personal liability ($100,000–$500,000), medical payments for visitors, and broader personal property protection appropriate for a primary or secondary residence.",
     },
     {
       type: "p",
@@ -9707,7 +9707,7 @@ const travelTrailerInsurancePhoenixPost: BlogPost = {
         {
           question: "Q: Does my auto insurance cover a travel trailer in Arizona?",
           answer:
-            "Your auto insurance liability coverage extends to a trailer you are actively towing — meaning damage you cause to others is covered. Physical damage to the trailer itself (collision, theft, hail, fire) is not covered by any standard Arizona auto policy. A dedicated travel trailer policy from Progressive, Foremost, or National General costs $18–$68/month and covers the trailer 24 hours a day, whether attached, parked at a campsite, or stored in your Phoenix driveway.",
+            "Your auto insurance liability coverage extends to a trailer you are actively towing, meaning damage you cause to others is covered. Physical damage to the trailer itself (collision, theft, hail, fire) is not covered by any standard Arizona auto policy. A dedicated travel trailer policy from Progressive, Foremost, or National General costs $18–$68/month and covers the trailer 24 hours a day, whether attached, parked at a campsite, or stored in your Phoenix driveway.",
         },
         {
           question: "Q: Is travel trailer insurance required in Arizona?",
@@ -9717,22 +9717,22 @@ const travelTrailerInsurancePhoenixPost: BlogPost = {
         {
           question: "Q: How much does fifth wheel insurance cost in Phoenix?",
           answer:
-            "A fifth wheel valued at $52,000–$78,000 costs $42–$68/month for full coverage in Phoenix from Progressive or Foremost. This includes collision, comprehensive (covering Phoenix's hail and monsoon exposure), $300,000 in liability, personal effects up to $3,000, and emergency expense coverage. Agreed value policies — which pay the stated insured amount with no depreciation — add approximately $8–$14/month and are strongly recommended for fifth wheels over $50,000.",
+            "A fifth wheel valued at $52,000–$78,000 costs $42–$68/month for full coverage in Phoenix from Progressive or Foremost. This includes collision, comprehensive (covering Phoenix's hail and monsoon exposure), $300,000 in liability, personal effects up to $3,000, and emergency expense coverage. Agreed value policies, which pay the stated insured amount with no depreciation, add approximately $8–$14/month and are strongly recommended for fifth wheels over $50,000.",
         },
         {
           question: "Q: What is toy hauler insurance in Phoenix and what does the garage section cover?",
           answer:
-            "A toy hauler's garage section — the rear cargo area used to transport ATVs, motorcycles, dirt bikes, or golf carts — is covered under the trailer's comprehensive and collision policies as part of the vehicle structure. However, the recreational vehicles inside the garage are not covered by the trailer policy. Each ATV, motorcycle, or dirt bike inside the toy hauler requires its own separate insurance policy. Protegrity Insurance can bundle toy hauler and ATV/motorcycle policies for a combined multi-unit discount of 8–12%.",
+            "A toy hauler's garage section, the rear cargo area used to transport ATVs, motorcycles, dirt bikes, or golf carts, is covered under the trailer's comprehensive and collision policies as part of the vehicle structure. However, the recreational vehicles inside the garage are not covered by the trailer policy. Each ATV, motorcycle, or dirt bike inside the toy hauler requires its own separate insurance policy. Protegrity Insurance can bundle toy hauler and ATV/motorcycle policies for a combined multi-unit discount of 8–12%.",
         },
         {
           question: "Q: Does travel trailer insurance cover theft of belongings inside the trailer?",
           answer:
-            "Personal effects coverage — included as standard by Progressive (up to $1,500) and available as a rider up to $30,000 — covers theft of belongings inside your trailer: clothing, bedding, kitchen items, portable electronics, and recreational equipment. Items permanently installed in the trailer (built-in appliances, custom cabinetry, built-in entertainment systems) are covered under the trailer's physical damage coverage, not personal effects.",
+            "Personal effects coverage, included as standard by Progressive (up to $1,500) and available as a rider up to $30,000, covers theft of belongings inside your trailer: clothing, bedding, kitchen items, portable electronics, and recreational equipment. Items permanently installed in the trailer (built-in appliances, custom cabinetry, built-in entertainment systems) are covered under the trailer's physical damage coverage, not personal effects.",
         },
         {
           question: "Q: Can I insure a travel trailer I store year-round in Phoenix?",
           answer:
-            "Yes, and Protegrity Insurance recommends comprehensive coverage even during storage periods. Phoenix's storage season risks include: theft (ATV trailers and large fifth wheels are targeted in Maricopa County storage facilities), monsoon hail damage (even in covered storage, wind-driven hail can damage exterior panels), rodent damage (packrat intrusion is a documented comprehensive claim category in Arizona — some carriers cover rodent damage; confirm before purchasing), and UV degradation from extreme sun exposure requiring roof and seal maintenance claims.",
+            "Yes, and Protegrity Insurance recommends comprehensive coverage even during storage periods. Phoenix's storage season risks include: theft (ATV trailers and large fifth wheels are targeted in Maricopa County storage facilities), monsoon hail damage (even in covered storage, wind-driven hail can damage exterior panels), rodent damage (packrat intrusion is a documented comprehensive claim category in Arizona, some carriers cover rodent damage; confirm before purchasing), and UV degradation from extreme sun exposure requiring roof and seal maintenance claims.",
         },
       ],
     },
@@ -9812,7 +9812,7 @@ const motorhomeInsurancePhoenixPost: BlogPost = {
   keyTakeaways: {
     items: [
       "Motorhome insurance in Phoenix, AZ costs an average of $148–$248/month for full coverage depending on class and vehicle value.",
-      "Arizona law requires all Class A, B, and C motorhomes to carry minimum liability of 25/50/15 (ARS § 28-4009) — the same as an automobile.",
+      "Arizona law requires all Class A, B, and C motorhomes to carry minimum liability of 25/50/15 (ARS § 28-4009), the same as an automobile.",
       "A motorhome is not a car: its size, value, and dual-use as both a vehicle and a temporary residence require a specialized policy that standard auto insurance cannot provide.",
       "Phoenix motorhome owners can save $28–$44/month by bundling motorhome and auto insurance through the same carrier.",
       "Full-timer coverage for Phoenix residents living in their RV adds $22–$38/month but provides $300,000–$500,000 in personal liability coverage.",
@@ -9823,7 +9823,7 @@ const motorhomeInsurancePhoenixPost: BlogPost = {
     {
       type: "p",
       text:
-        "Motorhome insurance in Phoenix, AZ costs an average of $148–$248/month for full coverage depending on class and vehicle value, according to Progressive and Nationwide 2024 RV rate data for Maricopa County. Arizona law requires all Class A, B, and C motorhomes to carry minimum liability of 25/50/15 (ARS § 28-4009) — the same as an automobile. However, a motorhome is not a car: its size, value, and dual-use as both a vehicle and a temporary residence require a specialized policy that standard auto insurance cannot provide.",
+        "Motorhome insurance in Phoenix, AZ costs an average of $148–$248/month for full coverage depending on class and vehicle value, according to Progressive and Nationwide 2024 RV rate data for Maricopa County. Arizona law requires all Class A, B, and C motorhomes to carry minimum liability of 25/50/15 (ARS § 28-4009), the same as an automobile. However, a motorhome is not a car: its size, value, and dual-use as both a vehicle and a temporary residence require a specialized policy that standard auto insurance cannot provide.",
     },
 
     {
@@ -9841,11 +9841,11 @@ const motorhomeInsurancePhoenixPost: BlogPost = {
         "Avg. Monthly Premium (Phoenix)",
       ],
       rows: [
-        ["Class A — Gas", "Full-size coach on truck chassis", "28–40 ft", "$80,000–$175,000", "$148–$198/mo"],
-        ["Class A — Diesel Pusher", "Full-size coach, rear diesel engine", "38–45 ft", "$200,000–$600,000", "$212–$248/mo"],
-        ["Class B — Campervan", "Van-based, full-featured", "18–24 ft", "$120,000–$250,000", "$138–$178/mo"],
-        ["Class C — Gas", "Cab-over design on truck frame", "20–33 ft", "$65,000–$140,000", "$112–$158/mo"],
-        ["Class C — Super C (diesel)", "Truck cab-over, heavy duty", "33–40 ft", "$175,000–$380,000", "$178–$228/mo"],
+        ["Class A, Gas", "Full-size coach on truck chassis", "28–40 ft", "$80,000–$175,000", "$148–$198/mo"],
+        ["Class A, Diesel Pusher", "Full-size coach, rear diesel engine", "38–45 ft", "$200,000–$600,000", "$212–$248/mo"],
+        ["Class B, Campervan", "Van-based, full-featured", "18–24 ft", "$120,000–$250,000", "$138–$178/mo"],
+        ["Class C, Gas", "Cab-over design on truck frame", "20–33 ft", "$65,000–$140,000", "$112–$158/mo"],
+        ["Class C, Super C (diesel)", "Truck cab-over, heavy duty", "33–40 ft", "$175,000–$380,000", "$178–$228/mo"],
       ],
     },
 
@@ -9854,7 +9854,7 @@ const motorhomeInsurancePhoenixPost: BlogPost = {
       type: "p",
       lead: "Vacation liability:",
       text:
-        "If your Phoenix motorhome is parked at a Sedona RV park and a visitor trips and is injured at your campsite, auto liability does not cover this. Motorhome vacation liability — included in all specialty RV policies — covers bodily injury claims that occur while the motorhome is parked and being used as a temporary dwelling.",
+        "If your Phoenix motorhome is parked at a Sedona RV park and a visitor trips and is injured at your campsite, auto liability does not cover this. Motorhome vacation liability, included in all specialty RV policies, covers bodily injury claims that occur while the motorhome is parked and being used as a temporary dwelling.",
     },
     {
       type: "p",
@@ -9866,7 +9866,7 @@ const motorhomeInsurancePhoenixPost: BlogPost = {
       type: "p",
       lead: "Total loss replacement:",
       text:
-        "For motorhomes less than 5 model years old, Progressive and Nationwide offer total loss replacement coverage — replacing a totaled unit with a comparable current-year model rather than paying depreciated actual cash value. A 2023 Thor Palazzo worth $162,000 at purchase may have an ACV of $138,000 after one year — a $24,000 gap that total loss replacement covers.",
+        "For motorhomes less than 5 model years old, Progressive and Nationwide offer total loss replacement coverage, replacing a totaled unit with a comparable current-year model rather than paying depreciated actual cash value. A 2023 Thor Palazzo worth $162,000 at purchase may have an ACV of $138,000 after one year, a $24,000 gap that total loss replacement covers.",
     },
     {
       type: "p",
@@ -9919,7 +9919,7 @@ const motorhomeInsurancePhoenixPost: BlogPost = {
       type: "p",
       lead: "4. Good Sam membership:",
       text:
-        "Good Sam members receive a 4–8% discount on Good Sam-branded Nationwide policies — a meaningful saving on a $172/month base premium.",
+        "Good Sam members receive a 4–8% discount on Good Sam-branded Nationwide policies, a meaningful saving on a $172/month base premium.",
     },
     {
       type: "p",
@@ -9931,7 +9931,7 @@ const motorhomeInsurancePhoenixPost: BlogPost = {
       type: "p",
       lead: "6. Raise your deductible:",
       text:
-        "Increasing the collision deductible from $1,000 to $2,500 on a Class A motorhome policy reduces the monthly premium by an average of $18–$28/month in Phoenix — a meaningful saving given that most motorhome collision claims exceed $10,000.",
+        "Increasing the collision deductible from $1,000 to $2,500 on a Class A motorhome policy reduces the monthly premium by an average of $18–$28/month in Phoenix, a meaningful saving given that most motorhome collision claims exceed $10,000.",
     },
 
     { type: "h2", text: "Frequently Asked Questions: Motorhome Insurance in Phoenix" },
@@ -9941,7 +9941,7 @@ const motorhomeInsurancePhoenixPost: BlogPost = {
         {
           question: "Q: Do I need a special license to drive a motorhome in Arizona?",
           answer:
-            "Arizona does not require a special license for motorhomes under 26,000 lbs GVWR — which covers most Class A gas, Class B, and Class C motorhomes. Class A diesel pushers over 26,000 lbs require a Class B commercial license (CDL-B) in Arizona under ARS § 28-3001. Driving a CDL-required motorhome without the appropriate license may void your insurance coverage in the event of an accident.",
+            "Arizona does not require a special license for motorhomes under 26,000 lbs GVWR, which covers most Class A gas, Class B, and Class C motorhomes. Class A diesel pushers over 26,000 lbs require a Class B commercial license (CDL-B) in Arizona under ARS § 28-3001. Driving a CDL-required motorhome without the appropriate license may void your insurance coverage in the event of an accident.",
         },
         {
           question: "Q: What is the best motorhome insurance for a Phoenix full-timer?",
@@ -9956,12 +9956,12 @@ const motorhomeInsurancePhoenixPost: BlogPost = {
         {
           question: "Q: How does Arizona's heat affect motorhome insurance claims in Phoenix?",
           answer:
-            "Phoenix's extreme summer heat — with 100+ days above 100°F annually — generates specific motorhome claim categories: roof delamination from UV exposure, slideout seal failure from heat warping, tire blowouts on I-10 and I-8 during summer travel, and AC unit failures from overload. Roof and slideout damage from heat-caused delamination are maintenance issues excluded from standard policies. Tire blowout damage to the motorhome's exterior from a heat-caused blowout may be covered under comprehensive if documented as a sudden loss rather than gradual wear.",
+            "Phoenix's extreme summer heat, with 100+ days above 100°F annually, generates specific motorhome claim categories: roof delamination from UV exposure, slideout seal failure from heat warping, tire blowouts on I-10 and I-8 during summer travel, and AC unit failures from overload. Roof and slideout damage from heat-caused delamination are maintenance issues excluded from standard policies. Tire blowout damage to the motorhome's exterior from a heat-caused blowout may be covered under comprehensive if documented as a sudden loss rather than gradual wear.",
         },
         {
           question: "Q: Can I use my motorhome as a primary residence in Phoenix?",
           answer:
-            "Yes. Phoenix has no municipal ordinance prohibiting full-time RV living in permitted RV parks and communities. Thousand Trails Phoenix, Arizona Sands RV Park in Mesa, and Val Vista Village in Mesa are among the Phoenix-area communities that accommodate full-time RV residents. Full-time residence in a motorhome requires a full-timer insurance policy — standard motorhome insurance is voided if the carrier discovers the unit is used as a primary residence without the appropriate endorsement.",
+            "Yes. Phoenix has no municipal ordinance prohibiting full-time RV living in permitted RV parks and communities. Thousand Trails Phoenix, Arizona Sands RV Park in Mesa, and Val Vista Village in Mesa are among the Phoenix-area communities that accommodate full-time RV residents. Full-time residence in a motorhome requires a full-timer insurance policy, standard motorhome insurance is voided if the carrier discovers the unit is used as a primary residence without the appropriate endorsement.",
         },
         {
           question: "Q: What discounts are available for motorhome insurance in Phoenix?",
@@ -10014,11 +10014,11 @@ const bestSpecialtyInsuranceCompaniesPhoenixPost: BlogPost = {
   title:
     "Best Specialty Insurance Companies in Phoenix, AZ for Motorcycles, Boats, ATVs, and RVs (2026)",
   excerpt:
-    "The best specialty insurance carriers in Phoenix, AZ for motorcycles, ATVs, boats, jet skis, and RVs — rated by price, coverage, claims satisfaction, and Maricopa County market data.",
+    "The best specialty insurance carriers in Phoenix, AZ for motorcycles, ATVs, boats, jet skis, and RVs, rated by price, coverage, claims satisfaction, and Maricopa County market data.",
   metaTitle:
     "Best Specialty Insurance Companies in Phoenix, AZ for Motorcycles, Boats, ATVs, and RVs (2026)",
   metaDescription:
-    "The best specialty insurance carriers in Phoenix, AZ for motorcycles, ATVs, boats, jet skis, and RVs — rated by price, coverage, claims satisfaction, and Maricopa County market data.",
+    "The best specialty insurance carriers in Phoenix, AZ for motorcycles, ATVs, boats, jet skis, and RVs, rated by price, coverage, claims satisfaction, and Maricopa County market data.",
   keywords: ["specialty insurance companies Phoenix AZ"],
   category: "SPECIALTY INSURANCE",
   readTime: "9 min read",
@@ -10096,28 +10096,28 @@ const bestSpecialtyInsuranceCompaniesPhoenixPost: BlogPost = {
     {
       type: "p",
       text:
-        "Progressive is the #1 specialty vehicle insurer in Arizona by policy count and is Protegrity Insurance's most-quoted carrier across all Phoenix specialty lines. Progressive offers the lowest average rates for motorcycles ($58/month full coverage), ATVs ($28–$72/month), and PWCs ($22–$38/month). Their custom parts and equipment coverage reaches $30,000 for motorcycles and $50,000 for ATVs — the highest limits of any standard carrier in Arizona. Progressive files SR-22 for motorcycles and has the broadest underwriting acceptance of any specialty carrier, including riders with prior DUIs or lapses.",
+        "Progressive is the #1 specialty vehicle insurer in Arizona by policy count and is Protegrity Insurance's most-quoted carrier across all Phoenix specialty lines. Progressive offers the lowest average rates for motorcycles ($58/month full coverage), ATVs ($28–$72/month), and PWCs ($22–$38/month). Their custom parts and equipment coverage reaches $30,000 for motorcycles and $50,000 for ATVs, the highest limits of any standard carrier in Arizona. Progressive files SR-22 for motorcycles and has the broadest underwriting acceptance of any specialty carrier, including riders with prior DUIs or lapses.",
     },
 
     { type: "h2", text: "Foremost: Best for RVs and High-Value Trailers in Phoenix" },
     {
       type: "p",
       text:
-        "Foremost (owned by Farmers Insurance) is the top-rated RV and trailer insurer in the Phoenix market, with specific expertise in Class A diesel motorhomes, high-value fifth wheels, and toy haulers. Foremost's agreed value motorhome policies pay the full insured value with no depreciation — critical for diesel pushers worth $200,000–$600,000. Foremost insures over 800,000 RVs nationally and has the deepest claims experience with Maricopa County-specific risks including monsoon hail, UV roof damage, and slideout failures.",
+        "Foremost (owned by Farmers Insurance) is the top-rated RV and trailer insurer in the Phoenix market, with specific expertise in Class A diesel motorhomes, high-value fifth wheels, and toy haulers. Foremost's agreed value motorhome policies pay the full insured value with no depreciation, critical for diesel pushers worth $200,000–$600,000. Foremost insures over 800,000 RVs nationally and has the deepest claims experience with Maricopa County-specific risks including monsoon hail, UV roof damage, and slideout failures.",
     },
 
     { type: "h2", text: "Markel: Best for Vintage, Custom, and High-Value Marine in Phoenix" },
     {
       type: "p",
       text:
-        "Markel specializes in vehicles that standard carriers decline: vintage motorcycles (pre-1980), custom choppers, classic wooden boats, and high-value ski boats over $100,000. Markel's agreed value policies for vintage motorcycles cover agreed value up to $150,000 — standard carriers cap coverage at $30,000–$50,000. For Phoenix boat owners with Malibu Wakesetter or MasterCraft ski boats above $85,000, Markel offers the most competitive agreed value marine coverage in the Arizona market.",
+        "Markel specializes in vehicles that standard carriers decline: vintage motorcycles (pre-1980), custom choppers, classic wooden boats, and high-value ski boats over $100,000. Markel's agreed value policies for vintage motorcycles cover agreed value up to $150,000, standard carriers cap coverage at $30,000–$50,000. For Phoenix boat owners with Malibu Wakesetter or MasterCraft ski boats above $85,000, Markel offers the most competitive agreed value marine coverage in the Arizona market.",
     },
 
     { type: "h2", text: "BoatUS: Best Dedicated Marine Carrier for Phoenix Boaters" },
     {
       type: "p",
       text:
-        "BoatUS (underwritten by GeoVera) is the country's largest dedicated boat insurance provider and has the deepest experience with Arizona freshwater lake boating claims. BoatUS policies include $100 on-water towing as a standard benefit — critical for Lake Pleasant and Saguaro Lake where commercial towing costs $300–$800. BoatUS offers agreed value coverage on boats up to $500,000 and consistently earns top ratings from J.D. Power's marine insurance satisfaction survey.",
+        "BoatUS (underwritten by GeoVera) is the country's largest dedicated boat insurance provider and has the deepest experience with Arizona freshwater lake boating claims. BoatUS policies include $100 on-water towing as a standard benefit, critical for Lake Pleasant and Saguaro Lake where commercial towing costs $300–$800. BoatUS offers agreed value coverage on boats up to $500,000 and consistently earns top ratings from J.D. Power's marine insurance satisfaction survey.",
     },
 
     {
@@ -10142,12 +10142,12 @@ const bestSpecialtyInsuranceCompaniesPhoenixPost: BlogPost = {
         {
           question: "Q: Which carrier is best for insuring multiple specialty vehicles in Phoenix?",
           answer:
-            "Progressive is the best single carrier for Phoenix owners with multiple specialty vehicles — motorcycle + ATV, motorcycle + boat, or ATV + PWC combinations. Progressive offers multi-unit specialty discounts of 8–15% on all covered vehicles. For an owner with a motorcycle ($68/month), an ATV ($34/month), and a PWC ($28/month), a Progressive multi-unit policy averages $108/month combined — versus $130/month for three separate policies from different carriers.",
+            "Progressive is the best single carrier for Phoenix owners with multiple specialty vehicles, motorcycle + ATV, motorcycle + boat, or ATV + PWC combinations. Progressive offers multi-unit specialty discounts of 8–15% on all covered vehicles. For an owner with a motorcycle ($68/month), an ATV ($34/month), and a PWC ($28/month), a Progressive multi-unit policy averages $108/month combined, versus $130/month for three separate policies from different carriers.",
         },
         {
           question: "Q: Does USAA offer specialty vehicle insurance in Phoenix?",
           answer:
-            "Yes. USAA offers motorcycle, ATV, boat, PWC, and RV insurance to eligible members in Arizona — and their rates are consistently the lowest of any carrier across all specialty categories. A USAA-eligible Phoenix rider pays $54/month for full motorcycle coverage versus $58/month at Progressive. USAA membership requires active duty, veteran, or eligible family member status. Luke Air Force Base and Williams Gateway Airport personnel in the Phoenix metro area qualify.",
+            "Yes. USAA offers motorcycle, ATV, boat, PWC, and RV insurance to eligible members in Arizona, and their rates are consistently the lowest of any carrier across all specialty categories. A USAA-eligible Phoenix rider pays $54/month for full motorcycle coverage versus $58/month at Progressive. USAA membership requires active duty, veteran, or eligible family member status. Luke Air Force Base and Williams Gateway Airport personnel in the Phoenix metro area qualify.",
         },
         {
           question: "Q: What is the difference between agreed value and actual cash value for specialty vehicles?",
@@ -10157,7 +10157,7 @@ const bestSpecialtyInsuranceCompaniesPhoenixPost: BlogPost = {
         {
           question: "Q: Can I bundle all my specialty vehicles with one Phoenix carrier?",
           answer:
-            "Yes, through Protegrity Insurance. We can structure multi-vehicle specialty packages combining motorcycle, ATV, boat, and RV coverage with a single carrier — typically Progressive or Nationwide — with all vehicles on one bill and one renewal date. This eliminates administrative complexity and earns bundle discounts across all vehicles. A Phoenix family with a Class C motorhome, two ATVs, and a pontoon boat averages $228/month combined under a Nationwide multi-vehicle specialty package versus $284/month across separate single-carrier policies.",
+            "Yes, through Protegrity Insurance. We can structure multi-vehicle specialty packages combining motorcycle, ATV, boat, and RV coverage with a single carrier, typically Progressive or Nationwide, with all vehicles on one bill and one renewal date. This eliminates administrative complexity and earns bundle discounts across all vehicles. A Phoenix family with a Class C motorhome, two ATVs, and a pontoon boat averages $228/month combined under a Nationwide multi-vehicle specialty package versus $284/month across separate single-carrier policies.",
         },
         {
           question: "Q: How quickly can I get specialty insurance in Phoenix?",
@@ -10167,7 +10167,7 @@ const bestSpecialtyInsuranceCompaniesPhoenixPost: BlogPost = {
         {
           question: "Q: Who should I call if I have a specialty insurance claim in Phoenix?",
           answer:
-            "Call Protegrity Insurance first at (480) XXX-XXXX. Our licensed Phoenix agents are available to help you initiate your claim with the correct carrier, document the loss properly, and navigate the claims process from first notice through settlement. Arizona law (ARS § 20-462) requires insurers to acknowledge your claim within 10 business days — Protegrity Insurance monitors claim timelines on your behalf to ensure your carrier meets its statutory obligations.",
+            "Call Protegrity Insurance first at (480) XXX-XXXX. Our licensed Phoenix agents are available to help you initiate your claim with the correct carrier, document the loss properly, and navigate the claims process from first notice through settlement. Arizona law (ARS § 20-462) requires insurers to acknowledge your claim within 10 business days, Protegrity Insurance monitors claim timelines on your behalf to ensure your carrier meets its statutory obligations.",
         },
       ],
     },
@@ -10245,9 +10245,9 @@ const generalLiabilityInsuranceArizonaPost: BlogPost = {
   keyTakeaways: {
     items: [
       "Arizona small businesses pay a median of $45/month for general liability insurance (Insureon, 2025).",
-      "GL covers bodily injury, property damage, and advertising injury — but not employee injuries or professional errors.",
+      "GL covers bodily injury, property damage, and advertising injury, but not employee injuries or professional errors.",
       "Most commercial leases, client contracts, and Arizona contractor licenses require proof of GL coverage.",
-      "Quoting across 10 or more business insurance carriers through an independent brokerage is the most effective way to find the right coverage at the best price — each carrier prices the same business differently.",
+      "Quoting across 10 or more business insurance carriers through an independent brokerage is the most effective way to find the right coverage at the best price, each carrier prices the same business differently.",
     ],
   },
   content: [
@@ -10255,14 +10255,14 @@ const generalLiabilityInsuranceArizonaPost: BlogPost = {
     {
       type: "p",
       text:
-        "General liability insurance covers third-party bodily injury, property damage, and advertising injury claims made against your business. According to Insureon's 2025 market data, small businesses pay a median of $45 per month — or $500 per year — for a standard $1 million per-occurrence / $2 million aggregate policy. This guide is for Phoenix, Scottsdale, Mesa, Chandler, and Gilbert business owners who want to understand what GL insurance covers, what it does not, and how to compare quotes across 10 or more business insurance carriers before making a decision.",
+        "General liability insurance covers third-party bodily injury, property damage, and advertising injury claims made against your business. According to Insureon's 2025 market data, small businesses pay a median of $45 per month, or $500 per year, for a standard $1 million per-occurrence / $2 million aggregate policy. This guide is for Phoenix, Scottsdale, Mesa, Chandler, and Gilbert business owners who want to understand what GL insurance covers, what it does not, and how to compare quotes across 10 or more business insurance carriers before making a decision.",
     },
 
     { type: "h2", text: "What is general liability insurance?" },
     {
       type: "p",
       text:
-        "General liability insurance — also called commercial general liability (CGL) — is a policy that pays for claims made by third parties who say your business caused them harm. That includes a customer who slips and falls in your Phoenix storefront, a client whose property your employee accidentally damages, or a competitor who claims your advertising defamed them.",
+        "General liability insurance, also called commercial general liability (CGL), is a policy that pays for claims made by third parties who say your business caused them harm. That includes a customer who slips and falls in your Phoenix storefront, a client whose property your employee accidentally damages, or a competitor who claims your advertising defamed them.",
     },
     {
       type: "p",
@@ -10309,7 +10309,7 @@ const generalLiabilityInsuranceArizonaPost: BlogPost = {
         ],
         [
           "Legal defense costs",
-          "Attorney and court fees for covered claims — even if you win",
+          "Attorney and court fees for covered claims, even if you win",
           "Frivolous slip-and-fall lawsuit against your Mesa restaurant",
         ],
         [
@@ -10324,7 +10324,7 @@ const generalLiabilityInsuranceArizonaPost: BlogPost = {
     {
       type: "p",
       text:
-        "General liability insurance does not cover employee injuries — that is workers' compensation, which Arizona law requires for any business with at least one employee. It does not cover professional mistakes or bad advice — that requires professional liability (errors and omissions) insurance. Your own business property or equipment requires commercial property insurance. Business-owned vehicles require commercial auto insurance under Arizona law. Cyberattacks or data breaches require a separate cyber liability policy. Intentional acts or fraud are excluded from all liability policies.",
+        "General liability insurance does not cover employee injuries, that is workers' compensation, which Arizona law requires for any business with at least one employee. It does not cover professional mistakes or bad advice, that requires professional liability (errors and omissions) insurance. Your own business property or equipment requires commercial property insurance. Business-owned vehicles require commercial auto insurance under Arizona law. Cyberattacks or data breaches require a separate cyber liability policy. Intentional acts or fraud are excluded from all liability policies.",
     },
 
     {
@@ -10359,12 +10359,12 @@ const generalLiabilityInsuranceArizonaPost: BlogPost = {
     {
       type: "p",
       text:
-        "Business insurance is not priced like a commodity. Every carrier uses its own underwriting model to assess risk — which means the same Phoenix landscaping business could receive quotes ranging from $900 to $2,400 per year for identical coverage limits, depending on which carriers are asked.",
+        "Business insurance is not priced like a commodity. Every carrier uses its own underwriting model to assess risk, which means the same Phoenix landscaping business could receive quotes ranging from $900 to $2,400 per year for identical coverage limits, depending on which carriers are asked.",
     },
     {
       type: "p",
       text:
-        "A business that calls one carrier gets one price. A business that quotes across 10 or more carriers gets the market rate — and keeps the difference.",
+        "A business that calls one carrier gets one price. A business that quotes across 10 or more carriers gets the market rate, and keeps the difference.",
     },
     {
       type: "p",
@@ -10374,7 +10374,7 @@ const generalLiabilityInsuranceArizonaPost: BlogPost = {
     {
       type: "p",
       text:
-        "Protegrity Insurance, as an independent licensed brokerage, submits your business profile to 10 or more commercial carriers simultaneously. The result is a side-by-side comparison of real quotes — not estimates — so you can evaluate price, coverage limits, deductibles, and carrier financial strength before making a decision.",
+        "Protegrity Insurance, as an independent licensed brokerage, submits your business profile to 10 or more commercial carriers simultaneously. The result is a side-by-side comparison of real quotes, not estimates, so you can evaluate price, coverage limits, deductibles, and carrier financial strength before making a decision.",
     },
 
     { type: "h2", text: "How does quoting through a brokerage compare to going direct?" },
@@ -10385,7 +10385,7 @@ const generalLiabilityInsuranceArizonaPost: BlogPost = {
       rows: [
         ["Quotes received", "1", "10+ business insurance carriers"],
         ["Carrier options", "That carrier's products only", "Multiple competing commercial carriers"],
-        ["Pricing power", "Take it or leave it", "Carriers compete — you choose the best fit"],
+        ["Pricing power", "Take it or leave it", "Carriers compete, you choose the best fit"],
         [
           "Industry-specific pricing",
           "Limited to one underwriting model",
@@ -10399,7 +10399,7 @@ const generalLiabilityInsuranceArizonaPost: BlogPost = {
         [
           "Coverage gap review",
           "Focused on their own products",
-          "Independent advice — no carrier bias",
+          "Independent advice, no carrier bias",
         ],
         [
           "Certificate of insurance (COI)",
@@ -10412,41 +10412,41 @@ const generalLiabilityInsuranceArizonaPost: BlogPost = {
     {
       type: "p",
       text:
-        "Independent brokerages are also better positioned to identify bundling opportunities. A Business Owner's Policy (BOP) — which combines general liability and commercial property insurance — costs an average of $83 per month, according to Insureon's 2025 data, and is often 20–30% less than purchasing each policy separately. A broker can tell you whether a BOP makes sense for your business or whether standalone GL is the right call — without any incentive to push one carrier's product over another.",
+        "Independent brokerages are also better positioned to identify bundling opportunities. A Business Owner's Policy (BOP), which combines general liability and commercial property insurance, costs an average of $83 per month, according to Insureon's 2025 data, and is often 20–30% less than purchasing each policy separately. A broker can tell you whether a BOP makes sense for your business or whether standalone GL is the right call, without any incentive to push one carrier's product over another.",
     },
 
     { type: "h2", text: "Common mistakes Arizona business owners make with GL insurance" },
     {
       type: "p",
       text:
-        "Getting only one quote — pricing for identical coverage can vary by hundreds of dollars per year across carriers.",
+        "Getting only one quote, pricing for identical coverage can vary by hundreds of dollars per year across carriers.",
     },
     {
       type: "p",
       text:
-        "Choosing the cheapest policy without comparing limits — a $1M per-occurrence limit is standard; lower limits may leave you exposed on a serious claim.",
+        "Choosing the cheapest policy without comparing limits, a $1M per-occurrence limit is standard; lower limits may leave you exposed on a serious claim.",
     },
     {
       type: "p",
       text:
-        "Assuming GL covers employee injuries — it does not; workers' compensation is a separate legally required policy in Arizona for any business with employees.",
+        "Assuming GL covers employee injuries, it does not; workers' compensation is a separate legally required policy in Arizona for any business with employees.",
     },
     {
       type: "p",
       text:
-        "Waiting until a client or landlord demands proof of insurance — reactive coverage purchases create gaps and often cost more.",
+        "Waiting until a client or landlord demands proof of insurance, reactive coverage purchases create gaps and often cost more.",
     },
     {
       type: "p",
       text:
-        "Not updating coverage after business growth — a policy written for a 2-person operation may be underinsured for a 15-person team.",
+        "Not updating coverage after business growth, a policy written for a 2-person operation may be underinsured for a 15-person team.",
     },
 
     { type: "h2", text: "When should you speak with a licensed business insurance agent?" },
     {
       type: "p",
       text:
-        "If your business is signing a new commercial lease in Phoenix or Tempe, taking on a large client contract, hiring your first employee, or operating in a high-risk industry like construction, food service, or healthcare — talk to a licensed agent before you buy. An independent broker can review your contracts, identify the coverage minimums your landlord or client requires, match you to the right carriers for your industry, and make sure the policy you purchase actually fits the risks your business faces in the Valley.",
+        "If your business is signing a new commercial lease in Phoenix or Tempe, taking on a large client contract, hiring your first employee, or operating in a high-risk industry like construction, food service, or healthcare, talk to a licensed agent before you buy. An independent broker can review your contracts, identify the coverage minimums your landlord or client requires, match you to the right carriers for your industry, and make sure the policy you purchase actually fits the risks your business faces in the Valley.",
     },
 
     { type: "h2", text: "Frequently Asked Questions: General Liability Insurance" },
@@ -10456,7 +10456,7 @@ const generalLiabilityInsuranceArizonaPost: BlogPost = {
         {
           question: "Q: What does general liability insurance cover for a small business?",
           answer:
-            "General liability insurance covers third-party bodily injury, property damage, and advertising injury claims. It pays legal defense costs and settlements up to your policy limit — even if the lawsuit is ultimately dismissed. It does not cover employee injuries, professional errors, or your own business property. Most Arizona small businesses carry a $1 million per-occurrence / $2 million aggregate limit as a baseline.",
+            "General liability insurance covers third-party bodily injury, property damage, and advertising injury claims. It pays legal defense costs and settlements up to your policy limit, even if the lawsuit is ultimately dismissed. It does not cover employee injuries, professional errors, or your own business property. Most Arizona small businesses carry a $1 million per-occurrence / $2 million aggregate limit as a baseline.",
         },
         {
           question: "Q: How much does general liability insurance cost in Arizona?",
@@ -10466,22 +10466,22 @@ const generalLiabilityInsuranceArizonaPost: BlogPost = {
         {
           question: "Q: Is general liability insurance required by law in Arizona?",
           answer:
-            "Arizona does not legally require most businesses to carry general liability insurance. However, commercial leases, client contracts, and many professional licensing applications in the state require proof of coverage before a business can operate. Most Phoenix-area businesses — from retailers to contractors in Peoria and Glendale — need it to sign leases, win clients, and enter job sites.",
+            "Arizona does not legally require most businesses to carry general liability insurance. However, commercial leases, client contracts, and many professional licensing applications in the state require proof of coverage before a business can operate. Most Phoenix-area businesses, from retailers to contractors in Peoria and Glendale, need it to sign leases, win clients, and enter job sites.",
         },
         {
           question: "Q: Why should I quote general liability with multiple carriers instead of one?",
           answer:
-            "Business insurance carriers each use different underwriting models, meaning the same Phoenix business can receive quotes varying by $500 to $1,500 per year for identical coverage. Quoting across 10 or more commercial carriers through an independent brokerage like Protegrity Insurance gives you real, side-by-side comparisons — not estimates — so you can choose the best combination of price, coverage, and carrier financial strength.",
+            "Business insurance carriers each use different underwriting models, meaning the same Phoenix business can receive quotes varying by $500 to $1,500 per year for identical coverage. Quoting across 10 or more commercial carriers through an independent brokerage like Protegrity Insurance gives you real, side-by-side comparisons, not estimates, so you can choose the best combination of price, coverage, and carrier financial strength.",
         },
         {
           question: "Q: What is the difference between general liability and professional liability insurance?",
           answer:
-            "General liability covers physical accidents and third-party property damage. Professional liability — also called errors and omissions (E&O) insurance — covers financial losses a client claims resulted from your professional advice or a service mistake. A consultant in Scottsdale needs both: GL for physical incidents during client visits, and E&O if a client sues over a project deliverable or outcome.",
+            "General liability covers physical accidents and third-party property damage. Professional liability, also called errors and omissions (E&O) insurance, covers financial losses a client claims resulted from your professional advice or a service mistake. A consultant in Scottsdale needs both: GL for physical incidents during client visits, and E&O if a client sues over a project deliverable or outcome.",
         },
         {
           question: "Q: What is a Business Owner's Policy and should I consider one?",
           answer:
-            "A Business Owner's Policy (BOP) bundles general liability and commercial property insurance into one discounted policy. According to Insureon's 2025 data, a BOP averages $83 per month — often 20–30% less than purchasing each policy separately. It is a strong starting point for most Phoenix-area small businesses that have physical assets to protect alongside liability exposure. A broker can confirm if it fits your situation.",
+            "A Business Owner's Policy (BOP) bundles general liability and commercial property insurance into one discounted policy. According to Insureon's 2025 data, a BOP averages $83 per month, often 20–30% less than purchasing each policy separately. It is a strong starting point for most Phoenix-area small businesses that have physical assets to protect alongside liability exposure. A broker can confirm if it fits your situation.",
         },
         {
           question: "Q: Does general liability insurance cover slip-and-fall accidents in Arizona?",
@@ -10491,7 +10491,7 @@ const generalLiabilityInsuranceArizonaPost: BlogPost = {
         {
           question: "Q: How do I get a certificate of insurance (COI) for a client or landlord in Arizona?",
           answer:
-            "A certificate of insurance (COI) is issued by your carrier or broker as proof of active coverage. Once your policy is bound, your broker can issue a COI the same day — ready to share with a landlord, general contractor, or client. Protegrity Insurance provides COIs to policyholders as needed for commercial leases, job site entry, and contract requirements throughout the Phoenix metro area.",
+            "A certificate of insurance (COI) is issued by your carrier or broker as proof of active coverage. Once your policy is bound, your broker can issue a COI the same day, ready to share with a landlord, general contractor, or client. Protegrity Insurance provides COIs to policyholders as needed for commercial leases, job site entry, and contract requirements throughout the Phoenix metro area.",
         },
       ],
     },
@@ -10536,7 +10536,7 @@ const generalLiabilityInsuranceArizonaPost: BlogPost = {
 
 const personalUmbrellaInsuranceArizonaPost: BlogPost = {
   slug: "personal-umbrella-insurance-arizona",
-  title: "What Is Personal Umbrella Insurance — and Do You Need It in Arizona?",
+  title: "What Is Personal Umbrella Insurance, and Do You Need It in Arizona?",
   excerpt:
     "Learn what personal umbrella insurance covers in Arizona, how much it costs, and how Protegrity Insurance compares quotes across Progressive, Safeco, Markel, Stillwater, and Farmers.",
   metaTitle: "Personal Umbrella Insurance Arizona | 2026 Guide",
@@ -10564,11 +10564,11 @@ const personalUmbrellaInsuranceArizonaPost: BlogPost = {
   },
   keyTakeaways: {
     items: [
-      "A $1 million personal umbrella policy costs an average of $383/year — about $32/month (ACE Private Risk Services, 2025).",
-      "Umbrella coverage activates after your home or auto policy limits are exhausted — it does not replace those policies.",
+      "A $1 million personal umbrella policy costs an average of $383/year, about $32/month (ACE Private Risk Services, 2025).",
+      "Umbrella coverage activates after your home or auto policy limits are exhausted, it does not replace those policies.",
       "Arizona's comparative fault system means you can be held liable for a large share of damages even in a multi-party accident.",
       "Phoenix-area homeowners with equity, savings, teenage drivers, pools, dogs, or rental properties carry the highest liability exposure.",
-      "Protegrity Insurance quotes across Progressive, Safeco, Markel, Monoline, Stillwater, and Farmers — one conversation, multiple carriers.",
+      "Protegrity Insurance quotes across Progressive, Safeco, Markel, Monoline, Stillwater, and Farmers, one conversation, multiple carriers.",
     ],
   },
   content: [
@@ -10576,14 +10576,14 @@ const personalUmbrellaInsuranceArizonaPost: BlogPost = {
     {
       type: "p",
       text:
-        "Personal umbrella insurance in Arizona provides liability coverage of $1 million or more that activates after your home or auto policy limits are exhausted — protecting your savings, home equity, and future wages from lawsuits. According to an ACE Private Risk Services study, a $1 million personal umbrella policy costs an average of $383 per year. This guide is for Phoenix, Scottsdale, Mesa, Chandler, and Gilbert homeowners who want to understand what umbrella insurance covers, what it costs, and how to compare quotes across carriers before buying.",
+        "Personal umbrella insurance in Arizona provides liability coverage of $1 million or more that activates after your home or auto policy limits are exhausted, protecting your savings, home equity, and future wages from lawsuits. According to an ACE Private Risk Services study, a $1 million personal umbrella policy costs an average of $383 per year. This guide is for Phoenix, Scottsdale, Mesa, Chandler, and Gilbert homeowners who want to understand what umbrella insurance covers, what it costs, and how to compare quotes across carriers before buying.",
     },
 
     { type: "h2", text: "What is personal umbrella insurance and why does it matter in Phoenix?" },
     {
       type: "p",
       text:
-        "Personal umbrella insurance is a liability policy that extends beyond your existing home and auto coverage. Standard homeowners policies in Phoenix carry $100,000 to $300,000 in personal liability protection. Standard auto policies carry $250,000 to $500,000 in bodily injury liability. When a lawsuit or accident generates damages above those limits, you pay the remainder out of your own pocket — home equity, savings, retirement accounts, and future wages included.",
+        "Personal umbrella insurance is a liability policy that extends beyond your existing home and auto coverage. Standard homeowners policies in Phoenix carry $100,000 to $300,000 in personal liability protection. Standard auto policies carry $250,000 to $500,000 in bodily injury liability. When a lawsuit or accident generates damages above those limits, you pay the remainder out of your own pocket, home equity, savings, retirement accounts, and future wages included.",
     },
     {
       type: "p",
@@ -10593,19 +10593,19 @@ const personalUmbrellaInsuranceArizonaPost: BlogPost = {
     {
       type: "p",
       text:
-        "According to data tracked by the Insurance Information Institute, average personal injury verdicts in auto liability cases now exceed $900,000 — a figure that outpaces the liability limit on most standard Arizona auto policies.",
+        "According to data tracked by the Insurance Information Institute, average personal injury verdicts in auto liability cases now exceed $900,000, a figure that outpaces the liability limit on most standard Arizona auto policies.",
     },
 
     { type: "h2", text: "Who needs personal umbrella insurance in Arizona?" },
     {
       type: "p",
       text:
-        "Personal umbrella insurance is not limited to high-net-worth households. Courts in Arizona can garnish future wages for years to satisfy a judgment — meaning a 35-year-old earning $80,000 per year carries over $2 million in future earnings at risk. Phoenix-area residents with any of the following should evaluate umbrella coverage:",
+        "Personal umbrella insurance is not limited to high-net-worth households. Courts in Arizona can garnish future wages for years to satisfy a judgment, meaning a 35-year-old earning $80,000 per year carries over $2 million in future earnings at risk. Phoenix-area residents with any of the following should evaluate umbrella coverage:",
     },
     {
       type: "p",
       text:
-        "Homeowners with equity in Scottsdale, Chandler, Peoria, or Ahwatukee — home equity is a primary target in civil judgments. Families with teenage drivers — teen drivers are 3 times more likely than adults to be involved in serious accidents (Insurance Information Institute, 2025). Pool or trampoline owners — both are classified as \"attractive nuisances\" under Arizona law, generating elevated third-party injury claims. Dog owners — dog bites account for one-third of all homeowners liability claims nationally, with an average claim cost exceeding $50,000 (Insurance Information Institute, 2025). Landlords with rental properties in Mesa, Tempe, or Glendale — tenant injuries, slip-and-falls, and habitability claims create liability that standard landlord policies do not fully cover. Frequent entertainers — Arizona social host liability laws can hold homeowners responsible for injuries connected to gatherings at their property.",
+        "Homeowners with equity in Scottsdale, Chandler, Peoria, or Ahwatukee, home equity is a primary target in civil judgments. Families with teenage drivers, teen drivers are 3 times more likely than adults to be involved in serious accidents (Insurance Information Institute, 2025). Pool or trampoline owners, both are classified as \"attractive nuisances\" under Arizona law, generating elevated third-party injury claims. Dog owners, dog bites account for one-third of all homeowners liability claims nationally, with an average claim cost exceeding $50,000 (Insurance Information Institute, 2025). Landlords with rental properties in Mesa, Tempe, or Glendale, tenant injuries, slip-and-falls, and habitability claims create liability that standard landlord policies do not fully cover. Frequent entertainers, Arizona social host liability laws can hold homeowners responsible for injuries connected to gatherings at their property.",
     },
 
     { type: "h2", text: "What does personal umbrella insurance cover?" },
@@ -10616,15 +10616,15 @@ const personalUmbrellaInsuranceArizonaPost: BlogPost = {
       rows: [
         [
           "Bodily injury liability",
-          "Medical bills and lost wages for third parties injured in accidents where you are at fault — including auto accidents, injuries at your home, or incidents on your rental property in Mesa or Tempe",
+          "Medical bills and lost wages for third parties injured in accidents where you are at fault, including auto accidents, injuries at your home, or incidents on your rental property in Mesa or Tempe",
         ],
         [
           "Property damage liability",
-          "Damage to someone else's property beyond your primary policy's limit — a multi-vehicle accident or accidental damage to a neighbor's property in Chandler",
+          "Damage to someone else's property beyond your primary policy's limit, a multi-vehicle accident or accidental damage to a neighbor's property in Chandler",
         ],
         [
           "Personal injury claims",
-          "Libel, slander, defamation of character, and invasion of privacy — including claims originating from social media posts",
+          "Libel, slander, defamation of character, and invasion of privacy, including claims originating from social media posts",
         ],
         [
           "Legal defense costs",
@@ -10645,7 +10645,7 @@ const personalUmbrellaInsuranceArizonaPost: BlogPost = {
     {
       type: "p",
       text:
-        "Your own bodily injuries or property damage — umbrella is liability-only coverage directed at third-party claims against you. Business-related liabilities — personal umbrella does not extend to business operations; a commercial umbrella policy is required separately. Intentional or criminal acts — no liability policy covers deliberate harm. Household employee injuries — if you employ staff at your Phoenix or Scottsdale home, workers' compensation coverage is required separately. Contractual liability — obligations assumed through signed contracts are excluded from standard umbrella coverage.",
+        "Your own bodily injuries or property damage, umbrella is liability-only coverage directed at third-party claims against you. Business-related liabilities, personal umbrella does not extend to business operations; a commercial umbrella policy is required separately. Intentional or criminal acts, no liability policy covers deliberate harm. Household employee injuries, if you employ staff at your Phoenix or Scottsdale home, workers' compensation coverage is required separately. Contractual liability, obligations assumed through signed contracts are excluded from standard umbrella coverage.",
     },
 
     { type: "h2", text: "How much does personal umbrella insurance cost in Arizona?" },
@@ -10679,7 +10679,7 @@ const personalUmbrellaInsuranceArizonaPost: BlogPost = {
     {
       type: "p",
       text:
-        "Not all carriers write personal umbrella policies, and those that do price the same household differently. Protegrity Insurance quotes across the following six carriers for Arizona policyholders, then presents a side-by-side comparison — one conversation, no carrier-hopping required:",
+        "Not all carriers write personal umbrella policies, and those that do price the same household differently. Protegrity Insurance quotes across the following six carriers for Arizona policyholders, then presents a side-by-side comparison, one conversation, no carrier-hopping required:",
     },
     {
       type: "table",
@@ -10698,7 +10698,7 @@ const personalUmbrellaInsuranceArizonaPost: BlogPost = {
         ],
         [
           "Markel (Personal Umbrella)",
-          "Higher-risk households — pools, dogs, teen drivers",
+          "Higher-risk households, pools, dogs, teen drivers",
           "Specialty personal umbrella underwriter with a broader risk appetite than standard carriers",
         ],
         [
@@ -10721,7 +10721,7 @@ const personalUmbrellaInsuranceArizonaPost: BlogPost = {
     {
       type: "p",
       text:
-        "Protegrity Insurance acts as your single point of contact across all six carriers. You do not need to contact each one individually — Protegrity submits your household profile, gathers the quotes, and presents a comparison so you can choose based on price, coverage limits, and carrier financial strength.",
+        "Protegrity Insurance acts as your single point of contact across all six carriers. You do not need to contact each one individually, Protegrity submits your household profile, gathers the quotes, and presents a comparison so you can choose based on price, coverage limits, and carrier financial strength.",
     },
 
     {
@@ -10738,7 +10738,7 @@ const personalUmbrellaInsuranceArizonaPost: BlogPost = {
           "1",
           "Progressive, Safeco, Markel, Monoline, Stillwater, Farmers",
         ],
-        ["Pricing transparency", "Take it or leave it", "Side-by-side real quotes — not estimates"],
+        ["Pricing transparency", "Take it or leave it", "Side-by-side real quotes, not estimates"],
         [
           "Underlying policy review",
           "Focused on their own products",
@@ -10747,7 +10747,7 @@ const personalUmbrellaInsuranceArizonaPost: BlogPost = {
         [
           "Coverage gap identification",
           "No incentive to flag gaps",
-          "Independent review — no carrier bias",
+          "Independent review, no carrier bias",
         ],
         [
           "Higher-risk households",
@@ -10757,19 +10757,19 @@ const personalUmbrellaInsuranceArizonaPost: BlogPost = {
         [
           "Point of contact",
           "That carrier's own representatives",
-          "Protegrity Insurance — licensed Arizona brokerage, one relationship",
+          "Protegrity Insurance, licensed Arizona brokerage, one relationship",
         ],
         [
           "Best for",
           "Low-risk household already bundled with that carrier",
-          "Most Phoenix-area homeowners — especially those with equity, teens, or elevated risk factors",
+          "Most Phoenix-area homeowners, especially those with equity, teens, or elevated risk factors",
         ],
       ],
     },
     {
       type: "p",
       text:
-        "A single quote tells you one carrier's price. Comparing across Progressive, Safeco, Markel, Monoline, Stillwater, and Farmers through Protegrity Insurance tells you what umbrella coverage is actually worth in the Arizona market — and puts you in a position to choose.",
+        "A single quote tells you one carrier's price. Comparing across Progressive, Safeco, Markel, Monoline, Stillwater, and Farmers through Protegrity Insurance tells you what umbrella coverage is actually worth in the Arizona market, and puts you in a position to choose.",
     },
 
     { type: "h2", text: "Common mistakes Arizona homeowners make with umbrella insurance" },
@@ -10781,14 +10781,14 @@ const personalUmbrellaInsuranceArizonaPost: BlogPost = {
     {
       type: "p",
       text:
-        "Assuming standard home and auto liability limits are sufficient — a single serious accident on I-10 or the Loop 202 can produce damages well above a $300,000 auto liability cap. Skipping umbrella coverage because current net worth is modest — Arizona courts can garnish wages for years; future earning potential is at risk, not just current assets. Failing to disclose all risk factors at application — pools, dogs, rental properties, and teen drivers must be disclosed; undisclosed risks can result in claim denials. Purchasing the minimum $1 million limit without calculating actual asset exposure — Scottsdale and Ahwatukee homeowners with significant equity and retirement savings frequently need $2–$3 million. Getting a quote from one carrier only — pricing across Progressive, Safeco, Markel, Stillwater, and Farmers varies by hundreds of dollars per year for identical coverage.",
+        "Assuming standard home and auto liability limits are sufficient, a single serious accident on I-10 or the Loop 202 can produce damages well above a $300,000 auto liability cap. Skipping umbrella coverage because current net worth is modest, Arizona courts can garnish wages for years; future earning potential is at risk, not just current assets. Failing to disclose all risk factors at application, pools, dogs, rental properties, and teen drivers must be disclosed; undisclosed risks can result in claim denials. Purchasing the minimum $1 million limit without calculating actual asset exposure, Scottsdale and Ahwatukee homeowners with significant equity and retirement savings frequently need $2–$3 million. Getting a quote from one carrier only, pricing across Progressive, Safeco, Markel, Stillwater, and Farmers varies by hundreds of dollars per year for identical coverage.",
     },
 
     { type: "h2", text: "When should you speak with a licensed agent about umbrella coverage?" },
     {
       type: "p",
       text:
-        "If you own a home in Phoenix, Scottsdale, Mesa, Tempe, or Chandler — and you carry home equity, have teenage drivers, own a pool, keep a dog, rent out a property, or hold meaningful retirement savings — speak with a licensed agent before your next policy renewal. The licensed agents at Protegrity Insurance review your existing coverage limits, calculate your total asset and income exposure, and identify which carrier among Progressive, Safeco, Markel, Monoline, Stillwater, and Farmers offers the best fit for your household profile.",
+        "If you own a home in Phoenix, Scottsdale, Mesa, Tempe, or Chandler, and you carry home equity, have teenage drivers, own a pool, keep a dog, rent out a property, or hold meaningful retirement savings, speak with a licensed agent before your next policy renewal. The licensed agents at Protegrity Insurance review your existing coverage limits, calculate your total asset and income exposure, and identify which carrier among Progressive, Safeco, Markel, Monoline, Stillwater, and Farmers offers the best fit for your household profile.",
     },
 
     { type: "h2", text: "Frequently Asked Questions: Personal Umbrella Insurance" },
@@ -10798,42 +10798,42 @@ const personalUmbrellaInsuranceArizonaPost: BlogPost = {
         {
           question: "Q: What does personal umbrella insurance cover in Arizona?",
           answer:
-            "Personal umbrella insurance in Arizona covers bodily injury liability, property damage liability, personal injury claims including libel and defamation, and legal defense costs — all after your home or auto policy limits are exhausted. Most policies extend to rental properties and include worldwide coverage. It does not cover your own injuries, business liabilities, or intentional acts.",
+            "Personal umbrella insurance in Arizona covers bodily injury liability, property damage liability, personal injury claims including libel and defamation, and legal defense costs, all after your home or auto policy limits are exhausted. Most policies extend to rental properties and include worldwide coverage. It does not cover your own injuries, business liabilities, or intentional acts.",
         },
         {
           question: "Q: How much does personal umbrella insurance cost in Arizona?",
           answer:
-            "Personal umbrella insurance in Arizona costs an average of $383 per year for $1 million in coverage, according to an ACE Private Risk Services study. Rates range from $150 to $600 per year depending on your risk profile. Each additional $1 million adds $75–$100 per year. Progressive, Safeco, Stillwater, and Farmers all price this differently — Protegrity Insurance compares them for you in one conversation.",
+            "Personal umbrella insurance in Arizona costs an average of $383 per year for $1 million in coverage, according to an ACE Private Risk Services study. Rates range from $150 to $600 per year depending on your risk profile. Each additional $1 million adds $75–$100 per year. Progressive, Safeco, Stillwater, and Farmers all price this differently, Protegrity Insurance compares them for you in one conversation.",
         },
         {
           question: "Q: Do I need umbrella insurance if my net worth is under $500,000?",
           answer:
-            "Yes — umbrella insurance is not limited to high-net-worth households. Arizona courts can garnish future wages for years to satisfy a civil judgment. A 35-year-old earning $80,000 per year has over $2 million in future earnings at risk. Home equity, savings, and retirement accounts are also vulnerable. For $32 per month or less, umbrella coverage through Protegrity Insurance protects both current and future financial assets.",
+            "Yes, umbrella insurance is not limited to high-net-worth households. Arizona courts can garnish future wages for years to satisfy a civil judgment. A 35-year-old earning $80,000 per year has over $2 million in future earnings at risk. Home equity, savings, and retirement accounts are also vulnerable. For $32 per month or less, umbrella coverage through Protegrity Insurance protects both current and future financial assets.",
         },
         {
           question: "Q: How much umbrella coverage do I need in Arizona?",
           answer:
-            "Umbrella coverage in Arizona should equal or exceed your total net worth — home equity, bank accounts, investments, and retirement funds combined. $1 million is the standard starting point for most homeowners. Households with teenage drivers, pools, rental properties in Mesa or Glendale, or significant savings should consider $2–$3 million. The licensed agents at Protegrity Insurance calculate your actual exposure before recommending a limit.",
+            "Umbrella coverage in Arizona should equal or exceed your total net worth, home equity, bank accounts, investments, and retirement funds combined. $1 million is the standard starting point for most homeowners. Households with teenage drivers, pools, rental properties in Mesa or Glendale, or significant savings should consider $2–$3 million. The licensed agents at Protegrity Insurance calculate your actual exposure before recommending a limit.",
         },
         {
           question: "Q: Does umbrella insurance cover dog bites in Arizona?",
           answer:
-            "Yes — dog bite liability is one of the most common personal umbrella claims in Arizona. Dog bites account for one-third of all homeowners liability claims nationally, with an average claim cost exceeding $50,000, according to the Insurance Information Institute (2025). When a claim surpasses your homeowners liability limit, your umbrella policy — available through carriers like Safeco and Markel via Protegrity Insurance — covers the remainder.",
+            "Yes, dog bite liability is one of the most common personal umbrella claims in Arizona. Dog bites account for one-third of all homeowners liability claims nationally, with an average claim cost exceeding $50,000, according to the Insurance Information Institute (2025). When a claim surpasses your homeowners liability limit, your umbrella policy, available through carriers like Safeco and Markel via Protegrity Insurance, covers the remainder.",
         },
         {
           question: "Q: Does Arizona umbrella insurance cover rental properties?",
           answer:
-            "Yes — personal umbrella insurance covers liability above your landlord policy limit for rental properties you own in Mesa, Tempe, Glendale, or elsewhere in the Phoenix metro area. Tenant injuries, slip-and-falls, and habitability claims are all covered. Rental property ownership must be disclosed to Protegrity Insurance at application to ensure the property is correctly included in the umbrella policy.",
+            "Yes, personal umbrella insurance covers liability above your landlord policy limit for rental properties you own in Mesa, Tempe, Glendale, or elsewhere in the Phoenix metro area. Tenant injuries, slip-and-falls, and habitability claims are all covered. Rental property ownership must be disclosed to Protegrity Insurance at application to ensure the property is correctly included in the umbrella policy.",
         },
         {
           question: "Q: Can I get umbrella insurance without bundling it with my home and auto?",
           answer:
-            "Yes — standalone umbrella policies are available through Markel and Monoline carriers and do not require bundling home and auto with the same company. Most other carriers — including Progressive, Safeco, Stillwater, and Farmers — require underlying home and auto policies before issuing an umbrella. Protegrity Insurance identifies the right structure for your household and places the policy with the appropriate carrier.",
+            "Yes, standalone umbrella policies are available through Markel and Monoline carriers and do not require bundling home and auto with the same company. Most other carriers, including Progressive, Safeco, Stillwater, and Farmers, require underlying home and auto policies before issuing an umbrella. Protegrity Insurance identifies the right structure for your household and places the policy with the appropriate carrier.",
         },
         {
           question: "Q: Does personal umbrella insurance cover social media defamation claims?",
           answer:
-            "Yes — personal umbrella insurance covers personal injury claims including libel, slander, defamation of character, and invasion of privacy, which extend to posts and statements made on social media. A post that results in a lawsuit could generate a judgment above your homeowners liability limit. Carriers available through Protegrity Insurance — including Safeco and Markel — include personal injury coverage in their standard umbrella policies.",
+            "Yes, personal umbrella insurance covers personal injury claims including libel, slander, defamation of character, and invasion of privacy, which extend to posts and statements made on social media. A post that results in a lawsuit could generate a judgment above your homeowners liability limit. Carriers available through Protegrity Insurance, including Safeco and Markel, include personal injury coverage in their standard umbrella policies.",
         },
       ],
     },
@@ -10880,10 +10880,10 @@ const commercialAutoInsuranceArizonaPost: BlogPost = {
   slug: "commercial-auto-insurance-arizona",
   title: "Commercial Auto Insurance in Arizona: What It Covers, What It Costs, and How to Compare",
   excerpt:
-    "Arizona law requires commercial auto insurance on all business vehicles. Compare quotes across 10 carriers through Protegrity Insurance — 5-star rated, 466 Google reviews.",
+    "Arizona law requires commercial auto insurance on all business vehicles. Compare quotes across 10 carriers through Protegrity Insurance, 5-star rated, 466 Google reviews.",
   metaTitle: "Commercial Auto Insurance Arizona | 2026 Guide",
   metaDescription:
-    "Arizona law requires commercial auto insurance on all business vehicles. Compare quotes across 10 carriers through Protegrity Insurance — 5-star rated, 466 Google reviews.",
+    "Arizona law requires commercial auto insurance on all business vehicles. Compare quotes across 10 carriers through Protegrity Insurance, 5-star rated, 466 Google reviews.",
   keywords: ["commercial auto insurance Arizona"],
   category: "Business Insurance",
   readTime: "11 min read",
@@ -10906,11 +10906,11 @@ const commercialAutoInsuranceArizonaPost: BlogPost = {
   },
   keyTakeaways: {
     items: [
-      "Arizona law requires all business vehicles to carry minimum 25/50/15 liability coverage — and higher limits for trucks, vehicles-for-hire, and vehicles crossing state lines.",
-      "The average cost of commercial auto insurance in Arizona is $205/month — 39% above the national average of $147/month (Insureon, 2025).",
+      "Arizona law requires all business vehicles to carry minimum 25/50/15 liability coverage, and higher limits for trucks, vehicles-for-hire, and vehicles crossing state lines.",
+      "The average cost of commercial auto insurance in Arizona is $205/month, 39% above the national average of $147/month (Insureon, 2025).",
       "Commercial auto rates have increased for 55 consecutive quarters nationally, driven by nuclear verdicts, driver shortages, and rising repair costs.",
-      "Your personal auto policy does not cover accidents that happen during business use — a gap that leaves drivers financially exposed without a commercial policy.",
-      "Protegrity Insurance shops across 10 commercial auto carriers — including Progressive, SIAA Travelers, and GEICO — and holds a 5-star rating backed by 466 verified Google reviews.",
+      "Your personal auto policy does not cover accidents that happen during business use, a gap that leaves drivers financially exposed without a commercial policy.",
+      "Protegrity Insurance shops across 10 commercial auto carriers, including Progressive, SIAA Travelers, and GEICO, and holds a 5-star rating backed by 466 verified Google reviews.",
     ],
   },
   content: [
@@ -10918,24 +10918,24 @@ const commercialAutoInsuranceArizonaPost: BlogPost = {
     {
       type: "p",
       text:
-        "Commercial auto insurance in Arizona is required by state law for all business-owned vehicles, with minimum liability limits of $25,000 per person / $50,000 per accident / $15,000 property damage (25/50/15). The average cost of commercial auto insurance in Arizona is $205 per month, according to Insureon's 2025 small business data — 39% higher than the national average of $147 per month. This guide helps Phoenix, Scottsdale, Mesa, Chandler, and Gilbert business owners understand what commercial auto insurance covers, what it costs by vehicle type and industry, and how to compare quotes across 10 carriers before buying.",
+        "Commercial auto insurance in Arizona is required by state law for all business-owned vehicles, with minimum liability limits of $25,000 per person / $50,000 per accident / $15,000 property damage (25/50/15). The average cost of commercial auto insurance in Arizona is $205 per month, according to Insureon's 2025 small business data, 39% higher than the national average of $147 per month. This guide helps Phoenix, Scottsdale, Mesa, Chandler, and Gilbert business owners understand what commercial auto insurance covers, what it costs by vehicle type and industry, and how to compare quotes across 10 carriers before buying.",
     },
 
     { type: "h2", text: "What is commercial auto insurance and why does it matter in Arizona?" },
     {
       type: "p",
       text:
-        "Commercial auto insurance covers vehicles used for business purposes — from a single contractor's pickup in Chandler to a fleet of delivery vans operating across the Phoenix metro area. Arizona law requires commercial auto coverage on all business-owned vehicles operating on state roads. Personal auto insurance policies do not cover accidents that occur during business use, which means a single at-fault accident while making a delivery or driving to a job site can expose your business to tens of thousands of dollars in uncovered liability.",
+        "Commercial auto insurance covers vehicles used for business purposes, from a single contractor's pickup in Chandler to a fleet of delivery vans operating across the Phoenix metro area. Arizona law requires commercial auto coverage on all business-owned vehicles operating on state roads. Personal auto insurance policies do not cover accidents that occur during business use, which means a single at-fault accident while making a delivery or driving to a job site can expose your business to tens of thousands of dollars in uncovered liability.",
     },
     {
       type: "p",
       text:
-        "According to the Arizona Department of Insurance and Financial Institutions (DIFI), Arizona is home to over 592,000 small businesses — the majority of which use vehicles in daily operations. A commercial auto policy covers your liability to others, protects your vehicles from physical damage, and keeps your business legally compliant on every road from Loop 101 in Phoenix to the I-10 corridor through Chandler and Gilbert.",
+        "According to the Arizona Department of Insurance and Financial Institutions (DIFI), Arizona is home to over 592,000 small businesses, the majority of which use vehicles in daily operations. A commercial auto policy covers your liability to others, protects your vehicles from physical damage, and keeps your business legally compliant on every road from Loop 101 in Phoenix to the I-10 corridor through Chandler and Gilbert.",
     },
     {
       type: "p",
       text:
-        "Commercial auto insurance has recorded 13 consecutive years of underwriting losses nationally, according to Conning's 2025 Commercial Auto Insurance Market report — a trend driven by nuclear verdicts, distracted driving, rising repair costs, and driver shortages. That market pressure makes shopping across multiple carriers more important than ever for Arizona business owners.",
+        "Commercial auto insurance has recorded 13 consecutive years of underwriting losses nationally, according to Conning's 2025 Commercial Auto Insurance Market report, a trend driven by nuclear verdicts, distracted driving, rising repair costs, and driver shortages. That market pressure makes shopping across multiple carriers more important than ever for Arizona business owners.",
     },
 
     { type: "h2", text: "What does commercial auto insurance cover?" },
@@ -10946,11 +10946,11 @@ const commercialAutoInsuranceArizonaPost: BlogPost = {
       rows: [
         [
           "Bodily injury liability",
-          "Medical bills, lost wages, and legal costs for third parties injured in an accident where your driver is at fault — required by Arizona law",
+          "Medical bills, lost wages, and legal costs for third parties injured in an accident where your driver is at fault, required by Arizona law",
         ],
         [
           "Property damage liability",
-          "Repairs or replacement of another person's vehicle or property damaged by your business vehicle — required by Arizona law",
+          "Repairs or replacement of another person's vehicle or property damaged by your business vehicle, required by Arizona law",
         ],
         [
           "Collision coverage",
@@ -10958,7 +10958,7 @@ const commercialAutoInsuranceArizonaPost: BlogPost = {
         ],
         [
           "Comprehensive coverage",
-          "Non-collision damage — theft, vandalism, hail, fire, or weather events — important for fleets parked outdoors in Phoenix and the East Valley",
+          "Non-collision damage, theft, vandalism, hail, fire, or weather events, important for fleets parked outdoors in Phoenix and the East Valley",
         ],
         [
           "Uninsured / underinsured motorist",
@@ -10970,11 +10970,11 @@ const commercialAutoInsuranceArizonaPost: BlogPost = {
         ],
         [
           "Hired and non-owned auto (HNOA)",
-          "Covers employees using personal or rented vehicles for business purposes — critical for businesses without company-owned fleets",
+          "Covers employees using personal or rented vehicles for business purposes, critical for businesses without company-owned fleets",
         ],
         [
           "Cargo / equipment coverage",
-          "Protects tools, equipment, and goods being transported — especially important for contractors in Scottsdale, Peoria, and Glendale",
+          "Protects tools, equipment, and goods being transported, especially important for contractors in Scottsdale, Peoria, and Glendale",
         ],
       ],
     },
@@ -10983,7 +10983,7 @@ const commercialAutoInsuranceArizonaPost: BlogPost = {
     {
       type: "p",
       text:
-        "Personal use beyond your policy terms — if an employee uses a company vehicle for personal errands outside covered use, a claim can be denied. Unlisted drivers — drivers not listed on your policy at the time of an accident are not covered; always update your driver roster. Mexico operations — Arizona commercial auto policies do not cover incidents in Mexico; separate Mexican liability coverage is required for cross-border operations. Intentional acts or criminal use of a vehicle. Employee injuries from a vehicle accident — those are covered under workers' compensation, which Arizona law requires separately for any business with employees.",
+        "Personal use beyond your policy terms, if an employee uses a company vehicle for personal errands outside covered use, a claim can be denied. Unlisted drivers, drivers not listed on your policy at the time of an accident are not covered; always update your driver roster. Mexico operations, Arizona commercial auto policies do not cover incidents in Mexico; separate Mexican liability coverage is required for cross-border operations. Intentional acts or criminal use of a vehicle. Employee injuries from a vehicle accident, those are covered under workers' compensation, which Arizona law requires separately for any business with employees.",
     },
 
     { type: "h2", text: "Arizona commercial auto insurance requirements by vehicle type" },
@@ -11022,7 +11022,7 @@ const commercialAutoInsuranceArizonaPost: BlogPost = {
     {
       type: "p",
       text:
-        "The average cost of commercial auto insurance in Arizona is $205 per month, according to Insureon's 2025 data — 39% above the national average of $147 per month. Costs vary significantly by industry, vehicle type, and fleet size. The table below shows 2024–2025 average monthly premiums by business type:",
+        "The average cost of commercial auto insurance in Arizona is $205 per month, according to Insureon's 2025 data, 39% above the national average of $147 per month. Costs vary significantly by industry, vehicle type, and fleet size. The table below shows 2024–2025 average monthly premiums by business type:",
     },
     {
       type: "table",
@@ -11040,7 +11040,7 @@ const commercialAutoInsuranceArizonaPost: BlogPost = {
     {
       type: "p",
       text:
-        "Commercial auto premiums are often tax-deductible for Arizona businesses, according to IRS guidelines, which reduces the effective annual cost. Commercial auto premiums increased 10.4% in Q1 2025 — the 55th consecutive quarterly increase — according to the Council of Insurance Agents & Brokers (CIAB). Businesses that compare quotes across multiple carriers are positioned to offset a significant portion of those market increases.",
+        "Commercial auto premiums are often tax-deductible for Arizona businesses, according to IRS guidelines, which reduces the effective annual cost. Commercial auto premiums increased 10.4% in Q1 2025, the 55th consecutive quarterly increase, according to the Council of Insurance Agents & Brokers (CIAB). Businesses that compare quotes across multiple carriers are positioned to offset a significant portion of those market increases.",
     },
 
     {
@@ -11055,7 +11055,7 @@ const commercialAutoInsuranceArizonaPost: BlogPost = {
     {
       type: "p",
       text:
-        "A single carrier gives you one quote at their price. Protegrity Insurance gives you quotes from 10 commercial auto carriers simultaneously — so carriers compete for your business and you choose the best combination of price, coverage, and service.",
+        "A single carrier gives you one quote at their price. Protegrity Insurance gives you quotes from 10 commercial auto carriers simultaneously, so carriers compete for your business and you choose the best combination of price, coverage, and service.",
     },
     {
       type: "table",
@@ -11063,7 +11063,7 @@ const commercialAutoInsuranceArizonaPost: BlogPost = {
       columns: ["Factor", "Single Carrier Direct", "Protegrity Insurance Brokerage"],
       rows: [
         ["Carriers quoted", "1", "10 commercial auto carriers"],
-        ["Pricing leverage", "Take it or leave it", "Carriers compete — you choose"],
+        ["Pricing leverage", "Take it or leave it", "Carriers compete, you choose"],
         [
           "Industry-specific underwriting",
           "One model, one risk appetite",
@@ -11077,7 +11077,7 @@ const commercialAutoInsuranceArizonaPost: BlogPost = {
         [
           "Certificate of insurance (COI)",
           "Issued by that carrier only",
-          "Issued same day — ready for clients, job sites, and lease requirements",
+          "Issued same day, ready for clients, job sites, and lease requirements",
         ],
         [
           "Verified customer satisfaction",
@@ -11087,12 +11087,12 @@ const commercialAutoInsuranceArizonaPost: BlogPost = {
         [
           "Point of contact",
           "That carrier's representatives",
-          "Protegrity Insurance — one licensed Arizona brokerage, one relationship",
+          "Protegrity Insurance, one licensed Arizona brokerage, one relationship",
         ],
         [
           "Best for",
           "Very low-risk fleet already bundled with that carrier",
-          "Most Arizona business owners — especially those with multiple vehicles, higher-risk industries, or fleet growth",
+          "Most Arizona business owners, especially those with multiple vehicles, higher-risk industries, or fleet growth",
         ],
       ],
     },
@@ -11101,56 +11101,56 @@ const commercialAutoInsuranceArizonaPost: BlogPost = {
     {
       type: "p",
       text:
-        "Protegrity Insurance has access to 10 commercial auto carriers for Arizona business owners. Each carrier has different underwriting models, industry specializations, and pricing structures — which is why the same business can receive quotes varying by hundreds of dollars per year depending on which carriers are asked.",
+        "Protegrity Insurance has access to 10 commercial auto carriers for Arizona business owners. Each carrier has different underwriting models, industry specializations, and pricing structures, which is why the same business can receive quotes varying by hundreds of dollars per year depending on which carriers are asked.",
     },
     {
       type: "p",
       text:
-        "Progressive Commercial is the #1 commercial auto insurer in America with strong Arizona market presence and broad vehicle class coverage — best for contractors, tradespeople, and small fleets. SIAA Travelers is one of the largest commercial lines carriers in the U.S. with strong claims infrastructure and financial stability — best for mid-size businesses and established fleets. GEICO Commercial offers competitive pricing for low-to-moderate risk vehicles with fast online certificate issuance — best for service businesses, delivery drivers, and single-vehicle operators.",
+        "Progressive Commercial is the #1 commercial auto insurer in America with strong Arizona market presence and broad vehicle class coverage, best for contractors, tradespeople, and small fleets. SIAA Travelers is one of the largest commercial lines carriers in the U.S. with strong claims infrastructure and financial stability, best for mid-size businesses and established fleets. GEICO Commercial offers competitive pricing for low-to-moderate risk vehicles with fast online certificate issuance, best for service businesses, delivery drivers, and single-vehicle operators.",
     },
     {
       type: "p",
       text:
-        "Protegrity Insurance submits your business profile across all applicable carriers, returns real quotes — not estimates — and presents them side by side so you can compare price, coverage limits, deductibles, and carrier financial strength before making a decision.",
+        "Protegrity Insurance submits your business profile across all applicable carriers, returns real quotes, not estimates, and presents them side by side so you can compare price, coverage limits, deductibles, and carrier financial strength before making a decision.",
     },
 
     { type: "h2", text: "Common mistakes Arizona business owners make with commercial auto insurance" },
     {
       type: "p",
       text:
-        "Relying on personal auto insurance for business use — personal policies exclude business-use accidents; a single denied claim can cost more than years of commercial premiums.",
+        "Relying on personal auto insurance for business use, personal policies exclude business-use accidents; a single denied claim can cost more than years of commercial premiums.",
     },
     {
       type: "p",
       text:
-        "Carrying only the state minimum 25/50/15 liability — a single serious accident on I-10 or the SR-202 can generate damages far above the $50,000 bodily injury limit.",
+        "Carrying only the state minimum 25/50/15 liability, a single serious accident on I-10 or the SR-202 can generate damages far above the $50,000 bodily injury limit.",
     },
     {
       type: "p",
       text:
-        "Not listing all drivers — unlisted drivers are not covered; any employee who drives a company vehicle must be listed on the policy.",
+        "Not listing all drivers, unlisted drivers are not covered; any employee who drives a company vehicle must be listed on the policy.",
     },
     {
       type: "p",
       text:
-        "Getting only one quote — commercial auto pricing varies significantly across carriers for the same vehicle and driver profile; one quote is rarely the best rate available.",
+        "Getting only one quote, commercial auto pricing varies significantly across carriers for the same vehicle and driver profile; one quote is rarely the best rate available.",
     },
     {
       type: "p",
       text:
-        "Ignoring hired and non-owned auto (HNOA) coverage — businesses whose employees use personal vehicles for work errands carry uncovered liability without an HNOA endorsement.",
+        "Ignoring hired and non-owned auto (HNOA) coverage, businesses whose employees use personal vehicles for work errands carry uncovered liability without an HNOA endorsement.",
     },
     {
       type: "p",
       text:
-        "Not updating coverage after adding vehicles or drivers — mid-term additions that are not reported leave new vehicles and drivers uninsured.",
+        "Not updating coverage after adding vehicles or drivers, mid-term additions that are not reported leave new vehicles and drivers uninsured.",
     },
 
     { type: "h2", text: "When should you speak with a licensed commercial auto agent?" },
     {
       type: "p",
       text:
-        "If your Phoenix, Scottsdale, Mesa, or Chandler business owns or regularly uses vehicles for deliveries, client visits, job site travel, or equipment transport — speak with a licensed agent before your next renewal. With commercial auto rates having increased for 55 consecutive quarters nationally, the difference between the highest and lowest competitive quotes for the same business can be $500 to $2,000 per year or more. The licensed agents at Protegrity Insurance review your fleet profile, driver records, industry classification, and coverage needs — then shop 10 carriers to find the best available option.",
+        "If your Phoenix, Scottsdale, Mesa, or Chandler business owns or regularly uses vehicles for deliveries, client visits, job site travel, or equipment transport, speak with a licensed agent before your next renewal. With commercial auto rates having increased for 55 consecutive quarters nationally, the difference between the highest and lowest competitive quotes for the same business can be $500 to $2,000 per year or more. The licensed agents at Protegrity Insurance review your fleet profile, driver records, industry classification, and coverage needs, then shop 10 carriers to find the best available option.",
     },
 
     { type: "h2", text: "Frequently Asked Questions: Commercial Auto Insurance" },
@@ -11160,42 +11160,42 @@ const commercialAutoInsuranceArizonaPost: BlogPost = {
         {
           question: "Q: What does commercial auto insurance cover in Arizona?",
           answer:
-            "Commercial auto insurance in Arizona covers bodily injury liability, property damage liability, collision, comprehensive, uninsured motorist, medical payments, and hired/non-owned auto coverage for vehicles used in business operations. Arizona law requires minimum 25/50/15 liability on all business vehicles. Personal auto policies do not cover accidents that occur during business use — a separate commercial policy is required.",
+            "Commercial auto insurance in Arizona covers bodily injury liability, property damage liability, collision, comprehensive, uninsured motorist, medical payments, and hired/non-owned auto coverage for vehicles used in business operations. Arizona law requires minimum 25/50/15 liability on all business vehicles. Personal auto policies do not cover accidents that occur during business use, a separate commercial policy is required.",
         },
         {
           question: "Q: How much does commercial auto insurance cost in Arizona?",
           answer:
-            "Commercial auto insurance in Arizona costs an average of $205 per month, according to Insureon's 2025 data — 39% above the national average of $147 per month. Costs range from $168/month for low-risk vehicles to $954/month for for-hire transport trucks. Rates have increased for 55 consecutive quarters nationally (CIAB, Q1 2025), making multi-carrier comparison through Protegrity Insurance more valuable than ever.",
+            "Commercial auto insurance in Arizona costs an average of $205 per month, according to Insureon's 2025 data, 39% above the national average of $147 per month. Costs range from $168/month for low-risk vehicles to $954/month for for-hire transport trucks. Rates have increased for 55 consecutive quarters nationally (CIAB, Q1 2025), making multi-carrier comparison through Protegrity Insurance more valuable than ever.",
         },
         {
           question: "Q: Is commercial auto insurance required in Arizona?",
           answer:
-            "Yes — commercial auto insurance is required by Arizona law for all business-owned vehicles. The state minimum is 25/50/15 liability: $25,000 bodily injury per person, $50,000 per accident, and $15,000 property damage. Higher limits are required for vehicles over 10,001 lbs, for-hire passenger vehicles, and trucks operating under FMCSA authority across state lines. Driving uninsured risks license suspension and vehicle registration revocation.",
+            "Yes, commercial auto insurance is required by Arizona law for all business-owned vehicles. The state minimum is 25/50/15 liability: $25,000 bodily injury per person, $50,000 per accident, and $15,000 property damage. Higher limits are required for vehicles over 10,001 lbs, for-hire passenger vehicles, and trucks operating under FMCSA authority across state lines. Driving uninsured risks license suspension and vehicle registration revocation.",
         },
         {
           question: "Q: Does my personal auto policy cover me when driving for work?",
           answer:
-            "No — personal auto insurance does not cover accidents that occur during business use. If you or an employee is in an at-fault accident while making a delivery, driving to a job site in Peoria, or transporting clients in Glendale, your personal auto insurer can deny the claim. A commercial auto policy or hired and non-owned auto (HNOA) endorsement is required to cover business-related driving exposure.",
+            "No, personal auto insurance does not cover accidents that occur during business use. If you or an employee is in an at-fault accident while making a delivery, driving to a job site in Peoria, or transporting clients in Glendale, your personal auto insurer can deny the claim. A commercial auto policy or hired and non-owned auto (HNOA) endorsement is required to cover business-related driving exposure.",
         },
         {
           question: "Q: Why are commercial auto insurance rates so high right now?",
           answer:
-            "Commercial auto rates have increased for 55 consecutive quarters nationally, according to the Council of Insurance Agents & Brokers (CIAB, Q1 2025). The primary drivers are nuclear verdicts — large jury awards that exceed $10 million — rising vehicle repair costs due to advanced sensor and camera technology, driver shortages leading to less experienced operators, and third-party litigation funding. Arizona businesses that compare multiple carriers absorb less of this increase.",
+            "Commercial auto rates have increased for 55 consecutive quarters nationally, according to the Council of Insurance Agents & Brokers (CIAB, Q1 2025). The primary drivers are nuclear verdicts, large jury awards that exceed $10 million, rising vehicle repair costs due to advanced sensor and camera technology, driver shortages leading to less experienced operators, and third-party litigation funding. Arizona businesses that compare multiple carriers absorb less of this increase.",
         },
         {
           question: "Q: What is hired and non-owned auto (HNOA) insurance?",
           answer:
-            "Hired and non-owned auto (HNOA) insurance covers liability when employees use personal or rented vehicles for business purposes. If a Mesa-based employee drives their own car to a client meeting and causes an accident, your business faces liability — but their personal policy will likely deny the claim. HNOA coverage fills that gap. It does not cover physical damage to the employee's vehicle — only your business's liability exposure.",
+            "Hired and non-owned auto (HNOA) insurance covers liability when employees use personal or rented vehicles for business purposes. If a Mesa-based employee drives their own car to a client meeting and causes an accident, your business faces liability, but their personal policy will likely deny the claim. HNOA coverage fills that gap. It does not cover physical damage to the employee's vehicle, only your business's liability exposure.",
         },
         {
           question: "Q: How does Protegrity Insurance's brokerage model save Arizona businesses money?",
           answer:
-            "Protegrity Insurance shops your commercial auto coverage across 10 carriers simultaneously — including Progressive, SIAA Travelers, and GEICO — and presents real quotes side by side. Because commercial auto carriers each use different underwriting models, the same Phoenix business can receive quotes varying by $500 to $2,000 per year for identical coverage. With 466 verified 5-star Google reviews, Protegrity's track record reflects consistent results for Arizona business owners.",
+            "Protegrity Insurance shops your commercial auto coverage across 10 carriers simultaneously, including Progressive, SIAA Travelers, and GEICO, and presents real quotes side by side. Because commercial auto carriers each use different underwriting models, the same Phoenix business can receive quotes varying by $500 to $2,000 per year for identical coverage. With 466 verified 5-star Google reviews, Protegrity's track record reflects consistent results for Arizona business owners.",
         },
         {
           question: "Q: Are commercial auto insurance premiums tax-deductible in Arizona?",
           answer:
-            "Yes — commercial auto insurance premiums are generally tax-deductible as a business expense under IRS guidelines, provided the vehicle is used for business purposes. The deductibility depends on the percentage of business use versus personal use. Vehicles used exclusively for business operations in Phoenix, Scottsdale, or anywhere in Arizona qualify for full deduction. Consult a licensed tax professional to confirm treatment for your specific business structure.",
+            "Yes, commercial auto insurance premiums are generally tax-deductible as a business expense under IRS guidelines, provided the vehicle is used for business purposes. The deductibility depends on the percentage of business use versus personal use. Vehicles used exclusively for business operations in Phoenix, Scottsdale, or anywhere in Arizona qualify for full deduction. Consult a licensed tax professional to confirm treatment for your specific business structure.",
         },
       ],
     },
@@ -11242,10 +11242,10 @@ const seasonalSecondaryHomeInsuranceArizonaPost: BlogPost = {
   slug: "seasonal-secondary-home-insurance-arizona",
   title: "Seasonal & Secondary Home Insurance in Arizona: What You Need to Know Before You Buy",
   excerpt:
-    "Arizona secondary home insurance costs 15–25% more than primary coverage. Compare quotes through Protegrity Insurance — 5-star rated, 466 Google reviews.",
+    "Arizona secondary home insurance costs 15–25% more than primary coverage. Compare quotes through Protegrity Insurance, 5-star rated, 466 Google reviews.",
   metaTitle: "Seasonal & Secondary Home Insurance Arizona | 2026",
   metaDescription:
-    "Arizona secondary home insurance costs 15–25% more than primary coverage. Compare quotes through Protegrity Insurance — 5-star rated, 466 Google reviews.",
+    "Arizona secondary home insurance costs 15–25% more than primary coverage. Compare quotes through Protegrity Insurance, 5-star rated, 466 Google reviews.",
   keywords: ["seasonal home insurance Arizona"],
   category: "Home Insurance",
   readTime: "11 min read",
@@ -11269,10 +11269,10 @@ const seasonalSecondaryHomeInsuranceArizonaPost: BlogPost = {
   keyTakeaways: {
     items: [
       "Secondary home insurance costs 15–25% more than an equivalent primary residence policy due to vacancy risk and delayed damage detection (Insurance Information Institute, 2025).",
-      "Your primary homeowners policy does not cover a secondary or seasonal residence — a separate, standalone policy is required for every additional property.",
-      "Standard policies include a vacancy clause that voids or limits coverage after 30–60 consecutive days of unoccupancy — the exact period a seasonal home is most vulnerable.",
+      "Your primary homeowners policy does not cover a secondary or seasonal residence, a separate, standalone policy is required for every additional property.",
+      "Standard policies include a vacancy clause that voids or limits coverage after 30–60 consecutive days of unoccupancy, the exact period a seasonal home is most vulnerable.",
       "Over 300,000 snowbirds travel to Arizona each winter, owning properties in Scottsdale, Mesa, Sun City, Chandler, and Peoria that require specialized secondary home coverage.",
-      "Protegrity Insurance — 5-star rated with 466 verified Google reviews — shops secondary home coverage across multiple carriers simultaneously, giving you real quotes, not estimates.",
+      "Protegrity Insurance, 5-star rated with 466 verified Google reviews, shops secondary home coverage across multiple carriers simultaneously, giving you real quotes, not estimates.",
     ],
   },
   content: [
@@ -11280,19 +11280,19 @@ const seasonalSecondaryHomeInsuranceArizonaPost: BlogPost = {
     {
       type: "p",
       text:
-        "Seasonal and secondary home insurance in Arizona costs 15–25% more than a standard primary residence policy because unoccupied properties face 67% more theft attempts and 40% higher water damage claims, according to the Insurance Information Institute (2025). The national average home insurance premium reached $2,948 in 2025 and is projected to rise to $3,057 by end of 2026, per Insurify's March 2026 report. This guide is for Phoenix, Scottsdale, Mesa, Chandler, and Tempe homeowners — including snowbirds, part-time residents, and vacation property owners — comparing coverage options before buying.",
+        "Seasonal and secondary home insurance in Arizona costs 15–25% more than a standard primary residence policy because unoccupied properties face 67% more theft attempts and 40% higher water damage claims, according to the Insurance Information Institute (2025). The national average home insurance premium reached $2,948 in 2025 and is projected to rise to $3,057 by end of 2026, per Insurify's March 2026 report. This guide is for Phoenix, Scottsdale, Mesa, Chandler, and Tempe homeowners, including snowbirds, part-time residents, and vacation property owners, comparing coverage options before buying.",
     },
 
-    { type: "h2", text: "What is seasonal and secondary home insurance — and why does it matter in Arizona?" },
+    { type: "h2", text: "What is seasonal and secondary home insurance: and why does it matter in Arizona?" },
     {
       type: "p",
       text:
-        "A seasonal home is a property occupied only during certain times of year — a winter residence in Scottsdale, a summer cabin near Flagstaff, or a golf retreat in Peoria. A secondary home is visited for shorter, less predictable periods throughout the year. Both carry elevated insurance risk because they sit unoccupied for extended stretches, making them more vulnerable to theft, vandalism, water damage, and delayed detection of damage that compounds before anyone arrives.",
+        "A seasonal home is a property occupied only during certain times of year, a winter residence in Scottsdale, a summer cabin near Flagstaff, or a golf retreat in Peoria. A secondary home is visited for shorter, less predictable periods throughout the year. Both carry elevated insurance risk because they sit unoccupied for extended stretches, making them more vulnerable to theft, vandalism, water damage, and delayed detection of damage that compounds before anyone arrives.",
     },
     {
       type: "p",
       text:
-        "Your primary homeowners policy does not extend to a second property. According to the Arizona Department of Insurance and Financial Institutions (DIFI), each property requires its own policy. Standard homeowners policies include vacancy clauses that limit or exclude coverage if a home is unoccupied for more than 30 to 60 consecutive days — which means a seasonal home may be completely uninsured during the exact months it sits empty.",
+        "Your primary homeowners policy does not extend to a second property. According to the Arizona Department of Insurance and Financial Institutions (DIFI), each property requires its own policy. Standard homeowners policies include vacancy clauses that limit or exclude coverage if a home is unoccupied for more than 30 to 60 consecutive days, which means a seasonal home may be completely uninsured during the exact months it sits empty.",
     },
     {
       type: "p",
@@ -11302,14 +11302,14 @@ const seasonalSecondaryHomeInsuranceArizonaPost: BlogPost = {
     {
       type: "p",
       lead: "Critical gap to know:",
-      text: " If your Scottsdale or Mesa seasonal home sits vacant for more than 60 consecutive days and a pipe bursts, a theft occurs, or vandalism happens — your standard homeowners policy may pay nothing. A seasonal dwelling policy eliminates that exposure entirely.",
+      text: " If your Scottsdale or Mesa seasonal home sits vacant for more than 60 consecutive days and a pipe bursts, a theft occurs, or vandalism happens, your standard homeowners policy may pay nothing. A seasonal dwelling policy eliminates that exposure entirely.",
     },
 
     { type: "h2", text: "Who needs seasonal or secondary home insurance in Arizona?" },
     {
       type: "p",
       text:
-        "Snowbirds from northern U.S. states and Canada who own winter homes in Scottsdale, Mesa, Peoria, Sun City, or Chandler. Arizona residents who own a second property in Flagstaff, Sedona, Lake Havasu City, or the White Mountains used only part of the year. Part-time Arizona residents splitting time between the Valley and another state — both properties need separate, properly structured policies. Owners of vacation properties listed on Airbnb or VRBO — short-term rental activity requires endorsements beyond a standard seasonal policy. Retirees who own a primary home in the Phoenix metro and a secondary residence elsewhere. Investors holding unoccupied properties in Tempe, Gilbert, or Glendale between tenants, renovations, or sales.",
+        "Snowbirds from northern U.S. states and Canada who own winter homes in Scottsdale, Mesa, Peoria, Sun City, or Chandler. Arizona residents who own a second property in Flagstaff, Sedona, Lake Havasu City, or the White Mountains used only part of the year. Part-time Arizona residents splitting time between the Valley and another state, both properties need separate, properly structured policies. Owners of vacation properties listed on Airbnb or VRBO, short-term rental activity requires endorsements beyond a standard seasonal policy. Retirees who own a primary home in the Phoenix metro and a secondary residence elsewhere. Investors holding unoccupied properties in Tempe, Gilbert, or Glendale between tenants, renovations, or sales.",
     },
 
     { type: "h2", text: "What does seasonal and secondary home insurance cover?" },
@@ -11320,11 +11320,11 @@ const seasonalSecondaryHomeInsuranceArizonaPost: BlogPost = {
       rows: [
         [
           "Dwelling coverage",
-          "Repairs or rebuild costs for the structure — roof, walls, foundation, and attached structures — after a covered loss such as fire, wind, or hail damage",
+          "Repairs or rebuild costs for the structure, roof, walls, foundation, and attached structures, after a covered loss such as fire, wind, or hail damage",
         ],
         [
           "Personal property",
-          "Furniture, appliances, and belongings left at the property — limits are lower than primary home policies since fewer valuables are kept at a secondary residence",
+          "Furniture, appliances, and belongings left at the property, limits are lower than primary home policies since fewer valuables are kept at a secondary residence",
         ],
         [
           "Liability coverage",
@@ -11336,7 +11336,7 @@ const seasonalSecondaryHomeInsuranceArizonaPost: BlogPost = {
         ],
         [
           "Theft and vandalism",
-          "Replacement or repair costs from break-ins or malicious damage — unoccupied properties face 40% higher burglary rates (FBI Crime Statistics, 2025)",
+          "Replacement or repair costs from break-ins or malicious damage, unoccupied properties face 40% higher burglary rates (FBI Crime Statistics, 2025)",
         ],
         [
           "Monsoon and weather damage",
@@ -11344,7 +11344,7 @@ const seasonalSecondaryHomeInsuranceArizonaPost: BlogPost = {
         ],
         [
           "Extended vacancy protection",
-          "Seasonal dwelling policies maintain full coverage during vacancy periods — unlike standard policies that void coverage after 30–60 consecutive days unoccupied",
+          "Seasonal dwelling policies maintain full coverage during vacancy periods, unlike standard policies that void coverage after 30–60 consecutive days unoccupied",
         ],
       ],
     },
@@ -11353,14 +11353,14 @@ const seasonalSecondaryHomeInsuranceArizonaPost: BlogPost = {
     {
       type: "p",
       text:
-        "Flood damage — monsoon flooding is not covered by standard home or seasonal policies; separate flood insurance through the National Flood Insurance Program (NFIP) or a private carrier is required for properties near washes or flood zones in Tempe, Peoria, or Glendale. Short-term rental activity — listing on Airbnb or VRBO without notifying your insurer voids the policy and eliminates all coverage for guest injuries or guest-caused damage. Earthquake damage — requires a separate endorsement not included in standard policies. Routine maintenance and gradual wear — deterioration, pest damage, and normal aging are excluded from all homeowners policies. Business activities at the property — home office or commercial use requires separate commercial coverage.",
+        "Flood damage, monsoon flooding is not covered by standard home or seasonal policies; separate flood insurance through the National Flood Insurance Program (NFIP) or a private carrier is required for properties near washes or flood zones in Tempe, Peoria, or Glendale. Short-term rental activity, listing on Airbnb or VRBO without notifying your insurer voids the policy and eliminates all coverage for guest injuries or guest-caused damage. Earthquake damage, requires a separate endorsement not included in standard policies. Routine maintenance and gradual wear, deterioration, pest damage, and normal aging are excluded from all homeowners policies. Business activities at the property, home office or commercial use requires separate commercial coverage.",
     },
 
     { type: "h2", text: "Why does secondary home insurance cost more than my primary policy?" },
     {
       type: "p",
       text:
-        "Secondary home insurance costs 15–25% more than an equivalent primary residence policy because vacancy dramatically increases both the frequency and severity of claims. Unoccupied properties face 67% more theft attempts and 40% higher water damage claims than occupied homes, according to the Insurance Information Institute (2025). Damage at an empty property goes undetected far longer — a slow pipe leak that a primary homeowner notices within hours can cause $18,000 in water damage at a vacant seasonal home before anyone arrives, according to the American Insurance Association.",
+        "Secondary home insurance costs 15–25% more than an equivalent primary residence policy because vacancy dramatically increases both the frequency and severity of claims. Unoccupied properties face 67% more theft attempts and 40% higher water damage claims than occupied homes, according to the Insurance Information Institute (2025). Damage at an empty property goes undetected far longer, a slow pipe leak that a primary homeowner notices within hours can cause $18,000 in water damage at a vacant seasonal home before anyone arrives, according to the American Insurance Association.",
     },
     {
       type: "p",
@@ -11372,7 +11372,7 @@ const seasonalSecondaryHomeInsuranceArizonaPost: BlogPost = {
       columns: ["Property Type / Use", "Annual Cost Estimate", "Key Pricing Driver"],
       rows: [
         [
-          "Standard secondary home — owner-occupied part-year",
+          "Standard secondary home, owner-occupied part-year",
           "$1,425–$1,550/yr",
           "Vacancy duration, location, home age",
         ],
@@ -11397,7 +11397,7 @@ const seasonalSecondaryHomeInsuranceArizonaPost: BlogPost = {
           "Replacement cost, pool, guest house, amenities",
         ],
         [
-          "National average — all home types, 2025",
+          "National average, all home types, 2025",
           "$2,948/yr",
           "Source: Insurify, March 2026",
         ],
@@ -11409,10 +11409,10 @@ const seasonalSecondaryHomeInsuranceArizonaPost: BlogPost = {
         "A professionally monitored alarm system reduces seasonal home premiums by 15–20%, according to FirstMark Insurance Group's November 2025 analysis. Bundling secondary coverage with your primary home or auto policy, maintaining a claims-free history, and keeping your roof under 10 years old each reduce costs further. Comparing multiple carriers through Protegrity Insurance regularly produces $200–$600 in annual savings over a single-carrier quote for the same coverage.",
     },
 
-    { type: "h2", text: "Primary vs. secondary home insurance — what actually changes?" },
+    { type: "h2", text: "Primary vs. secondary home insurance: what actually changes?" },
     {
       type: "table",
-      caption: "Primary vs. secondary home insurance — what actually changes?",
+      caption: "Primary vs. secondary home insurance, what actually changes?",
       columns: ["Factor", "Primary Home Policy", "Seasonal / Secondary Policy"],
       rows: [
         [
@@ -11428,27 +11428,27 @@ const seasonalSecondaryHomeInsuranceArizonaPost: BlogPost = {
         [
           "Personal property limits",
           "Full replacement cost for all belongings",
-          "Lower limits — fewer valuables kept at property",
+          "Lower limits, fewer valuables kept at property",
         ],
         [
           "Short-term rental coverage",
-          "Not included — rental use voids standard policy",
+          "Not included, rental use voids standard policy",
           "Available with vacation rental endorsement",
         ],
         [
           "Theft / burglary risk rating",
           "Standard rate",
-          "Higher — 40% elevated burglary rate for vacant properties (FBI, 2025)",
+          "Higher, 40% elevated burglary rate for vacant properties (FBI, 2025)",
         ],
         [
           "Carrier availability",
-          "Broad — most carriers write primary homes",
-          "Narrower — requires specialist carrier or brokerage access",
+          "Broad, most carriers write primary homes",
+          "Narrower, requires specialist carrier or brokerage access",
         ],
         [
           "Separate policy required?",
-          "No — covers primary residence only",
-          "Yes — always a separate standalone policy",
+          "No, covers primary residence only",
+          "Yes, always a separate standalone policy",
         ],
       ],
     },
@@ -11457,17 +11457,17 @@ const seasonalSecondaryHomeInsuranceArizonaPost: BlogPost = {
     {
       type: "p",
       text:
-        "Secondary home insurance is a narrower, more specialized market than primary home coverage. Not all carriers write seasonal policies in Arizona — and among those that do, pricing for the same property varies by $400–$1,000 per year depending on the carrier's underwriting model, appetite for vacancy risk, and familiarity with Arizona's specific perils: monsoon season, extreme summer heat, haboobs, and flash flooding near the Valley's washes and retention basins.",
+        "Secondary home insurance is a narrower, more specialized market than primary home coverage. Not all carriers write seasonal policies in Arizona, and among those that do, pricing for the same property varies by $400–$1,000 per year depending on the carrier's underwriting model, appetite for vacancy risk, and familiarity with Arizona's specific perils: monsoon season, extreme summer heat, haboobs, and flash flooding near the Valley's washes and retention basins.",
     },
     {
       type: "p",
       text:
-        "When you call a single carrier directly, you get one price — from one underwriter with one risk model. If that carrier does not write seasonal homes in Arizona, or if your property profile does not fit their preferred risk, you get declined or overcharged with no recourse. Protegrity Insurance eliminates that problem entirely.",
+        "When you call a single carrier directly, you get one price, from one underwriter with one risk model. If that carrier does not write seasonal homes in Arizona, or if your property profile does not fit their preferred risk, you get declined or overcharged with no recourse. Protegrity Insurance eliminates that problem entirely.",
     },
     {
       type: "p",
       text:
-        "A single carrier gives you one quote at their price — and only if they write secondary homes in Arizona. Protegrity Insurance pre-screens carriers that write this coverage, submits your property profile simultaneously, and returns real side-by-side quotes so you choose based on price, coverage, and carrier strength — not guesswork.",
+        "A single carrier gives you one quote at their price, and only if they write secondary homes in Arizona. Protegrity Insurance pre-screens carriers that write this coverage, submits your property profile simultaneously, and returns real side-by-side quotes so you choose based on price, coverage, and carrier strength, not guesswork.",
     },
     {
       type: "p",
@@ -11480,19 +11480,19 @@ const seasonalSecondaryHomeInsuranceArizonaPost: BlogPost = {
       rows: [
         [
           "Carriers with secondary home appetite in Arizona",
-          "May or may not write it — you find out after applying",
+          "May or may not write it, you find out after applying",
           "Pre-screened carriers confirmed to write seasonal / secondary coverage in Arizona",
         ],
-        ["Quotes received", "1 — if they write it at all", "Multiple real quotes returned simultaneously"],
+        ["Quotes received", "1, if they write it at all", "Multiple real quotes returned simultaneously"],
         [
           "Bundling requirement transparency",
-          "May require primary policy with that carrier — disclosed only after quoting",
+          "May require primary policy with that carrier, disclosed only after quoting",
           "Identifies upfront which carriers require bundling and which do not",
         ],
         [
           "Short-term rental endorsements",
           "Excluded or heavily limited at most carriers",
-          "Identifies carriers with proper vacation rental coverage — critical for Airbnb and VRBO owners",
+          "Identifies carriers with proper vacation rental coverage, critical for Airbnb and VRBO owners",
         ],
         [
           "Arizona-specific risk knowledge",
@@ -11501,18 +11501,18 @@ const seasonalSecondaryHomeInsuranceArizonaPost: BlogPost = {
         ],
         [
           "Savings vs. single-carrier quote",
-          "No comparison — one price only",
+          "No comparison, one price only",
           "$200–$600 annual savings documented for secondary home profiles",
         ],
         [
           "Verified customer satisfaction",
           "Varies by carrier",
-          "5-star rating · 466 verified Google reviews — consistent results for Arizona homeowners",
+          "5-star rating · 466 verified Google reviews, consistent results for Arizona homeowners",
         ],
         [
           "Point of contact",
           "That carrier's own representatives",
-          "Protegrity Insurance — one licensed Arizona brokerage, one relationship, multiple options",
+          "Protegrity Insurance, one licensed Arizona brokerage, one relationship, multiple options",
         ],
         [
           "Best for",
@@ -11524,46 +11524,46 @@ const seasonalSecondaryHomeInsuranceArizonaPost: BlogPost = {
     {
       type: "p",
       text:
-        "Protegrity's 466 verified 5-star Google reviews are not a marketing claim — they are the documented outcome of a brokerage model built around finding coverage that fits, not pushing a single carrier's product. For secondary home insurance — where the right carrier match is harder to find and the stakes of getting it wrong are higher — that independence is the most valuable thing a broker brings to the table.",
+        "Protegrity's 466 verified 5-star Google reviews are not a marketing claim, they are the documented outcome of a brokerage model built around finding coverage that fits, not pushing a single carrier's product. For secondary home insurance, where the right carrier match is harder to find and the stakes of getting it wrong are higher, that independence is the most valuable thing a broker brings to the table.",
     },
 
     { type: "h2", text: "Common mistakes Arizona secondary home owners make with insurance" },
     {
       type: "p",
       text:
-        "Assuming the primary home policy covers a second property — it does not; every additional property requires its own standalone policy.",
+        "Assuming the primary home policy covers a second property, it does not; every additional property requires its own standalone policy.",
     },
     {
       type: "p",
       text:
-        "Leaving a standard homeowners policy in place on a seasonal home — vacancy clauses void coverage after 30–60 days, leaving the property uninsured during exactly the period it is most at risk.",
+        "Leaving a standard homeowners policy in place on a seasonal home, vacancy clauses void coverage after 30–60 days, leaving the property uninsured during exactly the period it is most at risk.",
     },
     {
       type: "p",
       text:
-        "Not disclosing Airbnb or VRBO rental activity — undisclosed rental use voids the policy and eliminates all coverage for guest injuries, property damage, and liability claims.",
+        "Not disclosing Airbnb or VRBO rental activity, undisclosed rental use voids the policy and eliminates all coverage for guest injuries, property damage, and liability claims.",
     },
     {
       type: "p",
       text:
-        "Insuring the property at market value rather than rebuild cost — in Scottsdale and Ahwatukee, rebuild costs frequently exceed current market value; the gap becomes a financial loss after a total loss claim.",
+        "Insuring the property at market value rather than rebuild cost, in Scottsdale and Ahwatukee, rebuild costs frequently exceed current market value; the gap becomes a financial loss after a total loss claim.",
     },
     {
       type: "p",
       text:
-        "Skipping flood coverage — Arizona monsoon flooding is excluded from all standard policies; properties near washes in Tempe, Peoria, or Glendale need separate NFIP or private flood coverage.",
+        "Skipping flood coverage, Arizona monsoon flooding is excluded from all standard policies; properties near washes in Tempe, Peoria, or Glendale need separate NFIP or private flood coverage.",
     },
     {
       type: "p",
       text:
-        "Getting only one quote — secondary home insurance pricing varies by $400–$1,000 per year between carriers for the same property; Protegrity Insurance closes that gap with a single conversation.",
+        "Getting only one quote, secondary home insurance pricing varies by $400–$1,000 per year between carriers for the same property; Protegrity Insurance closes that gap with a single conversation.",
     },
 
     { type: "h2", text: "When should you speak with a licensed agent about secondary home coverage?" },
     {
       type: "p",
       text:
-        "If you own or are purchasing a second property anywhere in the Phoenix metro — Scottsdale, Mesa, Tempe, Chandler, Gilbert, Glendale, or Peoria — speak with a licensed agent before the property closes or before your current policy renews. The licensed agents at Protegrity Insurance review your primary and secondary property profiles together, identify which carriers write seasonal coverage at your specific address, confirm whether bundling produces a discount or creates unwanted constraints, and ensure any rental activity is properly disclosed and covered from day one.",
+        "If you own or are purchasing a second property anywhere in the Phoenix metro, Scottsdale, Mesa, Tempe, Chandler, Gilbert, Glendale, or Peoria, speak with a licensed agent before the property closes or before your current policy renews. The licensed agents at Protegrity Insurance review your primary and secondary property profiles together, identify which carriers write seasonal coverage at your specific address, confirm whether bundling produces a discount or creates unwanted constraints, and ensure any rental activity is properly disclosed and covered from day one.",
     },
 
     { type: "h2", text: "Frequently Asked Questions: Seasonal & Secondary Home Insurance" },
@@ -11573,12 +11573,12 @@ const seasonalSecondaryHomeInsuranceArizonaPost: BlogPost = {
         {
           question: "Q: Does my primary home insurance cover my vacation home in Arizona?",
           answer:
-            "No — primary homeowners insurance does not cover a secondary or seasonal residence. Each property requires its own standalone policy. Standard policies also include vacancy clauses that void coverage after 30–60 consecutive days unoccupied — the exact period a seasonal home faces its highest theft and damage risk. A dedicated seasonal dwelling policy from Protegrity Insurance maintains full coverage through the entire vacancy period.",
+            "No, primary homeowners insurance does not cover a secondary or seasonal residence. Each property requires its own standalone policy. Standard policies also include vacancy clauses that void coverage after 30–60 consecutive days unoccupied, the exact period a seasonal home faces its highest theft and damage risk. A dedicated seasonal dwelling policy from Protegrity Insurance maintains full coverage through the entire vacancy period.",
         },
         {
           question: "Q: How much does seasonal home insurance cost in Arizona?",
           answer:
-            "Seasonal home insurance in Arizona costs 15–25% more than an equivalent primary policy, according to the Insurance Information Institute (2025). A standard secondary home runs $1,425–$2,200 per year. Vacation properties with rental activity cost $1,800–$3,000 per year. Comparing multiple carriers through Protegrity Insurance — 5-star rated, 466 verified Google reviews — identifies the most competitive rate for your specific property profile.",
+            "Seasonal home insurance in Arizona costs 15–25% more than an equivalent primary policy, according to the Insurance Information Institute (2025). A standard secondary home runs $1,425–$2,200 per year. Vacation properties with rental activity cost $1,800–$3,000 per year. Comparing multiple carriers through Protegrity Insurance, 5-star rated, 466 verified Google reviews, identifies the most competitive rate for your specific property profile.",
         },
         {
           question: "Q: What is a vacancy clause and how does it affect my coverage?",
@@ -11588,22 +11588,22 @@ const seasonalSecondaryHomeInsuranceArizonaPost: BlogPost = {
         {
           question: "Q: Can I insure a snowbird home in Arizona if my primary residence is in another state?",
           answer:
-            "Yes — Arizona seasonal and secondary home policies are available to out-of-state owners whose primary home is insured elsewhere. Some carriers require bundling with your primary policy; others do not. Protegrity Insurance identifies upfront which carriers write standalone secondary policies in Arizona, which require bundling, and which offer the best pricing for your winter residence in Scottsdale, Mesa, Sun City, or Chandler — saving you time and declined applications.",
+            "Yes, Arizona seasonal and secondary home policies are available to out-of-state owners whose primary home is insured elsewhere. Some carriers require bundling with your primary policy; others do not. Protegrity Insurance identifies upfront which carriers write standalone secondary policies in Arizona, which require bundling, and which offer the best pricing for your winter residence in Scottsdale, Mesa, Sun City, or Chandler, saving you time and declined applications.",
         },
         {
           question: "Q: Does secondary home insurance cover Airbnb or VRBO rentals in Arizona?",
           answer:
-            "Standard secondary home policies do not cover short-term rental activity. Listing on Airbnb or VRBO without disclosing rental use to your insurer voids the policy — eliminating all coverage for guest injuries, property damage, and liability. A vacation rental endorsement or dedicated short-term rental policy is required. Protegrity Insurance identifies which carriers write proper vacation rental coverage in Arizona for Phoenix, Scottsdale, and Sedona properties.",
+            "Standard secondary home policies do not cover short-term rental activity. Listing on Airbnb or VRBO without disclosing rental use to your insurer voids the policy, eliminating all coverage for guest injuries, property damage, and liability. A vacation rental endorsement or dedicated short-term rental policy is required. Protegrity Insurance identifies which carriers write proper vacation rental coverage in Arizona for Phoenix, Scottsdale, and Sedona properties.",
         },
         {
           question: "Q: Does secondary home insurance cover monsoon or flood damage in Arizona?",
           answer:
-            "Secondary home insurance covers wind, hail, and storm damage from Arizona's monsoon season, which runs June through September. Flood damage from monsoon runoff is excluded from all standard policies. Properties near washes, retention basins, or FEMA flood zones in Tempe, Peoria, or Glendale require separate coverage through the National Flood Insurance Program (NFIP) or a private flood carrier — both available through Protegrity Insurance.",
+            "Secondary home insurance covers wind, hail, and storm damage from Arizona's monsoon season, which runs June through September. Flood damage from monsoon runoff is excluded from all standard policies. Properties near washes, retention basins, or FEMA flood zones in Tempe, Peoria, or Glendale require separate coverage through the National Flood Insurance Program (NFIP) or a private flood carrier, both available through Protegrity Insurance.",
         },
         {
           question: "Q: Why is Protegrity Insurance the right brokerage for secondary home coverage in Arizona?",
           answer:
-            "Protegrity Insurance is a licensed Arizona brokerage rated 5 stars across 466 verified Google reviews. Unlike a single carrier that offers one price from one underwriting model, Protegrity shops multiple carriers simultaneously — pre-screened for Arizona secondary home appetite — and returns real side-by-side quotes. For secondary home insurance, where not all carriers write this coverage, that access and independence consistently delivers better outcomes for Arizona homeowners.",
+            "Protegrity Insurance is a licensed Arizona brokerage rated 5 stars across 466 verified Google reviews. Unlike a single carrier that offers one price from one underwriting model, Protegrity shops multiple carriers simultaneously, pre-screened for Arizona secondary home appetite, and returns real side-by-side quotes. For secondary home insurance, where not all carriers write this coverage, that access and independence consistently delivers better outcomes for Arizona homeowners.",
         },
         {
           question: "Q: How can I lower the cost of my Arizona seasonal home insurance?",
@@ -11653,10 +11653,10 @@ const earthquakeInsuranceArizonaPost: BlogPost = {
   title:
     "Earthquake Insurance in Arizona: What It Covers, What It Costs, and Why Most Homeowners Don't Have It",
   excerpt:
-    "Standard home insurance does not cover earthquake damage in Arizona. Compare quotes through Protegrity Insurance — 5-star rated, 466 Google reviews.",
+    "Standard home insurance does not cover earthquake damage in Arizona. Compare quotes through Protegrity Insurance, 5-star rated, 466 Google reviews.",
   metaTitle: "Earthquake Insurance Arizona | 2026 Guide",
   metaDescription:
-    "Standard home insurance does not cover earthquake damage in Arizona. Compare quotes through Protegrity Insurance — 5-star rated, 466 Google reviews.",
+    "Standard home insurance does not cover earthquake damage in Arizona. Compare quotes through Protegrity Insurance, 5-star rated, 466 Google reviews.",
   keywords: ["earthquake insurance Arizona"],
   category: "Home Insurance",
   readTime: "11 min read",
@@ -11679,11 +11679,11 @@ const earthquakeInsuranceArizonaPost: BlogPost = {
   },
   keyTakeaways: {
     items: [
-      "Standard homeowners insurance does not cover earthquake damage — a separate earthquake policy is required in every state, including Arizona (Insurance Information Institute, 2025).",
-      "Arizona has approximately 100 known active faults and experiences hundreds of earthquakes per year — most unfelt, but a magnitude 5.0 or larger event occurs roughly every 10 years, according to the Arizona Geological Survey (AZGS).",
-      "The average cost of earthquake insurance in the U.S. is $800 per year — Arizona homeowners in lower-risk areas pay significantly less than high-seismic states (Lemonade Insurance, 2025).",
-      "Earthquake insurance deductibles range from 2% to 25% of your dwelling coverage limit — far higher than standard home insurance deductibles — making the right policy structure critical (Insurance Information Institute, 2025).",
-      "Protegrity Insurance — 5-star rated with 466 verified Google reviews — shops earthquake coverage across multiple carriers simultaneously, returning real side-by-side quotes for Arizona homeowners.",
+      "Standard homeowners insurance does not cover earthquake damage, a separate earthquake policy is required in every state, including Arizona (Insurance Information Institute, 2025).",
+      "Arizona has approximately 100 known active faults and experiences hundreds of earthquakes per year, most unfelt, but a magnitude 5.0 or larger event occurs roughly every 10 years, according to the Arizona Geological Survey (AZGS).",
+      "The average cost of earthquake insurance in the U.S. is $800 per year, Arizona homeowners in lower-risk areas pay significantly less than high-seismic states (Lemonade Insurance, 2025).",
+      "Earthquake insurance deductibles range from 2% to 25% of your dwelling coverage limit, far higher than standard home insurance deductibles, making the right policy structure critical (Insurance Information Institute, 2025).",
+      "Protegrity Insurance, 5-star rated with 466 verified Google reviews, shops earthquake coverage across multiple carriers simultaneously, returning real side-by-side quotes for Arizona homeowners.",
     ],
   },
   content: [
@@ -11691,19 +11691,19 @@ const earthquakeInsuranceArizonaPost: BlogPost = {
     {
       type: "p",
       text:
-        "Earthquake insurance in Arizona is a separate policy — not included in any standard homeowners policy — that covers structural damage, personal property loss, and additional living expenses caused by seismic events. The average cost of earthquake insurance in the United States is $800 per year, according to Lemonade Insurance's 2025 market data, with lower-risk states like Arizona paying less than high-seismic states like California. This guide is for Phoenix, Scottsdale, Mesa, Chandler, and Prescott homeowners who want to understand Arizona's real earthquake risk, what earthquake coverage pays for, and how comparing quotes through Protegrity Insurance produces better outcomes than going direct to one carrier.",
+        "Earthquake insurance in Arizona is a separate policy, not included in any standard homeowners policy, that covers structural damage, personal property loss, and additional living expenses caused by seismic events. The average cost of earthquake insurance in the United States is $800 per year, according to Lemonade Insurance's 2025 market data, with lower-risk states like Arizona paying less than high-seismic states like California. This guide is for Phoenix, Scottsdale, Mesa, Chandler, and Prescott homeowners who want to understand Arizona's real earthquake risk, what earthquake coverage pays for, and how comparing quotes through Protegrity Insurance produces better outcomes than going direct to one carrier.",
     },
 
     { type: "h2", text: "What is earthquake insurance and why does it matter in Arizona?" },
     {
       type: "p",
       text:
-        "Earthquake insurance is a standalone policy — or an endorsement added to an existing homeowners policy — that pays for structural damage to your home, damage to personal property, and temporary living expenses when an earthquake causes your home to become uninhabitable. Standard homeowners insurance policies in every state, including Arizona, specifically exclude earthquake damage. This exclusion has been in place since most major carriers stopped writing earthquake coverage in the 1990s, according to FEMA, leaving homeowners across all 42 earthquake-risk states without protection unless they purchase it separately.",
+        "Earthquake insurance is a standalone policy, or an endorsement added to an existing homeowners policy, that pays for structural damage to your home, damage to personal property, and temporary living expenses when an earthquake causes your home to become uninhabitable. Standard homeowners insurance policies in every state, including Arizona, specifically exclude earthquake damage. This exclusion has been in place since most major carriers stopped writing earthquake coverage in the 1990s, according to FEMA, leaving homeowners across all 42 earthquake-risk states without protection unless they purchase it separately.",
     },
     {
       type: "p",
       text:
-        "Arizona homeowners face a common misconception: that earthquakes are a California problem. In reality, the Arizona Geological Survey (AZGS) documents hundreds of earthquakes per year in Arizona, with a magnitude 5.0 or larger event occurring roughly every 10 years across the state. A 2015 magnitude 4.1 earthquake near Black Canyon City — north of Phoenix — was felt by millions of people across the Valley, including residents in Scottsdale, Tempe, Chandler, and Mesa. Arizona's seismic risk is real, not theoretical.",
+        "Arizona homeowners face a common misconception: that earthquakes are a California problem. In reality, the Arizona Geological Survey (AZGS) documents hundreds of earthquakes per year in Arizona, with a magnitude 5.0 or larger event occurring roughly every 10 years across the state. A 2015 magnitude 4.1 earthquake near Black Canyon City, north of Phoenix, was felt by millions of people across the Valley, including residents in Scottsdale, Tempe, Chandler, and Mesa. Arizona's seismic risk is real, not theoretical.",
     },
     {
       type: "p",
@@ -11714,14 +11714,14 @@ const earthquakeInsuranceArizonaPost: BlogPost = {
       type: "p",
       lead: "Critical coverage gap:",
       text:
-        " Your homeowners policy from every major carrier — Progressive, Safeco, Farmers, Stillwater, and others — explicitly excludes earthquake damage. If an earthquake damages your Phoenix or Scottsdale home tomorrow, your standard policy pays nothing toward structural repairs, personal property loss, or temporary housing. A separate earthquake policy is required.",
+        " Your homeowners policy from every major carrier, Progressive, Safeco, Farmers, Stillwater, and others, explicitly excludes earthquake damage. If an earthquake damages your Phoenix or Scottsdale home tomorrow, your standard policy pays nothing toward structural repairs, personal property loss, or temporary housing. A separate earthquake policy is required.",
     },
 
     { type: "h2", text: "Is Arizona at real risk for earthquakes?" },
     {
       type: "p",
       text:
-        "Arizona has approximately 100 known active faults within its borders, according to the Arizona Geological Survey (AZGS). Seismic activity is concentrated along the Arizona Seismic Belt — a swath running from the northwest to the southeast of the state — and is elevated near Prescott, Flagstaff, Holbrook, Tucson, and the Arizona-Mexico border region.",
+        "Arizona has approximately 100 known active faults within its borders, according to the Arizona Geological Survey (AZGS). Seismic activity is concentrated along the Arizona Seismic Belt, a swath running from the northwest to the southeast of the state, and is elevated near Prescott, Flagstaff, Holbrook, Tucson, and the Arizona-Mexico border region.",
     },
     {
       type: "table",
@@ -11730,27 +11730,27 @@ const earthquakeInsuranceArizonaPost: BlogPost = {
       rows: [
         [
           "Imperial Fault (50 miles west of Yuma)",
-          "High — potential M7.0 in next 40 years",
+          "High, potential M7.0 in next 40 years",
           "Regularly generates felt events across southwestern Arizona",
         ],
         [
           "Little Chino / Big Chino Faults (Prescott area)",
-          "Moderate-High — M6.0–M7.0 capable",
+          "Moderate-High, M6.0–M7.0 capable",
           "1976 M5.0 Prescott/Chino Valley earthquake caused local damage",
         ],
         [
           "Lake Mary Fault (Mormon Lake to Flagstaff)",
-          "Moderate-High — M7.0 capable",
+          "Moderate-High, M7.0 capable",
           "Flagstaff area M6.0–M6.2 earthquakes in 1906, 1910, 1912",
         ],
         [
           "Pitaycachi Fault (near Douglas / AZ-Mexico border)",
-          "High — historically active",
-          "1887 Sonoran M7.6 earthquake felt in Phoenix, Tucson, and Yuma — deadliest in Arizona history",
+          "High, historically active",
+          "1887 Sonoran M7.6 earthquake felt in Phoenix, Tucson, and Yuma, deadliest in Arizona history",
         ],
         [
           "Phoenix metro area (South Mountain / Phoenix Fault)",
-          "Lower — no major fault directly under urban core",
+          "Lower, no major fault directly under urban core",
           "2015 M4.1 near Black Canyon City felt by millions across the Valley",
         ],
         [
@@ -11763,7 +11763,7 @@ const earthquakeInsuranceArizonaPost: BlogPost = {
     {
       type: "p",
       text:
-        "The USGS designates Arizona as a medium seismic hazard state — meaning there is a 10% chance of potentially damaging earthquake shaking in any given 50-year period, according to ThinkHazard's 2025 global risk database. For a homeowner with a 30-year mortgage, that translates to meaningful structural risk that standard insurance leaves entirely uncovered.",
+        "The USGS designates Arizona as a medium seismic hazard state, meaning there is a 10% chance of potentially damaging earthquake shaking in any given 50-year period, according to ThinkHazard's 2025 global risk database. For a homeowner with a 30-year mortgage, that translates to meaningful structural risk that standard insurance leaves entirely uncovered.",
     },
 
     { type: "h2", text: "What does earthquake insurance cover?" },
@@ -11774,7 +11774,7 @@ const earthquakeInsuranceArizonaPost: BlogPost = {
       rows: [
         [
           "Dwelling coverage",
-          "Repairs or rebuild costs for the physical structure — walls, foundation, roof, and attached structures — after earthquake damage. Coverage limit should match your home's full rebuild cost, not its market value.",
+          "Repairs or rebuild costs for the physical structure, walls, foundation, roof, and attached structures, after earthquake damage. Coverage limit should match your home's full rebuild cost, not its market value.",
         ],
         [
           "Personal property",
@@ -11786,15 +11786,15 @@ const earthquakeInsuranceArizonaPost: BlogPost = {
         ],
         [
           "Other structures",
-          "Detached garages, fences, retaining walls, and driveways damaged by the seismic event — availability varies by carrier and policy type",
+          "Detached garages, fences, retaining walls, and driveways damaged by the seismic event, availability varies by carrier and policy type",
         ],
         [
           "Building code upgrades",
-          "Pays the additional cost to bring repaired portions of the home up to current Arizona building codes — older homes in Phoenix, Mesa, and Tempe built before modern seismic standards may trigger significant upgrade requirements",
+          "Pays the additional cost to bring repaired portions of the home up to current Arizona building codes, older homes in Phoenix, Mesa, and Tempe built before modern seismic standards may trigger significant upgrade requirements",
         ],
         [
           "Emergency repairs",
-          "Covers the first $1,000–$1,500 in urgent stabilization repairs — such as temporary shoring of a damaged foundation — without requiring the full deductible to be met first",
+          "Covers the first $1,000–$1,500 in urgent stabilization repairs, such as temporary shoring of a damaged foundation, without requiring the full deductible to be met first",
         ],
       ],
     },
@@ -11803,14 +11803,14 @@ const earthquakeInsuranceArizonaPost: BlogPost = {
     {
       type: "p",
       text:
-        "Flood or tsunami damage triggered by an earthquake — seismically induced flooding requires separate flood insurance through the National Flood Insurance Program (NFIP) or a private flood carrier. Fire damage following an earthquake — fire triggered by a gas line rupture or electrical failure after a quake is covered by your standard homeowners policy, not your earthquake policy. Vehicle damage — cars and other vehicles damaged by an earthquake are covered by your auto policy's comprehensive coverage, not earthquake insurance. Land damage — sinkholes, earth movement, or soil liquefaction that damages the land itself rather than the structure is excluded from most earthquake policies. Pre-existing damage or gradual deterioration — earthquake insurance covers sudden seismic events, not ongoing settling, cracking, or structural issues that predated the earthquake.",
+        "Flood or tsunami damage triggered by an earthquake, seismically induced flooding requires separate flood insurance through the National Flood Insurance Program (NFIP) or a private flood carrier. Fire damage following an earthquake, fire triggered by a gas line rupture or electrical failure after a quake is covered by your standard homeowners policy, not your earthquake policy. Vehicle damage, cars and other vehicles damaged by an earthquake are covered by your auto policy's comprehensive coverage, not earthquake insurance. Land damage, sinkholes, earth movement, or soil liquefaction that damages the land itself rather than the structure is excluded from most earthquake policies. Pre-existing damage or gradual deterioration, earthquake insurance covers sudden seismic events, not ongoing settling, cracking, or structural issues that predated the earthquake.",
     },
 
     { type: "h2", text: "How much does earthquake insurance cost in Arizona?" },
     {
       type: "p",
       text:
-        "Arizona earthquake insurance costs less than equivalent coverage in California because Arizona's seismic risk — while real — is lower than California's, which accounts for two-thirds of the nation's earthquake risk, according to the Insurance Information Institute (2025). Arizona homeowners in lower-risk urban areas like Phoenix, Scottsdale, and Chandler pay significantly less than homeowners near higher-risk fault zones like Prescott or Flagstaff.",
+        "Arizona earthquake insurance costs less than equivalent coverage in California because Arizona's seismic risk, while real, is lower than California's, which accounts for two-thirds of the nation's earthquake risk, according to the Insurance Information Institute (2025). Arizona homeowners in lower-risk urban areas like Phoenix, Scottsdale, and Chandler pay significantly less than homeowners near higher-risk fault zones like Prescott or Flagstaff.",
     },
     {
       type: "table",
@@ -11818,7 +11818,7 @@ const earthquakeInsuranceArizonaPost: BlogPost = {
       columns: ["Property Profile / Location", "Annual Cost Estimate", "Key Pricing Factor"],
       rows: [
         [
-          "Phoenix metro — lower fault proximity",
+          "Phoenix metro, lower fault proximity",
           "$300–$800/yr",
           "Distance from known active faults, home age, construction type",
         ],
@@ -11838,7 +11838,7 @@ const earthquakeInsuranceArizonaPost: BlogPost = {
           "Proximity to Lake Mary Fault, older building stock",
         ],
         [
-          "National average — all states",
+          "National average, all states",
           "$800/yr",
           "Source: Lemonade Insurance, 2025",
         ],
@@ -11852,42 +11852,42 @@ const earthquakeInsuranceArizonaPost: BlogPost = {
     {
       type: "p",
       text:
-        "The most important cost decision in earthquake insurance is your deductible. Unlike standard homeowners policies with flat deductibles of $1,000–$2,500, earthquake deductibles are expressed as a percentage of your dwelling coverage — typically 2% to 25%, according to the Insurance Information Institute. For a Phoenix home insured at $400,000, a 10% earthquake deductible means you pay the first $40,000 of every claim out of pocket before your policy activates.",
+        "The most important cost decision in earthquake insurance is your deductible. Unlike standard homeowners policies with flat deductibles of $1,000–$2,500, earthquake deductibles are expressed as a percentage of your dwelling coverage, typically 2% to 25%, according to the Insurance Information Institute. For a Phoenix home insured at $400,000, a 10% earthquake deductible means you pay the first $40,000 of every claim out of pocket before your policy activates.",
     },
 
-    { type: "h2", text: "Earthquake insurance deductibles — what Arizona homeowners need to understand" },
+    { type: "h2", text: "Earthquake insurance deductibles: what Arizona homeowners need to understand" },
     {
       type: "table",
-      caption: "Earthquake insurance deductibles — what Arizona homeowners need to understand",
+      caption: "Earthquake insurance deductibles, what Arizona homeowners need to understand",
       columns: ["Deductible Level", "Out-of-Pocket on a $400K Home", "Effect on Premium"],
       rows: [
-        ["2%", "$8,000 per claim", "Highest premium — most protection"],
-        ["5%", "$20,000 per claim", "Moderate premium — recommended for most Arizona homeowners"],
-        ["10%", "$40,000 per claim", "Lower premium — significant out-of-pocket exposure on moderate claims"],
-        ["15%", "$60,000 per claim", "Lower premium — appropriate only for homeowners with substantial liquid savings"],
+        ["2%", "$8,000 per claim", "Highest premium, most protection"],
+        ["5%", "$20,000 per claim", "Moderate premium, recommended for most Arizona homeowners"],
+        ["10%", "$40,000 per claim", "Lower premium, significant out-of-pocket exposure on moderate claims"],
+        ["15%", "$60,000 per claim", "Lower premium, appropriate only for homeowners with substantial liquid savings"],
         [
           "25%",
           "$100,000 per claim",
-          "Lowest premium — catastrophic-event-only coverage; most small-to-moderate claims fall below this threshold",
+          "Lowest premium, catastrophic-event-only coverage; most small-to-moderate claims fall below this threshold",
         ],
       ],
     },
     {
       type: "p",
       text:
-        "Most financial advisors recommend a 5% to 10% deductible for Arizona homeowners as a balance between affordable premiums and manageable out-of-pocket exposure. At 15% or higher, many moderate earthquake events produce claims below the deductible — meaning the policy would not pay at all for a $50,000 or $60,000 structural repair.",
+        "Most financial advisors recommend a 5% to 10% deductible for Arizona homeowners as a balance between affordable premiums and manageable out-of-pocket exposure. At 15% or higher, many moderate earthquake events produce claims below the deductible, meaning the policy would not pay at all for a $50,000 or $60,000 structural repair.",
     },
 
     { type: "h2", text: "Why does shopping with Protegrity Insurance save Arizona homeowners money on earthquake coverage?" },
     {
       type: "p",
       text:
-        "Earthquake insurance is one of the most underwritten and least-understood personal lines products. Not all carriers write standalone earthquake policies in Arizona — and those that do price the same home very differently based on their proprietary seismic models, proximity to fault line data, construction type adjustments, and deductible structures. A Phoenix homeowner who calls one carrier gets one seismic model's assessment of their risk — and one premium. A homeowner who shops through Protegrity Insurance gets real quotes from multiple carriers, side by side, and chooses based on the full picture.",
+        "Earthquake insurance is one of the most underwritten and least-understood personal lines products. Not all carriers write standalone earthquake policies in Arizona, and those that do price the same home very differently based on their proprietary seismic models, proximity to fault line data, construction type adjustments, and deductible structures. A Phoenix homeowner who calls one carrier gets one seismic model's assessment of their risk, and one premium. A homeowner who shops through Protegrity Insurance gets real quotes from multiple carriers, side by side, and chooses based on the full picture.",
     },
     {
       type: "p",
       text:
-        "Earthquake insurance pricing is driven by seismic models that vary significantly between carriers. The same Scottsdale home can receive earthquake insurance quotes ranging by $300–$600 per year between carriers for identical coverage limits. Protegrity Insurance submits your property profile to multiple carriers simultaneously — so you see the full market, not one carrier's model.",
+        "Earthquake insurance pricing is driven by seismic models that vary significantly between carriers. The same Scottsdale home can receive earthquake insurance quotes ranging by $300–$600 per year between carriers for identical coverage limits. Protegrity Insurance submits your property profile to multiple carriers simultaneously, so you see the full market, not one carrier's model.",
     },
     {
       type: "table",
@@ -11896,13 +11896,13 @@ const earthquakeInsuranceArizonaPost: BlogPost = {
       rows: [
         [
           "Carriers that write earthquake policies in Arizona",
-          "May or may not offer it — you find out after applying",
+          "May or may not offer it, you find out after applying",
           "Pre-screened carriers confirmed to write earthquake coverage in Arizona",
         ],
-        ["Quotes received", "1 — one seismic model, one price", "Multiple real quotes — full market comparison"],
+        ["Quotes received", "1, one seismic model, one price", "Multiple real quotes, full market comparison"],
         [
           "Deductible structure guidance",
-          "That carrier's options only — no independent comparison",
+          "That carrier's options only, no independent comparison",
           "Independent review of deductible options relative to your home value and savings level",
         ],
         [
@@ -11917,7 +11917,7 @@ const earthquakeInsuranceArizonaPost: BlogPost = {
         ],
         [
           "Coordination with primary homeowners policy",
-          "Limited — focused on their own products",
+          "Limited, focused on their own products",
           "Reviews primary policy exclusions and ensures earthquake coverage connects properly without gaps",
         ],
         [
@@ -11928,58 +11928,58 @@ const earthquakeInsuranceArizonaPost: BlogPost = {
         [
           "Verified customer satisfaction",
           "Varies by carrier",
-          "5-star rating · 466 verified Google reviews — consistent results for Arizona homeowners",
+          "5-star rating · 466 verified Google reviews, consistent results for Arizona homeowners",
         ],
         [
           "Best for",
           "Homeowner already bundled with a carrier that writes earthquake coverage in their ZIP code",
-          "Most Arizona homeowners — especially those near Prescott, Flagstaff, or higher-risk fault zones, or seeking a first earthquake quote",
+          "Most Arizona homeowners, especially those near Prescott, Flagstaff, or higher-risk fault zones, or seeking a first earthquake quote",
         ],
       ],
     },
     {
       type: "p",
       text:
-        "Protegrity's 466 verified 5-star Google reviews reflect a brokerage built around one outcome: finding the right coverage at the right price for Arizona homeowners. For earthquake insurance — where most homeowners have never been quoted, where carrier availability varies by ZIP code, and where the deductible structure determines whether the policy actually pays — that independent expertise is the most valuable thing a broker brings to the table.",
+        "Protegrity's 466 verified 5-star Google reviews reflect a brokerage built around one outcome: finding the right coverage at the right price for Arizona homeowners. For earthquake insurance, where most homeowners have never been quoted, where carrier availability varies by ZIP code, and where the deductible structure determines whether the policy actually pays, that independent expertise is the most valuable thing a broker brings to the table.",
     },
 
     { type: "h2", text: "Common mistakes Arizona homeowners make with earthquake insurance" },
     {
       type: "p",
       text:
-        "Assuming standard homeowners insurance covers earthquake damage — every major carrier in Arizona explicitly excludes seismic events; discovering this after a claim is financially devastating.",
+        "Assuming standard homeowners insurance covers earthquake damage, every major carrier in Arizona explicitly excludes seismic events; discovering this after a claim is financially devastating.",
     },
     {
       type: "p",
       text:
-        "Relying on FEMA assistance as a substitute for coverage — the maximum FEMA housing assistance payout is $43,600, which would not cover foundation repairs alone on most Phoenix-area homes.",
+        "Relying on FEMA assistance as a substitute for coverage, the maximum FEMA housing assistance payout is $43,600, which would not cover foundation repairs alone on most Phoenix-area homes.",
     },
     {
       type: "p",
       text:
-        "Choosing a deductible that is too high — a 15% or 25% deductible on a $400,000 home means paying $60,000 to $100,000 out of pocket before the policy activates; most moderate earthquake events fall below these thresholds.",
+        "Choosing a deductible that is too high, a 15% or 25% deductible on a $400,000 home means paying $60,000 to $100,000 out of pocket before the policy activates; most moderate earthquake events fall below these thresholds.",
     },
     {
       type: "p",
       text:
-        "Underinsuring the dwelling — insuring at market value rather than rebuild cost leaves a gap; in Scottsdale and North Phoenix, rebuild costs consistently exceed current market values.",
+        "Underinsuring the dwelling, insuring at market value rather than rebuild cost leaves a gap; in Scottsdale and North Phoenix, rebuild costs consistently exceed current market values.",
     },
     {
       type: "p",
       text:
-        "Not reviewing ALE limits — a major earthquake in the Phoenix metro could push demand for temporary housing far above normal rental rates; ALE limits should cover at least 12 months of alternative housing at post-disaster rental prices.",
+        "Not reviewing ALE limits, a major earthquake in the Phoenix metro could push demand for temporary housing far above normal rental rates; ALE limits should cover at least 12 months of alternative housing at post-disaster rental prices.",
     },
     {
       type: "p",
       text:
-        "Getting only one quote — earthquake insurance pricing varies by $300–$600 per year between carriers for the same Arizona home; Protegrity Insurance closes that gap in a single conversation.",
+        "Getting only one quote, earthquake insurance pricing varies by $300–$600 per year between carriers for the same Arizona home; Protegrity Insurance closes that gap in a single conversation.",
     },
 
     { type: "h2", text: "When should you speak with a licensed agent about earthquake insurance?" },
     {
       type: "p",
       text:
-        "If you own a home in Phoenix, Scottsdale, Mesa, Tempe, Chandler, or anywhere in Arizona — including higher-risk areas near Prescott, Flagstaff, or the Arizona-Mexico border — the right time to evaluate earthquake coverage is at your next homeowners policy renewal. The licensed agents at Protegrity Insurance review your property's location relative to known Arizona fault lines, identify the right deductible structure for your financial situation, determine whether an endorsement or standalone policy is the better fit, and shop multiple carriers simultaneously so you get the best available rate for your specific address.",
+        "If you own a home in Phoenix, Scottsdale, Mesa, Tempe, Chandler, or anywhere in Arizona, including higher-risk areas near Prescott, Flagstaff, or the Arizona-Mexico border, the right time to evaluate earthquake coverage is at your next homeowners policy renewal. The licensed agents at Protegrity Insurance review your property's location relative to known Arizona fault lines, identify the right deductible structure for your financial situation, determine whether an endorsement or standalone policy is the better fit, and shop multiple carriers simultaneously so you get the best available rate for your specific address.",
     },
 
     { type: "h2", text: "Frequently Asked Questions: Earthquake Insurance" },
@@ -11989,42 +11989,42 @@ const earthquakeInsuranceArizonaPost: BlogPost = {
         {
           question: "Q: Does homeowners insurance cover earthquake damage in Arizona?",
           answer:
-            "No — standard homeowners insurance does not cover earthquake damage in Arizona or any other state. Every major carrier explicitly excludes seismic events from standard policies. Earthquake damage requires a separate standalone policy or an endorsement added to your existing homeowners coverage. Without it, structural damage, personal property loss, and temporary housing costs after an earthquake come entirely out of pocket — regardless of your carrier or coverage level.",
+            "No, standard homeowners insurance does not cover earthquake damage in Arizona or any other state. Every major carrier explicitly excludes seismic events from standard policies. Earthquake damage requires a separate standalone policy or an endorsement added to your existing homeowners coverage. Without it, structural damage, personal property loss, and temporary housing costs after an earthquake come entirely out of pocket, regardless of your carrier or coverage level.",
         },
         {
           question: "Q: How much does earthquake insurance cost in Arizona?",
           answer:
-            "Earthquake insurance in Arizona costs an estimated $300–$900 per year for most Phoenix metro homeowners — below the national average of $800 per year (Lemonade Insurance, 2025) because Arizona's seismic risk is lower than California's. Homeowners near higher-risk fault zones in Prescott or Flagstaff pay $600–$1,800 per year. Deductible selection — ranging from 2% to 25% of dwelling coverage — is the single biggest pricing variable. Comparing multiple carriers through Protegrity Insurance consistently identifies the best available rate.",
+            "Earthquake insurance in Arizona costs an estimated $300–$900 per year for most Phoenix metro homeowners, below the national average of $800 per year (Lemonade Insurance, 2025) because Arizona's seismic risk is lower than California's. Homeowners near higher-risk fault zones in Prescott or Flagstaff pay $600–$1,800 per year. Deductible selection, ranging from 2% to 25% of dwelling coverage, is the single biggest pricing variable. Comparing multiple carriers through Protegrity Insurance consistently identifies the best available rate.",
         },
         {
           question: "Q: Does Arizona have earthquake risk?",
           answer:
-            "Yes — Arizona has approximately 100 known active faults and experiences hundreds of earthquakes per year, according to the Arizona Geological Survey (AZGS). A magnitude 5.0 or larger earthquake occurs roughly every 10 years somewhere in the state. A 2015 magnitude 4.1 event near Black Canyon City was felt across the Phoenix metro — including Scottsdale, Mesa, and Chandler. The USGS and ThinkHazard classify Arizona as a medium seismic hazard state.",
+            "Yes, Arizona has approximately 100 known active faults and experiences hundreds of earthquakes per year, according to the Arizona Geological Survey (AZGS). A magnitude 5.0 or larger earthquake occurs roughly every 10 years somewhere in the state. A 2015 magnitude 4.1 event near Black Canyon City was felt across the Phoenix metro, including Scottsdale, Mesa, and Chandler. The USGS and ThinkHazard classify Arizona as a medium seismic hazard state.",
         },
         {
           question: "Q: What is an earthquake insurance deductible and how does it work?",
           answer:
-            "Earthquake insurance deductibles are expressed as a percentage of your dwelling coverage limit — not a flat dollar amount. Deductibles range from 2% to 25%, according to the Insurance Information Institute. For a home insured at $400,000 with a 10% deductible, you pay the first $40,000 of every earthquake claim before coverage activates. Most Arizona financial advisors recommend a 5% to 10% deductible as the balance between affordable premiums and manageable out-of-pocket exposure.",
+            "Earthquake insurance deductibles are expressed as a percentage of your dwelling coverage limit, not a flat dollar amount. Deductibles range from 2% to 25%, according to the Insurance Information Institute. For a home insured at $400,000 with a 10% deductible, you pay the first $40,000 of every earthquake claim before coverage activates. Most Arizona financial advisors recommend a 5% to 10% deductible as the balance between affordable premiums and manageable out-of-pocket exposure.",
         },
         {
           question: "Q: Does earthquake insurance cover fire or flood damage after a quake?",
           answer:
-            "No — earthquake insurance covers structural damage, personal property loss, and additional living expenses caused directly by seismic shaking. Fire damage that results from an earthquake — such as a gas line rupture igniting — is covered by your standard homeowners policy, not your earthquake policy. Flood or tsunami damage triggered by a seismic event requires separate flood insurance through the National Flood Insurance Program (NFIP) or a private flood carrier, both available through Protegrity Insurance.",
+            "No, earthquake insurance covers structural damage, personal property loss, and additional living expenses caused directly by seismic shaking. Fire damage that results from an earthquake, such as a gas line rupture igniting, is covered by your standard homeowners policy, not your earthquake policy. Flood or tsunami damage triggered by a seismic event requires separate flood insurance through the National Flood Insurance Program (NFIP) or a private flood carrier, both available through Protegrity Insurance.",
         },
         {
           question: "Q: Will FEMA cover my home if an earthquake damages it?",
           answer:
-            "FEMA disaster assistance is limited and not a substitute for earthquake insurance. The maximum FEMA housing assistance payout after a disaster is $43,600, according to Rocket Mortgage's 2025 analysis of federal aid data. For most Phoenix-area homeowners, that amount would not cover foundation repairs alone after a significant seismic event. FEMA assistance is also not guaranteed — it requires a federal disaster declaration and is subject to application approval and funding availability.",
+            "FEMA disaster assistance is limited and not a substitute for earthquake insurance. The maximum FEMA housing assistance payout after a disaster is $43,600, according to Rocket Mortgage's 2025 analysis of federal aid data. For most Phoenix-area homeowners, that amount would not cover foundation repairs alone after a significant seismic event. FEMA assistance is also not guaranteed, it requires a federal disaster declaration and is subject to application approval and funding availability.",
         },
         {
           question: "Q: Why is Protegrity Insurance the right brokerage for earthquake insurance in Arizona?",
           answer:
-            "Protegrity Insurance is a licensed Arizona brokerage rated 5 stars across 466 verified Google reviews. Not all carriers write earthquake policies in Arizona — and those that do price the same home differently using proprietary seismic models. Protegrity pre-screens carriers that write earthquake coverage in Arizona, submits your property profile simultaneously, and returns real side-by-side quotes. For Arizona homeowners near fault zones in Prescott or Flagstaff — or simply seeking a first earthquake quote — that access and independence consistently produces better outcomes.",
+            "Protegrity Insurance is a licensed Arizona brokerage rated 5 stars across 466 verified Google reviews. Not all carriers write earthquake policies in Arizona, and those that do price the same home differently using proprietary seismic models. Protegrity pre-screens carriers that write earthquake coverage in Arizona, submits your property profile simultaneously, and returns real side-by-side quotes. For Arizona homeowners near fault zones in Prescott or Flagstaff, or simply seeking a first earthquake quote, that access and independence consistently produces better outcomes.",
         },
         {
           question: "Q: Should I get earthquake insurance as an endorsement or a standalone policy?",
           answer:
-            "Earthquake insurance is available as an endorsement added to your existing homeowners policy or as a standalone policy from a specialty carrier. Endorsements are simpler to manage — one policy, one renewal — but limit your carrier options. Standalone policies give access to specialty earthquake insurers that may offer broader coverage, lower deductibles, or better pricing for Arizona's seismic risk profile. Protegrity Insurance reviews both options for your specific home and recommends the best structure for your situation.",
+            "Earthquake insurance is available as an endorsement added to your existing homeowners policy or as a standalone policy from a specialty carrier. Endorsements are simpler to manage, one policy, one renewal, but limit your carrier options. Standalone policies give access to specialty earthquake insurers that may offer broader coverage, lower deductibles, or better pricing for Arizona's seismic risk profile. Protegrity Insurance reviews both options for your specific home and recommends the best structure for your situation.",
         },
       ],
     },
@@ -12069,10 +12069,10 @@ const floodInsuranceArizonaPost: BlogPost = {
   title:
     "Flood Insurance in Arizona: What It Covers, What It Costs, and Why Every Homeowner Should Consider It",
   excerpt:
-    "Standard home insurance does not cover flood damage in Arizona. Compare NFIP and private flood quotes through Protegrity Insurance — 5-star rated, 466 Google reviews.",
+    "Standard home insurance does not cover flood damage in Arizona. Compare NFIP and private flood quotes through Protegrity Insurance, 5-star rated, 466 Google reviews.",
   metaTitle: "Flood Insurance Arizona | 2026 Guide",
   metaDescription:
-    "Standard home insurance does not cover flood damage in Arizona. Compare NFIP and private flood quotes through Protegrity Insurance — 5-star rated, 466 Google reviews.",
+    "Standard home insurance does not cover flood damage in Arizona. Compare NFIP and private flood quotes through Protegrity Insurance, 5-star rated, 466 Google reviews.",
   keywords: ["flood insurance Arizona"],
   category: "Home Insurance",
   readTime: "11 min read",
@@ -12511,10 +12511,10 @@ const valuableItemsInsuranceArizonaPost: BlogPost = {
   title:
     "Valuable Items Insurance in Arizona: What Your Homeowners Policy Misses and How to Fill the Gap",
   excerpt:
-    "Standard home insurance caps jewelry coverage at $1,500. Compare valuable items insurance options through Protegrity Insurance — 5-star rated, 466 Google reviews.",
+    "Standard home insurance caps jewelry coverage at $1,500. Compare valuable items insurance options through Protegrity Insurance, 5-star rated, 466 Google reviews.",
   metaTitle: "Valuable Items Insurance Arizona | 2026 Guide",
   metaDescription:
-    "Standard home insurance caps jewelry coverage at $1,500. Compare valuable items insurance options through Protegrity Insurance — 5-star rated, 466 Google reviews.",
+    "Standard home insurance caps jewelry coverage at $1,500. Compare valuable items insurance options through Protegrity Insurance, 5-star rated, 466 Google reviews.",
   keywords: ["valuable items insurance Arizona"],
   category: "Home Insurance",
   readTime: "10 min read",
@@ -12854,10 +12854,10 @@ const workersCompensationInsuranceArizonaPost: BlogPost = {
   slug: "workers-compensation-insurance-arizona",
   title: "Workers' Compensation Insurance in Arizona: What Every Employer Needs to Know",
   excerpt:
-    "Arizona law requires workers' comp for every business with one or more employees. Compare quotes through Protegrity Insurance — 5-star rated, 466 Google reviews.",
+    "Arizona law requires workers' comp for every business with one or more employees. Compare quotes through Protegrity Insurance, 5-star rated, 466 Google reviews.",
   metaTitle: "Workers' Comp Insurance Arizona | 2026 Guide",
   metaDescription:
-    "Arizona law requires workers' comp for every business with one or more employees. Compare quotes through Protegrity Insurance — 5-star rated, 466 Google reviews.",
+    "Arizona law requires workers' comp for every business with one or more employees. Compare quotes through Protegrity Insurance, 5-star rated, 466 Google reviews.",
   keywords: ["workers compensation insurance Arizona"],
   category: "Business Insurance",
   readTime: "12 min read",
@@ -12880,11 +12880,11 @@ const workersCompensationInsuranceArizonaPost: BlogPost = {
   },
   keyTakeaways: {
     items: [
-      "Arizona law requires workers' compensation insurance for every business with one or more employees — full-time, part-time, seasonal, or family members — under Arizona Revised Statutes § 23-901 (Industrial Commission of Arizona).",
+      "Arizona law requires workers' compensation insurance for every business with one or more employees, full-time, part-time, seasonal, or family members, under Arizona Revised Statutes § 23-901 (Industrial Commission of Arizona).",
       "Operating without required workers' comp in Arizona is a Class 6 felony, carrying fines from $1,000 to $10,000 per violation and potential prison time of 4 months to 2 years.",
-      "The average workers' comp claim costs $50,000, according to the National Safety Council — a single uncovered claim can financially devastate a small business.",
-      "Arizona has cut workers' comp rates for 11 consecutive years — the most recent reduction was 9.1% as of January 1, 2025.",
-      "Protegrity Insurance — 5-star rated with 466 verified Google reviews — shops workers' comp across multiple carriers simultaneously, returning real quotes side by side so Arizona employers choose based on price, not guesswork.",
+      "The average workers' comp claim costs $50,000, according to the National Safety Council, a single uncovered claim can financially devastate a small business.",
+      "Arizona has cut workers' comp rates for 11 consecutive years, the most recent reduction was 9.1% as of January 1, 2025.",
+      "Protegrity Insurance, 5-star rated with 466 verified Google reviews, shops workers' comp across multiple carriers simultaneously, returning real quotes side by side so Arizona employers choose based on price, not guesswork.",
     ],
   },
   content: [
@@ -12892,19 +12892,19 @@ const workersCompensationInsuranceArizonaPost: BlogPost = {
     {
       type: "p",
       text:
-        "Workers' compensation insurance in Arizona is legally required for every employer with one or more employees — full-time, part-time, or seasonal — under Arizona Revised Statutes § 23-901, regulated by the Industrial Commission of Arizona (ICA). Arizona small businesses pay an average of $46 per month, or approximately $1.50 per $100 of payroll, according to Copeland Insurance Agency's 2025 Arizona market analysis. This guide helps Phoenix, Scottsdale, Mesa, Chandler, and Tempe business owners understand what workers' comp covers, what it costs by industry, and why comparing quotes through Protegrity Insurance produces better outcomes than going direct to a single carrier.",
+        "Workers' compensation insurance in Arizona is legally required for every employer with one or more employees, full-time, part-time, or seasonal, under Arizona Revised Statutes § 23-901, regulated by the Industrial Commission of Arizona (ICA). Arizona small businesses pay an average of $46 per month, or approximately $1.50 per $100 of payroll, according to Copeland Insurance Agency's 2025 Arizona market analysis. This guide helps Phoenix, Scottsdale, Mesa, Chandler, and Tempe business owners understand what workers' comp covers, what it costs by industry, and why comparing quotes through Protegrity Insurance produces better outcomes than going direct to a single carrier.",
     },
 
     { type: "h2", text: "What is workers' compensation insurance and why does it matter in Arizona?" },
     {
       type: "p",
       text:
-        "Workers' compensation insurance pays for medical treatment, partial wage replacement, and disability benefits when an employee is injured or becomes ill because of their job. In Arizona, it is not optional. Under Arizona Revised Statutes § 23-901, every employer with at least one employee — regardless of whether that employee is full-time, part-time, seasonal, or a family member — must carry workers' comp coverage from the first day of employment.",
+        "Workers' compensation insurance pays for medical treatment, partial wage replacement, and disability benefits when an employee is injured or becomes ill because of their job. In Arizona, it is not optional. Under Arizona Revised Statutes § 23-901, every employer with at least one employee, regardless of whether that employee is full-time, part-time, seasonal, or a family member, must carry workers' comp coverage from the first day of employment.",
     },
     {
       type: "p",
       text:
-        "Arizona operates under a no-fault system, regulated by the Industrial Commission of Arizona (ICA). This means injured employees receive benefits regardless of who caused the accident — including if the employee was partially at fault. In exchange, employees who accept workers' comp benefits waive their right to sue the employer in civil court for the same injury, which protects Arizona businesses from costly personal injury litigation.",
+        "Arizona operates under a no-fault system, regulated by the Industrial Commission of Arizona (ICA). This means injured employees receive benefits regardless of who caused the accident, including if the employee was partially at fault. In exchange, employees who accept workers' comp benefits waive their right to sue the employer in civil court for the same injury, which protects Arizona businesses from costly personal injury litigation.",
     },
     {
       type: "p",
@@ -12914,7 +12914,7 @@ const workersCompensationInsuranceArizonaPost: BlogPost = {
     {
       type: "p",
       lead: "Arizona compliance alert:",
-      text: " Operating without required workers' compensation insurance is a Class 6 felony. The ICA can impose fines starting at $1,000 for first-time violations, $5,000 for a second offense within 5 years, and $10,000 for a third offense — and can shut down your business through a court injunction until coverage is obtained (Arizona Revised Statutes § 23-901).",
+      text: " Operating without required workers' compensation insurance is a Class 6 felony. The ICA can impose fines starting at $1,000 for first-time violations, $5,000 for a second offense within 5 years, and $10,000 for a third offense, and can shut down your business through a court injunction until coverage is obtained (Arizona Revised Statutes § 23-901).",
     },
 
     { type: "h2", text: "Who is required to carry workers' comp in Arizona?" },
@@ -12925,7 +12925,7 @@ const workersCompensationInsuranceArizonaPost: BlogPost = {
     {
       type: "p",
       text:
-        "All private and public employers with one or more employees — including family members on the payroll and minor workers. Corporations and LLCs with employees — officers and members are covered as employees. Out-of-state employers with workers performing duties in Arizona. Employers using seasonal or part-time workers — the one-employee threshold applies from the first day a worker is hired.",
+        "All private and public employers with one or more employees, including family members on the payroll and minor workers. Corporations and LLCs with employees, officers and members are covered as employees. Out-of-state employers with workers performing duties in Arizona. Employers using seasonal or part-time workers, the one-employee threshold applies from the first day a worker is hired.",
     },
     {
       type: "p",
@@ -12934,7 +12934,7 @@ const workersCompensationInsuranceArizonaPost: BlogPost = {
     {
       type: "p",
       text:
-        "Sole proprietors with no employees — though they may voluntarily elect coverage for themselves. Partners in a partnership with no employees. Casual domestic workers in private homes. Legitimate independent contractors — though Arizona courts apply a strict \"right to control\" test; misclassifying an employee as a contractor exposes the business to full workers' comp liability plus penalties.",
+        "Sole proprietors with no employees, though they may voluntarily elect coverage for themselves. Partners in a partnership with no employees. Casual domestic workers in private homes. Legitimate independent contractors, though Arizona courts apply a strict \"right to control\" test; misclassifying an employee as a contractor exposes the business to full workers' comp liability plus penalties.",
     },
 
     { type: "h2", text: "What does workers' compensation insurance cover in Arizona?" },
@@ -12945,7 +12945,7 @@ const workersCompensationInsuranceArizonaPost: BlogPost = {
       rows: [
         [
           "Medical treatment",
-          "100% of all medical expenses related to the work injury or occupational illness — doctor visits, emergency care, surgery, prescriptions, physical therapy, and ongoing treatment. The injured worker pays nothing once the claim is accepted.",
+          "100% of all medical expenses related to the work injury or occupational illness, doctor visits, emergency care, surgery, prescriptions, physical therapy, and ongoing treatment. The injured worker pays nothing once the claim is accepted.",
         ],
         [
           "Temporary disability (wage replacement)",
@@ -12953,7 +12953,7 @@ const workersCompensationInsuranceArizonaPost: BlogPost = {
         ],
         [
           "Permanent disability",
-          "Long-term compensation for employees with lasting impairment from a work injury — calculated based on the degree of disability and the employee's pre-injury wage",
+          "Long-term compensation for employees with lasting impairment from a work injury, calculated based on the degree of disability and the employee's pre-injury wage",
         ],
         [
           "Vocational rehabilitation",
@@ -12965,7 +12965,7 @@ const workersCompensationInsuranceArizonaPost: BlogPost = {
         ],
         [
           "Employer's liability protection",
-          "Covers legal defense costs and damages if an employee sues the employer beyond the workers' comp system — for example, a claim alleging intentional harm or gross negligence",
+          "Covers legal defense costs and damages if an employee sues the employer beyond the workers' comp system, for example, a claim alleging intentional harm or gross negligence",
         ],
       ],
     },
@@ -12974,7 +12974,7 @@ const workersCompensationInsuranceArizonaPost: BlogPost = {
     {
       type: "p",
       text:
-        "Injuries caused by employee intoxication or drug use — Arizona law excludes claims where the injury was caused by the employee's own alcohol or controlled substance use. Self-inflicted injuries — deliberate self-harm is excluded from coverage. Independent contractor injuries — workers correctly classified as independent contractors are not covered; the contractor is responsible for their own coverage. Off-duty injuries — injuries that occur outside the scope of employment are not covered, even if on company property during non-work hours. OSHA fines and penalties — workers' comp does not pay regulatory fines levied against the employer for workplace safety violations.",
+        "Injuries caused by employee intoxication or drug use, Arizona law excludes claims where the injury was caused by the employee's own alcohol or controlled substance use. Self-inflicted injuries, deliberate self-harm is excluded from coverage. Independent contractor injuries, workers correctly classified as independent contractors are not covered; the contractor is responsible for their own coverage. Off-duty injuries, injuries that occur outside the scope of employment are not covered, even if on company property during non-work hours. OSHA fines and penalties, workers' comp does not pay regulatory fines levied against the employer for workplace safety violations.",
     },
 
     { type: "h2", text: "What happens to Arizona employers who don't carry workers' comp?" },
@@ -12991,18 +12991,18 @@ const workersCompensationInsuranceArizonaPost: BlogPost = {
         ["First offense", "$1,000 fine from the Industrial Commission of Arizona (ICA)"],
         ["Second offense within 5 years", "$5,000 fine"],
         ["Third offense within 5 years", "$10,000 fine"],
-        ["Criminal classification", "Class 6 felony — potential prison time of 4 months to 2 years"],
+        ["Criminal classification", "Class 6 felony, potential prison time of 4 months to 2 years"],
         [
           "Business shutdown",
           "ICA can obtain a court injunction forcing the business to cease operations until coverage is obtained",
         ],
         [
           "Injured employee claim",
-          "ICA Special Fund pays the injured worker's benefits and then seeks full reimbursement from the employer plus a penalty of 10% of benefits paid or $1,000 — whichever is greater",
+          "ICA Special Fund pays the injured worker's benefits and then seeks full reimbursement from the employer plus a penalty of 10% of benefits paid or $1,000, whichever is greater",
         ],
         [
           "Civil lawsuit exposure",
-          "Without workers' comp, the injured employee can sue in civil court — and Arizona law presumes negligence against the uninsured employer",
+          "Without workers' comp, the injured employee can sue in civil court, and Arizona law presumes negligence against the uninsured employer",
         ],
       ],
     },
@@ -13011,7 +13011,7 @@ const workersCompensationInsuranceArizonaPost: BlogPost = {
     {
       type: "p",
       text:
-        "Workers' comp premiums in Arizona are calculated per $100 of payroll using NCCI (National Council on Compensation Insurance) class codes assigned to each job type. Arizona has reduced workers' comp rates for 11 consecutive years — the most recent reduction was 9.1% effective January 1, 2025, according to OCMI Workers Comp — making Arizona one of the more affordable states for this coverage compared to neighboring California and Nevada.",
+        "Workers' comp premiums in Arizona are calculated per $100 of payroll using NCCI (National Council on Compensation Insurance) class codes assigned to each job type. Arizona has reduced workers' comp rates for 11 consecutive years, the most recent reduction was 9.1% effective January 1, 2025, according to OCMI Workers Comp, making Arizona one of the more affordable states for this coverage compared to neighboring California and Nevada.",
     },
     {
       type: "table",
@@ -13029,7 +13029,7 @@ const workersCompensationInsuranceArizonaPost: BlogPost = {
     {
       type: "p",
       text:
-        "The average workers' comp claim costs $50,000, according to the National Safety Council. A single uninsured claim — especially in high-risk industries like roofing, landscaping, or construction in Phoenix and Chandler — can far exceed what years of premium payments would have cost. Arizona businesses that compare multiple carriers through Protegrity Insurance consistently find better rates for the same NCCI class codes than going direct to a single carrier.",
+        "The average workers' comp claim costs $50,000, according to the National Safety Council. A single uninsured claim, especially in high-risk industries like roofing, landscaping, or construction in Phoenix and Chandler, can far exceed what years of premium payments would have cost. Arizona businesses that compare multiple carriers through Protegrity Insurance consistently find better rates for the same NCCI class codes than going direct to a single carrier.",
     },
 
     { type: "h2", text: "How is workers' comp premium calculated in Arizona?" },
@@ -13045,7 +13045,7 @@ const workersCompensationInsuranceArizonaPost: BlogPost = {
       rows: [
         [
           "(Annual payroll ÷ 100) × class code rate",
-          "Base premium — a business with $500,000 in payroll and a rate of $3.00 per $100 pays $15,000 base premium",
+          "Base premium, a business with $500,000 in payroll and a rate of $3.00 per $100 pays $15,000 base premium",
         ],
         [
           "× Experience Modification Rate (EMR)",
@@ -13057,7 +13057,7 @@ const workersCompensationInsuranceArizonaPost: BlogPost = {
         ],
         [
           "= Final annual premium",
-          "Subject to annual payroll audit — underpaid premiums are billed; overpaid premiums are refunded at policy year end",
+          "Subject to annual payroll audit, underpaid premiums are billed; overpaid premiums are refunded at policy year end",
         ],
       ],
     },
@@ -13071,12 +13071,12 @@ const workersCompensationInsuranceArizonaPost: BlogPost = {
     {
       type: "p",
       text:
-        "Workers' compensation is not a one-size-fits-all product. Every carrier uses NCCI class codes as their starting point — but then applies their own schedule credits, experience rating multipliers, and underwriting adjustments on top. A Phoenix landscaping company with a clean safety record could receive workers' comp quotes ranging from $8,000 to $12,000 per year from different carriers for the same payroll and class codes. Without comparing those quotes, the business has no way to know it is overpaying.",
+        "Workers' compensation is not a one-size-fits-all product. Every carrier uses NCCI class codes as their starting point, but then applies their own schedule credits, experience rating multipliers, and underwriting adjustments on top. A Phoenix landscaping company with a clean safety record could receive workers' comp quotes ranging from $8,000 to $12,000 per year from different carriers for the same payroll and class codes. Without comparing those quotes, the business has no way to know it is overpaying.",
     },
     {
       type: "p",
       text:
-        "Every carrier starts with the same NCCI base rate — but then applies their own multipliers. A business that calls one carrier gets one set of multipliers. Protegrity Insurance submits your payroll and class codes to multiple carriers simultaneously — so you see the full range and choose the best number.",
+        "Every carrier starts with the same NCCI base rate, but then applies their own multipliers. A business that calls one carrier gets one set of multipliers. Protegrity Insurance submits your payroll and class codes to multiple carriers simultaneously, so you see the full range and choose the best number.",
     },
     {
       type: "table",
@@ -13085,17 +13085,17 @@ const workersCompensationInsuranceArizonaPost: BlogPost = {
       rows: [
         [
           "Quotes received",
-          "1 — one set of multipliers, one price",
-          "Multiple real quotes — full market comparison",
+          "1, one set of multipliers, one price",
+          "Multiple real quotes, full market comparison",
         ],
         [
           "Schedule credits applied",
           "That carrier's credits only",
-          "Each carrier's credits compared side by side — best total rate identified",
+          "Each carrier's credits compared side by side, best total rate identified",
         ],
         [
           "NCCI class code accuracy",
-          "That carrier's classification — may not match the lowest applicable code",
+          "That carrier's classification, may not match the lowest applicable code",
           "Independent review of class codes to ensure no overpayment from misclassification",
         ],
         [
@@ -13106,11 +13106,11 @@ const workersCompensationInsuranceArizonaPost: BlogPost = {
         [
           "High-risk industry access",
           "Some carriers decline or heavily surcharge roofing, construction, and landscaping",
-          "Access to carriers that specialize in high-risk Arizona trades — roofing, HVAC, landscaping, and construction",
+          "Access to carriers that specialize in high-risk Arizona trades, roofing, HVAC, landscaping, and construction",
         ],
         [
           "Experience modification rate (EMR) review",
-          "Carrier accepts or declines based on EMR — no guidance offered",
+          "Carrier accepts or declines based on EMR, no guidance offered",
           "Reviews EMR history and identifies steps to reduce it before the next renewal",
         ],
         [
@@ -13126,53 +13126,53 @@ const workersCompensationInsuranceArizonaPost: BlogPost = {
         [
           "Best for",
           "Very low-risk, single-employee business already insured with that carrier",
-          "Most Arizona employers — especially those in construction, landscaping, roofing, food service, or any business with 5+ employees",
+          "Most Arizona employers, especially those in construction, landscaping, roofing, food service, or any business with 5+ employees",
         ],
       ],
     },
     {
       type: "p",
       text:
-        "Protegrity's 466 verified 5-star Google reviews reflect a brokerage built around outcomes for Arizona business owners — not carrier loyalty. For workers' comp specifically, where premium calculations involve payroll, class codes, EMR, and carrier-specific adjustments all stacked together, independent expertise is not a convenience. It is the difference between paying the right rate and overpaying for years.",
+        "Protegrity's 466 verified 5-star Google reviews reflect a brokerage built around outcomes for Arizona business owners, not carrier loyalty. For workers' comp specifically, where premium calculations involve payroll, class codes, EMR, and carrier-specific adjustments all stacked together, independent expertise is not a convenience. It is the difference between paying the right rate and overpaying for years.",
     },
 
     { type: "h2", text: "Common mistakes Arizona employers make with workers' comp" },
     {
       type: "p",
       text:
-        "Assuming independent contractor status eliminates coverage requirements — Arizona courts apply a strict \"right to control\" test; a misclassified worker found to be an employee triggers full retroactive coverage liability plus ICA penalties.",
+        "Assuming independent contractor status eliminates coverage requirements, Arizona courts apply a strict \"right to control\" test; a misclassified worker found to be an employee triggers full retroactive coverage liability plus ICA penalties.",
     },
     {
       type: "p",
       text:
-        "Waiting to get coverage until a new employee starts — Arizona law requires coverage from the first day a worker is hired; a gap of even one day creates full uninsured employer liability.",
+        "Waiting to get coverage until a new employee starts, Arizona law requires coverage from the first day a worker is hired; a gap of even one day creates full uninsured employer liability.",
     },
     {
       type: "p",
       text:
-        "Getting only one quote — because carriers apply different schedule credits and EMR multipliers on top of the NCCI base rate, premium variance of 20–40% between carriers is documented for the same business profile.",
+        "Getting only one quote, because carriers apply different schedule credits and EMR multipliers on top of the NCCI base rate, premium variance of 20–40% between carriers is documented for the same business profile.",
     },
     {
       type: "p",
       text:
-        "Ignoring the annual payroll audit — workers' comp policies are audited at year end; significant payroll growth that goes unreported creates surprise audit billings that can exceed the original premium.",
+        "Ignoring the annual payroll audit, workers' comp policies are audited at year end; significant payroll growth that goes unreported creates surprise audit billings that can exceed the original premium.",
     },
     {
       type: "p",
       text:
-        "Misclassifying employees to a lower-risk class code — intentional misclassification is an ICA violation that results in back premiums, penalties, and potential coverage voidance on active claims.",
+        "Misclassifying employees to a lower-risk class code, intentional misclassification is an ICA violation that results in back premiums, penalties, and potential coverage voidance on active claims.",
     },
     {
       type: "p",
       text:
-        "Not investing in a safety program — Arizona employers with documented safety programs and clean claims histories qualify for schedule credits that reduce premiums by 10–25% across most carriers.",
+        "Not investing in a safety program, Arizona employers with documented safety programs and clean claims histories qualify for schedule credits that reduce premiums by 10–25% across most carriers.",
     },
 
     { type: "h2", text: "When should you speak with a licensed agent about workers' comp in Arizona?" },
     {
       type: "p",
       text:
-        "If your Phoenix, Scottsdale, Mesa, Tempe, Chandler, Gilbert, or Tucson business employs one or more people — or is about to hire its first employee — speak with a licensed agent before that first day of work. Coverage must be active before an injury occurs. The licensed agents at Protegrity Insurance review your payroll, confirm the correct NCCI class codes for your employees, identify which carriers apply the most favorable schedule credits for your industry, and return multiple quotes simultaneously so you enter your first policy — or renewal — at the best available rate.",
+        "If your Phoenix, Scottsdale, Mesa, Tempe, Chandler, Gilbert, or Tucson business employs one or more people, or is about to hire its first employee, speak with a licensed agent before that first day of work. Coverage must be active before an injury occurs. The licensed agents at Protegrity Insurance review your payroll, confirm the correct NCCI class codes for your employees, identify which carriers apply the most favorable schedule credits for your industry, and return multiple quotes simultaneously so you enter your first policy, or renewal, at the best available rate.",
     },
 
     { type: "h2", text: "Frequently Asked Questions: Workers' Compensation Insurance" },
@@ -13182,37 +13182,37 @@ const workersCompensationInsuranceArizonaPost: BlogPost = {
         {
           question: "Q: Is workers' compensation insurance required in Arizona?",
           answer:
-            "Yes — workers' compensation insurance is required by Arizona law for every employer with one or more employees, including part-time, seasonal, and family members, under Arizona Revised Statutes § 23-901. Coverage must be active from the first day of employment. Operating without it is a Class 6 felony, with fines from $1,000 to $10,000 per violation and the ICA's authority to shut down the business through a court injunction.",
+            "Yes, workers' compensation insurance is required by Arizona law for every employer with one or more employees, including part-time, seasonal, and family members, under Arizona Revised Statutes § 23-901. Coverage must be active from the first day of employment. Operating without it is a Class 6 felony, with fines from $1,000 to $10,000 per violation and the ICA's authority to shut down the business through a court injunction.",
         },
         {
           question: "Q: How much does workers' compensation insurance cost in Arizona?",
           answer:
-            "Workers' compensation insurance in Arizona averages $46 per month for small businesses, or approximately $1.50 per $100 of payroll, according to Copeland Insurance Agency's 2025 Arizona market data. Low-risk offices pay as little as $14 per month; high-risk roofing businesses pay $300 or more. Arizona has cut workers' comp rates for 11 consecutive years — the most recent reduction was 9.1% effective January 1, 2025. Comparing carriers through Protegrity Insurance identifies the lowest available rate for your payroll and class codes.",
+            "Workers' compensation insurance in Arizona averages $46 per month for small businesses, or approximately $1.50 per $100 of payroll, according to Copeland Insurance Agency's 2025 Arizona market data. Low-risk offices pay as little as $14 per month; high-risk roofing businesses pay $300 or more. Arizona has cut workers' comp rates for 11 consecutive years, the most recent reduction was 9.1% effective January 1, 2025. Comparing carriers through Protegrity Insurance identifies the lowest available rate for your payroll and class codes.",
         },
         {
           question: "Q: What does workers' comp cover in Arizona?",
           answer:
-            "Workers' compensation in Arizona covers 100% of medical expenses for work-related injuries or illnesses, wage replacement at 66⅔% of the employee's average monthly wage (up to the 2025 ICA maximum of $5,906.55/month), permanent disability benefits, vocational rehabilitation, and death benefits for surviving dependents. Arizona's no-fault system means injured employees receive benefits regardless of who caused the accident — no fault determination is required.",
+            "Workers' compensation in Arizona covers 100% of medical expenses for work-related injuries or illnesses, wage replacement at 66⅔% of the employee's average monthly wage (up to the 2025 ICA maximum of $5,906.55/month), permanent disability benefits, vocational rehabilitation, and death benefits for surviving dependents. Arizona's no-fault system means injured employees receive benefits regardless of who caused the accident, no fault determination is required.",
         },
         {
           question: "Q: Do independent contractors need workers' comp in Arizona?",
           answer:
-            "Legitimate independent contractors are not covered by — or required to have — the hiring business's workers' comp policy. However, Arizona courts apply a strict \"right to control\" test to determine contractor status. If a worker is found to be an employee despite being classified as a contractor, the hiring business faces retroactive workers' comp liability for the entire period of misclassification, plus ICA fines. Protegrity Insurance can help Arizona businesses review worker classifications before a claim creates that exposure.",
+            "Legitimate independent contractors are not covered by, or required to have, the hiring business's workers' comp policy. However, Arizona courts apply a strict \"right to control\" test to determine contractor status. If a worker is found to be an employee despite being classified as a contractor, the hiring business faces retroactive workers' comp liability for the entire period of misclassification, plus ICA fines. Protegrity Insurance can help Arizona businesses review worker classifications before a claim creates that exposure.",
         },
         {
           question: "Q: How is workers' comp premium calculated in Arizona?",
           answer:
-            "Workers' comp premiums in Arizona are calculated by dividing annual payroll by 100, multiplying by the NCCI class code rate for each job type, and then applying an Experience Modification Rate (EMR) based on your claims history. A business with $500,000 in payroll and a $3.00 class rate pays $15,000 in base premium before EMR adjustments. Carriers then apply their own schedule credits — which is why the same business can receive quotes varying 20–40% between carriers.",
+            "Workers' comp premiums in Arizona are calculated by dividing annual payroll by 100, multiplying by the NCCI class code rate for each job type, and then applying an Experience Modification Rate (EMR) based on your claims history. A business with $500,000 in payroll and a $3.00 class rate pays $15,000 in base premium before EMR adjustments. Carriers then apply their own schedule credits, which is why the same business can receive quotes varying 20–40% between carriers.",
         },
         {
           question: "Q: What is an Experience Modification Rate (EMR) and why does it matter?",
           answer:
-            "An Experience Modification Rate (EMR) is a multiplier applied to your base workers' comp premium that reflects your business's claims history compared to other businesses in the same industry. An EMR of 1.0 is average. An EMR below 1.0 earns a premium discount — for example, an EMR of 0.80 reduces your premium by 20%. An EMR above 1.0 adds a surcharge. Arizona employers who invest in documented safety programs and maintain low claim frequency build lower EMRs over time, compounding premium savings year after year.",
+            "An Experience Modification Rate (EMR) is a multiplier applied to your base workers' comp premium that reflects your business's claims history compared to other businesses in the same industry. An EMR of 1.0 is average. An EMR below 1.0 earns a premium discount, for example, an EMR of 0.80 reduces your premium by 20%. An EMR above 1.0 adds a surcharge. Arizona employers who invest in documented safety programs and maintain low claim frequency build lower EMRs over time, compounding premium savings year after year.",
         },
         {
           question: "Q: Why is Protegrity Insurance the right brokerage for workers' comp in Arizona?",
           answer:
-            "Protegrity Insurance is a licensed Arizona brokerage rated 5 stars across 466 verified Google reviews. Every carrier starts with the same NCCI base rate — but applies its own schedule credits and EMR multipliers on top. Protegrity submits your payroll and class codes to multiple carriers simultaneously and returns real side-by-side quotes. For Arizona employers in high-risk industries like roofing, construction, and landscaping — where premium variance between carriers reaches 20–40% — that comparison consistently produces measurable savings.",
+            "Protegrity Insurance is a licensed Arizona brokerage rated 5 stars across 466 verified Google reviews. Every carrier starts with the same NCCI base rate, but applies its own schedule credits and EMR multipliers on top. Protegrity submits your payroll and class codes to multiple carriers simultaneously and returns real side-by-side quotes. For Arizona employers in high-risk industries like roofing, construction, and landscaping, where premium variance between carriers reaches 20–40%, that comparison consistently produces measurable savings.",
         },
         {
           question: "Q: What are the penalties for not having workers' comp in Arizona?",
@@ -13260,10 +13260,10 @@ const landlordInsuranceArizonaPost: BlogPost = {
   slug: "landlord-insurance-arizona",
   title: "Landlord Insurance in Arizona: What It Covers, What It Costs, and Why Your Homeowners Policy Is Not Enough",
   excerpt:
-    "Arizona landlord insurance costs 25% more than homeowners coverage. Compare quotes from multiple carriers through Protegrity Insurance — 5-star rated, 466 Google reviews.",
+    "Arizona landlord insurance costs 25% more than homeowners coverage. Compare quotes from multiple carriers through Protegrity Insurance, 5-star rated, 466 Google reviews.",
   metaTitle: "Landlord Insurance Arizona | 2026 Guide",
   metaDescription:
-    "Arizona landlord insurance costs 25% more than homeowners coverage. Compare quotes from multiple carriers through Protegrity Insurance — 5-star rated, 466 Google reviews.",
+    "Arizona landlord insurance costs 25% more than homeowners coverage. Compare quotes from multiple carriers through Protegrity Insurance, 5-star rated, 466 Google reviews.",
   keywords: ["landlord insurance Arizona"],
   category: "Home Insurance",
   readTime: "11 min read",
@@ -13286,11 +13286,11 @@ const landlordInsuranceArizonaPost: BlogPost = {
   },
   keyTakeaways: {
     items: [
-      "Landlord insurance in Arizona averages $1,024 per year — 25% more than a standard homeowners policy — because rental properties carry higher claim frequency and liability exposure (Insurance Information Institute).",
-      "Your standard homeowners policy is voided the moment a tenant moves in — using it for a rental property means you may have no valid insurance at all (Insurely, March 2026).",
+      "Landlord insurance in Arizona averages $1,024 per year, 25% more than a standard homeowners policy, because rental properties carry higher claim frequency and liability exposure (Insurance Information Institute).",
+      "Your standard homeowners policy is voided the moment a tenant moves in, using it for a rental property means you may have no valid insurance at all (Insurely, March 2026).",
       "Loss of rental income coverage reimburses up to 12 months of lost rent if a covered loss makes your property uninhabitable during repairs.",
-      "One-third of Arizona households are renter-occupied, according to U.S. Census Bureau data — making rental property one of the state's most active investment categories.",
-      "Protegrity Insurance — 5-star rated with 466 verified Google reviews — shops landlord coverage across multiple carriers simultaneously, returning real side-by-side quotes instead of a single take-it-or-leave-it price.",
+      "One-third of Arizona households are renter-occupied, according to U.S. Census Bureau data, making rental property one of the state's most active investment categories.",
+      "Protegrity Insurance, 5-star rated with 466 verified Google reviews, shops landlord coverage across multiple carriers simultaneously, returning real side-by-side quotes instead of a single take-it-or-leave-it price.",
     ],
   },
   content: [
@@ -13298,24 +13298,24 @@ const landlordInsuranceArizonaPost: BlogPost = {
     {
       type: "p",
       text:
-        "Landlord insurance in Arizona costs an average of $1,024 per year — 25% more than a standard homeowners policy for the same property, according to the Insurance Information Institute — because rental properties carry higher claim frequency, greater liability exposure, and loss of rental income risk that standard homeowners policies do not cover. Arizona is home to over 592,000 small businesses and one-third of Arizona households are renter-occupied, according to U.S. Census Bureau data. This guide helps Phoenix, Scottsdale, Mesa, Chandler, and Gilbert landlords understand what rental property insurance covers, what it costs, and how comparing quotes through Protegrity Insurance produces better outcomes than going direct to a single carrier.",
+        "Landlord insurance in Arizona costs an average of $1,024 per year, 25% more than a standard homeowners policy for the same property, according to the Insurance Information Institute, because rental properties carry higher claim frequency, greater liability exposure, and loss of rental income risk that standard homeowners policies do not cover. Arizona is home to over 592,000 small businesses and one-third of Arizona households are renter-occupied, according to U.S. Census Bureau data. This guide helps Phoenix, Scottsdale, Mesa, Chandler, and Gilbert landlords understand what rental property insurance covers, what it costs, and how comparing quotes through Protegrity Insurance produces better outcomes than going direct to a single carrier.",
     },
 
     { type: "h2", text: "What is landlord insurance and why does it matter in Arizona?" },
     {
       type: "p",
       text:
-        "Landlord insurance — also called rental property insurance or a dwelling fire policy (DP-3) — is a standalone policy designed specifically for properties you rent to tenants. It covers the structure of your rental home, your liability as the property owner, and your rental income if the property becomes uninhabitable after a covered loss. A standard homeowners policy covers none of these risks once a tenant moves in.",
+        "Landlord insurance, also called rental property insurance or a dwelling fire policy (DP-3), is a standalone policy designed specifically for properties you rent to tenants. It covers the structure of your rental home, your liability as the property owner, and your rental income if the property becomes uninhabitable after a covered loss. A standard homeowners policy covers none of these risks once a tenant moves in.",
     },
     {
       type: "p",
       text:
-        "According to Insurely's March 2026 Arizona landlord insurance analysis, most homeowners policies include a clause that voids coverage the moment a non-family member rents the property. This means an Arizona landlord using a standard HO-3 policy on a rental may discover — only after filing a claim — that the carrier denies it entirely, leaving the property owner responsible for every dollar of repair costs, legal fees, and lost income.",
+        "According to Insurely's March 2026 Arizona landlord insurance analysis, most homeowners policies include a clause that voids coverage the moment a non-family member rents the property. This means an Arizona landlord using a standard HO-3 policy on a rental may discover, only after filing a claim, that the carrier denies it entirely, leaving the property owner responsible for every dollar of repair costs, legal fees, and lost income.",
     },
     {
       type: "p",
       text:
-        "Arizona's rental market is one of the most active in the Southwest. According to U.S. Census Bureau data, approximately one-third of all Arizona households are renter-occupied. Phoenix, Scottsdale, Mesa, Tempe, and Chandler all have strong long-term rental demand driven by consistent population growth and a housing deficit of over 56,000 units heading into 2026, according to the Common Sense Institute. That demand makes rental property a strong investment — but only when it is properly protected.",
+        "Arizona's rental market is one of the most active in the Southwest. According to U.S. Census Bureau data, approximately one-third of all Arizona households are renter-occupied. Phoenix, Scottsdale, Mesa, Tempe, and Chandler all have strong long-term rental demand driven by consistent population growth and a housing deficit of over 56,000 units heading into 2026, according to the Common Sense Institute. That demand makes rental property a strong investment, but only when it is properly protected.",
     },
     {
       type: "p",
@@ -13327,7 +13327,7 @@ const landlordInsuranceArizonaPost: BlogPost = {
     {
       type: "p",
       text:
-        "Single-family rental home owners in Phoenix, Mesa, Chandler, Gilbert, and Glendale renting on 6-month or 12-month leases. Multi-unit property owners — duplexes, triplexes, and small apartment buildings — anywhere in the Phoenix metro or Tucson area. Condo owners renting their unit — the HOA master policy covers common areas only; landlord coverage protects the interior and your liability. Landlords with vacant properties between tenants — standard policies void after 30 days vacancy; a vacancy endorsement or landlord policy with a vacancy permit maintains coverage. Short-term rental owners listing on Airbnb or VRBO in Scottsdale, Tempe, or Sedona — a standard DP-3 landlord policy is voided by short-term rental activity; a specialized endorsement or commercial policy is required. Real estate investors building a multi-property portfolio in Peoria, Ahwatukee, or the East Valley — each rental requires its own standalone landlord policy.",
+        "Single-family rental home owners in Phoenix, Mesa, Chandler, Gilbert, and Glendale renting on 6-month or 12-month leases. Multi-unit property owners, duplexes, triplexes, and small apartment buildings, anywhere in the Phoenix metro or Tucson area. Condo owners renting their unit, the HOA master policy covers common areas only; landlord coverage protects the interior and your liability. Landlords with vacant properties between tenants, standard policies void after 30 days vacancy; a vacancy endorsement or landlord policy with a vacancy permit maintains coverage. Short-term rental owners listing on Airbnb or VRBO in Scottsdale, Tempe, or Sedona, a standard DP-3 landlord policy is voided by short-term rental activity; a specialized endorsement or commercial policy is required. Real estate investors building a multi-property portfolio in Peoria, Ahwatukee, or the East Valley, each rental requires its own standalone landlord policy.",
     },
 
     { type: "h2", text: "What does landlord insurance cover?" },
@@ -13338,7 +13338,7 @@ const landlordInsuranceArizonaPost: BlogPost = {
       rows: [
         [
           "Dwelling coverage",
-          "Repairs or rebuild costs for the physical structure — roof, walls, foundation, and attached structures — after fire, wind, hail, lightning, vandalism, or other covered perils. Arizona's monsoon season (June–September) makes this critical for Phoenix metro rentals.",
+          "Repairs or rebuild costs for the physical structure, roof, walls, foundation, and attached structures, after fire, wind, hail, lightning, vandalism, or other covered perils. Arizona's monsoon season (June–September) makes this critical for Phoenix metro rentals.",
         ],
         [
           "Loss of rental income",
@@ -13354,15 +13354,15 @@ const landlordInsuranceArizonaPost: BlogPost = {
         ],
         [
           "Landlord personal property",
-          "Appliances, fixtures, and equipment you provide to tenants — refrigerators, washers, dryers, HVAC systems",
+          "Appliances, fixtures, and equipment you provide to tenants, refrigerators, washers, dryers, HVAC systems",
         ],
         [
           "Vandalism and malicious damage",
-          "Intentional damage by tenants or third parties — excluded from standard homeowners policies but included in landlord coverage",
+          "Intentional damage by tenants or third parties, excluded from standard homeowners policies but included in landlord coverage",
         ],
         [
           "Fair rental value (vacancy protection)",
-          "With a vacancy permit endorsement, maintains coverage when the property sits empty between tenants — standard policies void after 30 consecutive days vacant",
+          "With a vacancy permit endorsement, maintains coverage when the property sits empty between tenants, standard policies void after 30 consecutive days vacant",
         ],
       ],
     },
@@ -13371,14 +13371,14 @@ const landlordInsuranceArizonaPost: BlogPost = {
     {
       type: "p",
       text:
-        "Tenants' personal belongings — landlord insurance covers the structure and your liability, not your tenants' furniture, electronics, or clothing; require tenants to carry their own renters insurance policy. Flood damage — Arizona monsoon flooding is excluded from all standard landlord policies; properties near washes or FEMA flood zones in Tempe, Peoria, or Glendale need separate NFIP or private flood coverage. Short-term rental activity — a standard DP-3 policy assumes long-term tenants (6–12 month leases); Airbnb or VRBO use without a specialized endorsement voids the policy entirely. Tenant-caused intentional damage beyond policy limits — document move-in condition and require security deposits to reduce exposure. Earthquake damage — requires a separate endorsement not included in standard policies. Polybutylene pipe failures — many Arizona homes built 1978–1995 contain \"Big Blue\" polybutylene plumbing prone to rupturing in desert heat; most carriers exclude water damage from these pipes unless replaced with PEX or copper.",
+        "Tenants' personal belongings, landlord insurance covers the structure and your liability, not your tenants' furniture, electronics, or clothing; require tenants to carry their own renters insurance policy. Flood damage, Arizona monsoon flooding is excluded from all standard landlord policies; properties near washes or FEMA flood zones in Tempe, Peoria, or Glendale need separate NFIP or private flood coverage. Short-term rental activity, a standard DP-3 policy assumes long-term tenants (6–12 month leases); Airbnb or VRBO use without a specialized endorsement voids the policy entirely. Tenant-caused intentional damage beyond policy limits, document move-in condition and require security deposits to reduce exposure. Earthquake damage, requires a separate endorsement not included in standard policies. Polybutylene pipe failures, many Arizona homes built 1978–1995 contain \"Big Blue\" polybutylene plumbing prone to rupturing in desert heat; most carriers exclude water damage from these pipes unless replaced with PEX or copper.",
     },
 
     { type: "h2", text: "Why does landlord insurance cost more than a standard homeowners policy?" },
     {
       type: "p",
       text:
-        "Landlord insurance costs 25% more than an equivalent homeowners policy because rental properties carry fundamentally different risk profiles. According to the Insurance Information Institute, tenants and their guests generate higher claim frequency, higher average loss amounts, and greater liability exposure than owner-occupied homes. No tenant — regardless of how responsible — maintains a property the same way an owner does.",
+        "Landlord insurance costs 25% more than an equivalent homeowners policy because rental properties carry fundamentally different risk profiles. According to the Insurance Information Institute, tenants and their guests generate higher claim frequency, higher average loss amounts, and greater liability exposure than owner-occupied homes. No tenant, regardless of how responsible, maintains a property the same way an owner does.",
     },
     {
       type: "p",
@@ -13387,17 +13387,17 @@ const landlordInsuranceArizonaPost: BlogPost = {
     {
       type: "p",
       text:
-        "Higher liability exposure: You are responsible for premises liability for every tenant and guest who enters the property — a slip-and-fall, faulty appliance injury, or pool incident can generate legal costs that a standard homeowners policy would not cover.",
+        "Higher liability exposure: You are responsible for premises liability for every tenant and guest who enters the property, a slip-and-fall, faulty appliance injury, or pool incident can generate legal costs that a standard homeowners policy would not cover.",
     },
     {
       type: "p",
       text:
-        "Increased claim frequency: Rental properties see more day-to-day wear, more people entering and exiting, and more deferred maintenance reports than owner-occupied homes — all of which translate to higher claim rates.",
+        "Increased claim frequency: Rental properties see more day-to-day wear, more people entering and exiting, and more deferred maintenance reports than owner-occupied homes, all of which translate to higher claim rates.",
     },
     {
       type: "p",
       text:
-        "Loss of rental income coverage: This protection — which reimburses up to 12 months of lost rent after a covered loss — is unique to landlord policies and adds to the premium, but protects your investment's cash flow during repairs.",
+        "Loss of rental income coverage: This protection, which reimburses up to 12 months of lost rent after a covered loss, is unique to landlord policies and adds to the premium, but protects your investment's cash flow during repairs.",
     },
     {
       type: "table",
@@ -13405,19 +13405,19 @@ const landlordInsuranceArizonaPost: BlogPost = {
       columns: ["Property / Landlord Type", "Annual Cost Estimate", "Key Pricing Factor"],
       rows: [
         [
-          "Single-family rental — standard profile",
+          "Single-family rental, standard profile",
           "$800–$1,500/yr",
           "Location, home age, roof condition",
         ],
         [
-          "Single-family rental — Phoenix metro average",
+          "Single-family rental, Phoenix metro average",
           "$1,024/yr",
           "Source: Steadily Arizona, 2025",
         ],
         [
           "Rental with pool (Phoenix / Scottsdale)",
           "$1,200–$2,000/yr",
-          "Attractive nuisance surcharge — Arizona pool laws",
+          "Attractive nuisance surcharge, Arizona pool laws",
         ],
         [
           "Multi-unit rental (duplex / triplex)",
@@ -13430,7 +13430,7 @@ const landlordInsuranceArizonaPost: BlogPost = {
           "Rebuild cost, amenities, liability limits",
         ],
         [
-          "National average — all landlord policies",
+          "National average, all landlord policies",
           "$1,516/yr",
           "Source: Simply Insurance, February 2026",
         ],
@@ -13442,48 +13442,48 @@ const landlordInsuranceArizonaPost: BlogPost = {
         "Arizona landlord insurance premiums are generally tax-deductible as a rental property operating expense under IRS Schedule E guidelines. Consult a licensed tax professional to confirm treatment for your specific property and ownership structure.",
     },
 
-    { type: "h2", text: "DP-1 vs. DP-2 vs. DP-3 — which landlord policy type do you need?" },
+    { type: "h2", text: "DP-1 vs. DP-2 vs. DP-3: which landlord policy type do you need?" },
     {
       type: "table",
-      caption: "DP-1 vs. DP-2 vs. DP-3 — which landlord policy type do you need?",
+      caption: "DP-1 vs. DP-2 vs. DP-3, which landlord policy type do you need?",
       columns: ["Policy Type", "Coverage Scope", "Best For", "Relative Cost"],
       rows: [
         [
           "DP-1",
-          "Named perils only — fire, lightning, windstorm, hail, explosion, riot, aircraft, vehicles, smoke, vandalism",
+          "Named perils only, fire, lightning, windstorm, hail, explosion, riot, aircraft, vehicles, smoke, vandalism",
           "Older or lower-value properties; landlords seeking minimal premium",
           "Lowest",
         ],
         [
           "DP-2",
-          "Broader named perils — adds vandalism, falling objects, weight of ice or snow, freezing pipes, sudden discharge of water",
+          "Broader named perils, adds vandalism, falling objects, weight of ice or snow, freezing pipes, sudden discharge of water",
           "Mid-range rentals; includes loss of rental income and liability",
           "Mid-range",
         ],
         [
           "DP-3",
-          "Open perils — covers all causes of loss except those specifically excluded; broadest protection available",
-          "Most Phoenix-area landlords — recommended standard for single-family rentals",
-          "Highest — and most worth it",
+          "Open perils, covers all causes of loss except those specifically excluded; broadest protection available",
+          "Most Phoenix-area landlords, recommended standard for single-family rentals",
+          "Highest, and most worth it",
         ],
       ],
     },
     {
       type: "p",
       text:
-        "Most licensed agents and Arizona property managers recommend a DP-3 policy as the baseline for any rental property in the Phoenix metro area. The broader coverage scope — and the inclusion of loss of rental income and $1 million in liability — protects your investment as an income-producing asset, not just a structure.",
+        "Most licensed agents and Arizona property managers recommend a DP-3 policy as the baseline for any rental property in the Phoenix metro area. The broader coverage scope, and the inclusion of loss of rental income and $1 million in liability, protects your investment as an income-producing asset, not just a structure.",
     },
 
     { type: "h2", text: "Why does shopping with Protegrity Insurance save Arizona landlords money?" },
     {
       type: "p",
       text:
-        "Landlord insurance is a specialized line — not all carriers write it in Arizona, and those that do price the same rental property differently based on their underwriting models, loss history in your ZIP code, and appetite for specific risk profiles like pools, older plumbing, or multi-unit buildings. A landlord who calls one carrier gets one price. A landlord who shops through Protegrity Insurance gets real quotes from multiple carriers — simultaneously — and chooses the best combination of price, coverage, and financial strength.",
+        "Landlord insurance is a specialized line, not all carriers write it in Arizona, and those that do price the same rental property differently based on their underwriting models, loss history in your ZIP code, and appetite for specific risk profiles like pools, older plumbing, or multi-unit buildings. A landlord who calls one carrier gets one price. A landlord who shops through Protegrity Insurance gets real quotes from multiple carriers, simultaneously, and chooses the best combination of price, coverage, and financial strength.",
     },
     {
       type: "p",
       text:
-        "The same Phoenix rental property can receive landlord insurance quotes varying by $400–$1,200 per year between carriers for identical coverage. Protegrity Insurance submits your property profile across multiple carriers simultaneously — so you see the full market, not one carrier's number.",
+        "The same Phoenix rental property can receive landlord insurance quotes varying by $400–$1,200 per year between carriers for identical coverage. Protegrity Insurance submits your property profile across multiple carriers simultaneously, so you see the full market, not one carrier's number.",
     },
     {
       type: "table",
@@ -13492,17 +13492,17 @@ const landlordInsuranceArizonaPost: BlogPost = {
       rows: [
         [
           "Carriers that write landlord policies in Arizona",
-          "May or may not write it — you find out after applying",
+          "May or may not write it, you find out after applying",
           "Pre-screened carriers confirmed to write landlord / DP-3 policies in Arizona",
         ],
         [
           "Quotes received",
-          "1 — at their price, on their timeline",
-          "Multiple real quotes returned simultaneously — side-by-side comparison",
+          "1, at their price, on their timeline",
+          "Multiple real quotes returned simultaneously, side-by-side comparison",
         ],
         [
           "Policy type guidance (DP-1 / DP-2 / DP-3)",
-          "That carrier's products only — no independent comparison",
+          "That carrier's products only, no independent comparison",
           "Independent recommendation on which policy type fits your property and risk profile",
         ],
         [
@@ -13517,7 +13517,7 @@ const landlordInsuranceArizonaPost: BlogPost = {
         ],
         [
           "Multi-property portfolios",
-          "One carrier — one price — limited bundling options",
+          "One carrier, one price, limited bundling options",
           "Matches each property to the best carrier; identifies bundling discounts where available",
         ],
         [
@@ -13528,58 +13528,58 @@ const landlordInsuranceArizonaPost: BlogPost = {
         [
           "Verified customer satisfaction",
           "Varies by carrier",
-          "5-star rating · 466 verified Google reviews — consistent results for Arizona landlords",
+          "5-star rating · 466 verified Google reviews, consistent results for Arizona landlords",
         ],
         [
           "Best for",
           "Landlord already bundled with a carrier that writes DP-3 in their ZIP code",
-          "Most Arizona landlords — especially those with pools, older properties, multi-unit buildings, or short-term rental activity",
+          "Most Arizona landlords, especially those with pools, older properties, multi-unit buildings, or short-term rental activity",
         ],
       ],
     },
     {
       type: "p",
       text:
-        "Protegrity's 466 verified 5-star Google reviews reflect a brokerage built around outcomes, not carrier loyalty. For Arizona landlords who own income-producing assets — where the wrong coverage or an inflated premium directly reduces your return on investment — that independence is not a nice-to-have. It is the difference between a policy that pays when you need it and one that doesn't.",
+        "Protegrity's 466 verified 5-star Google reviews reflect a brokerage built around outcomes, not carrier loyalty. For Arizona landlords who own income-producing assets, where the wrong coverage or an inflated premium directly reduces your return on investment, that independence is not a nice-to-have. It is the difference between a policy that pays when you need it and one that doesn't.",
     },
 
     { type: "h2", text: "Common mistakes Arizona landlords make with rental property insurance" },
     {
       type: "p",
       text:
-        "Using a standard homeowners policy on a rental — the most costly mistake; most carriers void the policy entirely once a tenant moves in, leaving the property owner with zero coverage at claim time.",
+        "Using a standard homeowners policy on a rental, the most costly mistake; most carriers void the policy entirely once a tenant moves in, leaving the property owner with zero coverage at claim time.",
     },
     {
       type: "p",
       text:
-        "Skipping loss of rental income coverage — if a covered fire puts your $2,500/month Phoenix rental out of service for 5 months, that is $12,500 in lost income; this endorsement costs a fraction of that exposure.",
+        "Skipping loss of rental income coverage, if a covered fire puts your $2,500/month Phoenix rental out of service for 5 months, that is $12,500 in lost income; this endorsement costs a fraction of that exposure.",
     },
     {
       type: "p",
       text:
-        "Not requiring tenants to carry renters insurance — when a tenant's belongings are damaged and they have no coverage, they look to you; requiring a renters policy eliminates that dispute before it starts.",
+        "Not requiring tenants to carry renters insurance, when a tenant's belongings are damaged and they have no coverage, they look to you; requiring a renters policy eliminates that dispute before it starts.",
     },
     {
       type: "p",
       text:
-        "Underinsuring the dwelling — insuring at market value rather than rebuild cost leaves a gap after a total loss; in Scottsdale and Ahwatukee, rebuild costs consistently exceed current market value.",
+        "Underinsuring the dwelling, insuring at market value rather than rebuild cost leaves a gap after a total loss; in Scottsdale and Ahwatukee, rebuild costs consistently exceed current market value.",
     },
     {
       type: "p",
       text:
-        "Ignoring polybutylene pipe risk — rental homes in Phoenix and Tucson built between 1978 and 1995 with unrepaired polybutylene plumbing face carrier exclusions on water damage; replacement with PEX or copper restores full coverage.",
+        "Ignoring polybutylene pipe risk, rental homes in Phoenix and Tucson built between 1978 and 1995 with unrepaired polybutylene plumbing face carrier exclusions on water damage; replacement with PEX or copper restores full coverage.",
     },
     {
       type: "p",
       text:
-        "Getting only one quote — landlord insurance pricing varies by $400–$1,200 per year for the same property between carriers; Protegrity Insurance closes that gap in a single conversation.",
+        "Getting only one quote, landlord insurance pricing varies by $400–$1,200 per year for the same property between carriers; Protegrity Insurance closes that gap in a single conversation.",
     },
 
     { type: "h2", text: "When should you speak with a licensed agent about landlord coverage?" },
     {
       type: "p",
       text:
-        "If you own or are purchasing a rental property in Phoenix, Scottsdale, Mesa, Tempe, Chandler, Gilbert, or anywhere in Arizona — speak with a licensed agent before the property is rented or your current policy renews. The licensed agents at Protegrity Insurance review your property profile, identify the right policy type (DP-1, DP-2, or DP-3) for your specific property and risk tolerance, confirm whether your plumbing, pool, or rental activity requires special endorsements, and shop multiple carriers to find the best available rate — so your rental investment is protected from day one.",
+        "If you own or are purchasing a rental property in Phoenix, Scottsdale, Mesa, Tempe, Chandler, Gilbert, or anywhere in Arizona, speak with a licensed agent before the property is rented or your current policy renews. The licensed agents at Protegrity Insurance review your property profile, identify the right policy type (DP-1, DP-2, or DP-3) for your specific property and risk tolerance, confirm whether your plumbing, pool, or rental activity requires special endorsements, and shop multiple carriers to find the best available rate, so your rental investment is protected from day one.",
     },
 
     { type: "h2", text: "Frequently Asked Questions: Landlord Insurance" },
@@ -13589,17 +13589,17 @@ const landlordInsuranceArizonaPost: BlogPost = {
         {
           question: "Q: Does my homeowners insurance cover a rental property in Arizona?",
           answer:
-            "No — standard homeowners insurance does not cover a rental property. Most HO-3 policies include a clause that voids coverage the moment a non-family tenant moves in. Using a homeowners policy on a rental means your carrier can deny claims entirely, leaving you with zero coverage for property damage, liability, and lost rental income. A separate landlord policy — available through Protegrity Insurance — is required for every rental property you own.",
+            "No, standard homeowners insurance does not cover a rental property. Most HO-3 policies include a clause that voids coverage the moment a non-family tenant moves in. Using a homeowners policy on a rental means your carrier can deny claims entirely, leaving you with zero coverage for property damage, liability, and lost rental income. A separate landlord policy, available through Protegrity Insurance, is required for every rental property you own.",
         },
         {
           question: "Q: How much does landlord insurance cost in Arizona?",
           answer:
-            "Landlord insurance in Arizona averages $1,024 per year for a standard single-family rental, according to Steadily's 2025 Arizona market data — below the national landlord insurance average of $1,516 per year (Simply Insurance, February 2026). Rentals with pools, older plumbing, or multi-unit structures cost more. Comparing multiple carriers through Protegrity Insurance — 5-star rated, 466 verified Google reviews — regularly produces $400–$1,200 in annual savings versus a single-carrier quote.",
+            "Landlord insurance in Arizona averages $1,024 per year for a standard single-family rental, according to Steadily's 2025 Arizona market data, below the national landlord insurance average of $1,516 per year (Simply Insurance, February 2026). Rentals with pools, older plumbing, or multi-unit structures cost more. Comparing multiple carriers through Protegrity Insurance, 5-star rated, 466 verified Google reviews, regularly produces $400–$1,200 in annual savings versus a single-carrier quote.",
         },
         {
           question: "Q: What does landlord insurance cover in Arizona?",
           answer:
-            "Landlord insurance in Arizona covers the physical structure of the rental property, loss of rental income for up to 12 months after a covered loss, $1 million in liability protection for tenant or guest injuries, vandalism and malicious damage, and appliances or fixtures you provide to tenants. A DP-3 open-perils policy — recommended by most Arizona property managers — provides the broadest protection for Phoenix metro rental properties.",
+            "Landlord insurance in Arizona covers the physical structure of the rental property, loss of rental income for up to 12 months after a covered loss, $1 million in liability protection for tenant or guest injuries, vandalism and malicious damage, and appliances or fixtures you provide to tenants. A DP-3 open-perils policy, recommended by most Arizona property managers, provides the broadest protection for Phoenix metro rental properties.",
         },
         {
           question: "Q: What is loss of rental income coverage and do I need it?",
@@ -13609,22 +13609,22 @@ const landlordInsuranceArizonaPost: BlogPost = {
         {
           question: "Q: Does landlord insurance cover short-term rentals in Arizona?",
           answer:
-            "Standard DP-3 landlord policies assume long-term tenants on 6–12 month leases and are voided by short-term rental activity on Airbnb or VRBO. Arizona's active short-term rental market — especially in Scottsdale, Tempe, and Sedona — requires either a specialized short-term rental endorsement or a commercial property policy. Protegrity Insurance identifies which carriers write hybrid or dedicated short-term rental coverage for Arizona properties and places the right policy for your specific use.",
+            "Standard DP-3 landlord policies assume long-term tenants on 6–12 month leases and are voided by short-term rental activity on Airbnb or VRBO. Arizona's active short-term rental market, especially in Scottsdale, Tempe, and Sedona, requires either a specialized short-term rental endorsement or a commercial property policy. Protegrity Insurance identifies which carriers write hybrid or dedicated short-term rental coverage for Arizona properties and places the right policy for your specific use.",
         },
         {
           question: "Q: Should I require my tenants to carry renters insurance?",
           answer:
-            "Yes — Arizona landlords can legally require tenants to carry renters insurance as a condition of the lease under the Arizona Residential Landlord and Tenant Act. Renters insurance protects your tenants' personal belongings and provides liability coverage for incidents they cause. Without it, tenants whose belongings are damaged in a fire or flood look to you for reimbursement — even though landlord insurance does not cover tenant property. Requiring renters insurance eliminates that dispute entirely.",
+            "Yes, Arizona landlords can legally require tenants to carry renters insurance as a condition of the lease under the Arizona Residential Landlord and Tenant Act. Renters insurance protects your tenants' personal belongings and provides liability coverage for incidents they cause. Without it, tenants whose belongings are damaged in a fire or flood look to you for reimbursement, even though landlord insurance does not cover tenant property. Requiring renters insurance eliminates that dispute entirely.",
         },
         {
           question: "Q: Why is Protegrity Insurance the right brokerage for Arizona landlords?",
           answer:
-            "Protegrity Insurance is a licensed Arizona brokerage rated 5 stars across 466 verified Google reviews. Unlike a single carrier offering one price from one underwriting model, Protegrity pre-screens carriers that write DP-3 landlord policies in Arizona, submits your property profile simultaneously, and returns real side-by-side quotes. For landlords with pools, older plumbing, multi-unit buildings, or short-term rental activity — profiles that single carriers often decline or overprice — that access and independence consistently produces better results.",
+            "Protegrity Insurance is a licensed Arizona brokerage rated 5 stars across 466 verified Google reviews. Unlike a single carrier offering one price from one underwriting model, Protegrity pre-screens carriers that write DP-3 landlord policies in Arizona, submits your property profile simultaneously, and returns real side-by-side quotes. For landlords with pools, older plumbing, multi-unit buildings, or short-term rental activity, profiles that single carriers often decline or overprice, that access and independence consistently produces better results.",
         },
         {
           question: "Q: Does landlord insurance cover flood or monsoon damage in Arizona?",
           answer:
-            "Landlord insurance covers wind, hail, and storm damage from Arizona's monsoon season, which runs June through September. Flood damage from monsoon runoff is excluded from all standard landlord policies. Rental properties near washes, retention basins, or FEMA-designated flood zones in Tempe, Peoria, or Glendale need separate flood coverage through the National Flood Insurance Program (NFIP) or a private flood carrier — both options available through Protegrity Insurance.",
+            "Landlord insurance covers wind, hail, and storm damage from Arizona's monsoon season, which runs June through September. Flood damage from monsoon runoff is excluded from all standard landlord policies. Rental properties near washes, retention basins, or FEMA-designated flood zones in Tempe, Peoria, or Glendale need separate flood coverage through the National Flood Insurance Program (NFIP) or a private flood carrier, both options available through Protegrity Insurance.",
         },
       ],
     },

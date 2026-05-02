@@ -53,7 +53,7 @@ export function TrustBadges() {
             Service-First Brokerage Support
           </h2>
           <p className="mt-3 text-base text-muted-foreground md:text-lg">
-            Five Star Rated Insurance routes every request to Protegrity Insurance Brokerage—where
+            Five Star Rated Insurance routes every request to Protegrity Insurance Brokerage, where
             licensed producers compare carriers instead of pitching a single quota.
           </p>
         </div>

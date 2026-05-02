@@ -13,7 +13,7 @@ export function resolveBlogFinalCta(post: BlogPost): BlogFinalCta {
       ...base,
       headline: base.headline,
       intro:
-        "Compare Arizona workers’ compensation quotes with licensed brokers—share payroll and class codes once, then review multiple admitted carriers side by side.",
+        "Compare Arizona workers' compensation quotes with licensed brokers, share payroll and class codes once, then review multiple admitted carriers side by side.",
       quoteHref: "/#quote",
       trustLine:
         "Workers’ compensation specialists · Multiple carriers quoted side by side · Licensed Arizona brokers · 465+ five-star Google reviews",

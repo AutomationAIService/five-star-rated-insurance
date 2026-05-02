@@ -31,7 +31,7 @@ export function CTABanner() {
             </h2>
             <p className="text-lg md:text-xl text-primary-foreground/85 max-w-xl leading-relaxed">
               Licensed brokers at Protegrity Insurance Brokerage shop auto, home, life, business,
-              and specialty markets for you—465+ five-star Google reviews back their service.
+              and specialty markets for you, backed by 465+ five-star Google reviews.
             </p>
           </div>
 
